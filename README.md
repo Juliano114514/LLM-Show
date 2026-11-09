@@ -1,6 +1,6 @@
 # LLM Show
 
-React 经典二维纸娃娃换装工作室，支持分件混搭、default 对照、收藏和 PNG / SVG 导出。
+QQ秀版本的LLM娘化形象，采用zipzippipe的娘化形象
 
 ## 运行
 
