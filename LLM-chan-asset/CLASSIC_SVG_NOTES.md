@@ -40,6 +40,7 @@
 | 七家表情方向、原皮肤与可编辑眉眼嘴 | `tools/classic-faces.mjs`；输出 `face-design.svg` / `face.svg` / `face.png` |
 | 七套新背景、原稿适配与来源元数据 | `tools/classic-backgrounds.mjs`；原稿为 `source-art/backgrounds/` |
 | 独立 PNG/GIF 与成品报告 | `tools/export-classic.mjs`；运行 `npm run assets:export` |
+| 动态背景与动态场景合成 | `tools/animate-classic-scenes.mjs`；运行 `npm run assets:animate-scenes` |
 | 可直接在矢量编辑器中编辑的单件 | `public/assets-classic/{角色}/*.svg` |
 | 本次新增道具/背饰的几何设计稿 | 同目录 `*-design.svg` |
 | 整体对照和原版部件混穿预览 | `previews/classic/` |
@@ -53,6 +54,8 @@ npm run build
 
 这将重建 SVG、PNG、清单与对照图。手工修改输出 SVG 后，应运行 `npm run assets:rasterize` 更新展示 PNG 和对照图，再运行 `npm run build`；此流程不调用源生成器，不会覆盖手工编辑的分件 SVG。发型编辑 `hair-front.svg` / `hair-back.svg`，合并的 `hair.svg` 仅作缩略源，会自动重建。重新运行 `assets:classic` 则会按脚本覆盖生成文件。所有新的运行时资源位于 `public/assets-classic/`；上一版 `public/assets/` 与 `source-art/` 中的旧人物分件图保留作历史记录。新背景原稿位于 `source-art/backgrounds/`，仍需保留供背景生成器读取。
 
+动态场景由 `scene-motion-celestial.mjs` / `scene-motion-daily.mjs` 提供独立局部环境层，按原生坐标置于背景之上、人物之下；原始背景 PNG/SVG 不改变。运行 `assets:animate-scenes` 后增加 `background.gif` 与清单 `animatedSrc`。重建或重栅格化背景会清除旧动画引用，须重新运行该命令再构建；前端 PNG/SVG 导出始终读取静态 `src` / `svg`。
+
 ## 验证边界
 
 终版已完成 `npm run assets:classic`、`npm run assets:export` 和 `npm run build`。修改脚本静态语法与 diff 检查通过，前端及工具依赖审计均为 0 vulnerabilities。七张背景均为不透明 140×226、256 色场景，SVG 为纯路径，来源记录包含原稿 SHA-256 与联网依据。
@@ -62,6 +65,8 @@ npm run build
 七家独立 PNG、透明 PNG、3 倍预览及 GIF 位于 `deliverables/classic-final/`，导出工具按页面同一层级合成。GIF 实际解码均为 8 帧、每帧 240ms、无限循环，特效区域之外变化像素为 0；报告包含文件 SHA-256、帧数和延时。已查看原生 `final-native.png`、`default-and-seven-plain.png`、`seven-remade-scenes-grid.png` 与实际解码的 `final-gif-decoded-frames.png`。
 
 未新增测试代码，未执行完整 UI 回归，也未穷举所有混搭或整个旧素材库，不将当前站姿结果扩展为所有旧姿态兼容。历史新增三套阶段的原四套哈希不变，仅适用于该阶段；本轮衣装已按最终设计修改。
+
+后续场景动图位于 `deliverables/classic-animated-scenes/`，为 20 帧、每帧 160ms、3.2 秒循环；七套场景真实可见动区、周期端点与不透明人物像素已解码核对。独立背景 GIF 可用于混穿，人物合成 GIF 保留原站姿；GIF 量化不等于无损 PNG。详见 `BACKGROUND_NOTES.md`。
 
 ## 来源
 

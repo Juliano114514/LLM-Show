@@ -53,7 +53,7 @@ function getLayers(manifest, selection, excludeBackground = false) {
     if (excludeBackground && slot.id === 'background') return [];
     const item = itemsById.get(selection[slot.id]);
     if (!item || item.slot !== slot.id) return [];
-    return (item.layers?.length ? item.layers : [{ src: item.src, svg: item.svg, z: slot.z }])
+    return (item.layers?.length ? item.layers : [{ src: item.src, animatedSrc: item.animatedSrc, svg: item.svg, z: slot.z }])
       .filter((layer) => Boolean(layer.src))
       .map((layer, index) => ({ ...layer, z: layer.z ?? slot.z, key: `${item.id}-${index}`, itemId: item.id, name: item.name, slot: slot.id }));
   }).sort((a, b) => a.z - b.z);
@@ -103,9 +103,12 @@ function appendSvgLayer(document, target, markup, layer, index) {
   target.appendChild(group);
 }
 
-function Doll({ layers, className = '', label = '', style = {} }) {
+function Doll({ layers, className = '', label = '', style = {}, animate = true }) {
   return <div className={`doll ${className}`} role={label ? 'img' : undefined} aria-label={label || undefined} aria-hidden={!label || undefined} style={style}>
-    {layers.map((layer) => <img key={layer.key} src={layer.src} alt="" draggable="false" style={{ zIndex: layer.z }} />)}
+    {layers.map((layer) => animate && layer.animatedSrc ? <picture key={layer.key} style={{ position: 'absolute', inset: 0, zIndex: layer.z }}>
+      <source media="(prefers-reduced-motion: no-preference)" srcSet={layer.animatedSrc} type="image/gif" />
+      <img src={layer.src} alt="" draggable="false" />
+    </picture> : <img key={layer.key} src={layer.src} alt="" draggable="false" style={{ zIndex: layer.z }} />)}
   </div>;
 }
 
@@ -384,7 +387,7 @@ function App() {
         <p className="muted">仅保存在当前浏览器。超过 12 套时替换最早的一套。</p><button type="submit" className="button primary"><Icon name="heart" size={16} /> 收进我的收藏</button>
       </form> : modal === 'export' ? <div className="dialog-content">
         <p>PNG 保留原生像素；SVG 按部位保留可编辑路径。</p>
-        <div className="export-preview"><Doll layers={layers.filter((layer) => !transparent || layer.slot !== 'background')} /><span>{manifest.canvas.width * 3} × {manifest.canvas.height * 3}<br /><b>PNG / 透明度保留</b></span></div>
+        <div className="export-preview"><Doll animate={false} layers={layers.filter((layer) => !transparent || layer.slot !== 'background')} /><span>{manifest.canvas.width * 3} × {manifest.canvas.height * 3}<br /><b>PNG / 透明度保留</b></span></div>
         <label className="checkbox-label"><input type="checkbox" checked={transparent} onChange={(event) => setTransparent(event.target.checked)} />隐藏场景背景，导出透明底人物</label>
         <button className="button primary" onClick={exportPng} disabled={exportBusy}><Icon name="download" size={16} /> {exportBusy ? '正在整理导出文件…' : '下载我的 QQ 秀 PNG'}</button>
         <button className="button svg-export" onClick={exportSvg} disabled={exportBusy}><Icon name="code" size={16} /> 下载可编辑搭配 SVG</button>

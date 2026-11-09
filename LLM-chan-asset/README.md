@@ -43,6 +43,10 @@ npm run assets:export
 
 `deliverables/classic-final/` 内每家包含原生 140×226 场景 PNG、透明人物 PNG、420×678 最近邻预览及循环 GIF。GIF 为 8 帧、每帧 240ms、1.92 秒无限循环，仅调整既有特效透明度；人物、脸和背景保持静止。总览为 `all-seven-preview.png`，解码参数与文件 SHA-256 在 `export-report.json`。导出读取当前 PNG 分件，手工修改 SVG 后应先运行 `assets:rasterize`。
 
+需要场景也动时，再运行 `npm run assets:animate-scenes`。`deliverables/classic-animated-scenes/` 提供七家独立背景 GIF、人物与动态场景合成 GIF、3 倍 GIF 预览与静态代表帧；总览为 `all-seven-animated.gif`。这一版为 20 帧、每帧 160ms、3.2 秒循环，热气、云丝、灯火、星轨、竹影和花瓣按场景局部运动，人物画层及镜头固定。逐家动效与实际解码记录见 `BACKGROUND_NOTES.md` 和成品内的 `animation-report.json`。
+
+生成器同时输出运行时 `background.gif`，给清单添加可选 `animatedSrc`。换装室场景层播放动图，系统偏好减少动态时使用静态 PNG；物品缩略图、PNG/SVG 导出与导出预览仍使用静态资源。重新生成或手工修改背景 SVG 后，需要再次执行 `assets:animate-scenes`，避免使用旧动图。
+
 图像、GIF、原稿、参考库和资源压缩包依照现有发布范围保留在本地；仓库提交代码、来源与文字说明。下载代码本身不包含完整美术资源，详见根目录 `COMPLIANCE.md`。
 
 ## 当前功能
@@ -67,6 +71,8 @@ npm run assets:export
 | tools/classic-backgrounds.mjs | 七套新背景主题、原稿适配、纯路径输出与背景预览 |
 | tools/build-classic.mjs | 道具、背饰、清单、PNG 输出、合成预览 |
 | tools/export-classic.mjs | 场景/透明 PNG、最近邻预览、循环 GIF 与解码报告 |
+| tools/animate-classic-scenes.mjs | 动态背景、人物合成 GIF、运行时接入与周期检查 |
+| tools/scene-motion-celestial.mjs / scene-motion-daily.mjs | 七套局部环境动效的原生坐标与轨迹 |
 | tools/pixel-svg.mjs | 原像素转可编辑 RGBA 色块路径，无嵌入位图 |
 | src/main.jsx / src/styles.css | React 界面 |
 | previews/classic/ | 原型对照、整套、混穿与验证产物 |

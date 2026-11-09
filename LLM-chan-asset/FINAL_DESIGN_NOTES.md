@@ -51,3 +51,5 @@
 `npm run assets:classic`、`npm run assets:export` 已完成。七个 GIF 均经实际解码确认为 140×226、8 帧、每帧 240ms、1.92 秒无限循环，具有不同画面帧；特效区域之外变化像素为 0。原生尺寸、整数倍合成图与解码帧已查看，文件哈希和解码参数记录于 `export-report.json`。已定稿脸部、新背景及原 default 目录与本轮装扮修改前哈希一致，default 与原五层合成逐像素差异为 0。
 
 修改脚本静态语法、生产构建与前端/工具依赖审计通过（均 0 vulnerabilities）。未新增测试代码，未执行完整 UI 回归或穷举混搭。图片、GIF、原稿及参考库继续保留本地；公开范围依照根目录 `COMPLIANCE.md`，此次导出不新增美术再分发授权。
+
+后续场景动画另存于 `deliverables/classic-animated-scenes/`：20 帧、3.2 秒循环，环境热气、云层、星轨和灯火等局部运动，人物画层固定；旧 `classic-final/` 的静态背景版继续保留。逐家轨迹、独立背景 GIF 与实际解码检查见 `BACKGROUND_NOTES.md`。

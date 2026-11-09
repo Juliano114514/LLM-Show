@@ -10,6 +10,9 @@ const empty=()=>sharp({create:{width:140,height:226,channels:4,background:'#0000
 const sources=new Map();
 for(const item of manifest.items)for(const layer of item.layers||[{src:item.src,svg:item.svg}])if(layer.svg)sources.set(layer.src,layer.svg);
 for(const [png,svg] of sources)await sharp(local(svg)).resize(140,226).png().toFile(local(png));
+// An animation was rendered from the previous background PNG; regenerate it
+// explicitly after SVG edits rather than displaying a stale scene in the UI.
+for(const item of manifest.items.filter(item=>item.slot==='background')){delete item.animatedSrc;delete item.animation;}
 for(const item of manifest.items.filter(i=>i.layers)){
   const png=await empty().composite([...item.layers].sort((a,b)=>a.z-b.z).map(l=>({input:local(l.src)}))).png().toBuffer();
   await fs.writeFile(local(item.src),png);await fs.writeFile(local(item.svg),await toPixelSvg(png));
