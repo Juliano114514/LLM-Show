@@ -25,8 +25,9 @@ for(let n=0;n<profiles.length;n++){
   if(c.id!=='base')await sharp(png).extract({left:43,top:42,width:53,height:50}).resize(106,100,{kernel:'nearest'}).png().toFile(local(c.portrait));
   cells.push({input:await sharp(png).resize(280,452,{kernel:'nearest'}).png().toBuffer(),left:n*300+10,top:48});
 }
-const titles=Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="520">${profiles.map((c,n)=>`<text x="${n*300+150}" y="28" text-anchor="middle" font-family="Microsoft YaHei,sans-serif" font-size="15" fill="#3f3550">${c.name}</text>`).join('')}</svg>`);
-await sharp({create:{width:1500,height:520,channels:4,background:'#eeeaf2'}}).composite([...cells,{input:titles}]).png().toFile(path.join(root,'public/assets-classic/default-comparison.png'));
+const comparisonWidth=profiles.length*300;
+const titles=Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="${comparisonWidth}" height="520">${profiles.map((c,n)=>`<text x="${n*300+150}" y="28" text-anchor="middle" font-family="Microsoft YaHei,sans-serif" font-size="15" fill="#3f3550">${c.name}</text>`).join('')}</svg>`);
+await sharp({create:{width:comparisonWidth,height:520,channels:4,background:'#eeeaf2'}}).composite([...cells,{input:titles}]).png().toFile(path.join(root,'public/assets-classic/default-comparison.png'));
 console.log(`Re-rendered ${sources.size} editable SVG layers and refreshed previews; source generators were not run.`);
 for(const item of manifest.items){const b=await alphaBox(local(item.src));if(b){const l=Math.max(0,b[0]-4),t=Math.max(0,b[1]-4);item.thumbnailCrop={left:l,top:t,width:Math.min(140,b[2]+4)-l,height:Math.min(226,b[3]+4)-t};}}
 await fs.writeFile(path.join(root,'public/assets-classic/manifest.json'),JSON.stringify(manifest,null,2));

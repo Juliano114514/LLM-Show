@@ -358,7 +358,7 @@ function App() {
         <section className="wardrobe-window window" aria-label={panel === 'wardrobe' ? '部件衣橱' : '我的收藏'}>
           <div className="window-bar wardrobe-bar"><span><span className="tiny-square" /> {panel === 'wardrobe' ? '灵感衣橱' : '我的收藏'} <small>{panel === 'wardrobe' ? 'THE WARDROBE' : 'SAVED LITTLE DREAMS'}</small></span><span className="window-counter">{panel === 'wardrobe' ? `${manifest.items.length} ITEMS` : `${collection.length} LOOKS`}</span></div>
           {panel === 'wardrobe' ? <>
-            <div className="wardrobe-heading"><div><h2>一件一件，拼出你的喜欢 <span>✧</span></h2><p>点击即试穿 · 四位 AI 娘的衣橱随你搭</p></div><span className="new-label">MIX & MATCH</span></div>
+            <div className="wardrobe-heading"><div><h2>一件一件，拼出你的喜欢 <span>✧</span></h2><p>点击即试穿 · {manifest.characters.length} 位 AI 娘的衣橱随你搭</p></div><span className="new-label">MIX & MATCH</span></div>
             <div className="wardrobe-tools"><div className="search-box"><Icon name="search" size={16} /><input value={search} onChange={(event) => setSearch(event.target.value)} placeholder="找一件喜欢的单品…" aria-label="搜索部件名称" />{search && <button aria-label="清除搜索" onClick={() => setSearch('')}><Icon name="close" size={13} /></button>}</div><select value={ownerFilter} onChange={(event) => setOwnerFilter(event.target.value)} aria-label="按角色筛选单品"><option value="all">全部角色</option>{manifest.characters.map((entry) => <option value={entry.id} key={entry.id}>{entry.name}</option>)}<option value="base">原版 default</option></select></div>
             <div className="category-tabs" role="group" aria-label="部件分类"><button className={category === 'all' ? 'active' : ''} onClick={() => setCategory('all')} aria-pressed={category === 'all'}><Icon name="grid" size={15} /> 全部</button>{manifest.slots.map((slot) => <button key={slot.id} className={category === slot.id ? 'active' : ''} onClick={() => setCategory(slot.id)} aria-pressed={category === slot.id}><Icon name={SLOT_ICONS[slot.id]} size={15} />{slot.label}</button>)}</div>
             <div className="item-list-head"><span>{category === 'all' ? '全部单品' : slotMap.get(category)?.label} <b>{filteredItems.length.toString().padStart(2, '0')}</b></span><span><i /> 已穿戴 {selectedCount} 件</span></div>
@@ -391,14 +391,14 @@ function App() {
         <p className="muted">SVG 使用 {manifest.canvas.width}×{manifest.canvas.height} 原生坐标，每个部件独立分组，可在矢量编辑器中继续调整。</p>
         <button className="button recipe-export" onClick={exportRecipe}><Icon name="code" size={16} /> 下载搭配清单 JSON</button>
       </div> : modal === 'compare' ? <div className="dialog-content comparison-content">
-        <p>原版 default 与四套新装共用 140×226 画布。脸、手臂、腰线和脚底沿用原生坐标。</p>
-        <div className="comparison-image-scroll" tabIndex={0} aria-label="原版 default 与四套形象对照图，可横向滚动"><img src="/assets-classic/default-comparison.png" alt="原版 default、GPT、DeepSeek、Claude、Grok 五个形象同尺寸并排对照" /></div>
+        <p>原版 default 与 {manifest.characters.length} 套新装共用 140×226 画布。脸、手臂、腰线和脚底沿用原生坐标。</p>
+        <div className="comparison-image-scroll" tabIndex={0} aria-label={`原版 default 与 ${manifest.characters.length} 套形象对照图，可横向滚动`}><img src="/assets-classic/default-comparison.png" alt={`原版 default、${manifest.characters.map(c=>c.name).join('、')} 同尺寸并排对照`} /></div>
         <p className="muted">窄屏可左右滚动查看。也可以穿回原版，再逐件试穿新发型和服装。</p>
         <div className="comparison-actions"><button className="button primary" onClick={chooseBase}><Icon name="reset" size={15} /> 穿回原版 default</button><button className="button" onClick={() => setModal(null)}>继续换装</button></div>
       </div> : <div className="dialog-content about-content">
         <span className="about-logo">AI SHOW <i>✦</i></span>
-        <p>新版直接以原库 default 为底板，保留脸、身体比例、站姿与 140×226 原生坐标。头发和服装用可编辑 SVG 重绘、调色，展示使用原生 PNG 像素，支持与原版部件混穿。</p>
-        <p>角色主题参考本地 AI Girls Atlas：原角色设计 ZipZipPipe，DeepSeek 原角色另署名上善无形；ApprenTice 的派生参考为 CC BY-NC-SA 4.0。</p>
+        <p>新版直接以原库 default 为底板，保留脸型、身体比例、站姿与 140×226 原生坐标。各角色的眉眼和嘴角按本项目同人设定作轻度表情演绎；头发和服装用可编辑 SVG 重绘、调色，展示使用原生 PNG 像素，支持与原版部件混穿。</p>
+        <p>角色主题参考本地 AI Girls Atlas 中 ZipZipPipe 的标准比例立绘，DeepSeek 原角色另署名上善无形。千问、Gemini、GLM 的所选原图沿用作者分享声明；历史版本使用的 ApprenTice 派生参考另按 CC BY-NC-SA 4.0 记录。</p>
         <p>本项目为非官方同人创作。原 QQ 秀底板与素材保留各自权利边界，不统一纳入角色派生许可；完整来源与使用条件见资源包署名文件。</p>
         <p className="muted">装扮与收藏存储在此浏览器。新版使用独立存储空间；PNG、SVG 都导出当前选中的静态可见部件。</p>
         <button className="button primary" onClick={() => setModal(null)}>继续我的灵感搭配 <span>↗</span></button>

@@ -3,12 +3,15 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { sharp, toPixelSvg, svgDocument, alphaBox } from './pixel-svg.mjs';
 import {GPT_COLORS as gptColors,gptTone} from './classic-theme.mjs';
+import {additions,buildAdditions} from './classic-additions.mjs';
+import {FACE_PROFILES,buildFaces,renderExpressionPreview} from './classic-faces.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const classicRoot = path.resolve(root, '../qq-show-classic');
 const outputRoot = path.join(root, 'public/assets-classic');
 const previewRoot = path.join(root, 'previews/classic');
-const ids = ['gpt','deepseek','claude','grok'];
+const legacyIds = ['gpt','deepseek','claude','grok'];
+const ids = [...legacyIds,...additions.map(c=>c.id)];
 const old = JSON.parse(await fs.readFile(path.join(root,'public/assets/manifest.json'),'utf8'));
 const blank = () => sharp({create:{width:140,height:226,channels:4,background:'#00000000'}});
 const file = (id,name,ext='png') => `/assets-classic/${id}/${name}.${ext}`;
@@ -59,10 +62,8 @@ for(const id of ids) for(const name of ['hair-back','hair-front','headwear','top
 
 const colors = {gpt:[gptColors.contour,gptColors.mid],deepseek:['#305b93','#c2e5fa'],claude:['#b86c32','#ffe4af'],grok:['#70404d','#d7ab57']};
 const star = (x,y,s,c) => `<path fill="${c}" d="M${x} ${y-s}h1v${s-1}h${s-1}v1h-${s-1}v${s}h-1v-${s}h-${s-1}v-1h${s-1}Z"/>`;
-for(const id of ids){
+for(const id of legacyIds){
   const [dark,light] = colors[id];
-  await saveSvg(id,'face',await fs.readFile(path.join(outputRoot,'base/face.svg'),'utf8'));
-  await fs.copyFile(path.join(outputRoot,'base/face.png'),path.join(outputRoot,id,'face.png'));
   const wing = id==='gpt'||id==='grok' ? await toPixelSvg(path.join(classicRoot,'wings/小恶魔.gif'),{mapColor:([r,g,b,a])=>{
     if(!a)return [0,0,0,0];const luminance=(r*.299+g*.587+b*.114)/255;
     if(id==='gpt')return [...gptTone(luminance),a];
@@ -93,17 +94,26 @@ for(const id of ids){
   const bg = path.join(root,'public/assets',id,'background.png');
   await saveSvg(id,'background',await toPixelSvg(bg,{title:`Original classic background ${id}, first frame`}));
 }
+await buildAdditions({sharp,classicRoot,outputRoot,saveSvg,svgDocument,toPixelSvg});
+const faceNotes=await buildFaces({sharp,outputRoot,saveSvg,toPixelSvg});
 
 const crop = {hair:{left:30,top:34,width:80,height:120},face:{left:45,top:46,width:50,height:45},top:{left:25,top:82,width:90,height:57},bottom:{left:35,top:117,width:70,height:52},legs:{left:40,top:148,width:55,height:70},headwear:{left:35,top:28,width:70,height:52},prop:{left:100,top:97,width:37,height:116}};
-const manifest = {...old,version:2,poseFamily:'default-standing-v1',artwork:'Editable SVG built directly on classic default pixels',characters:old.characters.map(c=>({...c,portrait:file(c.id,'portrait'),preview:file(c.id,'preview')})),slots:old.slots.map(s=>({...s,thumbnailCrop:crop[s.id]||s.thumbnailCrop})),items:old.items.map(i=>({...i,src:file(i.characterId,i.slot),svg:file(i.characterId,i.slot,'svg'),description:`${i.name} · 原版 default 站姿 · 140×226 · 可编辑 SVG`,layers:i.slot==='hair'?[{src:file(i.characterId,'hair-back'),svg:file(i.characterId,'hair-back','svg'),z:20},{src:file(i.characterId,'hair-front'),svg:file(i.characterId,'hair-front','svg'),z:80}]:undefined}))};
+const newCharacters=additions.map(({id,name,title,description,color,accent})=>({id,name,title,description,color,accent,preset:Object.fromEntries(old.slots.map(s=>[s.id,`${id}-${s.id}`]))}));
+const newItems=additions.flatMap(c=>old.slots.map(s=>({id:`${c.id}-${s.id}`,name:c.names[s.id],slot:s.id,characterId:c.id,animation:{kind:'static'}})));
+const manifest = {...old,version:2,poseFamily:'default-standing-v1',artwork:'Editable SVG built directly on classic default pixels',characters:[...old.characters,...newCharacters].map(c=>({...c,portrait:file(c.id,'portrait'),preview:file(c.id,'preview')})),slots:old.slots.map(s=>({...s,label:s.id==='back'?'背饰':s.label,thumbnailCrop:crop[s.id]||s.thumbnailCrop})),items:[...old.items,...newItems].map(i=>({...i,src:file(i.characterId,i.slot),svg:file(i.characterId,i.slot,'svg'),description:`${i.name} · 原版 default 站姿 · 140×226 · 可编辑 SVG`,layers:i.slot==='hair'?[{src:file(i.characterId,'hair-back'),svg:file(i.characterId,'hair-back','svg'),z:20},{src:file(i.characterId,'hair-front'),svg:file(i.characterId,'hair-front','svg'),z:80}]:undefined}))};
 for(const item of manifest.items)item.poseFamily='default-standing-v1';
+for(const item of manifest.items.filter(i=>i.slot==='face')){
+  const profile=FACE_PROFILES[item.characterId];
+  item.name=profile.name;
+  item.description=`${profile.mood} · 本项目同人表情演绎 · 原版 default 脸型与坐标 · 可编辑 SVG`;
+}
 for(const [id,name]of Object.entries({'gpt-top':'月白银链垂袖礼衣','gpt-bottom':'银链开衩长裙','gpt-prop':'云朵伙伴','claude-prop':'橘花金边书','deepseek-hair':'深海渐蓝长卷发'})){const item=manifest.items.find(i=>i.id===id);item.name=name;item.description=`${name} · 原版 default 站姿 · 140×226 · 可编辑 SVG`;}
 manifest.basePreset=Object.fromEntries(manifest.slots.map(s=>[s.id,['hair','face','top','bottom','legs'].includes(s.id)?`base-${s.id}`:null]));
 for(const slot of ['hair','face','top','bottom','legs'])manifest.items.push({id:`base-${slot}`,name:`原版 default ${manifest.slots.find(s=>s.id===slot).label}`,slot,characterId:'base',sourceLabel:'原版 default',src:file('base',slot),svg:file('base',slot,'svg'),description:'原始 default 像素与坐标；用于直接比较与混穿',layers:slot==='hair'?[{src:file('base','hair-back'),svg:file('base','hair-back','svg'),z:20},{src:file('base','hair-front'),svg:file('base','hair-front','svg'),z:80}]:undefined});
 for(const item of manifest.items)item.poseFamily='default-standing-v1';
 await blank().composite([{input:path.join(outputRoot,'base/hair-back.png')},{input:path.join(outputRoot,'base/hair-front.png')}]).png().toFile(path.join(outputRoot,'base/hair.png'));
 await saveSvg('base','hair',await toPixelSvg(path.join(outputRoot,'base/hair.png')));
-const report={poseFamily:manifest.poseFamily,canvas:manifest.canvas,baseSources,faceUnchanged:true,hairNotes,clothesNotes,files:[]};
+const report={poseFamily:manifest.poseFamily,canvas:manifest.canvas,baseSources,faceStrategy:'Seven character-specific expressions; original default silhouette, alpha, ears, chin and nose retained.',faceNotes,hairNotes,clothesNotes,files:[]};
 const compositePreset=async(selection,background=true)=>{
   const layers=manifest.slots.flatMap(s=>{if(!background&&s.id==='background')return[];const item=manifest.items.find(i=>i.id===selection[s.id]);return item?(item.layers||[{src:item.src,z:s.z}]):[]}).sort((a,b)=>a.z-b.z);
   return blank().composite(layers.map(l=>({input:path.join(root,'public',l.src)}))).png().toBuffer();
@@ -118,37 +128,57 @@ for(const c of manifest.characters){
 }
 // Preview crops are presentation metadata only. Wearable canvases and their
 // original positioning stay untouched, including long skirts and small props.
+await renderExpressionPreview({sharp,outputRoot,previewRoot,characters:manifest.characters,referenceRoot:path.resolve(root,'../ai-girls-atlas/assets/zipzippipe')});
 for(const item of manifest.items){const b=await alphaBox(path.join(root,'public',item.src));if(b){const l=Math.max(0,b[0]-4),t=Math.max(0,b[1]-4);item.thumbnailCrop={left:l,top:t,width:Math.min(140,b[2]+4)-l,height:Math.min(226,b[3]+4)-t};}}
 await fs.writeFile(path.join(outputRoot,'manifest.json'),JSON.stringify(manifest,null,2));
 const selections=[manifest.basePreset,...manifest.characters.map(c=>c.preset)];
 const labels=['原版 default',...manifest.characters.map(c=>c.name)];
+const comparisonWidth=selections.length*300;
 for(const scene of [false,true]){
   const cells=[];for(let n=0;n<selections.length;n++){
     const input=await compositePreset(selections[n],scene),left=n*300+10;
     cells.push({input:await sharp(input).resize(280,452,{kernel:'nearest'}).png().toBuffer(),left,top:48});
   }
-  const titles=Buffer.from(`<svg width="1500" height="520" xmlns="http://www.w3.org/2000/svg">${labels.map((s,n)=>`<text x="${n*300+150}" y="28" text-anchor="middle" font-family="Microsoft YaHei,sans-serif" font-size="15" fill="#3f3550">${s}</text>`).join('')}</svg>`);
-  await sharp({create:{width:1500,height:520,channels:4,background:scene?'#ede8ef':'#eeeaf2'}}).composite([...cells,{input:titles}]).png().toFile(path.join(previewRoot,`default-and-four-${scene?'scenes':'plain'}.png`));
+  const titles=Buffer.from(`<svg width="${comparisonWidth}" height="520" xmlns="http://www.w3.org/2000/svg">${labels.map((s,n)=>`<text x="${n*300+150}" y="28" text-anchor="middle" font-family="Microsoft YaHei,sans-serif" font-size="15" fill="#3f3550">${s}</text>`).join('')}</svg>`);
+  await sharp({create:{width:comparisonWidth,height:520,channels:4,background:scene?'#ede8ef':'#eeeaf2'}}).composite([...cells,{input:titles}]).png().toFile(path.join(previewRoot,`default-and-seven-${scene?'scenes':'plain'}.png`));
 }
-await fs.copyFile(path.join(previewRoot,'default-and-four-plain.png'),path.join(outputRoot,'default-comparison.png'));
-const standardRefs={gpt:'gpt/normal-zipzippipe-pixiv-148186519-p03.jpg',deepseek:'deepseek/normal-zipzippipe-pixiv-148186519-p00.jpg',claude:'claude/normal-zipzippipe-pixiv-148186519-p02.jpg',grok:'grok/normal-zipzippipe-pixiv-148186519-p07.jpg'};
+await fs.copyFile(path.join(previewRoot,'default-and-seven-plain.png'),path.join(outputRoot,'default-comparison.png'));
+for(const [theme,color,text] of [['light','#eeeaf2','#3f3550'],['dark','#252534','#eeedf6']]){
+  const cells=[];
+  for(let n=0;n<additions.length;n++){
+    const c=manifest.characters.find(c=>c.id===additions[n].id);
+    cells.push({input:await sharp(await compositePreset(c.preset,false)).resize(280,452,{kernel:'nearest'}).png().toBuffer(),left:n*300+10,top:48});
+  }
+  const titles=Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520">${additions.map((c,n)=>`<text x="${n*300+150}" y="28" text-anchor="middle" font-family="Microsoft YaHei,sans-serif" font-size="15" fill="${text}">${c.name} · ${c.title}</text>`).join('')}</svg>`);
+  await sharp({create:{width:900,height:520,channels:4,background:color}}).composite([...cells,{input:titles}]).png().toFile(path.join(previewRoot,`new-three-${theme}.png`));
+}
+const nativeCells=[];
+for(let n=0;n<additions.length;n++)nativeCells.push({input:await compositePreset(manifest.characters.find(c=>c.id===additions[n].id).preset,false),left:n*140,top:0});
+await sharp({create:{width:additions.length*140,height:226,channels:4,background:'#00000000'}}).composite(nativeCells).png().toFile(path.join(previewRoot,'new-three-native.png'));
+const standardRefs={gpt:'gpt/normal-zipzippipe-pixiv-148186519-p03.jpg',deepseek:'deepseek/normal-zipzippipe-pixiv-148186519-p00.jpg',claude:'claude/normal-zipzippipe-pixiv-148186519-p02.jpg',grok:'grok/normal-zipzippipe-pixiv-148186519-p07.jpg',...Object.fromEntries(additions.map(c=>[c.id,c.standardReference]))};
 const referenceCells=[];
 for(let n=0;n<manifest.characters.length;n++){
   const c=manifest.characters[n],source=path.resolve(root,'../ai-girls-atlas/assets/zipzippipe',standardRefs[c.id]);
   referenceCells.push({input:await sharp(source).resize(280,340,{fit:'contain',background:'#fff'}).png().toBuffer(),left:n*300+10,top:44});
   referenceCells.push({input:await sharp(await compositePreset(c.preset,false)).resize(280,452,{kernel:'nearest'}).png().toBuffer(),left:n*300+10,top:432});
 }
-const referenceLabels=Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="910">${manifest.characters.map((c,n)=>`<text x="${n*300+150}" y="27" text-anchor="middle" font-family="Microsoft YaHei,sans-serif" font-size="15" fill="#3f3550">${c.name} · 标准立绘</text><text x="${n*300+150}" y="416" text-anchor="middle" font-family="Microsoft YaHei,sans-serif" font-size="13" fill="#645774">default 底板 · QQ 秀适配</text>`).join('')}</svg>`);
-await sharp({create:{width:1200,height:910,channels:4,background:'#eeeaf2'}}).composite([...referenceCells,{input:referenceLabels}]).png().toFile(path.join(previewRoot,'standard-reference-comparison.png'));
+const referenceWidth=manifest.characters.length*300;
+const referenceLabels=Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="${referenceWidth}" height="910">${manifest.characters.map((c,n)=>`<text x="${n*300+150}" y="27" text-anchor="middle" font-family="Microsoft YaHei,sans-serif" font-size="15" fill="#3f3550">${c.name} · 标准立绘</text><text x="${n*300+150}" y="416" text-anchor="middle" font-family="Microsoft YaHei,sans-serif" font-size="13" fill="#645774">default 底板 · QQ 秀适配</text>`).join('')}</svg>`);
+const referenceBoard=await sharp({create:{width:referenceWidth,height:910,channels:4,background:'#eeeaf2'}}).composite([...referenceCells,{input:referenceLabels}]).png().toBuffer();
+await fs.writeFile(path.join(previewRoot,'standard-reference-comparison.png'),referenceBoard);
+await sharp(referenceBoard).extract({left:legacyIds.length*300,top:0,width:additions.length*300,height:910}).png().toFile(path.join(previewRoot,'new-three-standard-reference.png'));
+const atlas=JSON.parse(await fs.readFile(path.resolve(root,'../ai-girls-atlas/data/assets.json'),'utf8'));
+const references=atlas.assets.filter(a=>Object.values(standardRefs).some(rel=>a.path===`assets/zipzippipe/${rel}`));
+await fs.writeFile(path.join(outputRoot,'source-references.json'),JSON.stringify({referenceKind:'ZipZipPipe normal-proportion character references; not ApprenTice chibi derivatives',references,backgrounds:additions.map(c=>({characterId:c.id,source:`qq-show-classic/backgrounds/${c.background}`,frame:0})),rights:'Original references retain their per-file author sharing statements; original QQ Show pixels retain separate rights. See ATTRIBUTION.md.'},null,2));
 report.standardReferences=Object.fromEntries(Object.entries(standardRefs).map(([id,rel])=>[id,`ai-girls-atlas/assets/zipzippipe/${rel}`]));
 report.gptSharedPalette=gptColors;
 // Real old/new mixing, using each of the core default parts in turn.
 const mixed=[];
-for(let n=0;n<4;n++){
-  const selection={...manifest.characters[n].preset,hair:`${ids[(n+1)%4]}-hair`,top:n%2?'base-top':`${ids[(n+2)%4]}-top`,bottom:n%2?`${ids[(n+3)%4]}-bottom`:'base-bottom',face:'base-face',headwear:null};
+for(let n=0;n<ids.length;n++){
+  const selection={...manifest.characters[n].preset,hair:`${ids[(n+1)%ids.length]}-hair`,top:n%2?'base-top':`${ids[(n+2)%ids.length]}-top`,bottom:n%2?`${ids[(n+3)%ids.length]}-bottom`:'base-bottom',face:'base-face',headwear:null};
   mixed.push({input:await sharp(await compositePreset(selection,false)).resize(280,452,{kernel:'nearest'}).png().toBuffer(),left:n*300+10,top:20});
 }
-await sharp({create:{width:1200,height:490,channels:4,background:'#eeeaf2'}}).composite(mixed).png().toFile(path.join(previewRoot,'default-mixed.png'));
+await sharp({create:{width:ids.length*300,height:490,channels:4,background:'#eeeaf2'}}).composite(mixed).png().toFile(path.join(previewRoot,'default-mixed.png'));
 for(const id of ['base',...ids])for(const filename of await fs.readdir(path.join(outputRoot,id))){if(!filename.endsWith('.png'))continue;const p=path.join(outputRoot,id,filename);const m=await sharp(p).metadata();report.files.push({file:`${id}/${filename}`,width:m.width,height:m.height,alpha:m.hasAlpha,bbox:await alphaBox(p)});}
 await fs.writeFile(path.join(previewRoot,'build-report.json'),JSON.stringify(report,null,2));
-console.log(JSON.stringify({characters:4,items:manifest.items.length,poseFamily:manifest.poseFamily,output:outputRoot,preview:previewRoot}));
+console.log(JSON.stringify({characters:manifest.characters.length,items:manifest.items.length,poseFamily:manifest.poseFamily,output:outputRoot,preview:previewRoot}));

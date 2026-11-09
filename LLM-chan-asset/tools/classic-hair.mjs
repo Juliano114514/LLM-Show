@@ -12,6 +12,9 @@ const palettes = {
   deepseek: { hue: 221, saturation: .56, low: .065, high: .94, gamma: 1.25 },
   claude: { hue: 25, saturation: .81, low: .085, high: .97, gamma: .89 },
   grok: { hue: 38, saturation: .66, low: .13, high: .97, gamma: .85 },
+  qwen: { hue: 236, saturation: .43, low: .17, high: .91, gamma: .90 },
+  gemini: { hue: 244, saturation: .64, low: .17, high: .92, gamma: .88 },
+  glm: { hue: 222, saturation: .20, low: .025, high: .37, gamma: 1.05 },
 };
 
 function hslToRgb(h, s, l) {
@@ -42,6 +45,11 @@ function recolor(r, g, b, x, y, character) {
     hue -= lower * 13;
     lightness = Math.min(.98, lightness + lower * .11);
     saturation = Math.min(.70, saturation + lower * .04);
+  }
+  if (character === 'gemini') {
+    const lower = Math.max(0, Math.min(1, (y - 77) / 63));
+    hue += lower * 39;
+    lightness = Math.min(.95, lightness + lower * .10);
   }
   if (character === 'gpt') saturation *= .78 + .22 * (1 - lightness);
   return hslToRgb(hue, saturation, lightness);
@@ -92,6 +100,9 @@ const HAIR_COLORS={
   deepseek:{outline:'#1D2D55',deep:'#27365F',shadow:'#364B7D',base:'#4B66A0',light:'#79A5D0',highlight:'#B6DDF2'},
   claude:{outline:'#763A27',deep:'#8F4427',shadow:'#BE6232',base:'#E38A46',light:'#F7B46E',highlight:'#FFE0A0'},
   grok:{outline:'#835336',deep:'#A5683E',shadow:'#C78C52',base:'#EFC383',light:'#FFDEAA',highlight:'#FFF2D3'},
+  qwen:{outline:'#343254',deep:'#414573',shadow:'#5E67A1',base:'#7E8AC4',light:'#ABB8E8',highlight:'#E0E3FA'},
+  gemini:{outline:'#37305E',deep:'#4B438D',shadow:'#685BC1',base:'#8B83E5',light:'#AEA9FC',highlight:'#DFD9FF',pink:'#D9A4F2'},
+  glm:{outline:'#171820',deep:'#20212A',shadow:'#303542',base:'#414958',light:'#64718B',highlight:'#9AAAC1'},
 };
 
 const svgBody=value=>value.slice(value.indexOf('>')+1,value.lastIndexOf('</svg>')).replace(/<title>[\s\S]*?<\/title>/g,'').replace(/<desc>[\s\S]*?<\/desc>/g,'');
@@ -99,6 +110,7 @@ const fillPath=(fill,d,extra='')=>`<path fill="${fill}" d="${d}"${extra}/>`;
 
 function looseBack(character) {
   const p=HAIR_COLORS[character];
+  if(['qwen','gemini','glm'].includes(character))return atlasLongBack(character,p);
   const edge=character==='gpt'?1:.65;
   if(character==='grok') return twinBack(p);
   const straight=character==='claude';
@@ -148,6 +160,7 @@ ${fillPath(p.light,'M44 113Q35 118 39 126Q44 133 38 136Q47 135 44 128Q39 123 43 
 
 function frontLocks(character) {
   const p=HAIR_COLORS[character];
+  if(['qwen','gemini','glm'].includes(character))return atlasFrontLocks(character,p);
   const edge=character==='gpt'?1:.55;
   let b='<g id="standard-front-locks">';
   if(character==='gpt'||character==='deepseek') {
@@ -184,6 +197,7 @@ function longNativeTexture(character,texture) {
   // Re-use only native lower locks, never the scalp or its old accessories.
   // Copies translate by whole pixels, retaining the original 1px strands.
   const body=svgBody(texture.svg),key=character+'-long-texture';
+  if(character==='glm')return `<defs><clipPath id="${key}"><path d="M45 74H96L105 175L35 178Z"/></clipPath></defs><g id="native-straight-hair-texture" clip-path="url(#${key})"><g transform="translate(0 12)">${body}</g><g transform="translate(-3 40)">${body}</g><g transform="translate(3 65)">${body}</g></g>`;
   return `<defs><clipPath id="${key}"><path d="M51 58L89 58L100 88L108 122L103 153L36 155L32 135L40 104Z"/></clipPath><clipPath id="${key}-left"><path d="M29 76H61V159H29Z"/></clipPath><clipPath id="${key}-right"><path d="M79 76H111V159H79Z"/></clipPath></defs><g id="native-pixel-strand-extensions" clip-path="url(#${key})"><g transform="translate(0 5)">${body}</g><g clip-path="url(#${key}-left)"><g transform="translate(-5 29)">${body}</g></g><g clip-path="url(#${key}-right)"><g transform="translate(5 29)">${body}</g></g></g>`;
 }
 
@@ -196,7 +210,75 @@ async function vectorBounds(sharp,value) {
   return {left,top,width:right-left,height:bottom-top};
 }
 
+function atlasLongBack(character,p) {
+  const isStraight=character==='glm';
+  const gradient=character==='gemini' ? `<defs><linearGradient id="gemini-long-hair" x1="0" y1="0" x2=".65" y2="1"><stop stop-color="${p.light}"/><stop offset=".45" stop-color="${p.base}"/><stop offset=".8" stop-color="${p.pink}"/><stop offset="1" stop-color="#B895EC"/></linearGradient></defs>` : '';
+  let body=gradient+'<g id="atlas-long-hair-silhouette">';
+  const outline=isStraight ? 'M51 53Q69 43 89 54L94 86Q98 118 103 145L109 171L102 166L101 179L92 170L90 179L81 171L74 180L65 173L58 179L50 171L42 177L43 166L33 171Q42 144 43 119L45 86Z' : 'M52 54Q70 44 88 55L96 88Q102 111 97 137L103 154L94 151L91 164L81 158L73 166L64 159L56 165L48 156L38 158L41 147Q35 130 42 109L45 85Z';
+  body+=fillPath(isStraight?p.deep:character==='gemini'?'url(#gemini-long-hair)':p.base,outline,` stroke="${p.outline}" stroke-width=".8"`);
+  if(isStraight) {
+    for(const [x,dx,length] of [[49,-10,108],[54,-6,117],[60,-3,111],[65,0,120],[73,2,117],[80,6,111],[87,9,119],[91,13,108]]) {
+      body+=`<path fill="none" stroke="${x%2?p.shadow:p.light}" stroke-width="${x%2?1.3:.7}" d="M${x} 64Q${x-2} 105 ${x+dx} ${64+length}"/>`;
+      body+=`<path fill="none" stroke="${p.base}" stroke-width=".6" d="M${x+2} 75Q${x+1} 118 ${x+dx+2} ${65+length}"/>`;
+    }
+    body+=`<path fill="none" stroke="${p.light}" stroke-width=".65" d="M47 79Q38 112 38 138Q36 154 31 160M93 82Q106 113 103 141Q103 154 110 162M52 101Q45 135 48 165M88 99Q97 132 96 163"/>`;
+  } else {
+    const locks=[
+      ['M51 65C43 79 49 90 41 105C35 117 42 128 38 139C35 147 30 149 33 154C42 158 49 148 47 140C44 128 42 120 48 111C56 98 53 81 58 69Z','M51 75C47 88 50 96 44 108C38 120 46 130 42 141Q40 150 36 151'],
+      ['M59 75C51 92 57 106 50 119C44 130 52 139 48 149L44 159Q57 162 59 148C60 139 54 133 58 124C65 110 62 93 66 78Z','M59 84C55 98 60 108 54 120C48 131 57 139 54 150L50 157'],
+      ['M65 83C61 103 67 117 62 131C58 144 63 151 59 162Q69 167 70 151C68 140 73 128 73 115L73 86Z','M66 93Q64 113 67 125Q62 139 66 151L64 160'],
+    ];
+    for(const mirrored of [false,true]){
+      body+=`<g${mirrored?' transform="translate(140 0) scale(-1 1)"':''}>`;
+      for(const [i,[shape,shine]]of locks.entries()){
+        body+=fillPath(character==='gemini'?'url(#gemini-long-hair)':i===1?p.light:p.base,shape,` stroke="${p.outline}" stroke-width=".65"`);
+        body+=`<path fill="none" stroke="${character==='gemini'&&i===0?p.pink:p.light}" stroke-width="1.7" d="${shine}"/><path fill="none" stroke="${p.highlight}" stroke-width=".65" d="${shine}"/>`;
+      }
+      body+='</g>';
+    }
+    if(character==='gemini')body+=`<g fill="none" stroke-width=".7"><path stroke="${p.outline}" d="M44 102Q31 105 34 115Q38 124 29 128M97 112Q112 119 106 130Q102 139 112 143M42 143Q29 148 36 157M96 145Q109 150 103 160"/><path stroke="${p.pink}" d="M43 106Q33 111 38 119M97 116Q107 121 103 131M95 149Q104 153 100 158"/></g>`;
+  }
+  return body+'</g>';
+}
+
+function atlasFrontLocks(character,p) {
+  let body='<g id="atlas-front-locks">';
+  const bangs=character==='glm' ? [
+    ['M58 47Q65 43 69 48L68 62L64 60L62 64Q58 59 57 53Z','M61 49Q61 55 64 59'],
+    ['M70 46Q77 44 81 50L83 62L78 60L76 64Q71 58 70 46Z','M74 48L76 57'],
+  ] : [
+    ['M58 47Q65 43 70 48Q67 56 72 64Q65 64 62 58L58 64Q60 56 56 51Z','M61 49Q61 55 65 59'],
+    ['M72 46Q79 45 83 51Q80 56 85 63Q78 62 76 55L75 60Q70 55 72 46Z','M75 48Q74 53 79 57'],
+  ];
+  for(const[shape,shine]of bangs)body+=fillPath(p.base,shape,` stroke="${p.outline}" stroke-width=".6"`)+`<path fill="none" stroke="${p.light}" stroke-width="1" d="${shine}"/>`;
+  if(character==='qwen'){
+    body+=fillPath(p.light,'M50 74Q47 90 54 102Q57 109 52 119Q61 117 59 108L55 94L54 80Z',` stroke="${p.outline}" stroke-width=".65"`);
+    body+=`<path fill="none" stroke="${p.highlight}" stroke-width=".7" d="M52 83Q50 95 56 104Q59 111 55 115"/>`;
+    body+='<g id="qwen-right-shoulder-braid">';
+    for(let n=0;n<7;n++){
+      const y=75+n*6,x=88+(n<3?0:n<5?-1:-2);
+      body+=fillPath(n%2?p.base:p.light,`M${x} ${y}q7-4 8 1l-2 5-4 3-4-3q-1-3 2-6Z`,` stroke="${p.outline}" stroke-width=".65"`);
+      body+=`<path fill="none" stroke="${p.highlight}" stroke-width=".7" d="M${x+1} ${y+1}l4 3-4 3"/><path fill="none" stroke="${p.shadow}" stroke-width="1" d="M${x+6} ${y+1}l-4 4"/>`;
+    }
+    body+=fillPath('#33395F','M86 117l-5-3-1 5 5 2 3-2 4 3 4-4-2-3-5 2Z',' stroke="#B4A278" stroke-width=".6"')+fillPath(p.base,'M86 121Q83 129 87 133L91 134Q87 127 90 122Z',` stroke="${p.outline}" stroke-width=".6"`);
+    body+='</g>';
+  } else if(character==='gemini'){
+    body+=`<path fill="none" stroke="${p.outline}" stroke-width="1.5" d="M68 46Q63 36 69 32Q74 29 77 33"/><path fill="none" stroke="${p.light}" stroke-width=".65" d="M68 44Q65 36 70 33Q74 31 76 33"/>`;
+    for(const mirrored of [false,true])body+=`<g${mirrored?' transform="translate(140 0) scale(-1 1)"':''}>${fillPath(p.base,'M51 74Q48 87 54 96Q61 106 54 114Q64 112 62 104Q60 96 57 91L56 80Z',` stroke="${p.outline}" stroke-width=".6"`)}<path fill="none" stroke="${p.pink}" stroke-width="1.5" d="M53 85Q52 93 58 100Q62 107 58 111"/><path fill="none" stroke="${p.highlight}" stroke-width=".6" d="M53 82Q51 91 56 97"/></g>`;
+  } else {
+    for(const mirrored of [false,true])body+=`<g${mirrored?' transform="translate(140 0) scale(-1 1)"':''}>${fillPath(p.deep,'M50 72L55 79Q53 102 49 124L45 147L46 128L47 105Z',` stroke="${p.outline}" stroke-width=".65"`)}<path fill="none" stroke="${p.light}" stroke-width=".7" d="M51 80L50 106L47 135"/><path fill="none" stroke="${p.base}" stroke-width="1.2" d="M53 84Q52 113 48 133"/></g>`;
+  }
+  return body+'</g>';
+}
+
+function atlasHeadwear(character) {
+  if(character==='qwen')return svg('千问 藏蓝白边斜帽与流苏',`<g id="qwen-tilted-hat"><path d="M45 47Q45 35 59 31Q66 29 70 34L57 52Z" fill="#313358" stroke="#343254" stroke-width=".9"/><path d="M45 47L48 50L70 35L68 31Q64 28 62 31L47 44Z" fill="#EEEBF8" stroke="#8E8BAB" stroke-width=".6"/><path d="M49 43L61 33M52 44L63 35" fill="none" stroke="#B4A278" stroke-width=".6"/><path d="M45 49L40 47L38 52L44 55L48 52L50 57L55 53L52 48L48 49Z" fill="#E9E5F5" stroke="#777896" stroke-width=".7"/><path d="M42 54L40 64L43 62L46 65L48 54M48 53L49 62L52 61L54 64L53 53" fill="#CECDE7" stroke="#7C7A99" stroke-width=".6"/><path d="M46 48l-3 2 1 5 4 2 5-3-1-5Z" fill="#444E8D" stroke="#BEA77B" stroke-width="1"/><path d="M47 49l3 1-1 2-2-1-1 3-2-1 2-2Z" fill="#FFF9F6"/><path d="M41 62v8" stroke="#C6B38B"/><path d="M39 70l2-2 2 2-1 7h-3Z" fill="#7D92D7" stroke="#434976" stroke-width=".7"/><path d="M40 71v5M42 71v4" stroke="#CCD5FA" stroke-width=".6"/></g>`);
+  if(character==='gemini')return svg('Gemini 猫耳与四色星发饰',`<g id="gemini-cat-ears"><path d="M48 50L42 31L58 39L61 47ZM80 46L91 28L94 49L88 54Z" fill="#8F8ADA" stroke="#37305E" stroke-width="1"/><path d="M47 44L45 35L55 41L53 47ZM84 44L90 33L91 47L87 49Z" fill="#E7ACD8" stroke="#B779AD" stroke-width=".6"/><path d="M49 43l-1-3 4 2-1 3 3 2-4 1ZM87 43l2-6 1 6-2 2 2 2-4 1Z" fill="#F7E5F5"/></g><g id="gemini-four-color-star"><path d="M88 46L91 53L98 56L91 59L88 66L85 59L78 56L85 53Z" fill="#7763B7" stroke="#D9BE86" stroke-width="1.1"/><path d="M88 47L88 56L80 56L85 53Z" fill="#F6C1E8"/><path d="M88 47L91 53L96 56L88 56Z" fill="#A795F4"/><path d="M88 56L96 56L91 59L88 64Z" fill="#B7DDF5"/><path d="M80 56L88 56L88 64L85 59Z" fill="#729BE5"/><path d="M88 50L88 54L84 56L88 57L89 61" fill="none" stroke="#FFF4F7" stroke-width=".6"/><path d="M94 64l1 3 3 1-3 1-1 3-1-3-3-1 3-1Z" fill="#AEA6F3" stroke="#D7BC8B" stroke-width=".7"/></g>`);
+  return svg('GLM 狐耳睡眠眼罩与双银铃',`<g id="glm-wide-fox-ears"><path d="M51 44L31 39L36 48L45 55L54 54L58 47ZM86 44L108 38L102 49L94 55L85 53L81 47Z" fill="#24252D" stroke="#171820" stroke-width=".9"/><path d="M37 43l10 3 6 4-7 2-6-5 2 1ZM101 43l-10 3-6 4 8 2 6-5-2 1Z" fill="#D9D7E1"/><path d="M40 46l4 2-1 2 5-1 3 2M99 46l-4 2 1 2-5-1-3 2" fill="none" stroke="#8C8C9D" stroke-width=".7"/></g><g id="glm-ruffled-maid-band"><path d="M48 49L49 43L53 43L54 39L58 40L60 36L64 38L67 35L71 37L75 35L79 39L83 38L85 42L89 42L91 49L88 52L50 52Z" fill="#DEDCE5" stroke="#777586" stroke-width=".7"/><path d="M51 48L54 43L58 44L61 40L65 41L68 38L72 41L76 39L80 43L84 43L88 48" fill="none" stroke="#FFF9FD" stroke-width="1.8"/><path d="M49 48Q69 35 90 48L88 53Q68 42 51 53Z" fill="#24252E" stroke="#636476" stroke-width=".6"/></g><g id="glm-forehead-sleep-mask"><path d="M54 47Q61 42 69 45Q77 42 84 47L82 55Q76 58 70 53Q64 58 56 55Z" fill="#20212A" stroke="#ACA8B8" stroke-width=".7"/><path d="M57 49Q61 53 65 49M73 49Q77 53 81 49M58 51l-1 2m4-1v2m3-3 1 2m10-1-1 2m4-2v2m3-3 1 2" fill="none" stroke="#F8F3FB" stroke-width=".7"/></g><g id="glm-z-ribbon-and-silver-bells"><path d="M90 52l-4 1 1 7 5 2 3-3 6 2-1-8-6 1Z" fill="#202633" stroke="#607B9D" stroke-width=".6"/><path d="M92 60l-2 18 4-3 2 3 1-17M97 60l2 12 3-1 2 3-2-15" fill="#EEEAF3" stroke="#7C7C91" stroke-width=".6"/><path d="M88 54l8-2 2 8-8 2Z" fill="#171A23" stroke="#BCB8C9" stroke-width=".8"/><path d="M90 55l5-1-3 5 4-1" fill="none" stroke="#FFF8FD" stroke-width="1.1"/><path d="M92 63v11M99 63v9" stroke="#ADB9CD" stroke-width=".7"/><circle cx="92" cy="77" r="3.3" fill="#BEC1CE" stroke="#565663" stroke-width=".7"/><circle cx="99" cy="75" r="3.1" fill="#D8D7E1" stroke="#565663" stroke-width=".7"/><path d="M89 77q3-3 6 0M96 75q3-3 6 0M92 77v3M99 75v3" fill="none" stroke="#4D4C5B" stroke-width=".7"/><path d="M90 75l2-1M97 73l2-1" stroke="#FFFAFD"/></g>`);
+}
+
 function headwear(character) {
+  if(['qwen','gemini','glm'].includes(character))return atlasHeadwear(character);
   if (character==='gpt') return svg('GPT 月白龙角', `
 <g id="ivory-dragon-horns">
  <path fill="${GPT_COLORS.pearl}" stroke="${GPT_COLORS.contour}" stroke-width=".8" d="M55 57Q49 54 50 49Q53 42 52 36Q58 41 58 46L60 53L58 57ZM81 56L81 49Q84 44 85 35Q90 40 87 47Q90 51 88 55L85 58Z"/>
@@ -228,12 +310,15 @@ export async function buildHair(options={}) {
     deepseek:{source:'浅棕中分长发.gif',label:'深海渐蓝卷发'},
     claude:{source:'金色长卷发.gif',label:'蜜橘古典卷发'},
     grok:{source:'白金双马尾.gif',label:'金砂双马尾'},
+    qwen:{source:'浅棕中分长发.gif',label:'千问 蓝紫长卷与侧麻花辫'},
+    gemini:{source:'浅棕中分长发.gif',label:'Gemini 蓝紫粉渐变长卷发'},
+    glm:{source:'深褐长直发.gif',label:'GLM 墨黑冷蓝长直发'},
   };
   const result={};
   for(const [character,spec] of Object.entries(specifications)) {
     const back=await traceHair(sharp,path.join(classicRoot,'back-hair',spec.source),character,spec.label+' · 后发',90);
     const front=await traceHair(sharp,path.join(classicRoot,'front-hair',spec.source),character,spec.label+' · 前发',91);
-    const textureSource=character==='grok'?'白金双马尾.gif':'金色长卷发.gif';
+    const textureSource=character==='grok'?'白金双马尾.gif':character==='glm'?'深褐长直发.gif':'金色长卷发.gif';
     const texture=await traceHair(sharp,path.join(classicRoot,'front-hair',textureSource),character,spec.label+' · 原生细发束',114,78);
     const backSvg=svg(spec.label+' · 后发',looseBack(character)+svgBody(back.svg)+longNativeTexture(character,texture));
     const frontSvg=svg(spec.label+' · 前发',svgBody(front.svg)+frontLocks(character));
@@ -255,8 +340,9 @@ export async function renderDefaultHairBoard(options={}) {
   const previewRoot=options.previewRoot || path.join(projectRoot,'previews/classic');
   const [bottom,top,face]=await Promise.all(['bottom/default.gif','top/default.gif','makeup/default.png'].map(file=>sharp(path.join(classicRoot,file),{page:0,pages:1}).png().toBuffer()));
   const placements=[];
+  const ids=['default','gpt','deepseek','claude','grok','qwen','gemini','glm'];
   let column=0;
-  for(const id of ['default','gpt','deepseek','claude','grok']) {
+  for(const id of ids) {
     const back=await sharp(id==='default'?path.join(classicRoot,'back-hair/default.gif'):path.join(outputRoot,id,'hair-back.svg'),{page:0,pages:1}).png().toBuffer();
     const front=await sharp(id==='default'?path.join(classicRoot,'front-hair/default.gif'):path.join(outputRoot,id,'hair-front.svg'),{page:0,pages:1}).png().toBuffer();
     const wear=id==='default'?null:await sharp(path.join(outputRoot,id,'headwear.svg')).png().toBuffer();
@@ -267,7 +353,7 @@ export async function renderDefaultHairBoard(options={}) {
   }
   await fs.mkdir(previewRoot,{recursive:true});
   const filename=path.join(previewRoot,'hair-default-board.png');
-  await sharp({create:{width:1524,height:518,channels:4,background:'#eeeaf4'}}).composite(placements).png().toFile(filename);
+  await sharp({create:{width:ids.length*300+24,height:518,channels:4,background:'#eeeaf4'}}).composite(placements).png().toFile(filename);
   return filename;
 }
 
