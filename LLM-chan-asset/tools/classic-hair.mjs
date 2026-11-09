@@ -48,7 +48,7 @@ function recolor(r, g, b, x, y, character) {
   }
   if (character === 'gemini') {
     const lower = Math.max(0, Math.min(1, (y - 77) / 63));
-    hue += lower * 39;
+    hue += lower * 49;
     lightness = Math.min(.95, lightness + lower * .10);
   }
   if (character === 'gpt') saturation *= .78 + .22 * (1 - lightness);
@@ -111,7 +111,7 @@ const fillPath=(fill,d,extra='')=>`<path fill="${fill}" d="${d}"${extra}/>`;
 function looseBack(character) {
   const p=HAIR_COLORS[character];
   if(['qwen','gemini','glm'].includes(character))return atlasLongBack(character,p);
-  const edge=character==='gpt'?1:.65;
+  const edge=character==='gpt'?.75:.55;
   if(character==='grok') return twinBack(p);
   const straight=character==='claude';
   let body=`<g id="standard-long-loose-hair" data-pose="default-standing-v1">`;
@@ -130,15 +130,15 @@ function looseBack(character) {
   for(const [index,[outline,line,shine]] of locks.entries()) {
     body+=`<g id="left-fall-${index+1}">`;
     body+=fillPath(index===2?p.shadow:p.base,outline,` stroke="${p.outline}" stroke-width="${edge}"`);
-    body+=`<path fill="none" stroke="${p.light}" stroke-width="${index===0?2.3:1.8}" d="${line}"/>`;
-    body+=`<path fill="none" stroke="${p.highlight}" stroke-width=".75" d="${shine}"/>`;
+    body+=`<path fill="none" stroke="${p.light}" stroke-width="${index===0?1.5:1.1}" d="${line}"/>`;
+    body+=`<path fill="none" stroke="${p.highlight}" stroke-width=".6" d="${shine}"/>`;
     body+='</g>';
   }
   body+=`<g id="right-long-falls" transform="translate(140 0) scale(-1 1)">`;
   for(const [index,[outline,line,shine]] of locks.entries()) {
     body+=fillPath(index===1?p.light:p.base,outline,` stroke="${p.outline}" stroke-width="${edge}"`);
-    body+=`<path fill="none" stroke="${p.shadow}" stroke-width="1.4" d="${line}"/>`;
-    body+=`<path fill="none" stroke="${p.highlight}" stroke-width=".8" d="${shine}"/>`;
+    body+=`<path fill="none" stroke="${p.shadow}" stroke-width="1.1" d="${line}"/>`;
+    body+=`<path fill="none" stroke="${p.highlight}" stroke-width=".6" d="${shine}"/>`;
   }
   body+='</g>';
   // Loose fly-away tips match the long, unbound silhouettes in both reference sets.
@@ -161,7 +161,7 @@ ${fillPath(p.light,'M44 113Q35 118 39 126Q44 133 38 136Q47 135 44 128Q39 123 43 
 function frontLocks(character) {
   const p=HAIR_COLORS[character];
   if(['qwen','gemini','glm'].includes(character))return atlasFrontLocks(character,p);
-  const edge=character==='gpt'?1:.55;
+  const edge=character==='gpt'?.75:.55;
   let b='<g id="standard-front-locks">';
   if(character==='gpt'||character==='deepseek') {
     // Three small overlapping bangs end above the default eye line (y≈68).
@@ -218,8 +218,8 @@ function atlasLongBack(character,p) {
   body+=fillPath(isStraight?p.deep:character==='gemini'?'url(#gemini-long-hair)':p.base,outline,` stroke="${p.outline}" stroke-width=".8"`);
   if(isStraight) {
     for(const [x,dx,length] of [[49,-10,108],[54,-6,117],[60,-3,111],[65,0,120],[73,2,117],[80,6,111],[87,9,119],[91,13,108]]) {
-      body+=`<path fill="none" stroke="${x%2?p.shadow:p.light}" stroke-width="${x%2?1.3:.7}" d="M${x} 64Q${x-2} 105 ${x+dx} ${64+length}"/>`;
-      body+=`<path fill="none" stroke="${p.base}" stroke-width=".6" d="M${x+2} 75Q${x+1} 118 ${x+dx+2} ${65+length}"/>`;
+      body+=`<path fill="none" stroke="${x%2?p.shadow:p.light}" stroke-width="${x%2?1:.55}" d="M${x} 64Q${x-2} 105 ${x+dx} ${64+length}"/>`;
+      body+=`<path fill="none" stroke="${p.base}" stroke-width=".5" d="M${x+2} 75Q${x+1} 118 ${x+dx+2} ${65+length}"/>`;
     }
     body+=`<path fill="none" stroke="${p.light}" stroke-width=".65" d="M47 79Q38 112 38 138Q36 154 31 160M93 82Q106 113 103 141Q103 154 110 162M52 101Q45 135 48 165M88 99Q97 132 96 163"/>`;
   } else {
@@ -232,7 +232,7 @@ function atlasLongBack(character,p) {
       body+=`<g${mirrored?' transform="translate(140 0) scale(-1 1)"':''}>`;
       for(const [i,[shape,shine]]of locks.entries()){
         body+=fillPath(character==='gemini'?'url(#gemini-long-hair)':i===1?p.light:p.base,shape,` stroke="${p.outline}" stroke-width=".65"`);
-        body+=`<path fill="none" stroke="${character==='gemini'&&i===0?p.pink:p.light}" stroke-width="1.7" d="${shine}"/><path fill="none" stroke="${p.highlight}" stroke-width=".65" d="${shine}"/>`;
+        body+=`<path fill="none" stroke="${character==='gemini'&&i===0?p.pink:p.light}" stroke-width="1.25" d="${shine}"/><path fill="none" stroke="${p.highlight}" stroke-width=".55" d="${shine}"/>`;
       }
       body+='</g>';
     }
@@ -257,8 +257,9 @@ function atlasFrontLocks(character,p) {
     body+='<g id="qwen-right-shoulder-braid">';
     for(let n=0;n<7;n++){
       const y=75+n*6,x=88+(n<3?0:n<5?-1:-2);
-      body+=fillPath(n%2?p.base:p.light,`M${x} ${y}q7-4 8 1l-2 5-4 3-4-3q-1-3 2-6Z`,` stroke="${p.outline}" stroke-width=".65"`);
-      body+=`<path fill="none" stroke="${p.highlight}" stroke-width=".7" d="M${x+1} ${y+1}l4 3-4 3"/><path fill="none" stroke="${p.shadow}" stroke-width="1" d="M${x+6} ${y+1}l-4 4"/>`;
+      body+=fillPath(p.base,`M${x} ${y}q7-4 8 1l-2 5-4 3-4-3q-1-3 2-6Z`,` stroke="${p.outline}" stroke-width=".55"`);
+      body+=fillPath(p.shadow,`M${x+5} ${y-1}q4 1 2 5l-3 3-1-2 3-3Z`);
+      body+=`<path fill="none" stroke="${p.light}" stroke-width="1.1" d="M${x+1} ${y}q4 1 4 3l-3 3"/><path fill="none" stroke="${p.highlight}" stroke-width=".55" d="M${x+1} ${y+1}l3 2"/>`;
     }
     body+=fillPath('#33395F','M86 117l-5-3-1 5 5 2 3-2 4 3 4-4-2-3-5 2Z',' stroke="#B4A278" stroke-width=".6"')+fillPath(p.base,'M86 121Q83 129 87 133L91 134Q87 127 90 122Z',` stroke="${p.outline}" stroke-width=".6"`);
     body+='</g>';

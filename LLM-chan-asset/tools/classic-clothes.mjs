@@ -270,6 +270,47 @@ function shoeDetails(id,t) {
   if(id==='claude') return cuff(189,t.mid)+line('M53 194l4 2-5 3 4 3m17-8 5 2-5 3 5 3',t.ink)+line('M52 193l4 1m18 0 4-1',t.shine)+sole;
   return cuff(188,t.metal)+line('M52 196l5 1m17 0 5-1',t.metal)+ring(54,204,t,2.5,2)+ring(76,204,t,2.5,2)+sole;
 }
+
+// Small native-pixel stitches and narrow fabric glints are modelled after the
+// original library's satin, lace and metal details, rather than broad shading
+// bands. Keep these marks inside the existing garments and away from the skin.
+function garmentFinish(id,t,slot) {
+  if(slot==='top') {
+    const marks={
+      gpt:line('M54 103l-4 9m35-9 4 9M43 133l1 6m50-6-1 6',t.shine,.7)+rect(70,90,1,1,t.shine)+rect(78,124,1,1,t.shine),
+      deepseek:line('M64 100v3m3-4v4m6-4v4m3-3v3','#fffdfd',.7)+rect(63,116,1,1,t.shine)+rect(75,116,1,1,t.shine)+rect(63,121,1,1,t.shine)+rect(75,121,1,1,t.shine),
+      claude:line('M57 97l-2 5 5 2m22-7 2 5-5 2','#fffaf0',.7)+line('M64 101l1 5m8-5-1 5','#fffaf0',.7)+rect(63,116,1,1,t.shine)+rect(76,116,1,1,t.shine),
+      grok:line('M63 108l3 2-3 2 3 2-3 2m13-8-3 2 3 2-3 2 3 2',t.metal,.6)+rect(70,107,1,1,t.shine)+rect(54,105,1,2,t.light)+rect(85,105,1,2,t.light),
+      qwen:line('M65 89l1 3m7-3-1 3M45 130l-2 7m52-7 2 7',t.shine,.7)+[100,106,112].map(y=>rect(70,y,1,1,t.shine)).join(''),
+      gemini:line('M42 132v6m3-10-1 8m52-4v6m-3-10 1 8','#fff5fc',.7)+rect(42,122,1,1,t.shine)+rect(98,122,1,1,t.shine)+rect(70,105,1,1,t.shine),
+      glm:line('M63 103l1 5m4-5v6m6-6-1 6m5-5-1 5','#fffafd',.7)+rect(69,110,1,1,t.metal)+rect(69,116,1,1,t.metal)+line('M39 126l4 2m53 0 4-2',t.shine,.6),
+    };
+    return `<g id="classic-collar-and-cuff-finish">${marks[id]}</g>`;
+  }
+  if(slot==='bottom') {
+    const marks={
+      gpt:line('M74 178l2 2m1 3 2 2m1 3 2 2m-37-4-1 3m34 8 4 1m5 1 4 1',t.metal,.65)+flower(79,185,t.shine,t.metal)+line('M78 188l-1 4m3-3 2 2',t.metal,.6),
+      deepseek:line('M59 165l1 2m2 3 2 1m3 1 2 1m5-1 2-1m3-2 2-2','#fffdfb',.7)+line('M44 178l2 1m5 2 2 1m7 1 2 1m18-1 2-1m7-1 2-1m4-2 2-1',t.metal,.6),
+      claude:line('M55 174l-2 7m1-4 2-2m-3 5-2-1m31-6 2 8m-1-5-2-2m3 6 2-2',t.metal,.65)+line('M49 185l3 1m8 2 3 1m13-1 3-1m10-1 3-1','#fff7e8',.7)+rect(54,173,1,1,t.shine)+rect(82,172,1,1,t.shine),
+      grok:line('M47 172l-2 8m1-5 2-2m-3 5-2-1m43-19 2 7m-1-4 2-1',t.metal,.65)+line('M44 185l2 2m8 3 3 1m31-7 2 3m6 3 2 1','#c27489',.7)+rect(56,139,1,1,t.shine)+rect(84,146,1,1,t.shine),
+      qwen:line('M43 192h4v-2h4v4h4v-2h3m27 0h3v2h4v-4h4v2h4',t.metal,.6)+line('M58 188q2-3 4-1q2-2 4 0h4M62 193q2-2 4 0h3','#b7bdd8',.6)+rect(81,133,1,1,t.shine),
+      gemini:line('M57 151l2 1m5 2 2 1m8-3 2 1m6-2 2-2','#fff4fc',.7)+line('M47 177l-2 7m51-1 2 6',t.light,.7)+rect(79,130,1,1,t.shine)+rect(45,184,1,1,t.shine)+rect(98,188,1,1,t.shine),
+      glm:line('M49 188l2 1m5 2 2 1m7 0 2 1m7 0 2 1m9-2 2-1',t.metal,.65)+line('M48 181l2-6m5 10 2-7m29-9 3 5','#faf8fc',.7)+rect(79,143,1,1,t.shine)+rect(79,151,1,1,t.shine)+rect(61,190,1,1,t.shine),
+    };
+    return `<g id="classic-hem-needlework" clip-path="url(#skirt-interior)">${marks[id]}</g>`;
+  }
+  const marks={
+    gpt:line('M52 205l2 1m21 0 2-1',t.shine,.7),
+    deepseek:line('M54 181v4m2-4v4m18-4v4m2-4v4','#fffdfd',.7)+rect(54,204,1,1,t.shine)+rect(76,204,1,1,t.shine),
+    claude:rect(53,207,1,1,t.shine)+rect(75,207,1,1,t.shine)+line('M53 197l2 1m19-1 2 1',t.shine,.6),
+    grok:rect(54,203,1,1,t.shine)+rect(76,203,1,1,t.shine),
+    qwen:rect(54,204,1,1,t.shine)+rect(76,204,1,1,t.shine),
+    gemini:rect(52,210,2,1,'#b9d8f3')+rect(55,210,1,1,'#e4c1ee')+rect(73,210,2,1,'#b9d8f3')+rect(76,210,1,1,'#e4c1ee'),
+    glm:rect(53,205,1,1,t.shine)+rect(75,205,1,1,t.shine)+line('M52 209h3m18 0h3',t.light,.6),
+  };
+  return `<g id="classic-shoe-and-stocking-glints">${marks[id]}</g>`;
+}
+
 function mixed(a,b,amount) {const aa=rgb(a),bb=rgb(b);return `rgb(${aa.map((v,i)=>Math.round(v+(bb[i]-v)*amount)).join(',')})`;}
 function foldDefs(t) {
   const steps=[.7,.54,.34,.12,0,.18,.37,.59,.82,.7];
@@ -281,11 +322,13 @@ function skirtTexture(source,id,t,markup) {
   const boxes={gpt:[35,124,100,206],deepseek:[37,124,102,190],claude:[37,124,103,195],grok:[39,124,102,196],qwen:[35,124,105,207],gemini:[38,124,104,204],glm:[34,124,105,208]};
   const [left,top,right,bottom]=boxes[id], data=Buffer.alloc(W*H*4);
   for(let y=top;y<bottom;y++)for(let x=left;x<right;x++) {
-    const sx=54+Math.floor((x-left)/(right-left)*31), sy=125+Math.floor((y-top)/(bottom-top)*19);
+    // Keep the source material's native 1px rows. Stretching a 19px skirt over
+    // a long gown turns its tiny creases into large rectangular patches.
+    const sx=54+Math.floor((x-left)/(right-left)*31), sy=125+((y-top)%19);
     const s=(sy*W+sx)*4,r=source.data[s],g=source.data[s+1],b=source.data[s+2];
     if(!source.data[s+3]||r>g+3)continue;
     const lum=.2126*r+.7152*g+.0722*b, bright=lum>164;
-    const amount=Math.min(.28,Math.abs(lum-164)/95*(bright?.2:.3));
+    const amount=Math.min(.20,Math.abs(lum-164)/95*(bright?.14:.22));
     const colour=rgb(bright?t.shine:t.ink), p=(y*W+x)*4;
     for(let n=0;n<3;n++)data[p+n]=colour[n];data[p+3]=Math.round(amount*255);
   }
@@ -327,13 +370,13 @@ export async function buildClothes({sharp,classicRoot,outputRoot}) {
       if(id==='glm'&&y>=190)return shade(c,y>=204?[t.ink,t.dark,t.shade,t.mid]:['#8d8d9f','#c1bfce','#e5e3ec','#fffaff'],100,255);
       return c;
     },(_x,y)=>y>=143);
-    const topSvg=wrap(`<g id="default-upper-body-pixel-paths">${baseTop}</g><g id="editable-garment-details">${topDetails(id,t)}</g>`,`${id} 上装 · default 原身体`,t);
+    const topSvg=wrap(`<g id="default-upper-body-pixel-paths">${baseTop}</g><g id="editable-garment-details">${topDetails(id,t)}</g>${garmentFinish(id,t,'top')}`,`${id} 上装 · default 原身体`,t);
     const skirtMarkup=skirt(id,t);
-    const bottomSvg=wrap(`<g id="editable-skirt">${skirtMarkup}</g>${skirtTexture(bottom,id,t,skirtMarkup)}`,`${id} 裙装 · default 腰线`,t);
-    const legsSvg=wrap(`<g id="default-leg-pixel-paths">${legPixels}</g><g id="editable-shoe-details">${shoeDetails(id,t)}</g>`,`${id} 鞋袜 · default 原双腿`,t);
+    const bottomSvg=wrap(`<g id="editable-skirt">${skirtMarkup}</g>${skirtTexture(bottom,id,t,skirtMarkup)}${garmentFinish(id,t,'bottom')}`,`${id} 裙装 · default 腰线`,t);
+    const legsSvg=wrap(`<g id="default-leg-pixel-paths">${legPixels}</g><g id="editable-shoe-details">${shoeDetails(id,t)}</g>${garmentFinish(id,t,'legs')}`,`${id} 鞋袜 · default 原双腿`,t);
     const directory=path.join(outputRoot,id);await fs.mkdir(directory,{recursive:true});
     for(const [name,svg] of [['top',topSvg],['bottom',bottomSvg],['legs',legsSvg]])await fs.writeFile(path.join(directory,`${name}.svg`),svg,'utf8');
-    results[id]={top:topSvg,bottom:bottomSvg,legs:legsSvg,references:['top/default.gif','bottom/default.gif','top/学生白衫.gif','bottom/粉色百褶短裙.gif','bottom/黑曜长靴短裙.gif','bottom/落日蛋糕短裙.gif']};
+    results[id]={top:topSvg,bottom:bottomSvg,legs:legsSvg,references:['top/default.gif','bottom/default.gif','top/学生白衫.gif','bottom/粉色百褶短裙.gif','bottom/黑曜长靴短裙.gif','bottom/落日蛋糕短裙.gif'],finish:'Native 1px fabric rows, restrained collar/cuff/hem needlework, narrow satin glints and tiny metal highlights; default body and garment silhouettes retained.'};
   }
   return results;
 }

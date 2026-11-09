@@ -5,6 +5,7 @@ import { sharp, toPixelSvg, svgDocument, alphaBox } from './pixel-svg.mjs';
 import {GPT_COLORS as gptColors,gptTone} from './classic-theme.mjs';
 import {additions,buildAdditions} from './classic-additions.mjs';
 import {FACE_PROFILES,buildFaces,renderExpressionPreview} from './classic-faces.mjs';
+import {BACKGROUND_DESIGNS,buildBackgrounds} from './classic-backgrounds.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const classicRoot = path.resolve(root, '../qq-show-classic');
@@ -79,41 +80,43 @@ for(const id of legacyIds){
   else if(id==='deepseek') await saveSvg(id,'back',svgDocument(`<defs><linearGradient id="tail" x2="1" y2=".5"><stop stop-color="#273c70"/><stop offset=".46" stop-color="#416fa5"/><stop offset=".8" stop-color="#78b5db"/><stop offset="1" stop-color="#b5dce9"/></linearGradient></defs><path d="M84 145Q105 164 117 154Q126 146 120 133L116 124L123 122Q135 143 127 159Q115 182 96 171L84 159Z" fill="url(#tail)" stroke="#263b69"/><path d="M120 135Q108 131 107 114Q115 119 122 126Q128 117 134 111Q136 127 124 136Z" fill="#41638e" stroke="#283758"/><path d="M110 119Q113 129 121 132M132 117Q132 128 125 132M88 150Q106 170 121 155" fill="none" stroke="#8ac8df"/><path d="M121 136Q129 148 121 159Q111 170 99 165" fill="none" stroke="#b1d5e5" stroke-width=".7"/>`),true);
   else await saveSvg(id,'back',svgDocument(`<path d="M61 88L76 88L84 104L91 131L76 126L69 132L51 133L57 109Z" fill="#e7d1a5" stroke="#815035" stroke-width="1"/><path d="M62 91L57 125L67 121L72 126L80 121L84 125L76 94" fill="#fff1d1" stroke="#c58a51" stroke-width="1"/><path d="M54 128L64 124L69 129L77 123L88 129" fill="none" stroke="#b96730" stroke-width="2"/>`),true);
   const props={
-    gpt:`<defs><linearGradient id="cloud-white" x2=".4" y2="1"><stop stop-color="${gptColors.highlight}"/><stop offset=".55" stop-color="${gptColors.pearl}"/><stop offset="1" stop-color="#c9dcf2"/></linearGradient></defs><path d="M108 120Q106 114 112 112Q113 107 119 110Q124 107 128 113Q134 113 132 120Q131 126 124 126L113 126Q107 127 108 120Z" fill="url(#cloud-white)" stroke="${gptColors.contour}"/><ellipse cx="116" cy="117" rx="2" ry="3" fill="#456c9f"/><ellipse cx="124" cy="116" rx="2" ry="3" fill="#456c9f"/><path d="M115 115h1v1h-1ZM123 114h1v1h-1Z" fill="#fff"/>`,
-    deepseek:`<path d="M109 129Q107 120 117 120Q126 120 126 128L131 124L130 130L125 134Q113 140 109 129Z" fill="#568bbb" stroke="#254d7c"/><path d="M112 130Q118 135 125 130L125 134Q116 138 112 133Z" fill="#d7edff"/><path d="M112 124h2v2h-2Z" fill="#162c58"/><path d="M116 119L116 114L114 112M116 114L119 111" fill="none" stroke="#76bedc"/>${star(129,116,2,'#d1f4fa')}`,
+    gpt:`<defs><linearGradient id="cloud-white" x2=".4" y2="1"><stop stop-color="${gptColors.highlight}"/><stop offset=".55" stop-color="${gptColors.pearl}"/><stop offset="1" stop-color="#c9dcf2"/></linearGradient></defs><path d="M108 120Q106 114 112 112Q113 107 119 110Q124 107 128 113Q134 113 132 120Q131 126 124 126L113 126Q107 127 108 120Z" fill="url(#cloud-white)" stroke="${gptColors.contour}"/><path d="M110 121Q114 124 119 122Q124 125 130 121" fill="none" stroke="#b9c9e3" stroke-width=".7"/><ellipse cx="116" cy="117" rx="2" ry="3" fill="#456c9f"/><ellipse cx="124" cy="116" rx="2" ry="3" fill="#456c9f"/><path d="M115 115h1v1h-1ZM123 114h1v1h-1Z" fill="#fff"/><path d="M111 116h1v1h-1ZM128 116h1v1h-1Z" fill="#c6d7ed"/>`,
+    deepseek:`<g id="plain-white-rice-bowl"><path d="M12 124Q13 120 16 120Q17 116 20 118Q23 114 26 118Q30 116 32 120Q36 120 36 124Z" fill="#fffdf0" stroke="#c3baa6" stroke-width=".7"/><path d="M12 124H36L33 131L29 134H19L15 131Z" fill="#e4f1fb" stroke="#3e5b86"/><path d="M14 125H34M17 130Q24 133 32 129" fill="none" stroke="#7ca1ca" stroke-width=".8"/><path d="M21 133H28V135H21Z" fill="#a4c4dc" stroke="#3e5b86" stroke-width=".6"/><path d="M16 121h2v1h-2ZM21 118h2v1h-2ZM27 120h2v1h-2ZM30 122h2v1h-2Z" fill="#e9e5d9"/><path d="M20 127l2 2-2 1-2-2ZM27 127l2 1-2 2-2-1Z" fill="#587bad"/><path d="M18 114Q16 111 18 108M27 114Q25 111 27 107" fill="none" stroke="#d9ecf7" stroke-width=".6"/></g><path d="M109 129Q107 120 117 120Q126 120 126 128L131 124L130 130L125 134Q113 140 109 129Z" fill="#568bbb" stroke="#254d7c"/><path d="M112 130Q118 135 125 130L125 134Q116 138 112 133Z" fill="#d7edff"/><path d="M112 124h2v2h-2Z" fill="#162c58"/><path d="M116 119L116 114L114 112M116 114L119 111" fill="none" stroke="#76bedc"/>${star(129,116,2,'#d1f4fa')}`,
     claude:`<path d="M110 118L126 115L130 141L113 144Z" fill="#4b3025" stroke="#32251e"/><path d="M113 120L124 118L127 139L116 141Z" fill="#643d29" stroke="#c49151"/><path d="M127 117L129 117L133 140L130 141Z" fill="#eddfc5" stroke="#9c754a"/><path d="M114 118L118 143" stroke="#ba8e53"/><path d="M120 125l1 3 3-1-2 3 2 2-3-1-1 4-1-4-3 1 2-3-2-2 3 1Z" fill="#d88c3d"/><path d="M127 119l3 19M129 122l2 15" stroke="#b9a482" stroke-width=".6"/><path d="M121 142l1 7 2-2 1 2-1-8" fill="#c07c35"/>`,
-    grok:`<path d="M122 112V207" stroke="#392938" stroke-width="3"/><path d="M121 113V204" stroke="#d8b66c" stroke-width="1"/><path d="M120 108L114 100Q109 103 110 113Q110 119 115 122L121 115L127 122Q132 119 133 113Q134 103 128 100L123 108Z" fill="#4e293a" stroke="#b78d52"/><path d="M114 101Q111 108 113 115L116 119L121 113M123 113L127 119L130 115Q132 107 129 101" fill="none" stroke="#e4c67f"/><path d="M113 106L119 111L115 115M130 106L124 111L128 115" fill="none" stroke="#81513d"/><path d="M121 104L123 104L125 111L122 115L119 111Z" fill="#cba663" stroke="#45312d"/><path d="M121 198h3v3h-3ZM121 205l2 5 2-5" fill="#c49b58"/>`,
+    grok:`<g id="black-gold-double-axe"><path d="M122 112V207" stroke="#392938" stroke-width="2.4"/><path d="M121 113V204" stroke="#d8b66c" stroke-width=".8"/><path id="left-axe-blade" d="M121 108L114 105L111 98Q105 103 106 112Q106 120 111 124L115 118L121 116Z" fill="#382333" stroke="#c49c60" stroke-width=".9"/><path d="M121 108L114 105L111 98Q105 103 106 112Q106 120 111 124L115 118L121 116Z" transform="translate(244 0) scale(-1 1)" fill="#382333" stroke="#c49c60" stroke-width=".9"/><path d="M110 101Q107 106 108 113Q108 118 111 121M134 101Q137 106 136 113Q136 118 133 121M112 104L119 110M132 104L125 110" fill="none" stroke="#ead09b" stroke-width=".6"/><path d="M121 103H123L125 112L122 119L119 112Z" fill="#b7905b" stroke="#45312d" stroke-width=".7"/><path d="M122 106V115M111 116L115 114M133 116L129 114" stroke="#f4dbac" stroke-width=".5"/><path d="M120 128h4v2h-4ZM120 141h4v1h-4ZM120 190h4v1h-4ZM121 198h3v3h-3ZM121 205l2 5 2-5" fill="#c49b58"/></g>`,
   };
   await saveSvg(id,'prop',svgDocument(props[id]),true);
   const aura = `<path d="M33 104A37 35 0 0 1 107 104" fill="none" stroke="${light}" stroke-width="1" stroke-dasharray="2 3"/>${star(70,68,2,light)}`;
   await saveSvg(id,'aura',svgDocument(aura),true);
   const points=[[17,36],[119,59],[22,151],[117,171],[30,207],[111,213]];
   await saveSvg(id,'effect',svgDocument(points.map(([x,y],n)=>star(x,y,n%2?2:3,n%2?dark:light)).join('')),true);
-  // Backgrounds are exact original first frames. Their SVG source is also a
-  // genuine colored-path trace, so an exported look never embeds a bitmap.
-  const bg = path.join(root,'public/assets',id,'background.png');
-  await saveSvg(id,'background',await toPixelSvg(bg,{title:`Original classic background ${id}, first frame`}));
 }
 await buildAdditions({sharp,classicRoot,outputRoot,saveSvg,svgDocument,toPixelSvg});
 const faceNotes=await buildFaces({sharp,outputRoot,saveSvg,toPixelSvg});
+const backgroundNotes=await buildBackgrounds({sharp,root,outputRoot,previewRoot,toPixelSvg,saveSvg});
 
 const crop = {hair:{left:30,top:34,width:80,height:120},face:{left:45,top:46,width:50,height:45},top:{left:25,top:82,width:90,height:57},bottom:{left:35,top:117,width:70,height:52},legs:{left:40,top:148,width:55,height:70},headwear:{left:35,top:28,width:70,height:52},prop:{left:100,top:97,width:37,height:116}};
 const newCharacters=additions.map(({id,name,title,description,color,accent})=>({id,name,title,description,color,accent,preset:Object.fromEntries(old.slots.map(s=>[s.id,`${id}-${s.id}`]))}));
 const newItems=additions.flatMap(c=>old.slots.map(s=>({id:`${c.id}-${s.id}`,name:c.names[s.id],slot:s.id,characterId:c.id,animation:{kind:'static'}})));
 const manifest = {...old,version:2,poseFamily:'default-standing-v1',artwork:'Editable SVG built directly on classic default pixels',characters:[...old.characters,...newCharacters].map(c=>({...c,portrait:file(c.id,'portrait'),preview:file(c.id,'preview')})),slots:old.slots.map(s=>({...s,label:s.id==='back'?'背饰':s.label,thumbnailCrop:crop[s.id]||s.thumbnailCrop})),items:[...old.items,...newItems].map(i=>({...i,src:file(i.characterId,i.slot),svg:file(i.characterId,i.slot,'svg'),description:`${i.name} · 原版 default 站姿 · 140×226 · 可编辑 SVG`,layers:i.slot==='hair'?[{src:file(i.characterId,'hair-back'),svg:file(i.characterId,'hair-back','svg'),z:20},{src:file(i.characterId,'hair-front'),svg:file(i.characterId,'hair-front','svg'),z:80}]:undefined}))};
 for(const item of manifest.items)item.poseFamily='default-standing-v1';
+for(const item of manifest.items.filter(i=>i.slot==='background')){
+  const design=BACKGROUND_DESIGNS[item.characterId];
+  item.name=design.name;
+  item.description=`${design.theme} · 本项目新绘场景 · 140×226 · 可编辑像素 SVG`;
+}
 for(const item of manifest.items.filter(i=>i.slot==='face')){
   const profile=FACE_PROFILES[item.characterId];
   item.name=profile.name;
   item.description=`${profile.mood} · 本项目同人表情演绎 · 原版 default 脸型与坐标 · 可编辑 SVG`;
 }
-for(const [id,name]of Object.entries({'gpt-top':'月白银链垂袖礼衣','gpt-bottom':'银链开衩长裙','gpt-prop':'云朵伙伴','claude-prop':'橘花金边书','deepseek-hair':'深海渐蓝长卷发'})){const item=manifest.items.find(i=>i.id===id);item.name=name;item.description=`${name} · 原版 default 站姿 · 140×226 · 可编辑 SVG`;}
+for(const [id,name]of Object.entries({'gpt-top':'月白银链垂袖礼衣','gpt-bottom':'银链开衩长裙','gpt-prop':'云朵伙伴','claude-prop':'橘花金边书','deepseek-hair':'深海渐蓝长卷发','deepseek-prop':'白饭碗与小鲸伙伴','grok-prop':'黑金双刃斧杖'})){const item=manifest.items.find(i=>i.id===id);item.name=name;item.description=`${name} · 原版 default 站姿 · 140×226 · 可编辑 SVG`;}
 manifest.basePreset=Object.fromEntries(manifest.slots.map(s=>[s.id,['hair','face','top','bottom','legs'].includes(s.id)?`base-${s.id}`:null]));
 for(const slot of ['hair','face','top','bottom','legs'])manifest.items.push({id:`base-${slot}`,name:`原版 default ${manifest.slots.find(s=>s.id===slot).label}`,slot,characterId:'base',sourceLabel:'原版 default',src:file('base',slot),svg:file('base',slot,'svg'),description:'原始 default 像素与坐标；用于直接比较与混穿',layers:slot==='hair'?[{src:file('base','hair-back'),svg:file('base','hair-back','svg'),z:20},{src:file('base','hair-front'),svg:file('base','hair-front','svg'),z:80}]:undefined});
 for(const item of manifest.items)item.poseFamily='default-standing-v1';
 await blank().composite([{input:path.join(outputRoot,'base/hair-back.png')},{input:path.join(outputRoot,'base/hair-front.png')}]).png().toFile(path.join(outputRoot,'base/hair.png'));
 await saveSvg('base','hair',await toPixelSvg(path.join(outputRoot,'base/hair.png')));
-const report={poseFamily:manifest.poseFamily,canvas:manifest.canvas,baseSources,faceStrategy:'Seven character-specific expressions; original default silhouette, alpha, ears, chin and nose retained.',faceNotes,hairNotes,clothesNotes,files:[]};
+const report={poseFamily:manifest.poseFamily,canvas:manifest.canvas,baseSources,faceStrategy:'Seven character-specific expressions; original default silhouette, alpha, ears, chin and nose retained.',faceNotes,backgroundNotes,hairNotes,clothesNotes,files:[]};
 const compositePreset=async(selection,background=true)=>{
   const layers=manifest.slots.flatMap(s=>{if(!background&&s.id==='background')return[];const item=manifest.items.find(i=>i.id===selection[s.id]);return item?(item.layers||[{src:item.src,z:s.z}]):[]}).sort((a,b)=>a.z-b.z);
   return blank().composite(layers.map(l=>({input:path.join(root,'public',l.src)}))).png().toBuffer();
@@ -143,6 +146,15 @@ for(const scene of [false,true]){
   await sharp({create:{width:comparisonWidth,height:520,channels:4,background:scene?'#ede8ef':'#eeeaf2'}}).composite([...cells,{input:titles}]).png().toFile(path.join(previewRoot,`default-and-seven-${scene?'scenes':'plain'}.png`));
 }
 await fs.copyFile(path.join(previewRoot,'default-and-seven-plain.png'),path.join(outputRoot,'default-comparison.png'));
+await sharp(path.join(previewRoot,'default-and-seven-scenes.png')).extract({left:300,top:0,width:ids.length*300,height:520}).png().toFile(path.join(previewRoot,'seven-remade-scenes.png'));
+const sceneGrid=[],sceneGridLabels=[];
+for(let n=0;n<manifest.characters.length;n++){
+  const c=manifest.characters[n],left=(n%4)*300+(n>=4?150:0),top=Math.floor(n/4)*540;
+  sceneGrid.push({input:await sharp(await compositePreset(c.preset)).resize(280,452,{kernel:'nearest'}).png().toBuffer(),left:left+10,top:top+62});
+  sceneGridLabels.push(`<text x="${left+150}" y="${top+25}" font-size="17">${c.name}</text><text x="${left+150}" y="${top+49}" font-size="13">${BACKGROUND_DESIGNS[c.id].name}</text>`);
+}
+const sceneGridTitle=Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1080"><g font-family="Microsoft YaHei,sans-serif" text-anchor="middle" fill="#54465f">${sceneGridLabels.join('')}</g></svg>`);
+await sharp({create:{width:1200,height:1080,channels:4,background:'#eeeaf2'}}).composite([...sceneGrid,{input:sceneGridTitle}]).png().toFile(path.join(previewRoot,'seven-remade-scenes-grid.png'));
 for(const [theme,color,text] of [['light','#eeeaf2','#3f3550'],['dark','#252534','#eeedf6']]){
   const cells=[];
   for(let n=0;n<additions.length;n++){
@@ -169,7 +181,7 @@ await fs.writeFile(path.join(previewRoot,'standard-reference-comparison.png'),re
 await sharp(referenceBoard).extract({left:legacyIds.length*300,top:0,width:additions.length*300,height:910}).png().toFile(path.join(previewRoot,'new-three-standard-reference.png'));
 const atlas=JSON.parse(await fs.readFile(path.resolve(root,'../ai-girls-atlas/data/assets.json'),'utf8'));
 const references=atlas.assets.filter(a=>Object.values(standardRefs).some(rel=>a.path===`assets/zipzippipe/${rel}`));
-await fs.writeFile(path.join(outputRoot,'source-references.json'),JSON.stringify({referenceKind:'ZipZipPipe normal-proportion character references; not ApprenTice chibi derivatives',references,backgrounds:additions.map(c=>({characterId:c.id,source:`qq-show-classic/backgrounds/${c.background}`,frame:0})),rights:'Original references retain their per-file author sharing statements; original QQ Show pixels retain separate rights. See ATTRIBUTION.md.'},null,2));
+await fs.writeFile(path.join(outputRoot,'source-references.json'),JSON.stringify({referenceKind:'ZipZipPipe normal-proportion character references; not ApprenTice chibi derivatives',references,backgrounds:Object.entries(backgroundNotes).map(([characterId,notes])=>({characterId,...notes})),rights:'Original character references retain their per-file author sharing statements. The seven backgrounds are newly generated project fanwork environments, with old scene files recorded as style references only. Original QQ Show character pixels retain separate rights. See ATTRIBUTION.md.'},null,2));
 report.standardReferences=Object.fromEntries(Object.entries(standardRefs).map(([id,rel])=>[id,`ai-girls-atlas/assets/zipzippipe/${rel}`]));
 report.gptSharedPalette=gptColors;
 // Real old/new mixing, using each of the core default parts in turn.

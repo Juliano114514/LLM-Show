@@ -1,6 +1,3 @@
-import fs from 'node:fs/promises';
-import path from 'node:path';
-
 // These designs use the normal-proportion ZipZipPipe references, adapted to
 // the same default-standing-v1 canvas as the first four characters.
 export const additions = [
@@ -9,9 +6,8 @@ export const additions = [
     description: '蓝紫长辫、盘扣白衫与云锦长裙，把万千灵感藏进折扇。',
     color: '#6e7cbc', accent: '#e9ecff',
     standardReference: 'qwen/normal-zipzippipe-pixiv-148186519-p12.jpg',
-    background: '中式楼阁.gif',
     names: {
-      background: '中式楼阁', aura: '云纹金环', back: '金边长袍后摆', hair: '青蓝长卷辫',
+      background: '江南云锦书斋', aura: '云纹金环', back: '金边长袍后摆', hair: '青蓝长卷辫',
       legs: '云纹蓝金低跟鞋', bottom: '云锦层叠长裙', top: '盘扣白衫金边披袖',
       face: '紫瞳端庄浅笑', headwear: '斜帽云结蓝流苏', prop: '折扇与云纹手袋', effect: '云锦碎金',
     },
@@ -21,9 +17,8 @@ export const additions = [
     description: '蓝紫粉渐变长发与异色星瞳，猫尾摇出一片双子星光。',
     color: '#9873ca', accent: '#efe5ff',
     standardReference: 'gemini/normal-zipzippipe-pixiv-148186519-p04.jpg',
-    background: '双子云殿.gif',
     names: {
-      background: '双子云殿', aura: '双子星轨', back: '星虹绒绒猫尾', hair: '星虹渐变长卷发',
+      background: '双子星观测台', aura: '双子星轨', back: '星虹绒绒猫尾', hair: '星虹渐变长卷发',
       legs: '白堆袜星蓝厚底鞋', bottom: '星链燕尾不对称短裙', top: '星纹露肩垂袖短衣',
       face: '玫金灵动猫笑', headwear: '星芒猫耳发饰', prop: '虹彩双子浮星', effect: '星虹碎光',
     },
@@ -33,11 +28,10 @@ export const additions = [
     description: '墨蓝长发、银铃与白尖狐尾，守着一本安静的梦境之书。',
     color: '#59657e', accent: '#e9edf4',
     standardReference: 'glm/normal-zipzippipe-pixiv-148186519-p06.jpg',
-    background: '星夜花园.gif',
     names: {
-      background: '星夜花园', aura: '银月梦环', back: '白尖墨狐尾', hair: '墨蓝长直发',
+      background: '月夜午睡书房', aura: '银月梦环', back: '白尖墨狐尾', hair: '墨蓝长直发',
       legs: '黑白系带短靴', bottom: '墨雪层叠长围裙', top: '银扣蓬袖领结衫',
-      face: '灰银沉静微笑', headwear: '睡眠眼罩铃铛狐耳', prop: 'Z 纹黑银书', effect: '银蓝微光',
+      face: '灰紫困倦闭口', headwear: '睡眠眼罩铃铛狐耳', prop: 'Z 纹黑银书', effect: '银蓝微光',
     },
   },
 ];
@@ -74,7 +68,8 @@ function props(id) {
     return `<defs><linearGradient id="fan-blue" x2="1" y2=".8"><stop stop-color="#454b7a"/><stop offset=".4" stop-color="#9da9db"/><stop offset=".65" stop-color="#e9e5f5"/><stop offset="1" stop-color="#697fb9"/></linearGradient><linearGradient id="purse-white" x2="1" y2="1"><stop stop-color="#fffbff"/><stop offset=".55" stop-color="#eeedf6"/><stop offset="1" stop-color="#a5b5da"/></linearGradient></defs>
       <path d="M28 128L12 106Q18 97 26 98Q36 98 41 110L28 128Z" fill="url(#fan-blue)" stroke="#595572"/>
       ${ribs.map(([x,y]) => line(`M28 128L${x} ${y}`, '#c4aa8e', .6)).join('')}
-      ${line('M14 106Q25 92 40 109', '#e5d1b5', 1.1)}
+      ${line('M14 106Q25 92 40 109', '#e5d1b5', .7)}
+      ${line('M16 108q2-3 4-1m8-4q2-2 4 0m-2 9q2-2 4 0', '#ede5f0', .6)}
       <path d="M20 104l1-2 1 2 2 1-2 1-1 2-1-2-2-1ZM34 109l1-2 1 2 2 1-2 1-1 2-1-2-2-1Z" fill="#f4edf4"/>
       ${line('M28 126L31 136L30 145', '#c0a07c')}
       <path d="M29 144h3l1 9h-5Z" fill="#718bc5" stroke="#414f7e" stroke-width=".6"/>
@@ -84,11 +79,13 @@ function props(id) {
       ${line('M110 141L109 153L110 157H122L124 153L121 141', '#c7a787', .7)}
       <path d="M112 146l4-3 4 3-1 5-3 2-4-3Z" fill="#727bb9" stroke="#c4a583" stroke-width=".6"/>
       <path d="M116 144l1 2 2 1-2 1-1 3-1-3-2-1 2-1Z" fill="#fff9fa"/>
+      ${line('M109 144l1-2m13 4-1-3M111 155h3', '#fffdf7', .6)}
       <path d="M115 156l-4-2v4l4-1 4 2 1-4Z" fill="#5e71ad" stroke="#c4a583" stroke-width=".5"/>
       ${line('M116 158L117 166', '#c4a583', .8)}<path d="M115 164h3l1 9h-4Z" fill="#809bce" stroke="#4a5b8a" stroke-width=".5"/>`;
   }
   if (id === 'gemini') return `${rainbow}${star(120,112,10,'url(#rainbow-star)','#65547d')}${star(20,96,7,'url(#rainbow-star)','#65547d')}
     ${line('M120 103v18M111 112h18', '#f4e5ff', .55)}${line('M20 90v12M14 96h12', '#e4edff', .5)}
+    <path d="M119 110h2v2h-2ZM19 95h1v1h-1Z" fill="#fff9f7"/>
     ${star(130,132,3,'#edb0ed')}${star(15,116,2,'#9bcefa')}`;
   return `<defs><linearGradient id="book-black" x2="1" y2=".5"><stop stop-color="#4a4d5c"/><stop offset=".35" stop-color="#292c36"/><stop offset="1" stop-color="#151924"/></linearGradient></defs>
     <path d="M109 115L128 111L134 142L115 146Z" fill="#c9cbd4" stroke="#292b38"/>
@@ -98,6 +95,7 @@ function props(id) {
     <path d="M116 122L124 121L125 129L117 130Z" fill="#303440" stroke="#a8afc0" stroke-width=".6"/>
     <path d="M118 123L123 122L123 124L120 127L124 126L124 128L118 129L118 127L121 124L118 125Z" fill="#f5f3f7"/>
     ${line('M130 116L134 139M131 120L134 138', '#f1eef4', .6)}
+    ${line('M113 116L122 114M116 142L127 140', '#d1d8e6', .5)}
     <path d="M120 143l1 9 2-3 2 2-2-9Z" fill="#447ca4" stroke="#c7cbd8" stroke-width=".5"/>`;
 }
 
@@ -108,7 +106,7 @@ function aura(id, p) {
 }
 
 export async function buildAdditions(options) {
-  const { sharp, classicRoot, outputRoot, saveSvg, svgDocument, toPixelSvg } = options;
+  const { saveSvg, svgDocument } = options;
   for (const c of additions) {
     const p = palettes[c.id];
     for (const [name, body] of [['back',back(c.id)],['prop',props(c.id)],['aura',aura(c.id,p)]]) {
@@ -117,7 +115,5 @@ export async function buildAdditions(options) {
     const points = [[18,37],[121,62],[17,155],[122,180],[31,210],[109,216]];
     const effect = (c.id === 'gemini' ? rainbow : '') + points.map(([x,y],n) => star(x,y,n%2?2:3,c.id==='gemini'?'url(#rainbow-star)':n%2?p.metal:p.light,p.mid)).join('');
     await saveSvg(c.id, 'effect', svgDocument(effect, `${c.name} ${c.names.effect}`), true);
-    const source = path.join(classicRoot, 'backgrounds', c.background);
-    await saveSvg(c.id, 'background', await toPixelSvg(source, { title: `Original classic ${c.background}, static first frame` }));
   }
 }

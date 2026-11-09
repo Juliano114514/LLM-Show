@@ -1,6 +1,6 @@
 # AI SHOW · default 底板 SVG 换装室
 
-当前默认加载 **classic SVG v2**：七套 AI 娘以原 QQ 秀 default 为底板，沿用双臂、双腿、站姿与 140×226 坐标。本轮修正七家神态：完整重画眼形，以连续虹膜、中央瞳孔和同向单高光取代旧眼上的零散覆色，并降低眉位；脸型、透明度、耳、鼻和下巴保持原样，穿搭沿用现有七套造型。资源是可编辑的纯路径 SVG；前端展示原生尺寸栅格化 PNG，以保持旧素材的像素密度。
+当前默认加载 **classic SVG v2**：七套 AI 娘以原 QQ 秀 default 为底板，沿用双臂、双腿、站姿与 140×226 坐标。本次定稿结合联网角色资料和原版经典 QQ 秀，收细发丝、衣缘高光与裙褶纹理，补清白饭碗、双刃斧和折扇等配饰；已确认的神态与瞳色保持。资源是可编辑的纯路径 SVG；前端展示原生尺寸栅格化 PNG，以保持旧素材的像素密度。近期原作者更新的可访问范围、二创资料边界与逐家取舍见 [FINAL_DESIGN_NOTES.md](FINAL_DESIGN_NOTES.md)。
 
 本次 v2.1 按 ZipZipPipe 标准正常比例立绘进一步补回长发、长袖、开衩/层叠长裙与标志配饰；GPT 发、角、翼、尾、衣裙统一使用同一份珍珠白、淡银紫与银色调色板。标准立绘与 QQ 秀适配并排图位于 previews/classic/standard-reference-comparison.png。
 
@@ -10,11 +10,13 @@
 
 当前表情名为 GPT「淡紫温和微笑」、DeepSeek「蓝瞳馋饭鼓腮」、Claude「茶金舒缓静容」、Grok「碧蓝自信浅笑」、千问「紫瞳端庄浅笑」、Gemini「玫金灵动猫笑」、GLM「灰紫困倦闭口」。Claude 与 GLM 本轮局部调整的预览位于 `previews/classic/claude-glm-softened.png`。
 
+七套背景按用户人设与联网材料分别重制为：GPT「云端星图书阁」、DeepSeek「海边白饭食堂」、Claude「庄园午后书房」、Grok「黑金夜城露台」、千问「江南云锦书斋」、Gemini「双子星观测台」、GLM「月夜午睡书房」。场景采用内置 `image_gen` 新绘，保留人物定稿；来源、证据边界、提示词路径与适配方法见 [BACKGROUND_NOTES.md](BACKGROUND_NOTES.md)。
+
 ![default 与七套形象](previews/classic/default-and-seven-plain.png)
 
 ## 打开
 
-本轮开发预览：<http://127.0.0.1:5173/>。服务关闭后，在本目录运行：
+本地开发地址为 <http://127.0.0.1:5173/>，在本目录启动：
 
 ```powershell
 npm ci
@@ -29,6 +31,19 @@ npm run preview -- --port 4173
 ```
 
 前端不依赖外部字体、图像服务、登录或后端；dist 可由静态 HTTP 服务器托管，不能直接双击 HTML 文件运行。
+
+## PNG 与 GIF 成品
+
+在本地参考库、背景原稿及运行时资产齐全时运行：
+
+```powershell
+npm run assets:classic
+npm run assets:export
+```
+
+`deliverables/classic-final/` 内每家包含原生 140×226 场景 PNG、透明人物 PNG、420×678 最近邻预览及循环 GIF。GIF 为 8 帧、每帧 240ms、1.92 秒无限循环，仅调整既有特效透明度；人物、脸和背景保持静止。总览为 `all-seven-preview.png`，解码参数与文件 SHA-256 在 `export-report.json`。导出读取当前 PNG 分件，手工修改 SVG 后应先运行 `assets:rasterize`。
+
+图像、GIF、原稿、参考库和资源压缩包依照现有发布范围保留在本地；仓库提交代码、来源与文字说明。下载代码本身不包含完整美术资源，详见根目录 `COMPLIANCE.md`。
 
 ## 当前功能
 
@@ -47,14 +62,19 @@ npm run preview -- --port 4173
 | tools/classic-hair.mjs | 原发型描摹、色阶与头饰 |
 | tools/classic-clothes.mjs | 原底模上的新服装、裙褶、鞋袜和色板 |
 | tools/classic-theme.mjs | GPT 发、角、翼、尾与服装的共享色板 |
-| tools/classic-additions.mjs | 千问、Gemini、GLM 的角色配置、背饰、道具与背景 |
+| tools/classic-additions.mjs | 千问、Gemini、GLM 的角色配置、背饰与道具 |
 | tools/classic-faces.mjs | 七家表情方向、原脸皮肤处理、独立眉眼嘴图层与表情对照 |
+| tools/classic-backgrounds.mjs | 七套新背景主题、原稿适配、纯路径输出与背景预览 |
 | tools/build-classic.mjs | 道具、背饰、清单、PNG 输出、合成预览 |
+| tools/export-classic.mjs | 场景/透明 PNG、最近邻预览、循环 GIF 与解码报告 |
 | tools/pixel-svg.mjs | 原像素转可编辑 RGBA 色块路径，无嵌入位图 |
 | src/main.jsx / src/styles.css | React 界面 |
 | previews/classic/ | 原型对照、整套、混穿与验证产物 |
 | CLASSIC_SVG_NOTES.md | 坐标、制作方法、修改与重新生成说明 |
 | ATTRIBUTION.md | 原角色、参考图和旧 QQ 秀像素资源来源 |
+| BACKGROUND_NOTES.md | 背景方案、联网依据与制作边界 |
+| FINAL_DESIGN_NOTES.md | 定稿前的近期角色资料核对与装扮依据 |
+| source-art/backgrounds/ | 新绘场景原稿与 generation-prompts.json 提示词记录 |
 
 修改生成脚本后，运行 npm run assets:classic 再 npm run build。直接编辑单件 SVG 后，运行 npm run assets:rasterize 更新展示 PNG，再 npm run build；不需要重跑生成器覆盖手工修改。发型编辑前发/后发两个 SVG。
 
@@ -62,6 +82,8 @@ default 原五层经分层重组后的运行时合成逐像素差异为 0，记�
 
 此前新增三套阶段已运行 npm run assets:classic 并完成静态语法检查，查看过原生尺寸、整数倍放大、浅深底及标准参考对照；当时原有四套与 base 资源哈希和新增前一致。这是表情特化前的历史检查，不表示本轮七家脸部资源仍与旧版相同。
 
-首轮表情特化前的原图备份位于 `previews/classic/expression-before/`；本轮神态修正前的版本另备份于 `expression-revision-before/`。重点三家预览为 `focus-three-expressions.png`，本轮前后对照为 `expression-revision-comparison.png`；七家浅深底和头发合成预览为 `seven-expressions-light.png`、`seven-expressions-dark.png` 与 `seven-expression-heads.png`。资产生成使用 `npm run assets:classic`，检查范围为脚本静态语法、原生尺寸、浅深底与头发合成；没有新增测试代码或 GIF 动画，未执行生产构建或完整 UI 回归。三套整身预览仍为 `new-three-native.png`、`new-three-light.png`、`new-three-dark.png`，完整场景为 `default-and-seven-scenes.png`。
+表情阶段的备份位于 `previews/classic/expression-before/` 与 `expression-revision-before/`，定稿前装扮备份为 `final-before/`。当前已查看 `final-native.png`、`default-and-seven-plain.png`、`seven-remade-scenes-grid.png` 与实际 GIF 解码帧图 `final-gif-decoded-frames.png`。定稿前后原 default 全目录、七家脸部与新背景文件哈希保持一致，记录为 `final-identity-invariant.json`。
 
-旧 public/assets、source-art、ASSET_NOTES.md 与早期预览保留为 v1 历史，前端不再默认使用。所有作品为非官方同人；旧像素素材的权利条件不因转成 SVG 而改变。具体来源与许可边界见 ATTRIBUTION.md。
+背景预览为 `previews/classic/backgrounds-only-native.png`、`backgrounds-only-2x.png` 与 `seven-remade-scenes.png`；替换前背景备份位于 `background-before/`。原稿按 `cover` 中心裁取、最近邻适配到 140×226，再以 256 色、轻量抖色输出 PNG 与纯路径 SVG。终版已完成资源生成、PNG/GIF 导出、静态语法检查、生产构建及两处依赖审计（均 0 vulnerabilities）。七个 GIF 解码均为 8 帧、无限循环，特效区域之外变化像素为 0；没有新增测试代码，未执行完整 UI 回归或穷举混搭。
+
+旧 public/assets、source-art 中的 v1 人物分件图、ASSET_NOTES.md 与早期预览保留作历史，前端不再默认使用；`source-art/backgrounds/` 则是本轮背景的新原稿目录。所有作品为非官方同人；旧像素素材的权利条件不因转成 SVG 而改变。具体来源与许可边界见 ATTRIBUTION.md。

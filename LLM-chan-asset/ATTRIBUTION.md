@@ -2,15 +2,23 @@
 
 ## 当前使用的 classic SVG v2
 
-当前前端默认使用 `public/assets-classic/`。新版直接沿用户提供的 `qq-show-classic/` 原像素底板制作：default 的躯干、双臂手与双腿，原库发型的轮廓/色阶及 `wings/小恶魔.gif` 膜翼被描摹成可编辑 SVG path；新衣服、裙、鞋袜、头饰和道具在同一坐标上改编或绘制。七家面部在原脸上特化眉眼、瞳色和嘴角，保留脸型、透明度、耳、鼻、下巴及底板坐标，穿搭沿用现有造型。实际源文件由 `tools/classic-hair.mjs`、`tools/classic-clothes.mjs`、`tools/classic-additions.mjs`、`tools/classic-faces.mjs` 与 `tools/build-classic.mjs` 记录。此版没有调用 image_gen。
+当前前端默认使用 `public/assets-classic/`。人物沿用户提供的 `qq-show-classic/` 原像素底板制作：default 的躯干、双臂手与双腿，原库发型的轮廓/色阶及 `wings/小恶魔.gif` 膜翼被描摹成可编辑 SVG path；新衣服、裙、鞋袜、头饰和道具在同一坐标上改编或绘制。七家面部在原脸上特化眉眼、瞳色和嘴角，保留脸型、透明度、耳、鼻、下巴及底板坐标，穿搭沿用现有造型。人物由 `tools/classic-hair.mjs`、`tools/classic-clothes.mjs`、`tools/classic-additions.mjs`、`tools/classic-faces.mjs` 与 `tools/build-classic.mjs` 记录；本轮背景另由内置 `image_gen` 新绘，并经 `tools/classic-backgrounds.mjs` 适配。
 
 本轮表情优先采用用户明确指定的项目人设：DeepSeek“爱吃白饭的大肥鱼”、Claude“家教很严的温婉大小姐”、GLM“犯困的贪睡虫”。相应演绎为 DeepSeek 蓝紫渐水蓝瞳、满足鼓腮和嘴角米粒；Claude「茶金舒缓静容」保留茶金瞳、放松眉眼，以自然平口减去明显笑弧；GLM「灰紫困倦闭口」保留半睁灰紫瞳和松弛眉，去掉哈欠，改为自然闭口。其余方向结合本地 AI Girls Atlas 的 `encyclopedia/personas/` 原创草案及原画；这些创作方向不反向归为品牌或视觉原作者的官方性格。瞳色按 ZipZipPipe 标准正常比例人设图目视归纳，不宣称精准取色。
 
 本轮完整重画眼形，使用相连虹膜、中央瞳孔、同向单高光并降低眉位。`face-design.svg` 分开保留原脸皮肤与可编辑眉、瞳、嘴路径，运行时仍使用 `face.svg` / `face.png`；没有新增 GIF 动画。修正前图备份于 `previews/classic/expression-revision-before/`，重点三家预览为 `focus-three-expressions.png`，本轮前后对照为 `expression-revision-comparison.png`。
 
-转成 SVG 不改变旧素材的权利条件。原库没有提供完备的逐文件作者与再分发授权，因此不能将新版包含旧像素描摹的整包统一标为新创作或 CC BY-NC-SA。角色设计参考的署名和许可仍按下文保留；新旧素材来源分开记录。下文关于内置 image_gen 的制作方式主要对应保留在 `public/assets/`、`source-art/` 的 v1 历史版本。
+转成 SVG 不改变旧素材的权利条件。原库没有提供完备的逐文件作者与再分发授权，因此不能将新版包含旧像素描摹的整包统一标为新创作或 CC BY-NC-SA。角色设计参考的署名和许可仍按下文保留；新旧素材来源分开记录。内置 `image_gen` 在本项目中分别用于历史 v1 人物分件与本轮新背景，两者不是同一次制作流程。
+
+## 本轮新绘背景
+
+七套场景为 GPT「云端星图书阁」、DeepSeek「海边白饭食堂」、Claude「庄园午后书房」、Grok「黑金夜城露台」、千问「江南云锦书斋」、Gemini「双子星观测台」、GLM「月夜午睡书房」。它们结合用户定稿、原画视觉、可归属的二创文字与部分厂商命名材料扩写，属于本项目 AI 辅助创作的环境，不宣称是品牌或原作者的既有场景设定。逐家依据与访问限制见 [BACKGROUND_NOTES.md](BACKGROUND_NOTES.md)。
+
+背景原稿以 `source-art/backgrounds/{id}-source.png` 保存，提示词与内置模式记录保存于 `source-art/backgrounds/generation-prompts.json`。新背景不复制旧 QQ 秀场景像素；旧文件仅作风格、色彩与像素密度参考。适配过程为 140×226 中心 `cover`、最近邻、256 色 PNG 与轻量抖色，再转为纯路径 SVG；构建脚本将制作模式、原稿 SHA-256、参数及参考路径写入 `public/assets-classic/source-references.json`。这不额外授予第三方角色、原图或历史 QQ 秀素材权利，也不把整包统一改成一份新许可。
 
 本项目是 GPT、DeepSeek、Claude、Grok、千问、Gemini 与 GLM 的非官方 AI 娘 QQ 秀同人换装作品，与对应产品及品牌没有官方合作或背书关系。参考图用于角色造型研究，不作为对应品牌的官方标识。
+
+2026-11-09 定稿前的近期原作者/二创资料核对、可访问范围及误标图片排除记录见 [FINAL_DESIGN_NOTES.md](FINAL_DESIGN_NOTES.md)。本次继续使用已选定的正常比例身份，细化经典 QQ 秀衣装与配饰；导出的 PNG/GIF 沿用既有素材及角色权利边界，不因增加动画格式获得额外授权。美术文件与资源包留在本地，公开代码和文字来源说明。
 
 ## 新增千问、Gemini、GLM 的标准正常比例参考
 
@@ -43,9 +51,9 @@
 
 原角色设计的进一步追溯入口为 [ZipZipPipe 原始设计图集](https://www.pixiv.net/artworks/148186519)。本地目录对 GPT、Claude、Grok 的早期原图只记录了[作者开放分享与再创作声明](https://www.bilibili.com/video/BV1bARXBYEZz/)，未确认统一标准许可证；DeepSeek 另有[原角色及女仆二次设计的许可来源](https://www.bilibili.com/video/BV1tE9XBbErS/)。因此本说明不将所有早期原图概括为 CC0、MIT 或同一份 CC 许可。
 
-## 旧 QQ 秀背景
+## 历史旧 QQ 秀背景
 
-本项目的 `asset_pipeline` 从用户提供的本地 `../qq-show-classic/backgrounds/` 复用以下背景的静态首帧，并为前端整理输出格式：
+此前 `asset_pipeline` 从用户提供的本地 `../qq-show-classic/backgrounds/` 复用以下背景的静态首帧，并为前端整理输出格式。本轮背景重制由新绘场景替换该路径，旧版本仍保留在本地 `previews/classic/background-before/`：
 
 | 背景名称 | 本地原文件 |
 | --- | --- |
