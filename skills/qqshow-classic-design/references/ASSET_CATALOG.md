@@ -113,4 +113,3 @@ $qqIndex.images | Where-Object { $null -ne $_.decode_error } | Select-Object pat
 ```
 
 对已变更目录重新读取实际文件，索引中的历史 SHA-256 可用于发现变化；不要把旧统计当成当前状态。
-
