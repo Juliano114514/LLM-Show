@@ -1,0 +1,2649 @@
+{
+  "animate": false,
+  "arrangement": 0,
+  "artworkApplied": true,
+  "artworkFamily": "classic-body-first-remake-v1",
+  "baselineAuthority": "User instruction",
+  "baselineScore": 100,
+  "bodyCopyHash": "9d202ed7daa5fac24cd42ef6978ec23d45eae05cbc00e82adb0ee162f10c9d76",
+  "bodyCorpus": {
+    "analysisJsonSrc": "/assets-classic/native-review/body-corpus/classic-twenty-analysis.json",
+    "analysisReviewer": "classic_body_judge",
+    "analysisSrc": "/assets-classic/native-review/body-corpus/classic-twenty-analysis.md",
+    "anatomicalGate": {
+      "policy": "A new body hash requires an independent audit explicitly resolving previous confirmed body hashes; seeds and unrelated edits cannot clear findings.",
+      "reports": [
+        {
+          "requiresRevision": true,
+          "reviewedBodyHash": "9967cefb72f71ebfb55830a32be866296e46f1cb9296a6ae36a9b2a5c541f5ac",
+          "sourceReport": "ai-workspace/previews/classic/remake/acceptance/round-13/leg-audit.json"
+        },
+        {
+          "requiresFurtherAudit": true,
+          "requiresRevision": true,
+          "reviewedBodyHash": "308dd481151d5ad94a9312d24d9f1917edb6578c94f477441c411693b73b93a1",
+          "sourceReport": "ai-workspace/previews/classic/remake/acceptance/round-16/grok-r6-anatomy-audit.json"
+        },
+        {
+          "requiresFurtherAudit": true,
+          "requiresRevision": true,
+          "reviewedBodyHash": "308dd481151d5ad94a9312d24d9f1917edb6578c94f477441c411693b73b93a1",
+          "sourceReport": "ai-workspace/previews/classic/remake/acceptance/round-17/grok-r6-anatomy-audit.json"
+        }
+      ],
+      "scope": "Only explicitly audited regions; not a whole-body mathematical error claim.",
+      "status": "pending",
+      "tolerancePercent": 5
+    },
+    "bodyCorpusHash": "3451692764c29845da8f6c5b579069c3f1bec6309b7b9765bcc11843167082c7",
+    "corpusSignature": "body-corpus-context-v1-ea56d02e",
+    "missingDependencies": [],
+    "ready": true,
+    "required": 20,
+    "score": {
+      "anatomicalReviewRequired": true,
+      "passed": false,
+      "pending": true,
+      "text": "形体待复核",
+      "visualPending": true
+    },
+    "selected": [
+      {
+        "analysis": {
+          "bodyAndJoints": "胸腔朝一侧扭转，腰收得细而胯向反侧；左上臂侧展后前臂再外伸，手掌握裙角；右手在腰外持另一裙缘。腿大部分被旋起裙摆遮挡，只见下踝和高跟鞋。",
+          "brushColorMaterial": "黑灰裙面靠少量连续曲面亮带立体，红色内衬构成清楚厚度；手臂皮肤亮面比黑裙简洁，肩峰到肘的轮廓有弧度，手指围绕布缘。",
+          "hairContourAndHighlights": "红棕短卷发边缘的卷钩与亮点比长发密，头饰细白像素点缀；没有按固定周期重复卷圈。",
+          "nonTransferable": "裙摆旋转不代表腿正在奔跑；不能从裙幅推断不可见膝盖，也不能把舞姿直接作为默认站姿比例。",
+          "title": "黑红舞裙外展",
+          "transferable": "借持裙手与布缘的接触、侧展臂轮廓与扭腰相连；对Grok提裙/柄握与各角色裙手接缝有价值。"
+        },
+        "analysisActuallyViewed": true,
+        "composition": "Curated combination of real original female outfit, matching back hair if present, original default makeup, and a different original front hairstyle. No added default limbs; not claimed an original official bundled outfit.",
+        "frame": 0,
+        "hair": "qq-show-classic/front-hair/红棕公主卷发.gif",
+        "id": "08",
+        "imageHash": "fba21eaf6b1dca9acf3517f5f49b83e36212292ef596a0e1428e5aec27e9fa15",
+        "label": "黑红舞裙外展",
+        "layers": [
+          "qq-show-classic/outfit/翩翩起舞套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/红棕公主卷发.gif"
+        ],
+        "nativeBaselineScore": 100,
+        "pose": "舞姿 · 外展手臂",
+        "sample": 8,
+        "source": "qq-show-classic/outfit/翩翩起舞套装.gif",
+        "src": "/assets-classic/native-review/body-corpus/08.png"
+      },
+      {
+        "analysis": {
+          "bodyAndJoints": "肩线轻斜，双臂顺身体下垂但左右手高度不同；衣袖在肘附近鼓起，袖口缩到小掌。腰胯靠短裙收放，双腿露出膝到鞋面，一腿轻屈而另一腿稳定。",
+          "brushColorMaterial": "白袖用灰紫短折影而非黑线勾一圈；深蓝裙褶主面清楚、褶谷接近黑蓝，亮线沿褶峰分布。腿的暖边、前侧浅面和踝收口延续default。",
+          "hairContourAndHighlights": "黑发齐刘海是完整暗形，头顶灰亮带与辫子细亮点方向不同；侧辫在白领前，但没有大亮轮廓把头发描成塑料。",
+          "nonTransferable": "袖管的外宽不是上臂宽；短裙下摆不是裸胯；不能把黑发灰亮带直接涂成Qwen蓝发金属面。",
+          "title": "蓝白学院裙垂袖",
+          "transferable": "借泡袖松量与细手腕对比，适合Claude/GLM袖臂；借自然膝踝和深色布料层阶。"
+        },
+        "analysisActuallyViewed": true,
+        "composition": "Curated combination of real original female outfit, matching back hair if present, original default makeup, and a different original front hairstyle. No added default limbs; not claimed an original official bundled outfit.",
+        "frame": 0,
+        "hair": "qq-show-classic/front-hair/黑色齐刘海麻花辫.gif",
+        "id": "04",
+        "imageHash": "0bb87dbcc04e43d970312468cf6a70c2f3e599dcb7f9cd44afa8d6a626cc158d",
+        "label": "蓝白学院裙垂袖",
+        "layers": [
+          "qq-show-classic/outfit/蓝白学院风连衣裙.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/黑色齐刘海麻花辫.gif"
+        ],
+        "nativeBaselineScore": 100,
+        "pose": "松垂袖臂 · 裙装",
+        "sample": 4,
+        "source": "qq-show-classic/outfit/蓝白学院风连衣裙.gif",
+        "src": "/assets-classic/native-review/body-corpus/04.png"
+      },
+      {
+        "analysis": {
+          "bodyAndJoints": "胸肩侧向，裸臂沿腰外弯成柔和长弧；双手与花束低位重叠。裙身一侧外鼓、另一侧收向腰，腿脚完全不可见。",
+          "brushColorMaterial": "紫裙用深紫褶谷、淡紫大亮面与少量白色闪点形成缎光；边饰金色不处处同粗。皮肤维持橙暖暗边和浅肤面，避免与紫色暗边混用。",
+          "hairContourAndHighlights": "金棕盘卷以暗根定位体积，局部圆卷与花饰交织，亮点集中在头顶和卷峰，后发不围成均匀发圈。",
+          "nonTransferable": "整裙大块面不是人体体块；腰侧布料遮挡不能作为精确裸胯真值；闪光不应被当高频噪点。",
+          "title": "紫色礼裙侧收持花",
+          "transferable": "借礼裙的主次褶面、斜向裸臂与持物、花形头饰小亮点；Claude花徽与GPT礼裙可参考。"
+        },
+        "analysisActuallyViewed": true,
+        "composition": "Curated combination of real original female outfit, matching back hair if present, original default makeup, and a different original front hairstyle. No added default limbs; not claimed an original official bundled outfit.",
+        "frame": 0,
+        "hair": "qq-show-classic/front-hair/金棕雏菊发饰罗马卷.gif",
+        "id": "10",
+        "imageHash": "97cc4b9f7392eef5769178ec8ec83bbe5d2866890248a2f5fdf3fb6639d26966",
+        "label": "紫色礼裙侧收持花",
+        "layers": [
+          "qq-show-classic/outfit/紫色礼裙花束套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/金棕雏菊发饰罗马卷.gif"
+        ],
+        "nativeBaselineScore": 100,
+        "pose": "礼裙持花 · 侧收前臂",
+        "sample": 10,
+        "source": "qq-show-classic/outfit/紫色礼裙花束套装.gif",
+        "src": "/assets-classic/native-review/body-corpus/10.png"
+      },
+      {
+        "analysis": {
+          "bodyAndJoints": "躯干明显前倾，一侧胳膊抬至脸侧、另一侧臂向身后伸出握麦；肩—肘—腕由连续折弧表达，上臂和前臂粗细仍与default相近。胯后移、双腿由直裤包覆。",
+          "brushColorMaterial": "裸臂边缘为暖橙深线，手指围绕黑麦形成对向拇指；牛仔褶用偏灰蓝的密集窄色阶，裤兜与褶谷分开，红袖/腕饰有鲜明材质亮面。",
+          "hairContourAndHighlights": "酒红双马尾用近黑外缘、红棕亮束和蓝白结形配件，细辫不必逐根同亮；齐刘海的底边完整但有细小节奏。",
+          "nonTransferable": "宽裤管不是裸腿；动作前倾不是所有AI都应弯腰；麦的透视和斧/书不同，不能复用同一手形。",
+          "title": "牛仔背带持麦",
+          "transferable": "借前倾姿态仍保持classic手臂密度，以及道具握持的掌指关系；说明身体可以变姿而非把细杆斜放。"
+        },
+        "analysisActuallyViewed": true,
+        "composition": "Curated combination of real original female outfit, matching back hair if present, original default makeup, and a different original front hairstyle. No added default limbs; not claimed an original official bundled outfit.",
+        "frame": 0,
+        "hair": "qq-show-classic/front-hair/酒红双马尾.gif",
+        "id": "16",
+        "imageHash": "fb624b9fbe3e853bb9b66582cfb5993197a1905ab4ff958cbb380621d662ec5b",
+        "label": "牛仔背带持麦",
+        "layers": [
+          "qq-show-classic/outfit/吊带牛仔裤麦克风套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/酒红双马尾.gif"
+        ],
+        "nativeBaselineScore": 100,
+        "pose": "持麦 · 裸肩长裤",
+        "sample": 16,
+        "source": "qq-show-classic/outfit/吊带牛仔裤麦克风套装.gif",
+        "src": "/assets-classic/native-review/body-corpus/16.png"
+      },
+      {
+        "analysis": {
+          "bodyAndJoints": "身体修长近正面，一肩略高，左右胳膊贴身下垂；持包手在大腿外侧，手指和提带相交。胯腿由长上衣和喇叭裤包住，脚分前后。",
+          "brushColorMaterial": "裸臂暖边为细实线，腕处只加短阴影；碎花纹样稀疏有色块间隔，牛仔裤用深蓝大形、青蓝缝影与裤脚亮点，包是红色折面。",
+          "hairContourAndHighlights": "深棕梨花头以大暗底和竖向细亮束塑造头顶、下部内卷以成组高光，眉眼周围留出清楚脸形。",
+          "nonTransferable": "裤管不能当腿厚，长吊带边界不能当裸腰；小包的硬折面不能迁移成肤色硬块。",
+          "title": "碎花吊带牛仔持包",
+          "transferable": "借手袋链/提手与手指关系、自然贴身臂、不均匀但有方向的发束高光；直接参考Qwen手袋。"
+        },
+        "analysisActuallyViewed": true,
+        "composition": "Curated combination of real original female outfit, matching back hair if present, original default makeup, and a different original front hairstyle. No added default limbs; not claimed an original official bundled outfit.",
+        "frame": 0,
+        "hair": "qq-show-classic/front-hair/深棕梨花头.gif",
+        "id": "09",
+        "imageHash": "7d9023e477d336bcbc3d40a1ebbfce00e18c818128c385f3c579edd79a252d5d",
+        "label": "碎花吊带牛仔持包",
+        "layers": [
+          "qq-show-classic/outfit/白色碎花吊带牛仔套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/深棕梨花头.gif"
+        ],
+        "nativeBaselineScore": 100,
+        "pose": "手持包 · 修长下肢",
+        "sample": 9,
+        "source": "qq-show-classic/outfit/白色碎花吊带牛仔套装.gif",
+        "src": "/assets-classic/native-review/body-corpus/09.png"
+      }
+    ],
+    "selectedIds": [
+      "08",
+      "04",
+      "10",
+      "16",
+      "09"
+    ],
+    "selectionMode": "random",
+    "total": 20
+  },
+  "bodyHash": "9d202ed7daa5fac24cd42ef6978ec23d45eae05cbc00e82adb0ee162f10c9d76",
+  "bodyReady": true,
+  "cases": [
+    {
+      "actualAiLayers": [
+        {
+          "artworkHash": "c58ce4b366371320cbdf588cbcd89691c2867403e3d5577c9a96d928cef5a80e",
+          "design": "/assets-classic/grok/remake/hair-back-design.svg",
+          "itemId": "grok-hair",
+          "key": "grok-hair-0",
+          "name": "金砂双马尾",
+          "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+          "slot": "hair",
+          "src": "/assets-classic/grok/remake/hair-back.png",
+          "svg": "/assets-classic/grok/remake/hair-back.svg",
+          "variantRole": "own-pose",
+          "z": 20
+        },
+        {
+          "artworkHash": "0f3128880b2cdcb39f9e3379cfdc3563ef2da32bff68fdbdf3e1325b8d0e2f16",
+          "itemId": "grok-face",
+          "key": "grok-face-0",
+          "name": "碧蓝自信浅笑",
+          "reviewFamilyHash": "67c9caf9e1554f8e20d1c81d3be9659c4654e075788b5bd03ebff6d46ff62f16",
+          "slot": "face",
+          "src": "/assets-classic/grok/remake/face.png",
+          "svg": "/assets-classic/grok/remake/face.svg",
+          "variantRole": "own-pose",
+          "z": 70
+        },
+        {
+          "artworkHash": "a4f59f0f9e5abd510305e76ba4a92914cf257010897947c24ee5ec65401ec7c1",
+          "design": "/assets-classic/grok/remake/hair-front-design.svg",
+          "itemId": "grok-hair",
+          "key": "grok-hair-1",
+          "name": "金砂双马尾",
+          "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+          "slot": "hair",
+          "src": "/assets-classic/grok/remake/hair-front.png",
+          "svg": "/assets-classic/grok/remake/hair-front.svg",
+          "variantRole": "own-pose",
+          "z": 80
+        }
+      ],
+      "aiLayers": [
+        {
+          "animatedSrc": "/assets-classic/native-review/background-12-original.gif",
+          "artworkHash": "c5a3525e19d93aadcfb2350aa9d7ec122c701865565a7075a01269da69a3e892",
+          "itemId": "native-background-12",
+          "key": "native-background-12-0",
+          "name": "清凉海滩",
+          "slot": "background",
+          "src": "/assets-classic/native-review/background-12.png",
+          "svg": "/assets-classic/native-review/background-12.svg",
+          "variantRole": "default",
+          "z": 0
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/aura-1-original.gif",
+          "artworkHash": "52d51d6fefdb690e22289b8c73bdc56b8efdb5c8bd498bdbb77873e28990febf",
+          "itemId": "native-aura-1",
+          "key": "native-aura-1-0",
+          "name": "爱心粉云",
+          "slot": "aura",
+          "src": "/assets-classic/native-review/aura-1.png",
+          "svg": "/assets-classic/native-review/aura-1.svg",
+          "variantRole": "default",
+          "z": 5
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/back-13-original.gif",
+          "artworkHash": "099256660605569c6525c3786908694850aead2698c0ff87fe773c2b2f24a852",
+          "itemId": "native-back-13",
+          "key": "native-back-13-0",
+          "name": "闪粉蝴蝶",
+          "slot": "back",
+          "src": "/assets-classic/native-review/back-13.png",
+          "svg": "/assets-classic/native-review/back-13.svg",
+          "variantRole": "default",
+          "z": 10
+        },
+        {
+          "artworkHash": "c58ce4b366371320cbdf588cbcd89691c2867403e3d5577c9a96d928cef5a80e",
+          "design": "/assets-classic/grok/remake/hair-back-design.svg",
+          "itemId": "grok-hair",
+          "key": "grok-hair-0",
+          "name": "金砂双马尾",
+          "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+          "slot": "hair",
+          "src": "/assets-classic/grok/remake/hair-back.png",
+          "svg": "/assets-classic/grok/remake/hair-back.svg",
+          "variantRole": "own-pose",
+          "z": 20
+        },
+        {
+          "artworkHash": "5dfc6f0e5bdda63edaec0b803340331b93b186f7b67ea3547f0cc4d3788f430e",
+          "coversItemIds": [
+            "native-bottom-15",
+            "native-legs-15"
+          ],
+          "coversSlots": [
+            "bottom",
+            "legs"
+          ],
+          "itemId": "native-bottom-15",
+          "key": "native-bottom-15-original-full-lower",
+          "name": "紫兰牛仔阔腿裤",
+          "nativeLowerRole": "original-full-lower",
+          "nativeOriginal": true,
+          "nativeSourceKey": "native-lower-15",
+          "slot": "bottom",
+          "sourceHash": "0063f0601489a7c7a0c51e92ecf7d007eb6818f0496b7e800ae426c3c43ec933",
+          "src": "/assets-classic/native-review/lower-15-original-full.png",
+          "svg": "/assets-classic/native-review/lower-15-original-full.svg",
+          "z": 40
+        },
+        {
+          "artworkHash": "c74da54f1c43c1a848256656468c75dabaa1f6662b2867113dbbd9c0b1193897",
+          "itemId": "native-top-20",
+          "key": "native-top-20-0",
+          "name": "蓝青竖纹长袖",
+          "slot": "top",
+          "src": "/assets-classic/native-review/top-20.png",
+          "svg": "/assets-classic/native-review/top-20.svg",
+          "variantRole": "default",
+          "z": 50
+        },
+        {
+          "artworkHash": "0f3128880b2cdcb39f9e3379cfdc3563ef2da32bff68fdbdf3e1325b8d0e2f16",
+          "itemId": "grok-face",
+          "key": "grok-face-0",
+          "name": "碧蓝自信浅笑",
+          "reviewFamilyHash": "67c9caf9e1554f8e20d1c81d3be9659c4654e075788b5bd03ebff6d46ff62f16",
+          "slot": "face",
+          "src": "/assets-classic/grok/remake/face.png",
+          "svg": "/assets-classic/grok/remake/face.svg",
+          "variantRole": "own-pose",
+          "z": 70
+        },
+        {
+          "artworkHash": "a4f59f0f9e5abd510305e76ba4a92914cf257010897947c24ee5ec65401ec7c1",
+          "design": "/assets-classic/grok/remake/hair-front-design.svg",
+          "itemId": "grok-hair",
+          "key": "grok-hair-1",
+          "name": "金砂双马尾",
+          "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+          "slot": "hair",
+          "src": "/assets-classic/grok/remake/hair-front.png",
+          "svg": "/assets-classic/grok/remake/hair-front.svg",
+          "variantRole": "own-pose",
+          "z": 80
+        },
+        {
+          "artworkHash": "d70dced84c25b1c0a86fd721ed4bef1c8f81f5b3373b76a1f88271643e94a2fd",
+          "itemId": "native-headwear-1",
+          "key": "native-headwear-1-0",
+          "name": "白色蝴蝶结",
+          "slot": "headwear",
+          "src": "/assets-classic/native-review/headwear-1.png",
+          "svg": "/assets-classic/native-review/headwear-1.svg",
+          "variantRole": "default",
+          "z": 90
+        },
+        {
+          "artworkHash": "d5d017648eba2362f79c33b445638734829c622106b8f79139a9be7d8d16b606",
+          "itemId": "native-prop-16",
+          "key": "native-prop-16-0",
+          "name": "红白电吉他",
+          "slot": "prop",
+          "src": "/assets-classic/native-review/prop-16.png",
+          "svg": "/assets-classic/native-review/prop-16.svg",
+          "variantRole": "default",
+          "z": 100
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/effect-10-original.gif",
+          "artworkHash": "ec6ffc8ba660a2fb2c76750e8e3713f124b7f95ded8ec7c025f2679deb5e35c7",
+          "itemId": "native-effect-10",
+          "key": "native-effect-10-0",
+          "name": "魔法封印",
+          "slot": "effect",
+          "src": "/assets-classic/native-review/effect-10.png",
+          "svg": "/assets-classic/native-review/effect-10.svg",
+          "variantRole": "default",
+          "z": 110
+        }
+      ],
+      "aiSelection": {
+        "aura": "native-aura-1",
+        "back": "native-back-13",
+        "background": "native-background-12",
+        "bottom": "native-bottom-15",
+        "effect": "native-effect-10",
+        "face": "grok-face",
+        "hair": "grok-hair",
+        "headwear": "native-headwear-1",
+        "legs": "native-legs-15",
+        "prop": "native-prop-16",
+        "top": "native-top-20"
+      },
+      "baselineLayers": [
+        {
+          "animatedSrc": "/assets-classic/native-review/background-12-original.gif",
+          "artworkHash": "c5a3525e19d93aadcfb2350aa9d7ec122c701865565a7075a01269da69a3e892",
+          "itemId": "native-background-12",
+          "key": "native-background-12-0",
+          "name": "清凉海滩",
+          "slot": "background",
+          "src": "/assets-classic/native-review/background-12.png",
+          "svg": "/assets-classic/native-review/background-12.svg",
+          "variantRole": "default",
+          "z": 0
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/aura-1-original.gif",
+          "artworkHash": "52d51d6fefdb690e22289b8c73bdc56b8efdb5c8bd498bdbb77873e28990febf",
+          "itemId": "native-aura-1",
+          "key": "native-aura-1-0",
+          "name": "爱心粉云",
+          "slot": "aura",
+          "src": "/assets-classic/native-review/aura-1.png",
+          "svg": "/assets-classic/native-review/aura-1.svg",
+          "variantRole": "default",
+          "z": 5
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/back-13-original.gif",
+          "artworkHash": "099256660605569c6525c3786908694850aead2698c0ff87fe773c2b2f24a852",
+          "itemId": "native-back-13",
+          "key": "native-back-13-0",
+          "name": "闪粉蝴蝶",
+          "slot": "back",
+          "src": "/assets-classic/native-review/back-13.png",
+          "svg": "/assets-classic/native-review/back-13.svg",
+          "variantRole": "default",
+          "z": 10
+        },
+        {
+          "artworkHash": "5dfc6f0e5bdda63edaec0b803340331b93b186f7b67ea3547f0cc4d3788f430e",
+          "coversItemIds": [
+            "native-bottom-15",
+            "native-legs-15"
+          ],
+          "coversSlots": [
+            "bottom",
+            "legs"
+          ],
+          "itemId": "native-bottom-15",
+          "key": "native-bottom-15-original-full-lower",
+          "name": "紫兰牛仔阔腿裤",
+          "nativeLowerRole": "original-full-lower",
+          "nativeOriginal": true,
+          "nativeSourceKey": "native-lower-15",
+          "slot": "bottom",
+          "sourceHash": "0063f0601489a7c7a0c51e92ecf7d007eb6818f0496b7e800ae426c3c43ec933",
+          "src": "/assets-classic/native-review/lower-15-original-full.png",
+          "svg": "/assets-classic/native-review/lower-15-original-full.svg",
+          "z": 40
+        },
+        {
+          "artworkHash": "c74da54f1c43c1a848256656468c75dabaa1f6662b2867113dbbd9c0b1193897",
+          "itemId": "native-top-20",
+          "key": "native-top-20-0",
+          "name": "蓝青竖纹长袖",
+          "slot": "top",
+          "src": "/assets-classic/native-review/top-20.png",
+          "svg": "/assets-classic/native-review/top-20.svg",
+          "variantRole": "default",
+          "z": 50
+        },
+        {
+          "artworkHash": "f65fe65c879bd86c6e097d3f12efc948354bcc36bc2e0ae72417fd90bd452916",
+          "itemId": "native-face-2",
+          "key": "native-face-2-0",
+          "name": "湖蓝微笑",
+          "slot": "face",
+          "src": "/assets-classic/native-review/face-2.png",
+          "svg": "/assets-classic/native-review/face-2.svg",
+          "variantRole": "default",
+          "z": 60
+        },
+        {
+          "artworkHash": "66c1c3bec0093e90e7cd670c56d85eddd2e4645e9e9a929cb44d51dae276f4ce",
+          "itemId": "native-hair-19",
+          "key": "native-hair-19-0",
+          "name": "电力橙双马尾",
+          "slot": "hair",
+          "src": "/assets-classic/native-review/hair-19-front.png",
+          "svg": "/assets-classic/native-review/hair-19-front.svg",
+          "variantRole": "default",
+          "z": 80
+        },
+        {
+          "artworkHash": "d70dced84c25b1c0a86fd721ed4bef1c8f81f5b3373b76a1f88271643e94a2fd",
+          "itemId": "native-headwear-1",
+          "key": "native-headwear-1-0",
+          "name": "白色蝴蝶结",
+          "slot": "headwear",
+          "src": "/assets-classic/native-review/headwear-1.png",
+          "svg": "/assets-classic/native-review/headwear-1.svg",
+          "variantRole": "default",
+          "z": 90
+        },
+        {
+          "artworkHash": "d5d017648eba2362f79c33b445638734829c622106b8f79139a9be7d8d16b606",
+          "itemId": "native-prop-16",
+          "key": "native-prop-16-0",
+          "name": "红白电吉他",
+          "slot": "prop",
+          "src": "/assets-classic/native-review/prop-16.png",
+          "svg": "/assets-classic/native-review/prop-16.svg",
+          "variantRole": "default",
+          "z": 100
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/effect-10-original.gif",
+          "artworkHash": "ec6ffc8ba660a2fb2c76750e8e3713f124b7f95ded8ec7c025f2679deb5e35c7",
+          "itemId": "native-effect-10",
+          "key": "native-effect-10-0",
+          "name": "魔法封印",
+          "slot": "effect",
+          "src": "/assets-classic/native-review/effect-10.png",
+          "svg": "/assets-classic/native-review/effect-10.svg",
+          "variantRole": "default",
+          "z": 110
+        }
+      ],
+      "fixtureIndex": 0,
+      "forcedCurrentVersion": true,
+      "id": "grok-head2-sd618253f-a0-f0",
+      "isolatedNativeLayers": [
+        {
+          "artworkHash": "f65fe65c879bd86c6e097d3f12efc948354bcc36bc2e0ae72417fd90bd452916",
+          "itemId": "native-face-2",
+          "key": "native-face-2-0",
+          "name": "湖蓝微笑",
+          "slot": "face",
+          "src": "/assets-classic/native-review/face-2.png",
+          "svg": "/assets-classic/native-review/face-2.svg",
+          "variantRole": "default",
+          "z": 60
+        },
+        {
+          "artworkHash": "66c1c3bec0093e90e7cd670c56d85eddd2e4645e9e9a929cb44d51dae276f4ce",
+          "itemId": "native-hair-19",
+          "key": "native-hair-19-0",
+          "name": "电力橙双马尾",
+          "slot": "hair",
+          "src": "/assets-classic/native-review/hair-19-front.png",
+          "svg": "/assets-classic/native-review/hair-19-front.svg",
+          "variantRole": "default",
+          "z": 80
+        }
+      ],
+      "nativeSelection": {
+        "aura": "native-aura-1",
+        "back": "native-back-13",
+        "background": "native-background-12",
+        "bottom": "native-bottom-15",
+        "effect": "native-effect-10",
+        "face": "native-face-2",
+        "hair": "native-hair-19",
+        "headwear": "native-headwear-1",
+        "legs": "native-legs-15",
+        "prop": "native-prop-16",
+        "top": "native-top-20"
+      },
+      "seed": "closeout-r25-grok-head2-m50elr7l",
+      "selectedAiSlots": [
+        "hair",
+        "face"
+      ],
+      "selectedItemIDs": {
+        "face": "grok-face",
+        "hair": "grok-hair"
+      },
+      "substitutedItemId": null,
+      "substitutedSlot": null
+    },
+    {
+      "actualAiLayers": [
+        {
+          "artworkHash": "c58ce4b366371320cbdf588cbcd89691c2867403e3d5577c9a96d928cef5a80e",
+          "design": "/assets-classic/grok/remake/hair-back-design.svg",
+          "itemId": "grok-hair",
+          "key": "grok-hair-0",
+          "name": "金砂双马尾",
+          "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+          "slot": "hair",
+          "src": "/assets-classic/grok/remake/hair-back.png",
+          "svg": "/assets-classic/grok/remake/hair-back.svg",
+          "variantRole": "own-pose",
+          "z": 20
+        },
+        {
+          "artworkHash": "0f3128880b2cdcb39f9e3379cfdc3563ef2da32bff68fdbdf3e1325b8d0e2f16",
+          "itemId": "grok-face",
+          "key": "grok-face-0",
+          "name": "碧蓝自信浅笑",
+          "reviewFamilyHash": "67c9caf9e1554f8e20d1c81d3be9659c4654e075788b5bd03ebff6d46ff62f16",
+          "slot": "face",
+          "src": "/assets-classic/grok/remake/face.png",
+          "svg": "/assets-classic/grok/remake/face.svg",
+          "variantRole": "own-pose",
+          "z": 70
+        },
+        {
+          "artworkHash": "a4f59f0f9e5abd510305e76ba4a92914cf257010897947c24ee5ec65401ec7c1",
+          "design": "/assets-classic/grok/remake/hair-front-design.svg",
+          "itemId": "grok-hair",
+          "key": "grok-hair-1",
+          "name": "金砂双马尾",
+          "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+          "slot": "hair",
+          "src": "/assets-classic/grok/remake/hair-front.png",
+          "svg": "/assets-classic/grok/remake/hair-front.svg",
+          "variantRole": "own-pose",
+          "z": 80
+        }
+      ],
+      "aiLayers": [
+        {
+          "animatedSrc": "/assets-classic/native-review/background-20-original.gif",
+          "artworkHash": "94707b1aa3372f63fe15418bd40b9f36419695782a1cfd035cedb1923e35b825",
+          "itemId": "native-background-20",
+          "key": "native-background-20-0",
+          "name": "灯光幻彩",
+          "slot": "background",
+          "src": "/assets-classic/native-review/background-20.png",
+          "svg": "/assets-classic/native-review/background-20.svg",
+          "variantRole": "default",
+          "z": 0
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/aura-16-original.gif",
+          "artworkHash": "681fff7457e2fdf1e8e67955d940d696b8eacefcc6946c896d06e58b1211e6c3",
+          "itemId": "native-aura-16",
+          "key": "native-aura-16-0",
+          "name": "蓝色聚光灯",
+          "slot": "aura",
+          "src": "/assets-classic/native-review/aura-16.png",
+          "svg": "/assets-classic/native-review/aura-16.svg",
+          "variantRole": "default",
+          "z": 5
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/back-17-original.gif",
+          "artworkHash": "18a97654dafc7047c0a1c7263cd80105c4be7d01674171dc72bb61ab32510433",
+          "itemId": "native-back-17",
+          "key": "native-back-17-0",
+          "name": "炫紫赛博",
+          "slot": "back",
+          "src": "/assets-classic/native-review/back-17.png",
+          "svg": "/assets-classic/native-review/back-17.svg",
+          "variantRole": "default",
+          "z": 10
+        },
+        {
+          "artworkHash": "c58ce4b366371320cbdf588cbcd89691c2867403e3d5577c9a96d928cef5a80e",
+          "design": "/assets-classic/grok/remake/hair-back-design.svg",
+          "itemId": "grok-hair",
+          "key": "grok-hair-0",
+          "name": "金砂双马尾",
+          "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+          "slot": "hair",
+          "src": "/assets-classic/grok/remake/hair-back.png",
+          "svg": "/assets-classic/grok/remake/hair-back.svg",
+          "variantRole": "own-pose",
+          "z": 20
+        },
+        {
+          "artworkHash": "78a25ed4b37bd2dd175e9f8e63b4804049167e191166be8d18f70186736ad61a",
+          "coversItemIds": [
+            "native-bottom-9",
+            "native-legs-9"
+          ],
+          "coversSlots": [
+            "bottom",
+            "legs"
+          ],
+          "itemId": "native-bottom-9",
+          "key": "native-bottom-9-original-full-lower",
+          "name": "黑曜长靴短裙",
+          "nativeLowerRole": "original-full-lower",
+          "nativeOriginal": true,
+          "nativeSourceKey": "native-lower-9",
+          "slot": "bottom",
+          "sourceHash": "c04670c354c2f715c6e9b5537013c152b4d4d9e6e873accec3266301dde8333f",
+          "src": "/assets-classic/native-review/lower-9-original-full.png",
+          "svg": "/assets-classic/native-review/lower-9-original-full.svg",
+          "z": 40
+        },
+        {
+          "artworkHash": "a4440d242da2bd8407b759ba6ab7b892280fbc80060c050e49c510409806c569",
+          "itemId": "native-top-16",
+          "key": "native-top-16-0",
+          "name": "白色休闲西装",
+          "slot": "top",
+          "src": "/assets-classic/native-review/top-16.png",
+          "svg": "/assets-classic/native-review/top-16.svg",
+          "variantRole": "default",
+          "z": 50
+        },
+        {
+          "artworkHash": "0f3128880b2cdcb39f9e3379cfdc3563ef2da32bff68fdbdf3e1325b8d0e2f16",
+          "itemId": "grok-face",
+          "key": "grok-face-0",
+          "name": "碧蓝自信浅笑",
+          "reviewFamilyHash": "67c9caf9e1554f8e20d1c81d3be9659c4654e075788b5bd03ebff6d46ff62f16",
+          "slot": "face",
+          "src": "/assets-classic/grok/remake/face.png",
+          "svg": "/assets-classic/grok/remake/face.svg",
+          "variantRole": "own-pose",
+          "z": 70
+        },
+        {
+          "artworkHash": "a4f59f0f9e5abd510305e76ba4a92914cf257010897947c24ee5ec65401ec7c1",
+          "design": "/assets-classic/grok/remake/hair-front-design.svg",
+          "itemId": "grok-hair",
+          "key": "grok-hair-1",
+          "name": "金砂双马尾",
+          "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+          "slot": "hair",
+          "src": "/assets-classic/grok/remake/hair-front.png",
+          "svg": "/assets-classic/grok/remake/hair-front.svg",
+          "variantRole": "own-pose",
+          "z": 80
+        },
+        {
+          "artworkHash": "00934ed3b4fdc9d10547d002f5252e707cd0ca71176a41e8150554156a4be20a",
+          "itemId": "native-headwear-15",
+          "key": "native-headwear-15-0",
+          "name": "牛仔蓝报童帽",
+          "slot": "headwear",
+          "src": "/assets-classic/native-review/headwear-15.png",
+          "svg": "/assets-classic/native-review/headwear-15.svg",
+          "variantRole": "default",
+          "z": 90
+        },
+        {
+          "artworkHash": "86fe054f482e657841c900bf63c7a67e37d7816dd2ab70f4dc7f066b5cdd5f46",
+          "itemId": "native-prop-7",
+          "key": "native-prop-7-0",
+          "name": "粉色挂坠腰链",
+          "slot": "prop",
+          "src": "/assets-classic/native-review/prop-7.png",
+          "svg": "/assets-classic/native-review/prop-7.svg",
+          "variantRole": "default",
+          "z": 100
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/effect-17-original.gif",
+          "artworkHash": "bfe295678f554a38e2ce4f4b3ace1aae109caecf2fbdeb69d017ed90b0b18651",
+          "itemId": "native-effect-17",
+          "key": "native-effect-17-0",
+          "name": "星星爱心泡泡",
+          "slot": "effect",
+          "src": "/assets-classic/native-review/effect-17.png",
+          "svg": "/assets-classic/native-review/effect-17.svg",
+          "variantRole": "default",
+          "z": 110
+        }
+      ],
+      "aiSelection": {
+        "aura": "native-aura-16",
+        "back": "native-back-17",
+        "background": "native-background-20",
+        "bottom": "native-bottom-9",
+        "effect": "native-effect-17",
+        "face": "grok-face",
+        "hair": "grok-hair",
+        "headwear": "native-headwear-15",
+        "legs": "native-legs-9",
+        "prop": "native-prop-7",
+        "top": "native-top-16"
+      },
+      "baselineLayers": [
+        {
+          "animatedSrc": "/assets-classic/native-review/background-20-original.gif",
+          "artworkHash": "94707b1aa3372f63fe15418bd40b9f36419695782a1cfd035cedb1923e35b825",
+          "itemId": "native-background-20",
+          "key": "native-background-20-0",
+          "name": "灯光幻彩",
+          "slot": "background",
+          "src": "/assets-classic/native-review/background-20.png",
+          "svg": "/assets-classic/native-review/background-20.svg",
+          "variantRole": "default",
+          "z": 0
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/aura-16-original.gif",
+          "artworkHash": "681fff7457e2fdf1e8e67955d940d696b8eacefcc6946c896d06e58b1211e6c3",
+          "itemId": "native-aura-16",
+          "key": "native-aura-16-0",
+          "name": "蓝色聚光灯",
+          "slot": "aura",
+          "src": "/assets-classic/native-review/aura-16.png",
+          "svg": "/assets-classic/native-review/aura-16.svg",
+          "variantRole": "default",
+          "z": 5
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/back-17-original.gif",
+          "artworkHash": "18a97654dafc7047c0a1c7263cd80105c4be7d01674171dc72bb61ab32510433",
+          "itemId": "native-back-17",
+          "key": "native-back-17-0",
+          "name": "炫紫赛博",
+          "slot": "back",
+          "src": "/assets-classic/native-review/back-17.png",
+          "svg": "/assets-classic/native-review/back-17.svg",
+          "variantRole": "default",
+          "z": 10
+        },
+        {
+          "artworkHash": "78a25ed4b37bd2dd175e9f8e63b4804049167e191166be8d18f70186736ad61a",
+          "coversItemIds": [
+            "native-bottom-9",
+            "native-legs-9"
+          ],
+          "coversSlots": [
+            "bottom",
+            "legs"
+          ],
+          "itemId": "native-bottom-9",
+          "key": "native-bottom-9-original-full-lower",
+          "name": "黑曜长靴短裙",
+          "nativeLowerRole": "original-full-lower",
+          "nativeOriginal": true,
+          "nativeSourceKey": "native-lower-9",
+          "slot": "bottom",
+          "sourceHash": "c04670c354c2f715c6e9b5537013c152b4d4d9e6e873accec3266301dde8333f",
+          "src": "/assets-classic/native-review/lower-9-original-full.png",
+          "svg": "/assets-classic/native-review/lower-9-original-full.svg",
+          "z": 40
+        },
+        {
+          "artworkHash": "a4440d242da2bd8407b759ba6ab7b892280fbc80060c050e49c510409806c569",
+          "itemId": "native-top-16",
+          "key": "native-top-16-0",
+          "name": "白色休闲西装",
+          "slot": "top",
+          "src": "/assets-classic/native-review/top-16.png",
+          "svg": "/assets-classic/native-review/top-16.svg",
+          "variantRole": "default",
+          "z": 50
+        },
+        {
+          "artworkHash": "01d1742789f59d163f0aea936aa1be424c8586c084cdc54cdc083f8257a9d84c",
+          "itemId": "native-face-6",
+          "key": "native-face-6-0",
+          "name": "腮红棕眼",
+          "slot": "face",
+          "src": "/assets-classic/native-review/face-6.png",
+          "svg": "/assets-classic/native-review/face-6.svg",
+          "variantRole": "default",
+          "z": 60
+        },
+        {
+          "animatedArtworkHash": "3e81935c1e5c515a514f096f2cb5ac3053424edb61f20482047788264bb0221c",
+          "animatedSrc": "/assets-classic/native-review/hair-20-front-original.gif",
+          "artworkHash": "d01eebba562f98386e8183c31647dd2763de81e3c1efdb1b89ace6b319041ec1",
+          "itemId": "native-hair-20",
+          "key": "native-hair-20-0",
+          "name": "动漫金棕短发",
+          "slot": "hair",
+          "src": "/assets-classic/native-review/hair-20-front.png",
+          "svg": "/assets-classic/native-review/hair-20-front.svg",
+          "variantRole": "default",
+          "z": 80
+        },
+        {
+          "artworkHash": "00934ed3b4fdc9d10547d002f5252e707cd0ca71176a41e8150554156a4be20a",
+          "itemId": "native-headwear-15",
+          "key": "native-headwear-15-0",
+          "name": "牛仔蓝报童帽",
+          "slot": "headwear",
+          "src": "/assets-classic/native-review/headwear-15.png",
+          "svg": "/assets-classic/native-review/headwear-15.svg",
+          "variantRole": "default",
+          "z": 90
+        },
+        {
+          "artworkHash": "86fe054f482e657841c900bf63c7a67e37d7816dd2ab70f4dc7f066b5cdd5f46",
+          "itemId": "native-prop-7",
+          "key": "native-prop-7-0",
+          "name": "粉色挂坠腰链",
+          "slot": "prop",
+          "src": "/assets-classic/native-review/prop-7.png",
+          "svg": "/assets-classic/native-review/prop-7.svg",
+          "variantRole": "default",
+          "z": 100
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/effect-17-original.gif",
+          "artworkHash": "bfe295678f554a38e2ce4f4b3ace1aae109caecf2fbdeb69d017ed90b0b18651",
+          "itemId": "native-effect-17",
+          "key": "native-effect-17-0",
+          "name": "星星爱心泡泡",
+          "slot": "effect",
+          "src": "/assets-classic/native-review/effect-17.png",
+          "svg": "/assets-classic/native-review/effect-17.svg",
+          "variantRole": "default",
+          "z": 110
+        }
+      ],
+      "fixtureIndex": 1,
+      "forcedCurrentVersion": true,
+      "id": "grok-head2-sd618253f-a0-f1",
+      "isolatedNativeLayers": [
+        {
+          "artworkHash": "01d1742789f59d163f0aea936aa1be424c8586c084cdc54cdc083f8257a9d84c",
+          "itemId": "native-face-6",
+          "key": "native-face-6-0",
+          "name": "腮红棕眼",
+          "slot": "face",
+          "src": "/assets-classic/native-review/face-6.png",
+          "svg": "/assets-classic/native-review/face-6.svg",
+          "variantRole": "default",
+          "z": 60
+        },
+        {
+          "animatedArtworkHash": "3e81935c1e5c515a514f096f2cb5ac3053424edb61f20482047788264bb0221c",
+          "animatedSrc": "/assets-classic/native-review/hair-20-front-original.gif",
+          "artworkHash": "d01eebba562f98386e8183c31647dd2763de81e3c1efdb1b89ace6b319041ec1",
+          "itemId": "native-hair-20",
+          "key": "native-hair-20-0",
+          "name": "动漫金棕短发",
+          "slot": "hair",
+          "src": "/assets-classic/native-review/hair-20-front.png",
+          "svg": "/assets-classic/native-review/hair-20-front.svg",
+          "variantRole": "default",
+          "z": 80
+        }
+      ],
+      "nativeSelection": {
+        "aura": "native-aura-16",
+        "back": "native-back-17",
+        "background": "native-background-20",
+        "bottom": "native-bottom-9",
+        "effect": "native-effect-17",
+        "face": "native-face-6",
+        "hair": "native-hair-20",
+        "headwear": "native-headwear-15",
+        "legs": "native-legs-9",
+        "prop": "native-prop-7",
+        "top": "native-top-16"
+      },
+      "seed": "closeout-r25-grok-head2-m50elr7l",
+      "selectedAiSlots": [
+        "hair",
+        "face"
+      ],
+      "selectedItemIDs": {
+        "face": "grok-face",
+        "hair": "grok-hair"
+      },
+      "substitutedItemId": null,
+      "substitutedSlot": null
+    },
+    {
+      "actualAiLayers": [
+        {
+          "artworkHash": "c58ce4b366371320cbdf588cbcd89691c2867403e3d5577c9a96d928cef5a80e",
+          "design": "/assets-classic/grok/remake/hair-back-design.svg",
+          "itemId": "grok-hair",
+          "key": "grok-hair-0",
+          "name": "金砂双马尾",
+          "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+          "slot": "hair",
+          "src": "/assets-classic/grok/remake/hair-back.png",
+          "svg": "/assets-classic/grok/remake/hair-back.svg",
+          "variantRole": "own-pose",
+          "z": 20
+        },
+        {
+          "artworkHash": "0f3128880b2cdcb39f9e3379cfdc3563ef2da32bff68fdbdf3e1325b8d0e2f16",
+          "itemId": "grok-face",
+          "key": "grok-face-0",
+          "name": "碧蓝自信浅笑",
+          "reviewFamilyHash": "67c9caf9e1554f8e20d1c81d3be9659c4654e075788b5bd03ebff6d46ff62f16",
+          "slot": "face",
+          "src": "/assets-classic/grok/remake/face.png",
+          "svg": "/assets-classic/grok/remake/face.svg",
+          "variantRole": "own-pose",
+          "z": 70
+        },
+        {
+          "artworkHash": "a4f59f0f9e5abd510305e76ba4a92914cf257010897947c24ee5ec65401ec7c1",
+          "design": "/assets-classic/grok/remake/hair-front-design.svg",
+          "itemId": "grok-hair",
+          "key": "grok-hair-1",
+          "name": "金砂双马尾",
+          "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+          "slot": "hair",
+          "src": "/assets-classic/grok/remake/hair-front.png",
+          "svg": "/assets-classic/grok/remake/hair-front.svg",
+          "variantRole": "own-pose",
+          "z": 80
+        }
+      ],
+      "aiLayers": [
+        {
+          "artworkHash": "8bce410ded72ed80c50dbe48badae0a0f756cd4bcea8805abe6b295904f22438",
+          "itemId": "native-background-19",
+          "key": "native-background-19-0",
+          "name": "城市风景",
+          "slot": "background",
+          "src": "/assets-classic/native-review/background-19.png",
+          "svg": "/assets-classic/native-review/background-19.svg",
+          "variantRole": "default",
+          "z": 0
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/aura-17-original.gif",
+          "artworkHash": "fae772f45af230d99ec84468c2bee1d4c277ed1b7b8d16d4651256d7be2f00df",
+          "itemId": "native-aura-17",
+          "key": "native-aura-17-0",
+          "name": "魔法金光螺旋",
+          "slot": "aura",
+          "src": "/assets-classic/native-review/aura-17.png",
+          "svg": "/assets-classic/native-review/aura-17.svg",
+          "variantRole": "default",
+          "z": 5
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/back-9-original.gif",
+          "artworkHash": "c8765cec3136adf56700673d375de8d712d4c5404298ac69de38039bd946ddac",
+          "itemId": "native-back-9",
+          "key": "native-back-9-0",
+          "name": "黑色大天使",
+          "slot": "back",
+          "src": "/assets-classic/native-review/back-9.png",
+          "svg": "/assets-classic/native-review/back-9.svg",
+          "variantRole": "default",
+          "z": 10
+        },
+        {
+          "artworkHash": "c58ce4b366371320cbdf588cbcd89691c2867403e3d5577c9a96d928cef5a80e",
+          "design": "/assets-classic/grok/remake/hair-back-design.svg",
+          "itemId": "grok-hair",
+          "key": "grok-hair-0",
+          "name": "金砂双马尾",
+          "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+          "slot": "hair",
+          "src": "/assets-classic/grok/remake/hair-back.png",
+          "svg": "/assets-classic/grok/remake/hair-back.svg",
+          "variantRole": "own-pose",
+          "z": 20
+        },
+        {
+          "artworkHash": "6e3faedc533a244a589a24f05d25ba8050fa021489e437f539d2214fbc7f1638",
+          "coversItemIds": [
+            "native-bottom-3",
+            "native-legs-3"
+          ],
+          "coversSlots": [
+            "bottom",
+            "legs"
+          ],
+          "itemId": "native-bottom-3",
+          "key": "native-bottom-3-original-full-lower",
+          "name": "粉色短裙皮靴",
+          "nativeLowerRole": "original-full-lower",
+          "nativeOriginal": true,
+          "nativeSourceKey": "native-lower-3",
+          "slot": "bottom",
+          "sourceHash": "5f5344377b95e7864b8d53a649a94dca9601216982aa5e55624c82a408f4c8bc",
+          "src": "/assets-classic/native-review/lower-3-original-full.png",
+          "svg": "/assets-classic/native-review/lower-3-original-full.svg",
+          "z": 40
+        },
+        {
+          "artworkHash": "0254c6abae45ed15c16e4a10d397ae2ef2d162e8a9bca24795d0dc5596ea42b9",
+          "itemId": "native-top-12",
+          "key": "native-top-12-0",
+          "name": "斜肩玫瑰长袖",
+          "slot": "top",
+          "src": "/assets-classic/native-review/top-12.png",
+          "svg": "/assets-classic/native-review/top-12.svg",
+          "variantRole": "default",
+          "z": 50
+        },
+        {
+          "artworkHash": "0f3128880b2cdcb39f9e3379cfdc3563ef2da32bff68fdbdf3e1325b8d0e2f16",
+          "itemId": "grok-face",
+          "key": "grok-face-0",
+          "name": "碧蓝自信浅笑",
+          "reviewFamilyHash": "67c9caf9e1554f8e20d1c81d3be9659c4654e075788b5bd03ebff6d46ff62f16",
+          "slot": "face",
+          "src": "/assets-classic/grok/remake/face.png",
+          "svg": "/assets-classic/grok/remake/face.svg",
+          "variantRole": "own-pose",
+          "z": 70
+        },
+        {
+          "artworkHash": "a4f59f0f9e5abd510305e76ba4a92914cf257010897947c24ee5ec65401ec7c1",
+          "design": "/assets-classic/grok/remake/hair-front-design.svg",
+          "itemId": "grok-hair",
+          "key": "grok-hair-1",
+          "name": "金砂双马尾",
+          "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+          "slot": "hair",
+          "src": "/assets-classic/grok/remake/hair-front.png",
+          "svg": "/assets-classic/grok/remake/hair-front.svg",
+          "variantRole": "own-pose",
+          "z": 80
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/headwear-3-original.gif",
+          "artworkHash": "1efe85626d88f45a75a3632bf5d7caad66d4deaad703e878e5d14ec46cc1cea2",
+          "itemId": "native-headwear-3",
+          "key": "native-headwear-3-0",
+          "name": "白色小猫渔夫帽",
+          "slot": "headwear",
+          "src": "/assets-classic/native-review/headwear-3.png",
+          "svg": "/assets-classic/native-review/headwear-3.svg",
+          "variantRole": "default",
+          "z": 90
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/prop-14-original.gif",
+          "artworkHash": "8690f9340c9042ae9164b74c6dde4466305c75832d6705325a5beb421ca42ba2",
+          "itemId": "native-prop-14",
+          "key": "native-prop-14-0",
+          "name": "樱桃胸针",
+          "slot": "prop",
+          "src": "/assets-classic/native-review/prop-14.png",
+          "svg": "/assets-classic/native-review/prop-14.svg",
+          "variantRole": "default",
+          "z": 100
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/effect-4-original.gif",
+          "artworkHash": "7e6aed19bf5738b95c776e14bc03d3907388e1de9d2ad12181628fcb60e1548d",
+          "itemId": "native-effect-4",
+          "key": "native-effect-4-0",
+          "name": "粉色爱心泡泡",
+          "slot": "effect",
+          "src": "/assets-classic/native-review/effect-4.png",
+          "svg": "/assets-classic/native-review/effect-4.svg",
+          "variantRole": "default",
+          "z": 110
+        }
+      ],
+      "aiSelection": {
+        "aura": "native-aura-17",
+        "back": "native-back-9",
+        "background": "native-background-19",
+        "bottom": "native-bottom-3",
+        "effect": "native-effect-4",
+        "face": "grok-face",
+        "hair": "grok-hair",
+        "headwear": "native-headwear-3",
+        "legs": "native-legs-3",
+        "prop": "native-prop-14",
+        "top": "native-top-12"
+      },
+      "baselineLayers": [
+        {
+          "artworkHash": "8bce410ded72ed80c50dbe48badae0a0f756cd4bcea8805abe6b295904f22438",
+          "itemId": "native-background-19",
+          "key": "native-background-19-0",
+          "name": "城市风景",
+          "slot": "background",
+          "src": "/assets-classic/native-review/background-19.png",
+          "svg": "/assets-classic/native-review/background-19.svg",
+          "variantRole": "default",
+          "z": 0
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/aura-17-original.gif",
+          "artworkHash": "fae772f45af230d99ec84468c2bee1d4c277ed1b7b8d16d4651256d7be2f00df",
+          "itemId": "native-aura-17",
+          "key": "native-aura-17-0",
+          "name": "魔法金光螺旋",
+          "slot": "aura",
+          "src": "/assets-classic/native-review/aura-17.png",
+          "svg": "/assets-classic/native-review/aura-17.svg",
+          "variantRole": "default",
+          "z": 5
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/back-9-original.gif",
+          "artworkHash": "c8765cec3136adf56700673d375de8d712d4c5404298ac69de38039bd946ddac",
+          "itemId": "native-back-9",
+          "key": "native-back-9-0",
+          "name": "黑色大天使",
+          "slot": "back",
+          "src": "/assets-classic/native-review/back-9.png",
+          "svg": "/assets-classic/native-review/back-9.svg",
+          "variantRole": "default",
+          "z": 10
+        },
+        {
+          "artworkHash": "6e3faedc533a244a589a24f05d25ba8050fa021489e437f539d2214fbc7f1638",
+          "coversItemIds": [
+            "native-bottom-3",
+            "native-legs-3"
+          ],
+          "coversSlots": [
+            "bottom",
+            "legs"
+          ],
+          "itemId": "native-bottom-3",
+          "key": "native-bottom-3-original-full-lower",
+          "name": "粉色短裙皮靴",
+          "nativeLowerRole": "original-full-lower",
+          "nativeOriginal": true,
+          "nativeSourceKey": "native-lower-3",
+          "slot": "bottom",
+          "sourceHash": "5f5344377b95e7864b8d53a649a94dca9601216982aa5e55624c82a408f4c8bc",
+          "src": "/assets-classic/native-review/lower-3-original-full.png",
+          "svg": "/assets-classic/native-review/lower-3-original-full.svg",
+          "z": 40
+        },
+        {
+          "artworkHash": "0254c6abae45ed15c16e4a10d397ae2ef2d162e8a9bca24795d0dc5596ea42b9",
+          "itemId": "native-top-12",
+          "key": "native-top-12-0",
+          "name": "斜肩玫瑰长袖",
+          "slot": "top",
+          "src": "/assets-classic/native-review/top-12.png",
+          "svg": "/assets-classic/native-review/top-12.svg",
+          "variantRole": "default",
+          "z": 50
+        },
+        {
+          "artworkHash": "d5e54ee76ac771299eb5bbecd60e9bc064664bf57cbd3d3c410c909564922ec1",
+          "itemId": "native-face-14",
+          "key": "native-face-14-0",
+          "name": "金棕长睫毛大眼",
+          "slot": "face",
+          "src": "/assets-classic/native-review/face-14.png",
+          "svg": "/assets-classic/native-review/face-14.svg",
+          "variantRole": "default",
+          "z": 60
+        },
+        {
+          "artworkHash": "f4a83afe9088ee438871f363f5156b1c501cd9d9abb7b2599a566fd872913d5b",
+          "itemId": "native-hair-18",
+          "key": "native-hair-18-0",
+          "name": "冰蓝中短发",
+          "slot": "hair",
+          "src": "/assets-classic/native-review/hair-18-front.png",
+          "svg": "/assets-classic/native-review/hair-18-front.svg",
+          "variantRole": "default",
+          "z": 80
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/headwear-3-original.gif",
+          "artworkHash": "1efe85626d88f45a75a3632bf5d7caad66d4deaad703e878e5d14ec46cc1cea2",
+          "itemId": "native-headwear-3",
+          "key": "native-headwear-3-0",
+          "name": "白色小猫渔夫帽",
+          "slot": "headwear",
+          "src": "/assets-classic/native-review/headwear-3.png",
+          "svg": "/assets-classic/native-review/headwear-3.svg",
+          "variantRole": "default",
+          "z": 90
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/prop-14-original.gif",
+          "artworkHash": "8690f9340c9042ae9164b74c6dde4466305c75832d6705325a5beb421ca42ba2",
+          "itemId": "native-prop-14",
+          "key": "native-prop-14-0",
+          "name": "樱桃胸针",
+          "slot": "prop",
+          "src": "/assets-classic/native-review/prop-14.png",
+          "svg": "/assets-classic/native-review/prop-14.svg",
+          "variantRole": "default",
+          "z": 100
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/effect-4-original.gif",
+          "artworkHash": "7e6aed19bf5738b95c776e14bc03d3907388e1de9d2ad12181628fcb60e1548d",
+          "itemId": "native-effect-4",
+          "key": "native-effect-4-0",
+          "name": "粉色爱心泡泡",
+          "slot": "effect",
+          "src": "/assets-classic/native-review/effect-4.png",
+          "svg": "/assets-classic/native-review/effect-4.svg",
+          "variantRole": "default",
+          "z": 110
+        }
+      ],
+      "fixtureIndex": 2,
+      "forcedCurrentVersion": true,
+      "id": "grok-head2-sd618253f-a0-f2",
+      "isolatedNativeLayers": [
+        {
+          "artworkHash": "d5e54ee76ac771299eb5bbecd60e9bc064664bf57cbd3d3c410c909564922ec1",
+          "itemId": "native-face-14",
+          "key": "native-face-14-0",
+          "name": "金棕长睫毛大眼",
+          "slot": "face",
+          "src": "/assets-classic/native-review/face-14.png",
+          "svg": "/assets-classic/native-review/face-14.svg",
+          "variantRole": "default",
+          "z": 60
+        },
+        {
+          "artworkHash": "f4a83afe9088ee438871f363f5156b1c501cd9d9abb7b2599a566fd872913d5b",
+          "itemId": "native-hair-18",
+          "key": "native-hair-18-0",
+          "name": "冰蓝中短发",
+          "slot": "hair",
+          "src": "/assets-classic/native-review/hair-18-front.png",
+          "svg": "/assets-classic/native-review/hair-18-front.svg",
+          "variantRole": "default",
+          "z": 80
+        }
+      ],
+      "nativeSelection": {
+        "aura": "native-aura-17",
+        "back": "native-back-9",
+        "background": "native-background-19",
+        "bottom": "native-bottom-3",
+        "effect": "native-effect-4",
+        "face": "native-face-14",
+        "hair": "native-hair-18",
+        "headwear": "native-headwear-3",
+        "legs": "native-legs-3",
+        "prop": "native-prop-14",
+        "top": "native-top-12"
+      },
+      "seed": "closeout-r25-grok-head2-m50elr7l",
+      "selectedAiSlots": [
+        "hair",
+        "face"
+      ],
+      "selectedItemIDs": {
+        "face": "grok-face",
+        "hair": "grok-hair"
+      },
+      "substitutedItemId": null,
+      "substitutedSlot": null
+    },
+    {
+      "actualAiLayers": [
+        {
+          "artworkHash": "c58ce4b366371320cbdf588cbcd89691c2867403e3d5577c9a96d928cef5a80e",
+          "design": "/assets-classic/grok/remake/hair-back-design.svg",
+          "itemId": "grok-hair",
+          "key": "grok-hair-0",
+          "name": "金砂双马尾",
+          "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+          "slot": "hair",
+          "src": "/assets-classic/grok/remake/hair-back.png",
+          "svg": "/assets-classic/grok/remake/hair-back.svg",
+          "variantRole": "own-pose",
+          "z": 20
+        },
+        {
+          "artworkHash": "0f3128880b2cdcb39f9e3379cfdc3563ef2da32bff68fdbdf3e1325b8d0e2f16",
+          "itemId": "grok-face",
+          "key": "grok-face-0",
+          "name": "碧蓝自信浅笑",
+          "reviewFamilyHash": "67c9caf9e1554f8e20d1c81d3be9659c4654e075788b5bd03ebff6d46ff62f16",
+          "slot": "face",
+          "src": "/assets-classic/grok/remake/face.png",
+          "svg": "/assets-classic/grok/remake/face.svg",
+          "variantRole": "own-pose",
+          "z": 70
+        },
+        {
+          "artworkHash": "a4f59f0f9e5abd510305e76ba4a92914cf257010897947c24ee5ec65401ec7c1",
+          "design": "/assets-classic/grok/remake/hair-front-design.svg",
+          "itemId": "grok-hair",
+          "key": "grok-hair-1",
+          "name": "金砂双马尾",
+          "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+          "slot": "hair",
+          "src": "/assets-classic/grok/remake/hair-front.png",
+          "svg": "/assets-classic/grok/remake/hair-front.svg",
+          "variantRole": "own-pose",
+          "z": 80
+        }
+      ],
+      "aiLayers": [
+        {
+          "animatedSrc": "/assets-classic/native-review/background-16-original.gif",
+          "artworkHash": "d6a810ec45f71c90e9020276dda9af62cda5746718a1660092fce14c5f054c9f",
+          "itemId": "native-background-16",
+          "key": "native-background-16-0",
+          "name": "北极熊湖",
+          "slot": "background",
+          "src": "/assets-classic/native-review/background-16.png",
+          "svg": "/assets-classic/native-review/background-16.svg",
+          "variantRole": "default",
+          "z": 0
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/aura-9-original.gif",
+          "artworkHash": "be5025e4638f0adad0522d52706551e4984682a6f49fe0f6fdcb8ef30fb06f8a",
+          "itemId": "native-aura-9",
+          "key": "native-aura-9-0",
+          "name": "彩色舞台聚光灯",
+          "slot": "aura",
+          "src": "/assets-classic/native-review/aura-9.png",
+          "svg": "/assets-classic/native-review/aura-9.svg",
+          "variantRole": "default",
+          "z": 5
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/back-11-original.gif",
+          "artworkHash": "d248763f14b5d1890289ae2512be345c65af76ef70f1d40a4ca11f542b5c143e",
+          "itemId": "native-back-11",
+          "key": "native-back-11-0",
+          "name": "金色天使",
+          "slot": "back",
+          "src": "/assets-classic/native-review/back-11.png",
+          "svg": "/assets-classic/native-review/back-11.svg",
+          "variantRole": "default",
+          "z": 10
+        },
+        {
+          "artworkHash": "c58ce4b366371320cbdf588cbcd89691c2867403e3d5577c9a96d928cef5a80e",
+          "design": "/assets-classic/grok/remake/hair-back-design.svg",
+          "itemId": "grok-hair",
+          "key": "grok-hair-0",
+          "name": "金砂双马尾",
+          "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+          "slot": "hair",
+          "src": "/assets-classic/grok/remake/hair-back.png",
+          "svg": "/assets-classic/grok/remake/hair-back.svg",
+          "variantRole": "own-pose",
+          "z": 20
+        },
+        {
+          "artworkHash": "84135554b0f7da7465b46640bd28500ea1c32e64055b92c4d8fef809f0691a85",
+          "coversItemIds": [
+            "native-bottom-6",
+            "native-legs-6"
+          ],
+          "coversSlots": [
+            "bottom",
+            "legs"
+          ],
+          "itemId": "native-bottom-6",
+          "key": "native-bottom-6-original-full-lower",
+          "name": "粉色百褶短裙",
+          "nativeLowerRole": "original-full-lower",
+          "nativeOriginal": true,
+          "nativeSourceKey": "native-lower-6",
+          "slot": "bottom",
+          "sourceHash": "1ea13a8dff6be279316bd3e6652d732817d80486cb9bfa3e13453b2a254e26c4",
+          "src": "/assets-classic/native-review/lower-6-original-full.png",
+          "svg": "/assets-classic/native-review/lower-6-original-full.svg",
+          "z": 40
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/top-7-original.gif",
+          "artworkHash": "305b5aa6ed61f420bee1ad8c2f603a57a743c9701cbcbafb4d0cd7f9adad8622",
+          "itemId": "native-top-7",
+          "key": "native-top-7-0",
+          "name": "粉色开衫学院风",
+          "slot": "top",
+          "src": "/assets-classic/native-review/top-7.png",
+          "svg": "/assets-classic/native-review/top-7.svg",
+          "variantRole": "default",
+          "z": 50
+        },
+        {
+          "artworkHash": "0f3128880b2cdcb39f9e3379cfdc3563ef2da32bff68fdbdf3e1325b8d0e2f16",
+          "itemId": "grok-face",
+          "key": "grok-face-0",
+          "name": "碧蓝自信浅笑",
+          "reviewFamilyHash": "67c9caf9e1554f8e20d1c81d3be9659c4654e075788b5bd03ebff6d46ff62f16",
+          "slot": "face",
+          "src": "/assets-classic/grok/remake/face.png",
+          "svg": "/assets-classic/grok/remake/face.svg",
+          "variantRole": "own-pose",
+          "z": 70
+        },
+        {
+          "artworkHash": "a4f59f0f9e5abd510305e76ba4a92914cf257010897947c24ee5ec65401ec7c1",
+          "design": "/assets-classic/grok/remake/hair-front-design.svg",
+          "itemId": "grok-hair",
+          "key": "grok-hair-1",
+          "name": "金砂双马尾",
+          "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+          "slot": "hair",
+          "src": "/assets-classic/grok/remake/hair-front.png",
+          "svg": "/assets-classic/grok/remake/hair-front.svg",
+          "variantRole": "own-pose",
+          "z": 80
+        },
+        {
+          "artworkHash": "bc8d66074626871bccc9e7482d0f3ac7d6f6beddd30b69d5a53c61984514e7b7",
+          "itemId": "native-headwear-20",
+          "key": "native-headwear-20-0",
+          "name": "冬季白红图案针织帽",
+          "slot": "headwear",
+          "src": "/assets-classic/native-review/headwear-20.png",
+          "svg": "/assets-classic/native-review/headwear-20.svg",
+          "variantRole": "default",
+          "z": 90
+        },
+        {
+          "artworkHash": "df151a69832bfb395ccd0101e139a00798d2905cce443e5789052a98ddba9d9e",
+          "itemId": "native-prop-18",
+          "key": "native-prop-18-0",
+          "name": "柳丁皮带",
+          "slot": "prop",
+          "src": "/assets-classic/native-review/prop-18.png",
+          "svg": "/assets-classic/native-review/prop-18.svg",
+          "variantRole": "default",
+          "z": 100
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/effect-6-original.gif",
+          "artworkHash": "c69478b5929b6708ca81463b96f662458ba854a85d121651e13cba8e9d1e922e",
+          "itemId": "native-effect-6",
+          "key": "native-effect-6-0",
+          "name": "彩虹流星",
+          "slot": "effect",
+          "src": "/assets-classic/native-review/effect-6.png",
+          "svg": "/assets-classic/native-review/effect-6.svg",
+          "variantRole": "default",
+          "z": 110
+        }
+      ],
+      "aiSelection": {
+        "aura": "native-aura-9",
+        "back": "native-back-11",
+        "background": "native-background-16",
+        "bottom": "native-bottom-6",
+        "effect": "native-effect-6",
+        "face": "grok-face",
+        "hair": "grok-hair",
+        "headwear": "native-headwear-20",
+        "legs": "native-legs-6",
+        "prop": "native-prop-18",
+        "top": "native-top-7"
+      },
+      "baselineLayers": [
+        {
+          "animatedSrc": "/assets-classic/native-review/background-16-original.gif",
+          "artworkHash": "d6a810ec45f71c90e9020276dda9af62cda5746718a1660092fce14c5f054c9f",
+          "itemId": "native-background-16",
+          "key": "native-background-16-0",
+          "name": "北极熊湖",
+          "slot": "background",
+          "src": "/assets-classic/native-review/background-16.png",
+          "svg": "/assets-classic/native-review/background-16.svg",
+          "variantRole": "default",
+          "z": 0
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/aura-9-original.gif",
+          "artworkHash": "be5025e4638f0adad0522d52706551e4984682a6f49fe0f6fdcb8ef30fb06f8a",
+          "itemId": "native-aura-9",
+          "key": "native-aura-9-0",
+          "name": "彩色舞台聚光灯",
+          "slot": "aura",
+          "src": "/assets-classic/native-review/aura-9.png",
+          "svg": "/assets-classic/native-review/aura-9.svg",
+          "variantRole": "default",
+          "z": 5
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/back-11-original.gif",
+          "artworkHash": "d248763f14b5d1890289ae2512be345c65af76ef70f1d40a4ca11f542b5c143e",
+          "itemId": "native-back-11",
+          "key": "native-back-11-0",
+          "name": "金色天使",
+          "slot": "back",
+          "src": "/assets-classic/native-review/back-11.png",
+          "svg": "/assets-classic/native-review/back-11.svg",
+          "variantRole": "default",
+          "z": 10
+        },
+        {
+          "artworkHash": "84135554b0f7da7465b46640bd28500ea1c32e64055b92c4d8fef809f0691a85",
+          "coversItemIds": [
+            "native-bottom-6",
+            "native-legs-6"
+          ],
+          "coversSlots": [
+            "bottom",
+            "legs"
+          ],
+          "itemId": "native-bottom-6",
+          "key": "native-bottom-6-original-full-lower",
+          "name": "粉色百褶短裙",
+          "nativeLowerRole": "original-full-lower",
+          "nativeOriginal": true,
+          "nativeSourceKey": "native-lower-6",
+          "slot": "bottom",
+          "sourceHash": "1ea13a8dff6be279316bd3e6652d732817d80486cb9bfa3e13453b2a254e26c4",
+          "src": "/assets-classic/native-review/lower-6-original-full.png",
+          "svg": "/assets-classic/native-review/lower-6-original-full.svg",
+          "z": 40
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/top-7-original.gif",
+          "artworkHash": "305b5aa6ed61f420bee1ad8c2f603a57a743c9701cbcbafb4d0cd7f9adad8622",
+          "itemId": "native-top-7",
+          "key": "native-top-7-0",
+          "name": "粉色开衫学院风",
+          "slot": "top",
+          "src": "/assets-classic/native-review/top-7.png",
+          "svg": "/assets-classic/native-review/top-7.svg",
+          "variantRole": "default",
+          "z": 50
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/face-3-original.gif",
+          "artworkHash": "1224f623abfcd1e1451ae3b02e920b341b1fb97679a6eba14dac96e93daf9b7c",
+          "itemId": "native-face-3",
+          "key": "native-face-3-0",
+          "name": "琥珀",
+          "slot": "face",
+          "src": "/assets-classic/native-review/face-3.png",
+          "svg": "/assets-classic/native-review/face-3.svg",
+          "variantRole": "default",
+          "z": 60
+        },
+        {
+          "artworkHash": "460595e8bf49d66ba79a0714a37a8dc704db14a7a753072eed84720c7c1ef266",
+          "itemId": "native-hair-8",
+          "key": "native-hair-8-0",
+          "name": "黑色双丸子头",
+          "slot": "hair",
+          "src": "/assets-classic/native-review/hair-8-front.png",
+          "svg": "/assets-classic/native-review/hair-8-front.svg",
+          "variantRole": "default",
+          "z": 80
+        },
+        {
+          "artworkHash": "bc8d66074626871bccc9e7482d0f3ac7d6f6beddd30b69d5a53c61984514e7b7",
+          "itemId": "native-headwear-20",
+          "key": "native-headwear-20-0",
+          "name": "冬季白红图案针织帽",
+          "slot": "headwear",
+          "src": "/assets-classic/native-review/headwear-20.png",
+          "svg": "/assets-classic/native-review/headwear-20.svg",
+          "variantRole": "default",
+          "z": 90
+        },
+        {
+          "artworkHash": "df151a69832bfb395ccd0101e139a00798d2905cce443e5789052a98ddba9d9e",
+          "itemId": "native-prop-18",
+          "key": "native-prop-18-0",
+          "name": "柳丁皮带",
+          "slot": "prop",
+          "src": "/assets-classic/native-review/prop-18.png",
+          "svg": "/assets-classic/native-review/prop-18.svg",
+          "variantRole": "default",
+          "z": 100
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/effect-6-original.gif",
+          "artworkHash": "c69478b5929b6708ca81463b96f662458ba854a85d121651e13cba8e9d1e922e",
+          "itemId": "native-effect-6",
+          "key": "native-effect-6-0",
+          "name": "彩虹流星",
+          "slot": "effect",
+          "src": "/assets-classic/native-review/effect-6.png",
+          "svg": "/assets-classic/native-review/effect-6.svg",
+          "variantRole": "default",
+          "z": 110
+        }
+      ],
+      "fixtureIndex": 3,
+      "forcedCurrentVersion": true,
+      "id": "grok-head2-sd618253f-a0-f3",
+      "isolatedNativeLayers": [
+        {
+          "animatedSrc": "/assets-classic/native-review/face-3-original.gif",
+          "artworkHash": "1224f623abfcd1e1451ae3b02e920b341b1fb97679a6eba14dac96e93daf9b7c",
+          "itemId": "native-face-3",
+          "key": "native-face-3-0",
+          "name": "琥珀",
+          "slot": "face",
+          "src": "/assets-classic/native-review/face-3.png",
+          "svg": "/assets-classic/native-review/face-3.svg",
+          "variantRole": "default",
+          "z": 60
+        },
+        {
+          "artworkHash": "460595e8bf49d66ba79a0714a37a8dc704db14a7a753072eed84720c7c1ef266",
+          "itemId": "native-hair-8",
+          "key": "native-hair-8-0",
+          "name": "黑色双丸子头",
+          "slot": "hair",
+          "src": "/assets-classic/native-review/hair-8-front.png",
+          "svg": "/assets-classic/native-review/hair-8-front.svg",
+          "variantRole": "default",
+          "z": 80
+        }
+      ],
+      "nativeSelection": {
+        "aura": "native-aura-9",
+        "back": "native-back-11",
+        "background": "native-background-16",
+        "bottom": "native-bottom-6",
+        "effect": "native-effect-6",
+        "face": "native-face-3",
+        "hair": "native-hair-8",
+        "headwear": "native-headwear-20",
+        "legs": "native-legs-6",
+        "prop": "native-prop-18",
+        "top": "native-top-7"
+      },
+      "seed": "closeout-r25-grok-head2-m50elr7l",
+      "selectedAiSlots": [
+        "hair",
+        "face"
+      ],
+      "selectedItemIDs": {
+        "face": "grok-face",
+        "hair": "grok-hair"
+      },
+      "substitutedItemId": null,
+      "substitutedSlot": null
+    },
+    {
+      "actualAiLayers": [
+        {
+          "artworkHash": "c58ce4b366371320cbdf588cbcd89691c2867403e3d5577c9a96d928cef5a80e",
+          "design": "/assets-classic/grok/remake/hair-back-design.svg",
+          "itemId": "grok-hair",
+          "key": "grok-hair-0",
+          "name": "金砂双马尾",
+          "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+          "slot": "hair",
+          "src": "/assets-classic/grok/remake/hair-back.png",
+          "svg": "/assets-classic/grok/remake/hair-back.svg",
+          "variantRole": "own-pose",
+          "z": 20
+        },
+        {
+          "artworkHash": "0f3128880b2cdcb39f9e3379cfdc3563ef2da32bff68fdbdf3e1325b8d0e2f16",
+          "itemId": "grok-face",
+          "key": "grok-face-0",
+          "name": "碧蓝自信浅笑",
+          "reviewFamilyHash": "67c9caf9e1554f8e20d1c81d3be9659c4654e075788b5bd03ebff6d46ff62f16",
+          "slot": "face",
+          "src": "/assets-classic/grok/remake/face.png",
+          "svg": "/assets-classic/grok/remake/face.svg",
+          "variantRole": "own-pose",
+          "z": 70
+        },
+        {
+          "artworkHash": "a4f59f0f9e5abd510305e76ba4a92914cf257010897947c24ee5ec65401ec7c1",
+          "design": "/assets-classic/grok/remake/hair-front-design.svg",
+          "itemId": "grok-hair",
+          "key": "grok-hair-1",
+          "name": "金砂双马尾",
+          "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+          "slot": "hair",
+          "src": "/assets-classic/grok/remake/hair-front.png",
+          "svg": "/assets-classic/grok/remake/hair-front.svg",
+          "variantRole": "own-pose",
+          "z": 80
+        }
+      ],
+      "aiLayers": [
+        {
+          "animatedSrc": "/assets-classic/native-review/background-1-original.gif",
+          "artworkHash": "84d3654f32c21d72f137da4d4e015b1ea1b67fbc7448919675e992cb642f966e",
+          "itemId": "native-background-1",
+          "key": "native-background-1-0",
+          "name": "雏菊花开",
+          "slot": "background",
+          "src": "/assets-classic/native-review/background-1.png",
+          "svg": "/assets-classic/native-review/background-1.svg",
+          "variantRole": "default",
+          "z": 0
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/aura-11-original.gif",
+          "artworkHash": "f797c74656cf5f7f0e29fb48a688908a4bde0f5c1456c11d7440fd11f07da522",
+          "itemId": "native-aura-11",
+          "key": "native-aura-11-0",
+          "name": "我的舞台",
+          "slot": "aura",
+          "src": "/assets-classic/native-review/aura-11.png",
+          "svg": "/assets-classic/native-review/aura-11.svg",
+          "variantRole": "default",
+          "z": 5
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/back-8-original.gif",
+          "artworkHash": "11d9ca7965505b03576e7097972eb9d0a2503b30fa2171b4abc97b1e295df6d9",
+          "itemId": "native-back-8",
+          "key": "native-back-8-0",
+          "name": "粉色小天使",
+          "slot": "back",
+          "src": "/assets-classic/native-review/back-8.png",
+          "svg": "/assets-classic/native-review/back-8.svg",
+          "variantRole": "default",
+          "z": 10
+        },
+        {
+          "artworkHash": "c58ce4b366371320cbdf588cbcd89691c2867403e3d5577c9a96d928cef5a80e",
+          "design": "/assets-classic/grok/remake/hair-back-design.svg",
+          "itemId": "grok-hair",
+          "key": "grok-hair-0",
+          "name": "金砂双马尾",
+          "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+          "slot": "hair",
+          "src": "/assets-classic/grok/remake/hair-back.png",
+          "svg": "/assets-classic/grok/remake/hair-back.svg",
+          "variantRole": "own-pose",
+          "z": 20
+        },
+        {
+          "artworkHash": "8ce42fca81e91086b02ecf11b8dc455c7721be249bf4934f76c67d3ab66d1ac6",
+          "coversItemIds": [
+            "native-bottom-8",
+            "native-legs-8"
+          ],
+          "coversSlots": [
+            "bottom",
+            "legs"
+          ],
+          "itemId": "native-bottom-8",
+          "key": "native-bottom-8-original-full-lower",
+          "name": "灰牛仔半裙",
+          "nativeLowerRole": "original-full-lower",
+          "nativeOriginal": true,
+          "nativeSourceKey": "native-lower-8",
+          "slot": "bottom",
+          "sourceHash": "5a5e576d0d6d8631765912a858271cb56c8d5e97595ee7bc5d10585afb4869da",
+          "src": "/assets-classic/native-review/lower-8-original-full.png",
+          "svg": "/assets-classic/native-review/lower-8-original-full.svg",
+          "z": 40
+        },
+        {
+          "artworkHash": "79481df6dc6e44fd15054158548de7d8037a0811ebbce82ae17f11ab02f82bbc",
+          "itemId": "native-top-2",
+          "key": "native-top-2-0",
+          "name": "绑带白色背心",
+          "slot": "top",
+          "src": "/assets-classic/native-review/top-2.png",
+          "svg": "/assets-classic/native-review/top-2.svg",
+          "variantRole": "default",
+          "z": 50
+        },
+        {
+          "artworkHash": "0f3128880b2cdcb39f9e3379cfdc3563ef2da32bff68fdbdf3e1325b8d0e2f16",
+          "itemId": "grok-face",
+          "key": "grok-face-0",
+          "name": "碧蓝自信浅笑",
+          "reviewFamilyHash": "67c9caf9e1554f8e20d1c81d3be9659c4654e075788b5bd03ebff6d46ff62f16",
+          "slot": "face",
+          "src": "/assets-classic/grok/remake/face.png",
+          "svg": "/assets-classic/grok/remake/face.svg",
+          "variantRole": "own-pose",
+          "z": 70
+        },
+        {
+          "artworkHash": "a4f59f0f9e5abd510305e76ba4a92914cf257010897947c24ee5ec65401ec7c1",
+          "design": "/assets-classic/grok/remake/hair-front-design.svg",
+          "itemId": "grok-hair",
+          "key": "grok-hair-1",
+          "name": "金砂双马尾",
+          "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+          "slot": "hair",
+          "src": "/assets-classic/grok/remake/hair-front.png",
+          "svg": "/assets-classic/grok/remake/hair-front.svg",
+          "variantRole": "own-pose",
+          "z": 80
+        },
+        {
+          "artworkHash": "5d579e863bd182c9a93777bd791e53c62fb8529d875ed811b5e87a6b5df08acd",
+          "itemId": "native-headwear-10",
+          "key": "native-headwear-10-0",
+          "name": "海军贝雷帽",
+          "slot": "headwear",
+          "src": "/assets-classic/native-review/headwear-10.png",
+          "svg": "/assets-classic/native-review/headwear-10.svg",
+          "variantRole": "default",
+          "z": 90
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/prop-20-original.gif",
+          "artworkHash": "18efe420186a8c7b213eda65a56cbdc71faaf955d37e9e82f98c9de8c62d5c09",
+          "itemId": "native-prop-20",
+          "key": "native-prop-20-0",
+          "name": "粉色爱心腰饰",
+          "slot": "prop",
+          "src": "/assets-classic/native-review/prop-20.png",
+          "svg": "/assets-classic/native-review/prop-20.svg",
+          "variantRole": "default",
+          "z": 100
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/effect-13-original.gif",
+          "artworkHash": "83b2f183baf0ac99396726b55b655ec9b8cf5a6c73a0f4d03af93b328779d3b8",
+          "itemId": "native-effect-13",
+          "key": "native-effect-13-0",
+          "name": "飘落樱花",
+          "slot": "effect",
+          "src": "/assets-classic/native-review/effect-13.png",
+          "svg": "/assets-classic/native-review/effect-13.svg",
+          "variantRole": "default",
+          "z": 110
+        }
+      ],
+      "aiSelection": {
+        "aura": "native-aura-11",
+        "back": "native-back-8",
+        "background": "native-background-1",
+        "bottom": "native-bottom-8",
+        "effect": "native-effect-13",
+        "face": "grok-face",
+        "hair": "grok-hair",
+        "headwear": "native-headwear-10",
+        "legs": "native-legs-8",
+        "prop": "native-prop-20",
+        "top": "native-top-2"
+      },
+      "baselineLayers": [
+        {
+          "animatedSrc": "/assets-classic/native-review/background-1-original.gif",
+          "artworkHash": "84d3654f32c21d72f137da4d4e015b1ea1b67fbc7448919675e992cb642f966e",
+          "itemId": "native-background-1",
+          "key": "native-background-1-0",
+          "name": "雏菊花开",
+          "slot": "background",
+          "src": "/assets-classic/native-review/background-1.png",
+          "svg": "/assets-classic/native-review/background-1.svg",
+          "variantRole": "default",
+          "z": 0
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/aura-11-original.gif",
+          "artworkHash": "f797c74656cf5f7f0e29fb48a688908a4bde0f5c1456c11d7440fd11f07da522",
+          "itemId": "native-aura-11",
+          "key": "native-aura-11-0",
+          "name": "我的舞台",
+          "slot": "aura",
+          "src": "/assets-classic/native-review/aura-11.png",
+          "svg": "/assets-classic/native-review/aura-11.svg",
+          "variantRole": "default",
+          "z": 5
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/back-8-original.gif",
+          "artworkHash": "11d9ca7965505b03576e7097972eb9d0a2503b30fa2171b4abc97b1e295df6d9",
+          "itemId": "native-back-8",
+          "key": "native-back-8-0",
+          "name": "粉色小天使",
+          "slot": "back",
+          "src": "/assets-classic/native-review/back-8.png",
+          "svg": "/assets-classic/native-review/back-8.svg",
+          "variantRole": "default",
+          "z": 10
+        },
+        {
+          "artworkHash": "8ce42fca81e91086b02ecf11b8dc455c7721be249bf4934f76c67d3ab66d1ac6",
+          "coversItemIds": [
+            "native-bottom-8",
+            "native-legs-8"
+          ],
+          "coversSlots": [
+            "bottom",
+            "legs"
+          ],
+          "itemId": "native-bottom-8",
+          "key": "native-bottom-8-original-full-lower",
+          "name": "灰牛仔半裙",
+          "nativeLowerRole": "original-full-lower",
+          "nativeOriginal": true,
+          "nativeSourceKey": "native-lower-8",
+          "slot": "bottom",
+          "sourceHash": "5a5e576d0d6d8631765912a858271cb56c8d5e97595ee7bc5d10585afb4869da",
+          "src": "/assets-classic/native-review/lower-8-original-full.png",
+          "svg": "/assets-classic/native-review/lower-8-original-full.svg",
+          "z": 40
+        },
+        {
+          "artworkHash": "79481df6dc6e44fd15054158548de7d8037a0811ebbce82ae17f11ab02f82bbc",
+          "itemId": "native-top-2",
+          "key": "native-top-2-0",
+          "name": "绑带白色背心",
+          "slot": "top",
+          "src": "/assets-classic/native-review/top-2.png",
+          "svg": "/assets-classic/native-review/top-2.svg",
+          "variantRole": "default",
+          "z": 50
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/face-4-original.gif",
+          "artworkHash": "6ad629b00095b46f444620e41afe959455bcc665e4ce156710d7d1fa368dd72e",
+          "itemId": "native-face-4",
+          "key": "native-face-4-0",
+          "name": "动漫猫嘴水润眼",
+          "slot": "face",
+          "src": "/assets-classic/native-review/face-4.png",
+          "svg": "/assets-classic/native-review/face-4.svg",
+          "variantRole": "default",
+          "z": 60
+        },
+        {
+          "animatedArtworkHash": "dcfd1b3c3db245ebb3f3f3de15e978e88f39a7676d88a0edab5142af4366b0e4",
+          "animatedSrc": "/assets-classic/native-review/hair-14-front-original.gif",
+          "artworkHash": "4e1d3b5ced3cc89c344992e559ab509f319d3107e18bcab70cab79382c62b55d",
+          "itemId": "native-hair-14",
+          "key": "native-hair-14-0",
+          "name": "金棕雏菊发饰罗马卷",
+          "slot": "hair",
+          "src": "/assets-classic/native-review/hair-14-front.png",
+          "svg": "/assets-classic/native-review/hair-14-front.svg",
+          "variantRole": "default",
+          "z": 80
+        },
+        {
+          "artworkHash": "5d579e863bd182c9a93777bd791e53c62fb8529d875ed811b5e87a6b5df08acd",
+          "itemId": "native-headwear-10",
+          "key": "native-headwear-10-0",
+          "name": "海军贝雷帽",
+          "slot": "headwear",
+          "src": "/assets-classic/native-review/headwear-10.png",
+          "svg": "/assets-classic/native-review/headwear-10.svg",
+          "variantRole": "default",
+          "z": 90
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/prop-20-original.gif",
+          "artworkHash": "18efe420186a8c7b213eda65a56cbdc71faaf955d37e9e82f98c9de8c62d5c09",
+          "itemId": "native-prop-20",
+          "key": "native-prop-20-0",
+          "name": "粉色爱心腰饰",
+          "slot": "prop",
+          "src": "/assets-classic/native-review/prop-20.png",
+          "svg": "/assets-classic/native-review/prop-20.svg",
+          "variantRole": "default",
+          "z": 100
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/effect-13-original.gif",
+          "artworkHash": "83b2f183baf0ac99396726b55b655ec9b8cf5a6c73a0f4d03af93b328779d3b8",
+          "itemId": "native-effect-13",
+          "key": "native-effect-13-0",
+          "name": "飘落樱花",
+          "slot": "effect",
+          "src": "/assets-classic/native-review/effect-13.png",
+          "svg": "/assets-classic/native-review/effect-13.svg",
+          "variantRole": "default",
+          "z": 110
+        }
+      ],
+      "fixtureIndex": 4,
+      "forcedCurrentVersion": true,
+      "id": "grok-head2-sd618253f-a0-f4",
+      "isolatedNativeLayers": [
+        {
+          "animatedSrc": "/assets-classic/native-review/face-4-original.gif",
+          "artworkHash": "6ad629b00095b46f444620e41afe959455bcc665e4ce156710d7d1fa368dd72e",
+          "itemId": "native-face-4",
+          "key": "native-face-4-0",
+          "name": "动漫猫嘴水润眼",
+          "slot": "face",
+          "src": "/assets-classic/native-review/face-4.png",
+          "svg": "/assets-classic/native-review/face-4.svg",
+          "variantRole": "default",
+          "z": 60
+        },
+        {
+          "animatedArtworkHash": "dcfd1b3c3db245ebb3f3f3de15e978e88f39a7676d88a0edab5142af4366b0e4",
+          "animatedSrc": "/assets-classic/native-review/hair-14-front-original.gif",
+          "artworkHash": "4e1d3b5ced3cc89c344992e559ab509f319d3107e18bcab70cab79382c62b55d",
+          "itemId": "native-hair-14",
+          "key": "native-hair-14-0",
+          "name": "金棕雏菊发饰罗马卷",
+          "slot": "hair",
+          "src": "/assets-classic/native-review/hair-14-front.png",
+          "svg": "/assets-classic/native-review/hair-14-front.svg",
+          "variantRole": "default",
+          "z": 80
+        }
+      ],
+      "nativeSelection": {
+        "aura": "native-aura-11",
+        "back": "native-back-8",
+        "background": "native-background-1",
+        "bottom": "native-bottom-8",
+        "effect": "native-effect-13",
+        "face": "native-face-4",
+        "hair": "native-hair-14",
+        "headwear": "native-headwear-10",
+        "legs": "native-legs-8",
+        "prop": "native-prop-20",
+        "top": "native-top-2"
+      },
+      "seed": "closeout-r25-grok-head2-m50elr7l",
+      "selectedAiSlots": [
+        "hair",
+        "face"
+      ],
+      "selectedItemIDs": {
+        "face": "grok-face",
+        "hair": "grok-hair"
+      },
+      "substitutedItemId": null,
+      "substitutedSlot": null
+    }
+  ],
+  "character": "grok",
+  "contextSignature": "native-context-v4-ac02ff5e",
+  "coverage": {
+    "arrangements": 5,
+    "completenessPolicy": "native-complete-torso-v1",
+    "corpusCoverage": {
+      "enumeratedAll": false,
+      "selected": 5,
+      "total": 20
+    },
+    "drawWithoutReplacement": true,
+    "exhaustive": false,
+    "fixturesOnThisPage": 5,
+    "hybridPresetCount": 9,
+    "nativeCounts": {
+      "aura": 20,
+      "back": 17,
+      "background": 20,
+      "bottom": 20,
+      "effect": 20,
+      "face": 20,
+      "hair": 20,
+      "headwear": 20,
+      "legs": 20,
+      "prop": 20,
+      "top": 20
+    },
+    "nativeItems": 217,
+    "nativeSlotsCount": 9,
+    "newSeedPerReview": true,
+    "originalsPerSlot": 17,
+    "selectedAiSlotsCount": 2,
+    "substitutionsPerContext": 2,
+    "visibleNativeSlotsCount": 9
+  },
+  "draws": {
+    "aura": [
+      "native-aura-1",
+      "native-aura-16",
+      "native-aura-17",
+      "native-aura-9",
+      "native-aura-11"
+    ],
+    "back": [
+      "native-back-13",
+      "native-back-17",
+      "native-back-9",
+      "native-back-11",
+      "native-back-8"
+    ],
+    "background": [
+      "native-background-12",
+      "native-background-20",
+      "native-background-19",
+      "native-background-16",
+      "native-background-1"
+    ],
+    "bottom": [
+      "native-bottom-15",
+      "native-bottom-9",
+      "native-bottom-3",
+      "native-bottom-6",
+      "native-bottom-8"
+    ],
+    "effect": [
+      "native-effect-10",
+      "native-effect-17",
+      "native-effect-4",
+      "native-effect-6",
+      "native-effect-13"
+    ],
+    "face": [
+      "native-face-2",
+      "native-face-6",
+      "native-face-14",
+      "native-face-3",
+      "native-face-4"
+    ],
+    "hair": [
+      "native-hair-19",
+      "native-hair-20",
+      "native-hair-18",
+      "native-hair-8",
+      "native-hair-14"
+    ],
+    "headwear": [
+      "native-headwear-1",
+      "native-headwear-15",
+      "native-headwear-3",
+      "native-headwear-20",
+      "native-headwear-10"
+    ],
+    "legs": [
+      "native-legs-15",
+      "native-legs-9",
+      "native-legs-3",
+      "native-legs-6",
+      "native-legs-8"
+    ],
+    "prop": [
+      "native-prop-16",
+      "native-prop-7",
+      "native-prop-14",
+      "native-prop-18",
+      "native-prop-20"
+    ],
+    "top": [
+      "native-top-20",
+      "native-top-16",
+      "native-top-12",
+      "native-top-7",
+      "native-top-2"
+    ]
+  },
+  "excludedSlots": [],
+  "forceRefinePolicy": "Every selected AI item uses current-family artwork only. Authored current native-display variants are selected by the shared resolver for native tops; own-pose variants are used with the matching AI top. Historical defaultVariants are excluded from review. Hashes cover both current variants.",
+  "fullLayers": [
+    {
+      "animatedSrc": "/assets-classic/grok/background.gif",
+      "artworkHash": "8503e59f333e85f2fbc5c195601650ef445e1d91276d948f583b228492615be6",
+      "itemId": "grok-background",
+      "key": "grok-background-0",
+      "name": "黑金夜城露台",
+      "slot": "background",
+      "src": "/assets-classic/grok/background.png",
+      "svg": "/assets-classic/grok/background.svg",
+      "variantRole": "pose:grok",
+      "z": 0
+    },
+    {
+      "artworkHash": "89bbf7de7bd1da92e6e115b0ce44d5309e3d67425e91a098d0740ac8d044d1b0",
+      "itemId": "grok-aura",
+      "key": "grok-aura-0",
+      "name": "绯月光环",
+      "slot": "aura",
+      "src": "/assets-classic/grok/remake/aura.png",
+      "svg": "/assets-classic/grok/remake/aura.svg",
+      "variantRole": "pose:grok",
+      "z": 5
+    },
+    {
+      "artworkHash": "83fe300980dc730bacafb04c8df7a333f85445ac513a335c19cdbc89c592bdad",
+      "itemId": "grok-back",
+      "key": "grok-back-0",
+      "name": "暗夜蝠翼",
+      "reviewFamilyHash": "dea46119c8b936ac421c245d6163fc0653c1bdae917f7170528aa8f0f4a16075",
+      "slot": "back",
+      "src": "/assets-classic/grok/remake/back.png",
+      "svg": "/assets-classic/grok/remake/back.svg",
+      "variantRole": "own-pose",
+      "z": 10
+    },
+    {
+      "artworkHash": "c58ce4b366371320cbdf588cbcd89691c2867403e3d5577c9a96d928cef5a80e",
+      "design": "/assets-classic/grok/remake/hair-back-design.svg",
+      "itemId": "grok-hair",
+      "key": "grok-hair-0",
+      "name": "金砂双马尾",
+      "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+      "slot": "hair",
+      "src": "/assets-classic/grok/remake/hair-back.png",
+      "svg": "/assets-classic/grok/remake/hair-back.svg",
+      "variantRole": "own-pose",
+      "z": 20
+    },
+    {
+      "artworkHash": "8ec684b7ff4b6059052d2170202fce6539d7fe0ee0c50ec9855c462f549d18a3",
+      "itemId": "grok-legs",
+      "key": "grok-legs-0",
+      "name": "星扣哥特靴",
+      "reviewFamilyHash": "43606b202b13ab79f18bbc75cc74457979b1e94599b190d17e8d9b57d7ba7f27",
+      "slot": "legs",
+      "src": "/assets-classic/grok/remake/legs.png",
+      "svg": "/assets-classic/grok/remake/legs.svg",
+      "variantRole": "own-pose",
+      "z": 30
+    },
+    {
+      "artworkHash": "703f01919a3c35049f2d527279bf6b08f05942a7dd555196e1b7cdd278c59c4f",
+      "itemId": "grok-bottom",
+      "key": "grok-bottom-0",
+      "name": "黑红蔷薇裙",
+      "reviewFamilyHash": "ffdb0eb8a5bf4f08250bb2d5d0d5ae503223155abc5dc2793348fec2eb292153",
+      "slot": "bottom",
+      "src": "/assets-classic/grok/remake/bottom.png",
+      "svg": "/assets-classic/grok/remake/bottom.svg",
+      "variantRole": "own-pose",
+      "z": 40
+    },
+    {
+      "artworkHash": "1542a5b851806505b6517b71420f1ae8c9a702d9d37cc5f82d0475edcf9a3d23",
+      "design": "/assets-classic/grok/remake/top-body-design.svg",
+      "itemId": "grok-top",
+      "key": "grok-top-0",
+      "name": "金饰哥特上衣",
+      "reviewFamilyHash": "48588fd2989ff6496e5dca42e75193c617a363661bffdb8646ca10fd7b4f234a",
+      "slot": "top",
+      "src": "/assets-classic/grok/remake/top-body.png",
+      "svg": "/assets-classic/grok/remake/top-body.svg",
+      "variantRole": "own-pose",
+      "z": 50
+    },
+    {
+      "artworkHash": "0f3128880b2cdcb39f9e3379cfdc3563ef2da32bff68fdbdf3e1325b8d0e2f16",
+      "itemId": "grok-face",
+      "key": "grok-face-0",
+      "name": "碧蓝自信浅笑",
+      "reviewFamilyHash": "67c9caf9e1554f8e20d1c81d3be9659c4654e075788b5bd03ebff6d46ff62f16",
+      "slot": "face",
+      "src": "/assets-classic/grok/remake/face.png",
+      "svg": "/assets-classic/grok/remake/face.svg",
+      "variantRole": "own-pose",
+      "z": 70
+    },
+    {
+      "artworkHash": "a4f59f0f9e5abd510305e76ba4a92914cf257010897947c24ee5ec65401ec7c1",
+      "design": "/assets-classic/grok/remake/hair-front-design.svg",
+      "itemId": "grok-hair",
+      "key": "grok-hair-1",
+      "name": "金砂双马尾",
+      "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+      "slot": "hair",
+      "src": "/assets-classic/grok/remake/hair-front.png",
+      "svg": "/assets-classic/grok/remake/hair-front.svg",
+      "variantRole": "own-pose",
+      "z": 80
+    },
+    {
+      "artworkHash": "42fc55f4ef887438980283be36e788a9fb146a049e5016052753483696af37f5",
+      "itemId": "grok-prop",
+      "key": "grok-prop-0",
+      "name": "黑金双刃斧杖",
+      "reviewFamilyHash": "82c52e6ac36de3afbc8152cd2df91ba8f327fa7de5110ff25706a0f98272102c",
+      "slot": "prop",
+      "src": "/assets-classic/grok/remake/prop.png",
+      "svg": "/assets-classic/grok/remake/prop.svg",
+      "variantRole": "own-pose",
+      "z": 84
+    },
+    {
+      "artworkHash": "5e1858a2345de4ac1292ee8365313f746053b5bd6c905d623f1b28a76ea3fb85",
+      "design": "/assets-classic/grok/remake/top-arms-design.svg",
+      "itemId": "grok-top",
+      "key": "grok-top-1",
+      "name": "金饰哥特上衣",
+      "reviewFamilyHash": "48588fd2989ff6496e5dca42e75193c617a363661bffdb8646ca10fd7b4f234a",
+      "slot": "top",
+      "src": "/assets-classic/grok/remake/top-arms.png",
+      "svg": "/assets-classic/grok/remake/top-arms.svg",
+      "variantRole": "own-pose",
+      "z": 85
+    },
+    {
+      "artworkHash": "41aea613354016c8bc0555cc982d344f2223ac7bda84fc1580028952770fbae1",
+      "itemId": "grok-headwear",
+      "key": "grok-headwear-0",
+      "name": "黑蝴蝶结王冠",
+      "reviewFamilyHash": "dd60e83833c16ef005f3db1d078657787eabfaac724b822126d8a2f049e4b1a7",
+      "slot": "headwear",
+      "src": "/assets-classic/grok/remake/headwear.png",
+      "svg": "/assets-classic/grok/remake/headwear.svg",
+      "variantRole": "own-pose",
+      "z": 90
+    },
+    {
+      "artworkHash": "20417219bd19da70c79c9049cf9419a480ce20d1713406ca5e12a941f132c02a",
+      "itemId": "grok-effect",
+      "key": "grok-effect-0",
+      "name": "绯红星芒",
+      "slot": "effect",
+      "src": "/assets-classic/grok/effect.png",
+      "svg": "/assets-classic/grok/effect.svg",
+      "variantRole": "pose:grok",
+      "z": 110
+    }
+  ],
+  "fullPreset": {
+    "aura": "grok-aura",
+    "back": "grok-back",
+    "background": "grok-background",
+    "bottom": "grok-bottom",
+    "effect": "grok-effect",
+    "face": "grok-face",
+    "hair": "grok-hair",
+    "headwear": "grok-headwear",
+    "legs": "grok-legs",
+    "prop": "grok-prop",
+    "top": "grok-top"
+  },
+  "generatedInterfaceHashes": {},
+  "generatedInterfaceRule": "AI-owned replacement support; fusion>=98; never native100",
+  "hybridKey": "head2",
+  "isolatedDiagnostics": {
+    "enabled": false,
+    "replacesFullMixScoring": false,
+    "source": "Same cases and resolved layers, filtered to selected AI slots for supplementary unobstructed inspection"
+  },
+  "lowerPolicy": {
+    "coupledSlots": [
+      "bottom",
+      "legs"
+    ],
+    "generatedInterfaceOwner": "AI bottom replacement",
+    "generatedInterfaceThreshold": 98,
+    "id": "native-lower-provenance-v1",
+    "nativeBaseline": "originalFull only; no generated interface pixels",
+    "partialNativeAcrossSources": "original visible fragments only; no generated fill",
+    "qcReportHash": "7c151e487bcc9f9956825159efb03a6a4e7107c0adbed0499db25c95faa1b568",
+    "sourceCount": 20
+  },
+  "mode": "component",
+  "nativeLowerCoupled": true,
+  "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+  "presetExclusions": [],
+  "reference": "/assets-classic/native-review/references/grok.jpg",
+  "reviewedCompleteHash": "42cd2e8e41a4d4c813cf0d39ea04f0ea4c185a114b9511a3ec7e9b8de65a5bcc",
+  "reviewedPartHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+  "reviewedPartHashes": {
+    "face": "67c9caf9e1554f8e20d1c81d3be9659c4654e075788b5bd03ebff6d46ff62f16",
+    "hair": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac"
+  },
+  "roleUnavailableSlots": [],
+  "runtimeArchive": null,
+  "scale": 1,
+  "schema": "classic-react-review-v3",
+  "scoreStatus": {
+    "body": {
+      "anatomicalReviewRequired": true,
+      "passed": false,
+      "pending": true,
+      "text": "形体待复核",
+      "visualPending": true
+    },
+    "fusion": {
+      "passed": false,
+      "pending": true,
+      "text": "92.5 · 多件版本待复审"
+    },
+    "hybrid": {
+      "passed": false,
+      "pending": true,
+      "text": "92.5 · 多件版本待复审"
+    },
+    "reference": {
+      "passed": false,
+      "pending": true,
+      "text": "93.6 · 版本待复审"
+    },
+    "singleFusionDiagnostic": {
+      "passed": false,
+      "pending": true,
+      "text": "88 · 版本待复审"
+    }
+  },
+  "seed": "closeout-r25-grok-head2-m50elr7l",
+  "selectedAiSlots": [
+    "hair",
+    "face"
+  ],
+  "selectedItemIDs": {
+    "face": "grok-face",
+    "hair": "grok-hair"
+  },
+  "slot": "hair",
+  "surface": "light",
+  "thresholds": {
+    "body": 98,
+    "fusion": 98,
+    "reference": 90
+  },
+  "unavailableSelectedSlots": [],
+  "visibilityFollowUp": {
+    "originalDrawsUnchanged": true,
+    "requestedHiddenNativeDecor": [],
+    "substitutesForUnhiddenReview": false
+  },
+  "capture": {
+    "browser": "Codex in-app browser",
+    "url": "http://127.0.0.1:5173/?review=1&character=grok&slot=hair&aiSlots=hair%2Cface&seed=closeout-r25-grok-head2-m50elr7l&arrangement=0&mode=component&scale=1&surface=light",
+    "renderedAtUtc": "2026-11-10T09:04:48.255Z",
+    "viewport": {
+      "height": 536,
+      "scrollY": 1027,
+      "width": 511
+    },
+    "failedImages": [],
+    "fullFigures": [],
+    "matrixSegments": [
+      {
+        "file": "head2.png",
+        "sha256": "14124962ff3b3e2fed902b5515db0674893422cb12d6af27e897d35e3bee7847",
+        "viewport": {
+          "height": 536,
+          "scrollY": 1027,
+          "width": 511
+        },
+        "visible": [
+          {
+            "bottom": 424.90625,
+            "caseId": "grok-head2-sd618253f-a0-f0",
+            "height": 312.921875,
+            "kind": "native",
+            "left": 16,
+            "right": 176,
+            "top": 111.984375,
+            "width": 160
+          },
+          {
+            "bottom": 424.90625,
+            "caseId": "grok-head2-sd618253f-a0-f0",
+            "height": 312.921875,
+            "kind": "ai",
+            "left": 177,
+            "right": 337,
+            "top": 111.984375,
+            "width": 160
+          }
+        ],
+        "images": []
+      },
+      {
+        "file": "head2-segment-02-df7a1e0552.png",
+        "sha256": "df7a1e0552934836568dd7259051e1c5c5fbec1e4af897423af4ea4bbb77fb6f",
+        "viewport": {
+          "height": 536,
+          "scrollY": 1341,
+          "width": 511
+        },
+        "visible": [
+          {
+            "bottom": 424.828125,
+            "caseId": "grok-head2-sd618253f-a0-f1",
+            "height": 312.921875,
+            "kind": "native",
+            "left": 16,
+            "right": 176,
+            "top": 111.90625,
+            "width": 160
+          },
+          {
+            "bottom": 424.828125,
+            "caseId": "grok-head2-sd618253f-a0-f1",
+            "height": 312.921875,
+            "kind": "ai",
+            "left": 177,
+            "right": 337,
+            "top": 111.90625,
+            "width": 160
+          }
+        ],
+        "images": []
+      },
+      {
+        "file": "head2-segment-03-849550ba6e.png",
+        "sha256": "849550ba6e8a684d28c8623521457b4cfc53812416929c92624350c54eb023fa",
+        "viewport": {
+          "height": 536,
+          "scrollY": 1655,
+          "width": 511
+        },
+        "visible": [
+          {
+            "bottom": 424.75,
+            "caseId": "grok-head2-sd618253f-a0-f2",
+            "height": 312.921875,
+            "kind": "native",
+            "left": 16,
+            "right": 176,
+            "top": 111.828125,
+            "width": 160
+          },
+          {
+            "bottom": 424.75,
+            "caseId": "grok-head2-sd618253f-a0-f2",
+            "height": 312.921875,
+            "kind": "ai",
+            "left": 177,
+            "right": 337,
+            "top": 111.828125,
+            "width": 160
+          }
+        ],
+        "images": []
+      },
+      {
+        "file": "head2-segment-04-e2377cdb95.png",
+        "sha256": "e2377cdb95a71d740e01e81cd38d879965ceb3dd2d9380acf12c2f479ef659d5",
+        "viewport": {
+          "height": 536,
+          "scrollY": 1969,
+          "width": 511
+        },
+        "visible": [
+          {
+            "bottom": 424.671875,
+            "caseId": "grok-head2-sd618253f-a0-f3",
+            "height": 312.921875,
+            "kind": "native",
+            "left": 16,
+            "right": 176,
+            "top": 111.75,
+            "width": 160
+          },
+          {
+            "bottom": 424.671875,
+            "caseId": "grok-head2-sd618253f-a0-f3",
+            "height": 312.921875,
+            "kind": "ai",
+            "left": 177,
+            "right": 337,
+            "top": 111.75,
+            "width": 160
+          }
+        ],
+        "images": []
+      },
+      {
+        "file": "head2-segment-05-e3d2f1f7b5.png",
+        "sha256": "e3d2f1f7b5d29a4f8ee176b4c5943d0c06fd98ddc07820a9c19aaadbfffc6345",
+        "viewport": {
+          "height": 536,
+          "scrollY": 2283,
+          "width": 511
+        },
+        "visible": [
+          {
+            "bottom": 424.59375,
+            "caseId": "grok-head2-sd618253f-a0-f4",
+            "height": 312.921875,
+            "kind": "native",
+            "left": 16,
+            "right": 176,
+            "top": 111.671875,
+            "width": 160
+          },
+          {
+            "bottom": 424.59375,
+            "caseId": "grok-head2-sd618253f-a0-f4",
+            "height": 312.921875,
+            "kind": "ai",
+            "left": 177,
+            "right": 337,
+            "top": 111.671875,
+            "width": 160
+          }
+        ],
+        "images": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "schema": "classic-independent-native-comparison-v1",
+  "reviewer": "classic_body_judge",
+  "bodyHash": "ce509346c6a9345700c820ccd459919ff26eabba3c436dbfa2afb18cacdc4810",
+  "completeHash": "ae0239fbce3544574f62944b479c8c378228921572e346efb91321acc5921335",
+  "rows": [
+    {
+      "nativeId": "R08",
+      "nativeSource": "qq-show-classic/top/红色街头背心.gif",
+      "sourceRawHash": "15151d3fe3689954404521b90ef402ea07a878001a329d8091dcade8b8ec7fa3",
+      "nativeCrop": "R08-crop-1x.png",
+      "nativeCropHash": "7accf8a08ee7f6043a276da4cd198b53ea83212fd501fe5a4717e4ca09196f7c",
+      "aiRect": {
+        "left": 44,
+        "top": 79,
+        "width": 25,
+        "height": 39
+      },
+      "scale": 6,
+      "limits": [
+        "不要把向上举指直接称为已完成点颊",
+        "不得把腕环当裸腕结构或忽略被其遮住的连接"
+      ]
+    },
+    {
+      "nativeId": "R09",
+      "nativeSource": "qq-show-classic/outfit/薄荷裙套装.gif",
+      "sourceRawHash": "5809a6acf63e699be77e940f39243c2675a26792a9620527d3871ae659acbcee",
+      "nativeCrop": "R09-crop-1x.png",
+      "nativeCropHash": "3c16ecc8718e05e972fd25662fe0569f8fd66c53eed75c8f2fcf1c93ff37d5f3",
+      "aiRect": {
+        "left": 80,
+        "top": 92,
+        "width": 40,
+        "height": 33
+      },
+      "scale": 6,
+      "limits": [
+        "不要把粉色特效描边采成手掌色簇",
+        "不要用此空掌替代托碗/握扇实际接触"
+      ]
+    }
+  ],
+  "evidence": "gemini-r12-native-contact-comparison-6x.png",
+  "policy": "Native unchanged100 controls; diagnostic composite not new100 patch. Native R08 source has no face/contact point. R09 is empty side palm on opposite canvas side; no mirror or pose requirement. Floating stars not forced held."
+}

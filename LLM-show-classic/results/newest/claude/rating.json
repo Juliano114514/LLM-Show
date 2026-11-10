@@ -1,0 +1,2454 @@
+{
+  "schema": "classic-organized-rating-v2",
+  "character": "claude",
+  "version": "newest",
+  "archiveId": "7ec0fc573d05e2fefed7",
+  "freezeCreatedAt": "2026-11-10T08:37:41.395Z",
+  "bodyHash": "e7cd750a0423d90b574c15b6af78fa543be2386c4f96a93e6e73a34a992c7acb",
+  "completeHash": "ab71149a5d3e70e07d00498b146ca8cd0b1d7e77f5d21d0c0bfe2581edfc6238",
+  "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+  "nativeCounts": {
+    "background": 20,
+    "aura": 20,
+    "back": 17,
+    "hair": 20,
+    "legs": 20,
+    "bottom": 20,
+    "top": 20,
+    "face": 20,
+    "headwear": 20,
+    "prop": 20,
+    "effect": 20
+  },
+  "status": "revision-required",
+  "acceptance": {
+    "status": "revision-required",
+    "body": {
+      "status": "revision-required",
+      "threshold": 98,
+      "reviews": [
+        {
+          "sourceReport": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/claude-r11-round08-review.json",
+          "seed": "closeout-r25-claude-body-7wdahzwv",
+          "score": 93,
+          "defaultScore": 95,
+          "minimumSampleScore": 93,
+          "errors": []
+        }
+      ],
+      "anatomy": {
+        "status": "pending",
+        "tolerancePercent": 5,
+        "scope": "Only explicitly audited regions; not a whole-body mathematical error claim.",
+        "policy": "A new body hash requires an independent audit explicitly resolving previous confirmed body hashes; seeds and unrelated edits cannot clear findings.",
+        "reviews": [],
+        "blockers": [],
+        "outstandingHistory": [
+          {
+            "id": "claude",
+            "reviewedBodyHash": "d15601f193028ecd124779e42a3a254c074d1279f28d2f18b175cfad94965400",
+            "reviewedModuleHash": "65f0f8b9d774fab90937d42336a3b83a53bbe26b30d19a8fbcda774d79692994",
+            "requiresRevision": true,
+            "requiresFurtherAudit": false,
+            "resolvesBodyHashes": [],
+            "confirmedFindings": [
+              {
+                "region": [
+                  70,
+                  156,
+                  81,
+                  165
+                ],
+                "anatomicalRegion": "Visible right thigh mid/distal body, not naked hip/crotch",
+                "s": 0.5,
+                "source": {
+                  "file": "qq-show-classic/bottom/default.gif",
+                  "center": [
+                    74.80915031921259,
+                    155.98662728129736
+                  ],
+                  "axis": [
+                    -0.5293947021443154,
+                    16
+                  ],
+                  "normal": [
+                    -0.9994530686558981,
+                    -0.03306907247426945
+                  ],
+                  "width": 11,
+                  "selected": {
+                    "lo": -5.675000000000001,
+                    "hi": 5.3,
+                    "width": 11,
+                    "from": [
+                      80.48104648383482,
+                      156.17429426758883
+                    ],
+                    "to": [
+                      69.51204905533633,
+                      155.81136119718374
+                    ]
+                  },
+                  "runs": [
+                    {
+                      "lo": -5.675000000000001,
+                      "hi": 5.3,
+                      "width": 11,
+                      "from": [
+                        80.48104648383482,
+                        156.17429426758883
+                      ],
+                      "to": [
+                        69.51204905533633,
+                        155.81136119718374
+                      ]
+                    }
+                  ]
+                },
+                "target": {
+                  "center": [
+                    75.12292306994578,
+                    158.9991364930783
+                  ],
+                  "axis": [
+                    -0.30926610341678895,
+                    22
+                  ],
+                  "normal": [
+                    -0.9999012072837454,
+                    -0.01405616137174486
+                  ],
+                  "width": 9,
+                  "selected": {
+                    "lo": -4.375,
+                    "hi": 4.6,
+                    "width": 9,
+                    "from": [
+                      79.49749085181217,
+                      159.0606321990797
+                    ],
+                    "to": [
+                      70.52337751644056,
+                      158.93447815076829
+                    ]
+                  },
+                  "runs": [
+                    {
+                      "lo": -4.375,
+                      "hi": 4.6,
+                      "width": 9,
+                      "from": [
+                        79.49749085181217,
+                        159.0606321990797
+                      ],
+                      "to": [
+                        70.52337751644056,
+                        158.93447815076829
+                      ]
+                    }
+                  ]
+                },
+                "percent": -18.181818181818183,
+                "window": {
+                  "half": 0.04,
+                  "sourceWidth": 11.0025,
+                  "targetWidth": 9.18625,
+                  "percent": -16.507611906384913,
+                  "foot": false
+                },
+                "control": {
+                  "mode": "independent same-local-curve projected native bilinear, normalScale1",
+                  "width": 11,
+                  "controlVsSourcePercent": 0,
+                  "targetVsControlPercent": -18.181818181818183
+                },
+                "anchorSensitivity": {
+                  "sourceTargetKneePlusMinus2WindowRange": [
+                    -18.198341474497326,
+                    -11.122472165416958
+                  ],
+                  "sourceTargetVisibleStart148150152WindowRange": [
+                    -18.345242145854545,
+                    -13.525916338177318
+                  ],
+                  "reason": "Knee and visible-start perturbations remain below−10% for this paired core; neither depends on a single favorable raster phase. The visible-start sweep is a crop sensitivity exercise, not a claim that y148 is a real hip landmark."
+                },
+                "reason": "The actual target single leg is9px wide where native comparable visible thigh is10.675–11px. The same curved/projection native control differs from source by0..+.24%; it does not account for the target deficit. All source/target probes are naked skin, not skirt envelope, and no other leg union is used.",
+                "recommendation": "Only expand this right thigh middle around y156–165 by roughly1.5–2px total normal width, tapered into existing silhouette; remeasure exact normalized cuts and adjacent windows. Preserve right calf from170 onward, both exact source feet, head and the repaired arms/hands. Do not widen the whole leg or move the knee/foot."
+              },
+              {
+                "region": [
+                  70,
+                  156,
+                  81,
+                  165
+                ],
+                "anatomicalRegion": "Visible right thigh mid/distal body, not naked hip/crotch",
+                "s": 0.65,
+                "source": {
+                  "file": "qq-show-classic/bottom/default.gif",
+                  "center": [
+                    74.76981106971763,
+                    158.39221972433148
+                  ],
+                  "axis": [
+                    0.008481861322349626,
+                    16
+                  ],
+                  "normal": [
+                    -0.9999998594883666,
+                    0.0005301162581593398
+                  ],
+                  "width": 10.675,
+                  "selected": {
+                    "lo": -5.4,
+                    "hi": 5.25,
+                    "width": 10.675,
+                    "from": [
+                      80.16981031095482,
+                      158.38935709653742
+                    ],
+                    "to": [
+                      69.51981180740371,
+                      158.3950028346868
+                    ]
+                  },
+                  "runs": [
+                    {
+                      "lo": -5.4,
+                      "hi": 5.25,
+                      "width": 10.675,
+                      "from": [
+                        80.16981031095482,
+                        158.38935709653742
+                      ],
+                      "to": [
+                        69.51981180740371,
+                        158.3950028346868
+                      ]
+                    }
+                  ]
+                },
+                "target": {
+                  "center": [
+                    75.06964174073053,
+                    162.29924054823314
+                  ],
+                  "axis": [
+                    -0.37329004049158265,
+                    22
+                  ],
+                  "normal": [
+                    -0.9998560791601452,
+                    -0.016965287103429347
+                  ],
+                  "width": 9,
+                  "selected": {
+                    "lo": -4.425,
+                    "hi": 4.55,
+                    "width": 9,
+                    "from": [
+                      79.49400489101417,
+                      162.37431194366582
+                    ],
+                    "to": [
+                      70.52029658055187,
+                      162.22204849191255
+                    ]
+                  },
+                  "runs": [
+                    {
+                      "lo": -4.425,
+                      "hi": 4.55,
+                      "width": 9,
+                      "from": [
+                        79.49400489101417,
+                        162.37431194366582
+                      ],
+                      "to": [
+                        70.52029658055187,
+                        162.22204849191255
+                      ]
+                    }
+                  ]
+                },
+                "percent": -15.690866510538646,
+                "window": {
+                  "half": 0.04,
+                  "sourceWidth": 10.581875,
+                  "targetWidth": 8.998124999999998,
+                  "percent": -14.966629259937411,
+                  "foot": false
+                },
+                "control": {
+                  "mode": "independent same-local-curve projected native bilinear, normalScale1",
+                  "width": 10.7,
+                  "controlVsSourcePercent": 0.23419203747071266,
+                  "targetVsControlPercent": -15.887850467289715
+                },
+                "anchorSensitivity": {
+                  "sourceTargetKneePlusMinus2WindowRange": [
+                    -18.077568790370805,
+                    -10.024373476657722
+                  ],
+                  "sourceTargetVisibleStart148150152WindowRange": [
+                    -14.966629259937411,
+                    -10.009372071227729
+                  ],
+                  "reason": "Knee and visible-start perturbations remain below−10% for this paired core; neither depends on a single favorable raster phase. The visible-start sweep is a crop sensitivity exercise, not a claim that y148 is a real hip landmark."
+                },
+                "reason": "The actual target single leg is9px wide where native comparable visible thigh is10.675–11px. The same curved/projection native control differs from source by0..+.24%; it does not account for the target deficit. All source/target probes are naked skin, not skirt envelope, and no other leg union is used.",
+                "recommendation": "Only expand this right thigh middle around y156–165 by roughly1.5–2px total normal width, tapered into existing silhouette; remeasure exact normalized cuts and adjacent windows. Preserve right calf from170 onward, both exact source feet, head and the repaired arms/hands. Do not widen the whole leg or move the knee/foot."
+              }
+            ],
+            "uncertainFindings": [
+              {
+                "region": [
+                  56,
+                  150,
+                  70,
+                  154
+                ],
+                "s": 0.2,
+                "nominalPercent": 8.108108108108105,
+                "nominalWindowPercent": 8.007062000207668,
+                "kneeWindowRange": [
+                  7.983695087755706,
+                  8.17276438619762
+                ],
+                "visibleStartWindowRange": [
+                  -1.3916294526950164,
+                  17.044623262618813
+                ],
+                "reason": "Left proximal thigh excess is sensitive to the arbitrary visible-top crop even though knee sensitivity is stable. There is no naked hip joint truth in the corpus; this cannot be called a confirmed anatomical blocker from y148 normalization alone. Preserve and reassess rather than force a .8px shave on this evidence."
+              }
+            ],
+            "resolvedHistoricalObservations": [
+              {
+                "bodyHash": "3c4919fcf35a13f2b0f5b17867625eb6401d6fcee0a677e458e04423f1c07d09",
+                "region": "Both calves, especially prior left .5/.65 large excess",
+                "reason": "The new source-driven two-dimensional mapping replaces the old calf. Exact QA clone and dense independent .10.. .90 normal measurements support resolution within this explicit calf scope; no whole-leg clearance is inferred."
+              }
+            ],
+            "scope": {
+              "reviewed": [
+                "Both actual single-leg calves from source knee163/164 to native-foot join199; fixed target knee167/170 and foot join201/198; .10.. .90 at.01 plus three neighboring windows.",
+                "Visible thigh148→knee with five core positions; knee±2 and visible-start148/150/152 sensitivity; confirmed right mid/distal core only.",
+                "Actual full-body source feet each124 visible source pixels, integer rigid mapping and RGBA0."
+              ],
+              "notCovered": [
+                "No official naked hip/waist dimensions; original clothing remains proxy.",
+                "No full-body mathematical≤5% guarantee or additional arm-volume audit.",
+                "Calf .90..1 foot-transition normals not exhaustively covered, although exact source feet and actual knee/ankle appearance were viewed.",
+                "No multi-fusion/animation assessment."
+              ]
+            },
+            "calfSummary": {
+              "left": {
+                "sourceFitCoefficientsDifference": 0,
+                "targetFitCoefficientsDifference": 0,
+                "sourceArc": 37.074459096357465,
+                "targetArc": 34.58159243004633,
+                "projection": 0.9327605384657909,
+                "normalScale": 1,
+                "singleRange": [
+                  -3.012048192771084,
+                  3.741496598639461
+                ],
+                "windowRange": [
+                  -1.344269765322383,
+                  0.8244879410523649
+                ],
+                "controls": [
+                  {
+                    "sampling": "nearest",
+                    "identityInteriorAlphaDifferences": 0,
+                    "identityInteriorRgbaDifferences": 0
+                  },
+                  {
+                    "sampling": "bilinear",
+                    "identityInteriorAlphaDifferences": 1,
+                    "identityInteriorRgbaDifferences": 1
+                  }
+                ],
+                "feet": {
+                  "mapping": {
+                    "sourceBox": [
+                      40,
+                      199,
+                      65,
+                      212
+                    ],
+                    "translation": [
+                      4,
+                      2
+                    ],
+                    "sourceAnkle": [
+                      53,
+                      199
+                    ],
+                    "targetAnkle": [
+                      57,
+                      201
+                    ]
+                  },
+                  "pixels": 124,
+                  "rgbaMismatches": 0,
+                  "alphaMismatches": 0
+                }
+              },
+              "right": {
+                "sourceFitCoefficientsDifference": 0,
+                "targetFitCoefficientsDifference": 0,
+                "sourceArc": 35.05343875395241,
+                "targetArc": 28.08447819520185,
+                "projection": 0.801190387976849,
+                "normalScale": 1,
+                "singleRange": [
+                  -2.5641025641025665,
+                  2.4464831804281255
+                ],
+                "windowRange": [
+                  -0.9695172374461872,
+                  0.5954088952654119
+                ],
+                "controls": [
+                  {
+                    "sampling": "nearest",
+                    "identityInteriorAlphaDifferences": 0,
+                    "identityInteriorRgbaDifferences": 0
+                  },
+                  {
+                    "sampling": "bilinear",
+                    "identityInteriorAlphaDifferences": 0,
+                    "identityInteriorRgbaDifferences": 0
+                  }
+                ],
+                "feet": {
+                  "mapping": {
+                    "sourceBox": [
+                      70,
+                      199,
+                      90,
+                      212
+                    ],
+                    "translation": [
+                      -2,
+                      -1
+                    ],
+                    "sourceAnkle": [
+                      76,
+                      199
+                    ],
+                    "targetAnkle": [
+                      74,
+                      198
+                    ]
+                  },
+                  "pixels": 124,
+                  "rgbaMismatches": 0,
+                  "alphaMismatches": 0
+                }
+              }
+            },
+            "method": "Actual source alpha, isolated target calibration rendered from exact QA clone. Single fitted cubic from source/old-target row midpoints, normalized arc and true tangent; bilinear alpha>128/.025px normal sampling; all connected runs retained. Independent native same-local-curve controls, NN and bilinear, no target widths enter their construction.",
+            "coordinate": "Both fitted axes derive from raw PNG array pixel centres; no -.5 offset is applied. SVG physical pixels are array+.5.",
+            "evidence": {
+              "measurements": "claude-independent-leg-measurements.json",
+              "script": "measure-claude-legs-final.mjs",
+              "qaClone": "claude-r4-frozen-copy.mjs",
+              "body": "claude/body-1x.png",
+              "bodyHash": "d15601f193028ecd124779e42a3a254c074d1279f28d2f18b175cfad94965400",
+              "actualReact": "../../react-review/round-15/claude/body-all20.png",
+              "actualReactSnapshot": "../../react-review/round-15/claude/body-all20-evidence.json",
+              "nativeSource": "../../../../../../qq-show-classic/bottom/default.gif",
+              "nativeSourceGifHash": "8b46e2a0db49c6d2a26c780a9e85a59f9bd5b26932e3c8b90f215c93f2facbf9",
+              "sourceRgbaHash": "54adcda94bf63202862e0c34f0efb000a8a1b1e29bc2ac82abcd235b85a967f9",
+              "controls": [
+                "claude-left-leg-control-detail.png",
+                "claude-right-leg-control-detail.png",
+                "claude-right-thigh-probes.png"
+              ],
+              "qaCloneBodyRgbaDifferences": 0,
+              "actuallyViewed": [
+                "claude/native-default-legs-8x.png",
+                "claude/legs-light-8x.png",
+                "claude/legs-dark-8x.png",
+                "claude-left-leg-control-detail.png",
+                "claude-right-leg-control-detail.png"
+              ]
+            },
+            "reviewer": "classic_body_judge",
+            "sourceReport": "ai-workspace/previews/classic/remake/acceptance/round-15/body-anatomy-audit.json"
+          }
+        ],
+        "furtherAuditRequired": []
+      },
+      "errors": [
+        "The new body requires independent anatomical clearance of previously confirmed findings; a new hash alone cannot clear them."
+      ]
+    },
+    "multi": {
+      "head2": {
+        "status": "revision-required",
+        "threshold": 98,
+        "selectedAiSlots": [
+          "hair",
+          "face"
+        ],
+        "notApplicable": [],
+        "reviews": [
+          {
+            "sourceReport": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/claude-r11-round08-review.json",
+            "seed": "closeout-r25-claude-head2-ocps9mnm",
+            "score": 93.85,
+            "minimumContextScore": 93.85,
+            "errors": []
+          }
+        ],
+        "errors": []
+      },
+      "body3": {
+        "status": "revision-required",
+        "threshold": 98,
+        "selectedAiSlots": [
+          "top",
+          "bottom",
+          "legs"
+        ],
+        "notApplicable": [],
+        "reviews": [
+          {
+            "sourceReport": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/claude-r11-round08-review.json",
+            "seed": "closeout-r25-claude-body3-eqc61wgz",
+            "score": 92.95,
+            "minimumContextScore": 92.95,
+            "errors": []
+          }
+        ],
+        "errors": []
+      },
+      "figure5": {
+        "status": "pending",
+        "threshold": 98,
+        "selectedAiSlots": [
+          "hair",
+          "face",
+          "top",
+          "bottom",
+          "legs"
+        ],
+        "notApplicable": [],
+        "reviews": [],
+        "errors": [
+          "No current-pool review of this complete AI part set."
+        ]
+      },
+      "nearFull8": {
+        "status": "pending",
+        "threshold": 98,
+        "selectedAiSlots": [
+          "hair",
+          "face",
+          "headwear",
+          "top",
+          "bottom",
+          "legs",
+          "prop"
+        ],
+        "notApplicable": [
+          "back"
+        ],
+        "reviews": [],
+        "errors": [
+          "No current-pool review of this complete AI part set."
+        ]
+      },
+      "scene3": {
+        "status": "pending",
+        "threshold": 98,
+        "selectedAiSlots": [
+          "background",
+          "aura",
+          "effect"
+        ],
+        "notApplicable": [],
+        "reviews": [],
+        "errors": [
+          "No current-pool review of this complete AI part set."
+        ]
+      },
+      "accessories3": {
+        "status": "pending",
+        "threshold": 98,
+        "selectedAiSlots": [
+          "headwear",
+          "prop"
+        ],
+        "notApplicable": [
+          "back"
+        ],
+        "reviews": [],
+        "errors": [
+          "No current-pool review of this complete AI part set."
+        ]
+      },
+      "upper2": {
+        "status": "revision-required",
+        "threshold": 98,
+        "selectedAiSlots": [
+          "hair",
+          "top"
+        ],
+        "notApplicable": [],
+        "reviews": [
+          {
+            "sourceReport": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/claude-r11-round08-review.json",
+            "seed": "closeout-r25-claude-upper2-giky1zg0",
+            "score": 91.35,
+            "minimumContextScore": 91.35,
+            "errors": []
+          }
+        ],
+        "errors": []
+      },
+      "skirt3": {
+        "status": "pending",
+        "threshold": 98,
+        "selectedAiSlots": [
+          "top",
+          "bottom",
+          "headwear"
+        ],
+        "notApplicable": [],
+        "reviews": [],
+        "errors": [
+          "No current-pool review of this complete AI part set."
+        ]
+      },
+      "stride2": {
+        "status": "pending",
+        "threshold": 98,
+        "selectedAiSlots": [
+          "legs",
+          "prop"
+        ],
+        "notApplicable": [],
+        "reviews": [],
+        "errors": [
+          "No current-pool review of this complete AI part set."
+        ]
+      }
+    },
+    "reference": {
+      "status": "passed",
+      "threshold": 90,
+      "score": 94.2,
+      "minimumCurrentVersionScore": 94.2,
+      "reviews": [
+        {
+          "sourceReport": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/claude-r11-round08-review.json",
+          "score": 94.2
+        }
+      ],
+      "sourceReport": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/claude-r11-round08-review.json",
+      "errors": []
+    },
+    "currentVersion": {
+      "bodyHash": "e7cd750a0423d90b574c15b6af78fa543be2386c4f96a93e6e73a34a992c7acb",
+      "completeHash": "ab71149a5d3e70e07d00498b146ca8cd0b1d7e77f5d21d0c0bfe2581edfc6238",
+      "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+      "bodyCorpusHash": "3451692764c29845da8f6c5b579069c3f1bec6309b7b9765bcc11843167082c7"
+    },
+    "errors": [
+      "One or more independent current-version judgements are below the required threshold.",
+      "Required current-version review evidence remains incomplete."
+    ],
+    "policy": "All nine multi-part groups, including three cross-native clothing/body interfaces, require five actual complete native/AI pairs each. Current-version failures remain visible across seeds; historical single-part scores and supplementary hidden-layer views cannot grant final acceptance."
+  },
+  "reference": {
+    "reviewer": "classic_body_judge",
+    "score": 94.2,
+    "weightedRaw": 94.2,
+    "threshold": 90,
+    "passed": true,
+    "reviewedCompleteHash": "ab71149a5d3e70e07d00498b146ca8cd0b1d7e77f5d21d0c0bfe2581edfc6238",
+    "reviewedCompleteArtifact": "character.png canonical runtime per-layer composite; exact actual browser fullLayers below.",
+    "reviewedFullLayerHashes": {
+      "claude-background-0": "669a0be70f8e3887f16e497bfa710a957f7abe7d1bef44d446f1ecc22c7cb6e6",
+      "claude-aura-0": "22c3d44e491460767029398d391981b9b0157ca6e15cc6bac6b5ef4142c88f14",
+      "claude-back-0": "03c05428ba57bf42a7768c4c41dd6bdaf0f1dd79d1929bef24d3ab68cae9da7f",
+      "claude-hair-0": "faa5619094d3a9681d49bd12fa5a0e2cf11eb1cf9a074cdc7c13828e8861b369",
+      "claude-legs-0": "189524e1cb1848c0fc7dc74a6b3300fc99d523f5f390278275d70b270e655d81",
+      "claude-bottom-0": "502e0060c429ce3dbe546723e913b6f07bebb1747f5f9b3ab70e9aaeb44b8785",
+      "claude-top-0": "8dff0e30f8d73e3abaa926bc86c2abdd091d40200525d6478901bfd88673fd63",
+      "claude-face-0": "406c9e83fc27b4cc4cde0e579be951a7861cfde4691728396485470626f40c56",
+      "claude-hair-1": "f308aee7a7522833de748c5f3605ef13cde07fd57f1f76d944f0f7514c6b3688",
+      "claude-prop-0": "f8711299cead19f83ee5375af9d1f104da137337fb384d2eaade08869a2e77ef",
+      "claude-top-1": "0744906bd30fbdfe38fa4f7521e6b89e38dc1afdb434c6d239d20dd7e82cbbc3",
+      "claude-headwear-0": "4871c6d8b5102bcda7735d62bb22f090dc45bdd35fbffc4c0519f4c35b62d505",
+      "claude-effect-0": "ce584b4c428c8794449d6e8e5bca0e3f4a1e9e6441fb16dd44d7d34fc5b93f4b"
+    },
+    "reviewedGeneratedInterfaceHashes": {},
+    "seed": "closeout-r25-claude-full-y7ih2uqy",
+    "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+    "contextSignature": "native-context-v4-ab8e8765",
+    "dimensions": {
+      "action": {
+        "score": 100,
+        "weight": 20,
+        "reason": "屈臂抱书与另一臂低手近裙主动作保持，中小腕指/肘角差扣0；结构/接触另评融合。"
+      },
+      "emotion": {
+        "score": 90,
+        "weight": 10,
+        "reason": "棕瞳、平静闭口可辨，normal细眉睑/鼻颊小面仍概括，不把Classic合理短指/五官简化当姿态差。"
+      },
+      "hair": {
+        "score": 92,
+        "weight": 20,
+        "reason": "偏分长刘海/贴脸束、橙长发与不等长松弯C尾成立，较旧主谷有层次；normal散长侧层和束间小层仍缩并，少数长浅边近同频。"
+      },
+      "pose": {
+        "score": 100,
+        "weight": 15,
+        "reason": "站立前后足/裙下承重主类保持，中小膝踝/重心差扣0，不借未解尺寸疑项扣pose。"
+      },
+      "clothing": {
+        "score": 90,
+        "weight": 25,
+        "reason": "白衬泡袖、黑束腰外披、奶白内裙和橙垂片可辨，R11白裙谷峰/橙片内翻较旧清楚；胸领荷叶/裙层刺绣/斜叠披片与细腰饰仍概括。"
+      },
+      "accessories": {
+        "score": 93,
+        "weight": 10,
+        "reason": "书/橙花黑结/金链和花扣识别成立，书封小纹、悬挂小饰与垂穗层次缩并。"
+      }
+    },
+    "colorFidelity": {
+      "policy": "User final clarification: corresponding-part hue proximity only. No RGB/HEX, brightness, saturation or area-ratio threshold.",
+      "reference": "ai-girls-atlas/assets/zipzippipe/claude/normal-zipzippipe-pixiv-148186519-p02.jpg",
+      "authorizedAdaptations": [
+        "平静闭口神态按既定用户适配审。"
+      ],
+      "parts": [
+        {
+          "part": "hair and ends",
+          "observation": "橙棕发根/尾色相对应近，不因亮度饱和度或面积比扣。",
+          "dimension": "hair",
+          "deduction": 0
+        },
+        {
+          "part": "left/right iris",
+          "observation": "棕系双瞳色相接近normal，RGB/明暗不作门槛。",
+          "dimension": "emotion",
+          "deduction": 0
+        },
+        {
+          "part": "blouse/inner skirt/outer skirt/orange panel/boots",
+          "observation": "奶白衬裙、黑棕腰外片、橙垂片和浅靴对应色相近；光影材质另评融合。",
+          "dimension": "clothing",
+          "deduction": 0
+        },
+        {
+          "part": "flower/ribbon/book/chain",
+          "observation": "橙花黑结/棕书/金链色相对应近。",
+          "dimension": "accessories",
+          "deduction": 0
+        }
+      ]
+    },
+    "poseAudit": {
+      "policyVersion": "classic-significant-pose-only-20261110",
+      "reviewer": "classic_body_judge",
+      "reviewedBodyHash": "e7cd750a0423d90b574c15b6af78fa543be2386c4f96a93e6e73a34a992c7acb",
+      "reviewedCompleteHash": "ab71149a5d3e70e07d00498b146ca8cd0b1d7e77f5d21d0c0bfe2581edfc6238",
+      "reference": "ai-girls-atlas/assets/zipzippipe/claude/normal-zipzippipe-pixiv-148186519-p02.jpg",
+      "pending": false,
+      "scope": "Actual current frozen body and clothed full are shown beside normal in the full browser screenshot. Image-left/right are canvas sides.",
+      "regions": [
+        {
+          "part": "torso",
+          "severity": "minor",
+          "region": [
+            54,
+            91,
+            85,
+            151
+          ],
+          "reason": "胸腰稍正面化为中小差，抱书直立主类保持。",
+          "poseDeduction": 0,
+          "deducted": false,
+          "deductionDimension": null,
+          "evidence": [
+            "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/full.png",
+            "ai-girls-atlas/assets/zipzippipe/claude/normal-zipzippipe-pixiv-148186519-p02.jpg"
+          ]
+        },
+        {
+          "part": "imageLeftArm",
+          "severity": "moderate",
+          "region": [
+            45,
+            92,
+            68,
+            124
+          ],
+          "reason": "屈臂胸前持书方向在，局部腕指/肘角中等以下扣0。",
+          "poseDeduction": 0,
+          "deducted": false,
+          "deductionDimension": null,
+          "evidence": [
+            "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/full.png",
+            "ai-girls-atlas/assets/zipzippipe/claude/normal-zipzippipe-pixiv-148186519-p02.jpg"
+          ]
+        },
+        {
+          "part": "imageRightArm",
+          "severity": "moderate",
+          "region": [
+            81,
+            94,
+            95,
+            144
+          ],
+          "reason": "低垂弯臂/手近裙方向保留，局部手位差扣0，掌根自然度另扣融合。",
+          "poseDeduction": 0,
+          "deducted": false,
+          "deductionDimension": null,
+          "evidence": [
+            "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/full.png",
+            "ai-girls-atlas/assets/zipzippipe/claude/normal-zipzippipe-pixiv-148186519-p02.jpg"
+          ]
+        },
+        {
+          "part": "imageLeftLeg",
+          "severity": "minor",
+          "region": [
+            50,
+            142,
+            73,
+            223
+          ],
+          "reason": "向下支撑腿主类在，局部膝踝差扣0。",
+          "poseDeduction": 0,
+          "deducted": false,
+          "deductionDimension": null,
+          "evidence": [
+            "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/full.png",
+            "ai-girls-atlas/assets/zipzippipe/claude/normal-zipzippipe-pixiv-148186519-p02.jpg"
+          ]
+        },
+        {
+          "part": "imageRightLeg",
+          "severity": "minor",
+          "region": [
+            69,
+            142,
+            88,
+            220
+          ],
+          "reason": "后足错开关系近，裙遮处不编骨点。",
+          "poseDeduction": 0,
+          "deducted": false,
+          "deductionDimension": null,
+          "evidence": [
+            "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/full.png",
+            "ai-girls-atlas/assets/zipzippipe/claude/normal-zipzippipe-pixiv-148186519-p02.jpg"
+          ]
+        },
+        {
+          "part": "weight",
+          "severity": "moderate",
+          "region": [
+            48,
+            130,
+            95,
+            225
+          ],
+          "reason": "站立承重主类近，中小重心/足角差扣0。",
+          "poseDeduction": 0,
+          "deducted": false,
+          "deductionDimension": null,
+          "evidence": [
+            "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/full.png",
+            "ai-girls-atlas/assets/zipzippipe/claude/normal-zipzippipe-pixiv-148186519-p02.jpg"
+          ]
+        }
+      ],
+      "deductionPolicy": "Minor/moderate pose differences have zero deduction. Significant means very significant only; anatomy and garment/contact failures stay in fusion.",
+      "significantDifferences": []
+    },
+    "reasons": [
+      "本轮normal与实际冻结IAB全套重新审；hue对应接近、六区中小pose差扣0。还原过90不替代身体/多件98。"
+    ],
+    "recommendations": [
+      "R26唯一最终返工：保书手/捏裙接位和新增低掌肉面，局部理清远腕→掌根/拇指根短转面及布指短压影，不按default源点削肉或数五指。",
+      "白裙长峰按腰胯/提点/落地受力错长变宽，橙片底端与白裙明确短厚边/背面；保大浅面，不用碎亮纹填满。",
+      "保松C尾和自身normal刘海，侧束主谷/短叠影与大浅峰分工，避免几条长浅边同频跨束。",
+      "上衣与原生裙裤腰口厚度/共曲面在真实上下行中再核，原生100不为AI接口遮羞。",
+      "R26真实IAB复评后停止自动艺术返工；不足98/六组pending/技术未解如实写MD，不开第三轮。"
+    ],
+    "evidence": {
+      "reactFullImage": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/full.png",
+      "reactFullImageSha256": "2ebda0319f3978f08f340c96ec0a8d9ec8046b1e27b9f2e3fd84b133b67ce996",
+      "reactFullSnapshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/full-evidence.json",
+      "actuallyViewed": [
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/full.png",
+        "ai-girls-atlas/assets/zipzippipe/claude/normal-zipzippipe-pixiv-148186519-p02.jpg",
+        "ai-girls-atlas/characters/claude/README.md"
+      ],
+      "captureBrowser": "Codex in-app browser",
+      "failedImages": [],
+      "reactFullImages": [
+        {
+          "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/full.png",
+          "sha256": "2ebda0319f3978f08f340c96ec0a8d9ec8046b1e27b9f2e3fd84b133b67ce996",
+          "images": [
+            {
+              "bottom": 342.5625,
+              "height": 226,
+              "index": 0,
+              "left": 28,
+              "right": 168,
+              "top": 116.5625,
+              "width": 140
+            },
+            {
+              "bottom": 342.5625,
+              "height": 226,
+              "index": 1,
+              "left": 180,
+              "right": 320,
+              "top": 116.5625,
+              "width": 140
+            },
+            {
+              "bottom": 342.5625,
+              "height": 226,
+              "index": 2,
+              "left": 332,
+              "right": 472,
+              "top": 116.5625,
+              "width": 140
+            }
+          ]
+        }
+      ]
+    },
+    "limitations": [
+      "Static image; no animation validation.",
+      "Full-reference passing does not grant body/fusion acceptance."
+    ],
+    "sourceReport": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/claude-r11-round08-review.json",
+    "recordSignature": "[\"closeout-r25-claude-full-y7ih2uqy\",\"native-context-v4-ab8e8765\",null,null,null,null,\"ab71149a5d3e70e07d00498b146ca8cd0b1d7e77f5d21d0c0bfe2581edfc6238\"]",
+    "expertReportedScore": 94.2,
+    "unroundedWeightedScore": 94.2,
+    "precisionPolicy": "Threshold uses the weighted value before integer display rounding; original dimension judgements are unchanged."
+  },
+  "bodyReviews": [
+    {
+      "reviewer": "classic_body_judge",
+      "score": 93,
+      "threshold": 98,
+      "passed": false,
+      "pending": false,
+      "requiresRevision": true,
+      "reviewedBodyHash": "e7cd750a0423d90b574c15b6af78fa543be2386c4f96a93e6e73a34a992c7acb",
+      "reviewedCompleteHash": "ab71149a5d3e70e07d00498b146ca8cd0b1d7e77f5d21d0c0bfe2581edfc6238",
+      "seed": "closeout-r25-claude-body-7wdahzwv",
+      "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+      "bodyCorpusHash": "3451692764c29845da8f6c5b579069c3f1bec6309b7b9765bcc11843167082c7",
+      "corpusSignature": "body-corpus-context-v1-5de8a689",
+      "coverage": {
+        "default": true,
+        "samplesViewed": 20,
+        "requiredSamples": 20,
+        "selectedIds": [
+          "01",
+          "02",
+          "03",
+          "04",
+          "05",
+          "06",
+          "07",
+          "08",
+          "09",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "19",
+          "20"
+        ],
+        "browserAllTwentyVerified": true
+      },
+      "aggregation": "Minimum of newly judged current default and all20. Older scores and author diagnostics are not inherited.",
+      "defaultComparison": {
+        "score": 95,
+        "passed": false,
+        "reasons": [
+          "R11低掌跟/拇指根比R10有加肉，旧小尖楔指控不原样沿用；书前指群/书边接位和捏裙布从掌后进入真实成立。",
+          "右远腕x84..90/y126..135到低掌x85..94/y135..143仍偏浅带接短水平掌面；掌根转向/拇指根短肉面和布指下短压影不足，不因紧凑短指或角阶本身扣。",
+          "左屈臂/右肘到腕主轮廓连续，腰胯股根可读，尚未独立重测腿与完整骨段；历史不利测量不因新hash清除。"
+        ],
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-default-074c88dfb0.png"
+      },
+      "perSampleScores": [
+        {
+          "id": "01",
+          "sample": 1,
+          "label": "抱臂天使礼服",
+          "score": 94,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "原生交叠短面清楚，Claude书手接位成立，低掌根短转面仍少。"
+          ],
+          "regions": [
+            [
+              45,
+              92,
+              68,
+              124
+            ],
+            [
+              81,
+              94,
+              95,
+              144
+            ],
+            [
+              54,
+              130,
+              84,
+              175
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-01-24a78a83d8.png",
+          "evidenceSha256": "24a78a83d897d80b5caf9ee83b6ff5630a0f00255ec3d73bdf93869c31d6f6c3",
+          "source": "qq-show-classic/outfit/白色天使套装.gif",
+          "layers": [
+            "qq-show-classic/back-hair/白金蝴蝶结波浪长发.gif",
+            "qq-show-classic/outfit/白色天使套装.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/白金蝴蝶结波浪长发.gif"
+          ],
+          "nativeImageHash": "c0c31cf662e153e299a0ec392c8a518242385bccaba17a90609393f8b9e0024f",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "02",
+          "sample": 2,
+          "label": "蓝白捧花公主裙",
+          "score": 95,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "花掌可紧凑，Claude低掌加肉，指布短影仍弱。"
+          ],
+          "regions": [
+            [
+              45,
+              92,
+              68,
+              124
+            ],
+            [
+              81,
+              94,
+              95,
+              144
+            ],
+            [
+              54,
+              130,
+              84,
+              175
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-02-4390e8b0ea.png",
+          "evidenceSha256": "4390e8b0eab8115e3b2bed4bd9d1ef6bf60a7e707b45dc3da6e96a0f13f57ae1",
+          "source": "qq-show-classic/outfit/白色公主裙黄色捧花套装.gif",
+          "layers": [
+            "qq-show-classic/back-hair/金色长卷发.gif",
+            "qq-show-classic/outfit/白色公主裙黄色捧花套装.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/金色长卷发.gif"
+          ],
+          "nativeImageHash": "59429f0f599cc8711a6b88e8472f7aa99f8f76dfee38a89d31f2e6d22e66025d",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "03",
+          "sample": 3,
+          "label": "薄荷裙抬手",
+          "score": 94,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "不要求举指同姿，Claude肌腹连续，低腕掌短转向少。"
+          ],
+          "regions": [
+            [
+              45,
+              92,
+              68,
+              124
+            ],
+            [
+              81,
+              94,
+              95,
+              144
+            ],
+            [
+              54,
+              130,
+              84,
+              175
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-03-7044f5e84d.png",
+          "evidenceSha256": "7044f5e84d27d0c7089616d7d4f5d15b6b989fc887dd18eca02997721fffb508",
+          "source": "qq-show-classic/outfit/薄荷裙套装.gif",
+          "layers": [
+            "qq-show-classic/outfit/薄荷裙套装.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/粉紫双马尾.gif"
+          ],
+          "nativeImageHash": "ae902b32ef1eec9558c5516b375ed1d20b9da2e2ef9beeadcbed0852fa8285ae",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "04",
+          "sample": 4,
+          "label": "蓝白学院裙垂袖",
+          "score": 94,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "原生袖遮不推裸宽，Claude露出腕掌短转面仍简。"
+          ],
+          "regions": [
+            [
+              45,
+              92,
+              68,
+              124
+            ],
+            [
+              81,
+              94,
+              95,
+              144
+            ],
+            [
+              54,
+              130,
+              84,
+              175
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-04-c898a5b185.png",
+          "evidenceSha256": "c898a5b185f8e020fa148b4c88940c648aed6402581e10181cb279eb80f300a2",
+          "source": "qq-show-classic/outfit/蓝白学院风连衣裙.gif",
+          "layers": [
+            "qq-show-classic/outfit/蓝白学院风连衣裙.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/黑色齐刘海麻花辫.gif"
+          ],
+          "nativeImageHash": "0bb87dbcc04e43d970312468cf6a70c2f3e599dcb7f9cd44afa8d6a626cc158d",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "05",
+          "sample": 5,
+          "label": "粉背心交叉腿",
+          "score": 94,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "错足股根连贯，低掌肉面改善，指布短压面不足。"
+          ],
+          "regions": [
+            [
+              45,
+              92,
+              68,
+              124
+            ],
+            [
+              81,
+              94,
+              95,
+              144
+            ],
+            [
+              54,
+              130,
+              84,
+              175
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-05-8cac86c77b.png",
+          "evidenceSha256": "8cac86c77bb5f50e4189af1a74c7f711817818e5455c53f916dfcd052af7ce73",
+          "source": "qq-show-classic/outfit/粉色背心蓝裙套装.gif",
+          "layers": [
+            "qq-show-classic/outfit/粉色背心蓝裙套装.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/红棕斜扎长发.gif"
+          ],
+          "nativeImageHash": "0562e149b22af6279fdc78c20021a393d0e38eb3875cb4f5fc80aa0ecaa49db3",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "06",
+          "sample": 6,
+          "label": "黄色开衩动势裙",
+          "score": 93,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "舞姿不同扣0，原生掌腕短面自然，Claude低腕向掌展开仍简。"
+          ],
+          "regions": [
+            [
+              45,
+              92,
+              68,
+              124
+            ],
+            [
+              81,
+              94,
+              95,
+              144
+            ],
+            [
+              54,
+              130,
+              84,
+              175
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-06-fa3f8d7ddb.png",
+          "evidenceSha256": "fa3f8d7ddb0be2a8ca66a42b0a703d93d0ddb0ce17da46e0bfa7aa56caab12e0",
+          "source": "qq-show-classic/outfit/灵动开衩裙套装.gif",
+          "layers": [
+            "qq-show-classic/outfit/灵动开衩裙套装.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/金棕波浪长发.gif"
+          ],
+          "nativeImageHash": "d7cd7c0c1ee129394de9247d9524425984c0af9cc4d61b828b5de466e4656f5a",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "07",
+          "sample": 7,
+          "label": "深蓝露肩低位交手",
+          "score": 93,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "低交手可概括，Claude不因角阶扣，低掌跟短面不足。"
+          ],
+          "regions": [
+            [
+              45,
+              92,
+              68,
+              124
+            ],
+            [
+              81,
+              94,
+              95,
+              144
+            ],
+            [
+              54,
+              130,
+              84,
+              175
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-07-b5175181c1.png",
+          "evidenceSha256": "b5175181c11bf5e016e66d0c0ed51689cd488acb92e290e211156f14ae504c14",
+          "source": "qq-show-classic/outfit/深蓝一字肩连衣裙.gif",
+          "layers": [
+            "qq-show-classic/outfit/深蓝一字肩连衣裙.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/黑色侧扎长羊毛卷.gif"
+          ],
+          "nativeImageHash": "c255624cb7baa4049082f15e326dc89be47e73e679510d260c3274eb56bb8f9f",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "08",
+          "sample": 8,
+          "label": "黑红舞裙外展",
+          "score": 93,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "原生捏布可短指，Claude布入指点在，掌根/布指短压影少。"
+          ],
+          "regions": [
+            [
+              45,
+              92,
+              68,
+              124
+            ],
+            [
+              81,
+              94,
+              95,
+              144
+            ],
+            [
+              54,
+              130,
+              84,
+              175
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-08-f19124f804.png",
+          "evidenceSha256": "f19124f804e917e03add4c200b2dbd745df30b2dda3ad5dd7b495c734c2251fe",
+          "source": "qq-show-classic/outfit/翩翩起舞套装.gif",
+          "layers": [
+            "qq-show-classic/outfit/翩翩起舞套装.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/红棕公主卷发.gif"
+          ],
+          "nativeImageHash": "fba21eaf6b1dca9acf3517f5f49b83e36212292ef596a0e1428e5aec27e9fa15",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "09",
+          "sample": 9,
+          "label": "碎花吊带牛仔持包",
+          "score": 93,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "原生包柄掌面有转向，Claude低掌增肉但短承压仍弱。"
+          ],
+          "regions": [
+            [
+              45,
+              92,
+              68,
+              124
+            ],
+            [
+              81,
+              94,
+              95,
+              144
+            ],
+            [
+              54,
+              130,
+              84,
+              175
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-09-5717063189.png",
+          "evidenceSha256": "571706318906c0e04ac37a63e1991bcec67162694a42d8bf2bf38b7dbbd1f05e",
+          "source": "qq-show-classic/outfit/白色碎花吊带牛仔套装.gif",
+          "layers": [
+            "qq-show-classic/outfit/白色碎花吊带牛仔套装.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/深棕梨花头.gif"
+          ],
+          "nativeImageHash": "7d9023e477d336bcbc3d40a1ebbfce00e18c818128c385f3c579edd79a252d5d",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "10",
+          "sample": 10,
+          "label": "紫色礼裙侧收持花",
+          "score": 94,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "长裙不供裸腰真值，Claude腰胯连续，低掌根转向少。"
+          ],
+          "regions": [
+            [
+              45,
+              92,
+              68,
+              124
+            ],
+            [
+              81,
+              94,
+              95,
+              144
+            ],
+            [
+              54,
+              130,
+              84,
+              175
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-10-0bacc8b53c.png",
+          "evidenceSha256": "0bacc8b53c868cac179b3f67e6d1985d305ad868932dc893ac70083164462644",
+          "source": "qq-show-classic/outfit/紫色礼裙花束套装.gif",
+          "layers": [
+            "qq-show-classic/outfit/紫色礼裙花束套装.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/金棕雏菊发饰罗马卷.gif"
+          ],
+          "nativeImageHash": "97cc4b9f7392eef5769178ec8ec83bbe5d2866890248a2f5fdf3fb6639d26966",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "11",
+          "sample": 11,
+          "label": "薄荷绿盘腿坐姿",
+          "score": 95,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "坐姿不同扣0，肩肘可读，低腕掌局部短面仍少。"
+          ],
+          "regions": [
+            [
+              45,
+              92,
+              68,
+              124
+            ],
+            [
+              81,
+              94,
+              95,
+              144
+            ],
+            [
+              54,
+              130,
+              84,
+              175
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-11-09a2b27e35.png",
+          "evidenceSha256": "09a2b27e3593ae386afe7771d90e7f9a6d1e6fe4f1909a07d6d868a0c433651b",
+          "source": "qq-show-classic/outfit/薄荷绿套装坐姿.gif",
+          "layers": [
+            "qq-show-classic/outfit/薄荷绿套装坐姿.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/棕色卷波波头.gif"
+          ],
+          "nativeImageHash": "1c8a1a789202f9b07fccc0c6a25ed4d62a5a6f766e557ebfc27aa9e236c29b8a",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "12",
+          "sample": 12,
+          "label": "抹茶旗袍椅坐",
+          "score": 95,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "旗袍椅子不推隐藏尺寸，Claude远腕掌短面不足。"
+          ],
+          "regions": [
+            [
+              45,
+              92,
+              68,
+              124
+            ],
+            [
+              81,
+              94,
+              95,
+              144
+            ],
+            [
+              54,
+              130,
+              84,
+              175
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-12-df4f659568.png",
+          "evidenceSha256": "df4f659568dff58caceb6cb60c2525a0e2ee88e913bcddb8be7824e20eca074d",
+          "source": "qq-show-classic/outfit/抹茶旗袍坐姿.gif",
+          "layers": [
+            "qq-show-classic/outfit/抹茶旗袍坐姿.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/棕咖黄月季发饰盘发.gif"
+          ],
+          "nativeImageHash": "f523574a47c5517e56de2555ecfb4845bc5eddca7864ae7272ee5d093975d841",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "13",
+          "sample": 13,
+          "label": "黄色短袖爱心坐姿",
+          "score": 94,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "不要求折腿坐，Claude前后足主类保持，低掌层次仍简。"
+          ],
+          "regions": [
+            [
+              45,
+              92,
+              68,
+              124
+            ],
+            [
+              81,
+              94,
+              95,
+              144
+            ],
+            [
+              54,
+              130,
+              84,
+              175
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-13-c768ac78c8.png",
+          "evidenceSha256": "c768ac78c8fab3e668b70430f70bdc12d152f1f6c407d6fa51a5c1f699a1b6f6",
+          "source": "qq-show-classic/outfit/黄色短袖短裙爱心坐姿.gif",
+          "layers": [
+            "qq-show-classic/outfit/黄色短袖短裙爱心坐姿.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/黑色双丸子头.gif"
+          ],
+          "nativeImageHash": "f7c9e5fd22cb186e7f67e2f77f0829e656eef91b74f83def14c37560e597fd17",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "14",
+          "sample": 14,
+          "label": "粉礼裙花朵坐姿",
+          "score": 94,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "花掌可紧凑，不按指少扣；Claude布指短压影仍少。"
+          ],
+          "regions": [
+            [
+              45,
+              92,
+              68,
+              124
+            ],
+            [
+              81,
+              94,
+              95,
+              144
+            ],
+            [
+              54,
+              130,
+              84,
+              175
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-14-956fd7c33d.png",
+          "evidenceSha256": "956fd7c33d7b122ab9c7e4339ed0afa42751721b0ebf44f0157b52f645f411ac",
+          "source": "qq-show-classic/outfit/浅粉礼裙花朵坐姿套装.gif",
+          "layers": [
+            "qq-show-classic/outfit/浅粉礼裙花朵坐姿套装.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/粉色高马尾.gif"
+          ],
+          "nativeImageHash": "7deae5777a0bc52ea716fbe8e59c05e32cf1a32d1922b6b8e1d476065e8758b9",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "15",
+          "sample": 15,
+          "label": "秋千白纱悬坐",
+          "score": 94,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "不要求握绳，Claude肌腹有收放，远腕掌短转面不足。"
+          ],
+          "regions": [
+            [
+              45,
+              92,
+              68,
+              124
+            ],
+            [
+              81,
+              94,
+              95,
+              144
+            ],
+            [
+              54,
+              130,
+              84,
+              175
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-15-83eeecf2a3.png",
+          "evidenceSha256": "83eeecf2a3205d7a7b3c20fbd7552fc2870614ff4933d674f5623d5cd57487fd",
+          "source": "qq-show-classic/outfit/秋千白色薄纱裙套装.gif",
+          "layers": [
+            "qq-show-classic/back-hair/深棕蝴蝶结斜刘海长发.gif",
+            "qq-show-classic/outfit/秋千白色薄纱裙套装.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/深棕蝴蝶结斜刘海长发.gif"
+          ],
+          "nativeImageHash": "6949b442eaeffae544840a252bfca0b8656c4f1c5703d80f5bdc0fdec02a093b",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "16",
+          "sample": 16,
+          "label": "牛仔背带持麦",
+          "score": 94,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "原生直臂/角阶允许，Claude不因直边扣，低掌短面少。"
+          ],
+          "regions": [
+            [
+              45,
+              92,
+              68,
+              124
+            ],
+            [
+              81,
+              94,
+              95,
+              144
+            ],
+            [
+              54,
+              130,
+              84,
+              175
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-16-919f9033c6.png",
+          "evidenceSha256": "919f9033c604ee862308232193ad98f8d58f83b89e3d3407744c37298bf2af3b",
+          "source": "qq-show-classic/outfit/吊带牛仔裤麦克风套装.gif",
+          "layers": [
+            "qq-show-classic/outfit/吊带牛仔裤麦克风套装.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/酒红双马尾.gif"
+          ],
+          "nativeImageHash": "fb624b9fbe3e853bb9b66582cfb5993197a1905ab4ff958cbb380621d662ec5b",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "17",
+          "sample": 17,
+          "label": "朱砂旗袍持扇",
+          "score": 94,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "不要求扇动作，Claude书手接位在，低手短承压少。"
+          ],
+          "regions": [
+            [
+              45,
+              92,
+              68,
+              124
+            ],
+            [
+              81,
+              94,
+              95,
+              144
+            ],
+            [
+              54,
+              130,
+              84,
+              175
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-17-dd19759dc1.png",
+          "evidenceSha256": "dd19759dc1f024c6af7a95c7f9a0475d41a813592299e6edb9cc6fb5de0baa27",
+          "source": "qq-show-classic/outfit/高开衩朱砂红旗袍.gif",
+          "layers": [
+            "qq-show-classic/outfit/高开衩朱砂红旗袍.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/玫瑰盘发.gif"
+          ],
+          "nativeImageHash": "12ad1f177551bf37e4949696fc63acece1b955f0f9227db92ce2830bf0e059f6",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "18",
+          "sample": 18,
+          "label": "紫短裙举臂长靴",
+          "score": 94,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "举臂不同扣0，Claude低腕掌肉面改善，短转向仍简。"
+          ],
+          "regions": [
+            [
+              45,
+              92,
+              68,
+              124
+            ],
+            [
+              81,
+              94,
+              95,
+              144
+            ],
+            [
+              54,
+              130,
+              84,
+              175
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-18-62600d1952.png",
+          "evidenceSha256": "62600d1952d309c9541afa9df36038064bd1cb53c18eed9a6c65e1b36ec49cf1",
+          "source": "qq-show-classic/outfit/背心紫短裙白长靴套装.gif",
+          "layers": [
+            "qq-show-classic/back-hair/动漫蓝蝴蝶结马尾.gif",
+            "qq-show-classic/outfit/背心紫短裙白长靴套装.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/动漫蓝蝴蝶结马尾.gif"
+          ],
+          "nativeImageHash": "9b525b93d6794ef7c03bc2e5e93f5c18f744752094e92ca8f5a1f8d235a410e8",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "19",
+          "sample": 19,
+          "label": "白短外套牛仔短裙",
+          "score": 94,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "错足承重可读，未新测腿，低掌短影/转面仍弱。"
+          ],
+          "regions": [
+            [
+              45,
+              92,
+              68,
+              124
+            ],
+            [
+              81,
+              94,
+              95,
+              144
+            ],
+            [
+              54,
+              130,
+              84,
+              175
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-19-6cc261aad6.png",
+          "evidenceSha256": "6cc261aad62325cb303efbe67455ba8a9ee982f8089424ed9784376270ba1326",
+          "source": "qq-show-classic/outfit/白色短外套牛仔短裙套装.gif",
+          "layers": [
+            "qq-show-classic/outfit/白色短外套牛仔短裙套装.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/棕橙长编发.gif"
+          ],
+          "nativeImageHash": "e570beb4dd7330818e30f0e9a99f1131054e7621d48447b311a19fc909c2c75e",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "20",
+          "sample": 20,
+          "label": "紫色蝴蝶仙子",
+          "score": 95,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "裙遮处不编真值，Claude低掌加肉但局部层次仍不足。"
+          ],
+          "regions": [
+            [
+              45,
+              92,
+              68,
+              124
+            ],
+            [
+              81,
+              94,
+              95,
+              144
+            ],
+            [
+              54,
+              130,
+              84,
+              175
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-20-a50ea952b4.png",
+          "evidenceSha256": "a50ea952b40fa9c6fcba241da209552f08b03c344417df99639fd7783c3760d0",
+          "source": "qq-show-classic/outfit/蝴蝶仙子套装.gif",
+          "layers": [
+            "qq-show-classic/outfit/蝴蝶仙子套装.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/炫紫闪耀双马尾卷发.gif"
+          ],
+          "nativeImageHash": "70112fde68175423d693e4d6efd1d9ea8a0ec13422c4fa4e5dab1c3ce76fa702",
+          "poseDifferenceDeduction": 0
+        }
+      ],
+      "reasons": [
+        "R11低掌跟/拇指根比R10有加肉，旧小尖楔指控不原样沿用；书前指群/书边接位和捏裙布从掌后进入真实成立。",
+        "右远腕x84..90/y126..135到低掌x85..94/y135..143仍偏浅带接短水平掌面；掌根转向/拇指根短肉面和布指下短压影不足，不因紧凑短指或角阶本身扣。",
+        "左屈臂/右肘到腕主轮廓连续，腰胯股根可读，尚未独立重测腿与完整骨段；历史不利测量不因新hash清除。"
+      ],
+      "recommendations": [
+        "R26唯一最终返工：保书手/捏裙接位和新增低掌肉面，局部理清远腕→掌根/拇指根短转面及布指短压影，不按default源点削肉或数五指。",
+        "白裙长峰按腰胯/提点/落地受力错长变宽，橙片底端与白裙明确短厚边/背面；保大浅面，不用碎亮纹填满。",
+        "保松C尾和自身normal刘海，侧束主谷/短叠影与大浅峰分工，避免几条长浅边同频跨束。",
+        "上衣与原生裙裤腰口厚度/共曲面在真实上下行中再核，原生100不为AI接口遮羞。",
+        "R26真实IAB复评后停止自动艺术返工；不足98/六组pending/技术未解如实写MD，不开第三轮。"
+      ],
+      "limitations": [
+        "未执行新的独立尺寸量测，不声明全身<=5%或任何区域>5%。",
+        "当前视觉已失败98；新hash/原生手参考不自动解除历史技术阻断。",
+        "原生衣装不提供被遮住裸腰胯真值。"
+      ],
+      "evidence": {
+        "reactBodyImage": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-default-074c88dfb0.png",
+        "reactBodyImageSha256": "074c88dfb045037078a2046b40566fa57a1cb32c1ace01c83f593085fdf1c8bf",
+        "reactBodySnapshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-evidence.json",
+        "reactFullImage": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/full.png",
+        "reactFullImageSha256": "2ebda0319f3978f08f340c96ec0a8d9ec8046b1e27b9f2e3fd84b133b67ce996",
+        "reactFullSnapshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/full-evidence.json",
+        "actuallyViewed": [
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-default-074c88dfb0.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-01-24a78a83d8.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-02-4390e8b0ea.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-03-7044f5e84d.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-04-c898a5b185.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-05-8cac86c77b.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-06-fa3f8d7ddb.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-07-b5175181c1.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-08-f19124f804.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-09-5717063189.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-10-0bacc8b53c.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-11-09a2b27e35.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-12-df4f659568.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-13-c768ac78c8.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-14-956fd7c33d.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-15-83eeecf2a3.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-16-919f9033c6.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-17-dd19759dc1.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-18-62600d1952.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-19-6cc261aad6.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/body-strip-20-a50ea952b4.png"
+        ],
+        "diagnosticBody6x": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/claude-round08-body-6x.png",
+        "diagnosticNearestCrops": [],
+        "captureBrowser": "Codex in-app browser",
+        "failedImages": [],
+        "reactFullImages": [
+          {
+            "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/claude/full.png",
+            "sha256": "2ebda0319f3978f08f340c96ec0a8d9ec8046b1e27b9f2e3fd84b133b67ce996",
+            "images": [
+              {
+                "bottom": 342.5625,
+                "height": 226,
+                "index": 0,
+                "left": 28,
+                "right": 168,
+                "top": 116.5625,
+                "width": 140
+              },
+              {
+                "bottom": 342.5625,
+                "height": 226,
+                "index": 1,
+                "left": 180,
+                "right": 320,
+                "top": 116.5625,
+                "width": 140
+              },
+              {
+                "bottom": 342.5625,
+                "height": 226,
+                "index": 2,
+                "left": 332,
+                "right": 472,
+                "top": 116.5625,
+                "width": 140
+              }
+            ]
+          }
+        ],
+        "actualCorpusReadingMethod": "All20 immutable one-ID screenshots cropped by recorded bounds into five nearest2x reading sheets; no re-render or artwork edit.",
+        "diagnosticIndex": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/claude-r11-segment-diagnostic-index.json",
+        "diagnosticCorpusSheets": [
+          "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/claude-r11-body-corpus-sheet-1-2x.png",
+          "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/claude-r11-body-corpus-sheet-2-2x.png",
+          "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/claude-r11-body-corpus-sheet-3-2x.png",
+          "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/claude-r11-body-corpus-sheet-4-2x.png",
+          "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/claude-r11-body-corpus-sheet-5-2x.png"
+        ],
+        "additionalNearestReadingDetails": [
+          "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/claude-r11-corpus-06-ai-detail-6x.png",
+          "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/claude-r11-corpus-19-ai-detail-6x.png"
+        ]
+      },
+      "evidenceIntegrity": {
+        "status": "all20-actually-viewed; immutable screenshot hashes verified",
+        "labelsActuallyChecked": [
+          "01 抱臂天使礼服",
+          "02 蓝白捧花公主裙",
+          "03 薄荷裙抬手",
+          "04 蓝白学院裙垂袖",
+          "05 粉背心交叉腿",
+          "06 黄色开衩动势裙",
+          "07 深蓝露肩低位交手",
+          "08 黑红舞裙外展",
+          "09 碎花吊带牛仔持包",
+          "10 紫色礼裙侧收持花",
+          "11 薄荷绿盘腿坐姿",
+          "12 抹茶旗袍椅坐",
+          "13 黄色短袖爱心坐姿",
+          "14 粉礼裙花朵坐姿",
+          "15 秋千白纱悬坐",
+          "16 牛仔背带持麦",
+          "17 朱砂旗袍持扇",
+          "18 紫短裙举臂长靴",
+          "19 白短外套牛仔短裙",
+          "20 紫色蝴蝶仙子"
+        ],
+        "duplicateRasterNote": "Corpus05/06/07/19 right AI crops contain the same3307 skin-colored pixel samples; raw05/06/07/19 and nearest06/19 details checked. Repeated-image presentation deduplication is not missing AI raster."
+      },
+      "sourceReport": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/claude-r11-round08-review.json",
+      "recordSignature": "[\"closeout-r25-claude-body-7wdahzwv\",null,\"body-corpus-context-v1-5de8a689\",null,null,\"e7cd750a0423d90b574c15b6af78fa543be2386c4f96a93e6e73a34a992c7acb\",\"ab71149a5d3e70e07d00498b146ca8cd0b1d7e77f5d21d0c0bfe2581edfc6238\"]"
+    }
+  ],
+  "captures": [
+    {
+      "mode": "body",
+      "group": "custom:hair",
+      "matchingScope": "body-identical",
+      "seed": "closeout-r25-claude-body-7wdahzwv",
+      "contextSignature": "native-context-v4-be43db1",
+      "file": "rating/browser/round-08/body-evidence.json"
+    },
+    {
+      "mode": "component",
+      "group": "body3",
+      "matchingScope": "selected-parts-identical",
+      "seed": "closeout-r25-claude-body3-eqc61wgz",
+      "contextSignature": "native-context-v4-9db587f2",
+      "file": "rating/browser/round-08/body3-evidence.json"
+    },
+    {
+      "mode": "full",
+      "group": "custom:hair",
+      "matchingScope": "complete-identical",
+      "seed": "closeout-r25-claude-full-y7ih2uqy",
+      "contextSignature": "native-context-v4-ab8e8765",
+      "file": "rating/browser/round-08/full-evidence.json"
+    },
+    {
+      "mode": "component",
+      "group": "head2",
+      "matchingScope": "selected-parts-identical",
+      "seed": "closeout-r25-claude-head2-ocps9mnm",
+      "contextSignature": "native-context-v4-2752898f",
+      "file": "rating/browser/round-08/head2-evidence.json"
+    },
+    {
+      "mode": "component",
+      "group": "upper2",
+      "matchingScope": "selected-parts-identical",
+      "seed": "closeout-r25-claude-upper2-giky1zg0",
+      "contextSignature": "native-context-v4-3f90535a",
+      "file": "rating/browser/round-08/upper2-evidence.json"
+    }
+  ],
+  "assets": {
+    "/assets-classic/claude/remake/aura-design.svg": {
+      "file": "src/aura-design.svg",
+      "sha256": "a2e4ed5a74bc73d7fae74dc11457705dd89601566b9c59e927c2f785822e6bc9"
+    },
+    "/assets-classic/claude/remake/aura.png": {
+      "file": "src/aura.png",
+      "sha256": "22c3d44e491460767029398d391981b9b0157ca6e15cc6bac6b5ef4142c88f14"
+    },
+    "/assets-classic/claude/remake/aura.svg": {
+      "file": "src/aura.svg",
+      "sha256": "40ef7d0dabfd038ee658a16ab87dbd4dac2efa8a5fd7b4262d5cf77e511463ac"
+    },
+    "/assets-classic/claude/remake/back-design.svg": {
+      "file": "src/back-design.svg",
+      "sha256": "35b71246e1fc3a7fdd24a5755d1802a4c6722e9edd645b4480b1f22be9d609cb"
+    },
+    "/assets-classic/claude/remake/back.png": {
+      "file": "src/back.png",
+      "sha256": "03c05428ba57bf42a7768c4c41dd6bdaf0f1dd79d1929bef24d3ab68cae9da7f"
+    },
+    "/assets-classic/claude/remake/back.svg": {
+      "file": "src/back.svg",
+      "sha256": "3a96a4f9afc5a713f86e9fe10b4a6d7669de4583c7a7d5e6aea8624b57e80b9d"
+    },
+    "/assets-classic/claude/remake/body-design.svg": {
+      "file": "src/body-design.svg",
+      "sha256": "46bff7eef3492dc5d44ddec62362ff4b5aa1b1ec518175ff62ace2eb79b1e0c6"
+    },
+    "/assets-classic/claude/remake/body.png": {
+      "file": "src/body.png",
+      "sha256": "e7cd750a0423d90b574c15b6af78fa543be2386c4f96a93e6e73a34a992c7acb"
+    },
+    "/assets-classic/claude/remake/body.svg": {
+      "file": "src/body.svg",
+      "sha256": "7c0dfd3492651441fcebc79ca4dff772260b7d230b80530c7c87c1184f953938"
+    },
+    "/assets-classic/claude/remake/bottom-design.svg": {
+      "file": "src/bottom-design.svg",
+      "sha256": "cb1d3b73098be63df4ae74faf1e0c64f463bd1ba2c68ec70bb9176479a1af401"
+    },
+    "/assets-classic/claude/remake/bottom.png": {
+      "file": "src/bottom.png",
+      "sha256": "502e0060c429ce3dbe546723e913b6f07bebb1747f5f9b3ab70e9aaeb44b8785"
+    },
+    "/assets-classic/claude/remake/bottom.svg": {
+      "file": "src/bottom.svg",
+      "sha256": "9b0c0c92a35f22adabb2e61c998ea7dd14ec182c8f5a083549eb0d9797ff3639"
+    },
+    "/assets-classic/claude/remake/face-design.svg": {
+      "file": "src/face-design.svg",
+      "sha256": "8b230385cde3f725a1908d5941ab6625c118d489d1e298e4d20ec842c7e9a108"
+    },
+    "/assets-classic/claude/remake/face.png": {
+      "file": "src/face.png",
+      "sha256": "406c9e83fc27b4cc4cde0e579be951a7861cfde4691728396485470626f40c56"
+    },
+    "/assets-classic/claude/remake/face.svg": {
+      "file": "src/face.svg",
+      "sha256": "a9387531dab55a8b855eeb00ebae1bd0c3ff6eddced2c1bbced7d82eb4e4b33c"
+    },
+    "/assets-classic/claude/remake/hair-back-design.svg": {
+      "file": "src/hair-back-design.svg",
+      "sha256": "91fadb175a75422a7937a428e7b5ea7f04ef940a460b861e626d9a75fb5b4e0b"
+    },
+    "/assets-classic/claude/remake/hair-back.png": {
+      "file": "src/hair-back.png",
+      "sha256": "faa5619094d3a9681d49bd12fa5a0e2cf11eb1cf9a074cdc7c13828e8861b369"
+    },
+    "/assets-classic/claude/remake/hair-back.svg": {
+      "file": "src/hair-back.svg",
+      "sha256": "1cb8e4949e5c33a5439bd4c927a7ba6be77145af62c3d345245f972df050d815"
+    },
+    "/assets-classic/claude/remake/hair-design.svg": {
+      "file": "src/hair-design.svg",
+      "sha256": "9b62590137b0c9a5524b155dbfc4282a473ec5ff2a736099d73433280b67a238"
+    },
+    "/assets-classic/claude/remake/hair-front-design.svg": {
+      "file": "src/hair-front-design.svg",
+      "sha256": "949c69f6cd811ca2ebd5dbe21fec859cca25778d96996e9ce728c3e6ec9bb421"
+    },
+    "/assets-classic/claude/remake/hair-front.png": {
+      "file": "src/hair-front.png",
+      "sha256": "f308aee7a7522833de748c5f3605ef13cde07fd57f1f76d944f0f7514c6b3688"
+    },
+    "/assets-classic/claude/remake/hair-front.svg": {
+      "file": "src/hair-front.svg",
+      "sha256": "94d9766e14969edd53edb5e1c4eb37b78f40df230e4460b4309bc2076733abc1"
+    },
+    "/assets-classic/claude/remake/hair.png": {
+      "file": "src/hair.png",
+      "sha256": "20d248635e21404fe9344bda4e31820fe68b638183457d728d4d1d102e5ec653"
+    },
+    "/assets-classic/claude/remake/hair.svg": {
+      "file": "src/hair.svg",
+      "sha256": "a1f5896ecf86f18b854ada50a8edc730139ebba2f6695dbfff5ebd71c649c3cd"
+    },
+    "/assets-classic/claude/remake/headwear-design.svg": {
+      "file": "src/headwear-design.svg",
+      "sha256": "5e1616caf0900046b594c280d252bbd8ca67f13c5b39833bca61322d536023a0"
+    },
+    "/assets-classic/claude/remake/headwear.png": {
+      "file": "src/headwear.png",
+      "sha256": "4871c6d8b5102bcda7735d62bb22f090dc45bdd35fbffc4c0519f4c35b62d505"
+    },
+    "/assets-classic/claude/remake/headwear.svg": {
+      "file": "src/headwear.svg",
+      "sha256": "9e0b862774b87bdc00f6974940eacd7b98daa98837894aeb06d6b57c0701ec7a"
+    },
+    "/assets-classic/claude/remake/legs-design.svg": {
+      "file": "src/legs-design.svg",
+      "sha256": "1fd6bd1605fd67f9035815dbb5536182cef99aa2bc021e85bf821b7d1ff5c44b"
+    },
+    "/assets-classic/claude/remake/legs.png": {
+      "file": "src/legs.png",
+      "sha256": "189524e1cb1848c0fc7dc74a6b3300fc99d523f5f390278275d70b270e655d81"
+    },
+    "/assets-classic/claude/remake/legs.svg": {
+      "file": "src/legs.svg",
+      "sha256": "7539f93ec4933df343f70dd34fcb63d37f7e5fe49f7b4d65b27b02ae481d56a9"
+    },
+    "/assets-classic/claude/remake/prop-design.svg": {
+      "file": "src/prop-design.svg",
+      "sha256": "1fa292acf6c5de582c8e5160542addd5afb3a19c4e45b611f9f9f339b945d2fb"
+    },
+    "/assets-classic/claude/remake/prop-native-design.svg": {
+      "file": "src/prop-native-design.svg",
+      "sha256": "7faae7b486dac6eeca01c37a1b32f1758a92b5f06da4b52b1ec72a0290409af9"
+    },
+    "/assets-classic/claude/remake/prop-native.png": {
+      "file": "src/prop-native.png",
+      "sha256": "17e625481c7dd4d27471549e0f4bd1ebbbf16b7b9625ffba2aa60442ca89e661"
+    },
+    "/assets-classic/claude/remake/prop-native.svg": {
+      "file": "src/prop-native.svg",
+      "sha256": "d0c6df807a4f85ee447a652c55ce32ed32ffb0ee22b618acf0da0d8b119160db"
+    },
+    "/assets-classic/claude/remake/prop.png": {
+      "file": "src/prop.png",
+      "sha256": "f8711299cead19f83ee5375af9d1f104da137337fb384d2eaade08869a2e77ef"
+    },
+    "/assets-classic/claude/remake/prop.svg": {
+      "file": "src/prop.svg",
+      "sha256": "c164c3ab92c2ae7870fd6534a614f3bf5e2129a51cf52d73bb87563d18204c26"
+    },
+    "/assets-classic/claude/remake/top-arms-design.svg": {
+      "file": "src/top-arms-design.svg",
+      "sha256": "667975893023bd315e49bbf1b33fa068867fc0fbc5d32ae10e80f1fb64069b0e"
+    },
+    "/assets-classic/claude/remake/top-arms.png": {
+      "file": "src/top-arms.png",
+      "sha256": "0744906bd30fbdfe38fa4f7521e6b89e38dc1afdb434c6d239d20dd7e82cbbc3"
+    },
+    "/assets-classic/claude/remake/top-arms.svg": {
+      "file": "src/top-arms.svg",
+      "sha256": "3bc0903bb590c90da982dd0c510e4fc3edb47cce339494a437e745c7e1b707de"
+    },
+    "/assets-classic/claude/remake/top-body-design.svg": {
+      "file": "src/top-body-design.svg",
+      "sha256": "8a5b9f271caea5490d9947ba282618e0a89d02e870a077123c1f6be7d2f759a7"
+    },
+    "/assets-classic/claude/remake/top-body.png": {
+      "file": "src/top-body.png",
+      "sha256": "8dff0e30f8d73e3abaa926bc86c2abdd091d40200525d6478901bfd88673fd63"
+    },
+    "/assets-classic/claude/remake/top-body.svg": {
+      "file": "src/top-body.svg",
+      "sha256": "892cf6fd0963f2d586348037c13a29b87b85a2188e81b7a8cecdb4ee8e8027d8"
+    },
+    "/assets-classic/claude/remake/top-design.svg": {
+      "file": "src/top-design.svg",
+      "sha256": "80ae3554a43b3a141a7520cceb83b2efe94e4d8f6a5a64727b93d474a156948e"
+    },
+    "/assets-classic/claude/remake/top.png": {
+      "file": "src/top.png",
+      "sha256": "6981877d8d7ea209b6404e24c786d0dd2ea0cd6f628da3231ea98a0141eb8ded"
+    },
+    "/assets-classic/claude/remake/top.svg": {
+      "file": "src/top.svg",
+      "sha256": "73eb9e8846ed7c711a6a97c90a7c3c5781500b25d89fc13e97a54f3904cc999d"
+    },
+    "character.png": {
+      "file": "src/character.png",
+      "sha256": "ab71149a5d3e70e07d00498b146ca8cd0b1d7e77f5d21d0c0bfe2581edfc6238"
+    },
+    "scene.png": {
+      "file": "src/scene.png",
+      "sha256": "b7c4c7c193df6ada5d2882277fa797a2e16d62dacde66a21ffc9e6072920b6f8"
+    },
+    "body.png": {
+      "file": "src/body.png",
+      "sha256": "e7cd750a0423d90b574c15b6af78fa543be2386c4f96a93e6e73a34a992c7acb"
+    },
+    "/assets-classic/claude/background.png": {
+      "file": "src/background.png",
+      "sha256": "669a0be70f8e3887f16e497bfa710a957f7abe7d1bef44d446f1ecc22c7cb6e6"
+    },
+    "/assets-classic/claude/background.svg": {
+      "file": "src/background.svg",
+      "sha256": "1bb0c75fd1371c40da4864709ae13032ff7bd1aca734edab8b37d29eedfc9be4"
+    },
+    "/assets-classic/claude/background.gif": {
+      "file": "src/background.gif",
+      "sha256": "d6f9ebac2aabfc30d491199890cc52f05cb73417594c25d3d1e2070ce20a346f"
+    },
+    "/assets-classic/claude/effect.png": {
+      "file": "src/effect.png",
+      "sha256": "ce584b4c428c8794449d6e8e5bca0e3f4a1e9e6441fb16dd44d7d34fc5b93f4b"
+    },
+    "/assets-classic/claude/effect.svg": {
+      "file": "src/effect.svg",
+      "sha256": "94ff88e1a66586bd7c773d8c238b83ee4d880049b77fcc62748ba020bc986aad"
+    }
+  },
+  "evidence": {
+    "claude-r10-native-contact-comparison.json": {
+      "file": "rating/claude-r10-native-contact-comparison.json",
+      "sha256": "9afd924fe6f212757f0311d7e11291ac4517b1c462f34dd6bbd57938d5697978"
+    },
+    "claude-r10-round07-review.json": {
+      "file": "rating/claude-r10-round07-review.json",
+      "sha256": "fb2c99086bcd45d92271c180487ef9d80fcde04fab60977111cfdc03e803df29"
+    },
+    "claude-r10-segment-diagnostic-index.json": {
+      "file": "rating/claude-r10-segment-diagnostic-index.json",
+      "sha256": "235167fa342edc966c62c11e27c9498c5298f891a4181ac04de4df4a6e675175"
+    },
+    "claude-r6-first-review.json": {
+      "file": "rating/claude-r6-first-review.json",
+      "sha256": "be4abf265bdf6fa5dfb2048cd97eb75a8c652ff2f45e49631e5df22d5f9631fb"
+    },
+    "claude-r6-prop-semantics-correction.json": {
+      "file": "rating/claude-r6-prop-semantics-correction.json",
+      "sha256": "58e23dffebd269661b1c154b99bc795fb745a3b463d01b2c7803457f741e9cc6"
+    },
+    "claude-r8-round03-review.json": {
+      "file": "rating/claude-r8-round03-review.json",
+      "sha256": "b1a738e00b07e85c1d643560d4fa9e1c863484e39b3d5cca04385642a7c5c361"
+    },
+    "claude-r9-native-contact-comparison.json": {
+      "file": "rating/claude-r9-native-contact-comparison.json",
+      "sha256": "586ec3789b193313a69ce2c990e17e6e4577e28f2d5f6c5a63b0cf043dcd54e3"
+    },
+    "claude-r9-round06-review.json": {
+      "file": "rating/claude-r9-round06-review.json",
+      "sha256": "335c16eed3385e2017e79199092c54baa38adf07d44fd5658b4a1a3c812aabb6"
+    },
+    "claude-r11-native-contact-comparison.json": {
+      "file": "rating/claude-r11-native-contact-comparison.json",
+      "sha256": "6540f801b8e955eb19b3c181ad702cc8cc8581a51f04104b198d4184c3410ca9"
+    },
+    "claude-r11-native-material-comparison.json": {
+      "file": "rating/claude-r11-native-material-comparison.json",
+      "sha256": "872e64b8274a8c160cef7e711215f6a75b2a02dd632c14eb45bf5e8af79568f9"
+    },
+    "claude-r11-round08-review.json": {
+      "file": "rating/claude-r11-round08-review.json",
+      "sha256": "91334e7b71ddf10f761c69c02a87ac5c66a1d2ad6e6cc4acab4f7d61faebec56"
+    },
+    "claude-r11-segment-diagnostic-index.json": {
+      "file": "rating/claude-r11-segment-diagnostic-index.json",
+      "sha256": "022ad4ba8da6365db97e83c1477306ef8c545ec0dbc5229d8328153fe2cbd182"
+    },
+    "browser/round-08/body-evidence.json": {
+      "file": "rating/browser/round-08/body-evidence.json",
+      "sha256": "17d65c0b6e8267f358154ccb9ee6bd17a1cb04442a89a3fc00f46f92eb4e69b8"
+    },
+    "browser/round-08/body-default-074c88dfb0.png": {
+      "file": "rating/browser/round-08/body-default-074c88dfb0.png",
+      "sha256": "074c88dfb045037078a2046b40566fa57a1cb32c1ace01c83f593085fdf1c8bf"
+    },
+    "browser/round-08/body-strip-01-24a78a83d8.png": {
+      "file": "rating/browser/round-08/body-strip-01-24a78a83d8.png",
+      "sha256": "24a78a83d897d80b5caf9ee83b6ff5630a0f00255ec3d73bdf93869c31d6f6c3"
+    },
+    "browser/round-08/body-strip-02-4390e8b0ea.png": {
+      "file": "rating/browser/round-08/body-strip-02-4390e8b0ea.png",
+      "sha256": "4390e8b0eab8115e3b2bed4bd9d1ef6bf60a7e707b45dc3da6e96a0f13f57ae1"
+    },
+    "browser/round-08/body-strip-03-7044f5e84d.png": {
+      "file": "rating/browser/round-08/body-strip-03-7044f5e84d.png",
+      "sha256": "7044f5e84d27d0c7089616d7d4f5d15b6b989fc887dd18eca02997721fffb508"
+    },
+    "browser/round-08/body-strip-04-c898a5b185.png": {
+      "file": "rating/browser/round-08/body-strip-04-c898a5b185.png",
+      "sha256": "c898a5b185f8e020fa148b4c88940c648aed6402581e10181cb279eb80f300a2"
+    },
+    "browser/round-08/body-strip-05-8cac86c77b.png": {
+      "file": "rating/browser/round-08/body-strip-05-8cac86c77b.png",
+      "sha256": "8cac86c77bb5f50e4189af1a74c7f711817818e5455c53f916dfcd052af7ce73"
+    },
+    "browser/round-08/body-strip-06-fa3f8d7ddb.png": {
+      "file": "rating/browser/round-08/body-strip-06-fa3f8d7ddb.png",
+      "sha256": "fa3f8d7ddb0be2a8ca66a42b0a703d93d0ddb0ce17da46e0bfa7aa56caab12e0"
+    },
+    "browser/round-08/body-strip-07-b5175181c1.png": {
+      "file": "rating/browser/round-08/body-strip-07-b5175181c1.png",
+      "sha256": "b5175181c11bf5e016e66d0c0ed51689cd488acb92e290e211156f14ae504c14"
+    },
+    "browser/round-08/body-strip-08-f19124f804.png": {
+      "file": "rating/browser/round-08/body-strip-08-f19124f804.png",
+      "sha256": "f19124f804e917e03add4c200b2dbd745df30b2dda3ad5dd7b495c734c2251fe"
+    },
+    "browser/round-08/body-strip-09-5717063189.png": {
+      "file": "rating/browser/round-08/body-strip-09-5717063189.png",
+      "sha256": "571706318906c0e04ac37a63e1991bcec67162694a42d8bf2bf38b7dbbd1f05e"
+    },
+    "browser/round-08/body-strip-10-0bacc8b53c.png": {
+      "file": "rating/browser/round-08/body-strip-10-0bacc8b53c.png",
+      "sha256": "0bacc8b53c868cac179b3f67e6d1985d305ad868932dc893ac70083164462644"
+    },
+    "browser/round-08/body-strip-11-09a2b27e35.png": {
+      "file": "rating/browser/round-08/body-strip-11-09a2b27e35.png",
+      "sha256": "09a2b27e3593ae386afe7771d90e7f9a6d1e6fe4f1909a07d6d868a0c433651b"
+    },
+    "browser/round-08/body-strip-12-df4f659568.png": {
+      "file": "rating/browser/round-08/body-strip-12-df4f659568.png",
+      "sha256": "df4f659568dff58caceb6cb60c2525a0e2ee88e913bcddb8be7824e20eca074d"
+    },
+    "browser/round-08/body-strip-13-c768ac78c8.png": {
+      "file": "rating/browser/round-08/body-strip-13-c768ac78c8.png",
+      "sha256": "c768ac78c8fab3e668b70430f70bdc12d152f1f6c407d6fa51a5c1f699a1b6f6"
+    },
+    "browser/round-08/body-strip-14-956fd7c33d.png": {
+      "file": "rating/browser/round-08/body-strip-14-956fd7c33d.png",
+      "sha256": "956fd7c33d7b122ab9c7e4339ed0afa42751721b0ebf44f0157b52f645f411ac"
+    },
+    "browser/round-08/body-strip-15-83eeecf2a3.png": {
+      "file": "rating/browser/round-08/body-strip-15-83eeecf2a3.png",
+      "sha256": "83eeecf2a3205d7a7b3c20fbd7552fc2870614ff4933d674f5623d5cd57487fd"
+    },
+    "browser/round-08/body-strip-16-919f9033c6.png": {
+      "file": "rating/browser/round-08/body-strip-16-919f9033c6.png",
+      "sha256": "919f9033c604ee862308232193ad98f8d58f83b89e3d3407744c37298bf2af3b"
+    },
+    "browser/round-08/body-strip-17-dd19759dc1.png": {
+      "file": "rating/browser/round-08/body-strip-17-dd19759dc1.png",
+      "sha256": "dd19759dc1f024c6af7a95c7f9a0475d41a813592299e6edb9cc6fb5de0baa27"
+    },
+    "browser/round-08/body-strip-18-62600d1952.png": {
+      "file": "rating/browser/round-08/body-strip-18-62600d1952.png",
+      "sha256": "62600d1952d309c9541afa9df36038064bd1cb53c18eed9a6c65e1b36ec49cf1"
+    },
+    "browser/round-08/body-strip-19-6cc261aad6.png": {
+      "file": "rating/browser/round-08/body-strip-19-6cc261aad6.png",
+      "sha256": "6cc261aad62325cb303efbe67455ba8a9ee982f8089424ed9784376270ba1326"
+    },
+    "browser/round-08/body-strip-20-a50ea952b4.png": {
+      "file": "rating/browser/round-08/body-strip-20-a50ea952b4.png",
+      "sha256": "a50ea952b40fa9c6fcba241da209552f08b03c344417df99639fd7783c3760d0"
+    },
+    "browser/round-08/body3-evidence.json": {
+      "file": "rating/browser/round-08/body3-evidence.json",
+      "sha256": "3e66ad676c75847dfec14ca213cc6c56e92bd607871509b4554721eba14ceaa0"
+    },
+    "browser/round-08/body3.png": {
+      "file": "rating/browser/round-08/body3.png",
+      "sha256": "872679bbe5368ea5b1e1c7cb74e3ababdafd8784889ba7dbdc3bffab0c22d216"
+    },
+    "browser/round-08/body3-segment-02-7d8766951b.png": {
+      "file": "rating/browser/round-08/body3-segment-02-7d8766951b.png",
+      "sha256": "7d8766951b98a7f4d8029ce8831878f4bfc3184ccaf8394a9955ac0abca97055"
+    },
+    "browser/round-08/body3-segment-03-514576356d.png": {
+      "file": "rating/browser/round-08/body3-segment-03-514576356d.png",
+      "sha256": "514576356dece64c3d0d95a4078cf7e931e6c2e97b36838391eab07cf940c931"
+    },
+    "browser/round-08/body3-segment-04-d800ce188d.png": {
+      "file": "rating/browser/round-08/body3-segment-04-d800ce188d.png",
+      "sha256": "d800ce188d3e41f44ddc738dff1c9f62001ed28bd3ea0735705c78dd3e7d21fa"
+    },
+    "browser/round-08/body3-segment-05-65086fc245.png": {
+      "file": "rating/browser/round-08/body3-segment-05-65086fc245.png",
+      "sha256": "65086fc245140fb52f3a7a04d67d852449867c1261db0cf1ff1270dc4162e044"
+    },
+    "browser/round-08/full-evidence.json": {
+      "file": "rating/browser/round-08/full-evidence.json",
+      "sha256": "4ab39236e91f458bf25698c8a998425692cbd68daa1082f20feef227eb22844f"
+    },
+    "browser/round-08/full.png": {
+      "file": "rating/browser/round-08/full.png",
+      "sha256": "2ebda0319f3978f08f340c96ec0a8d9ec8046b1e27b9f2e3fd84b133b67ce996"
+    },
+    "browser/round-08/head2-evidence.json": {
+      "file": "rating/browser/round-08/head2-evidence.json",
+      "sha256": "b4bfb8650df3538566646f050b7ae666c3d9fab887b0be9f3ab156b29cf1f8d1"
+    },
+    "browser/round-08/head2.png": {
+      "file": "rating/browser/round-08/head2.png",
+      "sha256": "f2af96b8bfdbd9a62b4984284399490b76afe6c4b04eab955f8177a8b88739cf"
+    },
+    "browser/round-08/head2-segment-02-483cf49fe1.png": {
+      "file": "rating/browser/round-08/head2-segment-02-483cf49fe1.png",
+      "sha256": "483cf49fe1e320a9e7489426dadbcad5cd3dae691a866408be9ce48f0a3f6bc4"
+    },
+    "browser/round-08/head2-segment-03-459f0c096a.png": {
+      "file": "rating/browser/round-08/head2-segment-03-459f0c096a.png",
+      "sha256": "459f0c096aa2900e2d59719b73f1e13105337704e03dfc9951b0bf27de421d39"
+    },
+    "browser/round-08/head2-segment-04-c1f5bed48d.png": {
+      "file": "rating/browser/round-08/head2-segment-04-c1f5bed48d.png",
+      "sha256": "c1f5bed48d06bde756a80c2b4f86c9e1e99a6ac59e69a5ed8894383e12bb11a7"
+    },
+    "browser/round-08/head2-segment-05-953e8ad58d.png": {
+      "file": "rating/browser/round-08/head2-segment-05-953e8ad58d.png",
+      "sha256": "953e8ad58d38ea874311ca99f6972ebe96ec0c4416b5c529f463c9ae03b00b15"
+    },
+    "browser/round-08/upper2-evidence.json": {
+      "file": "rating/browser/round-08/upper2-evidence.json",
+      "sha256": "3e55d039ab8119ae3fbae138e5ae8c76a5c96bf1db16670db7b5b22c7d3a85f5"
+    },
+    "browser/round-08/upper2.png": {
+      "file": "rating/browser/round-08/upper2.png",
+      "sha256": "e8a41ac20e8c82d32a40d8f216971c886206feb37ff8660eb1038ccfb52bcf5f"
+    },
+    "browser/round-08/upper2-segment-02-eec3f84c82.png": {
+      "file": "rating/browser/round-08/upper2-segment-02-eec3f84c82.png",
+      "sha256": "eec3f84c82a855db970959fc29a9dccff25f909392ef3b057c48e35e825cde72"
+    },
+    "browser/round-08/upper2-segment-03-f6796ced02.png": {
+      "file": "rating/browser/round-08/upper2-segment-03-f6796ced02.png",
+      "sha256": "f6796ced028de149fe095a9156197029e80f2737c8195ac80cbba2b6c6bbfda7"
+    },
+    "browser/round-08/upper2-segment-04-8e015b5819.png": {
+      "file": "rating/browser/round-08/upper2-segment-04-8e015b5819.png",
+      "sha256": "8e015b5819d408a66509dc7dd9a31e9b60f77c3c36c81a7871c6fd9fa04ce950"
+    },
+    "browser/round-08/upper2-segment-05-97c994de75.png": {
+      "file": "rating/browser/round-08/upper2-segment-05-97c994de75.png",
+      "sha256": "97c994de754ffe61e6925b12d346db16cbd6487e0fdb222e020e7130b0fb7b52"
+    }
+  },
+  "note": "Independent scores only. Color fidelity evaluates corresponding hues, not exact RGB/brightness/saturation. Unreviewed scopes remain pending; native parts/combinations remain user-defined 100.",
+  "ratingsUpdatedAt": "2026-11-10T09:53:22.097Z"
+}

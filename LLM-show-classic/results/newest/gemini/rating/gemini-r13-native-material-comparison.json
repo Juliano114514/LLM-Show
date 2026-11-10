@@ -1,0 +1,114 @@
+{
+  "schema": "classic-independent-native-material-comparison-v1",
+  "reviewer": "classic_body_judge",
+  "archiveId": "7ec0fc573d05e2fefed7",
+  "bodyHash": "72e20951e599c29d08e17e80359329b57c0b481d0e3a6c76bb2e3bb5b72bfac6",
+  "completeHash": "f9586f81a78a3e6b3642feff90c176deafe3652738cad2923e2b18146e815735",
+  "policy": "Actual unchanged native crops100; AI per-layer archived pixels used only as detail diagnostics alongside actual IAB. No copying or score from source reuse.",
+  "rows": [
+    {
+      "id": "M01",
+      "source": "D:/LLM-show/qq-show-classic/outfit/白色公主裙黄色捧花套装.gif",
+      "sourceSha256": "facfc20cebb4b8cb4b9562901cdc3b70997cb3beba3cf98687efdf1d0f223880",
+      "nativeCrop": "M01-crop-1x.png",
+      "nativeCropSha256": "afd58dfefaa55cd179c8f57a458afdfec73e91ce37c8b705983d6dd5c824c2e5",
+      "nativeRect": {
+        "x": 41,
+        "y": 145,
+        "width": 76,
+        "height": 68
+      },
+      "aiRect": {
+        "left": 68,
+        "top": 137,
+        "width": 32,
+        "height": 38
+      },
+      "scale": 6,
+      "visibleSemantics": "裁框可见长裙的主浅面、浅青折谷、斜向上层布边、蝴蝶结与下层菱形蕾丝。上方花束少量进入框顶，不属于衣料折谷。",
+      "limits": "只见正面衣料与叠层。裙后、折缝内部和被裙遮住的腰胯/腿体积未知。",
+      "doNotCopy": [
+        "不要照搬整幅白青色号，角色对应色相仍按normal",
+        "不把蕾丝菱格铺满所有布料或拿裙宽反推裸胯"
+      ]
+    },
+    {
+      "id": "M03",
+      "source": "D:/LLM-show/qq-show-classic/outfit/蓝白学院风连衣裙.gif",
+      "sourceSha256": "a81e34c8451cf7aa4d3dd305976e4412951702065deec454730343e4d22a5a1d",
+      "nativeCrop": "M03-crop-1x.png",
+      "nativeCropSha256": "cb68d894a7922e2ef2fce79244321b3b5ea3e2d239ea42c20196604f84953dd7",
+      "nativeRect": {
+        "x": 77,
+        "y": 99,
+        "width": 29,
+        "height": 42
+      },
+      "aiRect": {
+        "left": 92,
+        "top": 106,
+        "width": 24,
+        "height": 41
+      },
+      "scale": 6,
+      "visibleSemantics": "白袖从肩侧垂到手腕，外缘灰绿/灰米色带，末端袖口翻折成短厚边；可见手从袖口下露出。",
+      "limits": "袖腔内部、被袖遮住的肘/上臂和准确裸腕轮廓未知。不能由此造官方裸臂mask。",
+      "doNotCopy": [
+        "不能把灰袖缘当皮肤暗线",
+        "不能用袖覆盖掩盖不合格的裸肘/腕，或凭此编出袖腔内部"
+      ]
+    },
+    {
+      "id": "M06",
+      "source": "D:/LLM-show/qq-show-classic/outfit/橙色花边礼裙.gif",
+      "sourceSha256": "87f60536d645df6705461684d8adf43859fddbf34239dc8af253b9b4d6c47d61",
+      "nativeCrop": "M06-crop-1x.png",
+      "nativeCropSha256": "6d99aefe03076727413dfb004e2217448c6a7a446b7ccce11e7218881f232c2b",
+      "nativeRect": {
+        "x": 42,
+        "y": 138,
+        "width": 73,
+        "height": 73
+      },
+      "aiRect": {
+        "left": 29,
+        "top": 95,
+        "width": 32,
+        "height": 64
+      },
+      "scale": 6,
+      "visibleSemantics": "长裙纵向暖橙谷，裙底前后几片横向翻折边，小范围白花纹；外侧粉色花点是效果。",
+      "limits": "褶底内层的隐藏面和脚部被衣料遮挡处未知；原生橙色不要求Claude或Gemini照抄色号。",
+      "doNotCopy": [
+        "不能把所有折底统一描成最亮长线",
+        "不把装饰花点当织物高光或用它们补结构"
+      ]
+    },
+    {
+      "id": "M12",
+      "source": "D:/LLM-show/qq-show-classic/front-hair/炫紫闪耀双马尾卷发.gif",
+      "sourceSha256": "a07a3c2b3ff0e330e33cfcc5d297cf56db1ae6c2207c9888b72e0bcdd9253351",
+      "nativeCrop": "M12-crop-1x.png",
+      "nativeCropSha256": "b375c514b8d1762fd19bcfbeb6e66748ce3e6cb7ed535c4e46df0549cca772a1",
+      "nativeRect": {
+        "x": 37,
+        "y": 46,
+        "width": 66,
+        "height": 75
+      },
+      "aiRect": {
+        "left": 26,
+        "top": 75,
+        "width": 46,
+        "height": 72
+      },
+      "scale": 6,
+      "visibleSemantics": "独立前发源的发冠、双马尾和卷梢，中央透明区供脸。顶部白色星形头饰与发丝高光分属不同语义。",
+      "limits": "没有与实际角色脸合成，也没看动态帧；头皮、发束背面与卷梢动效未知。",
+      "doNotCopy": [
+        "不能把所有角色改成紫双马尾或复制星饰",
+        "不要把头饰、发丝高光和特效闪点混成同一图案"
+      ]
+    }
+  ]
+}

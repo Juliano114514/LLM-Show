@@ -1,0 +1,4656 @@
+{
+  "schema": "classic-independent-full-body-fusion-v1",
+  "reviewer": "classic_body_judge",
+  "round": "human-followup-20261110-round08-grok-r12",
+  "character": "grok",
+  "date": "2026-11-10",
+  "nativeBaselineScore": 100,
+  "reference": {
+    "reviewer": "classic_body_judge",
+    "score": 94.3,
+    "weightedRaw": 94.3,
+    "threshold": 90,
+    "passed": true,
+    "reviewedCompleteHash": "42cd2e8e41a4d4c813cf0d39ea04f0ea4c185a114b9511a3ec7e9b8de65a5bcc",
+    "reviewedCompleteArtifact": "character.png canonical runtime per-layer composite; exact actual browser fullLayers below.",
+    "reviewedFullLayerHashes": {
+      "grok-background-0": "8503e59f333e85f2fbc5c195601650ef445e1d91276d948f583b228492615be6",
+      "grok-aura-0": "89bbf7de7bd1da92e6e115b0ce44d5309e3d67425e91a098d0740ac8d044d1b0",
+      "grok-back-0": "83fe300980dc730bacafb04c8df7a333f85445ac513a335c19cdbc89c592bdad",
+      "grok-hair-0": "c58ce4b366371320cbdf588cbcd89691c2867403e3d5577c9a96d928cef5a80e",
+      "grok-legs-0": "8ec684b7ff4b6059052d2170202fce6539d7fe0ee0c50ec9855c462f549d18a3",
+      "grok-bottom-0": "703f01919a3c35049f2d527279bf6b08f05942a7dd555196e1b7cdd278c59c4f",
+      "grok-top-0": "1542a5b851806505b6517b71420f1ae8c9a702d9d37cc5f82d0475edcf9a3d23",
+      "grok-face-0": "0f3128880b2cdcb39f9e3379cfdc3563ef2da32bff68fdbdf3e1325b8d0e2f16",
+      "grok-hair-1": "a4f59f0f9e5abd510305e76ba4a92914cf257010897947c24ee5ec65401ec7c1",
+      "grok-prop-0": "42fc55f4ef887438980283be36e788a9fb146a049e5016052753483696af37f5",
+      "grok-top-1": "5e1858a2345de4ac1292ee8365313f746053b5bd6c905d623f1b28a76ea3fb85",
+      "grok-headwear-0": "41aea613354016c8bc0555cc982d344f2223ac7bda84fc1580028952770fbae1",
+      "grok-effect-0": "20417219bd19da70c79c9049cf9419a480ce20d1713406ca5e12a941f132c02a"
+    },
+    "reviewedGeneratedInterfaceHashes": {},
+    "seed": "closeout-r25-grok-full-c7p5jhww",
+    "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+    "contextSignature": "native-context-v4-2b9b1810",
+    "dimensions": {
+      "action": {
+        "score": 100,
+        "weight": 20,
+        "reason": "屈肘外握竖斧/低手提裙主类保留，中小腕指/肘角差扣0，腕掌结构另计融合。"
+      },
+      "emotion": {
+        "score": 91,
+        "weight": 10,
+        "reason": "蓝瞳、张口尖牙活泼神态在，normal眼型/眉颊/尖牙层次仍缩并，明暗不同不扣色相还原。"
+      },
+      "hair": {
+        "score": 89,
+        "weight": 20,
+        "reason": "金双马尾、额前长短束/黑结和呆毛可辨，根谷/局部小束比旧有变化；冠顶宽金面、双尾长浅边仍收并normal松散层束。"
+      },
+      "pose": {
+        "score": 100,
+        "weight": 15,
+        "reason": "错足站立/支撑主类保持，中小胯膝足角与重心差扣0，未解量测不作pose扣分。"
+      },
+      "clothing": {
+        "score": 92,
+        "weight": 25,
+        "reason": "黑胸杯束腰/宽袖白衬/黑金裙红衬成立，R12袖口短厚边/黑红层谷峰更清楚；提点到腰裙受力/翻层厚度、胸领荷叶和细叠层仍简。"
+      },
+      "accessories": {
+        "score": 94,
+        "weight": 10,
+        "reason": "斧/冠结/徽链坠和裙金饰可辨，小雕线/悬挂层次和金纹缩并，色相对应近。"
+      }
+    },
+    "colorFidelity": {
+      "policy": "User final clarification: corresponding-part hue proximity only. No RGB/HEX, brightness, saturation or area-ratio threshold.",
+      "reference": "ai-girls-atlas/assets/zipzippipe/grok/normal-zipzippipe-pixiv-148186519-p07.jpg",
+      "authorizedAdaptations": [],
+      "parts": [
+        {
+          "part": "hair/ends",
+          "observation": "金色前后发与尾对应normal接近，不按明暗/饱和/面积比扣。",
+          "dimension": "hair",
+          "deduction": 0
+        },
+        {
+          "part": "iris",
+          "observation": "蓝/湖蓝双瞳接近normal蓝，目形/神态另评。",
+          "dimension": "emotion",
+          "deduction": 0
+        },
+        {
+          "part": "dress/sleeves/lining/stockings/shoes",
+          "observation": "黑紫袖裙/酒红衬/深袜鞋对应色相近，材料明暗另计融合。",
+          "dimension": "clothing",
+          "deduction": 0
+        },
+        {
+          "part": "axe/metal/bow/crown",
+          "observation": "黑金斧/徽链冠/黑结对应近，不设HEX或精确RGB门。",
+          "dimension": "accessories",
+          "deduction": 0
+        }
+      ]
+    },
+    "poseAudit": {
+      "policyVersion": "classic-significant-pose-only-20261110",
+      "reviewer": "classic_body_judge",
+      "reviewedBodyHash": "9d202ed7daa5fac24cd42ef6978ec23d45eae05cbc00e82adb0ee162f10c9d76",
+      "reviewedCompleteHash": "42cd2e8e41a4d4c813cf0d39ea04f0ea4c185a114b9511a3ec7e9b8de65a5bcc",
+      "reference": "ai-girls-atlas/assets/zipzippipe/grok/normal-zipzippipe-pixiv-148186519-p07.jpg",
+      "pending": false,
+      "scope": "Actual current frozen body and clothed full are shown beside normal in the full browser screenshot. Image-left/right are canvas sides.",
+      "regions": [
+        {
+          "part": "torso",
+          "severity": "minor",
+          "region": [
+            54,
+            92,
+            85,
+            149
+          ],
+          "reason": "直立略转胸腰主类在，中小差扣0。",
+          "poseDeduction": 0,
+          "deducted": false,
+          "deductionDimension": null,
+          "evidence": [
+            "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/full.png",
+            "ai-girls-atlas/assets/zipzippipe/grok/normal-zipzippipe-pixiv-148186519-p07.jpg"
+          ]
+        },
+        {
+          "part": "imageLeftArm",
+          "severity": "moderate",
+          "region": [
+            27,
+            94,
+            62,
+            130
+          ],
+          "reason": "屈肘外握竖斧主方向在，局部肘腕/手位差扣0。",
+          "poseDeduction": 0,
+          "deducted": false,
+          "deductionDimension": null,
+          "evidence": [
+            "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/full.png",
+            "ai-girls-atlas/assets/zipzippipe/grok/normal-zipzippipe-pixiv-148186519-p07.jpg"
+          ]
+        },
+        {
+          "part": "imageRightArm",
+          "severity": "moderate",
+          "region": [
+            81,
+            94,
+            101,
+            142
+          ],
+          "reason": "低手提裙方向在，中小腕指差非非常显著动作类变化。",
+          "poseDeduction": 0,
+          "deducted": false,
+          "deductionDimension": null,
+          "evidence": [
+            "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/full.png",
+            "ai-girls-atlas/assets/zipzippipe/grok/normal-zipzippipe-pixiv-148186519-p07.jpg"
+          ]
+        },
+        {
+          "part": "imageLeftLeg",
+          "severity": "minor",
+          "region": [
+            54,
+            141,
+            75,
+            221
+          ],
+          "reason": "前足较直腿主类在，膝足中小差扣0。",
+          "poseDeduction": 0,
+          "deducted": false,
+          "deductionDimension": null,
+          "evidence": [
+            "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/full.png",
+            "ai-girls-atlas/assets/zipzippipe/grok/normal-zipzippipe-pixiv-148186519-p07.jpg"
+          ]
+        },
+        {
+          "part": "imageRightLeg",
+          "severity": "moderate",
+          "region": [
+            68,
+            142,
+            85,
+            217
+          ],
+          "reason": "后腿错步支撑保持，未反向交腿或改抬腿主类。",
+          "poseDeduction": 0,
+          "deducted": false,
+          "deductionDimension": null,
+          "evidence": [
+            "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/full.png",
+            "ai-girls-atlas/assets/zipzippipe/grok/normal-zipzippipe-pixiv-148186519-p07.jpg"
+          ]
+        },
+        {
+          "part": "weight",
+          "severity": "moderate",
+          "region": [
+            50,
+            129,
+            90,
+            223
+          ],
+          "reason": "前后足站立承重主类近，中小差扣0，旧calf技术疑项不扣pose。",
+          "poseDeduction": 0,
+          "deducted": false,
+          "deductionDimension": null,
+          "evidence": [
+            "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/full.png",
+            "ai-girls-atlas/assets/zipzippipe/grok/normal-zipzippipe-pixiv-148186519-p07.jpg"
+          ]
+        }
+      ],
+      "deductionPolicy": "Minor/moderate pose differences have zero deduction. Significant means very significant only; anatomy and garment/contact failures stay in fusion.",
+      "significantDifferences": []
+    },
+    "reasons": [
+      "本轮normal与实际冻结IAB全套重新审；hue对应接近、六区中小pose差扣0。还原过90不替代身体/多件98。"
+    ],
+    "recommendations": [
+      "R26唯一最终轮：保真实握斧/肌腹/已加掌肉，局部理清握侧掌底拇指根短承压、低指布压影与袖腔短厚面，不数五指/统一粗描。",
+      "冠与双尾按normal根叠影→宽窄谷→转面→短峰分层，减少贯长浅沿同频；不复制M09直发分缝或M11短发轮廓。",
+      "红衬按提点/腰/落地布置主谷与折底厚面，黑胸袖补局部压力转面，保已清楚黑红前后层，不用更多金纹填平面。",
+      "y164+未改与旧calf不利窄窗/定位敏感记录保留，不机械default点削肉，不借新hash清关。",
+      "R26真实IAB复评后停止自动艺术返工；不足98、六组pending及技术未知如实MD，不开第三轮。"
+    ],
+    "evidence": {
+      "reactFullImage": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/full.png",
+      "reactFullImageSha256": "4efd1181ed9316a2ca8a03ad88d6a60c4a285bad94609e37df3d3b21ad6dd0af",
+      "reactFullSnapshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/full-evidence.json",
+      "actuallyViewed": [
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/full.png",
+        "ai-girls-atlas/assets/zipzippipe/grok/normal-zipzippipe-pixiv-148186519-p07.jpg",
+        "ai-girls-atlas/characters/grok/README.md"
+      ],
+      "captureBrowser": "Codex in-app browser",
+      "failedImages": [],
+      "reactFullImages": [
+        {
+          "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/full.png",
+          "sha256": "4efd1181ed9316a2ca8a03ad88d6a60c4a285bad94609e37df3d3b21ad6dd0af",
+          "images": [
+            {
+              "bottom": 342.5625,
+              "height": 226,
+              "index": 0,
+              "left": 28,
+              "right": 168,
+              "top": 116.5625,
+              "width": 140
+            },
+            {
+              "bottom": 342.5625,
+              "height": 226,
+              "index": 1,
+              "left": 180,
+              "right": 320,
+              "top": 116.5625,
+              "width": 140
+            },
+            {
+              "bottom": 342.5625,
+              "height": 226,
+              "index": 2,
+              "left": 332,
+              "right": 472,
+              "top": 116.5625,
+              "width": 140
+            }
+          ]
+        }
+      ]
+    },
+    "limitations": [
+      "Static image; no animation validation.",
+      "Full-reference passing does not grant body/fusion acceptance."
+    ]
+  },
+  "hybrid": {
+    "head2": {
+      "reviews": [
+        {
+          "reviewer": "classic_body_judge",
+          "score": 90.05,
+          "weightedRaw": 90.05,
+          "threshold": 98,
+          "passed": false,
+          "pending": false,
+          "selectedAiSlots": [
+            "hair",
+            "face"
+          ],
+          "selectedItemIDs": {
+            "face": "grok-face",
+            "hair": "grok-hair"
+          },
+          "reviewedPartHashes": {
+            "face": "67c9caf9e1554f8e20d1c81d3be9659c4654e075788b5bd03ebff6d46ff62f16",
+            "hair": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac"
+          },
+          "reviewedGeneratedInterfaceHashes": {},
+          "reviewedCompleteHash": "42cd2e8e41a4d4c813cf0d39ea04f0ea4c185a114b9511a3ec7e9b8de65a5bcc",
+          "bodyHash": "9d202ed7daa5fac24cd42ef6978ec23d45eae05cbc00e82adb0ee162f10c9d76",
+          "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+          "seed": "closeout-r25-grok-head2-m50elr7l",
+          "contextSignature": "native-context-v4-ac02ff5e",
+          "draws": {
+            "aura": [
+              "native-aura-1",
+              "native-aura-16",
+              "native-aura-17",
+              "native-aura-9",
+              "native-aura-11"
+            ],
+            "back": [
+              "native-back-13",
+              "native-back-17",
+              "native-back-9",
+              "native-back-11",
+              "native-back-8"
+            ],
+            "background": [
+              "native-background-12",
+              "native-background-20",
+              "native-background-19",
+              "native-background-16",
+              "native-background-1"
+            ],
+            "bottom": [
+              "native-bottom-15",
+              "native-bottom-9",
+              "native-bottom-3",
+              "native-bottom-6",
+              "native-bottom-8"
+            ],
+            "effect": [
+              "native-effect-10",
+              "native-effect-17",
+              "native-effect-4",
+              "native-effect-6",
+              "native-effect-13"
+            ],
+            "face": [
+              "native-face-2",
+              "native-face-6",
+              "native-face-14",
+              "native-face-3",
+              "native-face-4"
+            ],
+            "hair": [
+              "native-hair-19",
+              "native-hair-20",
+              "native-hair-18",
+              "native-hair-8",
+              "native-hair-14"
+            ],
+            "headwear": [
+              "native-headwear-1",
+              "native-headwear-15",
+              "native-headwear-3",
+              "native-headwear-20",
+              "native-headwear-10"
+            ],
+            "legs": [
+              "native-legs-15",
+              "native-legs-9",
+              "native-legs-3",
+              "native-legs-6",
+              "native-legs-8"
+            ],
+            "prop": [
+              "native-prop-16",
+              "native-prop-7",
+              "native-prop-14",
+              "native-prop-18",
+              "native-prop-20"
+            ],
+            "top": [
+              "native-top-20",
+              "native-top-16",
+              "native-top-12",
+              "native-top-7",
+              "native-top-2"
+            ]
+          },
+          "contextScores": [
+            {
+              "caseId": "grok-head2-sd618253f-a0-f0",
+              "fixtureIndex": 0,
+              "score": 90.05,
+              "weightedRaw": 90.05,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 89,
+                  "weight": 20,
+                  "reason": "例1蓝天扫描：真实原生扫描罩遮头胸，不扣native；只评露出的双尾/边脸，长金带与长浅沿仍偏平，遮挡不授隐藏98。"
+                },
+                "proportionConnection": {
+                  "score": 94,
+                  "weight": 25,
+                  "reason": "例1蓝天扫描：真实原生扫描罩遮头胸，不扣native；只评露出的双尾/边脸，长金带与长浅沿仍偏平，遮挡不授隐藏98。"
+                },
+                "materialColor": {
+                  "score": 86,
+                  "weight": 15,
+                  "reason": "例1蓝天扫描：真实原生扫描罩遮头胸，不扣native；只评露出的双尾/边脸，长金带与长浅沿仍偏平，遮挡不授隐藏98。"
+                },
+                "blingeePixel": {
+                  "score": 88,
+                  "weight": 20,
+                  "reason": "例1蓝天扫描：真实原生扫描罩遮头胸，不扣native；只评露出的双尾/边脸，长金带与长浅沿仍偏平，遮挡不授隐藏98。"
+                },
+                "occlusionContact": {
+                  "score": 95,
+                  "weight": 15,
+                  "reason": "例1蓝天扫描：真实原生扫描罩遮头胸，不扣native；只评露出的双尾/边脸，长金带与长浅沿仍偏平，遮挡不授隐藏98。"
+                },
+                "canvasReadability": {
+                  "score": 80,
+                  "weight": 5,
+                  "reason": "例1蓝天扫描：真实原生扫描罩遮头胸，不扣native；只评露出的双尾/边脸，长金带与长浅沿仍偏平，遮挡不授隐藏98。"
+                }
+              },
+              "reason": "例1蓝天扫描：真实原生扫描罩遮头胸，不扣native；只评露出的双尾/边脸，长金带与长浅沿仍偏平，遮挡不授隐藏98。",
+              "region": [
+                25,
+                35,
+                125,
+                188
+              ],
+              "visibilityLimitation": "原生扫描罩遮头胸；补hide-effect仅诊断，不替主上下文。",
+              "scoredVisibleOnly": true,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-1",
+                "back": "native-back-13",
+                "background": "native-background-12",
+                "bottom": "native-bottom-15",
+                "effect": "native-effect-10",
+                "face": "native-face-2",
+                "hair": "native-hair-19",
+                "headwear": "native-headwear-1",
+                "legs": "native-legs-15",
+                "prop": "native-prop-16",
+                "top": "native-top-20"
+              },
+              "aiSelection": {
+                "aura": "native-aura-1",
+                "back": "native-back-13",
+                "background": "native-background-12",
+                "bottom": "native-bottom-15",
+                "effect": "native-effect-10",
+                "face": "grok-face",
+                "hair": "grok-hair",
+                "headwear": "native-headwear-1",
+                "legs": "native-legs-15",
+                "prop": "native-prop-16",
+                "top": "native-top-20"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "face"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "c58ce4b366371320cbdf588cbcd89691c2867403e3d5577c9a96d928cef5a80e",
+                  "design": "/assets-classic/grok/remake/hair-back-design.svg",
+                  "itemId": "grok-hair",
+                  "key": "grok-hair-0",
+                  "name": "金砂双马尾",
+                  "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+                  "slot": "hair",
+                  "src": "/assets-classic/grok/remake/hair-back.png",
+                  "svg": "/assets-classic/grok/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "0f3128880b2cdcb39f9e3379cfdc3563ef2da32bff68fdbdf3e1325b8d0e2f16",
+                  "itemId": "grok-face",
+                  "key": "grok-face-0",
+                  "name": "碧蓝自信浅笑",
+                  "reviewFamilyHash": "67c9caf9e1554f8e20d1c81d3be9659c4654e075788b5bd03ebff6d46ff62f16",
+                  "slot": "face",
+                  "src": "/assets-classic/grok/remake/face.png",
+                  "svg": "/assets-classic/grok/remake/face.svg",
+                  "variantRole": "own-pose",
+                  "z": 70
+                },
+                {
+                  "artworkHash": "a4f59f0f9e5abd510305e76ba4a92914cf257010897947c24ee5ec65401ec7c1",
+                  "design": "/assets-classic/grok/remake/hair-front-design.svg",
+                  "itemId": "grok-hair",
+                  "key": "grok-hair-1",
+                  "name": "金砂双马尾",
+                  "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+                  "slot": "hair",
+                  "src": "/assets-classic/grok/remake/hair-front.png",
+                  "svg": "/assets-classic/grok/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/head2-evidence.json",
+              "recommendations": [
+                "R26唯一最终轮：保真实握斧/肌腹/已加掌肉，局部理清握侧掌底拇指根短承压、低指布压影与袖腔短厚面，不数五指/统一粗描。",
+                "冠与双尾按normal根叠影→宽窄谷→转面→短峰分层，减少贯长浅沿同频；不复制M09直发分缝或M11短发轮廓。",
+                "红衬按提点/腰/落地布置主谷与折底厚面，黑胸袖补局部压力转面，保已清楚黑红前后层，不用更多金纹填平面。",
+                "y164+未改与旧calf不利窄窗/定位敏感记录保留，不机械default点削肉，不借新hash清关。",
+                "R26真实IAB复评后停止自动艺术返工；不足98、六组pending及技术未知如实MD，不开第三轮。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/head2.png"
+              ],
+              "diagnosticSupplement": {
+                "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/head2-effect-supplement-case0.json",
+                "screenshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/head2-effect-supplement-case0-b1006b4e80.png",
+                "diagnosticOnly": true,
+                "replacesMainContext": false,
+                "newScore": null
+              }
+            },
+            {
+              "caseId": "grok-head2-sd618253f-a0-f1",
+              "fixtureIndex": 1,
+              "score": 90.55,
+              "weightedRaw": 90.55,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 89,
+                  "weight": 20,
+                  "reason": "例2夜星蓝帽：帽发脸接位完整，根谷有局部变化；冠顶宽金面/贯长浅弧和双尾长反射带主次不足。"
+                },
+                "proportionConnection": {
+                  "score": 94,
+                  "weight": 25,
+                  "reason": "例2夜星蓝帽：帽发脸接位完整，根谷有局部变化；冠顶宽金面/贯长浅弧和双尾长反射带主次不足。"
+                },
+                "materialColor": {
+                  "score": 86,
+                  "weight": 15,
+                  "reason": "例2夜星蓝帽：帽发脸接位完整，根谷有局部变化；冠顶宽金面/贯长浅弧和双尾长反射带主次不足。"
+                },
+                "blingeePixel": {
+                  "score": 88,
+                  "weight": 20,
+                  "reason": "例2夜星蓝帽：帽发脸接位完整，根谷有局部变化；冠顶宽金面/贯长浅弧和双尾长反射带主次不足。"
+                },
+                "occlusionContact": {
+                  "score": 95,
+                  "weight": 15,
+                  "reason": "例2夜星蓝帽：帽发脸接位完整，根谷有局部变化；冠顶宽金面/贯长浅弧和双尾长反射带主次不足。"
+                },
+                "canvasReadability": {
+                  "score": 90,
+                  "weight": 5,
+                  "reason": "例2夜星蓝帽：帽发脸接位完整，根谷有局部变化；冠顶宽金面/贯长浅弧和双尾长反射带主次不足。"
+                }
+              },
+              "reason": "例2夜星蓝帽：帽发脸接位完整，根谷有局部变化；冠顶宽金面/贯长浅弧和双尾长反射带主次不足。",
+              "region": [
+                25,
+                35,
+                125,
+                188
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-16",
+                "back": "native-back-17",
+                "background": "native-background-20",
+                "bottom": "native-bottom-9",
+                "effect": "native-effect-17",
+                "face": "native-face-6",
+                "hair": "native-hair-20",
+                "headwear": "native-headwear-15",
+                "legs": "native-legs-9",
+                "prop": "native-prop-7",
+                "top": "native-top-16"
+              },
+              "aiSelection": {
+                "aura": "native-aura-16",
+                "back": "native-back-17",
+                "background": "native-background-20",
+                "bottom": "native-bottom-9",
+                "effect": "native-effect-17",
+                "face": "grok-face",
+                "hair": "grok-hair",
+                "headwear": "native-headwear-15",
+                "legs": "native-legs-9",
+                "prop": "native-prop-7",
+                "top": "native-top-16"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "face"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "c58ce4b366371320cbdf588cbcd89691c2867403e3d5577c9a96d928cef5a80e",
+                  "design": "/assets-classic/grok/remake/hair-back-design.svg",
+                  "itemId": "grok-hair",
+                  "key": "grok-hair-0",
+                  "name": "金砂双马尾",
+                  "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+                  "slot": "hair",
+                  "src": "/assets-classic/grok/remake/hair-back.png",
+                  "svg": "/assets-classic/grok/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "0f3128880b2cdcb39f9e3379cfdc3563ef2da32bff68fdbdf3e1325b8d0e2f16",
+                  "itemId": "grok-face",
+                  "key": "grok-face-0",
+                  "name": "碧蓝自信浅笑",
+                  "reviewFamilyHash": "67c9caf9e1554f8e20d1c81d3be9659c4654e075788b5bd03ebff6d46ff62f16",
+                  "slot": "face",
+                  "src": "/assets-classic/grok/remake/face.png",
+                  "svg": "/assets-classic/grok/remake/face.svg",
+                  "variantRole": "own-pose",
+                  "z": 70
+                },
+                {
+                  "artworkHash": "a4f59f0f9e5abd510305e76ba4a92914cf257010897947c24ee5ec65401ec7c1",
+                  "design": "/assets-classic/grok/remake/hair-front-design.svg",
+                  "itemId": "grok-hair",
+                  "key": "grok-hair-1",
+                  "name": "金砂双马尾",
+                  "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+                  "slot": "hair",
+                  "src": "/assets-classic/grok/remake/hair-front.png",
+                  "svg": "/assets-classic/grok/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/head2-evidence.json",
+              "recommendations": [
+                "R26唯一最终轮：保真实握斧/肌腹/已加掌肉，局部理清握侧掌底拇指根短承压、低指布压影与袖腔短厚面，不数五指/统一粗描。",
+                "冠与双尾按normal根叠影→宽窄谷→转面→短峰分层，减少贯长浅沿同频；不复制M09直发分缝或M11短发轮廓。",
+                "红衬按提点/腰/落地布置主谷与折底厚面，黑胸袖补局部压力转面，保已清楚黑红前后层，不用更多金纹填平面。",
+                "y164+未改与旧calf不利窄窗/定位敏感记录保留，不机械default点削肉，不借新hash清关。",
+                "R26真实IAB复评后停止自动艺术返工；不足98、六组pending及技术未知如实MD，不开第三轮。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/head2-segment-02-df7a1e0552.png"
+              ]
+            },
+            {
+              "caseId": "grok-head2-sd618253f-a0-f2",
+              "fixtureIndex": 2,
+              "score": 90.45,
+              "weightedRaw": 90.45,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 89,
+                  "weight": 20,
+                  "reason": "例3紫楼白帽：胸前心饰不需握，头脸完整；松尾轮廓在，侧主束内部仍宽金带/长亮沿，短根影与小谷不足。"
+                },
+                "proportionConnection": {
+                  "score": 94,
+                  "weight": 25,
+                  "reason": "例3紫楼白帽：胸前心饰不需握，头脸完整；松尾轮廓在，侧主束内部仍宽金带/长亮沿，短根影与小谷不足。"
+                },
+                "materialColor": {
+                  "score": 86,
+                  "weight": 15,
+                  "reason": "例3紫楼白帽：胸前心饰不需握，头脸完整；松尾轮廓在，侧主束内部仍宽金带/长亮沿，短根影与小谷不足。"
+                },
+                "blingeePixel": {
+                  "score": 88,
+                  "weight": 20,
+                  "reason": "例3紫楼白帽：胸前心饰不需握，头脸完整；松尾轮廓在，侧主束内部仍宽金带/长亮沿，短根影与小谷不足。"
+                },
+                "occlusionContact": {
+                  "score": 95,
+                  "weight": 15,
+                  "reason": "例3紫楼白帽：胸前心饰不需握，头脸完整；松尾轮廓在，侧主束内部仍宽金带/长亮沿，短根影与小谷不足。"
+                },
+                "canvasReadability": {
+                  "score": 88,
+                  "weight": 5,
+                  "reason": "例3紫楼白帽：胸前心饰不需握，头脸完整；松尾轮廓在，侧主束内部仍宽金带/长亮沿，短根影与小谷不足。"
+                }
+              },
+              "reason": "例3紫楼白帽：胸前心饰不需握，头脸完整；松尾轮廓在，侧主束内部仍宽金带/长亮沿，短根影与小谷不足。",
+              "region": [
+                25,
+                35,
+                125,
+                188
+              ],
+              "visibilityLimitation": "胸饰遮少量下束，只评可见。",
+              "scoredVisibleOnly": true,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-17",
+                "back": "native-back-9",
+                "background": "native-background-19",
+                "bottom": "native-bottom-3",
+                "effect": "native-effect-4",
+                "face": "native-face-14",
+                "hair": "native-hair-18",
+                "headwear": "native-headwear-3",
+                "legs": "native-legs-3",
+                "prop": "native-prop-14",
+                "top": "native-top-12"
+              },
+              "aiSelection": {
+                "aura": "native-aura-17",
+                "back": "native-back-9",
+                "background": "native-background-19",
+                "bottom": "native-bottom-3",
+                "effect": "native-effect-4",
+                "face": "grok-face",
+                "hair": "grok-hair",
+                "headwear": "native-headwear-3",
+                "legs": "native-legs-3",
+                "prop": "native-prop-14",
+                "top": "native-top-12"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "face"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "c58ce4b366371320cbdf588cbcd89691c2867403e3d5577c9a96d928cef5a80e",
+                  "design": "/assets-classic/grok/remake/hair-back-design.svg",
+                  "itemId": "grok-hair",
+                  "key": "grok-hair-0",
+                  "name": "金砂双马尾",
+                  "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+                  "slot": "hair",
+                  "src": "/assets-classic/grok/remake/hair-back.png",
+                  "svg": "/assets-classic/grok/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "0f3128880b2cdcb39f9e3379cfdc3563ef2da32bff68fdbdf3e1325b8d0e2f16",
+                  "itemId": "grok-face",
+                  "key": "grok-face-0",
+                  "name": "碧蓝自信浅笑",
+                  "reviewFamilyHash": "67c9caf9e1554f8e20d1c81d3be9659c4654e075788b5bd03ebff6d46ff62f16",
+                  "slot": "face",
+                  "src": "/assets-classic/grok/remake/face.png",
+                  "svg": "/assets-classic/grok/remake/face.svg",
+                  "variantRole": "own-pose",
+                  "z": 70
+                },
+                {
+                  "artworkHash": "a4f59f0f9e5abd510305e76ba4a92914cf257010897947c24ee5ec65401ec7c1",
+                  "design": "/assets-classic/grok/remake/hair-front-design.svg",
+                  "itemId": "grok-hair",
+                  "key": "grok-hair-1",
+                  "name": "金砂双马尾",
+                  "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+                  "slot": "hair",
+                  "src": "/assets-classic/grok/remake/hair-front.png",
+                  "svg": "/assets-classic/grok/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/head2-evidence.json",
+              "recommendations": [
+                "R26唯一最终轮：保真实握斧/肌腹/已加掌肉，局部理清握侧掌底拇指根短承压、低指布压影与袖腔短厚面，不数五指/统一粗描。",
+                "冠与双尾按normal根叠影→宽窄谷→转面→短峰分层，减少贯长浅沿同频；不复制M09直发分缝或M11短发轮廓。",
+                "红衬按提点/腰/落地布置主谷与折底厚面，黑胸袖补局部压力转面，保已清楚黑红前后层，不用更多金纹填平面。",
+                "y164+未改与旧calf不利窄窗/定位敏感记录保留，不机械default点削肉，不借新hash清关。",
+                "R26真实IAB复评后停止自动艺术返工；不足98、六组pending及技术未知如实MD，不开第三轮。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/head2-segment-03-849550ba6e.png"
+              ]
+            },
+            {
+              "caseId": "grok-head2-sd618253f-a0-f3",
+              "fixtureIndex": 3,
+              "score": 90.55,
+              "weightedRaw": 90.55,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 89,
+                  "weight": 20,
+                  "reason": "例4夜星金翼：额前束和双尾分叉可读，主束根谷比旧明确；大片金面/长浅沿仍压缩原生发束细层。"
+                },
+                "proportionConnection": {
+                  "score": 94,
+                  "weight": 25,
+                  "reason": "例4夜星金翼：额前束和双尾分叉可读，主束根谷比旧明确；大片金面/长浅沿仍压缩原生发束细层。"
+                },
+                "materialColor": {
+                  "score": 86,
+                  "weight": 15,
+                  "reason": "例4夜星金翼：额前束和双尾分叉可读，主束根谷比旧明确；大片金面/长浅沿仍压缩原生发束细层。"
+                },
+                "blingeePixel": {
+                  "score": 88,
+                  "weight": 20,
+                  "reason": "例4夜星金翼：额前束和双尾分叉可读，主束根谷比旧明确；大片金面/长浅沿仍压缩原生发束细层。"
+                },
+                "occlusionContact": {
+                  "score": 95,
+                  "weight": 15,
+                  "reason": "例4夜星金翼：额前束和双尾分叉可读，主束根谷比旧明确；大片金面/长浅沿仍压缩原生发束细层。"
+                },
+                "canvasReadability": {
+                  "score": 90,
+                  "weight": 5,
+                  "reason": "例4夜星金翼：额前束和双尾分叉可读，主束根谷比旧明确；大片金面/长浅沿仍压缩原生发束细层。"
+                }
+              },
+              "reason": "例4夜星金翼：额前束和双尾分叉可读，主束根谷比旧明确；大片金面/长浅沿仍压缩原生发束细层。",
+              "region": [
+                25,
+                35,
+                125,
+                188
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-9",
+                "back": "native-back-11",
+                "background": "native-background-16",
+                "bottom": "native-bottom-6",
+                "effect": "native-effect-6",
+                "face": "native-face-3",
+                "hair": "native-hair-8",
+                "headwear": "native-headwear-20",
+                "legs": "native-legs-6",
+                "prop": "native-prop-18",
+                "top": "native-top-7"
+              },
+              "aiSelection": {
+                "aura": "native-aura-9",
+                "back": "native-back-11",
+                "background": "native-background-16",
+                "bottom": "native-bottom-6",
+                "effect": "native-effect-6",
+                "face": "grok-face",
+                "hair": "grok-hair",
+                "headwear": "native-headwear-20",
+                "legs": "native-legs-6",
+                "prop": "native-prop-18",
+                "top": "native-top-7"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "face"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "c58ce4b366371320cbdf588cbcd89691c2867403e3d5577c9a96d928cef5a80e",
+                  "design": "/assets-classic/grok/remake/hair-back-design.svg",
+                  "itemId": "grok-hair",
+                  "key": "grok-hair-0",
+                  "name": "金砂双马尾",
+                  "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+                  "slot": "hair",
+                  "src": "/assets-classic/grok/remake/hair-back.png",
+                  "svg": "/assets-classic/grok/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "0f3128880b2cdcb39f9e3379cfdc3563ef2da32bff68fdbdf3e1325b8d0e2f16",
+                  "itemId": "grok-face",
+                  "key": "grok-face-0",
+                  "name": "碧蓝自信浅笑",
+                  "reviewFamilyHash": "67c9caf9e1554f8e20d1c81d3be9659c4654e075788b5bd03ebff6d46ff62f16",
+                  "slot": "face",
+                  "src": "/assets-classic/grok/remake/face.png",
+                  "svg": "/assets-classic/grok/remake/face.svg",
+                  "variantRole": "own-pose",
+                  "z": 70
+                },
+                {
+                  "artworkHash": "a4f59f0f9e5abd510305e76ba4a92914cf257010897947c24ee5ec65401ec7c1",
+                  "design": "/assets-classic/grok/remake/hair-front-design.svg",
+                  "itemId": "grok-hair",
+                  "key": "grok-hair-1",
+                  "name": "金砂双马尾",
+                  "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+                  "slot": "hair",
+                  "src": "/assets-classic/grok/remake/hair-front.png",
+                  "svg": "/assets-classic/grok/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/head2-evidence.json",
+              "recommendations": [
+                "R26唯一最终轮：保真实握斧/肌腹/已加掌肉，局部理清握侧掌底拇指根短承压、低指布压影与袖腔短厚面，不数五指/统一粗描。",
+                "冠与双尾按normal根叠影→宽窄谷→转面→短峰分层，减少贯长浅沿同频；不复制M09直发分缝或M11短发轮廓。",
+                "红衬按提点/腰/落地布置主谷与折底厚面，黑胸袖补局部压力转面，保已清楚黑红前后层，不用更多金纹填平面。",
+                "y164+未改与旧calf不利窄窗/定位敏感记录保留，不机械default点削肉，不借新hash清关。",
+                "R26真实IAB复评后停止自动艺术返工；不足98、六组pending及技术未知如实MD，不开第三轮。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/head2-segment-04-e2377cdb95.png"
+              ]
+            },
+            {
+              "caseId": "grok-head2-sd618253f-a0-f4",
+              "fixtureIndex": 4,
+              "score": 90.55,
+              "weightedRaw": 90.55,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 89,
+                  "weight": 20,
+                  "reason": "例5樱框蓝帽：发帽/脸接位在，卷尾不等长；冠顶大面、双尾长峰主次及鼻颊小面仍弱，不能仅以轮廓完整授98。"
+                },
+                "proportionConnection": {
+                  "score": 94,
+                  "weight": 25,
+                  "reason": "例5樱框蓝帽：发帽/脸接位在，卷尾不等长；冠顶大面、双尾长峰主次及鼻颊小面仍弱，不能仅以轮廓完整授98。"
+                },
+                "materialColor": {
+                  "score": 86,
+                  "weight": 15,
+                  "reason": "例5樱框蓝帽：发帽/脸接位在，卷尾不等长；冠顶大面、双尾长峰主次及鼻颊小面仍弱，不能仅以轮廓完整授98。"
+                },
+                "blingeePixel": {
+                  "score": 88,
+                  "weight": 20,
+                  "reason": "例5樱框蓝帽：发帽/脸接位在，卷尾不等长；冠顶大面、双尾长峰主次及鼻颊小面仍弱，不能仅以轮廓完整授98。"
+                },
+                "occlusionContact": {
+                  "score": 95,
+                  "weight": 15,
+                  "reason": "例5樱框蓝帽：发帽/脸接位在，卷尾不等长；冠顶大面、双尾长峰主次及鼻颊小面仍弱，不能仅以轮廓完整授98。"
+                },
+                "canvasReadability": {
+                  "score": 90,
+                  "weight": 5,
+                  "reason": "例5樱框蓝帽：发帽/脸接位在，卷尾不等长；冠顶大面、双尾长峰主次及鼻颊小面仍弱，不能仅以轮廓完整授98。"
+                }
+              },
+              "reason": "例5樱框蓝帽：发帽/脸接位在，卷尾不等长；冠顶大面、双尾长峰主次及鼻颊小面仍弱，不能仅以轮廓完整授98。",
+              "region": [
+                25,
+                35,
+                125,
+                188
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-11",
+                "back": "native-back-8",
+                "background": "native-background-1",
+                "bottom": "native-bottom-8",
+                "effect": "native-effect-13",
+                "face": "native-face-4",
+                "hair": "native-hair-14",
+                "headwear": "native-headwear-10",
+                "legs": "native-legs-8",
+                "prop": "native-prop-20",
+                "top": "native-top-2"
+              },
+              "aiSelection": {
+                "aura": "native-aura-11",
+                "back": "native-back-8",
+                "background": "native-background-1",
+                "bottom": "native-bottom-8",
+                "effect": "native-effect-13",
+                "face": "grok-face",
+                "hair": "grok-hair",
+                "headwear": "native-headwear-10",
+                "legs": "native-legs-8",
+                "prop": "native-prop-20",
+                "top": "native-top-2"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "face"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "c58ce4b366371320cbdf588cbcd89691c2867403e3d5577c9a96d928cef5a80e",
+                  "design": "/assets-classic/grok/remake/hair-back-design.svg",
+                  "itemId": "grok-hair",
+                  "key": "grok-hair-0",
+                  "name": "金砂双马尾",
+                  "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+                  "slot": "hair",
+                  "src": "/assets-classic/grok/remake/hair-back.png",
+                  "svg": "/assets-classic/grok/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "0f3128880b2cdcb39f9e3379cfdc3563ef2da32bff68fdbdf3e1325b8d0e2f16",
+                  "itemId": "grok-face",
+                  "key": "grok-face-0",
+                  "name": "碧蓝自信浅笑",
+                  "reviewFamilyHash": "67c9caf9e1554f8e20d1c81d3be9659c4654e075788b5bd03ebff6d46ff62f16",
+                  "slot": "face",
+                  "src": "/assets-classic/grok/remake/face.png",
+                  "svg": "/assets-classic/grok/remake/face.svg",
+                  "variantRole": "own-pose",
+                  "z": 70
+                },
+                {
+                  "artworkHash": "a4f59f0f9e5abd510305e76ba4a92914cf257010897947c24ee5ec65401ec7c1",
+                  "design": "/assets-classic/grok/remake/hair-front-design.svg",
+                  "itemId": "grok-hair",
+                  "key": "grok-hair-1",
+                  "name": "金砂双马尾",
+                  "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+                  "slot": "hair",
+                  "src": "/assets-classic/grok/remake/hair-front.png",
+                  "svg": "/assets-classic/grok/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/head2-evidence.json",
+              "recommendations": [
+                "R26唯一最终轮：保真实握斧/肌腹/已加掌肉，局部理清握侧掌底拇指根短承压、低指布压影与袖腔短厚面，不数五指/统一粗描。",
+                "冠与双尾按normal根叠影→宽窄谷→转面→短峰分层，减少贯长浅沿同频；不复制M09直发分缝或M11短发轮廓。",
+                "红衬按提点/腰/落地布置主谷与折底厚面，黑胸袖补局部压力转面，保已清楚黑红前后层，不用更多金纹填平面。",
+                "y164+未改与旧calf不利窄窗/定位敏感记录保留，不机械default点削肉，不借新hash清关。",
+                "R26真实IAB复评后停止自动艺术返工；不足98、六组pending及技术未知如实MD，不开第三轮。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/head2-segment-05-e3d2f1f7b5.png"
+              ]
+            }
+          ],
+          "reasons": [
+            "R12握侧腕掌底/低掌短肉面与肌腹收放有改善，真实指群跨斧杆前、上下杆延续成立，不沿用缺握旧指控。",
+            "握侧腕掌底x28..38/y119..128仍偏长浅面，掌根到拇指根的短转面/承压不足；低掌x91..100/y130..140已加肉，布指下短压影/袖腔内厚仍少。",
+            "肩肘/腰胯股根连续，y164+与已核SHA的R11 body逐RGBA0差，仅证明未改，不宣称旧calf修复或技术通过。",
+            "R26唯一最终轮：保真实握斧/肌腹/已加掌肉，局部理清握侧掌底拇指根短承压、低指布压影与袖腔短厚面，不数五指/统一粗描。",
+            "冠与双尾按normal根叠影→宽窄谷→转面→短峰分层，减少贯长浅沿同频；不复制M09直发分缝或M11短发轮廓。",
+            "红衬按提点/腰/落地布置主谷与折底厚面，黑胸袖补局部压力转面，保已清楚黑红前后层，不用更多金纹填平面。",
+            "y164+未改与旧calf不利窄窗/定位敏感记录保留，不机械default点削肉，不借新hash清关。",
+            "R26真实IAB复评后停止自动艺术返工；不足98、六组pending及技术未知如实MD，不开第三轮。"
+          ],
+          "recommendations": [
+            "R26唯一最终轮：保真实握斧/肌腹/已加掌肉，局部理清握侧掌底拇指根短承压、低指布压影与袖腔短厚面，不数五指/统一粗描。",
+            "冠与双尾按normal根叠影→宽窄谷→转面→短峰分层，减少贯长浅沿同频；不复制M09直发分缝或M11短发轮廓。",
+            "红衬按提点/腰/落地布置主谷与折底厚面，黑胸袖补局部压力转面，保已清楚黑红前后层，不用更多金纹填平面。",
+            "y164+未改与旧calf不利窄窗/定位敏感记录保留，不机械default点削肉，不借新hash清关。",
+            "R26真实IAB复评后停止自动艺术返工；不足98、六组pending及技术未知如实MD，不开第三轮。"
+          ],
+          "evidence": {
+            "reactEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/head2-evidence.json",
+            "reactScreenshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/head2.png",
+            "reactScreenshotSha256": "14124962ff3b3e2fed902b5515db0674893422cb12d6af27e897d35e3bee7847",
+            "captureBrowser": "Codex in-app browser",
+            "failedImages": [],
+            "actuallyViewed": true,
+            "reactScreenshots": [
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/head2.png",
+                "sha256": "14124962ff3b3e2fed902b5515db0674893422cb12d6af27e897d35e3bee7847",
+                "visible": [
+                  {
+                    "bottom": 424.90625,
+                    "caseId": "grok-head2-sd618253f-a0-f0",
+                    "height": 312.921875,
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 111.984375,
+                    "width": 160
+                  },
+                  {
+                    "bottom": 424.90625,
+                    "caseId": "grok-head2-sd618253f-a0-f0",
+                    "height": 312.921875,
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 111.984375,
+                    "width": 160
+                  }
+                ]
+              },
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/head2-segment-02-df7a1e0552.png",
+                "sha256": "df7a1e0552934836568dd7259051e1c5c5fbec1e4af897423af4ea4bbb77fb6f",
+                "visible": [
+                  {
+                    "bottom": 424.828125,
+                    "caseId": "grok-head2-sd618253f-a0-f1",
+                    "height": 312.921875,
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 111.90625,
+                    "width": 160
+                  },
+                  {
+                    "bottom": 424.828125,
+                    "caseId": "grok-head2-sd618253f-a0-f1",
+                    "height": 312.921875,
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 111.90625,
+                    "width": 160
+                  }
+                ]
+              },
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/head2-segment-03-849550ba6e.png",
+                "sha256": "849550ba6e8a684d28c8623521457b4cfc53812416929c92624350c54eb023fa",
+                "visible": [
+                  {
+                    "bottom": 424.75,
+                    "caseId": "grok-head2-sd618253f-a0-f2",
+                    "height": 312.921875,
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 111.828125,
+                    "width": 160
+                  },
+                  {
+                    "bottom": 424.75,
+                    "caseId": "grok-head2-sd618253f-a0-f2",
+                    "height": 312.921875,
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 111.828125,
+                    "width": 160
+                  }
+                ]
+              },
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/head2-segment-04-e2377cdb95.png",
+                "sha256": "e2377cdb95a71d740e01e81cd38d879965ceb3dd2d9380acf12c2f479ef659d5",
+                "visible": [
+                  {
+                    "bottom": 424.671875,
+                    "caseId": "grok-head2-sd618253f-a0-f3",
+                    "height": 312.921875,
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 111.75,
+                    "width": 160
+                  },
+                  {
+                    "bottom": 424.671875,
+                    "caseId": "grok-head2-sd618253f-a0-f3",
+                    "height": 312.921875,
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 111.75,
+                    "width": 160
+                  }
+                ]
+              },
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/head2-segment-05-e3d2f1f7b5.png",
+                "sha256": "e3d2f1f7b5d29a4f8ee176b4c5943d0c06fd98ddc07820a9c19aaadbfffc6345",
+                "visible": [
+                  {
+                    "bottom": 424.59375,
+                    "caseId": "grok-head2-sd618253f-a0-f4",
+                    "height": 312.921875,
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 111.671875,
+                    "width": 160
+                  },
+                  {
+                    "bottom": 424.59375,
+                    "caseId": "grok-head2-sd618253f-a0-f4",
+                    "height": 312.921875,
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 111.671875,
+                    "width": 160
+                  }
+                ]
+              }
+            ],
+            "actuallyViewedViaDiagnostic": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/grok-r12-head2-from-browser-segments-2x.png",
+            "diagnosticIndex": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/grok-r12-segment-diagnostic-index.json",
+            "segmented": true,
+            "allNativeAiCasePairsActuallyViewed": true
+          },
+          "limitations": [
+            "Static only; no animation claim.",
+            "Native complete combinations remain100. Any AI-owned generated support is included with the AI; never inherits100.",
+            "原生扫描罩遮头胸；补hide-effect仅诊断，不替主上下文。",
+            "胸饰遮少量下束，只评可见。"
+          ],
+          "layoutIntegrity": null
+        }
+      ]
+    },
+    "body3": {
+      "reviews": [
+        {
+          "reviewer": "classic_body_judge",
+          "score": 92.8,
+          "weightedRaw": 92.8,
+          "threshold": 98,
+          "passed": false,
+          "pending": false,
+          "selectedAiSlots": [
+            "legs",
+            "bottom",
+            "top"
+          ],
+          "selectedItemIDs": {
+            "bottom": "grok-bottom",
+            "legs": "grok-legs",
+            "top": "grok-top"
+          },
+          "reviewedPartHashes": {
+            "bottom": "ffdb0eb8a5bf4f08250bb2d5d0d5ae503223155abc5dc2793348fec2eb292153",
+            "legs": "43606b202b13ab79f18bbc75cc74457979b1e94599b190d17e8d9b57d7ba7f27",
+            "top": "48588fd2989ff6496e5dca42e75193c617a363661bffdb8646ca10fd7b4f234a"
+          },
+          "reviewedGeneratedInterfaceHashes": {},
+          "reviewedCompleteHash": "42cd2e8e41a4d4c813cf0d39ea04f0ea4c185a114b9511a3ec7e9b8de65a5bcc",
+          "bodyHash": "9d202ed7daa5fac24cd42ef6978ec23d45eae05cbc00e82adb0ee162f10c9d76",
+          "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+          "seed": "closeout-r25-grok-body3-7h4z07g8",
+          "contextSignature": "native-context-v4-923162f5",
+          "draws": {
+            "aura": [
+              "native-aura-18",
+              "native-aura-17",
+              "native-aura-19",
+              "native-aura-3",
+              "native-aura-20"
+            ],
+            "back": [
+              "native-back-8",
+              "native-back-16",
+              "native-back-12",
+              "native-back-17",
+              "native-back-15"
+            ],
+            "background": [
+              "native-background-20",
+              "native-background-11",
+              "native-background-4",
+              "native-background-13",
+              "native-background-8"
+            ],
+            "bottom": [
+              "native-bottom-4",
+              "native-bottom-19",
+              "native-bottom-11",
+              "native-bottom-13",
+              "native-bottom-18"
+            ],
+            "effect": [
+              "native-effect-3",
+              "native-effect-18",
+              "native-effect-9",
+              "native-effect-10",
+              "native-effect-7"
+            ],
+            "face": [
+              "native-face-12",
+              "native-face-13",
+              "native-face-11",
+              "native-face-19",
+              "native-face-15"
+            ],
+            "hair": [
+              "native-hair-8",
+              "native-hair-19",
+              "native-hair-3",
+              "native-hair-2",
+              "native-hair-17"
+            ],
+            "headwear": [
+              "native-headwear-10",
+              "native-headwear-12",
+              "native-headwear-4",
+              "native-headwear-16",
+              "native-headwear-20"
+            ],
+            "legs": [
+              "native-legs-4",
+              "native-legs-19",
+              "native-legs-11",
+              "native-legs-13",
+              "native-legs-18"
+            ],
+            "prop": [
+              "native-prop-1",
+              "native-prop-16",
+              "native-prop-15",
+              "native-prop-19",
+              "native-prop-9"
+            ],
+            "top": [
+              "native-top-13",
+              "native-top-1",
+              "native-top-8",
+              "native-top-19",
+              "native-top-11"
+            ]
+          },
+          "contextScores": [
+            {
+              "caseId": "grok-body3-sf98527f-a0-f0",
+              "fixtureIndex": 0,
+              "score": 92.9,
+              "weightedRaw": 92.9,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 93,
+                  "weight": 20,
+                  "reason": "例1蓝夜花束：花遮胸腰不推隐藏抓点；可见袖/低掌/裙层比旧清楚，黑红翻层力向和短厚边仍弱。"
+                },
+                "proportionConnection": {
+                  "score": 95,
+                  "weight": 25,
+                  "reason": "例1蓝夜花束：花遮胸腰不推隐藏抓点；可见袖/低掌/裙层比旧清楚，黑红翻层力向和短厚边仍弱。"
+                },
+                "materialColor": {
+                  "score": 91,
+                  "weight": 15,
+                  "reason": "例1蓝夜花束：花遮胸腰不推隐藏抓点；可见袖/低掌/裙层比旧清楚，黑红翻层力向和短厚边仍弱。"
+                },
+                "blingeePixel": {
+                  "score": 92,
+                  "weight": 20,
+                  "reason": "例1蓝夜花束：花遮胸腰不推隐藏抓点；可见袖/低掌/裙层比旧清楚，黑红翻层力向和短厚边仍弱。"
+                },
+                "occlusionContact": {
+                  "score": 95,
+                  "weight": 15,
+                  "reason": "例1蓝夜花束：花遮胸腰不推隐藏抓点；可见袖/低掌/裙层比旧清楚，黑红翻层力向和短厚边仍弱。"
+                },
+                "canvasReadability": {
+                  "score": 85,
+                  "weight": 5,
+                  "reason": "例1蓝夜花束：花遮胸腰不推隐藏抓点；可见袖/低掌/裙层比旧清楚，黑红翻层力向和短厚边仍弱。"
+                }
+              },
+              "reason": "例1蓝夜花束：花遮胸腰不推隐藏抓点；可见袖/低掌/裙层比旧清楚，黑红翻层力向和短厚边仍弱。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": "花束遮胸腰大部，仅评可见。",
+              "scoredVisibleOnly": true,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-18",
+                "back": "native-back-8",
+                "background": "native-background-20",
+                "bottom": "native-bottom-4",
+                "effect": "native-effect-3",
+                "face": "native-face-12",
+                "hair": "native-hair-8",
+                "headwear": "native-headwear-10",
+                "legs": "native-legs-4",
+                "prop": "native-prop-1",
+                "top": "native-top-13"
+              },
+              "aiSelection": {
+                "aura": "native-aura-18",
+                "back": "native-back-8",
+                "background": "native-background-20",
+                "bottom": "grok-bottom",
+                "effect": "native-effect-3",
+                "face": "native-face-12",
+                "hair": "native-hair-8",
+                "headwear": "native-headwear-10",
+                "legs": "grok-legs",
+                "prop": "native-prop-1",
+                "top": "grok-top"
+              },
+              "selectedAiSlots": [
+                "legs",
+                "bottom",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "8ec684b7ff4b6059052d2170202fce6539d7fe0ee0c50ec9855c462f549d18a3",
+                  "itemId": "grok-legs",
+                  "key": "grok-legs-0",
+                  "name": "星扣哥特靴",
+                  "reviewFamilyHash": "43606b202b13ab79f18bbc75cc74457979b1e94599b190d17e8d9b57d7ba7f27",
+                  "slot": "legs",
+                  "src": "/assets-classic/grok/remake/legs.png",
+                  "svg": "/assets-classic/grok/remake/legs.svg",
+                  "variantRole": "own-pose",
+                  "z": 30
+                },
+                {
+                  "artworkHash": "703f01919a3c35049f2d527279bf6b08f05942a7dd555196e1b7cdd278c59c4f",
+                  "itemId": "grok-bottom",
+                  "key": "grok-bottom-0",
+                  "name": "黑红蔷薇裙",
+                  "reviewFamilyHash": "ffdb0eb8a5bf4f08250bb2d5d0d5ae503223155abc5dc2793348fec2eb292153",
+                  "slot": "bottom",
+                  "src": "/assets-classic/grok/remake/bottom.png",
+                  "svg": "/assets-classic/grok/remake/bottom.svg",
+                  "variantRole": "own-pose",
+                  "z": 40
+                },
+                {
+                  "artworkHash": "1542a5b851806505b6517b71420f1ae8c9a702d9d37cc5f82d0475edcf9a3d23",
+                  "design": "/assets-classic/grok/remake/top-body-design.svg",
+                  "itemId": "grok-top",
+                  "key": "grok-top-0",
+                  "name": "金饰哥特上衣",
+                  "reviewFamilyHash": "48588fd2989ff6496e5dca42e75193c617a363661bffdb8646ca10fd7b4f234a",
+                  "slot": "top",
+                  "src": "/assets-classic/grok/remake/top-body.png",
+                  "svg": "/assets-classic/grok/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "5e1858a2345de4ac1292ee8365313f746053b5bd6c905d623f1b28a76ea3fb85",
+                  "design": "/assets-classic/grok/remake/top-arms-design.svg",
+                  "itemId": "grok-top",
+                  "key": "grok-top-1",
+                  "name": "金饰哥特上衣",
+                  "reviewFamilyHash": "48588fd2989ff6496e5dca42e75193c617a363661bffdb8646ca10fd7b4f234a",
+                  "slot": "top",
+                  "src": "/assets-classic/grok/remake/top-arms.png",
+                  "svg": "/assets-classic/grok/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body3-evidence.json",
+              "recommendations": [
+                "R26唯一最终轮：保真实握斧/肌腹/已加掌肉，局部理清握侧掌底拇指根短承压、低指布压影与袖腔短厚面，不数五指/统一粗描。",
+                "冠与双尾按normal根叠影→宽窄谷→转面→短峰分层，减少贯长浅沿同频；不复制M09直发分缝或M11短发轮廓。",
+                "红衬按提点/腰/落地布置主谷与折底厚面，黑胸袖补局部压力转面，保已清楚黑红前后层，不用更多金纹填平面。",
+                "y164+未改与旧calf不利窄窗/定位敏感记录保留，不机械default点削肉，不借新hash清关。",
+                "R26真实IAB复评后停止自动艺术返工；不足98、六组pending及技术未知如实MD，不开第三轮。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body3.png"
+              ]
+            },
+            {
+              "caseId": "grok-body3-sf98527f-a0-f1",
+              "fixtureIndex": 1,
+              "score": 93.3,
+              "weightedRaw": 93.3,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 93,
+                  "weight": 20,
+                  "reason": "例2樱阶竖吉他：吉他原生摆件不强求握，新腕掌短面/袖口改善；低指布短压影、提点到腰裙主谷仍不足。"
+                },
+                "proportionConnection": {
+                  "score": 95,
+                  "weight": 25,
+                  "reason": "例2樱阶竖吉他：吉他原生摆件不强求握，新腕掌短面/袖口改善；低指布短压影、提点到腰裙主谷仍不足。"
+                },
+                "materialColor": {
+                  "score": 91,
+                  "weight": 15,
+                  "reason": "例2樱阶竖吉他：吉他原生摆件不强求握，新腕掌短面/袖口改善；低指布短压影、提点到腰裙主谷仍不足。"
+                },
+                "blingeePixel": {
+                  "score": 92,
+                  "weight": 20,
+                  "reason": "例2樱阶竖吉他：吉他原生摆件不强求握，新腕掌短面/袖口改善；低指布短压影、提点到腰裙主谷仍不足。"
+                },
+                "occlusionContact": {
+                  "score": 95,
+                  "weight": 15,
+                  "reason": "例2樱阶竖吉他：吉他原生摆件不强求握，新腕掌短面/袖口改善；低指布短压影、提点到腰裙主谷仍不足。"
+                },
+                "canvasReadability": {
+                  "score": 93,
+                  "weight": 5,
+                  "reason": "例2樱阶竖吉他：吉他原生摆件不强求握，新腕掌短面/袖口改善；低指布短压影、提点到腰裙主谷仍不足。"
+                }
+              },
+              "reason": "例2樱阶竖吉他：吉他原生摆件不强求握，新腕掌短面/袖口改善；低指布短压影、提点到腰裙主谷仍不足。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-17",
+                "back": "native-back-16",
+                "background": "native-background-11",
+                "bottom": "native-bottom-19",
+                "effect": "native-effect-18",
+                "face": "native-face-13",
+                "hair": "native-hair-19",
+                "headwear": "native-headwear-12",
+                "legs": "native-legs-19",
+                "prop": "native-prop-16",
+                "top": "native-top-1"
+              },
+              "aiSelection": {
+                "aura": "native-aura-17",
+                "back": "native-back-16",
+                "background": "native-background-11",
+                "bottom": "grok-bottom",
+                "effect": "native-effect-18",
+                "face": "native-face-13",
+                "hair": "native-hair-19",
+                "headwear": "native-headwear-12",
+                "legs": "grok-legs",
+                "prop": "native-prop-16",
+                "top": "grok-top"
+              },
+              "selectedAiSlots": [
+                "legs",
+                "bottom",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "8ec684b7ff4b6059052d2170202fce6539d7fe0ee0c50ec9855c462f549d18a3",
+                  "itemId": "grok-legs",
+                  "key": "grok-legs-0",
+                  "name": "星扣哥特靴",
+                  "reviewFamilyHash": "43606b202b13ab79f18bbc75cc74457979b1e94599b190d17e8d9b57d7ba7f27",
+                  "slot": "legs",
+                  "src": "/assets-classic/grok/remake/legs.png",
+                  "svg": "/assets-classic/grok/remake/legs.svg",
+                  "variantRole": "own-pose",
+                  "z": 30
+                },
+                {
+                  "artworkHash": "703f01919a3c35049f2d527279bf6b08f05942a7dd555196e1b7cdd278c59c4f",
+                  "itemId": "grok-bottom",
+                  "key": "grok-bottom-0",
+                  "name": "黑红蔷薇裙",
+                  "reviewFamilyHash": "ffdb0eb8a5bf4f08250bb2d5d0d5ae503223155abc5dc2793348fec2eb292153",
+                  "slot": "bottom",
+                  "src": "/assets-classic/grok/remake/bottom.png",
+                  "svg": "/assets-classic/grok/remake/bottom.svg",
+                  "variantRole": "own-pose",
+                  "z": 40
+                },
+                {
+                  "artworkHash": "1542a5b851806505b6517b71420f1ae8c9a702d9d37cc5f82d0475edcf9a3d23",
+                  "design": "/assets-classic/grok/remake/top-body-design.svg",
+                  "itemId": "grok-top",
+                  "key": "grok-top-0",
+                  "name": "金饰哥特上衣",
+                  "reviewFamilyHash": "48588fd2989ff6496e5dca42e75193c617a363661bffdb8646ca10fd7b4f234a",
+                  "slot": "top",
+                  "src": "/assets-classic/grok/remake/top-body.png",
+                  "svg": "/assets-classic/grok/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "5e1858a2345de4ac1292ee8365313f746053b5bd6c905d623f1b28a76ea3fb85",
+                  "design": "/assets-classic/grok/remake/top-arms-design.svg",
+                  "itemId": "grok-top",
+                  "key": "grok-top-1",
+                  "name": "金饰哥特上衣",
+                  "reviewFamilyHash": "48588fd2989ff6496e5dca42e75193c617a363661bffdb8646ca10fd7b4f234a",
+                  "slot": "top",
+                  "src": "/assets-classic/grok/remake/top-arms.png",
+                  "svg": "/assets-classic/grok/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body3-evidence.json",
+              "recommendations": [
+                "R26唯一最终轮：保真实握斧/肌腹/已加掌肉，局部理清握侧掌底拇指根短承压、低指布压影与袖腔短厚面，不数五指/统一粗描。",
+                "冠与双尾按normal根叠影→宽窄谷→转面→短峰分层，减少贯长浅沿同频；不复制M09直发分缝或M11短发轮廓。",
+                "红衬按提点/腰/落地布置主谷与折底厚面，黑胸袖补局部压力转面，保已清楚黑红前后层，不用更多金纹填平面。",
+                "y164+未改与旧calf不利窄窗/定位敏感记录保留，不机械default点削肉，不借新hash清关。",
+                "R26真实IAB复评后停止自动艺术返工；不足98、六组pending及技术未知如实MD，不开第三轮。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body3-segment-02-94b3dc32a7.png"
+              ]
+            },
+            {
+              "caseId": "grok-body3-sf98527f-a0-f2",
+              "fixtureIndex": 2,
+              "score": 93.3,
+              "weightedRaw": 93.3,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 93,
+                  "weight": 20,
+                  "reason": "例3粉景地包：地面包不需抓，黑胸腰/袖及红衬谷峰更清楚；腕掌底短转面/低掌布厚和红衬折底厚度仍少。"
+                },
+                "proportionConnection": {
+                  "score": 95,
+                  "weight": 25,
+                  "reason": "例3粉景地包：地面包不需抓，黑胸腰/袖及红衬谷峰更清楚；腕掌底短转面/低掌布厚和红衬折底厚度仍少。"
+                },
+                "materialColor": {
+                  "score": 91,
+                  "weight": 15,
+                  "reason": "例3粉景地包：地面包不需抓，黑胸腰/袖及红衬谷峰更清楚；腕掌底短转面/低掌布厚和红衬折底厚度仍少。"
+                },
+                "blingeePixel": {
+                  "score": 92,
+                  "weight": 20,
+                  "reason": "例3粉景地包：地面包不需抓，黑胸腰/袖及红衬谷峰更清楚；腕掌底短转面/低掌布厚和红衬折底厚度仍少。"
+                },
+                "occlusionContact": {
+                  "score": 95,
+                  "weight": 15,
+                  "reason": "例3粉景地包：地面包不需抓，黑胸腰/袖及红衬谷峰更清楚；腕掌底短转面/低掌布厚和红衬折底厚度仍少。"
+                },
+                "canvasReadability": {
+                  "score": 93,
+                  "weight": 5,
+                  "reason": "例3粉景地包：地面包不需抓，黑胸腰/袖及红衬谷峰更清楚；腕掌底短转面/低掌布厚和红衬折底厚度仍少。"
+                }
+              },
+              "reason": "例3粉景地包：地面包不需抓，黑胸腰/袖及红衬谷峰更清楚；腕掌底短转面/低掌布厚和红衬折底厚度仍少。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-19",
+                "back": "native-back-12",
+                "background": "native-background-4",
+                "bottom": "native-bottom-11",
+                "effect": "native-effect-9",
+                "face": "native-face-11",
+                "hair": "native-hair-3",
+                "headwear": "native-headwear-4",
+                "legs": "native-legs-11",
+                "prop": "native-prop-15",
+                "top": "native-top-8"
+              },
+              "aiSelection": {
+                "aura": "native-aura-19",
+                "back": "native-back-12",
+                "background": "native-background-4",
+                "bottom": "grok-bottom",
+                "effect": "native-effect-9",
+                "face": "native-face-11",
+                "hair": "native-hair-3",
+                "headwear": "native-headwear-4",
+                "legs": "grok-legs",
+                "prop": "native-prop-15",
+                "top": "grok-top"
+              },
+              "selectedAiSlots": [
+                "legs",
+                "bottom",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "8ec684b7ff4b6059052d2170202fce6539d7fe0ee0c50ec9855c462f549d18a3",
+                  "itemId": "grok-legs",
+                  "key": "grok-legs-0",
+                  "name": "星扣哥特靴",
+                  "reviewFamilyHash": "43606b202b13ab79f18bbc75cc74457979b1e94599b190d17e8d9b57d7ba7f27",
+                  "slot": "legs",
+                  "src": "/assets-classic/grok/remake/legs.png",
+                  "svg": "/assets-classic/grok/remake/legs.svg",
+                  "variantRole": "own-pose",
+                  "z": 30
+                },
+                {
+                  "artworkHash": "703f01919a3c35049f2d527279bf6b08f05942a7dd555196e1b7cdd278c59c4f",
+                  "itemId": "grok-bottom",
+                  "key": "grok-bottom-0",
+                  "name": "黑红蔷薇裙",
+                  "reviewFamilyHash": "ffdb0eb8a5bf4f08250bb2d5d0d5ae503223155abc5dc2793348fec2eb292153",
+                  "slot": "bottom",
+                  "src": "/assets-classic/grok/remake/bottom.png",
+                  "svg": "/assets-classic/grok/remake/bottom.svg",
+                  "variantRole": "own-pose",
+                  "z": 40
+                },
+                {
+                  "artworkHash": "1542a5b851806505b6517b71420f1ae8c9a702d9d37cc5f82d0475edcf9a3d23",
+                  "design": "/assets-classic/grok/remake/top-body-design.svg",
+                  "itemId": "grok-top",
+                  "key": "grok-top-0",
+                  "name": "金饰哥特上衣",
+                  "reviewFamilyHash": "48588fd2989ff6496e5dca42e75193c617a363661bffdb8646ca10fd7b4f234a",
+                  "slot": "top",
+                  "src": "/assets-classic/grok/remake/top-body.png",
+                  "svg": "/assets-classic/grok/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "5e1858a2345de4ac1292ee8365313f746053b5bd6c905d623f1b28a76ea3fb85",
+                  "design": "/assets-classic/grok/remake/top-arms-design.svg",
+                  "itemId": "grok-top",
+                  "key": "grok-top-1",
+                  "name": "金饰哥特上衣",
+                  "reviewFamilyHash": "48588fd2989ff6496e5dca42e75193c617a363661bffdb8646ca10fd7b4f234a",
+                  "slot": "top",
+                  "src": "/assets-classic/grok/remake/top-arms.png",
+                  "svg": "/assets-classic/grok/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body3-evidence.json",
+              "recommendations": [
+                "R26唯一最终轮：保真实握斧/肌腹/已加掌肉，局部理清握侧掌底拇指根短承压、低指布压影与袖腔短厚面，不数五指/统一粗描。",
+                "冠与双尾按normal根叠影→宽窄谷→转面→短峰分层，减少贯长浅沿同频；不复制M09直发分缝或M11短发轮廓。",
+                "红衬按提点/腰/落地布置主谷与折底厚面，黑胸袖补局部压力转面，保已清楚黑红前后层，不用更多金纹填平面。",
+                "y164+未改与旧calf不利窄窗/定位敏感记录保留，不机械default点削肉，不借新hash清关。",
+                "R26真实IAB复评后停止自动艺术返工；不足98、六组pending及技术未知如实MD，不开第三轮。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body3-segment-03-00be7de9c5.png"
+              ]
+            },
+            {
+              "caseId": "grok-body3-sf98527f-a0-f3",
+              "fixtureIndex": 3,
+              "score": 92.8,
+              "weightedRaw": 92.8,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 93,
+                  "weight": 20,
+                  "reason": "例4星夜扫描：罩为原生遮挡，评露出的侧袖/手与裙；衣层改善不补隐藏98，低指布短压影与黑红层受力仍不足。"
+                },
+                "proportionConnection": {
+                  "score": 95,
+                  "weight": 25,
+                  "reason": "例4星夜扫描：罩为原生遮挡，评露出的侧袖/手与裙；衣层改善不补隐藏98，低指布短压影与黑红层受力仍不足。"
+                },
+                "materialColor": {
+                  "score": 91,
+                  "weight": 15,
+                  "reason": "例4星夜扫描：罩为原生遮挡，评露出的侧袖/手与裙；衣层改善不补隐藏98，低指布短压影与黑红层受力仍不足。"
+                },
+                "blingeePixel": {
+                  "score": 92,
+                  "weight": 20,
+                  "reason": "例4星夜扫描：罩为原生遮挡，评露出的侧袖/手与裙；衣层改善不补隐藏98，低指布短压影与黑红层受力仍不足。"
+                },
+                "occlusionContact": {
+                  "score": 95,
+                  "weight": 15,
+                  "reason": "例4星夜扫描：罩为原生遮挡，评露出的侧袖/手与裙；衣层改善不补隐藏98，低指布短压影与黑红层受力仍不足。"
+                },
+                "canvasReadability": {
+                  "score": 83,
+                  "weight": 5,
+                  "reason": "例4星夜扫描：罩为原生遮挡，评露出的侧袖/手与裙；衣层改善不补隐藏98，低指布短压影与黑红层受力仍不足。"
+                }
+              },
+              "reason": "例4星夜扫描：罩为原生遮挡，评露出的侧袖/手与裙；衣层改善不补隐藏98，低指布短压影与黑红层受力仍不足。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": "扫描罩遮头胸，只评可见侧袖/掌/裙。",
+              "scoredVisibleOnly": true,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-3",
+                "back": "native-back-17",
+                "background": "native-background-13",
+                "bottom": "native-bottom-13",
+                "effect": "native-effect-10",
+                "face": "native-face-19",
+                "hair": "native-hair-2",
+                "headwear": "native-headwear-16",
+                "legs": "native-legs-13",
+                "prop": "native-prop-19",
+                "top": "native-top-19"
+              },
+              "aiSelection": {
+                "aura": "native-aura-3",
+                "back": "native-back-17",
+                "background": "native-background-13",
+                "bottom": "grok-bottom",
+                "effect": "native-effect-10",
+                "face": "native-face-19",
+                "hair": "native-hair-2",
+                "headwear": "native-headwear-16",
+                "legs": "grok-legs",
+                "prop": "native-prop-19",
+                "top": "grok-top"
+              },
+              "selectedAiSlots": [
+                "legs",
+                "bottom",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "8ec684b7ff4b6059052d2170202fce6539d7fe0ee0c50ec9855c462f549d18a3",
+                  "itemId": "grok-legs",
+                  "key": "grok-legs-0",
+                  "name": "星扣哥特靴",
+                  "reviewFamilyHash": "43606b202b13ab79f18bbc75cc74457979b1e94599b190d17e8d9b57d7ba7f27",
+                  "slot": "legs",
+                  "src": "/assets-classic/grok/remake/legs.png",
+                  "svg": "/assets-classic/grok/remake/legs.svg",
+                  "variantRole": "own-pose",
+                  "z": 30
+                },
+                {
+                  "artworkHash": "703f01919a3c35049f2d527279bf6b08f05942a7dd555196e1b7cdd278c59c4f",
+                  "itemId": "grok-bottom",
+                  "key": "grok-bottom-0",
+                  "name": "黑红蔷薇裙",
+                  "reviewFamilyHash": "ffdb0eb8a5bf4f08250bb2d5d0d5ae503223155abc5dc2793348fec2eb292153",
+                  "slot": "bottom",
+                  "src": "/assets-classic/grok/remake/bottom.png",
+                  "svg": "/assets-classic/grok/remake/bottom.svg",
+                  "variantRole": "own-pose",
+                  "z": 40
+                },
+                {
+                  "artworkHash": "1542a5b851806505b6517b71420f1ae8c9a702d9d37cc5f82d0475edcf9a3d23",
+                  "design": "/assets-classic/grok/remake/top-body-design.svg",
+                  "itemId": "grok-top",
+                  "key": "grok-top-0",
+                  "name": "金饰哥特上衣",
+                  "reviewFamilyHash": "48588fd2989ff6496e5dca42e75193c617a363661bffdb8646ca10fd7b4f234a",
+                  "slot": "top",
+                  "src": "/assets-classic/grok/remake/top-body.png",
+                  "svg": "/assets-classic/grok/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "5e1858a2345de4ac1292ee8365313f746053b5bd6c905d623f1b28a76ea3fb85",
+                  "design": "/assets-classic/grok/remake/top-arms-design.svg",
+                  "itemId": "grok-top",
+                  "key": "grok-top-1",
+                  "name": "金饰哥特上衣",
+                  "reviewFamilyHash": "48588fd2989ff6496e5dca42e75193c617a363661bffdb8646ca10fd7b4f234a",
+                  "slot": "top",
+                  "src": "/assets-classic/grok/remake/top-arms.png",
+                  "svg": "/assets-classic/grok/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body3-evidence.json",
+              "recommendations": [
+                "R26唯一最终轮：保真实握斧/肌腹/已加掌肉，局部理清握侧掌底拇指根短承压、低指布压影与袖腔短厚面，不数五指/统一粗描。",
+                "冠与双尾按normal根叠影→宽窄谷→转面→短峰分层，减少贯长浅沿同频；不复制M09直发分缝或M11短发轮廓。",
+                "红衬按提点/腰/落地布置主谷与折底厚面，黑胸袖补局部压力转面，保已清楚黑红前后层，不用更多金纹填平面。",
+                "y164+未改与旧calf不利窄窗/定位敏感记录保留，不机械default点削肉，不借新hash清关。",
+                "R26真实IAB复评后停止自动艺术返工；不足98、六组pending及技术未知如实MD，不开第三轮。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body3-segment-04-f46cb5add2.png"
+              ]
+            },
+            {
+              "caseId": "grok-body3-sf98527f-a0-f4",
+              "fixtureIndex": 4,
+              "score": 93.3,
+              "weightedRaw": 93.3,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 93,
+                  "weight": 20,
+                  "reason": "例5夜城气球：未选自身斧不要求自带，腕掌肉面/袖口短厚边改善；胸袖主面与提裙斜主谷/红衬折底仍简。"
+                },
+                "proportionConnection": {
+                  "score": 95,
+                  "weight": 25,
+                  "reason": "例5夜城气球：未选自身斧不要求自带，腕掌肉面/袖口短厚边改善；胸袖主面与提裙斜主谷/红衬折底仍简。"
+                },
+                "materialColor": {
+                  "score": 91,
+                  "weight": 15,
+                  "reason": "例5夜城气球：未选自身斧不要求自带，腕掌肉面/袖口短厚边改善；胸袖主面与提裙斜主谷/红衬折底仍简。"
+                },
+                "blingeePixel": {
+                  "score": 92,
+                  "weight": 20,
+                  "reason": "例5夜城气球：未选自身斧不要求自带，腕掌肉面/袖口短厚边改善；胸袖主面与提裙斜主谷/红衬折底仍简。"
+                },
+                "occlusionContact": {
+                  "score": 95,
+                  "weight": 15,
+                  "reason": "例5夜城气球：未选自身斧不要求自带，腕掌肉面/袖口短厚边改善；胸袖主面与提裙斜主谷/红衬折底仍简。"
+                },
+                "canvasReadability": {
+                  "score": 93,
+                  "weight": 5,
+                  "reason": "例5夜城气球：未选自身斧不要求自带，腕掌肉面/袖口短厚边改善；胸袖主面与提裙斜主谷/红衬折底仍简。"
+                }
+              },
+              "reason": "例5夜城气球：未选自身斧不要求自带，腕掌肉面/袖口短厚边改善；胸袖主面与提裙斜主谷/红衬折底仍简。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-20",
+                "back": "native-back-15",
+                "background": "native-background-8",
+                "bottom": "native-bottom-18",
+                "effect": "native-effect-7",
+                "face": "native-face-15",
+                "hair": "native-hair-17",
+                "headwear": "native-headwear-20",
+                "legs": "native-legs-18",
+                "prop": "native-prop-9",
+                "top": "native-top-11"
+              },
+              "aiSelection": {
+                "aura": "native-aura-20",
+                "back": "native-back-15",
+                "background": "native-background-8",
+                "bottom": "grok-bottom",
+                "effect": "native-effect-7",
+                "face": "native-face-15",
+                "hair": "native-hair-17",
+                "headwear": "native-headwear-20",
+                "legs": "grok-legs",
+                "prop": "native-prop-9",
+                "top": "grok-top"
+              },
+              "selectedAiSlots": [
+                "legs",
+                "bottom",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "8ec684b7ff4b6059052d2170202fce6539d7fe0ee0c50ec9855c462f549d18a3",
+                  "itemId": "grok-legs",
+                  "key": "grok-legs-0",
+                  "name": "星扣哥特靴",
+                  "reviewFamilyHash": "43606b202b13ab79f18bbc75cc74457979b1e94599b190d17e8d9b57d7ba7f27",
+                  "slot": "legs",
+                  "src": "/assets-classic/grok/remake/legs.png",
+                  "svg": "/assets-classic/grok/remake/legs.svg",
+                  "variantRole": "own-pose",
+                  "z": 30
+                },
+                {
+                  "artworkHash": "703f01919a3c35049f2d527279bf6b08f05942a7dd555196e1b7cdd278c59c4f",
+                  "itemId": "grok-bottom",
+                  "key": "grok-bottom-0",
+                  "name": "黑红蔷薇裙",
+                  "reviewFamilyHash": "ffdb0eb8a5bf4f08250bb2d5d0d5ae503223155abc5dc2793348fec2eb292153",
+                  "slot": "bottom",
+                  "src": "/assets-classic/grok/remake/bottom.png",
+                  "svg": "/assets-classic/grok/remake/bottom.svg",
+                  "variantRole": "own-pose",
+                  "z": 40
+                },
+                {
+                  "artworkHash": "1542a5b851806505b6517b71420f1ae8c9a702d9d37cc5f82d0475edcf9a3d23",
+                  "design": "/assets-classic/grok/remake/top-body-design.svg",
+                  "itemId": "grok-top",
+                  "key": "grok-top-0",
+                  "name": "金饰哥特上衣",
+                  "reviewFamilyHash": "48588fd2989ff6496e5dca42e75193c617a363661bffdb8646ca10fd7b4f234a",
+                  "slot": "top",
+                  "src": "/assets-classic/grok/remake/top-body.png",
+                  "svg": "/assets-classic/grok/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "5e1858a2345de4ac1292ee8365313f746053b5bd6c905d623f1b28a76ea3fb85",
+                  "design": "/assets-classic/grok/remake/top-arms-design.svg",
+                  "itemId": "grok-top",
+                  "key": "grok-top-1",
+                  "name": "金饰哥特上衣",
+                  "reviewFamilyHash": "48588fd2989ff6496e5dca42e75193c617a363661bffdb8646ca10fd7b4f234a",
+                  "slot": "top",
+                  "src": "/assets-classic/grok/remake/top-arms.png",
+                  "svg": "/assets-classic/grok/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body3-evidence.json",
+              "recommendations": [
+                "R26唯一最终轮：保真实握斧/肌腹/已加掌肉，局部理清握侧掌底拇指根短承压、低指布压影与袖腔短厚面，不数五指/统一粗描。",
+                "冠与双尾按normal根叠影→宽窄谷→转面→短峰分层，减少贯长浅沿同频；不复制M09直发分缝或M11短发轮廓。",
+                "红衬按提点/腰/落地布置主谷与折底厚面，黑胸袖补局部压力转面，保已清楚黑红前后层，不用更多金纹填平面。",
+                "y164+未改与旧calf不利窄窗/定位敏感记录保留，不机械default点削肉，不借新hash清关。",
+                "R26真实IAB复评后停止自动艺术返工；不足98、六组pending及技术未知如实MD，不开第三轮。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body3-segment-05-20b55ad12e.png"
+              ]
+            }
+          ],
+          "reasons": [
+            "R12握侧腕掌底/低掌短肉面与肌腹收放有改善，真实指群跨斧杆前、上下杆延续成立，不沿用缺握旧指控。",
+            "握侧腕掌底x28..38/y119..128仍偏长浅面，掌根到拇指根的短转面/承压不足；低掌x91..100/y130..140已加肉，布指下短压影/袖腔内厚仍少。",
+            "肩肘/腰胯股根连续，y164+与已核SHA的R11 body逐RGBA0差，仅证明未改，不宣称旧calf修复或技术通过。",
+            "R26唯一最终轮：保真实握斧/肌腹/已加掌肉，局部理清握侧掌底拇指根短承压、低指布压影与袖腔短厚面，不数五指/统一粗描。",
+            "冠与双尾按normal根叠影→宽窄谷→转面→短峰分层，减少贯长浅沿同频；不复制M09直发分缝或M11短发轮廓。",
+            "红衬按提点/腰/落地布置主谷与折底厚面，黑胸袖补局部压力转面，保已清楚黑红前后层，不用更多金纹填平面。",
+            "y164+未改与旧calf不利窄窗/定位敏感记录保留，不机械default点削肉，不借新hash清关。",
+            "R26真实IAB复评后停止自动艺术返工；不足98、六组pending及技术未知如实MD，不开第三轮。"
+          ],
+          "recommendations": [
+            "R26唯一最终轮：保真实握斧/肌腹/已加掌肉，局部理清握侧掌底拇指根短承压、低指布压影与袖腔短厚面，不数五指/统一粗描。",
+            "冠与双尾按normal根叠影→宽窄谷→转面→短峰分层，减少贯长浅沿同频；不复制M09直发分缝或M11短发轮廓。",
+            "红衬按提点/腰/落地布置主谷与折底厚面，黑胸袖补局部压力转面，保已清楚黑红前后层，不用更多金纹填平面。",
+            "y164+未改与旧calf不利窄窗/定位敏感记录保留，不机械default点削肉，不借新hash清关。",
+            "R26真实IAB复评后停止自动艺术返工；不足98、六组pending及技术未知如实MD，不开第三轮。"
+          ],
+          "evidence": {
+            "reactEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body3-evidence.json",
+            "reactScreenshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body3.png",
+            "reactScreenshotSha256": "dc5a4ff8658f8281b85c1306305643a7c02dd481e5686d2879f2d980f5b4ea4e",
+            "captureBrowser": "Codex in-app browser",
+            "failedImages": [],
+            "actuallyViewed": true,
+            "reactScreenshots": [
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body3.png",
+                "sha256": "dc5a4ff8658f8281b85c1306305643a7c02dd481e5686d2879f2d980f5b4ea4e",
+                "visible": [
+                  {
+                    "bottom": 431.390625,
+                    "caseId": "grok-body3-sf98527f-a0-f0",
+                    "height": 326.859375,
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 104.53125,
+                    "width": 160
+                  },
+                  {
+                    "bottom": 431.390625,
+                    "caseId": "grok-body3-sf98527f-a0-f0",
+                    "height": 326.859375,
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 104.53125,
+                    "width": 160
+                  }
+                ]
+              },
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body3-segment-02-94b3dc32a7.png",
+                "sha256": "94b3dc32a72f41fdba7862ad14f472f88a901f9aa1dabdadc6f52d46909f9cc8",
+                "visible": [
+                  {
+                    "bottom": 431.25,
+                    "caseId": "grok-body3-sf98527f-a0-f1",
+                    "height": 326.859375,
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 104.390625,
+                    "width": 160
+                  },
+                  {
+                    "bottom": 431.25,
+                    "caseId": "grok-body3-sf98527f-a0-f1",
+                    "height": 326.859375,
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 104.390625,
+                    "width": 160
+                  }
+                ]
+              },
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body3-segment-03-00be7de9c5.png",
+                "sha256": "00be7de9c58018888bc2a86a5cd82bd48a6af23d8b82078f3a52f1bd83925480",
+                "visible": [
+                  {
+                    "bottom": 431.109375,
+                    "caseId": "grok-body3-sf98527f-a0-f2",
+                    "height": 326.859375,
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 104.25,
+                    "width": 160
+                  },
+                  {
+                    "bottom": 431.109375,
+                    "caseId": "grok-body3-sf98527f-a0-f2",
+                    "height": 326.859375,
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 104.25,
+                    "width": 160
+                  }
+                ]
+              },
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body3-segment-04-f46cb5add2.png",
+                "sha256": "f46cb5add209de88010f93d14b4d8e3bce3d20cb58593715a9cc8d4dd9a97342",
+                "visible": [
+                  {
+                    "bottom": 430.96875,
+                    "caseId": "grok-body3-sf98527f-a0-f3",
+                    "height": 326.859375,
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 104.109375,
+                    "width": 160
+                  },
+                  {
+                    "bottom": 430.96875,
+                    "caseId": "grok-body3-sf98527f-a0-f3",
+                    "height": 326.859375,
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 104.109375,
+                    "width": 160
+                  }
+                ]
+              },
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body3-segment-05-20b55ad12e.png",
+                "sha256": "20b55ad12e668031156fda2fce1b3836ff180f7258ba50bab7cfcf7a7cd06e72",
+                "visible": [
+                  {
+                    "bottom": 431.828125,
+                    "caseId": "grok-body3-sf98527f-a0-f4",
+                    "height": 326.859375,
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 104.96875,
+                    "width": 160
+                  },
+                  {
+                    "bottom": 431.828125,
+                    "caseId": "grok-body3-sf98527f-a0-f4",
+                    "height": 326.859375,
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 104.96875,
+                    "width": 160
+                  }
+                ]
+              }
+            ],
+            "actuallyViewedViaDiagnostic": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/grok-r12-body3-from-browser-segments-2x.png",
+            "diagnosticIndex": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/grok-r12-segment-diagnostic-index.json",
+            "segmented": true,
+            "allNativeAiCasePairsActuallyViewed": true
+          },
+          "limitations": [
+            "Static only; no animation claim.",
+            "Native complete combinations remain100. Any AI-owned generated support is included with the AI; never inherits100.",
+            "花束遮胸腰大部，仅评可见。",
+            "扫描罩遮头胸，只评可见侧袖/掌/裙。"
+          ],
+          "layoutIntegrity": null
+        }
+      ]
+    },
+    "upper2": {
+      "reviews": [
+        {
+          "reviewer": "classic_body_judge",
+          "score": 90.5,
+          "weightedRaw": 90.5,
+          "threshold": 98,
+          "passed": false,
+          "pending": false,
+          "selectedAiSlots": [
+            "hair",
+            "top"
+          ],
+          "selectedItemIDs": {
+            "hair": "grok-hair",
+            "top": "grok-top"
+          },
+          "reviewedPartHashes": {
+            "hair": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+            "top": "48588fd2989ff6496e5dca42e75193c617a363661bffdb8646ca10fd7b4f234a"
+          },
+          "reviewedGeneratedInterfaceHashes": {},
+          "reviewedCompleteHash": "42cd2e8e41a4d4c813cf0d39ea04f0ea4c185a114b9511a3ec7e9b8de65a5bcc",
+          "bodyHash": "9d202ed7daa5fac24cd42ef6978ec23d45eae05cbc00e82adb0ee162f10c9d76",
+          "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+          "seed": "closeout-r25-grok-upper2-cufic6aq",
+          "contextSignature": "native-context-v4-a2124671",
+          "draws": {
+            "aura": [
+              "native-aura-3",
+              "native-aura-13",
+              "native-aura-18",
+              "native-aura-9",
+              "native-aura-19"
+            ],
+            "back": [
+              "native-back-10",
+              "native-back-9",
+              "native-back-8",
+              "native-back-4",
+              "native-back-3"
+            ],
+            "background": [
+              "native-background-17",
+              "native-background-1",
+              "native-background-11",
+              "native-background-10",
+              "native-background-4"
+            ],
+            "bottom": [
+              "native-bottom-9",
+              "native-bottom-12",
+              "native-bottom-10",
+              "native-bottom-8",
+              "native-bottom-17"
+            ],
+            "effect": [
+              "native-effect-12",
+              "native-effect-4",
+              "native-effect-7",
+              "native-effect-3",
+              "native-effect-13"
+            ],
+            "face": [
+              "native-face-17",
+              "native-face-2",
+              "native-face-4",
+              "native-face-14",
+              "native-face-13"
+            ],
+            "hair": [
+              "native-hair-4",
+              "native-hair-8",
+              "native-hair-5",
+              "native-hair-18",
+              "native-hair-2"
+            ],
+            "headwear": [
+              "native-headwear-11",
+              "native-headwear-2",
+              "native-headwear-18",
+              "native-headwear-15",
+              "native-headwear-10"
+            ],
+            "legs": [
+              "native-legs-9",
+              "native-legs-12",
+              "native-legs-10",
+              "native-legs-8",
+              "native-legs-17"
+            ],
+            "prop": [
+              "native-prop-16",
+              "native-prop-8",
+              "native-prop-14",
+              "native-prop-10",
+              "native-prop-12"
+            ],
+            "top": [
+              "native-top-9",
+              "native-top-19",
+              "native-top-11",
+              "native-top-6",
+              "native-top-15"
+            ]
+          },
+          "contextScores": [
+            {
+              "caseId": "grok-upper2-sc74b6e4b-a0-f0",
+              "fixtureIndex": 0,
+              "score": 90.8,
+              "weightedRaw": 90.8,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 90,
+                  "weight": 20,
+                  "reason": "例1蓝天竖吉他：原生吉他不用抓，衣腰/袖与手完整；上衣腰口到原生短裙共同曲面仍硬，冠/双尾长金带偏平。"
+                },
+                "proportionConnection": {
+                  "score": 93,
+                  "weight": 25,
+                  "reason": "例1蓝天竖吉他：原生吉他不用抓，衣腰/袖与手完整；上衣腰口到原生短裙共同曲面仍硬，冠/双尾长金带偏平。"
+                },
+                "materialColor": {
+                  "score": 88,
+                  "weight": 15,
+                  "reason": "例1蓝天竖吉他：原生吉他不用抓，衣腰/袖与手完整；上衣腰口到原生短裙共同曲面仍硬，冠/双尾长金带偏平。"
+                },
+                "blingeePixel": {
+                  "score": 89,
+                  "weight": 20,
+                  "reason": "例1蓝天竖吉他：原生吉他不用抓，衣腰/袖与手完整；上衣腰口到原生短裙共同曲面仍硬，冠/双尾长金带偏平。"
+                },
+                "occlusionContact": {
+                  "score": 93,
+                  "weight": 15,
+                  "reason": "例1蓝天竖吉他：原生吉他不用抓，衣腰/袖与手完整；上衣腰口到原生短裙共同曲面仍硬，冠/双尾长金带偏平。"
+                },
+                "canvasReadability": {
+                  "score": 92,
+                  "weight": 5,
+                  "reason": "例1蓝天竖吉他：原生吉他不用抓，衣腰/袖与手完整；上衣腰口到原生短裙共同曲面仍硬，冠/双尾长金带偏平。"
+                }
+              },
+              "reason": "例1蓝天竖吉他：原生吉他不用抓，衣腰/袖与手完整；上衣腰口到原生短裙共同曲面仍硬，冠/双尾长金带偏平。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-3",
+                "back": "native-back-10",
+                "background": "native-background-17",
+                "bottom": "native-bottom-9",
+                "effect": "native-effect-12",
+                "face": "native-face-17",
+                "hair": "native-hair-4",
+                "headwear": "native-headwear-11",
+                "legs": "native-legs-9",
+                "prop": "native-prop-16",
+                "top": "native-top-9"
+              },
+              "aiSelection": {
+                "aura": "native-aura-3",
+                "back": "native-back-10",
+                "background": "native-background-17",
+                "bottom": "native-bottom-9",
+                "effect": "native-effect-12",
+                "face": "native-face-17",
+                "hair": "grok-hair",
+                "headwear": "native-headwear-11",
+                "legs": "native-legs-9",
+                "prop": "native-prop-16",
+                "top": "grok-top"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "c58ce4b366371320cbdf588cbcd89691c2867403e3d5577c9a96d928cef5a80e",
+                  "design": "/assets-classic/grok/remake/hair-back-design.svg",
+                  "itemId": "grok-hair",
+                  "key": "grok-hair-0",
+                  "name": "金砂双马尾",
+                  "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+                  "slot": "hair",
+                  "src": "/assets-classic/grok/remake/hair-back.png",
+                  "svg": "/assets-classic/grok/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "1542a5b851806505b6517b71420f1ae8c9a702d9d37cc5f82d0475edcf9a3d23",
+                  "design": "/assets-classic/grok/remake/top-body-design.svg",
+                  "itemId": "grok-top",
+                  "key": "grok-top-0",
+                  "name": "金饰哥特上衣",
+                  "reviewFamilyHash": "48588fd2989ff6496e5dca42e75193c617a363661bffdb8646ca10fd7b4f234a",
+                  "slot": "top",
+                  "src": "/assets-classic/grok/remake/top-body.png",
+                  "svg": "/assets-classic/grok/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "a4f59f0f9e5abd510305e76ba4a92914cf257010897947c24ee5ec65401ec7c1",
+                  "design": "/assets-classic/grok/remake/hair-front-design.svg",
+                  "itemId": "grok-hair",
+                  "key": "grok-hair-1",
+                  "name": "金砂双马尾",
+                  "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+                  "slot": "hair",
+                  "src": "/assets-classic/grok/remake/hair-front.png",
+                  "svg": "/assets-classic/grok/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                },
+                {
+                  "artworkHash": "5e1858a2345de4ac1292ee8365313f746053b5bd6c905d623f1b28a76ea3fb85",
+                  "design": "/assets-classic/grok/remake/top-arms-design.svg",
+                  "itemId": "grok-top",
+                  "key": "grok-top-1",
+                  "name": "金饰哥特上衣",
+                  "reviewFamilyHash": "48588fd2989ff6496e5dca42e75193c617a363661bffdb8646ca10fd7b4f234a",
+                  "slot": "top",
+                  "src": "/assets-classic/grok/remake/top-arms.png",
+                  "svg": "/assets-classic/grok/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/upper2-evidence.json",
+              "recommendations": [
+                "R26唯一最终轮：保真实握斧/肌腹/已加掌肉，局部理清握侧掌底拇指根短承压、低指布压影与袖腔短厚面，不数五指/统一粗描。",
+                "冠与双尾按normal根叠影→宽窄谷→转面→短峰分层，减少贯长浅沿同频；不复制M09直发分缝或M11短发轮廓。",
+                "红衬按提点/腰/落地布置主谷与折底厚面，黑胸袖补局部压力转面，保已清楚黑红前后层，不用更多金纹填平面。",
+                "y164+未改与旧calf不利窄窗/定位敏感记录保留，不机械default点削肉，不借新hash清关。",
+                "R26真实IAB复评后停止自动艺术返工；不足98、六组pending及技术未知如实MD，不开第三轮。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/upper2.png"
+              ]
+            },
+            {
+              "caseId": "grok-upper2-sc74b6e4b-a0-f1",
+              "fixtureIndex": 1,
+              "score": 90.5,
+              "weightedRaw": 90.5,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 90,
+                  "weight": 20,
+                  "reason": "例2海天心饰包：斜挎/胸饰不强求握，只评露出侧袖/腰掌；袖腔厚边有改善，腰裤接口和低掌短面仍不足。"
+                },
+                "proportionConnection": {
+                  "score": 93,
+                  "weight": 25,
+                  "reason": "例2海天心饰包：斜挎/胸饰不强求握，只评露出侧袖/腰掌；袖腔厚边有改善，腰裤接口和低掌短面仍不足。"
+                },
+                "materialColor": {
+                  "score": 88,
+                  "weight": 15,
+                  "reason": "例2海天心饰包：斜挎/胸饰不强求握，只评露出侧袖/腰掌；袖腔厚边有改善，腰裤接口和低掌短面仍不足。"
+                },
+                "blingeePixel": {
+                  "score": 89,
+                  "weight": 20,
+                  "reason": "例2海天心饰包：斜挎/胸饰不强求握，只评露出侧袖/腰掌；袖腔厚边有改善，腰裤接口和低掌短面仍不足。"
+                },
+                "occlusionContact": {
+                  "score": 93,
+                  "weight": 15,
+                  "reason": "例2海天心饰包：斜挎/胸饰不强求握，只评露出侧袖/腰掌；袖腔厚边有改善，腰裤接口和低掌短面仍不足。"
+                },
+                "canvasReadability": {
+                  "score": 86,
+                  "weight": 5,
+                  "reason": "例2海天心饰包：斜挎/胸饰不强求握，只评露出侧袖/腰掌；袖腔厚边有改善，腰裤接口和低掌短面仍不足。"
+                }
+              },
+              "reason": "例2海天心饰包：斜挎/胸饰不强求握，只评露出侧袖/腰掌；袖腔厚边有改善，腰裤接口和低掌短面仍不足。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": "原生心饰遮胸腰局部，仅评可见。",
+              "scoredVisibleOnly": true,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-13",
+                "back": "native-back-9",
+                "background": "native-background-1",
+                "bottom": "native-bottom-12",
+                "effect": "native-effect-4",
+                "face": "native-face-2",
+                "hair": "native-hair-8",
+                "headwear": "native-headwear-2",
+                "legs": "native-legs-12",
+                "prop": "native-prop-8",
+                "top": "native-top-19"
+              },
+              "aiSelection": {
+                "aura": "native-aura-13",
+                "back": "native-back-9",
+                "background": "native-background-1",
+                "bottom": "native-bottom-12",
+                "effect": "native-effect-4",
+                "face": "native-face-2",
+                "hair": "grok-hair",
+                "headwear": "native-headwear-2",
+                "legs": "native-legs-12",
+                "prop": "native-prop-8",
+                "top": "grok-top"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "c58ce4b366371320cbdf588cbcd89691c2867403e3d5577c9a96d928cef5a80e",
+                  "design": "/assets-classic/grok/remake/hair-back-design.svg",
+                  "itemId": "grok-hair",
+                  "key": "grok-hair-0",
+                  "name": "金砂双马尾",
+                  "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+                  "slot": "hair",
+                  "src": "/assets-classic/grok/remake/hair-back.png",
+                  "svg": "/assets-classic/grok/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "1542a5b851806505b6517b71420f1ae8c9a702d9d37cc5f82d0475edcf9a3d23",
+                  "design": "/assets-classic/grok/remake/top-body-design.svg",
+                  "itemId": "grok-top",
+                  "key": "grok-top-0",
+                  "name": "金饰哥特上衣",
+                  "reviewFamilyHash": "48588fd2989ff6496e5dca42e75193c617a363661bffdb8646ca10fd7b4f234a",
+                  "slot": "top",
+                  "src": "/assets-classic/grok/remake/top-body.png",
+                  "svg": "/assets-classic/grok/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "a4f59f0f9e5abd510305e76ba4a92914cf257010897947c24ee5ec65401ec7c1",
+                  "design": "/assets-classic/grok/remake/hair-front-design.svg",
+                  "itemId": "grok-hair",
+                  "key": "grok-hair-1",
+                  "name": "金砂双马尾",
+                  "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+                  "slot": "hair",
+                  "src": "/assets-classic/grok/remake/hair-front.png",
+                  "svg": "/assets-classic/grok/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                },
+                {
+                  "artworkHash": "5e1858a2345de4ac1292ee8365313f746053b5bd6c905d623f1b28a76ea3fb85",
+                  "design": "/assets-classic/grok/remake/top-arms-design.svg",
+                  "itemId": "grok-top",
+                  "key": "grok-top-1",
+                  "name": "金饰哥特上衣",
+                  "reviewFamilyHash": "48588fd2989ff6496e5dca42e75193c617a363661bffdb8646ca10fd7b4f234a",
+                  "slot": "top",
+                  "src": "/assets-classic/grok/remake/top-arms.png",
+                  "svg": "/assets-classic/grok/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/upper2-evidence.json",
+              "recommendations": [
+                "R26唯一最终轮：保真实握斧/肌腹/已加掌肉，局部理清握侧掌底拇指根短承压、低指布压影与袖腔短厚面，不数五指/统一粗描。",
+                "冠与双尾按normal根叠影→宽窄谷→转面→短峰分层，减少贯长浅沿同频；不复制M09直发分缝或M11短发轮廓。",
+                "红衬按提点/腰/落地布置主谷与折底厚面，黑胸袖补局部压力转面，保已清楚黑红前后层，不用更多金纹填平面。",
+                "y164+未改与旧calf不利窄窗/定位敏感记录保留，不机械default点削肉，不借新hash清关。",
+                "R26真实IAB复评后停止自动艺术返工；不足98、六组pending及技术未知如实MD，不开第三轮。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/upper2-segment-02-e5525ae4bd.png"
+              ]
+            },
+            {
+              "caseId": "grok-upper2-sc74b6e4b-a0-f2",
+              "fixtureIndex": 2,
+              "score": 90.8,
+              "weightedRaw": 90.8,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 90,
+                  "weight": 20,
+                  "reason": "例3樱阶红裙：黑胸腰/袖压面较旧可读，低掌肉面改善；衣腰与红裙口共曲面弱，指布短影和发束层级仍不足。"
+                },
+                "proportionConnection": {
+                  "score": 93,
+                  "weight": 25,
+                  "reason": "例3樱阶红裙：黑胸腰/袖压面较旧可读，低掌肉面改善；衣腰与红裙口共曲面弱，指布短影和发束层级仍不足。"
+                },
+                "materialColor": {
+                  "score": 88,
+                  "weight": 15,
+                  "reason": "例3樱阶红裙：黑胸腰/袖压面较旧可读，低掌肉面改善；衣腰与红裙口共曲面弱，指布短影和发束层级仍不足。"
+                },
+                "blingeePixel": {
+                  "score": 89,
+                  "weight": 20,
+                  "reason": "例3樱阶红裙：黑胸腰/袖压面较旧可读，低掌肉面改善；衣腰与红裙口共曲面弱，指布短影和发束层级仍不足。"
+                },
+                "occlusionContact": {
+                  "score": 93,
+                  "weight": 15,
+                  "reason": "例3樱阶红裙：黑胸腰/袖压面较旧可读，低掌肉面改善；衣腰与红裙口共曲面弱，指布短影和发束层级仍不足。"
+                },
+                "canvasReadability": {
+                  "score": 92,
+                  "weight": 5,
+                  "reason": "例3樱阶红裙：黑胸腰/袖压面较旧可读，低掌肉面改善；衣腰与红裙口共曲面弱，指布短影和发束层级仍不足。"
+                }
+              },
+              "reason": "例3樱阶红裙：黑胸腰/袖压面较旧可读，低掌肉面改善；衣腰与红裙口共曲面弱，指布短影和发束层级仍不足。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-18",
+                "back": "native-back-8",
+                "background": "native-background-11",
+                "bottom": "native-bottom-10",
+                "effect": "native-effect-7",
+                "face": "native-face-4",
+                "hair": "native-hair-5",
+                "headwear": "native-headwear-18",
+                "legs": "native-legs-10",
+                "prop": "native-prop-14",
+                "top": "native-top-11"
+              },
+              "aiSelection": {
+                "aura": "native-aura-18",
+                "back": "native-back-8",
+                "background": "native-background-11",
+                "bottom": "native-bottom-10",
+                "effect": "native-effect-7",
+                "face": "native-face-4",
+                "hair": "grok-hair",
+                "headwear": "native-headwear-18",
+                "legs": "native-legs-10",
+                "prop": "native-prop-14",
+                "top": "grok-top"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "c58ce4b366371320cbdf588cbcd89691c2867403e3d5577c9a96d928cef5a80e",
+                  "design": "/assets-classic/grok/remake/hair-back-design.svg",
+                  "itemId": "grok-hair",
+                  "key": "grok-hair-0",
+                  "name": "金砂双马尾",
+                  "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+                  "slot": "hair",
+                  "src": "/assets-classic/grok/remake/hair-back.png",
+                  "svg": "/assets-classic/grok/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "1542a5b851806505b6517b71420f1ae8c9a702d9d37cc5f82d0475edcf9a3d23",
+                  "design": "/assets-classic/grok/remake/top-body-design.svg",
+                  "itemId": "grok-top",
+                  "key": "grok-top-0",
+                  "name": "金饰哥特上衣",
+                  "reviewFamilyHash": "48588fd2989ff6496e5dca42e75193c617a363661bffdb8646ca10fd7b4f234a",
+                  "slot": "top",
+                  "src": "/assets-classic/grok/remake/top-body.png",
+                  "svg": "/assets-classic/grok/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "a4f59f0f9e5abd510305e76ba4a92914cf257010897947c24ee5ec65401ec7c1",
+                  "design": "/assets-classic/grok/remake/hair-front-design.svg",
+                  "itemId": "grok-hair",
+                  "key": "grok-hair-1",
+                  "name": "金砂双马尾",
+                  "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+                  "slot": "hair",
+                  "src": "/assets-classic/grok/remake/hair-front.png",
+                  "svg": "/assets-classic/grok/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                },
+                {
+                  "artworkHash": "5e1858a2345de4ac1292ee8365313f746053b5bd6c905d623f1b28a76ea3fb85",
+                  "design": "/assets-classic/grok/remake/top-arms-design.svg",
+                  "itemId": "grok-top",
+                  "key": "grok-top-1",
+                  "name": "金饰哥特上衣",
+                  "reviewFamilyHash": "48588fd2989ff6496e5dca42e75193c617a363661bffdb8646ca10fd7b4f234a",
+                  "slot": "top",
+                  "src": "/assets-classic/grok/remake/top-arms.png",
+                  "svg": "/assets-classic/grok/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/upper2-evidence.json",
+              "recommendations": [
+                "R26唯一最终轮：保真实握斧/肌腹/已加掌肉，局部理清握侧掌底拇指根短承压、低指布压影与袖腔短厚面，不数五指/统一粗描。",
+                "冠与双尾按normal根叠影→宽窄谷→转面→短峰分层，减少贯长浅沿同频；不复制M09直发分缝或M11短发轮廓。",
+                "红衬按提点/腰/落地布置主谷与折底厚面，黑胸袖补局部压力转面，保已清楚黑红前后层，不用更多金纹填平面。",
+                "y164+未改与旧calf不利窄窗/定位敏感记录保留，不机械default点削肉，不借新hash清关。",
+                "R26真实IAB复评后停止自动艺术返工；不足98、六组pending及技术未知如实MD，不开第三轮。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/upper2-segment-03-3b897f048a.png"
+              ]
+            },
+            {
+              "caseId": "grok-upper2-sc74b6e4b-a0-f3",
+              "fixtureIndex": 3,
+              "score": 90.6,
+              "weightedRaw": 90.6,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 90,
+                  "weight": 20,
+                  "reason": "例4粉宫话筒蓝星：立式话筒不需抓，蓝星遮局部；袖口/腕掌有短面改善，腰短裤接口厚度仍硬，头发大金面未尽。"
+                },
+                "proportionConnection": {
+                  "score": 93,
+                  "weight": 25,
+                  "reason": "例4粉宫话筒蓝星：立式话筒不需抓，蓝星遮局部；袖口/腕掌有短面改善，腰短裤接口厚度仍硬，头发大金面未尽。"
+                },
+                "materialColor": {
+                  "score": 88,
+                  "weight": 15,
+                  "reason": "例4粉宫话筒蓝星：立式话筒不需抓，蓝星遮局部；袖口/腕掌有短面改善，腰短裤接口厚度仍硬，头发大金面未尽。"
+                },
+                "blingeePixel": {
+                  "score": 89,
+                  "weight": 20,
+                  "reason": "例4粉宫话筒蓝星：立式话筒不需抓，蓝星遮局部；袖口/腕掌有短面改善，腰短裤接口厚度仍硬，头发大金面未尽。"
+                },
+                "occlusionContact": {
+                  "score": 93,
+                  "weight": 15,
+                  "reason": "例4粉宫话筒蓝星：立式话筒不需抓，蓝星遮局部；袖口/腕掌有短面改善，腰短裤接口厚度仍硬，头发大金面未尽。"
+                },
+                "canvasReadability": {
+                  "score": 88,
+                  "weight": 5,
+                  "reason": "例4粉宫话筒蓝星：立式话筒不需抓，蓝星遮局部；袖口/腕掌有短面改善，腰短裤接口厚度仍硬，头发大金面未尽。"
+                }
+              },
+              "reason": "例4粉宫话筒蓝星：立式话筒不需抓，蓝星遮局部；袖口/腕掌有短面改善，腰短裤接口厚度仍硬，头发大金面未尽。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": "原生蓝星遮胸袖局部，仅评可见。",
+              "scoredVisibleOnly": true,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-9",
+                "back": "native-back-4",
+                "background": "native-background-10",
+                "bottom": "native-bottom-8",
+                "effect": "native-effect-3",
+                "face": "native-face-14",
+                "hair": "native-hair-18",
+                "headwear": "native-headwear-15",
+                "legs": "native-legs-8",
+                "prop": "native-prop-10",
+                "top": "native-top-6"
+              },
+              "aiSelection": {
+                "aura": "native-aura-9",
+                "back": "native-back-4",
+                "background": "native-background-10",
+                "bottom": "native-bottom-8",
+                "effect": "native-effect-3",
+                "face": "native-face-14",
+                "hair": "grok-hair",
+                "headwear": "native-headwear-15",
+                "legs": "native-legs-8",
+                "prop": "native-prop-10",
+                "top": "grok-top"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "c58ce4b366371320cbdf588cbcd89691c2867403e3d5577c9a96d928cef5a80e",
+                  "design": "/assets-classic/grok/remake/hair-back-design.svg",
+                  "itemId": "grok-hair",
+                  "key": "grok-hair-0",
+                  "name": "金砂双马尾",
+                  "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+                  "slot": "hair",
+                  "src": "/assets-classic/grok/remake/hair-back.png",
+                  "svg": "/assets-classic/grok/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "1542a5b851806505b6517b71420f1ae8c9a702d9d37cc5f82d0475edcf9a3d23",
+                  "design": "/assets-classic/grok/remake/top-body-design.svg",
+                  "itemId": "grok-top",
+                  "key": "grok-top-0",
+                  "name": "金饰哥特上衣",
+                  "reviewFamilyHash": "48588fd2989ff6496e5dca42e75193c617a363661bffdb8646ca10fd7b4f234a",
+                  "slot": "top",
+                  "src": "/assets-classic/grok/remake/top-body.png",
+                  "svg": "/assets-classic/grok/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "a4f59f0f9e5abd510305e76ba4a92914cf257010897947c24ee5ec65401ec7c1",
+                  "design": "/assets-classic/grok/remake/hair-front-design.svg",
+                  "itemId": "grok-hair",
+                  "key": "grok-hair-1",
+                  "name": "金砂双马尾",
+                  "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+                  "slot": "hair",
+                  "src": "/assets-classic/grok/remake/hair-front.png",
+                  "svg": "/assets-classic/grok/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                },
+                {
+                  "artworkHash": "5e1858a2345de4ac1292ee8365313f746053b5bd6c905d623f1b28a76ea3fb85",
+                  "design": "/assets-classic/grok/remake/top-arms-design.svg",
+                  "itemId": "grok-top",
+                  "key": "grok-top-1",
+                  "name": "金饰哥特上衣",
+                  "reviewFamilyHash": "48588fd2989ff6496e5dca42e75193c617a363661bffdb8646ca10fd7b4f234a",
+                  "slot": "top",
+                  "src": "/assets-classic/grok/remake/top-arms.png",
+                  "svg": "/assets-classic/grok/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/upper2-evidence.json",
+              "recommendations": [
+                "R26唯一最终轮：保真实握斧/肌腹/已加掌肉，局部理清握侧掌底拇指根短承压、低指布压影与袖腔短厚面，不数五指/统一粗描。",
+                "冠与双尾按normal根叠影→宽窄谷→转面→短峰分层，减少贯长浅沿同频；不复制M09直发分缝或M11短发轮廓。",
+                "红衬按提点/腰/落地布置主谷与折底厚面，黑胸袖补局部压力转面，保已清楚黑红前后层，不用更多金纹填平面。",
+                "y164+未改与旧calf不利窄窗/定位敏感记录保留，不机械default点削肉，不借新hash清关。",
+                "R26真实IAB复评后停止自动艺术返工；不足98、六组pending及技术未知如实MD，不开第三轮。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/upper2-segment-04-bb58fed4f9.png"
+              ]
+            },
+            {
+              "caseId": "grok-upper2-sc74b6e4b-a0-f4",
+              "fixtureIndex": 4,
+              "score": 90.8,
+              "weightedRaw": 90.8,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 90,
+                  "weight": 20,
+                  "reason": "例5樱框竖弓：独立竖弓/肩挎包不强求手持，新袖腕可读；腰裤共曲面/低指布短压影与长金发主次仍弱。"
+                },
+                "proportionConnection": {
+                  "score": 93,
+                  "weight": 25,
+                  "reason": "例5樱框竖弓：独立竖弓/肩挎包不强求手持，新袖腕可读；腰裤共曲面/低指布短压影与长金发主次仍弱。"
+                },
+                "materialColor": {
+                  "score": 88,
+                  "weight": 15,
+                  "reason": "例5樱框竖弓：独立竖弓/肩挎包不强求手持，新袖腕可读；腰裤共曲面/低指布短压影与长金发主次仍弱。"
+                },
+                "blingeePixel": {
+                  "score": 89,
+                  "weight": 20,
+                  "reason": "例5樱框竖弓：独立竖弓/肩挎包不强求手持，新袖腕可读；腰裤共曲面/低指布短压影与长金发主次仍弱。"
+                },
+                "occlusionContact": {
+                  "score": 93,
+                  "weight": 15,
+                  "reason": "例5樱框竖弓：独立竖弓/肩挎包不强求手持，新袖腕可读；腰裤共曲面/低指布短压影与长金发主次仍弱。"
+                },
+                "canvasReadability": {
+                  "score": 92,
+                  "weight": 5,
+                  "reason": "例5樱框竖弓：独立竖弓/肩挎包不强求手持，新袖腕可读；腰裤共曲面/低指布短压影与长金发主次仍弱。"
+                }
+              },
+              "reason": "例5樱框竖弓：独立竖弓/肩挎包不强求手持，新袖腕可读；腰裤共曲面/低指布短压影与长金发主次仍弱。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-19",
+                "back": "native-back-3",
+                "background": "native-background-4",
+                "bottom": "native-bottom-17",
+                "effect": "native-effect-13",
+                "face": "native-face-13",
+                "hair": "native-hair-2",
+                "headwear": "native-headwear-10",
+                "legs": "native-legs-17",
+                "prop": "native-prop-12",
+                "top": "native-top-15"
+              },
+              "aiSelection": {
+                "aura": "native-aura-19",
+                "back": "native-back-3",
+                "background": "native-background-4",
+                "bottom": "native-bottom-17",
+                "effect": "native-effect-13",
+                "face": "native-face-13",
+                "hair": "grok-hair",
+                "headwear": "native-headwear-10",
+                "legs": "native-legs-17",
+                "prop": "native-prop-12",
+                "top": "grok-top"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "c58ce4b366371320cbdf588cbcd89691c2867403e3d5577c9a96d928cef5a80e",
+                  "design": "/assets-classic/grok/remake/hair-back-design.svg",
+                  "itemId": "grok-hair",
+                  "key": "grok-hair-0",
+                  "name": "金砂双马尾",
+                  "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+                  "slot": "hair",
+                  "src": "/assets-classic/grok/remake/hair-back.png",
+                  "svg": "/assets-classic/grok/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "1542a5b851806505b6517b71420f1ae8c9a702d9d37cc5f82d0475edcf9a3d23",
+                  "design": "/assets-classic/grok/remake/top-body-design.svg",
+                  "itemId": "grok-top",
+                  "key": "grok-top-0",
+                  "name": "金饰哥特上衣",
+                  "reviewFamilyHash": "48588fd2989ff6496e5dca42e75193c617a363661bffdb8646ca10fd7b4f234a",
+                  "slot": "top",
+                  "src": "/assets-classic/grok/remake/top-body.png",
+                  "svg": "/assets-classic/grok/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "a4f59f0f9e5abd510305e76ba4a92914cf257010897947c24ee5ec65401ec7c1",
+                  "design": "/assets-classic/grok/remake/hair-front-design.svg",
+                  "itemId": "grok-hair",
+                  "key": "grok-hair-1",
+                  "name": "金砂双马尾",
+                  "reviewFamilyHash": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac",
+                  "slot": "hair",
+                  "src": "/assets-classic/grok/remake/hair-front.png",
+                  "svg": "/assets-classic/grok/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                },
+                {
+                  "artworkHash": "5e1858a2345de4ac1292ee8365313f746053b5bd6c905d623f1b28a76ea3fb85",
+                  "design": "/assets-classic/grok/remake/top-arms-design.svg",
+                  "itemId": "grok-top",
+                  "key": "grok-top-1",
+                  "name": "金饰哥特上衣",
+                  "reviewFamilyHash": "48588fd2989ff6496e5dca42e75193c617a363661bffdb8646ca10fd7b4f234a",
+                  "slot": "top",
+                  "src": "/assets-classic/grok/remake/top-arms.png",
+                  "svg": "/assets-classic/grok/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/upper2-evidence.json",
+              "recommendations": [
+                "R26唯一最终轮：保真实握斧/肌腹/已加掌肉，局部理清握侧掌底拇指根短承压、低指布压影与袖腔短厚面，不数五指/统一粗描。",
+                "冠与双尾按normal根叠影→宽窄谷→转面→短峰分层，减少贯长浅沿同频；不复制M09直发分缝或M11短发轮廓。",
+                "红衬按提点/腰/落地布置主谷与折底厚面，黑胸袖补局部压力转面，保已清楚黑红前后层，不用更多金纹填平面。",
+                "y164+未改与旧calf不利窄窗/定位敏感记录保留，不机械default点削肉，不借新hash清关。",
+                "R26真实IAB复评后停止自动艺术返工；不足98、六组pending及技术未知如实MD，不开第三轮。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/upper2-segment-05-3cffd96d17.png"
+              ]
+            }
+          ],
+          "reasons": [
+            "R12握侧腕掌底/低掌短肉面与肌腹收放有改善，真实指群跨斧杆前、上下杆延续成立，不沿用缺握旧指控。",
+            "握侧腕掌底x28..38/y119..128仍偏长浅面，掌根到拇指根的短转面/承压不足；低掌x91..100/y130..140已加肉，布指下短压影/袖腔内厚仍少。",
+            "肩肘/腰胯股根连续，y164+与已核SHA的R11 body逐RGBA0差，仅证明未改，不宣称旧calf修复或技术通过。",
+            "R26唯一最终轮：保真实握斧/肌腹/已加掌肉，局部理清握侧掌底拇指根短承压、低指布压影与袖腔短厚面，不数五指/统一粗描。",
+            "冠与双尾按normal根叠影→宽窄谷→转面→短峰分层，减少贯长浅沿同频；不复制M09直发分缝或M11短发轮廓。",
+            "红衬按提点/腰/落地布置主谷与折底厚面，黑胸袖补局部压力转面，保已清楚黑红前后层，不用更多金纹填平面。",
+            "y164+未改与旧calf不利窄窗/定位敏感记录保留，不机械default点削肉，不借新hash清关。",
+            "R26真实IAB复评后停止自动艺术返工；不足98、六组pending及技术未知如实MD，不开第三轮。"
+          ],
+          "recommendations": [
+            "R26唯一最终轮：保真实握斧/肌腹/已加掌肉，局部理清握侧掌底拇指根短承压、低指布压影与袖腔短厚面，不数五指/统一粗描。",
+            "冠与双尾按normal根叠影→宽窄谷→转面→短峰分层，减少贯长浅沿同频；不复制M09直发分缝或M11短发轮廓。",
+            "红衬按提点/腰/落地布置主谷与折底厚面，黑胸袖补局部压力转面，保已清楚黑红前后层，不用更多金纹填平面。",
+            "y164+未改与旧calf不利窄窗/定位敏感记录保留，不机械default点削肉，不借新hash清关。",
+            "R26真实IAB复评后停止自动艺术返工；不足98、六组pending及技术未知如实MD，不开第三轮。"
+          ],
+          "evidence": {
+            "reactEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/upper2-evidence.json",
+            "reactScreenshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/upper2.png",
+            "reactScreenshotSha256": "aa878f7483382ac9741f0e84798cfb02100cfa9f8e313e9e482f9496f5efb9a8",
+            "captureBrowser": "Codex in-app browser",
+            "failedImages": [],
+            "actuallyViewed": true,
+            "reactScreenshots": [
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/upper2.png",
+                "sha256": "aa878f7483382ac9741f0e84798cfb02100cfa9f8e313e9e482f9496f5efb9a8",
+                "visible": [
+                  {
+                    "bottom": 424.90625,
+                    "caseId": "grok-upper2-sc74b6e4b-a0-f0",
+                    "height": 312.921875,
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 111.984375,
+                    "width": 160
+                  },
+                  {
+                    "bottom": 424.90625,
+                    "caseId": "grok-upper2-sc74b6e4b-a0-f0",
+                    "height": 312.921875,
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 111.984375,
+                    "width": 160
+                  }
+                ]
+              },
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/upper2-segment-02-e5525ae4bd.png",
+                "sha256": "e5525ae4bdb17568aee83598c9dcc691acc648012b7053e3a9000e3bedd8bee0",
+                "visible": [
+                  {
+                    "bottom": 424.828125,
+                    "caseId": "grok-upper2-sc74b6e4b-a0-f1",
+                    "height": 312.921875,
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 111.90625,
+                    "width": 160
+                  },
+                  {
+                    "bottom": 424.828125,
+                    "caseId": "grok-upper2-sc74b6e4b-a0-f1",
+                    "height": 312.921875,
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 111.90625,
+                    "width": 160
+                  }
+                ]
+              },
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/upper2-segment-03-3b897f048a.png",
+                "sha256": "3b897f048a3ead42c2f98326b72f621ea336b554c8687c24eaad84b3732b5b81",
+                "visible": [
+                  {
+                    "bottom": 424.75,
+                    "caseId": "grok-upper2-sc74b6e4b-a0-f2",
+                    "height": 312.921875,
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 111.828125,
+                    "width": 160
+                  },
+                  {
+                    "bottom": 424.75,
+                    "caseId": "grok-upper2-sc74b6e4b-a0-f2",
+                    "height": 312.921875,
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 111.828125,
+                    "width": 160
+                  }
+                ]
+              },
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/upper2-segment-04-bb58fed4f9.png",
+                "sha256": "bb58fed4f9373ae7ca209aafd080c857268528327a12aab0044db13e3107b457",
+                "visible": [
+                  {
+                    "bottom": 424.671875,
+                    "caseId": "grok-upper2-sc74b6e4b-a0-f3",
+                    "height": 312.921875,
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 111.75,
+                    "width": 160
+                  },
+                  {
+                    "bottom": 424.671875,
+                    "caseId": "grok-upper2-sc74b6e4b-a0-f3",
+                    "height": 312.921875,
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 111.75,
+                    "width": 160
+                  }
+                ]
+              },
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/upper2-segment-05-3cffd96d17.png",
+                "sha256": "3cffd96d179005b1bb539d64e2988e3b40c7b1b9bd15bd0534c9ac8b7d772ee9",
+                "visible": [
+                  {
+                    "bottom": 424.59375,
+                    "caseId": "grok-upper2-sc74b6e4b-a0-f4",
+                    "height": 312.921875,
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 111.671875,
+                    "width": 160
+                  },
+                  {
+                    "bottom": 424.59375,
+                    "caseId": "grok-upper2-sc74b6e4b-a0-f4",
+                    "height": 312.921875,
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 111.671875,
+                    "width": 160
+                  }
+                ]
+              }
+            ],
+            "actuallyViewedViaDiagnostic": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/grok-r12-upper2-from-browser-segments-2x.png",
+            "diagnosticIndex": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/grok-r12-segment-diagnostic-index.json",
+            "segmented": true,
+            "allNativeAiCasePairsActuallyViewed": true
+          },
+          "limitations": [
+            "Static only; no animation claim.",
+            "Native complete combinations remain100. Any AI-owned generated support is included with the AI; never inherits100.",
+            "原生心饰遮胸腰局部，仅评可见。",
+            "原生蓝星遮胸袖局部，仅评可见。"
+          ],
+          "layoutIntegrity": null
+        }
+      ]
+    }
+  },
+  "bodyDiagnostic": {
+    "status": "all20-visual-completed; requires-revision",
+    "reviewedBodyHash": "9d202ed7daa5fac24cd42ef6978ec23d45eae05cbc00e82adb0ee162f10c9d76",
+    "confirmedVisualFindings": [
+      "R12握侧腕掌底/低掌短肉面与肌腹收放有改善，真实指群跨斧杆前、上下杆延续成立，不沿用缺握旧指控。",
+      "握侧腕掌底x28..38/y119..128仍偏长浅面，掌根到拇指根的短转面/承压不足；低掌x91..100/y130..140已加肉，布指下短压影/袖腔内厚仍少。",
+      "肩肘/腰胯股根连续，y164+与已核SHA的R11 body逐RGBA0差，仅证明未改，不宣称旧calf修复或技术通过。"
+    ]
+  },
+  "notReviewed": [
+    "其他六个必要多件组figure5/nearFull8/scene3/accessories3/skirt3/stride2仍pending，前三组失败，未冒充总验收。",
+    "独立可比体量技术守门未在本报告执行；已有尺寸未解/疑项不由本次视觉分清除。",
+    "动画未审。"
+  ],
+  "body": {
+    "reviewer": "classic_body_judge",
+    "score": 94,
+    "threshold": 98,
+    "passed": false,
+    "pending": false,
+    "requiresRevision": true,
+    "reviewedBodyHash": "9d202ed7daa5fac24cd42ef6978ec23d45eae05cbc00e82adb0ee162f10c9d76",
+    "reviewedCompleteHash": "42cd2e8e41a4d4c813cf0d39ea04f0ea4c185a114b9511a3ec7e9b8de65a5bcc",
+    "seed": "closeout-r25-grok-body-63b07wct",
+    "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+    "bodyCorpusHash": "3451692764c29845da8f6c5b579069c3f1bec6309b7b9765bcc11843167082c7",
+    "corpusSignature": "body-corpus-context-v1-61db025",
+    "coverage": {
+      "default": true,
+      "samplesViewed": 20,
+      "requiredSamples": 20,
+      "selectedIds": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20"
+      ],
+      "browserAllTwentyVerified": true
+    },
+    "aggregation": "Minimum of newly judged current default and all20. Older scores and author diagnostics are not inherited.",
+    "defaultComparison": {
+      "score": 96,
+      "passed": false,
+      "reasons": [
+        "R12握侧腕掌底/低掌短肉面与肌腹收放有改善，真实指群跨斧杆前、上下杆延续成立，不沿用缺握旧指控。",
+        "握侧腕掌底x28..38/y119..128仍偏长浅面，掌根到拇指根的短转面/承压不足；低掌x91..100/y130..140已加肉，布指下短压影/袖腔内厚仍少。",
+        "肩肘/腰胯股根连续，y164+与已核SHA的R11 body逐RGBA0差，仅证明未改，不宣称旧calf修复或技术通过。"
+      ],
+      "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-default-70a0faf334.png"
+    },
+    "perSampleScores": [
+      {
+        "id": "01",
+        "sample": 1,
+        "label": "抱臂天使礼服",
+        "score": 95,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生交叠短面自然，Grok掌根短肉面改善，掌底短承压仍少。"
+        ],
+        "regions": [
+          [
+            28,
+            94,
+            62,
+            129
+          ],
+          [
+            81,
+            94,
+            101,
+            142
+          ],
+          [
+            56,
+            131,
+            83,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-01-682cf03634.png",
+        "evidenceSha256": "682cf03634f2115be2a10f8ad22843a3a0e5e5c0f00133eb824800f26045092d",
+        "source": "qq-show-classic/outfit/白色天使套装.gif",
+        "layers": [
+          "qq-show-classic/back-hair/白金蝴蝶结波浪长发.gif",
+          "qq-show-classic/outfit/白色天使套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/白金蝴蝶结波浪长发.gif"
+        ],
+        "nativeImageHash": "c0c31cf662e153e299a0ec392c8a518242385bccaba17a90609393f8b9e0024f",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "02",
+        "sample": 2,
+        "label": "蓝白捧花公主裙",
+        "score": 96,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "捧花掌可紧凑，Grok肌腹/掌根可读，拇指根短转面不足。"
+        ],
+        "regions": [
+          [
+            28,
+            94,
+            62,
+            129
+          ],
+          [
+            81,
+            94,
+            101,
+            142
+          ],
+          [
+            56,
+            131,
+            83,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-02-6dcbc74830.png",
+        "evidenceSha256": "6dcbc7483000e299c08f99ac6f6a224132d6b4e0d03fcb03ff7374458be15f23",
+        "source": "qq-show-classic/outfit/白色公主裙黄色捧花套装.gif",
+        "layers": [
+          "qq-show-classic/back-hair/金色长卷发.gif",
+          "qq-show-classic/outfit/白色公主裙黄色捧花套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/金色长卷发.gif"
+        ],
+        "nativeImageHash": "59429f0f599cc8711a6b88e8472f7aa99f8f76dfee38a89d31f2e6d22e66025d",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "03",
+        "sample": 3,
+        "label": "薄荷裙抬手",
+        "score": 95,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "不要求同举指，Grok臂有收放，握掌底仍长浅面。"
+        ],
+        "regions": [
+          [
+            28,
+            94,
+            62,
+            129
+          ],
+          [
+            81,
+            94,
+            101,
+            142
+          ],
+          [
+            56,
+            131,
+            83,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-03-76ff0a721a.png",
+        "evidenceSha256": "76ff0a721aba27c742e06a347cb1b525150bbd45a2435efd6e2c02385cc8defd",
+        "source": "qq-show-classic/outfit/薄荷裙套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/薄荷裙套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/粉紫双马尾.gif"
+        ],
+        "nativeImageHash": "ae902b32ef1eec9558c5516b375ed1d20b9da2e2ef9beeadcbed0852fa8285ae",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "04",
+        "sample": 4,
+        "label": "蓝白学院裙垂袖",
+        "score": 95,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "袖遮不推裸宽，Grok低掌肉面改善，袖腔短厚面不足。"
+        ],
+        "regions": [
+          [
+            28,
+            94,
+            62,
+            129
+          ],
+          [
+            81,
+            94,
+            101,
+            142
+          ],
+          [
+            56,
+            131,
+            83,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-04-106dbdba7c.png",
+        "evidenceSha256": "106dbdba7c5ee78be697771928d9dc81b79fabfdd7c3729ea1f8b147b62b526c",
+        "source": "qq-show-classic/outfit/蓝白学院风连衣裙.gif",
+        "layers": [
+          "qq-show-classic/outfit/蓝白学院风连衣裙.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/黑色齐刘海麻花辫.gif"
+        ],
+        "nativeImageHash": "0bb87dbcc04e43d970312468cf6a70c2f3e599dcb7f9cd44afa8d6a626cc158d",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "05",
+        "sample": 5,
+        "label": "粉背心交叉腿",
+        "score": 95,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "错足/股根连贯，低指布短影仍弱。"
+        ],
+        "regions": [
+          [
+            28,
+            94,
+            62,
+            129
+          ],
+          [
+            81,
+            94,
+            101,
+            142
+          ],
+          [
+            56,
+            131,
+            83,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-05-fafcd3071a.png",
+        "evidenceSha256": "fafcd3071a0634c273a616c799786d952b030fdcda14090187aa91d6f0bb9a5b",
+        "source": "qq-show-classic/outfit/粉色背心蓝裙套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/粉色背心蓝裙套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/红棕斜扎长发.gif"
+        ],
+        "nativeImageHash": "0562e149b22af6279fdc78c20021a393d0e38eb3875cb4f5fc80aa0ecaa49db3",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "06",
+        "sample": 6,
+        "label": "黄色开衩动势裙",
+        "score": 94,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "舞姿差扣0，Grok肌腹饱满，局部腕掌短转面仍少。"
+        ],
+        "regions": [
+          [
+            28,
+            94,
+            62,
+            129
+          ],
+          [
+            81,
+            94,
+            101,
+            142
+          ],
+          [
+            56,
+            131,
+            83,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-06-60c66e1fd8.png",
+        "evidenceSha256": "60c66e1fd8a2c7e1658f4162a4f3e623e5b86f5fe2e877493680a8909541af4b",
+        "source": "qq-show-classic/outfit/灵动开衩裙套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/灵动开衩裙套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/金棕波浪长发.gif"
+        ],
+        "nativeImageHash": "d7cd7c0c1ee129394de9247d9524425984c0af9cc4d61b828b5de466e4656f5a",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "07",
+        "sample": 7,
+        "label": "深蓝露肩低位交手",
+        "score": 95,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "低交臂允许概括，Grok握掌底短承压仍简。"
+        ],
+        "regions": [
+          [
+            28,
+            94,
+            62,
+            129
+          ],
+          [
+            81,
+            94,
+            101,
+            142
+          ],
+          [
+            56,
+            131,
+            83,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-07-6af621ff9c.png",
+        "evidenceSha256": "6af621ff9c8393a3890a9c51f8183401f10e0cb063c1161fe7964f5b732bf9e6",
+        "source": "qq-show-classic/outfit/深蓝一字肩连衣裙.gif",
+        "layers": [
+          "qq-show-classic/outfit/深蓝一字肩连衣裙.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/黑色侧扎长羊毛卷.gif"
+        ],
+        "nativeImageHash": "c255624cb7baa4049082f15e326dc89be47e73e679510d260c3274eb56bb8f9f",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "08",
+        "sample": 8,
+        "label": "黑红舞裙外展",
+        "score": 94,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生捏布短力向清楚，Grok接点在，指布短压影不足。"
+        ],
+        "regions": [
+          [
+            28,
+            94,
+            62,
+            129
+          ],
+          [
+            81,
+            94,
+            101,
+            142
+          ],
+          [
+            56,
+            131,
+            83,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-08-c0cb10d039.png",
+        "evidenceSha256": "c0cb10d039ecffedc8192d1836734286b919d7e70bd2a982662aebeb31754984",
+        "source": "qq-show-classic/outfit/翩翩起舞套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/翩翩起舞套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/红棕公主卷发.gif"
+        ],
+        "nativeImageHash": "fba21eaf6b1dca9acf3517f5f49b83e36212292ef596a0e1428e5aec27e9fa15",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "09",
+        "sample": 9,
+        "label": "碎花吊带牛仔持包",
+        "score": 95,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生包柄掌可紧凑，Grok包握成立，掌底短转面仍少。"
+        ],
+        "regions": [
+          [
+            28,
+            94,
+            62,
+            129
+          ],
+          [
+            81,
+            94,
+            101,
+            142
+          ],
+          [
+            56,
+            131,
+            83,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-09-fe93e3a490.png",
+        "evidenceSha256": "fe93e3a4900818fa5e6f82f969c9fb627614736e9048852987160d2e19b30cf6",
+        "source": "qq-show-classic/outfit/白色碎花吊带牛仔套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/白色碎花吊带牛仔套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/深棕梨花头.gif"
+        ],
+        "nativeImageHash": "7d9023e477d336bcbc3d40a1ebbfce00e18c818128c385f3c579edd79a252d5d",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "10",
+        "sample": 10,
+        "label": "紫色礼裙侧收持花",
+        "score": 95,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "长裙不供裸腰真值，Grok肩肘/股根连续，低掌短面弱。"
+        ],
+        "regions": [
+          [
+            28,
+            94,
+            62,
+            129
+          ],
+          [
+            81,
+            94,
+            101,
+            142
+          ],
+          [
+            56,
+            131,
+            83,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-10-f8fdd7ee65.png",
+        "evidenceSha256": "f8fdd7ee651d936eb21bbdff8045ca3a8fbd453d39f2e187e2ab56ea87081658",
+        "source": "qq-show-classic/outfit/紫色礼裙花束套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/紫色礼裙花束套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/金棕雏菊发饰罗马卷.gif"
+        ],
+        "nativeImageHash": "97cc4b9f7392eef5769178ec8ec83bbe5d2866890248a2f5fdf3fb6639d26966",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "11",
+        "sample": 11,
+        "label": "薄荷绿盘腿坐姿",
+        "score": 96,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "坐姿不同扣0，Grok掌根改善，短压面仍少。"
+        ],
+        "regions": [
+          [
+            28,
+            94,
+            62,
+            129
+          ],
+          [
+            81,
+            94,
+            101,
+            142
+          ],
+          [
+            56,
+            131,
+            83,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-11-fe1d06ebc9.png",
+        "evidenceSha256": "fe1d06ebc9e96456a51ba11194e6125e593d3582b0154946376eb8edce7dd4dc",
+        "source": "qq-show-classic/outfit/薄荷绿套装坐姿.gif",
+        "layers": [
+          "qq-show-classic/outfit/薄荷绿套装坐姿.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/棕色卷波波头.gif"
+        ],
+        "nativeImageHash": "1c8a1a789202f9b07fccc0c6a25ed4d62a5a6f766e557ebfc27aa9e236c29b8a",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "12",
+        "sample": 12,
+        "label": "抹茶旗袍椅坐",
+        "score": 96,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "旗袍椅子不推隐藏尺寸，Grok腕掌短转面不足。"
+        ],
+        "regions": [
+          [
+            28,
+            94,
+            62,
+            129
+          ],
+          [
+            81,
+            94,
+            101,
+            142
+          ],
+          [
+            56,
+            131,
+            83,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-12-cb03324fab.png",
+        "evidenceSha256": "cb03324fabd4fc08e0c688c0da592ebc999c973a7ada169a161b97e82072e13b",
+        "source": "qq-show-classic/outfit/抹茶旗袍坐姿.gif",
+        "layers": [
+          "qq-show-classic/outfit/抹茶旗袍坐姿.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/棕咖黄月季发饰盘发.gif"
+        ],
+        "nativeImageHash": "f523574a47c5517e56de2555ecfb4845bc5eddca7864ae7272ee5d093975d841",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "13",
+        "sample": 13,
+        "label": "黄色短袖爱心坐姿",
+        "score": 95,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "不要求折腿坐，Grok错步支撑在，低掌布厚弱。"
+        ],
+        "regions": [
+          [
+            28,
+            94,
+            62,
+            129
+          ],
+          [
+            81,
+            94,
+            101,
+            142
+          ],
+          [
+            56,
+            131,
+            83,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-13-2eb77e0e66.png",
+        "evidenceSha256": "2eb77e0e663ade8abe9cd6f7d4256adc4b99ca57a92820546c6a3db9091f0c87",
+        "source": "qq-show-classic/outfit/黄色短袖短裙爱心坐姿.gif",
+        "layers": [
+          "qq-show-classic/outfit/黄色短袖短裙爱心坐姿.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/黑色双丸子头.gif"
+        ],
+        "nativeImageHash": "f7c9e5fd22cb186e7f67e2f77f0829e656eef91b74f83def14c37560e597fd17",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "14",
+        "sample": 14,
+        "label": "粉礼裙花朵坐姿",
+        "score": 95,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "花掌允许短指，Grok不按指少扣，掌根承压仍简。"
+        ],
+        "regions": [
+          [
+            28,
+            94,
+            62,
+            129
+          ],
+          [
+            81,
+            94,
+            101,
+            142
+          ],
+          [
+            56,
+            131,
+            83,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-14-72134e0175.png",
+        "evidenceSha256": "72134e01750fe590ee4bcb706efdce49d24311a9c15728956794bb42d0ff058b",
+        "source": "qq-show-classic/outfit/浅粉礼裙花朵坐姿套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/浅粉礼裙花朵坐姿套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/粉色高马尾.gif"
+        ],
+        "nativeImageHash": "7deae5777a0bc52ea716fbe8e59c05e32cf1a32d1922b6b8e1d476065e8758b9",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "15",
+        "sample": 15,
+        "label": "秋千白纱悬坐",
+        "score": 95,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生握绳可紧凑，Grok握斧真实，掌底/拇指根短面不足。"
+        ],
+        "regions": [
+          [
+            28,
+            94,
+            62,
+            129
+          ],
+          [
+            81,
+            94,
+            101,
+            142
+          ],
+          [
+            56,
+            131,
+            83,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-15-a24a30875f.png",
+        "evidenceSha256": "a24a30875f9bed38669be7b0716bb1b995339bbf78070429a6acb8df3d8d4792",
+        "source": "qq-show-classic/outfit/秋千白色薄纱裙套装.gif",
+        "layers": [
+          "qq-show-classic/back-hair/深棕蝴蝶结斜刘海长发.gif",
+          "qq-show-classic/outfit/秋千白色薄纱裙套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/深棕蝴蝶结斜刘海长发.gif"
+        ],
+        "nativeImageHash": "6949b442eaeffae544840a252bfca0b8656c4f1c5703d80f5bdc0fdec02a093b",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "16",
+        "sample": 16,
+        "label": "牛仔背带持麦",
+        "score": 96,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生斜直臂/角阶允许，Grok肌腹在，不因角阶扣。"
+        ],
+        "regions": [
+          [
+            28,
+            94,
+            62,
+            129
+          ],
+          [
+            81,
+            94,
+            101,
+            142
+          ],
+          [
+            56,
+            131,
+            83,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-16-23449c114b.png",
+        "evidenceSha256": "23449c114bf6909654942623f68daf5e4dfd3c5ddea3b7cf38ff2910f8fa6a93",
+        "source": "qq-show-classic/outfit/吊带牛仔裤麦克风套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/吊带牛仔裤麦克风套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/酒红双马尾.gif"
+        ],
+        "nativeImageHash": "fb624b9fbe3e853bb9b66582cfb5993197a1905ab4ff958cbb380621d662ec5b",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "17",
+        "sample": 17,
+        "label": "朱砂旗袍持扇",
+        "score": 95,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "不要求扇动作，Grok包握成立，低提布短压面不足。"
+        ],
+        "regions": [
+          [
+            28,
+            94,
+            62,
+            129
+          ],
+          [
+            81,
+            94,
+            101,
+            142
+          ],
+          [
+            56,
+            131,
+            83,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-17-f0d842c4df.png",
+        "evidenceSha256": "f0d842c4df1d8dfa541c9e44844af93c275e22c0151e4e9fc432a045c5c6d9a9",
+        "source": "qq-show-classic/outfit/高开衩朱砂红旗袍.gif",
+        "layers": [
+          "qq-show-classic/outfit/高开衩朱砂红旗袍.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/玫瑰盘发.gif"
+        ],
+        "nativeImageHash": "12ad1f177551bf37e4949696fc63acece1b955f0f9227db92ce2830bf0e059f6",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "18",
+        "sample": 18,
+        "label": "紫短裙举臂长靴",
+        "score": 95,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "举臂不同扣0，Grok肩臂肉面在，腕掌短转面少。"
+        ],
+        "regions": [
+          [
+            28,
+            94,
+            62,
+            129
+          ],
+          [
+            81,
+            94,
+            101,
+            142
+          ],
+          [
+            56,
+            131,
+            83,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-18-e28606eae9.png",
+        "evidenceSha256": "e28606eae923895d505d5b9f2121903437bf8028c55236331939baa0df071d9b",
+        "source": "qq-show-classic/outfit/背心紫短裙白长靴套装.gif",
+        "layers": [
+          "qq-show-classic/back-hair/动漫蓝蝴蝶结马尾.gif",
+          "qq-show-classic/outfit/背心紫短裙白长靴套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/动漫蓝蝴蝶结马尾.gif"
+        ],
+        "nativeImageHash": "9b525b93d6794ef7c03bc2e5e93f5c18f744752094e92ca8f5a1f8d235a410e8",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "19",
+        "sample": 19,
+        "label": "白短外套牛仔短裙",
+        "score": 95,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "承重主类可读，y164+未改不清旧calf，低掌短面仍弱。"
+        ],
+        "regions": [
+          [
+            28,
+            94,
+            62,
+            129
+          ],
+          [
+            81,
+            94,
+            101,
+            142
+          ],
+          [
+            56,
+            131,
+            83,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-19-81cac6d0e4.png",
+        "evidenceSha256": "81cac6d0e4a15afae30502e015d2024dd862ae0bb5cc9c885b23f833838b8bd3",
+        "source": "qq-show-classic/outfit/白色短外套牛仔短裙套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/白色短外套牛仔短裙套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/棕橙长编发.gif"
+        ],
+        "nativeImageHash": "e570beb4dd7330818e30f0e9a99f1131054e7621d48447b311a19fc909c2c75e",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "20",
+        "sample": 20,
+        "label": "紫色蝴蝶仙子",
+        "score": 96,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "裙遮不编裸腰，Grok肌腹/掌根改善，低指布短厚影不足。"
+        ],
+        "regions": [
+          [
+            28,
+            94,
+            62,
+            129
+          ],
+          [
+            81,
+            94,
+            101,
+            142
+          ],
+          [
+            56,
+            131,
+            83,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-20-fd8eeaf2c3.png",
+        "evidenceSha256": "fd8eeaf2c3bc7eacd5a26607b2f4287f1db12ea142391776062c47a04a6f05c4",
+        "source": "qq-show-classic/outfit/蝴蝶仙子套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/蝴蝶仙子套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/炫紫闪耀双马尾卷发.gif"
+        ],
+        "nativeImageHash": "70112fde68175423d693e4d6efd1d9ea8a0ec13422c4fa4e5dab1c3ce76fa702",
+        "poseDifferenceDeduction": 0
+      }
+    ],
+    "reasons": [
+      "R12握侧腕掌底/低掌短肉面与肌腹收放有改善，真实指群跨斧杆前、上下杆延续成立，不沿用缺握旧指控。",
+      "握侧腕掌底x28..38/y119..128仍偏长浅面，掌根到拇指根的短转面/承压不足；低掌x91..100/y130..140已加肉，布指下短压影/袖腔内厚仍少。",
+      "肩肘/腰胯股根连续，y164+与已核SHA的R11 body逐RGBA0差，仅证明未改，不宣称旧calf修复或技术通过。"
+    ],
+    "recommendations": [
+      "R26唯一最终轮：保真实握斧/肌腹/已加掌肉，局部理清握侧掌底拇指根短承压、低指布压影与袖腔短厚面，不数五指/统一粗描。",
+      "冠与双尾按normal根叠影→宽窄谷→转面→短峰分层，减少贯长浅沿同频；不复制M09直发分缝或M11短发轮廓。",
+      "红衬按提点/腰/落地布置主谷与折底厚面，黑胸袖补局部压力转面，保已清楚黑红前后层，不用更多金纹填平面。",
+      "y164+未改与旧calf不利窄窗/定位敏感记录保留，不机械default点削肉，不借新hash清关。",
+      "R26真实IAB复评后停止自动艺术返工；不足98、六组pending及技术未知如实MD，不开第三轮。"
+    ],
+    "limitations": [
+      "未执行新的独立尺寸量测，不声明全身<=5%或任何区域>5%。",
+      "当前视觉已失败98；新hash/原生手参考不自动解除历史技术阻断。",
+      "原生衣装不提供被遮住裸腰胯真值。"
+    ],
+    "evidence": {
+      "reactBodyImage": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-default-70a0faf334.png",
+      "reactBodyImageSha256": "70a0faf334802dcaec20df89ae115c63897b4b91201032b0ab922fe5198e9452",
+      "reactBodySnapshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-evidence.json",
+      "reactFullImage": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/full.png",
+      "reactFullImageSha256": "4efd1181ed9316a2ca8a03ad88d6a60c4a285bad94609e37df3d3b21ad6dd0af",
+      "reactFullSnapshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/full-evidence.json",
+      "actuallyViewed": [
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-default-70a0faf334.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-01-682cf03634.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-02-6dcbc74830.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-03-76ff0a721a.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-04-106dbdba7c.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-05-fafcd3071a.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-06-60c66e1fd8.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-07-6af621ff9c.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-08-c0cb10d039.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-09-fe93e3a490.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-10-f8fdd7ee65.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-11-fe1d06ebc9.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-12-cb03324fab.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-13-2eb77e0e66.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-14-72134e0175.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-15-a24a30875f.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-16-23449c114b.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-17-f0d842c4df.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-18-e28606eae9.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-19-81cac6d0e4.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-20-fd8eeaf2c3.png"
+      ],
+      "diagnosticBody6x": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/grok-round08-body-6x.png",
+      "diagnosticNearestCrops": [],
+      "captureBrowser": "Codex in-app browser",
+      "failedImages": [],
+      "reactFullImages": [
+        {
+          "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/full.png",
+          "sha256": "4efd1181ed9316a2ca8a03ad88d6a60c4a285bad94609e37df3d3b21ad6dd0af",
+          "images": [
+            {
+              "bottom": 342.5625,
+              "height": 226,
+              "index": 0,
+              "left": 28,
+              "right": 168,
+              "top": 116.5625,
+              "width": 140
+            },
+            {
+              "bottom": 342.5625,
+              "height": 226,
+              "index": 1,
+              "left": 180,
+              "right": 320,
+              "top": 116.5625,
+              "width": 140
+            },
+            {
+              "bottom": 342.5625,
+              "height": 226,
+              "index": 2,
+              "left": 332,
+              "right": 472,
+              "top": 116.5625,
+              "width": 140
+            }
+          ]
+        }
+      ],
+      "actualCorpusReadingMethod": "All20 immutable one-ID screenshots cropped by recorded bounds into five nearest2x reading sheets; no re-render or artwork edit.",
+      "diagnosticIndex": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/grok-r12-segment-diagnostic-index.json",
+      "diagnosticCorpusSheets": [
+        "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/grok-r12-body-corpus-sheet-1-2x.png",
+        "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/grok-r12-body-corpus-sheet-2-2x.png",
+        "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/grok-r12-body-corpus-sheet-3-2x.png",
+        "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/grok-r12-body-corpus-sheet-4-2x.png",
+        "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/grok-r12-body-corpus-sheet-5-2x.png"
+      ]
+    },
+    "evidenceIntegrity": {
+      "status": "all20-actually-viewed; immutable screenshot hashes verified",
+      "labelsActuallyChecked": [
+        "01 抱臂天使礼服",
+        "02 蓝白捧花公主裙",
+        "03 薄荷裙抬手",
+        "04 蓝白学院裙垂袖",
+        "05 粉背心交叉腿",
+        "06 黄色开衩动势裙",
+        "07 深蓝露肩低位交手",
+        "08 黑红舞裙外展",
+        "09 碎花吊带牛仔持包",
+        "10 紫色礼裙侧收持花",
+        "11 薄荷绿盘腿坐姿",
+        "12 抹茶旗袍椅坐",
+        "13 黄色短袖爱心坐姿",
+        "14 粉礼裙花朵坐姿",
+        "15 秋千白纱悬坐",
+        "16 牛仔背带持麦",
+        "17 朱砂旗袍持扇",
+        "18 紫短裙举臂长靴",
+        "19 白短外套牛仔短裙",
+        "20 紫色蝴蝶仙子"
+      ],
+      "repeatedRasterNote": "All20 raw right-figure crops contain2718–2733 skin-colored pixels; repeated-view deduplication is not missing AI raster."
+    }
+  },
+  "naturalnessAudit": {
+    "reviewer": "classic_body_judge",
+    "status": "requires-revision",
+    "reviewedBodyHash": "9d202ed7daa5fac24cd42ef6978ec23d45eae05cbc00e82adb0ee162f10c9d76",
+    "reviewedCompleteHash": "42cd2e8e41a4d4c813cf0d39ea04f0ea4c185a114b9511a3ec7e9b8de65a5bcc",
+    "reviewedPartHashes": {
+      "bottom": "ffdb0eb8a5bf4f08250bb2d5d0d5ae503223155abc5dc2793348fec2eb292153",
+      "legs": "43606b202b13ab79f18bbc75cc74457979b1e94599b190d17e8d9b57d7ba7f27",
+      "top": "48588fd2989ff6496e5dca42e75193c617a363661bffdb8646ca10fd7b4f234a"
+    },
+    "scope": "当前裸模default+20与full/head2/body3/upper2真实IAB；图像左右为画布左右。",
+    "limbs": {
+      "regions": [
+        [
+          28,
+          94,
+          62,
+          129
+        ],
+        [
+          81,
+          94,
+          101,
+          142
+        ],
+        [
+          56,
+          131,
+          83,
+          175
+        ]
+      ],
+      "findings": [
+        "R12握侧腕掌底/低掌短肉面与肌腹收放有改善，真实指群跨斧杆前、上下杆延续成立，不沿用缺握旧指控。",
+        "握侧腕掌底x28..38/y119..128仍偏长浅面，掌根到拇指根的短转面/承压不足；低掌x91..100/y130..140已加肉，布指下短压影/袖腔内厚仍少。",
+        "肩肘/腰胯股根连续，y164+与已核SHA的R11 body逐RGBA0差，仅证明未改，不宣称旧calf修复或技术通过。"
+      ]
+    },
+    "palms": {
+      "regions": [
+        [
+          27,
+          116,
+          39,
+          129
+        ],
+        [
+          89,
+          130,
+          102,
+          143
+        ]
+      ],
+      "findings": [
+        "R06/R07/R05同6x允许短指/方阶/负形，R07男体仅借握柄拓扑，不作女性宽度标准。",
+        "当前握掌包覆成立且短肉面改善，剩掌根/拇指根短承压面与低指布短影，不要求五写实指。"
+      ]
+    },
+    "wrist": {
+      "regions": [
+        [
+          27,
+          116,
+          39,
+          129
+        ],
+        [
+          89,
+          130,
+          102,
+          143
+        ]
+      ],
+      "findings": [
+        "腕掌与臂连续、肌腹有收放；握侧掌底/低掌的局部短转向和袖口内厚仍弱，不能以连续轮廓代码当解决。"
+      ]
+    },
+    "contact": {
+      "findings": [
+        "本轮full/同6x确认短指跨斧杆前、杆上下延续，保已认可包握。",
+        "提布指群/布口接位在，指布下短压影与主谷受力仍弱；R05布遮手不推隐藏裸掌。",
+        "未选自身斧不需自带，竖吉他/竖弓/立式话筒/地包/腰胸饰/肩挎物不强求握，遮挡抓点不编。"
+      ],
+      "policy": "先看实际源语义及上下行AI新增影响；立式/悬浮/腰饰/肩挎包/地面摆件不强求手握。没选角色自己prop也不要求出现。"
+    },
+    "nativeHandCalibration": {
+      "actuallyViewed": [
+        "ai-workspace/previews/native-hand-reference-20261110/contact-sheet.png",
+        "ai-workspace/previews/native-hand-reference-20261110/README.md"
+      ],
+      "policy": "紧凑原生指群可自然，不要求逐根数五指；弯掌负形不直接判掌心洞，严格看腕掌连接与真实受力。"
+    },
+    "evidence": [
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/full.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body3.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body3-segment-02-94b3dc32a7.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body3-segment-03-00be7de9c5.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body3-segment-04-f46cb5add2.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body3-segment-05-20b55ad12e.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/upper2.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/upper2-segment-02-e5525ae4bd.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/upper2-segment-03-3b897f048a.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/upper2-segment-04-bb58fed4f9.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/upper2-segment-05-3cffd96d17.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-default-70a0faf334.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-01-682cf03634.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-02-6dcbc74830.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-03-76ff0a721a.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-04-106dbdba7c.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-05-fafcd3071a.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-06-60c66e1fd8.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-07-6af621ff9c.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-08-c0cb10d039.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-09-fe93e3a490.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-10-f8fdd7ee65.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-11-fe1d06ebc9.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-12-cb03324fab.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-13-2eb77e0e66.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-14-72134e0175.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-15-a24a30875f.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-16-23449c114b.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-17-f0d842c4df.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-18-e28606eae9.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-19-81cac6d0e4.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body-strip-20-fd8eeaf2c3.png"
+    ],
+    "poseExemptionDoesNotClearFusion": true,
+    "nativeComparisons": {
+      "actuallyViewed": true,
+      "evidence": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/grok-r12-native-contact-comparison-6x.png",
+      "provenance": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/grok-r12-native-contact-comparison.json",
+      "scale": "same6x nearest/no warp/no mirror",
+      "acceptableNativeFeatures": [
+        "紧凑短指/方阶/合理负形",
+        "R07男性只借握柄拓扑"
+      ],
+      "positiveCurrentFindings": [
+        "真实斧杆包握保持",
+        "腕掌短肉面/袖口和黑红层改善"
+      ],
+      "aiSpecificDifferences": [
+        "掌底/低指布短承压面少",
+        "冠顶与双尾宽金带/长浅沿",
+        "红衬受力/折底厚度不足"
+      ],
+      "limits": [
+        "R06绳/斧角度负载不同",
+        "R07非女性体量标尺",
+        "R05布遮处不推裸手"
+      ]
+    },
+    "fullnessAndLayerClarity": {
+      "status": "requires-revision",
+      "improvements": [
+        "腕掌短肉面",
+        "袖口/黑红层谷峰"
+      ],
+      "remaining": [
+        "掌底/低指布短压面",
+        "金发大面与主谷分工",
+        "红衬力向与折底厚度"
+      ],
+      "policy": "No lost-grip inheritance, five-finger requirement, default-point shaving or third automatic round."
+    }
+  },
+  "hairBangsAudit": {
+    "status": "requires-revision",
+    "reviewedPartHashes": {
+      "face": "67c9caf9e1554f8e20d1c81d3be9659c4654e075788b5bd03ebff6d46ff62f16",
+      "hair": "d649f35c0a3388551cec0ec7b005646dafbcc7f3cf2a413afd5f102e286742ac"
+    },
+    "reference": "ai-girls-atlas/assets/zipzippipe/grok/normal-zipzippipe-pixiv-148186519-p07.jpg",
+    "regions": [
+      [
+        44,
+        45,
+        94,
+        85
+      ],
+      [
+        23,
+        73,
+        121,
+        185
+      ]
+    ],
+    "fidelity": "金双马尾、额前长短束/黑结和呆毛可辨，根谷/局部小束比旧有变化；冠顶宽金面、双尾长浅边仍收并normal松散层束。",
+    "integration": [
+      "双尾分叉/部分根谷比旧有层，金发/长刘海身份保留。",
+      "冠顶x53..80/y47..62几片宽金面与近贯长浅弧偏平；双尾x26..46与97..119/y76..181宽金带/长浅沿主次不足，短根影/谷/转面/短峰未充分分工。"
+    ],
+    "evidence": [
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/full.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/head2.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/head2-segment-02-df7a1e0552.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/head2-segment-03-849550ba6e.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/head2-segment-04-e2377cdb95.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/head2-segment-05-e3d2f1f7b5.png"
+    ]
+  },
+  "clothingAudit": {
+    "status": "requires-revision",
+    "reviewedPartHashes": {
+      "bottom": "ffdb0eb8a5bf4f08250bb2d5d0d5ae503223155abc5dc2793348fec2eb292153",
+      "legs": "43606b202b13ab79f18bbc75cc74457979b1e94599b190d17e8d9b57d7ba7f27",
+      "top": "48588fd2989ff6496e5dca42e75193c617a363661bffdb8646ca10fd7b4f234a"
+    },
+    "reviewedGeneratedInterfaceHashes": {},
+    "reference": "ai-girls-atlas/assets/zipzippipe/grok/normal-zipzippipe-pixiv-148186519-p07.jpg",
+    "regions": [
+      [
+        27,
+        86,
+        115,
+        219
+      ]
+    ],
+    "fidelity": "黑胸杯束腰/宽袖白衬/黑金裙红衬成立，R12袖口短厚边/黑红层谷峰更清楚；提点到腰裙受力/翻层厚度、胸领荷叶和细叠层仍简。",
+    "integration": [
+      "袖口短厚边/腕掌和黑红层谷峰比旧清楚，不沿旧缺袖腔或平红整片描述。",
+      "红衬x91..115/y157..211仍几段近水平短谷接大红面，提点→腰→翻层力向/折底厚度不足。",
+      "黑胸杯/袖主面有转折但局部短压面少，上衣腰口与原生裙裤共曲面仍硬；金纹不能代体积。"
+    ],
+    "evidence": [
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/full.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body3.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body3-segment-02-94b3dc32a7.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body3-segment-03-00be7de9c5.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body3-segment-04-f46cb5add2.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/body3-segment-05-20b55ad12e.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/upper2.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/upper2-segment-02-e5525ae4bd.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/upper2-segment-03-3b897f048a.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/upper2-segment-04-bb58fed4f9.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/upper2-segment-05-3cffd96d17.png"
+    ]
+  },
+  "runtimeIntegrity": {
+    "checkedAtUtc": "2026-11-10T09:20:25.678Z",
+    "runtimeRoot": "results/archived/runtime/7ec0fc573d05e2fefed7/public",
+    "bodyPngByteHash": "9d202ed7daa5fac24cd42ef6978ec23d45eae05cbc00e82adb0ee162f10c9d76",
+    "manifestCompleteHash": "42cd2e8e41a4d4c813cf0d39ea04f0ea4c185a114b9511a3ec7e9b8de65a5bcc",
+    "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+    "allFullLayersByteVerified": true,
+    "authorNewerCandidateUsed": false,
+    "archiveId": "7ec0fc573d05e2fefed7"
+  },
+  "technicalFollowup": {
+    "reviewer": "classic_body_judge",
+    "reviewedBodyHash": "9d202ed7daa5fac24cd42ef6978ec23d45eae05cbc00e82adb0ee162f10c9d76",
+    "reviewedCompleteHash": "42cd2e8e41a4d4c813cf0d39ea04f0ea4c185a114b9511a3ec7e9b8de65a5bcc",
+    "requiresFurtherAudit": true,
+    "resolvesBodyHashes": [],
+    "clearedFindingIDs": [],
+    "unchangedHistoricalBlocks": true,
+    "scope": "视觉与y164+逐RGBA恒等核；未独立新跑旧calf法向/锚点控制。",
+    "sourceReport": "ai-workspace/previews/limb-audit-20261110/technical-review.json",
+    "historicalDiagnosticReport": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/grok-r11-round07-review.json",
+    "historicalDiagnosticBodyHash": "5f65073e5ed5053ab9877efbb38dfee15a1fdf329a6081321fc5528784d79a2c",
+    "regionByteComparison": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/grok-r12-y164-region-byte-comparison.json",
+    "methodApplicability": {
+      "status": "needs-current-hash-recheck",
+      "rawAdverseRecordsRetained": true,
+      "defaultWidthsAreSourceObservations": true,
+      "historicalNumbersNotReassignedAsCurrentMeasurement": true,
+      "unchangedPixelsAreNotClearance": true,
+      "noWholeBodyClearance": true
+    },
+    "reasons": [
+      "y164+逐RGBA0差，不虚称旧calf已修。",
+      "旧技术不利窄窗/相位/对应未知保留；当前新视觉分不替技术清关。",
+      "同解剖/投影/控制/持续差和原生同尺度可感知缺陷才确认，不按default点盲削肉。"
+    ],
+    "historicalDiagnosticReportSha256": "066071f2df512d48e16b3226f599f54b3cc35950f511ab60276d09d8508f8a75"
+  },
+  "closeout": {
+    "uniformVersion": "R25",
+    "roundNumber": 1,
+    "totalAuthorizedRounds": 2,
+    "archiveId": "7ec0fc573d05e2fefed7",
+    "characterReviewCompleted": true,
+    "allSevenRoundCompletionClaimed": false,
+    "nextAuthorRound": "R26 final only",
+    "stopAfterR26Review": true,
+    "noAcceptanceFromStopping": true
+  },
+  "materialAudit": {
+    "actuallyViewed": true,
+    "ids": [
+      "M05",
+      "M08",
+      "M09",
+      "M11"
+    ],
+    "sameScaleComparison": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/grok-r12-native-material-comparison-6x.png",
+    "provenance": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/grok-r12-native-material-comparison.json",
+    "positive": [
+      "黑红谷峰/袖口短厚边改善"
+    ],
+    "remaining": [
+      "双尾分叉/部分根谷比旧有层，金发/长刘海身份保留。",
+      "冠顶x53..80/y47..62几片宽金面与近贯长浅弧偏平；双尾x26..46与97..119/y76..181宽金带/长浅沿主次不足，短根影/谷/转面/短峰未充分分工。",
+      "袖口短厚边/腕掌和黑红层谷峰比旧清楚，不沿旧缺袖腔或平红整片描述。",
+      "红衬x91..115/y157..211仍几段近水平短谷接大红面，提点→腰→翻层力向/折底厚度不足。",
+      "黑胸杯/袖主面有转折但局部短压面少，上衣腰口与原生裙裤共曲面仍硬；金纹不能代体积。"
+    ],
+    "limits": [
+      "M编号独立于R手/bodyCorpus",
+      "语法不等源几何/色号模板",
+      "静态首帧，不声称动画"
+    ]
+  },
+  "supplementalDiagnostics": [
+    {
+      "schema": "classic-independent-visible-diagnostic-supplement-v1",
+      "reviewer": "classic_body_judge",
+      "actuallyViewed": true,
+      "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/head2-effect-supplement-case0.json",
+      "sourceEvidenceSha256": "c3d9d4c0fb466a4241f21314d4942879398304e594ec9572ea39640e24b44676",
+      "screenshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/head2-effect-supplement-case0-b1006b4e80.png",
+      "screenshotSha256": "b1006b4e804cfd68ddcf91363ef4a59407ce0334a1f2f5a3e9c0c42f2a7300f6",
+      "mainCaseId": "grok-head2-sd618253f-a0-f0",
+      "seed": "closeout-r25-grok-head2-m50elr7l",
+      "bodyHash": "9d202ed7daa5fac24cd42ef6978ec23d45eae05cbc00e82adb0ee162f10c9d76",
+      "completeHash": "42cd2e8e41a4d4c813cf0d39ea04f0ea4c185a114b9511a3ec7e9b8de65a5bcc",
+      "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+      "integrityChecks": {
+        "seed": true,
+        "bodyHash": true,
+        "reviewedCompleteHash": true,
+        "poolHash": true,
+        "draws": true,
+        "reviewedPartHashes": true,
+        "selectedAiSlots": true,
+        "selectedItemIDs": true,
+        "case0": true,
+        "nativeSelection": true
+      },
+      "onlyPresentationChange": "hide=effect; original seed/draws/part map/native selection unchanged",
+      "findings": [
+        "实际补图双方脸均无遮挡：AI眼眉/张口可读，未见缺眼/缺脸，不由原扫描遮挡猜测五官坏点。",
+        "鼻颊/眼下小面仍较简；额前宽金面/长浅弧和侧尾长浅沿主次不足，与本轮无遮full及其他四例观察一致。",
+        "补图只用于定位被原生effect遮住的可见结构；原生100与完整上下文五例分保持。"
+      ],
+      "replacesMainContext": false,
+      "newSeedDraw": false,
+      "mainHead2ScoreUnchanged": 90.05,
+      "mainContext0ScoreUnchanged": 90.05,
+      "newAestheticScore": null,
+      "priorReportBackup": "grok-r12-round08-review.pre-effect-supplement-713ede2564a7.json",
+      "priorReportSha256": "713ede2564a71cb597acc9fb5b62a1a329a6e5e47234d8c6b44651c230f3c1e5"
+    }
+  ],
+  "latestScopeOverride": {
+    "userInstruction": "这轮评完就停吧，整理好相关文件做好归档就行",
+    "stopAfterCurrentR25Review": true,
+    "R26Cancelled": true,
+    "olderR26PlansAreHistoricalOnly": true,
+    "unadoptedPrivateDrafts": "not applied; not accepted",
+    "noAcceptanceFromStopping": true
+  }
+}

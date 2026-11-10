@@ -1,0 +1,4625 @@
+{
+  "schema": "classic-independent-full-body-fusion-v1",
+  "reviewer": "classic_body_judge",
+  "round": "human-followup-20261110-round08-deepseek-r9",
+  "character": "deepseek",
+  "date": "2026-11-10",
+  "nativeBaselineScore": 100,
+  "reference": {
+    "reviewer": "classic_body_judge",
+    "score": 94.05,
+    "weightedRaw": 94.05,
+    "threshold": 90,
+    "passed": true,
+    "reviewedCompleteHash": "7895e19cbfdd63a0b55383d9e820d0e3bd7a5d698977e7a3237d7b77e6351d1a",
+    "reviewedCompleteArtifact": "character.png canonical runtime per-layer composite; exact actual browser fullLayers below.",
+    "reviewedFullLayerHashes": {
+      "deepseek-background-0": "a3b49eb8b3be0f17d96f56cec71efd9037ddd71fee99df3ed474f36003201213",
+      "deepseek-aura-0": "f3cf10773d7cd346b25be89d1e24acfd0662a40559d6f96ee4969c52cf0d6010",
+      "deepseek-back-0": "e243345790bbe52a23c1a8be995b0476301d57b7c47c62bd62c0e94fafb7ad1f",
+      "deepseek-hair-0": "731ca913e42ef5233149963b91b5d0bbee88317b048435462dd4a17703b872d1",
+      "deepseek-legs-0": "844a7db58ea102d6f56b748b0219292201fc99821f7842588bef9f6a746ac2d5",
+      "deepseek-bottom-0": "ad0a01c7aad18c9506369f0cb33f9c3320263255059dc72f66646e2df715178a",
+      "deepseek-top-0": "bbd2127fb6c7854ecb161242105a7de8416c6be8f10b6b45887a7487acc89590",
+      "deepseek-face-0": "7c3956d7c2074dd8fbdc6113f4570a07210944eaa9286881123ad164b02e85d0",
+      "deepseek-hair-1": "2671406924f8acc2f160ebb3aa4c7d3a8324201e313cfec12a680d439fe3c10e",
+      "deepseek-prop-0": "a4725b363ef9a5db3646c1e98dfc06e2445cc574afda586d3a72e6dd25b98e99",
+      "deepseek-top-1": "258c9af6563064b4b77b984038a18f2a92d9734781f15b174f8a40ebb290f497",
+      "deepseek-headwear-0": "19f2abc99752f7eb282f164766c8476c791eeb0ec824c8c69360d30e33147e3f",
+      "deepseek-effect-0": "1d9266904cf1405548a6ad0f20ffa0e73eb8e3f17ddc0bb769bc7e8afa600eaa"
+    },
+    "reviewedGeneratedInterfaceHashes": {},
+    "seed": "closeout-r25-deepseek-full-17beav21",
+    "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+    "contextSignature": "native-context-v4-4c6f366f",
+    "dimensions": {
+      "action": {
+        "score": 100,
+        "weight": 20,
+        "reason": "低手提裙/屈肘托掌主动作保持，碗为授权适配，局部腕指肘角中小差扣0。"
+      },
+      "emotion": {
+        "score": 88,
+        "weight": 10,
+        "reason": "蓝瞳、鼓腮米粒和温和神态成立，授权闭口米粒不扣；眉眼/鼻颊小面仍简。"
+      },
+      "hair": {
+        "score": 88,
+        "weight": 20,
+        "reason": "中央长刘海/鲸鳍侧束/蓝卷簇可辨，R9主谷和发袖分工改善；normal左向外展开大层束仍偏收，部分密卷替大流向。"
+      },
+      "pose": {
+        "score": 100,
+        "weight": 15,
+        "reason": "前后错足站立/支撑主类保持，中小胯膝足角和重心差扣0。"
+      },
+      "clothing": {
+        "score": 93,
+        "weight": 25,
+        "reason": "白胸兜/束腰、深蓝裙白围裙、提起层成立；袖腔/围裙翻层比R8改善，白胸主面、围裙下端/蓝裙层边与normal细折仍简。"
+      },
+      "accessories": {
+        "score": 94,
+        "weight": 10,
+        "reason": "白女仆冠/蓝结、鲸尾/碗米粒/金纹成立，小结花边/纹样层级缩并，色相对应近。"
+      }
+    },
+    "colorFidelity": {
+      "policy": "User final clarification: corresponding-part hue proximity only. No RGB/HEX, brightness, saturation or area-ratio threshold.",
+      "reference": "ai-girls-atlas/assets/zipzippipe/deepseek/normal-zipzippipe-pixiv-148186519-p00.jpg",
+      "authorizedAdaptations": [
+        "鼓腮/米粒/托饭碗为用户已确认适配，不因normal张口不同扣。"
+      ],
+      "parts": [
+        {
+          "part": "hair/gradient ends",
+          "observation": "深蓝根到浅蓝端对应normal近，不因明暗饱和差扣。",
+          "dimension": "hair",
+          "deduction": 0
+        },
+        {
+          "part": "iris",
+          "observation": "双蓝瞳色相近，鼓腮米粒授权适配不扣。",
+          "dimension": "emotion",
+          "deduction": 0
+        },
+        {
+          "part": "bodice/sleeves/skirt/apron/shoes",
+          "observation": "深蓝衣裙/白胸围裙/蓝鞋色相对应接近，光影材料自然度另评融合。",
+          "dimension": "clothing",
+          "deduction": 0
+        },
+        {
+          "part": "crown/bow/tail/trim/bowl",
+          "observation": "白冠、蓝结尾、金纹、白蓝碗对应近，不设HEX/面积比例硬门。",
+          "dimension": "accessories",
+          "deduction": 0
+        }
+      ]
+    },
+    "poseAudit": {
+      "policyVersion": "classic-significant-pose-only-20261110",
+      "reviewer": "classic_body_judge",
+      "reviewedBodyHash": "ade423196cf6812350f8ef89ae522c1e89d58ace6dc5417a0b1c9bceaf7a774d",
+      "reviewedCompleteHash": "7895e19cbfdd63a0b55383d9e820d0e3bd7a5d698977e7a3237d7b77e6351d1a",
+      "reference": "ai-girls-atlas/assets/zipzippipe/deepseek/normal-zipzippipe-pixiv-148186519-p00.jpg",
+      "pending": false,
+      "scope": "Actual current frozen body and clothed full are shown beside normal in the full browser screenshot. Image-left/right are canvas sides.",
+      "regions": [
+        {
+          "part": "torso",
+          "severity": "minor",
+          "region": [
+            54,
+            91,
+            84,
+            148
+          ],
+          "reason": "略转胸腰直立主类近，小角差扣0。",
+          "poseDeduction": 0,
+          "deducted": false,
+          "deductionDimension": null,
+          "evidence": [
+            "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/full.png",
+            "ai-girls-atlas/assets/zipzippipe/deepseek/normal-zipzippipe-pixiv-148186519-p00.jpg"
+          ]
+        },
+        {
+          "part": "imageLeftArm",
+          "severity": "moderate",
+          "region": [
+            33,
+            94,
+            61,
+            140
+          ],
+          "reason": "低手外提裙主方向保持，局部肘腕角中等以下扣0。",
+          "poseDeduction": 0,
+          "deducted": false,
+          "deductionDimension": null,
+          "evidence": [
+            "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/full.png",
+            "ai-girls-atlas/assets/zipzippipe/deepseek/normal-zipzippipe-pixiv-148186519-p00.jpg"
+          ]
+        },
+        {
+          "part": "imageRightArm",
+          "severity": "moderate",
+          "region": [
+            81,
+            94,
+            117,
+            122
+          ],
+          "reason": "屈肘托掌保持，碗授权适配，指/掌角中小差扣0。",
+          "poseDeduction": 0,
+          "deducted": false,
+          "deductionDimension": null,
+          "evidence": [
+            "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/full.png",
+            "ai-girls-atlas/assets/zipzippipe/deepseek/normal-zipzippipe-pixiv-148186519-p00.jpg"
+          ]
+        },
+        {
+          "part": "imageLeftLeg",
+          "severity": "moderate",
+          "region": [
+            51,
+            143,
+            70,
+            214
+          ],
+          "reason": "前足错开关系在，中小抬足/膝角不显著改动作类。",
+          "poseDeduction": 0,
+          "deducted": false,
+          "deductionDimension": null,
+          "evidence": [
+            "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/full.png",
+            "ai-girls-atlas/assets/zipzippipe/deepseek/normal-zipzippipe-pixiv-148186519-p00.jpg"
+          ]
+        },
+        {
+          "part": "imageRightLeg",
+          "severity": "minor",
+          "region": [
+            69,
+            143,
+            84,
+            219
+          ],
+          "reason": "向下支撑方向近，裙遮不编骨点。",
+          "poseDeduction": 0,
+          "deducted": false,
+          "deductionDimension": null,
+          "evidence": [
+            "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/full.png",
+            "ai-girls-atlas/assets/zipzippipe/deepseek/normal-zipzippipe-pixiv-148186519-p00.jpg"
+          ]
+        },
+        {
+          "part": "weight",
+          "severity": "moderate",
+          "region": [
+            48,
+            132,
+            87,
+            220
+          ],
+          "reason": "前后足站姿/支撑主类保持，中小重心差扣0。",
+          "poseDeduction": 0,
+          "deducted": false,
+          "deductionDimension": null,
+          "evidence": [
+            "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/full.png",
+            "ai-girls-atlas/assets/zipzippipe/deepseek/normal-zipzippipe-pixiv-148186519-p00.jpg"
+          ]
+        }
+      ],
+      "deductionPolicy": "Minor/moderate pose differences have zero deduction. Significant means very significant only; anatomy and garment/contact failures stay in fusion.",
+      "significantDifferences": []
+    },
+    "reasons": [
+      "本轮normal与实际冻结IAB全套重新审；hue对应接近、六区中小pose差扣0。还原过90不替代身体/多件98。"
+    ],
+    "recommendations": [
+      "R26唯一最终轮：保肌腹/右托掌细面与碗接点，局部整理左指布短压影/掌根转向和右桥袖腔短厚边，不按default点削肉。",
+      "白胸主面随胸廓→束腰收放，围裙下端/蓝裙翻层补主谷连续与短厚边，不用更多碎亮点替布层。",
+      "发与同蓝袖保持各自主谷/短叠影，细亮簇不串邻层；保normal中央长刘海/左展开大层，不改成参考源发型。",
+      "原生R04掌面不使AI桥/袖腔继承100，量测原不利/对应未知不由新hash自动清。",
+      "按用户两轮收尾，R26真实IAB复评后停止自动改图；不足98/未审六组/旧技术未知如实保留，不开第三轮。"
+    ],
+    "evidence": {
+      "reactFullImage": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/full.png",
+      "reactFullImageSha256": "013d82d9388feb18257da3f96efc0c0814590caa9cf19ff4e2893b8b6f43f6e6",
+      "reactFullSnapshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/full-evidence.json",
+      "actuallyViewed": [
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/full.png",
+        "ai-girls-atlas/assets/zipzippipe/deepseek/normal-zipzippipe-pixiv-148186519-p00.jpg",
+        "ai-girls-atlas/characters/deepseek/README.md"
+      ],
+      "captureBrowser": "Codex in-app browser",
+      "failedImages": [],
+      "reactFullImages": [
+        {
+          "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/full.png",
+          "sha256": "013d82d9388feb18257da3f96efc0c0814590caa9cf19ff4e2893b8b6f43f6e6",
+          "images": [
+            {
+              "bottom": 350.703125,
+              "height": 226,
+              "index": 0,
+              "left": 28,
+              "right": 168,
+              "top": 124.703125,
+              "width": 140
+            },
+            {
+              "bottom": 350.703125,
+              "height": 226,
+              "index": 1,
+              "left": 180,
+              "right": 320,
+              "top": 124.703125,
+              "width": 140
+            },
+            {
+              "bottom": 350.703125,
+              "height": 226,
+              "index": 2,
+              "left": 332,
+              "right": 472,
+              "top": 124.703125,
+              "width": 140
+            }
+          ]
+        }
+      ]
+    },
+    "limitations": [
+      "Static image; no animation validation.",
+      "Full-reference passing does not grant body/fusion acceptance."
+    ]
+  },
+  "hybrid": {
+    "head2": {
+      "reviews": [
+        {
+          "reviewer": "classic_body_judge",
+          "score": 92.5,
+          "weightedRaw": 92.5,
+          "threshold": 98,
+          "passed": false,
+          "pending": false,
+          "selectedAiSlots": [
+            "hair",
+            "face"
+          ],
+          "selectedItemIDs": {
+            "face": "deepseek-face",
+            "hair": "deepseek-hair"
+          },
+          "reviewedPartHashes": {
+            "face": "db9dff63b29101f68792198b28a0c00e4763ad78e96780327959d7173cf79b23",
+            "hair": "81991eb04c7b8ce85b03aa62782895ea963cd88fc5634f29b0ac18062428e673"
+          },
+          "reviewedGeneratedInterfaceHashes": {},
+          "reviewedCompleteHash": "7895e19cbfdd63a0b55383d9e820d0e3bd7a5d698977e7a3237d7b77e6351d1a",
+          "bodyHash": "ade423196cf6812350f8ef89ae522c1e89d58ace6dc5417a0b1c9bceaf7a774d",
+          "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+          "seed": "closeout-r25-deepseek-head2-7r37b202",
+          "contextSignature": "native-context-v4-b6dee022",
+          "draws": {
+            "aura": [
+              "native-aura-9",
+              "native-aura-18",
+              "native-aura-12",
+              "native-aura-1",
+              "native-aura-2"
+            ],
+            "back": [
+              "native-back-7",
+              "native-back-1",
+              "native-back-4",
+              "native-back-10",
+              "native-back-15"
+            ],
+            "background": [
+              "native-background-1",
+              "native-background-8",
+              "native-background-9",
+              "native-background-12",
+              "native-background-4"
+            ],
+            "bottom": [
+              "native-bottom-4",
+              "native-bottom-2",
+              "native-bottom-11",
+              "native-bottom-15",
+              "native-bottom-16"
+            ],
+            "effect": [
+              "native-effect-13",
+              "native-effect-18",
+              "native-effect-6",
+              "native-effect-7",
+              "native-effect-9"
+            ],
+            "face": [
+              "native-face-16",
+              "native-face-13",
+              "native-face-7",
+              "native-face-17",
+              "native-face-15"
+            ],
+            "hair": [
+              "native-hair-18",
+              "native-hair-4",
+              "native-hair-5",
+              "native-hair-11",
+              "native-hair-9"
+            ],
+            "headwear": [
+              "native-headwear-3",
+              "native-headwear-2",
+              "native-headwear-5",
+              "native-headwear-11",
+              "native-headwear-20"
+            ],
+            "legs": [
+              "native-legs-4",
+              "native-legs-2",
+              "native-legs-11",
+              "native-legs-15",
+              "native-legs-16"
+            ],
+            "prop": [
+              "native-prop-8",
+              "native-prop-2",
+              "native-prop-3",
+              "native-prop-14",
+              "native-prop-4"
+            ],
+            "top": [
+              "native-top-19",
+              "native-top-1",
+              "native-top-17",
+              "native-top-10",
+              "native-top-15"
+            ]
+          },
+          "contextScores": [
+            {
+              "caseId": "deepseek-head2-s7c533fad-a0-f0",
+              "fixtureIndex": 0,
+              "score": 92.7,
+              "weightedRaw": 92.7,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 92,
+                  "weight": 20,
+                  "reason": "例1樱天黑夹克：同seed补图已看，细蓝卷/主暗谷比旧清楚，头帽脸接位完整；卷簇局部亮峰串层、normal左大展开束偏收，未因补拍抬分。"
+                },
+                "proportionConnection": {
+                  "score": 94,
+                  "weight": 25,
+                  "reason": "例1樱天黑夹克：同seed补图已看，细蓝卷/主暗谷比旧清楚，头帽脸接位完整；卷簇局部亮峰串层、normal左大展开束偏收，未因补拍抬分。"
+                },
+                "materialColor": {
+                  "score": 90,
+                  "weight": 15,
+                  "reason": "例1樱天黑夹克：同seed补图已看，细蓝卷/主暗谷比旧清楚，头帽脸接位完整；卷簇局部亮峰串层、normal左大展开束偏收，未因补拍抬分。"
+                },
+                "blingeePixel": {
+                  "score": 92,
+                  "weight": 20,
+                  "reason": "例1樱天黑夹克：同seed补图已看，细蓝卷/主暗谷比旧清楚，头帽脸接位完整；卷簇局部亮峰串层、normal左大展开束偏收，未因补拍抬分。"
+                },
+                "occlusionContact": {
+                  "score": 95,
+                  "weight": 15,
+                  "reason": "例1樱天黑夹克：同seed补图已看，细蓝卷/主暗谷比旧清楚，头帽脸接位完整；卷簇局部亮峰串层、normal左大展开束偏收，未因补拍抬分。"
+                },
+                "canvasReadability": {
+                  "score": 93,
+                  "weight": 5,
+                  "reason": "例1樱天黑夹克：同seed补图已看，细蓝卷/主暗谷比旧清楚，头帽脸接位完整；卷簇局部亮峰串层、normal左大展开束偏收，未因补拍抬分。"
+                }
+              },
+              "reason": "例1樱天黑夹克：同seed补图已看，细蓝卷/主暗谷比旧清楚，头帽脸接位完整；卷簇局部亮峰串层、normal左大展开束偏收，未因补拍抬分。",
+              "region": [
+                25,
+                35,
+                125,
+                188
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-9",
+                "back": "native-back-7",
+                "background": "native-background-1",
+                "bottom": "native-bottom-4",
+                "effect": "native-effect-13",
+                "face": "native-face-16",
+                "hair": "native-hair-18",
+                "headwear": "native-headwear-3",
+                "legs": "native-legs-4",
+                "prop": "native-prop-8",
+                "top": "native-top-19"
+              },
+              "aiSelection": {
+                "aura": "native-aura-9",
+                "back": "native-back-7",
+                "background": "native-background-1",
+                "bottom": "native-bottom-4",
+                "effect": "native-effect-13",
+                "face": "deepseek-face",
+                "hair": "deepseek-hair",
+                "headwear": "native-headwear-3",
+                "legs": "native-legs-4",
+                "prop": "native-prop-8",
+                "top": "native-top-19"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "face"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "731ca913e42ef5233149963b91b5d0bbee88317b048435462dd4a17703b872d1",
+                  "design": "/assets-classic/deepseek/remake/hair-back-design.svg",
+                  "itemId": "deepseek-hair",
+                  "key": "deepseek-hair-0",
+                  "name": "深海渐蓝长卷发",
+                  "reviewFamilyHash": "81991eb04c7b8ce85b03aa62782895ea963cd88fc5634f29b0ac18062428e673",
+                  "slot": "hair",
+                  "src": "/assets-classic/deepseek/remake/hair-back.png",
+                  "svg": "/assets-classic/deepseek/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "7c3956d7c2074dd8fbdc6113f4570a07210944eaa9286881123ad164b02e85d0",
+                  "itemId": "deepseek-face",
+                  "key": "deepseek-face-0",
+                  "name": "蓝瞳馋饭鼓腮",
+                  "reviewFamilyHash": "db9dff63b29101f68792198b28a0c00e4763ad78e96780327959d7173cf79b23",
+                  "slot": "face",
+                  "src": "/assets-classic/deepseek/remake/face.png",
+                  "svg": "/assets-classic/deepseek/remake/face.svg",
+                  "variantRole": "own-pose",
+                  "z": 70
+                },
+                {
+                  "artworkHash": "2671406924f8acc2f160ebb3aa4c7d3a8324201e313cfec12a680d439fe3c10e",
+                  "design": "/assets-classic/deepseek/remake/hair-front-design.svg",
+                  "itemId": "deepseek-hair",
+                  "key": "deepseek-hair-1",
+                  "name": "深海渐蓝长卷发",
+                  "reviewFamilyHash": "81991eb04c7b8ce85b03aa62782895ea963cd88fc5634f29b0ac18062428e673",
+                  "slot": "hair",
+                  "src": "/assets-classic/deepseek/remake/hair-front.png",
+                  "svg": "/assets-classic/deepseek/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/head2-evidence.json",
+              "recommendations": [
+                "R26唯一最终轮：保肌腹/右托掌细面与碗接点，局部整理左指布短压影/掌根转向和右桥袖腔短厚边，不按default点削肉。",
+                "白胸主面随胸廓→束腰收放，围裙下端/蓝裙翻层补主谷连续与短厚边，不用更多碎亮点替布层。",
+                "发与同蓝袖保持各自主谷/短叠影，细亮簇不串邻层；保normal中央长刘海/左展开大层，不改成参考源发型。",
+                "原生R04掌面不使AI桥/袖腔继承100，量测原不利/对应未知不由新hash自动清。",
+                "按用户两轮收尾，R26真实IAB复评后停止自动改图；不足98/未审六组/旧技术未知如实保留，不开第三轮。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/head2-segment-06-9d1fc6e34e.png"
+              ]
+            },
+            {
+              "caseId": "deepseek-head2-s7c533fad-a0-f1",
+              "fixtureIndex": 1,
+              "score": 92.7,
+              "weightedRaw": 92.7,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 92,
+                  "weight": 20,
+                  "reason": "例2樱夜白翼：细卷/主谷成立，侧发根叠压有改善；部分小亮簇仍连跨相邻卷，主束宽窄和细卷层级未全清楚。"
+                },
+                "proportionConnection": {
+                  "score": 94,
+                  "weight": 25,
+                  "reason": "例2樱夜白翼：细卷/主谷成立，侧发根叠压有改善；部分小亮簇仍连跨相邻卷，主束宽窄和细卷层级未全清楚。"
+                },
+                "materialColor": {
+                  "score": 90,
+                  "weight": 15,
+                  "reason": "例2樱夜白翼：细卷/主谷成立，侧发根叠压有改善；部分小亮簇仍连跨相邻卷，主束宽窄和细卷层级未全清楚。"
+                },
+                "blingeePixel": {
+                  "score": 92,
+                  "weight": 20,
+                  "reason": "例2樱夜白翼：细卷/主谷成立，侧发根叠压有改善；部分小亮簇仍连跨相邻卷，主束宽窄和细卷层级未全清楚。"
+                },
+                "occlusionContact": {
+                  "score": 95,
+                  "weight": 15,
+                  "reason": "例2樱夜白翼：细卷/主谷成立，侧发根叠压有改善；部分小亮簇仍连跨相邻卷，主束宽窄和细卷层级未全清楚。"
+                },
+                "canvasReadability": {
+                  "score": 93,
+                  "weight": 5,
+                  "reason": "例2樱夜白翼：细卷/主谷成立，侧发根叠压有改善；部分小亮簇仍连跨相邻卷，主束宽窄和细卷层级未全清楚。"
+                }
+              },
+              "reason": "例2樱夜白翼：细卷/主谷成立，侧发根叠压有改善；部分小亮簇仍连跨相邻卷，主束宽窄和细卷层级未全清楚。",
+              "region": [
+                25,
+                35,
+                125,
+                188
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-18",
+                "back": "native-back-1",
+                "background": "native-background-8",
+                "bottom": "native-bottom-2",
+                "effect": "native-effect-18",
+                "face": "native-face-13",
+                "hair": "native-hair-4",
+                "headwear": "native-headwear-2",
+                "legs": "native-legs-2",
+                "prop": "native-prop-2",
+                "top": "native-top-1"
+              },
+              "aiSelection": {
+                "aura": "native-aura-18",
+                "back": "native-back-1",
+                "background": "native-background-8",
+                "bottom": "native-bottom-2",
+                "effect": "native-effect-18",
+                "face": "deepseek-face",
+                "hair": "deepseek-hair",
+                "headwear": "native-headwear-2",
+                "legs": "native-legs-2",
+                "prop": "native-prop-2",
+                "top": "native-top-1"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "face"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "731ca913e42ef5233149963b91b5d0bbee88317b048435462dd4a17703b872d1",
+                  "design": "/assets-classic/deepseek/remake/hair-back-design.svg",
+                  "itemId": "deepseek-hair",
+                  "key": "deepseek-hair-0",
+                  "name": "深海渐蓝长卷发",
+                  "reviewFamilyHash": "81991eb04c7b8ce85b03aa62782895ea963cd88fc5634f29b0ac18062428e673",
+                  "slot": "hair",
+                  "src": "/assets-classic/deepseek/remake/hair-back.png",
+                  "svg": "/assets-classic/deepseek/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "7c3956d7c2074dd8fbdc6113f4570a07210944eaa9286881123ad164b02e85d0",
+                  "itemId": "deepseek-face",
+                  "key": "deepseek-face-0",
+                  "name": "蓝瞳馋饭鼓腮",
+                  "reviewFamilyHash": "db9dff63b29101f68792198b28a0c00e4763ad78e96780327959d7173cf79b23",
+                  "slot": "face",
+                  "src": "/assets-classic/deepseek/remake/face.png",
+                  "svg": "/assets-classic/deepseek/remake/face.svg",
+                  "variantRole": "own-pose",
+                  "z": 70
+                },
+                {
+                  "artworkHash": "2671406924f8acc2f160ebb3aa4c7d3a8324201e313cfec12a680d439fe3c10e",
+                  "design": "/assets-classic/deepseek/remake/hair-front-design.svg",
+                  "itemId": "deepseek-hair",
+                  "key": "deepseek-hair-1",
+                  "name": "深海渐蓝长卷发",
+                  "reviewFamilyHash": "81991eb04c7b8ce85b03aa62782895ea963cd88fc5634f29b0ac18062428e673",
+                  "slot": "hair",
+                  "src": "/assets-classic/deepseek/remake/hair-front.png",
+                  "svg": "/assets-classic/deepseek/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/head2-evidence.json",
+              "recommendations": [
+                "R26唯一最终轮：保肌腹/右托掌细面与碗接点，局部整理左指布短压影/掌根转向和右桥袖腔短厚边，不按default点削肉。",
+                "白胸主面随胸廓→束腰收放，围裙下端/蓝裙翻层补主谷连续与短厚边，不用更多碎亮点替布层。",
+                "发与同蓝袖保持各自主谷/短叠影，细亮簇不串邻层；保normal中央长刘海/左展开大层，不改成参考源发型。",
+                "原生R04掌面不使AI桥/袖腔继承100，量测原不利/对应未知不由新hash自动清。",
+                "按用户两轮收尾，R26真实IAB复评后停止自动改图；不足98/未审六组/旧技术未知如实保留，不开第三轮。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/head2-segment-02-25caacd6d5.png"
+              ]
+            },
+            {
+              "caseId": "deepseek-head2-s7c533fad-a0-f2",
+              "fixtureIndex": 2,
+              "score": 92.5,
+              "weightedRaw": 92.5,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 92,
+                  "weight": 20,
+                  "reason": "例3宫殿蓝星：只评露出发脸，卷谷改善但小反射簇仍偏密同频，大层流向/束根短影不足；遮挡不授隐藏98。"
+                },
+                "proportionConnection": {
+                  "score": 94,
+                  "weight": 25,
+                  "reason": "例3宫殿蓝星：只评露出发脸，卷谷改善但小反射簇仍偏密同频，大层流向/束根短影不足；遮挡不授隐藏98。"
+                },
+                "materialColor": {
+                  "score": 90,
+                  "weight": 15,
+                  "reason": "例3宫殿蓝星：只评露出发脸，卷谷改善但小反射簇仍偏密同频，大层流向/束根短影不足；遮挡不授隐藏98。"
+                },
+                "blingeePixel": {
+                  "score": 92,
+                  "weight": 20,
+                  "reason": "例3宫殿蓝星：只评露出发脸，卷谷改善但小反射簇仍偏密同频，大层流向/束根短影不足；遮挡不授隐藏98。"
+                },
+                "occlusionContact": {
+                  "score": 95,
+                  "weight": 15,
+                  "reason": "例3宫殿蓝星：只评露出发脸，卷谷改善但小反射簇仍偏密同频，大层流向/束根短影不足；遮挡不授隐藏98。"
+                },
+                "canvasReadability": {
+                  "score": 89,
+                  "weight": 5,
+                  "reason": "例3宫殿蓝星：只评露出发脸，卷谷改善但小反射簇仍偏密同频，大层流向/束根短影不足；遮挡不授隐藏98。"
+                }
+              },
+              "reason": "例3宫殿蓝星：只评露出发脸，卷谷改善但小反射簇仍偏密同频，大层流向/束根短影不足；遮挡不授隐藏98。",
+              "region": [
+                25,
+                35,
+                125,
+                188
+              ],
+              "visibilityLimitation": "蓝星遮局部，仅评可见。",
+              "scoredVisibleOnly": true,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-12",
+                "back": "native-back-4",
+                "background": "native-background-9",
+                "bottom": "native-bottom-11",
+                "effect": "native-effect-6",
+                "face": "native-face-7",
+                "hair": "native-hair-5",
+                "headwear": "native-headwear-5",
+                "legs": "native-legs-11",
+                "prop": "native-prop-3",
+                "top": "native-top-17"
+              },
+              "aiSelection": {
+                "aura": "native-aura-12",
+                "back": "native-back-4",
+                "background": "native-background-9",
+                "bottom": "native-bottom-11",
+                "effect": "native-effect-6",
+                "face": "deepseek-face",
+                "hair": "deepseek-hair",
+                "headwear": "native-headwear-5",
+                "legs": "native-legs-11",
+                "prop": "native-prop-3",
+                "top": "native-top-17"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "face"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "731ca913e42ef5233149963b91b5d0bbee88317b048435462dd4a17703b872d1",
+                  "design": "/assets-classic/deepseek/remake/hair-back-design.svg",
+                  "itemId": "deepseek-hair",
+                  "key": "deepseek-hair-0",
+                  "name": "深海渐蓝长卷发",
+                  "reviewFamilyHash": "81991eb04c7b8ce85b03aa62782895ea963cd88fc5634f29b0ac18062428e673",
+                  "slot": "hair",
+                  "src": "/assets-classic/deepseek/remake/hair-back.png",
+                  "svg": "/assets-classic/deepseek/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "7c3956d7c2074dd8fbdc6113f4570a07210944eaa9286881123ad164b02e85d0",
+                  "itemId": "deepseek-face",
+                  "key": "deepseek-face-0",
+                  "name": "蓝瞳馋饭鼓腮",
+                  "reviewFamilyHash": "db9dff63b29101f68792198b28a0c00e4763ad78e96780327959d7173cf79b23",
+                  "slot": "face",
+                  "src": "/assets-classic/deepseek/remake/face.png",
+                  "svg": "/assets-classic/deepseek/remake/face.svg",
+                  "variantRole": "own-pose",
+                  "z": 70
+                },
+                {
+                  "artworkHash": "2671406924f8acc2f160ebb3aa4c7d3a8324201e313cfec12a680d439fe3c10e",
+                  "design": "/assets-classic/deepseek/remake/hair-front-design.svg",
+                  "itemId": "deepseek-hair",
+                  "key": "deepseek-hair-1",
+                  "name": "深海渐蓝长卷发",
+                  "reviewFamilyHash": "81991eb04c7b8ce85b03aa62782895ea963cd88fc5634f29b0ac18062428e673",
+                  "slot": "hair",
+                  "src": "/assets-classic/deepseek/remake/hair-front.png",
+                  "svg": "/assets-classic/deepseek/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/head2-evidence.json",
+              "recommendations": [
+                "R26唯一最终轮：保肌腹/右托掌细面与碗接点，局部整理左指布短压影/掌根转向和右桥袖腔短厚边，不按default点削肉。",
+                "白胸主面随胸廓→束腰收放，围裙下端/蓝裙翻层补主谷连续与短厚边，不用更多碎亮点替布层。",
+                "发与同蓝袖保持各自主谷/短叠影，细亮簇不串邻层；保normal中央长刘海/左展开大层，不改成参考源发型。",
+                "原生R04掌面不使AI桥/袖腔继承100，量测原不利/对应未知不由新hash自动清。",
+                "按用户两轮收尾，R26真实IAB复评后停止自动改图；不足98/未审六组/旧技术未知如实保留，不开第三轮。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/head2-segment-03-5f5a6f68cc.png"
+              ]
+            },
+            {
+              "caseId": "deepseek-head2-s7c533fad-a0-f3",
+              "fixtureIndex": 3,
+              "score": 92.7,
+              "weightedRaw": 92.7,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 92,
+                  "weight": 20,
+                  "reason": "例4草地黑帽：刘海/脸接位在，发卷非旧宽S片；根谷/主束与小亮簇分工仍少，肩后与袖同蓝区局部相接。"
+                },
+                "proportionConnection": {
+                  "score": 94,
+                  "weight": 25,
+                  "reason": "例4草地黑帽：刘海/脸接位在，发卷非旧宽S片；根谷/主束与小亮簇分工仍少，肩后与袖同蓝区局部相接。"
+                },
+                "materialColor": {
+                  "score": 90,
+                  "weight": 15,
+                  "reason": "例4草地黑帽：刘海/脸接位在，发卷非旧宽S片；根谷/主束与小亮簇分工仍少，肩后与袖同蓝区局部相接。"
+                },
+                "blingeePixel": {
+                  "score": 92,
+                  "weight": 20,
+                  "reason": "例4草地黑帽：刘海/脸接位在，发卷非旧宽S片；根谷/主束与小亮簇分工仍少，肩后与袖同蓝区局部相接。"
+                },
+                "occlusionContact": {
+                  "score": 95,
+                  "weight": 15,
+                  "reason": "例4草地黑帽：刘海/脸接位在，发卷非旧宽S片；根谷/主束与小亮簇分工仍少，肩后与袖同蓝区局部相接。"
+                },
+                "canvasReadability": {
+                  "score": 93,
+                  "weight": 5,
+                  "reason": "例4草地黑帽：刘海/脸接位在，发卷非旧宽S片；根谷/主束与小亮簇分工仍少，肩后与袖同蓝区局部相接。"
+                }
+              },
+              "reason": "例4草地黑帽：刘海/脸接位在，发卷非旧宽S片；根谷/主束与小亮簇分工仍少，肩后与袖同蓝区局部相接。",
+              "region": [
+                25,
+                35,
+                125,
+                188
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-1",
+                "back": "native-back-10",
+                "background": "native-background-12",
+                "bottom": "native-bottom-15",
+                "effect": "native-effect-7",
+                "face": "native-face-17",
+                "hair": "native-hair-11",
+                "headwear": "native-headwear-11",
+                "legs": "native-legs-15",
+                "prop": "native-prop-14",
+                "top": "native-top-10"
+              },
+              "aiSelection": {
+                "aura": "native-aura-1",
+                "back": "native-back-10",
+                "background": "native-background-12",
+                "bottom": "native-bottom-15",
+                "effect": "native-effect-7",
+                "face": "deepseek-face",
+                "hair": "deepseek-hair",
+                "headwear": "native-headwear-11",
+                "legs": "native-legs-15",
+                "prop": "native-prop-14",
+                "top": "native-top-10"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "face"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "731ca913e42ef5233149963b91b5d0bbee88317b048435462dd4a17703b872d1",
+                  "design": "/assets-classic/deepseek/remake/hair-back-design.svg",
+                  "itemId": "deepseek-hair",
+                  "key": "deepseek-hair-0",
+                  "name": "深海渐蓝长卷发",
+                  "reviewFamilyHash": "81991eb04c7b8ce85b03aa62782895ea963cd88fc5634f29b0ac18062428e673",
+                  "slot": "hair",
+                  "src": "/assets-classic/deepseek/remake/hair-back.png",
+                  "svg": "/assets-classic/deepseek/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "7c3956d7c2074dd8fbdc6113f4570a07210944eaa9286881123ad164b02e85d0",
+                  "itemId": "deepseek-face",
+                  "key": "deepseek-face-0",
+                  "name": "蓝瞳馋饭鼓腮",
+                  "reviewFamilyHash": "db9dff63b29101f68792198b28a0c00e4763ad78e96780327959d7173cf79b23",
+                  "slot": "face",
+                  "src": "/assets-classic/deepseek/remake/face.png",
+                  "svg": "/assets-classic/deepseek/remake/face.svg",
+                  "variantRole": "own-pose",
+                  "z": 70
+                },
+                {
+                  "artworkHash": "2671406924f8acc2f160ebb3aa4c7d3a8324201e313cfec12a680d439fe3c10e",
+                  "design": "/assets-classic/deepseek/remake/hair-front-design.svg",
+                  "itemId": "deepseek-hair",
+                  "key": "deepseek-hair-1",
+                  "name": "深海渐蓝长卷发",
+                  "reviewFamilyHash": "81991eb04c7b8ce85b03aa62782895ea963cd88fc5634f29b0ac18062428e673",
+                  "slot": "hair",
+                  "src": "/assets-classic/deepseek/remake/hair-front.png",
+                  "svg": "/assets-classic/deepseek/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/head2-evidence.json",
+              "recommendations": [
+                "R26唯一最终轮：保肌腹/右托掌细面与碗接点，局部整理左指布短压影/掌根转向和右桥袖腔短厚边，不按default点削肉。",
+                "白胸主面随胸廓→束腰收放，围裙下端/蓝裙翻层补主谷连续与短厚边，不用更多碎亮点替布层。",
+                "发与同蓝袖保持各自主谷/短叠影，细亮簇不串邻层；保normal中央长刘海/左展开大层，不改成参考源发型。",
+                "原生R04掌面不使AI桥/袖腔继承100，量测原不利/对应未知不由新hash自动清。",
+                "按用户两轮收尾，R26真实IAB复评后停止自动改图；不足98/未审六组/旧技术未知如实保留，不开第三轮。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/head2-segment-04-1896e6a01e.png"
+              ]
+            },
+            {
+              "caseId": "deepseek-head2-s7c533fad-a0-f4",
+              "fixtureIndex": 4,
+              "score": 92.7,
+              "weightedRaw": 92.7,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 92,
+                  "weight": 20,
+                  "reason": "例5粉心皇冠：头冠/发脸完整，细簇更近原生；卷束大流向和反射主次仍有差，不能只以细簇数量授98。"
+                },
+                "proportionConnection": {
+                  "score": 94,
+                  "weight": 25,
+                  "reason": "例5粉心皇冠：头冠/发脸完整，细簇更近原生；卷束大流向和反射主次仍有差，不能只以细簇数量授98。"
+                },
+                "materialColor": {
+                  "score": 90,
+                  "weight": 15,
+                  "reason": "例5粉心皇冠：头冠/发脸完整，细簇更近原生；卷束大流向和反射主次仍有差，不能只以细簇数量授98。"
+                },
+                "blingeePixel": {
+                  "score": 92,
+                  "weight": 20,
+                  "reason": "例5粉心皇冠：头冠/发脸完整，细簇更近原生；卷束大流向和反射主次仍有差，不能只以细簇数量授98。"
+                },
+                "occlusionContact": {
+                  "score": 95,
+                  "weight": 15,
+                  "reason": "例5粉心皇冠：头冠/发脸完整，细簇更近原生；卷束大流向和反射主次仍有差，不能只以细簇数量授98。"
+                },
+                "canvasReadability": {
+                  "score": 93,
+                  "weight": 5,
+                  "reason": "例5粉心皇冠：头冠/发脸完整，细簇更近原生；卷束大流向和反射主次仍有差，不能只以细簇数量授98。"
+                }
+              },
+              "reason": "例5粉心皇冠：头冠/发脸完整，细簇更近原生；卷束大流向和反射主次仍有差，不能只以细簇数量授98。",
+              "region": [
+                25,
+                35,
+                125,
+                188
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-2",
+                "back": "native-back-15",
+                "background": "native-background-4",
+                "bottom": "native-bottom-16",
+                "effect": "native-effect-9",
+                "face": "native-face-15",
+                "hair": "native-hair-9",
+                "headwear": "native-headwear-20",
+                "legs": "native-legs-16",
+                "prop": "native-prop-4",
+                "top": "native-top-15"
+              },
+              "aiSelection": {
+                "aura": "native-aura-2",
+                "back": "native-back-15",
+                "background": "native-background-4",
+                "bottom": "native-bottom-16",
+                "effect": "native-effect-9",
+                "face": "deepseek-face",
+                "hair": "deepseek-hair",
+                "headwear": "native-headwear-20",
+                "legs": "native-legs-16",
+                "prop": "native-prop-4",
+                "top": "native-top-15"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "face"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "731ca913e42ef5233149963b91b5d0bbee88317b048435462dd4a17703b872d1",
+                  "design": "/assets-classic/deepseek/remake/hair-back-design.svg",
+                  "itemId": "deepseek-hair",
+                  "key": "deepseek-hair-0",
+                  "name": "深海渐蓝长卷发",
+                  "reviewFamilyHash": "81991eb04c7b8ce85b03aa62782895ea963cd88fc5634f29b0ac18062428e673",
+                  "slot": "hair",
+                  "src": "/assets-classic/deepseek/remake/hair-back.png",
+                  "svg": "/assets-classic/deepseek/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "7c3956d7c2074dd8fbdc6113f4570a07210944eaa9286881123ad164b02e85d0",
+                  "itemId": "deepseek-face",
+                  "key": "deepseek-face-0",
+                  "name": "蓝瞳馋饭鼓腮",
+                  "reviewFamilyHash": "db9dff63b29101f68792198b28a0c00e4763ad78e96780327959d7173cf79b23",
+                  "slot": "face",
+                  "src": "/assets-classic/deepseek/remake/face.png",
+                  "svg": "/assets-classic/deepseek/remake/face.svg",
+                  "variantRole": "own-pose",
+                  "z": 70
+                },
+                {
+                  "artworkHash": "2671406924f8acc2f160ebb3aa4c7d3a8324201e313cfec12a680d439fe3c10e",
+                  "design": "/assets-classic/deepseek/remake/hair-front-design.svg",
+                  "itemId": "deepseek-hair",
+                  "key": "deepseek-hair-1",
+                  "name": "深海渐蓝长卷发",
+                  "reviewFamilyHash": "81991eb04c7b8ce85b03aa62782895ea963cd88fc5634f29b0ac18062428e673",
+                  "slot": "hair",
+                  "src": "/assets-classic/deepseek/remake/hair-front.png",
+                  "svg": "/assets-classic/deepseek/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/head2-evidence.json",
+              "recommendations": [
+                "R26唯一最终轮：保肌腹/右托掌细面与碗接点，局部整理左指布短压影/掌根转向和右桥袖腔短厚边，不按default点削肉。",
+                "白胸主面随胸廓→束腰收放，围裙下端/蓝裙翻层补主谷连续与短厚边，不用更多碎亮点替布层。",
+                "发与同蓝袖保持各自主谷/短叠影，细亮簇不串邻层；保normal中央长刘海/左展开大层，不改成参考源发型。",
+                "原生R04掌面不使AI桥/袖腔继承100，量测原不利/对应未知不由新hash自动清。",
+                "按用户两轮收尾，R26真实IAB复评后停止自动改图；不足98/未审六组/旧技术未知如实保留，不开第三轮。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/head2-segment-05-7c46540a8d.png"
+              ]
+            }
+          ],
+          "reasons": [
+            "R9左腕掌跟真实增肉，右R04式可见掌/指细肤面与碗底接点成立，AI腕桥连续；不沿用R8浅舟掌指控。",
+            "左低腕掌x34..44/y129..140仍较整块浅面，指布/袖口短压影和掌跟转向不足；紧凑短指本身不扣。",
+            "右腕桥/袖口x99..108/y108..119连贯，碗负载下的短转面/开腔厚边仍弱，保已认可掌像素和接点。",
+            "R8肌腹/肘前/近端肉面与连续腰胯股根保持，腿足支撑可读；本轮未新独立量测，不按default单点削肉或清历史。",
+            "R26唯一最终轮：保肌腹/右托掌细面与碗接点，局部整理左指布短压影/掌根转向和右桥袖腔短厚边，不按default点削肉。",
+            "白胸主面随胸廓→束腰收放，围裙下端/蓝裙翻层补主谷连续与短厚边，不用更多碎亮点替布层。",
+            "发与同蓝袖保持各自主谷/短叠影，细亮簇不串邻层；保normal中央长刘海/左展开大层，不改成参考源发型。",
+            "原生R04掌面不使AI桥/袖腔继承100，量测原不利/对应未知不由新hash自动清。",
+            "按用户两轮收尾，R26真实IAB复评后停止自动改图；不足98/未审六组/旧技术未知如实保留，不开第三轮。"
+          ],
+          "recommendations": [
+            "R26唯一最终轮：保肌腹/右托掌细面与碗接点，局部整理左指布短压影/掌根转向和右桥袖腔短厚边，不按default点削肉。",
+            "白胸主面随胸廓→束腰收放，围裙下端/蓝裙翻层补主谷连续与短厚边，不用更多碎亮点替布层。",
+            "发与同蓝袖保持各自主谷/短叠影，细亮簇不串邻层；保normal中央长刘海/左展开大层，不改成参考源发型。",
+            "原生R04掌面不使AI桥/袖腔继承100，量测原不利/对应未知不由新hash自动清。",
+            "按用户两轮收尾，R26真实IAB复评后停止自动改图；不足98/未审六组/旧技术未知如实保留，不开第三轮。"
+          ],
+          "evidence": {
+            "reactEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/head2-evidence.json",
+            "reactScreenshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/head2-segment-06-9d1fc6e34e.png",
+            "reactScreenshotSha256": "9d1fc6e34e07d7cdca2663ea92ccfe9ced46686261a9cbe041bd36be33108fba",
+            "captureBrowser": "Codex in-app browser",
+            "failedImages": [],
+            "actuallyViewed": true,
+            "reactScreenshots": [
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/head2-segment-02-25caacd6d5.png",
+                "sha256": "25caacd6d5c21737a5b91b852fe2ad7f0b1db049e2cb51b32ef5f22c421aa5aa",
+                "visible": [
+                  {
+                    "bottom": 423.96875,
+                    "caseId": "deepseek-head2-s7c533fad-a0-f1",
+                    "height": 312.921875,
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 111.046875,
+                    "width": 160
+                  },
+                  {
+                    "bottom": 423.96875,
+                    "caseId": "deepseek-head2-s7c533fad-a0-f1",
+                    "height": 312.921875,
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 111.046875,
+                    "width": 160
+                  }
+                ]
+              },
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/head2-segment-03-5f5a6f68cc.png",
+                "sha256": "5f5a6f68cc4701003de946d6e5cd8f2afe4ad98f74e9dcf13a64e7ee4e7f7b9d",
+                "visible": [
+                  {
+                    "bottom": 424.890625,
+                    "caseId": "deepseek-head2-s7c533fad-a0-f2",
+                    "height": 312.921875,
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 111.96875,
+                    "width": 160
+                  },
+                  {
+                    "bottom": 424.890625,
+                    "caseId": "deepseek-head2-s7c533fad-a0-f2",
+                    "height": 312.921875,
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 111.96875,
+                    "width": 160
+                  }
+                ]
+              },
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/head2-segment-04-1896e6a01e.png",
+                "sha256": "1896e6a01ea973dfa7689da00fc4bb83c72ca608e38337654517b8222a34bb05",
+                "visible": [
+                  {
+                    "bottom": 424.8125,
+                    "caseId": "deepseek-head2-s7c533fad-a0-f3",
+                    "height": 312.921875,
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 111.890625,
+                    "width": 160
+                  },
+                  {
+                    "bottom": 424.8125,
+                    "caseId": "deepseek-head2-s7c533fad-a0-f3",
+                    "height": 312.921875,
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 111.890625,
+                    "width": 160
+                  }
+                ]
+              },
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/head2-segment-05-7c46540a8d.png",
+                "sha256": "7c46540a8dac4df0f3a7d56c7202d9620bd4e2c860590fa86b3bd1a45ebb2a4a",
+                "visible": [
+                  {
+                    "bottom": 424.734375,
+                    "caseId": "deepseek-head2-s7c533fad-a0-f4",
+                    "height": 312.921875,
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 111.8125,
+                    "width": 160
+                  },
+                  {
+                    "bottom": 424.734375,
+                    "caseId": "deepseek-head2-s7c533fad-a0-f4",
+                    "height": 312.921875,
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 111.8125,
+                    "width": 160
+                  }
+                ]
+              },
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/head2-segment-06-9d1fc6e34e.png",
+                "sha256": "9d1fc6e34e07d7cdca2663ea92ccfe9ced46686261a9cbe041bd36be33108fba",
+                "visible": [
+                  {
+                    "bottom": 424.046875,
+                    "caseId": "deepseek-head2-s7c533fad-a0-f0",
+                    "height": 312.921875,
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 111.125,
+                    "width": 160
+                  },
+                  {
+                    "bottom": 424.046875,
+                    "caseId": "deepseek-head2-s7c533fad-a0-f0",
+                    "height": 312.921875,
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 111.125,
+                    "width": 160
+                  }
+                ]
+              }
+            ],
+            "actuallyViewedViaDiagnostic": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/deepseek-r9-head2-from-browser-segments-2x.png",
+            "diagnosticIndex": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/deepseek-r9-segment-diagnostic-index.json",
+            "segmented": true,
+            "allNativeAiCasePairsActuallyViewed": true
+          },
+          "limitations": [
+            "Static only; no animation claim.",
+            "Native complete combinations remain100. Any AI-owned generated support is included with the AI; never inherits100.",
+            "蓝星遮局部，仅评可见。"
+          ],
+          "layoutIntegrity": null
+        }
+      ]
+    },
+    "body3": {
+      "reviews": [
+        {
+          "reviewer": "classic_body_judge",
+          "score": 92.15,
+          "weightedRaw": 92.15,
+          "threshold": 98,
+          "passed": false,
+          "pending": false,
+          "selectedAiSlots": [
+            "legs",
+            "bottom",
+            "top"
+          ],
+          "selectedItemIDs": {
+            "bottom": "deepseek-bottom",
+            "legs": "deepseek-legs",
+            "top": "deepseek-top"
+          },
+          "reviewedPartHashes": {
+            "bottom": "fea72f34735e4a51896ba7b8126ac7cbbb04962f353486c398c752fa507dbbe0",
+            "legs": "7454ffaa6de6dcdd29e77888189eb2d8b2edf963832b79d4102d14439bd540dc",
+            "top": "a25dbee8764d549c0f35263ee839d8b0def3b36686b9ff41d1c879833311dc51"
+          },
+          "reviewedGeneratedInterfaceHashes": {},
+          "reviewedCompleteHash": "7895e19cbfdd63a0b55383d9e820d0e3bd7a5d698977e7a3237d7b77e6351d1a",
+          "bodyHash": "ade423196cf6812350f8ef89ae522c1e89d58ace6dc5417a0b1c9bceaf7a774d",
+          "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+          "seed": "closeout-r25-deepseek-body3-pv0teps0",
+          "contextSignature": "native-context-v4-4a12a8bc",
+          "draws": {
+            "aura": [
+              "native-aura-16",
+              "native-aura-14",
+              "native-aura-8",
+              "native-aura-12",
+              "native-aura-7"
+            ],
+            "back": [
+              "native-back-13",
+              "native-back-1",
+              "native-back-12",
+              "native-back-5",
+              "native-back-6"
+            ],
+            "background": [
+              "native-background-15",
+              "native-background-13",
+              "native-background-9",
+              "native-background-5",
+              "native-background-11"
+            ],
+            "bottom": [
+              "native-bottom-5",
+              "native-bottom-14",
+              "native-bottom-8",
+              "native-bottom-3",
+              "native-bottom-17"
+            ],
+            "effect": [
+              "native-effect-13",
+              "native-effect-16",
+              "native-effect-12",
+              "native-effect-18",
+              "native-effect-11"
+            ],
+            "face": [
+              "native-face-5",
+              "native-face-6",
+              "native-face-11",
+              "native-face-4",
+              "native-face-17"
+            ],
+            "hair": [
+              "native-hair-1",
+              "native-hair-20",
+              "native-hair-17",
+              "native-hair-19",
+              "native-hair-2"
+            ],
+            "headwear": [
+              "native-headwear-3",
+              "native-headwear-9",
+              "native-headwear-12",
+              "native-headwear-5",
+              "native-headwear-7"
+            ],
+            "legs": [
+              "native-legs-5",
+              "native-legs-14",
+              "native-legs-8",
+              "native-legs-3",
+              "native-legs-17"
+            ],
+            "prop": [
+              "native-prop-14",
+              "native-prop-3",
+              "native-prop-5",
+              "native-prop-13",
+              "native-prop-18"
+            ],
+            "top": [
+              "native-top-10",
+              "native-top-12",
+              "native-top-2",
+              "native-top-9",
+              "native-top-16"
+            ]
+          },
+          "contextScores": [
+            {
+              "caseId": "deepseek-body3-s53a9809f-a0-f0",
+              "fixtureIndex": 0,
+              "score": 92.35,
+              "weightedRaw": 92.35,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 92,
+                  "weight": 20,
+                  "reason": "例1街樱腰饰：左掌跟/右托掌细面及袖腔/围裙翻层真实改善，未选自身碗不需自带；白胸主面、左指布短压影和裙层厚度仍弱。"
+                },
+                "proportionConnection": {
+                  "score": 94,
+                  "weight": 25,
+                  "reason": "例1街樱腰饰：左掌跟/右托掌细面及袖腔/围裙翻层真实改善，未选自身碗不需自带；白胸主面、左指布短压影和裙层厚度仍弱。"
+                },
+                "materialColor": {
+                  "score": 90,
+                  "weight": 15,
+                  "reason": "例1街樱腰饰：左掌跟/右托掌细面及袖腔/围裙翻层真实改善，未选自身碗不需自带；白胸主面、左指布短压影和裙层厚度仍弱。"
+                },
+                "blingeePixel": {
+                  "score": 91,
+                  "weight": 20,
+                  "reason": "例1街樱腰饰：左掌跟/右托掌细面及袖腔/围裙翻层真实改善，未选自身碗不需自带；白胸主面、左指布短压影和裙层厚度仍弱。"
+                },
+                "occlusionContact": {
+                  "score": 94,
+                  "weight": 15,
+                  "reason": "例1街樱腰饰：左掌跟/右托掌细面及袖腔/围裙翻层真实改善，未选自身碗不需自带；白胸主面、左指布短压影和裙层厚度仍弱。"
+                },
+                "canvasReadability": {
+                  "score": 93,
+                  "weight": 5,
+                  "reason": "例1街樱腰饰：左掌跟/右托掌细面及袖腔/围裙翻层真实改善，未选自身碗不需自带；白胸主面、左指布短压影和裙层厚度仍弱。"
+                }
+              },
+              "reason": "例1街樱腰饰：左掌跟/右托掌细面及袖腔/围裙翻层真实改善，未选自身碗不需自带；白胸主面、左指布短压影和裙层厚度仍弱。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-16",
+                "back": "native-back-13",
+                "background": "native-background-15",
+                "bottom": "native-bottom-5",
+                "effect": "native-effect-13",
+                "face": "native-face-5",
+                "hair": "native-hair-1",
+                "headwear": "native-headwear-3",
+                "legs": "native-legs-5",
+                "prop": "native-prop-14",
+                "top": "native-top-10"
+              },
+              "aiSelection": {
+                "aura": "native-aura-16",
+                "back": "native-back-13",
+                "background": "native-background-15",
+                "bottom": "deepseek-bottom",
+                "effect": "native-effect-13",
+                "face": "native-face-5",
+                "hair": "native-hair-1",
+                "headwear": "native-headwear-3",
+                "legs": "deepseek-legs",
+                "prop": "native-prop-14",
+                "top": "deepseek-top"
+              },
+              "selectedAiSlots": [
+                "legs",
+                "bottom",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "844a7db58ea102d6f56b748b0219292201fc99821f7842588bef9f6a746ac2d5",
+                  "itemId": "deepseek-legs",
+                  "key": "deepseek-legs-0",
+                  "name": "深蓝玛丽珍",
+                  "reviewFamilyHash": "7454ffaa6de6dcdd29e77888189eb2d8b2edf963832b79d4102d14439bd540dc",
+                  "slot": "legs",
+                  "src": "/assets-classic/deepseek/remake/legs.png",
+                  "svg": "/assets-classic/deepseek/remake/legs.svg",
+                  "variantRole": "own-pose",
+                  "z": 30
+                },
+                {
+                  "artworkHash": "ad0a01c7aad18c9506369f0cb33f9c3320263255059dc72f66646e2df715178a",
+                  "itemId": "deepseek-bottom",
+                  "key": "deepseek-bottom-0",
+                  "name": "鲸纹蕾丝裙",
+                  "reviewFamilyHash": "fea72f34735e4a51896ba7b8126ac7cbbb04962f353486c398c752fa507dbbe0",
+                  "slot": "bottom",
+                  "src": "/assets-classic/deepseek/remake/bottom.png",
+                  "svg": "/assets-classic/deepseek/remake/bottom.svg",
+                  "variantRole": "own-pose",
+                  "z": 40
+                },
+                {
+                  "artworkHash": "bbd2127fb6c7854ecb161242105a7de8416c6be8f10b6b45887a7487acc89590",
+                  "design": "/assets-classic/deepseek/remake/top-body-design.svg",
+                  "itemId": "deepseek-top",
+                  "key": "deepseek-top-0",
+                  "name": "海盐女仆上衣",
+                  "reviewFamilyHash": "a25dbee8764d549c0f35263ee839d8b0def3b36686b9ff41d1c879833311dc51",
+                  "slot": "top",
+                  "src": "/assets-classic/deepseek/remake/top-body.png",
+                  "svg": "/assets-classic/deepseek/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "258c9af6563064b4b77b984038a18f2a92d9734781f15b174f8a40ebb290f497",
+                  "design": "/assets-classic/deepseek/remake/top-arms-design.svg",
+                  "itemId": "deepseek-top",
+                  "key": "deepseek-top-1",
+                  "name": "海盐女仆上衣",
+                  "reviewFamilyHash": "a25dbee8764d549c0f35263ee839d8b0def3b36686b9ff41d1c879833311dc51",
+                  "slot": "top",
+                  "src": "/assets-classic/deepseek/remake/top-arms.png",
+                  "svg": "/assets-classic/deepseek/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body3-evidence.json",
+              "recommendations": [
+                "R26唯一最终轮：保肌腹/右托掌细面与碗接点，局部整理左指布短压影/掌根转向和右桥袖腔短厚边，不按default点削肉。",
+                "白胸主面随胸廓→束腰收放，围裙下端/蓝裙翻层补主谷连续与短厚边，不用更多碎亮点替布层。",
+                "发与同蓝袖保持各自主谷/短叠影，细亮簇不串邻层；保normal中央长刘海/左展开大层，不改成参考源发型。",
+                "原生R04掌面不使AI桥/袖腔继承100，量测原不利/对应未知不由新hash自动清。",
+                "按用户两轮收尾，R26真实IAB复评后停止自动改图；不足98/未审六组/旧技术未知如实保留，不开第三轮。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body3.png"
+              ]
+            },
+            {
+              "caseId": "deepseek-body3-s53a9809f-a0-f1",
+              "fixtureIndex": 1,
+              "score": 92.35,
+              "weightedRaw": 92.35,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 92,
+                  "weight": 20,
+                  "reason": "例2黑底肩挎包：肩挎物不强求握，手腕肉面改善；袖腔短厚边与白胸/围裙下端主谷衔接仍硬，黑蓝衣料前后层未尽。"
+                },
+                "proportionConnection": {
+                  "score": 94,
+                  "weight": 25,
+                  "reason": "例2黑底肩挎包：肩挎物不强求握，手腕肉面改善；袖腔短厚边与白胸/围裙下端主谷衔接仍硬，黑蓝衣料前后层未尽。"
+                },
+                "materialColor": {
+                  "score": 90,
+                  "weight": 15,
+                  "reason": "例2黑底肩挎包：肩挎物不强求握，手腕肉面改善；袖腔短厚边与白胸/围裙下端主谷衔接仍硬，黑蓝衣料前后层未尽。"
+                },
+                "blingeePixel": {
+                  "score": 91,
+                  "weight": 20,
+                  "reason": "例2黑底肩挎包：肩挎物不强求握，手腕肉面改善；袖腔短厚边与白胸/围裙下端主谷衔接仍硬，黑蓝衣料前后层未尽。"
+                },
+                "occlusionContact": {
+                  "score": 94,
+                  "weight": 15,
+                  "reason": "例2黑底肩挎包：肩挎物不强求握，手腕肉面改善；袖腔短厚边与白胸/围裙下端主谷衔接仍硬，黑蓝衣料前后层未尽。"
+                },
+                "canvasReadability": {
+                  "score": 93,
+                  "weight": 5,
+                  "reason": "例2黑底肩挎包：肩挎物不强求握，手腕肉面改善；袖腔短厚边与白胸/围裙下端主谷衔接仍硬，黑蓝衣料前后层未尽。"
+                }
+              },
+              "reason": "例2黑底肩挎包：肩挎物不强求握，手腕肉面改善；袖腔短厚边与白胸/围裙下端主谷衔接仍硬，黑蓝衣料前后层未尽。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-14",
+                "back": "native-back-1",
+                "background": "native-background-13",
+                "bottom": "native-bottom-14",
+                "effect": "native-effect-16",
+                "face": "native-face-6",
+                "hair": "native-hair-20",
+                "headwear": "native-headwear-9",
+                "legs": "native-legs-14",
+                "prop": "native-prop-3",
+                "top": "native-top-12"
+              },
+              "aiSelection": {
+                "aura": "native-aura-14",
+                "back": "native-back-1",
+                "background": "native-background-13",
+                "bottom": "deepseek-bottom",
+                "effect": "native-effect-16",
+                "face": "native-face-6",
+                "hair": "native-hair-20",
+                "headwear": "native-headwear-9",
+                "legs": "deepseek-legs",
+                "prop": "native-prop-3",
+                "top": "deepseek-top"
+              },
+              "selectedAiSlots": [
+                "legs",
+                "bottom",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "844a7db58ea102d6f56b748b0219292201fc99821f7842588bef9f6a746ac2d5",
+                  "itemId": "deepseek-legs",
+                  "key": "deepseek-legs-0",
+                  "name": "深蓝玛丽珍",
+                  "reviewFamilyHash": "7454ffaa6de6dcdd29e77888189eb2d8b2edf963832b79d4102d14439bd540dc",
+                  "slot": "legs",
+                  "src": "/assets-classic/deepseek/remake/legs.png",
+                  "svg": "/assets-classic/deepseek/remake/legs.svg",
+                  "variantRole": "own-pose",
+                  "z": 30
+                },
+                {
+                  "artworkHash": "ad0a01c7aad18c9506369f0cb33f9c3320263255059dc72f66646e2df715178a",
+                  "itemId": "deepseek-bottom",
+                  "key": "deepseek-bottom-0",
+                  "name": "鲸纹蕾丝裙",
+                  "reviewFamilyHash": "fea72f34735e4a51896ba7b8126ac7cbbb04962f353486c398c752fa507dbbe0",
+                  "slot": "bottom",
+                  "src": "/assets-classic/deepseek/remake/bottom.png",
+                  "svg": "/assets-classic/deepseek/remake/bottom.svg",
+                  "variantRole": "own-pose",
+                  "z": 40
+                },
+                {
+                  "artworkHash": "bbd2127fb6c7854ecb161242105a7de8416c6be8f10b6b45887a7487acc89590",
+                  "design": "/assets-classic/deepseek/remake/top-body-design.svg",
+                  "itemId": "deepseek-top",
+                  "key": "deepseek-top-0",
+                  "name": "海盐女仆上衣",
+                  "reviewFamilyHash": "a25dbee8764d549c0f35263ee839d8b0def3b36686b9ff41d1c879833311dc51",
+                  "slot": "top",
+                  "src": "/assets-classic/deepseek/remake/top-body.png",
+                  "svg": "/assets-classic/deepseek/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "258c9af6563064b4b77b984038a18f2a92d9734781f15b174f8a40ebb290f497",
+                  "design": "/assets-classic/deepseek/remake/top-arms-design.svg",
+                  "itemId": "deepseek-top",
+                  "key": "deepseek-top-1",
+                  "name": "海盐女仆上衣",
+                  "reviewFamilyHash": "a25dbee8764d549c0f35263ee839d8b0def3b36686b9ff41d1c879833311dc51",
+                  "slot": "top",
+                  "src": "/assets-classic/deepseek/remake/top-arms.png",
+                  "svg": "/assets-classic/deepseek/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body3-evidence.json",
+              "recommendations": [
+                "R26唯一最终轮：保肌腹/右托掌细面与碗接点，局部整理左指布短压影/掌根转向和右桥袖腔短厚边，不按default点削肉。",
+                "白胸主面随胸廓→束腰收放，围裙下端/蓝裙翻层补主谷连续与短厚边，不用更多碎亮点替布层。",
+                "发与同蓝袖保持各自主谷/短叠影，细亮簇不串邻层；保normal中央长刘海/左展开大层，不改成参考源发型。",
+                "原生R04掌面不使AI桥/袖腔继承100，量测原不利/对应未知不由新hash自动清。",
+                "按用户两轮收尾，R26真实IAB复评后停止自动改图；不足98/未审六组/旧技术未知如实保留，不开第三轮。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body3-segment-02-667b779c12.png"
+              ]
+            },
+            {
+              "caseId": "deepseek-body3-s53a9809f-a0-f2",
+              "fixtureIndex": 2,
+              "score": 92.35,
+              "weightedRaw": 92.35,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 92,
+                  "weight": 20,
+                  "reason": "例3宫殿腰花：腰花不用抓，新臂掌/衣折可读，白胸仍近U片，围裙下端与蓝裙翻层短厚面少，发袖蓝区局部亮簇串层。"
+                },
+                "proportionConnection": {
+                  "score": 94,
+                  "weight": 25,
+                  "reason": "例3宫殿腰花：腰花不用抓，新臂掌/衣折可读，白胸仍近U片，围裙下端与蓝裙翻层短厚面少，发袖蓝区局部亮簇串层。"
+                },
+                "materialColor": {
+                  "score": 90,
+                  "weight": 15,
+                  "reason": "例3宫殿腰花：腰花不用抓，新臂掌/衣折可读，白胸仍近U片，围裙下端与蓝裙翻层短厚面少，发袖蓝区局部亮簇串层。"
+                },
+                "blingeePixel": {
+                  "score": 91,
+                  "weight": 20,
+                  "reason": "例3宫殿腰花：腰花不用抓，新臂掌/衣折可读，白胸仍近U片，围裙下端与蓝裙翻层短厚面少，发袖蓝区局部亮簇串层。"
+                },
+                "occlusionContact": {
+                  "score": 94,
+                  "weight": 15,
+                  "reason": "例3宫殿腰花：腰花不用抓，新臂掌/衣折可读，白胸仍近U片，围裙下端与蓝裙翻层短厚面少，发袖蓝区局部亮簇串层。"
+                },
+                "canvasReadability": {
+                  "score": 93,
+                  "weight": 5,
+                  "reason": "例3宫殿腰花：腰花不用抓，新臂掌/衣折可读，白胸仍近U片，围裙下端与蓝裙翻层短厚面少，发袖蓝区局部亮簇串层。"
+                }
+              },
+              "reason": "例3宫殿腰花：腰花不用抓，新臂掌/衣折可读，白胸仍近U片，围裙下端与蓝裙翻层短厚面少，发袖蓝区局部亮簇串层。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-8",
+                "back": "native-back-12",
+                "background": "native-background-9",
+                "bottom": "native-bottom-8",
+                "effect": "native-effect-12",
+                "face": "native-face-11",
+                "hair": "native-hair-17",
+                "headwear": "native-headwear-12",
+                "legs": "native-legs-8",
+                "prop": "native-prop-5",
+                "top": "native-top-2"
+              },
+              "aiSelection": {
+                "aura": "native-aura-8",
+                "back": "native-back-12",
+                "background": "native-background-9",
+                "bottom": "deepseek-bottom",
+                "effect": "native-effect-12",
+                "face": "native-face-11",
+                "hair": "native-hair-17",
+                "headwear": "native-headwear-12",
+                "legs": "deepseek-legs",
+                "prop": "native-prop-5",
+                "top": "deepseek-top"
+              },
+              "selectedAiSlots": [
+                "legs",
+                "bottom",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "844a7db58ea102d6f56b748b0219292201fc99821f7842588bef9f6a746ac2d5",
+                  "itemId": "deepseek-legs",
+                  "key": "deepseek-legs-0",
+                  "name": "深蓝玛丽珍",
+                  "reviewFamilyHash": "7454ffaa6de6dcdd29e77888189eb2d8b2edf963832b79d4102d14439bd540dc",
+                  "slot": "legs",
+                  "src": "/assets-classic/deepseek/remake/legs.png",
+                  "svg": "/assets-classic/deepseek/remake/legs.svg",
+                  "variantRole": "own-pose",
+                  "z": 30
+                },
+                {
+                  "artworkHash": "ad0a01c7aad18c9506369f0cb33f9c3320263255059dc72f66646e2df715178a",
+                  "itemId": "deepseek-bottom",
+                  "key": "deepseek-bottom-0",
+                  "name": "鲸纹蕾丝裙",
+                  "reviewFamilyHash": "fea72f34735e4a51896ba7b8126ac7cbbb04962f353486c398c752fa507dbbe0",
+                  "slot": "bottom",
+                  "src": "/assets-classic/deepseek/remake/bottom.png",
+                  "svg": "/assets-classic/deepseek/remake/bottom.svg",
+                  "variantRole": "own-pose",
+                  "z": 40
+                },
+                {
+                  "artworkHash": "bbd2127fb6c7854ecb161242105a7de8416c6be8f10b6b45887a7487acc89590",
+                  "design": "/assets-classic/deepseek/remake/top-body-design.svg",
+                  "itemId": "deepseek-top",
+                  "key": "deepseek-top-0",
+                  "name": "海盐女仆上衣",
+                  "reviewFamilyHash": "a25dbee8764d549c0f35263ee839d8b0def3b36686b9ff41d1c879833311dc51",
+                  "slot": "top",
+                  "src": "/assets-classic/deepseek/remake/top-body.png",
+                  "svg": "/assets-classic/deepseek/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "258c9af6563064b4b77b984038a18f2a92d9734781f15b174f8a40ebb290f497",
+                  "design": "/assets-classic/deepseek/remake/top-arms-design.svg",
+                  "itemId": "deepseek-top",
+                  "key": "deepseek-top-1",
+                  "name": "海盐女仆上衣",
+                  "reviewFamilyHash": "a25dbee8764d549c0f35263ee839d8b0def3b36686b9ff41d1c879833311dc51",
+                  "slot": "top",
+                  "src": "/assets-classic/deepseek/remake/top-arms.png",
+                  "svg": "/assets-classic/deepseek/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body3-evidence.json",
+              "recommendations": [
+                "R26唯一最终轮：保肌腹/右托掌细面与碗接点，局部整理左指布短压影/掌根转向和右桥袖腔短厚边，不按default点削肉。",
+                "白胸主面随胸廓→束腰收放，围裙下端/蓝裙翻层补主谷连续与短厚边，不用更多碎亮点替布层。",
+                "发与同蓝袖保持各自主谷/短叠影，细亮簇不串邻层；保normal中央长刘海/左展开大层，不改成参考源发型。",
+                "原生R04掌面不使AI桥/袖腔继承100，量测原不利/对应未知不由新hash自动清。",
+                "按用户两轮收尾，R26真实IAB复评后停止自动改图；不足98/未审六组/旧技术未知如实保留，不开第三轮。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body3-segment-03-a052b68147.png"
+              ]
+            },
+            {
+              "caseId": "deepseek-body3-s53a9809f-a0-f3",
+              "fixtureIndex": 3,
+              "score": 92.35,
+              "weightedRaw": 92.35,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 92,
+                  "weight": 20,
+                  "reason": "例4街景蓝帽：袖/提裙主谷和层边比旧清楚，低掌指布压影、腕桥袖腔短厚面与围裙/裙层衔接仍不足。"
+                },
+                "proportionConnection": {
+                  "score": 94,
+                  "weight": 25,
+                  "reason": "例4街景蓝帽：袖/提裙主谷和层边比旧清楚，低掌指布压影、腕桥袖腔短厚面与围裙/裙层衔接仍不足。"
+                },
+                "materialColor": {
+                  "score": 90,
+                  "weight": 15,
+                  "reason": "例4街景蓝帽：袖/提裙主谷和层边比旧清楚，低掌指布压影、腕桥袖腔短厚面与围裙/裙层衔接仍不足。"
+                },
+                "blingeePixel": {
+                  "score": 91,
+                  "weight": 20,
+                  "reason": "例4街景蓝帽：袖/提裙主谷和层边比旧清楚，低掌指布压影、腕桥袖腔短厚面与围裙/裙层衔接仍不足。"
+                },
+                "occlusionContact": {
+                  "score": 94,
+                  "weight": 15,
+                  "reason": "例4街景蓝帽：袖/提裙主谷和层边比旧清楚，低掌指布压影、腕桥袖腔短厚面与围裙/裙层衔接仍不足。"
+                },
+                "canvasReadability": {
+                  "score": 93,
+                  "weight": 5,
+                  "reason": "例4街景蓝帽：袖/提裙主谷和层边比旧清楚，低掌指布压影、腕桥袖腔短厚面与围裙/裙层衔接仍不足。"
+                }
+              },
+              "reason": "例4街景蓝帽：袖/提裙主谷和层边比旧清楚，低掌指布压影、腕桥袖腔短厚面与围裙/裙层衔接仍不足。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-12",
+                "back": "native-back-5",
+                "background": "native-background-5",
+                "bottom": "native-bottom-3",
+                "effect": "native-effect-18",
+                "face": "native-face-4",
+                "hair": "native-hair-19",
+                "headwear": "native-headwear-5",
+                "legs": "native-legs-3",
+                "prop": "native-prop-13",
+                "top": "native-top-9"
+              },
+              "aiSelection": {
+                "aura": "native-aura-12",
+                "back": "native-back-5",
+                "background": "native-background-5",
+                "bottom": "deepseek-bottom",
+                "effect": "native-effect-18",
+                "face": "native-face-4",
+                "hair": "native-hair-19",
+                "headwear": "native-headwear-5",
+                "legs": "deepseek-legs",
+                "prop": "native-prop-13",
+                "top": "deepseek-top"
+              },
+              "selectedAiSlots": [
+                "legs",
+                "bottom",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "844a7db58ea102d6f56b748b0219292201fc99821f7842588bef9f6a746ac2d5",
+                  "itemId": "deepseek-legs",
+                  "key": "deepseek-legs-0",
+                  "name": "深蓝玛丽珍",
+                  "reviewFamilyHash": "7454ffaa6de6dcdd29e77888189eb2d8b2edf963832b79d4102d14439bd540dc",
+                  "slot": "legs",
+                  "src": "/assets-classic/deepseek/remake/legs.png",
+                  "svg": "/assets-classic/deepseek/remake/legs.svg",
+                  "variantRole": "own-pose",
+                  "z": 30
+                },
+                {
+                  "artworkHash": "ad0a01c7aad18c9506369f0cb33f9c3320263255059dc72f66646e2df715178a",
+                  "itemId": "deepseek-bottom",
+                  "key": "deepseek-bottom-0",
+                  "name": "鲸纹蕾丝裙",
+                  "reviewFamilyHash": "fea72f34735e4a51896ba7b8126ac7cbbb04962f353486c398c752fa507dbbe0",
+                  "slot": "bottom",
+                  "src": "/assets-classic/deepseek/remake/bottom.png",
+                  "svg": "/assets-classic/deepseek/remake/bottom.svg",
+                  "variantRole": "own-pose",
+                  "z": 40
+                },
+                {
+                  "artworkHash": "bbd2127fb6c7854ecb161242105a7de8416c6be8f10b6b45887a7487acc89590",
+                  "design": "/assets-classic/deepseek/remake/top-body-design.svg",
+                  "itemId": "deepseek-top",
+                  "key": "deepseek-top-0",
+                  "name": "海盐女仆上衣",
+                  "reviewFamilyHash": "a25dbee8764d549c0f35263ee839d8b0def3b36686b9ff41d1c879833311dc51",
+                  "slot": "top",
+                  "src": "/assets-classic/deepseek/remake/top-body.png",
+                  "svg": "/assets-classic/deepseek/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "258c9af6563064b4b77b984038a18f2a92d9734781f15b174f8a40ebb290f497",
+                  "design": "/assets-classic/deepseek/remake/top-arms-design.svg",
+                  "itemId": "deepseek-top",
+                  "key": "deepseek-top-1",
+                  "name": "海盐女仆上衣",
+                  "reviewFamilyHash": "a25dbee8764d549c0f35263ee839d8b0def3b36686b9ff41d1c879833311dc51",
+                  "slot": "top",
+                  "src": "/assets-classic/deepseek/remake/top-arms.png",
+                  "svg": "/assets-classic/deepseek/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body3-evidence.json",
+              "recommendations": [
+                "R26唯一最终轮：保肌腹/右托掌细面与碗接点，局部整理左指布短压影/掌根转向和右桥袖腔短厚边，不按default点削肉。",
+                "白胸主面随胸廓→束腰收放，围裙下端/蓝裙翻层补主谷连续与短厚边，不用更多碎亮点替布层。",
+                "发与同蓝袖保持各自主谷/短叠影，细亮簇不串邻层；保normal中央长刘海/左展开大层，不改成参考源发型。",
+                "原生R04掌面不使AI桥/袖腔继承100，量测原不利/对应未知不由新hash自动清。",
+                "按用户两轮收尾，R26真实IAB复评后停止自动改图；不足98/未审六组/旧技术未知如实保留，不开第三轮。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body3-segment-04-3214cafb29.png"
+              ]
+            },
+            {
+              "caseId": "deepseek-body3-s53a9809f-a0-f4",
+              "fixtureIndex": 4,
+              "score": 92.15,
+              "weightedRaw": 92.15,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 92,
+                  "weight": 20,
+                  "reason": "例5樱树兔耳：原生腰饰/光点遮部分，仅评可见；手掌肉面改善不补材料98，白胸/裙翻层与袖腔短厚度仍弱。"
+                },
+                "proportionConnection": {
+                  "score": 94,
+                  "weight": 25,
+                  "reason": "例5樱树兔耳：原生腰饰/光点遮部分，仅评可见；手掌肉面改善不补材料98，白胸/裙翻层与袖腔短厚度仍弱。"
+                },
+                "materialColor": {
+                  "score": 90,
+                  "weight": 15,
+                  "reason": "例5樱树兔耳：原生腰饰/光点遮部分，仅评可见；手掌肉面改善不补材料98，白胸/裙翻层与袖腔短厚度仍弱。"
+                },
+                "blingeePixel": {
+                  "score": 91,
+                  "weight": 20,
+                  "reason": "例5樱树兔耳：原生腰饰/光点遮部分，仅评可见；手掌肉面改善不补材料98，白胸/裙翻层与袖腔短厚度仍弱。"
+                },
+                "occlusionContact": {
+                  "score": 94,
+                  "weight": 15,
+                  "reason": "例5樱树兔耳：原生腰饰/光点遮部分，仅评可见；手掌肉面改善不补材料98，白胸/裙翻层与袖腔短厚度仍弱。"
+                },
+                "canvasReadability": {
+                  "score": 89,
+                  "weight": 5,
+                  "reason": "例5樱树兔耳：原生腰饰/光点遮部分，仅评可见；手掌肉面改善不补材料98，白胸/裙翻层与袖腔短厚度仍弱。"
+                }
+              },
+              "reason": "例5樱树兔耳：原生腰饰/光点遮部分，仅评可见；手掌肉面改善不补材料98，白胸/裙翻层与袖腔短厚度仍弱。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": "原生饰/光点遮局部，仅评可见。",
+              "scoredVisibleOnly": true,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-7",
+                "back": "native-back-6",
+                "background": "native-background-11",
+                "bottom": "native-bottom-17",
+                "effect": "native-effect-11",
+                "face": "native-face-17",
+                "hair": "native-hair-2",
+                "headwear": "native-headwear-7",
+                "legs": "native-legs-17",
+                "prop": "native-prop-18",
+                "top": "native-top-16"
+              },
+              "aiSelection": {
+                "aura": "native-aura-7",
+                "back": "native-back-6",
+                "background": "native-background-11",
+                "bottom": "deepseek-bottom",
+                "effect": "native-effect-11",
+                "face": "native-face-17",
+                "hair": "native-hair-2",
+                "headwear": "native-headwear-7",
+                "legs": "deepseek-legs",
+                "prop": "native-prop-18",
+                "top": "deepseek-top"
+              },
+              "selectedAiSlots": [
+                "legs",
+                "bottom",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "844a7db58ea102d6f56b748b0219292201fc99821f7842588bef9f6a746ac2d5",
+                  "itemId": "deepseek-legs",
+                  "key": "deepseek-legs-0",
+                  "name": "深蓝玛丽珍",
+                  "reviewFamilyHash": "7454ffaa6de6dcdd29e77888189eb2d8b2edf963832b79d4102d14439bd540dc",
+                  "slot": "legs",
+                  "src": "/assets-classic/deepseek/remake/legs.png",
+                  "svg": "/assets-classic/deepseek/remake/legs.svg",
+                  "variantRole": "own-pose",
+                  "z": 30
+                },
+                {
+                  "artworkHash": "ad0a01c7aad18c9506369f0cb33f9c3320263255059dc72f66646e2df715178a",
+                  "itemId": "deepseek-bottom",
+                  "key": "deepseek-bottom-0",
+                  "name": "鲸纹蕾丝裙",
+                  "reviewFamilyHash": "fea72f34735e4a51896ba7b8126ac7cbbb04962f353486c398c752fa507dbbe0",
+                  "slot": "bottom",
+                  "src": "/assets-classic/deepseek/remake/bottom.png",
+                  "svg": "/assets-classic/deepseek/remake/bottom.svg",
+                  "variantRole": "own-pose",
+                  "z": 40
+                },
+                {
+                  "artworkHash": "bbd2127fb6c7854ecb161242105a7de8416c6be8f10b6b45887a7487acc89590",
+                  "design": "/assets-classic/deepseek/remake/top-body-design.svg",
+                  "itemId": "deepseek-top",
+                  "key": "deepseek-top-0",
+                  "name": "海盐女仆上衣",
+                  "reviewFamilyHash": "a25dbee8764d549c0f35263ee839d8b0def3b36686b9ff41d1c879833311dc51",
+                  "slot": "top",
+                  "src": "/assets-classic/deepseek/remake/top-body.png",
+                  "svg": "/assets-classic/deepseek/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "258c9af6563064b4b77b984038a18f2a92d9734781f15b174f8a40ebb290f497",
+                  "design": "/assets-classic/deepseek/remake/top-arms-design.svg",
+                  "itemId": "deepseek-top",
+                  "key": "deepseek-top-1",
+                  "name": "海盐女仆上衣",
+                  "reviewFamilyHash": "a25dbee8764d549c0f35263ee839d8b0def3b36686b9ff41d1c879833311dc51",
+                  "slot": "top",
+                  "src": "/assets-classic/deepseek/remake/top-arms.png",
+                  "svg": "/assets-classic/deepseek/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body3-evidence.json",
+              "recommendations": [
+                "R26唯一最终轮：保肌腹/右托掌细面与碗接点，局部整理左指布短压影/掌根转向和右桥袖腔短厚边，不按default点削肉。",
+                "白胸主面随胸廓→束腰收放，围裙下端/蓝裙翻层补主谷连续与短厚边，不用更多碎亮点替布层。",
+                "发与同蓝袖保持各自主谷/短叠影，细亮簇不串邻层；保normal中央长刘海/左展开大层，不改成参考源发型。",
+                "原生R04掌面不使AI桥/袖腔继承100，量测原不利/对应未知不由新hash自动清。",
+                "按用户两轮收尾，R26真实IAB复评后停止自动改图；不足98/未审六组/旧技术未知如实保留，不开第三轮。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body3-segment-05-be8324cb7e.png"
+              ]
+            }
+          ],
+          "reasons": [
+            "R9左腕掌跟真实增肉，右R04式可见掌/指细肤面与碗底接点成立，AI腕桥连续；不沿用R8浅舟掌指控。",
+            "左低腕掌x34..44/y129..140仍较整块浅面，指布/袖口短压影和掌跟转向不足；紧凑短指本身不扣。",
+            "右腕桥/袖口x99..108/y108..119连贯，碗负载下的短转面/开腔厚边仍弱，保已认可掌像素和接点。",
+            "R8肌腹/肘前/近端肉面与连续腰胯股根保持，腿足支撑可读；本轮未新独立量测，不按default单点削肉或清历史。",
+            "R26唯一最终轮：保肌腹/右托掌细面与碗接点，局部整理左指布短压影/掌根转向和右桥袖腔短厚边，不按default点削肉。",
+            "白胸主面随胸廓→束腰收放，围裙下端/蓝裙翻层补主谷连续与短厚边，不用更多碎亮点替布层。",
+            "发与同蓝袖保持各自主谷/短叠影，细亮簇不串邻层；保normal中央长刘海/左展开大层，不改成参考源发型。",
+            "原生R04掌面不使AI桥/袖腔继承100，量测原不利/对应未知不由新hash自动清。",
+            "按用户两轮收尾，R26真实IAB复评后停止自动改图；不足98/未审六组/旧技术未知如实保留，不开第三轮。"
+          ],
+          "recommendations": [
+            "R26唯一最终轮：保肌腹/右托掌细面与碗接点，局部整理左指布短压影/掌根转向和右桥袖腔短厚边，不按default点削肉。",
+            "白胸主面随胸廓→束腰收放，围裙下端/蓝裙翻层补主谷连续与短厚边，不用更多碎亮点替布层。",
+            "发与同蓝袖保持各自主谷/短叠影，细亮簇不串邻层；保normal中央长刘海/左展开大层，不改成参考源发型。",
+            "原生R04掌面不使AI桥/袖腔继承100，量测原不利/对应未知不由新hash自动清。",
+            "按用户两轮收尾，R26真实IAB复评后停止自动改图；不足98/未审六组/旧技术未知如实保留，不开第三轮。"
+          ],
+          "evidence": {
+            "reactEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body3-evidence.json",
+            "reactScreenshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body3.png",
+            "reactScreenshotSha256": "1cf123d61c387bdb63a02f7fe1ff4c5a829df82c55a9f89441e7c070e5edf353",
+            "captureBrowser": "Codex in-app browser",
+            "failedImages": [],
+            "actuallyViewed": true,
+            "reactScreenshots": [
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body3.png",
+                "sha256": "1cf123d61c387bdb63a02f7fe1ff4c5a829df82c55a9f89441e7c070e5edf353",
+                "visible": [
+                  {
+                    "bottom": 431.53125,
+                    "caseId": "deepseek-body3-s53a9809f-a0-f0",
+                    "height": 326.859375,
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 104.671875,
+                    "width": 160
+                  },
+                  {
+                    "bottom": 431.53125,
+                    "caseId": "deepseek-body3-s53a9809f-a0-f0",
+                    "height": 326.859375,
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 104.671875,
+                    "width": 160
+                  }
+                ]
+              },
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body3-segment-02-667b779c12.png",
+                "sha256": "667b779c12de79a51a2b2c05e257eb3bd82f603897cc07ea61f55c7ee806a3d7",
+                "visible": [
+                  {
+                    "bottom": 431.390625,
+                    "caseId": "deepseek-body3-s53a9809f-a0-f1",
+                    "height": 326.859375,
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 104.53125,
+                    "width": 160
+                  },
+                  {
+                    "bottom": 431.390625,
+                    "caseId": "deepseek-body3-s53a9809f-a0-f1",
+                    "height": 326.859375,
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 104.53125,
+                    "width": 160
+                  }
+                ]
+              },
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body3-segment-03-a052b68147.png",
+                "sha256": "a052b6814776f91b3849fe2f9e869d83abaaa6846a1e0cc6559168473cd5af10",
+                "visible": [
+                  {
+                    "bottom": 431.25,
+                    "caseId": "deepseek-body3-s53a9809f-a0-f2",
+                    "height": 326.859375,
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 104.390625,
+                    "width": 160
+                  },
+                  {
+                    "bottom": 431.25,
+                    "caseId": "deepseek-body3-s53a9809f-a0-f2",
+                    "height": 326.859375,
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 104.390625,
+                    "width": 160
+                  }
+                ]
+              },
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body3-segment-04-3214cafb29.png",
+                "sha256": "3214cafb2950016acf571aa5e03ccd00a5361d48ea6cccf663518afe3fc2f277",
+                "visible": [
+                  {
+                    "bottom": 431.109375,
+                    "caseId": "deepseek-body3-s53a9809f-a0-f3",
+                    "height": 326.859375,
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 104.25,
+                    "width": 160
+                  },
+                  {
+                    "bottom": 431.109375,
+                    "caseId": "deepseek-body3-s53a9809f-a0-f3",
+                    "height": 326.859375,
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 104.25,
+                    "width": 160
+                  }
+                ]
+              },
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body3-segment-05-be8324cb7e.png",
+                "sha256": "be8324cb7ec9e2e9ba5116cbb458c9cde408a2059aa80d772c2390f6ee2dd1b9",
+                "visible": [
+                  {
+                    "bottom": 430.96875,
+                    "caseId": "deepseek-body3-s53a9809f-a0-f4",
+                    "height": 326.859375,
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 104.109375,
+                    "width": 160
+                  },
+                  {
+                    "bottom": 430.96875,
+                    "caseId": "deepseek-body3-s53a9809f-a0-f4",
+                    "height": 326.859375,
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 104.109375,
+                    "width": 160
+                  }
+                ]
+              }
+            ],
+            "actuallyViewedViaDiagnostic": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/deepseek-r9-body3-from-browser-segments-2x.png",
+            "diagnosticIndex": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/deepseek-r9-segment-diagnostic-index.json",
+            "segmented": true,
+            "allNativeAiCasePairsActuallyViewed": true
+          },
+          "limitations": [
+            "Static only; no animation claim.",
+            "Native complete combinations remain100. Any AI-owned generated support is included with the AI; never inherits100.",
+            "原生饰/光点遮局部，仅评可见。"
+          ],
+          "layoutIntegrity": null
+        }
+      ]
+    },
+    "upper2": {
+      "reviews": [
+        {
+          "reviewer": "classic_body_judge",
+          "score": 90.4,
+          "weightedRaw": 90.4,
+          "threshold": 98,
+          "passed": false,
+          "pending": false,
+          "selectedAiSlots": [
+            "hair",
+            "top"
+          ],
+          "selectedItemIDs": {
+            "hair": "deepseek-hair",
+            "top": "deepseek-top"
+          },
+          "reviewedPartHashes": {
+            "hair": "81991eb04c7b8ce85b03aa62782895ea963cd88fc5634f29b0ac18062428e673",
+            "top": "a25dbee8764d549c0f35263ee839d8b0def3b36686b9ff41d1c879833311dc51"
+          },
+          "reviewedGeneratedInterfaceHashes": {},
+          "reviewedCompleteHash": "7895e19cbfdd63a0b55383d9e820d0e3bd7a5d698977e7a3237d7b77e6351d1a",
+          "bodyHash": "ade423196cf6812350f8ef89ae522c1e89d58ace6dc5417a0b1c9bceaf7a774d",
+          "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+          "seed": "closeout-r25-deepseek-upper2-myikki0z",
+          "contextSignature": "native-context-v4-7b8651f8",
+          "draws": {
+            "aura": [
+              "native-aura-14",
+              "native-aura-15",
+              "native-aura-1",
+              "native-aura-13",
+              "native-aura-18"
+            ],
+            "back": [
+              "native-back-13",
+              "native-back-7",
+              "native-back-10",
+              "native-back-12",
+              "native-back-17"
+            ],
+            "background": [
+              "native-background-6",
+              "native-background-5",
+              "native-background-3",
+              "native-background-2",
+              "native-background-12"
+            ],
+            "bottom": [
+              "native-bottom-18",
+              "native-bottom-20",
+              "native-bottom-5",
+              "native-bottom-13",
+              "native-bottom-1"
+            ],
+            "effect": [
+              "native-effect-18",
+              "native-effect-20",
+              "native-effect-8",
+              "native-effect-7",
+              "native-effect-16"
+            ],
+            "face": [
+              "native-face-16",
+              "native-face-5",
+              "native-face-10",
+              "native-face-12",
+              "native-face-9"
+            ],
+            "hair": [
+              "native-hair-14",
+              "native-hair-19",
+              "native-hair-13",
+              "native-hair-12",
+              "native-hair-3"
+            ],
+            "headwear": [
+              "native-headwear-15",
+              "native-headwear-4",
+              "native-headwear-13",
+              "native-headwear-12",
+              "native-headwear-19"
+            ],
+            "legs": [
+              "native-legs-18",
+              "native-legs-20",
+              "native-legs-5",
+              "native-legs-13",
+              "native-legs-1"
+            ],
+            "prop": [
+              "native-prop-3",
+              "native-prop-16",
+              "native-prop-6",
+              "native-prop-1",
+              "native-prop-20"
+            ],
+            "top": [
+              "native-top-15",
+              "native-top-10",
+              "native-top-17",
+              "native-top-5",
+              "native-top-9"
+            ]
+          },
+          "contextScores": [
+            {
+              "caseId": "deepseek-upper2-sb8f325e0-a0-f0",
+              "fixtureIndex": 0,
+              "score": 90.75,
+              "weightedRaw": 90.75,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 91,
+                  "weight": 20,
+                  "reason": "例1海底双包蓝裤：肩挎物不强求握，新掌跟/袖折改善；衣腰到原生裤胯共同曲面仍分离，白胸主面/腕桥袖腔短厚度不足。"
+                },
+                "proportionConnection": {
+                  "score": 92,
+                  "weight": 25,
+                  "reason": "例1海底双包蓝裤：肩挎物不强求握，新掌跟/袖折改善；衣腰到原生裤胯共同曲面仍分离，白胸主面/腕桥袖腔短厚度不足。"
+                },
+                "materialColor": {
+                  "score": 88,
+                  "weight": 15,
+                  "reason": "例1海底双包蓝裤：肩挎物不强求握，新掌跟/袖折改善；衣腰到原生裤胯共同曲面仍分离，白胸主面/腕桥袖腔短厚度不足。"
+                },
+                "blingeePixel": {
+                  "score": 90,
+                  "weight": 20,
+                  "reason": "例1海底双包蓝裤：肩挎物不强求握，新掌跟/袖折改善；衣腰到原生裤胯共同曲面仍分离，白胸主面/腕桥袖腔短厚度不足。"
+                },
+                "occlusionContact": {
+                  "score": 92,
+                  "weight": 15,
+                  "reason": "例1海底双包蓝裤：肩挎物不强求握，新掌跟/袖折改善；衣腰到原生裤胯共同曲面仍分离，白胸主面/腕桥袖腔短厚度不足。"
+                },
+                "canvasReadability": {
+                  "score": 91,
+                  "weight": 5,
+                  "reason": "例1海底双包蓝裤：肩挎物不强求握，新掌跟/袖折改善；衣腰到原生裤胯共同曲面仍分离，白胸主面/腕桥袖腔短厚度不足。"
+                }
+              },
+              "reason": "例1海底双包蓝裤：肩挎物不强求握，新掌跟/袖折改善；衣腰到原生裤胯共同曲面仍分离，白胸主面/腕桥袖腔短厚度不足。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-14",
+                "back": "native-back-13",
+                "background": "native-background-6",
+                "bottom": "native-bottom-18",
+                "effect": "native-effect-18",
+                "face": "native-face-16",
+                "hair": "native-hair-14",
+                "headwear": "native-headwear-15",
+                "legs": "native-legs-18",
+                "prop": "native-prop-3",
+                "top": "native-top-15"
+              },
+              "aiSelection": {
+                "aura": "native-aura-14",
+                "back": "native-back-13",
+                "background": "native-background-6",
+                "bottom": "native-bottom-18",
+                "effect": "native-effect-18",
+                "face": "native-face-16",
+                "hair": "deepseek-hair",
+                "headwear": "native-headwear-15",
+                "legs": "native-legs-18",
+                "prop": "native-prop-3",
+                "top": "deepseek-top"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "731ca913e42ef5233149963b91b5d0bbee88317b048435462dd4a17703b872d1",
+                  "design": "/assets-classic/deepseek/remake/hair-back-design.svg",
+                  "itemId": "deepseek-hair",
+                  "key": "deepseek-hair-0",
+                  "name": "深海渐蓝长卷发",
+                  "reviewFamilyHash": "81991eb04c7b8ce85b03aa62782895ea963cd88fc5634f29b0ac18062428e673",
+                  "slot": "hair",
+                  "src": "/assets-classic/deepseek/remake/hair-back.png",
+                  "svg": "/assets-classic/deepseek/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "bbd2127fb6c7854ecb161242105a7de8416c6be8f10b6b45887a7487acc89590",
+                  "design": "/assets-classic/deepseek/remake/top-body-design.svg",
+                  "itemId": "deepseek-top",
+                  "key": "deepseek-top-0",
+                  "name": "海盐女仆上衣",
+                  "reviewFamilyHash": "a25dbee8764d549c0f35263ee839d8b0def3b36686b9ff41d1c879833311dc51",
+                  "slot": "top",
+                  "src": "/assets-classic/deepseek/remake/top-body.png",
+                  "svg": "/assets-classic/deepseek/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "2671406924f8acc2f160ebb3aa4c7d3a8324201e313cfec12a680d439fe3c10e",
+                  "design": "/assets-classic/deepseek/remake/hair-front-design.svg",
+                  "itemId": "deepseek-hair",
+                  "key": "deepseek-hair-1",
+                  "name": "深海渐蓝长卷发",
+                  "reviewFamilyHash": "81991eb04c7b8ce85b03aa62782895ea963cd88fc5634f29b0ac18062428e673",
+                  "slot": "hair",
+                  "src": "/assets-classic/deepseek/remake/hair-front.png",
+                  "svg": "/assets-classic/deepseek/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                },
+                {
+                  "artworkHash": "258c9af6563064b4b77b984038a18f2a92d9734781f15b174f8a40ebb290f497",
+                  "design": "/assets-classic/deepseek/remake/top-arms-design.svg",
+                  "itemId": "deepseek-top",
+                  "key": "deepseek-top-1",
+                  "name": "海盐女仆上衣",
+                  "reviewFamilyHash": "a25dbee8764d549c0f35263ee839d8b0def3b36686b9ff41d1c879833311dc51",
+                  "slot": "top",
+                  "src": "/assets-classic/deepseek/remake/top-arms.png",
+                  "svg": "/assets-classic/deepseek/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/upper2-evidence.json",
+              "recommendations": [
+                "R26唯一最终轮：保肌腹/右托掌细面与碗接点，局部整理左指布短压影/掌根转向和右桥袖腔短厚边，不按default点削肉。",
+                "白胸主面随胸廓→束腰收放，围裙下端/蓝裙翻层补主谷连续与短厚边，不用更多碎亮点替布层。",
+                "发与同蓝袖保持各自主谷/短叠影，细亮簇不串邻层；保normal中央长刘海/左展开大层，不改成参考源发型。",
+                "原生R04掌面不使AI桥/袖腔继承100，量测原不利/对应未知不由新hash自动清。",
+                "按用户两轮收尾，R26真实IAB复评后停止自动改图；不足98/未审六组/旧技术未知如实保留，不开第三轮。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/upper2.png"
+              ]
+            },
+            {
+              "caseId": "deepseek-upper2-sb8f325e0-a0-f1",
+              "fixtureIndex": 1,
+              "score": 90.75,
+              "weightedRaw": 90.75,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 91,
+                  "weight": 20,
+                  "reason": "例2街景竖吉他：吉他保留原生不用握，衣腰/袖腔比旧有层；掌布短压影和腰裤接口厚度仍硬，同蓝发袖部分亮簇互杂。"
+                },
+                "proportionConnection": {
+                  "score": 92,
+                  "weight": 25,
+                  "reason": "例2街景竖吉他：吉他保留原生不用握，衣腰/袖腔比旧有层；掌布短压影和腰裤接口厚度仍硬，同蓝发袖部分亮簇互杂。"
+                },
+                "materialColor": {
+                  "score": 88,
+                  "weight": 15,
+                  "reason": "例2街景竖吉他：吉他保留原生不用握，衣腰/袖腔比旧有层；掌布短压影和腰裤接口厚度仍硬，同蓝发袖部分亮簇互杂。"
+                },
+                "blingeePixel": {
+                  "score": 90,
+                  "weight": 20,
+                  "reason": "例2街景竖吉他：吉他保留原生不用握，衣腰/袖腔比旧有层；掌布短压影和腰裤接口厚度仍硬，同蓝发袖部分亮簇互杂。"
+                },
+                "occlusionContact": {
+                  "score": 92,
+                  "weight": 15,
+                  "reason": "例2街景竖吉他：吉他保留原生不用握，衣腰/袖腔比旧有层；掌布短压影和腰裤接口厚度仍硬，同蓝发袖部分亮簇互杂。"
+                },
+                "canvasReadability": {
+                  "score": 91,
+                  "weight": 5,
+                  "reason": "例2街景竖吉他：吉他保留原生不用握，衣腰/袖腔比旧有层；掌布短压影和腰裤接口厚度仍硬，同蓝发袖部分亮簇互杂。"
+                }
+              },
+              "reason": "例2街景竖吉他：吉他保留原生不用握，衣腰/袖腔比旧有层；掌布短压影和腰裤接口厚度仍硬，同蓝发袖部分亮簇互杂。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-15",
+                "back": "native-back-7",
+                "background": "native-background-5",
+                "bottom": "native-bottom-20",
+                "effect": "native-effect-20",
+                "face": "native-face-5",
+                "hair": "native-hair-19",
+                "headwear": "native-headwear-4",
+                "legs": "native-legs-20",
+                "prop": "native-prop-16",
+                "top": "native-top-10"
+              },
+              "aiSelection": {
+                "aura": "native-aura-15",
+                "back": "native-back-7",
+                "background": "native-background-5",
+                "bottom": "native-bottom-20",
+                "effect": "native-effect-20",
+                "face": "native-face-5",
+                "hair": "deepseek-hair",
+                "headwear": "native-headwear-4",
+                "legs": "native-legs-20",
+                "prop": "native-prop-16",
+                "top": "deepseek-top"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "731ca913e42ef5233149963b91b5d0bbee88317b048435462dd4a17703b872d1",
+                  "design": "/assets-classic/deepseek/remake/hair-back-design.svg",
+                  "itemId": "deepseek-hair",
+                  "key": "deepseek-hair-0",
+                  "name": "深海渐蓝长卷发",
+                  "reviewFamilyHash": "81991eb04c7b8ce85b03aa62782895ea963cd88fc5634f29b0ac18062428e673",
+                  "slot": "hair",
+                  "src": "/assets-classic/deepseek/remake/hair-back.png",
+                  "svg": "/assets-classic/deepseek/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "bbd2127fb6c7854ecb161242105a7de8416c6be8f10b6b45887a7487acc89590",
+                  "design": "/assets-classic/deepseek/remake/top-body-design.svg",
+                  "itemId": "deepseek-top",
+                  "key": "deepseek-top-0",
+                  "name": "海盐女仆上衣",
+                  "reviewFamilyHash": "a25dbee8764d549c0f35263ee839d8b0def3b36686b9ff41d1c879833311dc51",
+                  "slot": "top",
+                  "src": "/assets-classic/deepseek/remake/top-body.png",
+                  "svg": "/assets-classic/deepseek/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "2671406924f8acc2f160ebb3aa4c7d3a8324201e313cfec12a680d439fe3c10e",
+                  "design": "/assets-classic/deepseek/remake/hair-front-design.svg",
+                  "itemId": "deepseek-hair",
+                  "key": "deepseek-hair-1",
+                  "name": "深海渐蓝长卷发",
+                  "reviewFamilyHash": "81991eb04c7b8ce85b03aa62782895ea963cd88fc5634f29b0ac18062428e673",
+                  "slot": "hair",
+                  "src": "/assets-classic/deepseek/remake/hair-front.png",
+                  "svg": "/assets-classic/deepseek/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                },
+                {
+                  "artworkHash": "258c9af6563064b4b77b984038a18f2a92d9734781f15b174f8a40ebb290f497",
+                  "design": "/assets-classic/deepseek/remake/top-arms-design.svg",
+                  "itemId": "deepseek-top",
+                  "key": "deepseek-top-1",
+                  "name": "海盐女仆上衣",
+                  "reviewFamilyHash": "a25dbee8764d549c0f35263ee839d8b0def3b36686b9ff41d1c879833311dc51",
+                  "slot": "top",
+                  "src": "/assets-classic/deepseek/remake/top-arms.png",
+                  "svg": "/assets-classic/deepseek/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/upper2-evidence.json",
+              "recommendations": [
+                "R26唯一最终轮：保肌腹/右托掌细面与碗接点，局部整理左指布短压影/掌根转向和右桥袖腔短厚边，不按default点削肉。",
+                "白胸主面随胸廓→束腰收放，围裙下端/蓝裙翻层补主谷连续与短厚边，不用更多碎亮点替布层。",
+                "发与同蓝袖保持各自主谷/短叠影，细亮簇不串邻层；保normal中央长刘海/左展开大层，不改成参考源发型。",
+                "原生R04掌面不使AI桥/袖腔继承100，量测原不利/对应未知不由新hash自动清。",
+                "按用户两轮收尾，R26真实IAB复评后停止自动改图；不足98/未审六组/旧技术未知如实保留，不开第三轮。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/upper2-segment-02-efa9d3a99e.png"
+              ]
+            },
+            {
+              "caseId": "deepseek-upper2-sb8f325e0-a0-f2",
+              "fixtureIndex": 2,
+              "score": 90.65,
+              "weightedRaw": 90.65,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 91,
+                  "weight": 20,
+                  "reason": "例3蓝闪腰花：只评露出侧袖/衣腰/掌，腰花不需抓；短厚边和接口共曲面仍不足，发卷/袖主谷层级未尽。"
+                },
+                "proportionConnection": {
+                  "score": 92,
+                  "weight": 25,
+                  "reason": "例3蓝闪腰花：只评露出侧袖/衣腰/掌，腰花不需抓；短厚边和接口共曲面仍不足，发卷/袖主谷层级未尽。"
+                },
+                "materialColor": {
+                  "score": 88,
+                  "weight": 15,
+                  "reason": "例3蓝闪腰花：只评露出侧袖/衣腰/掌，腰花不需抓；短厚边和接口共曲面仍不足，发卷/袖主谷层级未尽。"
+                },
+                "blingeePixel": {
+                  "score": 90,
+                  "weight": 20,
+                  "reason": "例3蓝闪腰花：只评露出侧袖/衣腰/掌，腰花不需抓；短厚边和接口共曲面仍不足，发卷/袖主谷层级未尽。"
+                },
+                "occlusionContact": {
+                  "score": 92,
+                  "weight": 15,
+                  "reason": "例3蓝闪腰花：只评露出侧袖/衣腰/掌，腰花不需抓；短厚边和接口共曲面仍不足，发卷/袖主谷层级未尽。"
+                },
+                "canvasReadability": {
+                  "score": 89,
+                  "weight": 5,
+                  "reason": "例3蓝闪腰花：只评露出侧袖/衣腰/掌，腰花不需抓；短厚边和接口共曲面仍不足，发卷/袖主谷层级未尽。"
+                }
+              },
+              "reason": "例3蓝闪腰花：只评露出侧袖/衣腰/掌，腰花不需抓；短厚边和接口共曲面仍不足，发卷/袖主谷层级未尽。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": "原生蓝闪遮局部，仅评可见。",
+              "scoredVisibleOnly": true,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-1",
+                "back": "native-back-10",
+                "background": "native-background-3",
+                "bottom": "native-bottom-5",
+                "effect": "native-effect-8",
+                "face": "native-face-10",
+                "hair": "native-hair-13",
+                "headwear": "native-headwear-13",
+                "legs": "native-legs-5",
+                "prop": "native-prop-6",
+                "top": "native-top-17"
+              },
+              "aiSelection": {
+                "aura": "native-aura-1",
+                "back": "native-back-10",
+                "background": "native-background-3",
+                "bottom": "native-bottom-5",
+                "effect": "native-effect-8",
+                "face": "native-face-10",
+                "hair": "deepseek-hair",
+                "headwear": "native-headwear-13",
+                "legs": "native-legs-5",
+                "prop": "native-prop-6",
+                "top": "deepseek-top"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "731ca913e42ef5233149963b91b5d0bbee88317b048435462dd4a17703b872d1",
+                  "design": "/assets-classic/deepseek/remake/hair-back-design.svg",
+                  "itemId": "deepseek-hair",
+                  "key": "deepseek-hair-0",
+                  "name": "深海渐蓝长卷发",
+                  "reviewFamilyHash": "81991eb04c7b8ce85b03aa62782895ea963cd88fc5634f29b0ac18062428e673",
+                  "slot": "hair",
+                  "src": "/assets-classic/deepseek/remake/hair-back.png",
+                  "svg": "/assets-classic/deepseek/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "bbd2127fb6c7854ecb161242105a7de8416c6be8f10b6b45887a7487acc89590",
+                  "design": "/assets-classic/deepseek/remake/top-body-design.svg",
+                  "itemId": "deepseek-top",
+                  "key": "deepseek-top-0",
+                  "name": "海盐女仆上衣",
+                  "reviewFamilyHash": "a25dbee8764d549c0f35263ee839d8b0def3b36686b9ff41d1c879833311dc51",
+                  "slot": "top",
+                  "src": "/assets-classic/deepseek/remake/top-body.png",
+                  "svg": "/assets-classic/deepseek/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "2671406924f8acc2f160ebb3aa4c7d3a8324201e313cfec12a680d439fe3c10e",
+                  "design": "/assets-classic/deepseek/remake/hair-front-design.svg",
+                  "itemId": "deepseek-hair",
+                  "key": "deepseek-hair-1",
+                  "name": "深海渐蓝长卷发",
+                  "reviewFamilyHash": "81991eb04c7b8ce85b03aa62782895ea963cd88fc5634f29b0ac18062428e673",
+                  "slot": "hair",
+                  "src": "/assets-classic/deepseek/remake/hair-front.png",
+                  "svg": "/assets-classic/deepseek/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                },
+                {
+                  "artworkHash": "258c9af6563064b4b77b984038a18f2a92d9734781f15b174f8a40ebb290f497",
+                  "design": "/assets-classic/deepseek/remake/top-arms-design.svg",
+                  "itemId": "deepseek-top",
+                  "key": "deepseek-top-1",
+                  "name": "海盐女仆上衣",
+                  "reviewFamilyHash": "a25dbee8764d549c0f35263ee839d8b0def3b36686b9ff41d1c879833311dc51",
+                  "slot": "top",
+                  "src": "/assets-classic/deepseek/remake/top-arms.png",
+                  "svg": "/assets-classic/deepseek/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/upper2-evidence.json",
+              "recommendations": [
+                "R26唯一最终轮：保肌腹/右托掌细面与碗接点，局部整理左指布短压影/掌根转向和右桥袖腔短厚边，不按default点削肉。",
+                "白胸主面随胸廓→束腰收放，围裙下端/蓝裙翻层补主谷连续与短厚边，不用更多碎亮点替布层。",
+                "发与同蓝袖保持各自主谷/短叠影，细亮簇不串邻层；保normal中央长刘海/左展开大层，不改成参考源发型。",
+                "原生R04掌面不使AI桥/袖腔继承100，量测原不利/对应未知不由新hash自动清。",
+                "按用户两轮收尾，R26真实IAB复评后停止自动改图；不足98/未审六组/旧技术未知如实保留，不开第三轮。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/upper2-segment-03-ec74fd2969.png"
+              ]
+            },
+            {
+              "caseId": "deepseek-upper2-sb8f325e0-a0-f3",
+              "fixtureIndex": 3,
+              "score": 90.4,
+              "weightedRaw": 90.4,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 91,
+                  "weight": 20,
+                  "reason": "例4蓝景花束：花遮胸腰，不推隐藏握点；露出袖/掌/腰口仍欠短承压、袖腔及下装共曲面，未以花遮掩授98。"
+                },
+                "proportionConnection": {
+                  "score": 92,
+                  "weight": 25,
+                  "reason": "例4蓝景花束：花遮胸腰，不推隐藏握点；露出袖/掌/腰口仍欠短承压、袖腔及下装共曲面，未以花遮掩授98。"
+                },
+                "materialColor": {
+                  "score": 88,
+                  "weight": 15,
+                  "reason": "例4蓝景花束：花遮胸腰，不推隐藏握点；露出袖/掌/腰口仍欠短承压、袖腔及下装共曲面，未以花遮掩授98。"
+                },
+                "blingeePixel": {
+                  "score": 90,
+                  "weight": 20,
+                  "reason": "例4蓝景花束：花遮胸腰，不推隐藏握点；露出袖/掌/腰口仍欠短承压、袖腔及下装共曲面，未以花遮掩授98。"
+                },
+                "occlusionContact": {
+                  "score": 92,
+                  "weight": 15,
+                  "reason": "例4蓝景花束：花遮胸腰，不推隐藏握点；露出袖/掌/腰口仍欠短承压、袖腔及下装共曲面，未以花遮掩授98。"
+                },
+                "canvasReadability": {
+                  "score": 84,
+                  "weight": 5,
+                  "reason": "例4蓝景花束：花遮胸腰，不推隐藏握点；露出袖/掌/腰口仍欠短承压、袖腔及下装共曲面，未以花遮掩授98。"
+                }
+              },
+              "reason": "例4蓝景花束：花遮胸腰，不推隐藏握点；露出袖/掌/腰口仍欠短承压、袖腔及下装共曲面，未以花遮掩授98。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": "花束遮胸腰大部，仅评可见。",
+              "scoredVisibleOnly": true,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-13",
+                "back": "native-back-12",
+                "background": "native-background-2",
+                "bottom": "native-bottom-13",
+                "effect": "native-effect-7",
+                "face": "native-face-12",
+                "hair": "native-hair-12",
+                "headwear": "native-headwear-12",
+                "legs": "native-legs-13",
+                "prop": "native-prop-1",
+                "top": "native-top-5"
+              },
+              "aiSelection": {
+                "aura": "native-aura-13",
+                "back": "native-back-12",
+                "background": "native-background-2",
+                "bottom": "native-bottom-13",
+                "effect": "native-effect-7",
+                "face": "native-face-12",
+                "hair": "deepseek-hair",
+                "headwear": "native-headwear-12",
+                "legs": "native-legs-13",
+                "prop": "native-prop-1",
+                "top": "deepseek-top"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "731ca913e42ef5233149963b91b5d0bbee88317b048435462dd4a17703b872d1",
+                  "design": "/assets-classic/deepseek/remake/hair-back-design.svg",
+                  "itemId": "deepseek-hair",
+                  "key": "deepseek-hair-0",
+                  "name": "深海渐蓝长卷发",
+                  "reviewFamilyHash": "81991eb04c7b8ce85b03aa62782895ea963cd88fc5634f29b0ac18062428e673",
+                  "slot": "hair",
+                  "src": "/assets-classic/deepseek/remake/hair-back.png",
+                  "svg": "/assets-classic/deepseek/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "bbd2127fb6c7854ecb161242105a7de8416c6be8f10b6b45887a7487acc89590",
+                  "design": "/assets-classic/deepseek/remake/top-body-design.svg",
+                  "itemId": "deepseek-top",
+                  "key": "deepseek-top-0",
+                  "name": "海盐女仆上衣",
+                  "reviewFamilyHash": "a25dbee8764d549c0f35263ee839d8b0def3b36686b9ff41d1c879833311dc51",
+                  "slot": "top",
+                  "src": "/assets-classic/deepseek/remake/top-body.png",
+                  "svg": "/assets-classic/deepseek/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "2671406924f8acc2f160ebb3aa4c7d3a8324201e313cfec12a680d439fe3c10e",
+                  "design": "/assets-classic/deepseek/remake/hair-front-design.svg",
+                  "itemId": "deepseek-hair",
+                  "key": "deepseek-hair-1",
+                  "name": "深海渐蓝长卷发",
+                  "reviewFamilyHash": "81991eb04c7b8ce85b03aa62782895ea963cd88fc5634f29b0ac18062428e673",
+                  "slot": "hair",
+                  "src": "/assets-classic/deepseek/remake/hair-front.png",
+                  "svg": "/assets-classic/deepseek/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                },
+                {
+                  "artworkHash": "258c9af6563064b4b77b984038a18f2a92d9734781f15b174f8a40ebb290f497",
+                  "design": "/assets-classic/deepseek/remake/top-arms-design.svg",
+                  "itemId": "deepseek-top",
+                  "key": "deepseek-top-1",
+                  "name": "海盐女仆上衣",
+                  "reviewFamilyHash": "a25dbee8764d549c0f35263ee839d8b0def3b36686b9ff41d1c879833311dc51",
+                  "slot": "top",
+                  "src": "/assets-classic/deepseek/remake/top-arms.png",
+                  "svg": "/assets-classic/deepseek/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/upper2-evidence.json",
+              "recommendations": [
+                "R26唯一最终轮：保肌腹/右托掌细面与碗接点，局部整理左指布短压影/掌根转向和右桥袖腔短厚边，不按default点削肉。",
+                "白胸主面随胸廓→束腰收放，围裙下端/蓝裙翻层补主谷连续与短厚边，不用更多碎亮点替布层。",
+                "发与同蓝袖保持各自主谷/短叠影，细亮簇不串邻层；保normal中央长刘海/左展开大层，不改成参考源发型。",
+                "原生R04掌面不使AI桥/袖腔继承100，量测原不利/对应未知不由新hash自动清。",
+                "按用户两轮收尾，R26真实IAB复评后停止自动改图；不足98/未审六组/旧技术未知如实保留，不开第三轮。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/upper2-segment-04-dffc4421e7.png"
+              ]
+            },
+            {
+              "caseId": "deepseek-upper2-sb8f325e0-a0-f4",
+              "fixtureIndex": 4,
+              "score": 90.75,
+              "weightedRaw": 90.75,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 91,
+                  "weight": 20,
+                  "reason": "例5草地红帽：新托掌肉面和袖口可读，未选自身碗不要求出现；白胸/束腰到原生裙口的厚度与发袖主次仍弱。"
+                },
+                "proportionConnection": {
+                  "score": 92,
+                  "weight": 25,
+                  "reason": "例5草地红帽：新托掌肉面和袖口可读，未选自身碗不要求出现；白胸/束腰到原生裙口的厚度与发袖主次仍弱。"
+                },
+                "materialColor": {
+                  "score": 88,
+                  "weight": 15,
+                  "reason": "例5草地红帽：新托掌肉面和袖口可读，未选自身碗不要求出现；白胸/束腰到原生裙口的厚度与发袖主次仍弱。"
+                },
+                "blingeePixel": {
+                  "score": 90,
+                  "weight": 20,
+                  "reason": "例5草地红帽：新托掌肉面和袖口可读，未选自身碗不要求出现；白胸/束腰到原生裙口的厚度与发袖主次仍弱。"
+                },
+                "occlusionContact": {
+                  "score": 92,
+                  "weight": 15,
+                  "reason": "例5草地红帽：新托掌肉面和袖口可读，未选自身碗不要求出现；白胸/束腰到原生裙口的厚度与发袖主次仍弱。"
+                },
+                "canvasReadability": {
+                  "score": 91,
+                  "weight": 5,
+                  "reason": "例5草地红帽：新托掌肉面和袖口可读，未选自身碗不要求出现；白胸/束腰到原生裙口的厚度与发袖主次仍弱。"
+                }
+              },
+              "reason": "例5草地红帽：新托掌肉面和袖口可读，未选自身碗不要求出现；白胸/束腰到原生裙口的厚度与发袖主次仍弱。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-18",
+                "back": "native-back-17",
+                "background": "native-background-12",
+                "bottom": "native-bottom-1",
+                "effect": "native-effect-16",
+                "face": "native-face-9",
+                "hair": "native-hair-3",
+                "headwear": "native-headwear-19",
+                "legs": "native-legs-1",
+                "prop": "native-prop-20",
+                "top": "native-top-9"
+              },
+              "aiSelection": {
+                "aura": "native-aura-18",
+                "back": "native-back-17",
+                "background": "native-background-12",
+                "bottom": "native-bottom-1",
+                "effect": "native-effect-16",
+                "face": "native-face-9",
+                "hair": "deepseek-hair",
+                "headwear": "native-headwear-19",
+                "legs": "native-legs-1",
+                "prop": "native-prop-20",
+                "top": "deepseek-top"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "731ca913e42ef5233149963b91b5d0bbee88317b048435462dd4a17703b872d1",
+                  "design": "/assets-classic/deepseek/remake/hair-back-design.svg",
+                  "itemId": "deepseek-hair",
+                  "key": "deepseek-hair-0",
+                  "name": "深海渐蓝长卷发",
+                  "reviewFamilyHash": "81991eb04c7b8ce85b03aa62782895ea963cd88fc5634f29b0ac18062428e673",
+                  "slot": "hair",
+                  "src": "/assets-classic/deepseek/remake/hair-back.png",
+                  "svg": "/assets-classic/deepseek/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "bbd2127fb6c7854ecb161242105a7de8416c6be8f10b6b45887a7487acc89590",
+                  "design": "/assets-classic/deepseek/remake/top-body-design.svg",
+                  "itemId": "deepseek-top",
+                  "key": "deepseek-top-0",
+                  "name": "海盐女仆上衣",
+                  "reviewFamilyHash": "a25dbee8764d549c0f35263ee839d8b0def3b36686b9ff41d1c879833311dc51",
+                  "slot": "top",
+                  "src": "/assets-classic/deepseek/remake/top-body.png",
+                  "svg": "/assets-classic/deepseek/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "2671406924f8acc2f160ebb3aa4c7d3a8324201e313cfec12a680d439fe3c10e",
+                  "design": "/assets-classic/deepseek/remake/hair-front-design.svg",
+                  "itemId": "deepseek-hair",
+                  "key": "deepseek-hair-1",
+                  "name": "深海渐蓝长卷发",
+                  "reviewFamilyHash": "81991eb04c7b8ce85b03aa62782895ea963cd88fc5634f29b0ac18062428e673",
+                  "slot": "hair",
+                  "src": "/assets-classic/deepseek/remake/hair-front.png",
+                  "svg": "/assets-classic/deepseek/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                },
+                {
+                  "artworkHash": "258c9af6563064b4b77b984038a18f2a92d9734781f15b174f8a40ebb290f497",
+                  "design": "/assets-classic/deepseek/remake/top-arms-design.svg",
+                  "itemId": "deepseek-top",
+                  "key": "deepseek-top-1",
+                  "name": "海盐女仆上衣",
+                  "reviewFamilyHash": "a25dbee8764d549c0f35263ee839d8b0def3b36686b9ff41d1c879833311dc51",
+                  "slot": "top",
+                  "src": "/assets-classic/deepseek/remake/top-arms.png",
+                  "svg": "/assets-classic/deepseek/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/upper2-evidence.json",
+              "recommendations": [
+                "R26唯一最终轮：保肌腹/右托掌细面与碗接点，局部整理左指布短压影/掌根转向和右桥袖腔短厚边，不按default点削肉。",
+                "白胸主面随胸廓→束腰收放，围裙下端/蓝裙翻层补主谷连续与短厚边，不用更多碎亮点替布层。",
+                "发与同蓝袖保持各自主谷/短叠影，细亮簇不串邻层；保normal中央长刘海/左展开大层，不改成参考源发型。",
+                "原生R04掌面不使AI桥/袖腔继承100，量测原不利/对应未知不由新hash自动清。",
+                "按用户两轮收尾，R26真实IAB复评后停止自动改图；不足98/未审六组/旧技术未知如实保留，不开第三轮。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/upper2-segment-05-24050183d2.png"
+              ]
+            }
+          ],
+          "reasons": [
+            "R9左腕掌跟真实增肉，右R04式可见掌/指细肤面与碗底接点成立，AI腕桥连续；不沿用R8浅舟掌指控。",
+            "左低腕掌x34..44/y129..140仍较整块浅面，指布/袖口短压影和掌跟转向不足；紧凑短指本身不扣。",
+            "右腕桥/袖口x99..108/y108..119连贯，碗负载下的短转面/开腔厚边仍弱，保已认可掌像素和接点。",
+            "R8肌腹/肘前/近端肉面与连续腰胯股根保持，腿足支撑可读；本轮未新独立量测，不按default单点削肉或清历史。",
+            "R26唯一最终轮：保肌腹/右托掌细面与碗接点，局部整理左指布短压影/掌根转向和右桥袖腔短厚边，不按default点削肉。",
+            "白胸主面随胸廓→束腰收放，围裙下端/蓝裙翻层补主谷连续与短厚边，不用更多碎亮点替布层。",
+            "发与同蓝袖保持各自主谷/短叠影，细亮簇不串邻层；保normal中央长刘海/左展开大层，不改成参考源发型。",
+            "原生R04掌面不使AI桥/袖腔继承100，量测原不利/对应未知不由新hash自动清。",
+            "按用户两轮收尾，R26真实IAB复评后停止自动改图；不足98/未审六组/旧技术未知如实保留，不开第三轮。"
+          ],
+          "recommendations": [
+            "R26唯一最终轮：保肌腹/右托掌细面与碗接点，局部整理左指布短压影/掌根转向和右桥袖腔短厚边，不按default点削肉。",
+            "白胸主面随胸廓→束腰收放，围裙下端/蓝裙翻层补主谷连续与短厚边，不用更多碎亮点替布层。",
+            "发与同蓝袖保持各自主谷/短叠影，细亮簇不串邻层；保normal中央长刘海/左展开大层，不改成参考源发型。",
+            "原生R04掌面不使AI桥/袖腔继承100，量测原不利/对应未知不由新hash自动清。",
+            "按用户两轮收尾，R26真实IAB复评后停止自动改图；不足98/未审六组/旧技术未知如实保留，不开第三轮。"
+          ],
+          "evidence": {
+            "reactEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/upper2-evidence.json",
+            "reactScreenshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/upper2.png",
+            "reactScreenshotSha256": "814b9db9267a3b91cddefd1556540b1b767b84269c7ad3e9a4a96663394c4183",
+            "captureBrowser": "Codex in-app browser",
+            "failedImages": [],
+            "actuallyViewed": true,
+            "reactScreenshots": [
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/upper2.png",
+                "sha256": "814b9db9267a3b91cddefd1556540b1b767b84269c7ad3e9a4a96663394c4183",
+                "visible": [
+                  {
+                    "bottom": 424.046875,
+                    "caseId": "deepseek-upper2-sb8f325e0-a0-f0",
+                    "height": 312.921875,
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 111.125,
+                    "width": 160
+                  },
+                  {
+                    "bottom": 424.046875,
+                    "caseId": "deepseek-upper2-sb8f325e0-a0-f0",
+                    "height": 312.921875,
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 111.125,
+                    "width": 160
+                  }
+                ]
+              },
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/upper2-segment-02-efa9d3a99e.png",
+                "sha256": "efa9d3a99e933151a0acb9ed1805b5719142ff542025a261fb775e89c22d5fb3",
+                "visible": [
+                  {
+                    "bottom": 423.96875,
+                    "caseId": "deepseek-upper2-sb8f325e0-a0-f1",
+                    "height": 312.921875,
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 111.046875,
+                    "width": 160
+                  },
+                  {
+                    "bottom": 423.96875,
+                    "caseId": "deepseek-upper2-sb8f325e0-a0-f1",
+                    "height": 312.921875,
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 111.046875,
+                    "width": 160
+                  }
+                ]
+              },
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/upper2-segment-03-ec74fd2969.png",
+                "sha256": "ec74fd2969f2de39b873504784befdf07edbce132783a957bf42536d7aa4b9ab",
+                "visible": [
+                  {
+                    "bottom": 424.890625,
+                    "caseId": "deepseek-upper2-sb8f325e0-a0-f2",
+                    "height": 312.921875,
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 111.96875,
+                    "width": 160
+                  },
+                  {
+                    "bottom": 424.890625,
+                    "caseId": "deepseek-upper2-sb8f325e0-a0-f2",
+                    "height": 312.921875,
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 111.96875,
+                    "width": 160
+                  }
+                ]
+              },
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/upper2-segment-04-dffc4421e7.png",
+                "sha256": "dffc4421e72ba7f635e6fb4bed9d18967e506a49d73f0103a6c83a48a374c0b9",
+                "visible": [
+                  {
+                    "bottom": 424.8125,
+                    "caseId": "deepseek-upper2-sb8f325e0-a0-f3",
+                    "height": 312.921875,
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 111.890625,
+                    "width": 160
+                  },
+                  {
+                    "bottom": 424.8125,
+                    "caseId": "deepseek-upper2-sb8f325e0-a0-f3",
+                    "height": 312.921875,
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 111.890625,
+                    "width": 160
+                  }
+                ]
+              },
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/upper2-segment-05-24050183d2.png",
+                "sha256": "24050183d286cc3695a69c3c8a7f21edbb2a571c5abcd525634917520883b28b",
+                "visible": [
+                  {
+                    "bottom": 424.734375,
+                    "caseId": "deepseek-upper2-sb8f325e0-a0-f4",
+                    "height": 312.921875,
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 111.8125,
+                    "width": 160
+                  },
+                  {
+                    "bottom": 424.734375,
+                    "caseId": "deepseek-upper2-sb8f325e0-a0-f4",
+                    "height": 312.921875,
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 111.8125,
+                    "width": 160
+                  }
+                ]
+              }
+            ],
+            "actuallyViewedViaDiagnostic": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/deepseek-r9-upper2-from-browser-segments-2x.png",
+            "diagnosticIndex": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/deepseek-r9-segment-diagnostic-index.json",
+            "segmented": true,
+            "allNativeAiCasePairsActuallyViewed": true
+          },
+          "limitations": [
+            "Static only; no animation claim.",
+            "Native complete combinations remain100. Any AI-owned generated support is included with the AI; never inherits100.",
+            "原生蓝闪遮局部，仅评可见。",
+            "花束遮胸腰大部，仅评可见。"
+          ],
+          "layoutIntegrity": null
+        }
+      ]
+    }
+  },
+  "bodyDiagnostic": {
+    "status": "all20-visual-completed; requires-revision",
+    "reviewedBodyHash": "ade423196cf6812350f8ef89ae522c1e89d58ace6dc5417a0b1c9bceaf7a774d",
+    "confirmedVisualFindings": [
+      "R9左腕掌跟真实增肉，右R04式可见掌/指细肤面与碗底接点成立，AI腕桥连续；不沿用R8浅舟掌指控。",
+      "左低腕掌x34..44/y129..140仍较整块浅面，指布/袖口短压影和掌跟转向不足；紧凑短指本身不扣。",
+      "右腕桥/袖口x99..108/y108..119连贯，碗负载下的短转面/开腔厚边仍弱，保已认可掌像素和接点。",
+      "R8肌腹/肘前/近端肉面与连续腰胯股根保持，腿足支撑可读；本轮未新独立量测，不按default单点削肉或清历史。"
+    ]
+  },
+  "notReviewed": [
+    "其他六个必要多件组figure5/nearFull8/scene3/accessories3/skirt3/stride2仍pending，前三组失败，未冒充总验收。",
+    "独立可比体量技术守门未在本报告执行；已有尺寸未解/疑项不由本次视觉分清除。",
+    "动画未审。"
+  ],
+  "body": {
+    "reviewer": "classic_body_judge",
+    "score": 94,
+    "threshold": 98,
+    "passed": false,
+    "pending": false,
+    "requiresRevision": true,
+    "reviewedBodyHash": "ade423196cf6812350f8ef89ae522c1e89d58ace6dc5417a0b1c9bceaf7a774d",
+    "reviewedCompleteHash": "7895e19cbfdd63a0b55383d9e820d0e3bd7a5d698977e7a3237d7b77e6351d1a",
+    "seed": "closeout-r25-deepseek-body-w7wzvdw9",
+    "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+    "bodyCorpusHash": "3451692764c29845da8f6c5b579069c3f1bec6309b7b9765bcc11843167082c7",
+    "corpusSignature": "body-corpus-context-v1-13044fe9",
+    "coverage": {
+      "default": true,
+      "samplesViewed": 20,
+      "requiredSamples": 20,
+      "selectedIds": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20"
+      ],
+      "browserAllTwentyVerified": true
+    },
+    "aggregation": "Minimum of newly judged current default and all20. Older scores and author diagnostics are not inherited.",
+    "defaultComparison": {
+      "score": 96,
+      "passed": false,
+      "reasons": [
+        "R9左腕掌跟真实增肉，右R04式可见掌/指细肤面与碗底接点成立，AI腕桥连续；不沿用R8浅舟掌指控。",
+        "左低腕掌x34..44/y129..140仍较整块浅面，指布/袖口短压影和掌跟转向不足；紧凑短指本身不扣。",
+        "右腕桥/袖口x99..108/y108..119连贯，碗负载下的短转面/开腔厚边仍弱，保已认可掌像素和接点。",
+        "R8肌腹/肘前/近端肉面与连续腰胯股根保持，腿足支撑可读；本轮未新独立量测，不按default单点削肉或清历史。"
+      ],
+      "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-default-32dd201f0e.png"
+    },
+    "perSampleScores": [
+      {
+        "id": "01",
+        "sample": 1,
+        "label": "抱臂天使礼服",
+        "score": 95,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生交叠短压面自然，DS掌跟增肉，左指布/袖口短影仍少。"
+        ],
+        "regions": [
+          [
+            33,
+            94,
+            61,
+            140
+          ],
+          [
+            81,
+            94,
+            117,
+            122
+          ],
+          [
+            57,
+            126,
+            82,
+            164
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-01-cf9be045bd.png",
+        "evidenceSha256": "cf9be045bd2c0197f6449405522a150e05554387c4dacf49dbc4e228d82cb07c",
+        "source": "qq-show-classic/outfit/白色天使套装.gif",
+        "layers": [
+          "qq-show-classic/back-hair/白金蝴蝶结波浪长发.gif",
+          "qq-show-classic/outfit/白色天使套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/白金蝴蝶结波浪长发.gif"
+        ],
+        "nativeImageHash": "c0c31cf662e153e299a0ec392c8a518242385bccaba17a90609393f8b9e0024f",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "02",
+        "sample": 2,
+        "label": "蓝白捧花公主裙",
+        "score": 96,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "花掌可紧凑，DS右掌细面自然，腕桥袖腔短厚面不足。"
+        ],
+        "regions": [
+          [
+            33,
+            94,
+            61,
+            140
+          ],
+          [
+            81,
+            94,
+            117,
+            122
+          ],
+          [
+            57,
+            126,
+            82,
+            164
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-02-37b15aeb3d.png",
+        "evidenceSha256": "37b15aeb3df08bb3693761088838cd6481be81458d33f0a7adfd2168b89e4512",
+        "source": "qq-show-classic/outfit/白色公主裙黄色捧花套装.gif",
+        "layers": [
+          "qq-show-classic/back-hair/金色长卷发.gif",
+          "qq-show-classic/outfit/白色公主裙黄色捧花套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/金色长卷发.gif"
+        ],
+        "nativeImageHash": "59429f0f599cc8711a6b88e8472f7aa99f8f76dfee38a89d31f2e6d22e66025d",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "03",
+        "sample": 3,
+        "label": "薄荷裙抬手",
+        "score": 95,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "举指不同扣0，DS肌腹/掌根改善，左掌跟局部转向仍弱。"
+        ],
+        "regions": [
+          [
+            33,
+            94,
+            61,
+            140
+          ],
+          [
+            81,
+            94,
+            117,
+            122
+          ],
+          [
+            57,
+            126,
+            82,
+            164
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-03-6d40c3e6a2.png",
+        "evidenceSha256": "6d40c3e6a2678ea9620b1beb0e20f8f62084d4238806a2050408825b03f3580f",
+        "source": "qq-show-classic/outfit/薄荷裙套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/薄荷裙套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/粉紫双马尾.gif"
+        ],
+        "nativeImageHash": "ae902b32ef1eec9558c5516b375ed1d20b9da2e2ef9beeadcbed0852fa8285ae",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "04",
+        "sample": 4,
+        "label": "蓝白学院裙垂袖",
+        "score": 95,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生袖遮不推裸宽，DS可见腕桥/袖口短厚边少。"
+        ],
+        "regions": [
+          [
+            33,
+            94,
+            61,
+            140
+          ],
+          [
+            81,
+            94,
+            117,
+            122
+          ],
+          [
+            57,
+            126,
+            82,
+            164
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-04-59c1a88683.png",
+        "evidenceSha256": "59c1a886831bb2f793be397cea7e9ab92340230b4fbffb7235e5aec84ef0877e",
+        "source": "qq-show-classic/outfit/蓝白学院风连衣裙.gif",
+        "layers": [
+          "qq-show-classic/outfit/蓝白学院风连衣裙.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/黑色齐刘海麻花辫.gif"
+        ],
+        "nativeImageHash": "0bb87dbcc04e43d970312468cf6a70c2f3e599dcb7f9cd44afa8d6a626cc158d",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "05",
+        "sample": 5,
+        "label": "粉背心交叉腿",
+        "score": 95,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "错足/股根连续，DS新掌面改善，左掌布短压影不足。"
+        ],
+        "regions": [
+          [
+            33,
+            94,
+            61,
+            140
+          ],
+          [
+            81,
+            94,
+            117,
+            122
+          ],
+          [
+            57,
+            126,
+            82,
+            164
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-05-022763becd.png",
+        "evidenceSha256": "022763becd32828ea206d4f8e169fc65df8187e9166161fe86b6d5e075688e17",
+        "source": "qq-show-classic/outfit/粉色背心蓝裙套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/粉色背心蓝裙套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/红棕斜扎长发.gif"
+        ],
+        "nativeImageHash": "0562e149b22af6279fdc78c20021a393d0e38eb3875cb4f5fc80aa0ecaa49db3",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "06",
+        "sample": 6,
+        "label": "黄色开衩动势裙",
+        "score": 94,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "舞姿差扣0，DS右托掌认可，左指布和袖腔短面不足。"
+        ],
+        "regions": [
+          [
+            33,
+            94,
+            61,
+            140
+          ],
+          [
+            81,
+            94,
+            117,
+            122
+          ],
+          [
+            57,
+            126,
+            82,
+            164
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-06-f3ac7b3313.png",
+        "evidenceSha256": "f3ac7b3313867ee9a1dac53c2a323764ca165a585d17310575252834bfd1f1aa",
+        "source": "qq-show-classic/outfit/灵动开衩裙套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/灵动开衩裙套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/金棕波浪长发.gif"
+        ],
+        "nativeImageHash": "d7cd7c0c1ee129394de9247d9524425984c0af9cc4d61b828b5de466e4656f5a",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "07",
+        "sample": 7,
+        "label": "深蓝露肩低位交手",
+        "score": 95,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生低交掌有短体面，DS左掌增肉但较整块浅面。"
+        ],
+        "regions": [
+          [
+            33,
+            94,
+            61,
+            140
+          ],
+          [
+            81,
+            94,
+            117,
+            122
+          ],
+          [
+            57,
+            126,
+            82,
+            164
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-07-7ff1674067.png",
+        "evidenceSha256": "7ff16740670c4d9f5d12f92de51cfc0f1cbc6db95d543dd914c8112a961374a9",
+        "source": "qq-show-classic/outfit/深蓝一字肩连衣裙.gif",
+        "layers": [
+          "qq-show-classic/outfit/深蓝一字肩连衣裙.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/黑色侧扎长羊毛卷.gif"
+        ],
+        "nativeImageHash": "c255624cb7baa4049082f15e326dc89be47e73e679510d260c3274eb56bb8f9f",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "08",
+        "sample": 8,
+        "label": "黑红舞裙外展",
+        "score": 94,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生提布短压清楚，DS提点力褶在，掌指下短影不足。"
+        ],
+        "regions": [
+          [
+            33,
+            94,
+            61,
+            140
+          ],
+          [
+            81,
+            94,
+            117,
+            122
+          ],
+          [
+            57,
+            126,
+            82,
+            164
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-08-e7c7cb6430.png",
+        "evidenceSha256": "e7c7cb643053ef5c087e55c8f6b7eb7efe410c637562ff45ec1fbbcb545ee390",
+        "source": "qq-show-classic/outfit/翩翩起舞套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/翩翩起舞套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/红棕公主卷发.gif"
+        ],
+        "nativeImageHash": "fba21eaf6b1dca9acf3517f5f49b83e36212292ef596a0e1428e5aec27e9fa15",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "09",
+        "sample": 9,
+        "label": "碎花吊带牛仔持包",
+        "score": 95,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生提包短掌自然，DS右掌面可接受，AI腕桥衣腔仍弱。"
+        ],
+        "regions": [
+          [
+            33,
+            94,
+            61,
+            140
+          ],
+          [
+            81,
+            94,
+            117,
+            122
+          ],
+          [
+            57,
+            126,
+            82,
+            164
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-09-df8ee4c55f.png",
+        "evidenceSha256": "df8ee4c55f0c8bb84166e85a95fe1d55c28a059ed2fa10e211cabdd228c50d93",
+        "source": "qq-show-classic/outfit/白色碎花吊带牛仔套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/白色碎花吊带牛仔套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/深棕梨花头.gif"
+        ],
+        "nativeImageHash": "7d9023e477d336bcbc3d40a1ebbfce00e18c818128c385f3c579edd79a252d5d",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "10",
+        "sample": 10,
+        "label": "紫色礼裙侧收持花",
+        "score": 96,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "长裙不供裸腰真值，DS连贯，袖口/掌跟短转面仍少。"
+        ],
+        "regions": [
+          [
+            33,
+            94,
+            61,
+            140
+          ],
+          [
+            81,
+            94,
+            117,
+            122
+          ],
+          [
+            57,
+            126,
+            82,
+            164
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-10-a69a2f2897.png",
+        "evidenceSha256": "a69a2f2897253a3a15ad96e8a3bdfaf803523108db84d857d315181cf33f2e8d",
+        "source": "qq-show-classic/outfit/紫色礼裙花束套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/紫色礼裙花束套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/金棕雏菊发饰罗马卷.gif"
+        ],
+        "nativeImageHash": "97cc4b9f7392eef5769178ec8ec83bbe5d2866890248a2f5fdf3fb6639d26966",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "11",
+        "sample": 11,
+        "label": "薄荷绿盘腿坐姿",
+        "score": 96,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "坐姿不同扣0，DS肌腹/托掌改善，左指布短影少。"
+        ],
+        "regions": [
+          [
+            33,
+            94,
+            61,
+            140
+          ],
+          [
+            81,
+            94,
+            117,
+            122
+          ],
+          [
+            57,
+            126,
+            82,
+            164
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-11-38cc7b6eb7.png",
+        "evidenceSha256": "38cc7b6eb77a48ab5afc09a9a846e0cb8d98c731adb3b3cea7b48d064c01d5e1",
+        "source": "qq-show-classic/outfit/薄荷绿套装坐姿.gif",
+        "layers": [
+          "qq-show-classic/outfit/薄荷绿套装坐姿.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/棕色卷波波头.gif"
+        ],
+        "nativeImageHash": "1c8a1a789202f9b07fccc0c6a25ed4d62a5a6f766e557ebfc27aa9e236c29b8a",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "12",
+        "sample": 12,
+        "label": "抹茶旗袍椅坐",
+        "score": 96,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "旗袍椅子不推隐藏尺寸，DS腕桥/袖腔短厚面不足。"
+        ],
+        "regions": [
+          [
+            33,
+            94,
+            61,
+            140
+          ],
+          [
+            81,
+            94,
+            117,
+            122
+          ],
+          [
+            57,
+            126,
+            82,
+            164
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-12-073f6bfb92.png",
+        "evidenceSha256": "073f6bfb927c7baa5c2b27871824843b7275ab7295a67d6e1f2235e90029f352",
+        "source": "qq-show-classic/outfit/抹茶旗袍坐姿.gif",
+        "layers": [
+          "qq-show-classic/outfit/抹茶旗袍坐姿.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/棕咖黄月季发饰盘发.gif"
+        ],
+        "nativeImageHash": "f523574a47c5517e56de2555ecfb4845bc5eddca7864ae7272ee5d093975d841",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "13",
+        "sample": 13,
+        "label": "黄色短袖爱心坐姿",
+        "score": 95,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "不要求折腿坐，DS支撑主类在，掌跟/指布短转面仍弱。"
+        ],
+        "regions": [
+          [
+            33,
+            94,
+            61,
+            140
+          ],
+          [
+            81,
+            94,
+            117,
+            122
+          ],
+          [
+            57,
+            126,
+            82,
+            164
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-13-c1949bf5a8.png",
+        "evidenceSha256": "c1949bf5a8bf37fd846493b644ea1c42062932699a7b7d850d7ec8f1d934d8d5",
+        "source": "qq-show-classic/outfit/黄色短袖短裙爱心坐姿.gif",
+        "layers": [
+          "qq-show-classic/outfit/黄色短袖短裙爱心坐姿.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/黑色双丸子头.gif"
+        ],
+        "nativeImageHash": "f7c9e5fd22cb186e7f67e2f77f0829e656eef91b74f83def14c37560e597fd17",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "14",
+        "sample": 14,
+        "label": "粉礼裙花朵坐姿",
+        "score": 95,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生小花掌允许概括，DS非指少扣，短承压面不足。"
+        ],
+        "regions": [
+          [
+            33,
+            94,
+            61,
+            140
+          ],
+          [
+            81,
+            94,
+            117,
+            122
+          ],
+          [
+            57,
+            126,
+            82,
+            164
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-14-f19a02dbdf.png",
+        "evidenceSha256": "f19a02dbdf05ee8764f30a5673589efbccf6b07d125da0205334d5b942926cca",
+        "source": "qq-show-classic/outfit/浅粉礼裙花朵坐姿套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/浅粉礼裙花朵坐姿套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/粉色高马尾.gif"
+        ],
+        "nativeImageHash": "7deae5777a0bc52ea716fbe8e59c05e32cf1a32d1922b6b8e1d476065e8758b9",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "15",
+        "sample": 15,
+        "label": "秋千白纱悬坐",
+        "score": 95,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "不要求抓绳，DS近端饱满，远端/袖口短厚边仍弱。"
+        ],
+        "regions": [
+          [
+            33,
+            94,
+            61,
+            140
+          ],
+          [
+            81,
+            94,
+            117,
+            122
+          ],
+          [
+            57,
+            126,
+            82,
+            164
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-15-9243c86a81.png",
+        "evidenceSha256": "9243c86a8167dfb4f1dc1de991f34c69f7d99c510e1bd2ac7d434b515637b6a4",
+        "source": "qq-show-classic/outfit/秋千白色薄纱裙套装.gif",
+        "layers": [
+          "qq-show-classic/back-hair/深棕蝴蝶结斜刘海长发.gif",
+          "qq-show-classic/outfit/秋千白色薄纱裙套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/深棕蝴蝶结斜刘海长发.gif"
+        ],
+        "nativeImageHash": "6949b442eaeffae544840a252bfca0b8656c4f1c5703d80f5bdc0fdec02a093b",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "16",
+        "sample": 16,
+        "label": "牛仔背带持麦",
+        "score": 96,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生直臂/角阶允许，DS不因角阶本身扣，局部短面少。"
+        ],
+        "regions": [
+          [
+            33,
+            94,
+            61,
+            140
+          ],
+          [
+            81,
+            94,
+            117,
+            122
+          ],
+          [
+            57,
+            126,
+            82,
+            164
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-16-8c9f91f4bf.png",
+        "evidenceSha256": "8c9f91f4bfbfa681491a13fb075bbd220bf0c33df7eff13a27031d11c314cd57",
+        "source": "qq-show-classic/outfit/吊带牛仔裤麦克风套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/吊带牛仔裤麦克风套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/酒红双马尾.gif"
+        ],
+        "nativeImageHash": "fb624b9fbe3e853bb9b66582cfb5993197a1905ab4ff958cbb380621d662ec5b",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "17",
+        "sample": 17,
+        "label": "朱砂旗袍持扇",
+        "score": 95,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "不要求扇动作，DS托掌细面自然，腕桥短厚度仍弱。"
+        ],
+        "regions": [
+          [
+            33,
+            94,
+            61,
+            140
+          ],
+          [
+            81,
+            94,
+            117,
+            122
+          ],
+          [
+            57,
+            126,
+            82,
+            164
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-17-2adc72f5f8.png",
+        "evidenceSha256": "2adc72f5f8ff0a4cb0a8080558bdb1063605a2210c51574403388c64c6cb9382",
+        "source": "qq-show-classic/outfit/高开衩朱砂红旗袍.gif",
+        "layers": [
+          "qq-show-classic/outfit/高开衩朱砂红旗袍.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/玫瑰盘发.gif"
+        ],
+        "nativeImageHash": "12ad1f177551bf37e4949696fc63acece1b955f0f9227db92ce2830bf0e059f6",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "18",
+        "sample": 18,
+        "label": "紫短裙举臂长靴",
+        "score": 95,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "举臂不同扣0，DS肌腹改善，指布/掌根局部转向少。"
+        ],
+        "regions": [
+          [
+            33,
+            94,
+            61,
+            140
+          ],
+          [
+            81,
+            94,
+            117,
+            122
+          ],
+          [
+            57,
+            126,
+            82,
+            164
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-18-5ba90499a7.png",
+        "evidenceSha256": "5ba90499a7a7afd4a8e2c131e6e52def188e61f8005bea8caa92c8c1007c77bd",
+        "source": "qq-show-classic/outfit/背心紫短裙白长靴套装.gif",
+        "layers": [
+          "qq-show-classic/back-hair/动漫蓝蝴蝶结马尾.gif",
+          "qq-show-classic/outfit/背心紫短裙白长靴套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/动漫蓝蝴蝶结马尾.gif"
+        ],
+        "nativeImageHash": "9b525b93d6794ef7c03bc2e5e93f5c18f744752094e92ca8f5a1f8d235a410e8",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "19",
+        "sample": 19,
+        "label": "白短外套牛仔短裙",
+        "score": 96,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "错足承重可读，未新量测腿，DS桥接袖腔短厚面不足。"
+        ],
+        "regions": [
+          [
+            33,
+            94,
+            61,
+            140
+          ],
+          [
+            81,
+            94,
+            117,
+            122
+          ],
+          [
+            57,
+            126,
+            82,
+            164
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-19-6578abc368.png",
+        "evidenceSha256": "6578abc368a675910f97abdcf80e0fd9705844b48a76bef6cb7aa898f670c4a7",
+        "source": "qq-show-classic/outfit/白色短外套牛仔短裙套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/白色短外套牛仔短裙套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/棕橙长编发.gif"
+        ],
+        "nativeImageHash": "e570beb4dd7330818e30f0e9a99f1131054e7621d48447b311a19fc909c2c75e",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "20",
+        "sample": 20,
+        "label": "紫色蝴蝶仙子",
+        "score": 96,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "仙裙遮处不编真值，DS掌面改善，左指布短影/袖腔厚度不足。"
+        ],
+        "regions": [
+          [
+            33,
+            94,
+            61,
+            140
+          ],
+          [
+            81,
+            94,
+            117,
+            122
+          ],
+          [
+            57,
+            126,
+            82,
+            164
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-20-37ba063cf4.png",
+        "evidenceSha256": "37ba063cf42d92c7be78e1906c5143cd077793853c0f32a200471fd13e293c9b",
+        "source": "qq-show-classic/outfit/蝴蝶仙子套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/蝴蝶仙子套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/炫紫闪耀双马尾卷发.gif"
+        ],
+        "nativeImageHash": "70112fde68175423d693e4d6efd1d9ea8a0ec13422c4fa4e5dab1c3ce76fa702",
+        "poseDifferenceDeduction": 0
+      }
+    ],
+    "reasons": [
+      "R9左腕掌跟真实增肉，右R04式可见掌/指细肤面与碗底接点成立，AI腕桥连续；不沿用R8浅舟掌指控。",
+      "左低腕掌x34..44/y129..140仍较整块浅面，指布/袖口短压影和掌跟转向不足；紧凑短指本身不扣。",
+      "右腕桥/袖口x99..108/y108..119连贯，碗负载下的短转面/开腔厚边仍弱，保已认可掌像素和接点。",
+      "R8肌腹/肘前/近端肉面与连续腰胯股根保持，腿足支撑可读；本轮未新独立量测，不按default单点削肉或清历史。"
+    ],
+    "recommendations": [
+      "R26唯一最终轮：保肌腹/右托掌细面与碗接点，局部整理左指布短压影/掌根转向和右桥袖腔短厚边，不按default点削肉。",
+      "白胸主面随胸廓→束腰收放，围裙下端/蓝裙翻层补主谷连续与短厚边，不用更多碎亮点替布层。",
+      "发与同蓝袖保持各自主谷/短叠影，细亮簇不串邻层；保normal中央长刘海/左展开大层，不改成参考源发型。",
+      "原生R04掌面不使AI桥/袖腔继承100，量测原不利/对应未知不由新hash自动清。",
+      "按用户两轮收尾，R26真实IAB复评后停止自动改图；不足98/未审六组/旧技术未知如实保留，不开第三轮。"
+    ],
+    "limitations": [
+      "未执行新的独立尺寸量测，不声明全身<=5%或任何区域>5%。",
+      "当前视觉已失败98；新hash/原生手参考不自动解除历史技术阻断。",
+      "原生衣装不提供被遮住裸腰胯真值。"
+    ],
+    "evidence": {
+      "reactBodyImage": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-default-32dd201f0e.png",
+      "reactBodyImageSha256": "32dd201f0e5e6e516566ab48814f5cc6c59eeb39df473bdf3e04e1891ff62a49",
+      "reactBodySnapshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-evidence.json",
+      "reactFullImage": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/full.png",
+      "reactFullImageSha256": "013d82d9388feb18257da3f96efc0c0814590caa9cf19ff4e2893b8b6f43f6e6",
+      "reactFullSnapshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/full-evidence.json",
+      "actuallyViewed": [
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-default-32dd201f0e.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-01-cf9be045bd.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-02-37b15aeb3d.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-03-6d40c3e6a2.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-04-59c1a88683.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-05-022763becd.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-06-f3ac7b3313.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-07-7ff1674067.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-08-e7c7cb6430.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-09-df8ee4c55f.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-10-a69a2f2897.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-11-38cc7b6eb7.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-12-073f6bfb92.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-13-c1949bf5a8.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-14-f19a02dbdf.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-15-9243c86a81.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-16-8c9f91f4bf.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-17-2adc72f5f8.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-18-5ba90499a7.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-19-6578abc368.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-20-37ba063cf4.png"
+      ],
+      "diagnosticBody6x": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/deepseek-round08-body-6x.png",
+      "diagnosticNearestCrops": [],
+      "captureBrowser": "Codex in-app browser",
+      "failedImages": [],
+      "reactFullImages": [
+        {
+          "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/full.png",
+          "sha256": "013d82d9388feb18257da3f96efc0c0814590caa9cf19ff4e2893b8b6f43f6e6",
+          "images": [
+            {
+              "bottom": 350.703125,
+              "height": 226,
+              "index": 0,
+              "left": 28,
+              "right": 168,
+              "top": 124.703125,
+              "width": 140
+            },
+            {
+              "bottom": 350.703125,
+              "height": 226,
+              "index": 1,
+              "left": 180,
+              "right": 320,
+              "top": 124.703125,
+              "width": 140
+            },
+            {
+              "bottom": 350.703125,
+              "height": 226,
+              "index": 2,
+              "left": 332,
+              "right": 472,
+              "top": 124.703125,
+              "width": 140
+            }
+          ]
+        }
+      ],
+      "actualCorpusReadingMethod": "All20 immutable one-ID screenshots cropped by recorded bounds into five nearest2x reading sheets; no re-render or artwork edit.",
+      "diagnosticIndex": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/deepseek-r9-segment-diagnostic-index.json",
+      "diagnosticCorpusSheets": [
+        "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/deepseek-r9-body-corpus-sheet-1-2x.png",
+        "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/deepseek-r9-body-corpus-sheet-2-2x.png",
+        "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/deepseek-r9-body-corpus-sheet-3-2x.png",
+        "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/deepseek-r9-body-corpus-sheet-4-2x.png",
+        "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/deepseek-r9-body-corpus-sheet-5-2x.png"
+      ]
+    },
+    "evidenceIntegrity": {
+      "status": "all20-actually-viewed; immutable screenshot hashes verified",
+      "labelsActuallyChecked": [
+        "01 抱臂天使礼服",
+        "02 蓝白捧花公主裙",
+        "03 薄荷裙抬手",
+        "04 蓝白学院裙垂袖",
+        "05 粉背心交叉腿",
+        "06 黄色开衩动势裙",
+        "07 深蓝露肩低位交手",
+        "08 黑红舞裙外展",
+        "09 碎花吊带牛仔持包",
+        "10 紫色礼裙侧收持花",
+        "11 薄荷绿盘腿坐姿",
+        "12 抹茶旗袍椅坐",
+        "13 黄色短袖爱心坐姿",
+        "14 粉礼裙花朵坐姿",
+        "15 秋千白纱悬坐",
+        "16 牛仔背带持麦",
+        "17 朱砂旗袍持扇",
+        "18 紫短裙举臂长靴",
+        "19 白短外套牛仔短裙",
+        "20 紫色蝴蝶仙子"
+      ]
+    }
+  },
+  "naturalnessAudit": {
+    "reviewer": "classic_body_judge",
+    "status": "requires-revision",
+    "reviewedBodyHash": "ade423196cf6812350f8ef89ae522c1e89d58ace6dc5417a0b1c9bceaf7a774d",
+    "reviewedCompleteHash": "7895e19cbfdd63a0b55383d9e820d0e3bd7a5d698977e7a3237d7b77e6351d1a",
+    "reviewedPartHashes": {
+      "bottom": "fea72f34735e4a51896ba7b8126ac7cbbb04962f353486c398c752fa507dbbe0",
+      "legs": "7454ffaa6de6dcdd29e77888189eb2d8b2edf963832b79d4102d14439bd540dc",
+      "top": "a25dbee8764d549c0f35263ee839d8b0def3b36686b9ff41d1c879833311dc51"
+    },
+    "scope": "当前裸模default+20与full/head2/body3/upper2真实IAB；图像左右为画布左右。",
+    "limbs": {
+      "regions": [
+        [
+          33,
+          94,
+          61,
+          140
+        ],
+        [
+          81,
+          94,
+          117,
+          122
+        ],
+        [
+          57,
+          126,
+          82,
+          164
+        ]
+      ],
+      "findings": [
+        "R9左腕掌跟真实增肉，右R04式可见掌/指细肤面与碗底接点成立，AI腕桥连续；不沿用R8浅舟掌指控。",
+        "左低腕掌x34..44/y129..140仍较整块浅面，指布/袖口短压影和掌跟转向不足；紧凑短指本身不扣。",
+        "右腕桥/袖口x99..108/y108..119连贯，碗负载下的短转面/开腔厚边仍弱，保已认可掌像素和接点。",
+        "R8肌腹/肘前/近端肉面与连续腰胯股根保持，腿足支撑可读；本轮未新独立量测，不按default单点削肉或清历史。"
+      ]
+    },
+    "palms": {
+      "regions": [
+        [
+          33,
+          129,
+          45,
+          142
+        ],
+        [
+          100,
+          104,
+          117,
+          120
+        ]
+      ],
+      "findings": [
+        "R01/R04/R05同6x允许短指/角阶/负形；当前右掌细面自然，不数五指。",
+        "左掌跟增肉后局部转向/布指短压影少；右掌认可不等AI桥/袖腔整体100。"
+      ]
+    },
+    "wrist": {
+      "regions": [
+        [
+          33,
+          129,
+          45,
+          142
+        ],
+        [
+          100,
+          104,
+          117,
+          120
+        ]
+      ],
+      "findings": [
+        "左腕掌肉面改善，右AI桥接可读；袖口开腔/短厚边和承压短面仍需局部整理。"
+      ]
+    },
+    "contact": {
+      "findings": [
+        "本轮full20x确认碗底与掌指接位成立，提裙短指与布口/主力褶亦在，不判悬空缺握。",
+        "R04空托掌不提供真实碗支撑源，只校准可见掌面；AI桥与衣料仍评98，R05布遮手不推完整裸掌。",
+        "未选碗的组不要求自带；竖吉他/腰饰/肩挎物不强求抓。"
+      ],
+      "policy": "先看实际源语义及上下行AI新增影响；立式/悬浮/腰饰/肩挎包/地面摆件不强求手握。没选角色自己prop也不要求出现。"
+    },
+    "nativeHandCalibration": {
+      "actuallyViewed": [
+        "ai-workspace/previews/native-hand-reference-20261110/contact-sheet.png",
+        "ai-workspace/previews/native-hand-reference-20261110/README.md"
+      ],
+      "policy": "紧凑原生指群可自然，不要求逐根数五指；弯掌负形不直接判掌心洞，严格看腕掌连接与真实受力。"
+    },
+    "evidence": [
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/full.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body3.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body3-segment-02-667b779c12.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body3-segment-03-a052b68147.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body3-segment-04-3214cafb29.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body3-segment-05-be8324cb7e.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/upper2.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/upper2-segment-02-efa9d3a99e.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/upper2-segment-03-ec74fd2969.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/upper2-segment-04-dffc4421e7.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/upper2-segment-05-24050183d2.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-default-32dd201f0e.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-01-cf9be045bd.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-02-37b15aeb3d.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-03-6d40c3e6a2.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-04-59c1a88683.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-05-022763becd.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-06-f3ac7b3313.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-07-7ff1674067.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-08-e7c7cb6430.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-09-df8ee4c55f.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-10-a69a2f2897.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-11-38cc7b6eb7.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-12-073f6bfb92.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-13-c1949bf5a8.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-14-f19a02dbdf.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-15-9243c86a81.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-16-8c9f91f4bf.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-17-2adc72f5f8.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-18-5ba90499a7.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-19-6578abc368.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body-strip-20-37ba063cf4.png"
+    ],
+    "poseExemptionDoesNotClearFusion": true,
+    "nativeComparisons": {
+      "actuallyViewed": true,
+      "evidence": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/deepseek-r9-native-contact-comparison-6x.png",
+      "provenance": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/deepseek-r9-native-contact-comparison.json",
+      "scale": "same6x nearest/no warp/no mirror",
+      "contactDetail": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/deepseek-r9-bowl-contact-20x.png",
+      "acceptableNativeFeatures": [
+        "紧凑短指群/合理负形/角阶",
+        "R05衣遮掌不反推完整裸掌"
+      ],
+      "positiveCurrentFindings": [
+        "右R04式掌面/碗底接点成立",
+        "左掌跟增肉与袖腔/翻层改善"
+      ],
+      "aiSpecificDifferences": [
+        "左指布短压影/掌根转向少",
+        "右桥袖腔短厚边弱",
+        "白胸/围裙下端和蓝裙翻层主谷衔接不足"
+      ],
+      "limits": [
+        "R01异姿态只比肉面语法非宽度真值",
+        "R04空托掌不提供实际碗接点源",
+        "R05布遮指群不作完整裸掌"
+      ]
+    },
+    "fullnessAndLayerClarity": {
+      "status": "requires-revision",
+      "improvements": [
+        "左掌跟/右可见掌细肤面",
+        "袖腔/围裙翻层及发袖分工"
+      ],
+      "remaining": [
+        "左指布/右桥袖腔短厚面",
+        "白胸主面/围裙下端到蓝裙层衔接",
+        "同蓝发袖局部亮簇串层"
+      ],
+      "policy": "No source-pixel100, deadline-based98, five-finger requirement or third automatic round."
+    }
+  },
+  "hairBangsAudit": {
+    "status": "requires-revision",
+    "reviewedPartHashes": {
+      "face": "db9dff63b29101f68792198b28a0c00e4763ad78e96780327959d7173cf79b23",
+      "hair": "81991eb04c7b8ce85b03aa62782895ea963cd88fc5634f29b0ac18062428e673"
+    },
+    "reference": "ai-girls-atlas/assets/zipzippipe/deepseek/normal-zipzippipe-pixiv-148186519-p00.jpg",
+    "regions": [
+      [
+        45,
+        48,
+        91,
+        85
+      ],
+      [
+        25,
+        79,
+        48,
+        153
+      ],
+      [
+        90,
+        79,
+        114,
+        150
+      ]
+    ],
+    "fidelity": "中央长刘海/鲸鳍侧束/蓝卷簇可辨，R9主谷和发袖分工改善；normal左向外展开大层束仍偏收，部分密卷替大流向。",
+    "integration": [
+      "主谷/发袖分工较R8有改善，中央长刘海/蓝卷与鲸鳍身份保留。",
+      "x29..48/y102..138与94..110/y98..137同蓝发袖仍局部亮簇串层，主谷/短叠影与细卷主次不足，normal左大展开层偏收。"
+    ],
+    "evidence": [
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/full.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/head2-segment-02-25caacd6d5.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/head2-segment-03-5f5a6f68cc.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/head2-segment-04-1896e6a01e.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/head2-segment-05-7c46540a8d.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/head2-segment-06-9d1fc6e34e.png"
+    ]
+  },
+  "clothingAudit": {
+    "status": "requires-revision",
+    "reviewedPartHashes": {
+      "bottom": "fea72f34735e4a51896ba7b8126ac7cbbb04962f353486c398c752fa507dbbe0",
+      "legs": "7454ffaa6de6dcdd29e77888189eb2d8b2edf963832b79d4102d14439bd540dc",
+      "top": "a25dbee8764d549c0f35263ee839d8b0def3b36686b9ff41d1c879833311dc51"
+    },
+    "reviewedGeneratedInterfaceHashes": {},
+    "reference": "ai-girls-atlas/assets/zipzippipe/deepseek/normal-zipzippipe-pixiv-148186519-p00.jpg",
+    "regions": [
+      [
+        30,
+        87,
+        111,
+        214
+      ]
+    ],
+    "fidelity": "白胸兜/束腰、深蓝裙白围裙、提起层成立；袖腔/围裙翻层比R8改善，白胸主面、围裙下端/蓝裙层边与normal细折仍简。",
+    "integration": [
+      "袖腔、围裙翻层/蓝裙层边较R8清楚，提点谷面与掌布接位保持。",
+      "白胸兜x58..82/y96..113仍较平U片，胸廓/腋侧/束腰主面分工少。",
+      "围裙下端x58..86/y160..181与蓝裙翻层主谷/短厚度衔接弱，发袖同蓝区局部亮簇串层；M03/M04允许大浅/深面，但前后/受压需清楚。"
+    ],
+    "evidence": [
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/full.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body3.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body3-segment-02-667b779c12.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body3-segment-03-a052b68147.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body3-segment-04-3214cafb29.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/body3-segment-05-be8324cb7e.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/upper2.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/upper2-segment-02-efa9d3a99e.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/upper2-segment-03-ec74fd2969.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/upper2-segment-04-dffc4421e7.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/upper2-segment-05-24050183d2.png"
+    ]
+  },
+  "runtimeIntegrity": {
+    "checkedAtUtc": "2026-11-10T09:07:18.225Z",
+    "runtimeRoot": "results/archived/runtime/7ec0fc573d05e2fefed7/public",
+    "bodyPngByteHash": "ade423196cf6812350f8ef89ae522c1e89d58ace6dc5417a0b1c9bceaf7a774d",
+    "manifestCompleteHash": "7895e19cbfdd63a0b55383d9e820d0e3bd7a5d698977e7a3237d7b77e6351d1a",
+    "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+    "allFullLayersByteVerified": true,
+    "authorNewerCandidateUsed": false,
+    "archiveId": "7ec0fc573d05e2fefed7"
+  },
+  "technicalFollowup": {
+    "reviewer": "classic_body_judge",
+    "reviewedBodyHash": "ade423196cf6812350f8ef89ae522c1e89d58ace6dc5417a0b1c9bceaf7a774d",
+    "reviewedCompleteHash": "7895e19cbfdd63a0b55383d9e820d0e3bd7a5d698977e7a3237d7b77e6351d1a",
+    "requiresFurtherAudit": true,
+    "resolvesBodyHashes": [],
+    "clearedFindingIDs": [],
+    "unchangedHistoricalBlocks": true,
+    "scope": "本轮实际视觉；未执行新独立同骨段/投影/相位量测。",
+    "historicalDiagnosticReport": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/deepseek-r8-round06-review.json",
+    "historicalDiagnosticBodyHash": "611d260db2a840a6ebc6b668846ac6b2c85d27fb49fdcc7cb7c8457780e7f01b",
+    "methodApplicability": {
+      "status": "needs-current-hash-recheck",
+      "rawAdverseRecordsRetained": true,
+      "historicalNumbersNotReassignedAsCurrentMeasurement": true,
+      "defaultWidthsAreSourceObservations": true,
+      "noWholeBodyClearance": true
+    },
+    "reasons": [
+      "新掌/袖改善不清旧原不利记录或未知对应；数学守门仍需同解剖/投影/控制/持续差及同尺度可感知缺陷。",
+      "方法说明/新hash或原生掌像素研究不替几何修复，不按default两源点盲削肉面。"
+    ],
+    "historicalDiagnosticReportSha256": "5250dcebbd3f86cf5f510bb037fc20e1def194256fdfe5479906073fc890deae"
+  },
+  "captureCorrection": {
+    "actuallyViewed": true,
+    "invalid": {
+      "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/head2.png",
+      "sha256": "51e6f65fe81206f35fef5e53c076f9ccbf4482570fd8d7a60b485a2f5d651d7c",
+      "reason": "Actual raster is AI SHOW loading screen; original DOM visible/failedImages0 retained but not sufficient."
+    },
+    "replacement": {
+      "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/deepseek/head2-segment-06-9d1fc6e34e.png",
+      "sha256": "9d1fc6e34e07d7cdca2663ea92ccfe9ced46686261a9cbe041bd36be33108fba",
+      "seed": "closeout-r25-deepseek-head2-7r37b202",
+      "contextSignature": "native-context-v4-b6dee022",
+      "caseId": "deepseek-head2-s7c533fad-a0-f0",
+      "unchangedBodyCompleteDraws": true
+    },
+    "status": "same-seed valid supplement actually viewed; bad PNG excluded from five-case scoring"
+  },
+  "closeout": {
+    "uniformVersion": "R25",
+    "roundNumber": 1,
+    "totalAuthorizedRounds": 2,
+    "archiveId": "7ec0fc573d05e2fefed7",
+    "characterReviewCompleted": true,
+    "allSevenRoundCompletionClaimed": false,
+    "nextAuthorRound": "R26 final only",
+    "stopAfterR26Review": true,
+    "noAcceptanceFromStopping": true
+  },
+  "materialAudit": {
+    "actuallyViewed": true,
+    "ids": [
+      "M01",
+      "M03",
+      "M04",
+      "M12"
+    ],
+    "contactSheet": "ai-workspace/previews/native-material-reference-20261110/contact-sheet.png",
+    "sameScaleComparison": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/deepseek-r9-native-material-comparison-6x.png",
+    "provenance": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/deepseek-r9-native-material-comparison.json",
+    "positive": [
+      "袖腔/围裙翻层及蓝发袖分工改善"
+    ],
+    "remaining": [
+      "袖腔、围裙翻层/蓝裙层边较R8清楚，提点谷面与掌布接位保持。",
+      "白胸兜x58..82/y96..113仍较平U片，胸廓/腋侧/束腰主面分工少。",
+      "围裙下端x58..86/y160..181与蓝裙翻层主谷/短厚度衔接弱，发袖同蓝区局部亮簇串层；M03/M04允许大浅/深面，但前后/受压需清楚。"
+    ],
+    "limits": [
+      "M编号与R手部/bodyCorpus不同",
+      "材料不提供隐藏腕/裸腰或角色几何真值",
+      "仅静态首帧，不声称动画验证"
+    ]
+  }
+}

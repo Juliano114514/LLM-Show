@@ -1,0 +1,842 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>classic · 打分细则</title><link rel="stylesheet" href="../../frontend/portal.css"></head><body><main><h1>classic · 打分细则</h1><p><a href="README.md">规则目录</a> · <a href="../results/index.html">结果与评分</a> · <a href="../ai-workspace/previews/native-hand-reference-20261110/contact-sheet.png">原生手部12例图板</a></p><details><summary>ACCEPTANCE</summary><p><a href="ACCEPTANCE.md">Markdown 原文</a></p><pre style="white-space:pre-wrap;font:15px/1.8 system-ui">&gt; 下次评分先读 [统一执行口径](NEXT_REVIEW.md)。本文件中的R25/R26、本期停手及旧归档描述仅属历史，不自动延续；证据已删除时须重新取证。
+
+# 最终验收契约
+
+本期执行[当前R25评完停手规定](TWO_ROUND_CLOSEOUT_20261110.md)：用户最新要求“这轮评完就停吧，整理好相关文件做好归档就行”，覆盖此前两轮计划。R25七人内置浏览器独立复评结束后整理归档并停手，不执行R26；未采用私稿单独归档，作者模块恢复R25精确源码。下列最终验收门槛保持；停止工作与验收通过分别记录，目标按用户要求暂停，未通过或待审状态如实保留，不能以收尾结束宣布目标达成。
+
+## 目标与范围
+
+仅操作 classic QQ 秀。对当前七位 GPT、DeepSeek、Claude、Grok、Qwen、Gemini、GLM 分别保留独立 refining agent，完成标准立绘分析、专属素体、逐层衣装/发型/表情/配件重制、独立审阅及反复返工。fashion、原始 `qq-show-classic/` 和 `ai-girls-atlas/` 参考库保持原样；保护工作区既有修改。不调用GitNexus，不主动编写测试代码，不擅自commit/push或发布。
+
+核心不可替换为一般动漫比例：**“用default的素体摆出了标准比例立绘的pose”**。肩颈、上臂、肘腕、掌指、腰胯、膝踝应自然、连贯；不能用直杆、椭圆关节或衣服遮挡替代正确体块。素体必须作为独立中间SVG/PNG保留，再沿同一身体搭建十个角色图层。
+
+原库没有官方独立裸模；default上装/下装含身体与四肢，腰胯被衣料遮挡。可以提取真实皮肤像素转为SVG路径并连续重摆姿态，但不得声称量得不存在的裸腰/胯真值。不得把主观分数冒充数学“100%还原率”或“感知差异精确≤5%”。
+
+## 最后生效的双门槛
+
+1. **AI部件融合度≥98**：替换进原生QQ秀后，风格、笔触、体块、质感、效果、Blingee Pixel / pixel background美学和连接遮挡协调，没有明显突兀的分层断层。
+2. **全AI套装立绘还原度≥90**：动作、神态、刘海/发型、姿态、服饰、配饰及颜色保留标准比例立绘的感觉与识别特征。颜色只重点核对发色/渐变两端、瞳色、服装鞋袜与配饰对应部位的色相接近；具体色号、明暗、饱和度可按Classic风格合理调整，不设面积比例或数值误差门槛。按SCORING归入相应维度。
+
+旧90分专项目标、95/80双门槛已被98/90替代，历史报告保留，不能拿旧门槛宣布当前通过。每个角色、每个适用槽位均需独立记录；不能用平均分抵消某个明显失败部件。
+
+## 素体必须同时对照default与多种原生姿态/着装
+
+素体不能仅与default比。验收台须同时展示不同着装、姿态、体态、发型的女性classic，与当前AI素体并排评分。已有20张真实样例为完整基准；每轮可新seed无放回抽5用于复查，并提供全部20视图。最终记录覆盖全部20，而不是只看default或五张后冒称全量。
+
+评价体块、关节自然程度、笔触/边缘、色阶、均匀程度和身体的经典感觉。不是要求AI复制20种不同pose，而是用同一default身体语言自然摆出所选normal的pose。Blingee/pixel美学用于检查它是否属于同一纸娃娃/像素世界，不要求在裸肤上贴满glitter。
+
+素体原生融合亦按98门槛单独记录；绑定bodyHash、bodyCorpusHash、seed、corpusSignature和逐样例分数。default相近或代表断面通过，不能替代与着装/变姿态原生样例的审阅。
+
+## 原生对照与随机性
+
+本轮扩容采用真实原生部件：10槽各20件、背饰17件（该库全部非空来源），共217件。旧165件保持像素和来源一致；新增下装先经独立QC。每次评审按各槽实际库存无放回抽5件，裙腿同源、上衣服从源图躯干完整性约束，形成5套相对不同的完整原生组合；每套同时替入本轮所选的一个或多个AI槽位，得到5套AI混搭。
+
+**所有纯原生组合按用户规则视为100分**，包括不同画风分支或并不讨喜的原生混搭；不得主观扣原生分来抬高AI相对表现。Blingee/pixel背景是融合美学的明确评价依据，不能用现代极简插画替代。
+
+每轮必须新随机seed，记录seed、poolHash、draws、selection、实际resolved图层、contextSignature及部件/成品哈希。旧seed用于问题回放，新一轮验收需另取新seed。不能声称穷举所有组合。
+
+## 融合必须包含多件AI与原生混搭
+
+融合不限于“原生+1件AI”。正式验收须包含“原生+若干AI体块/服饰”，检查AI部件之间及与原生部件的共同接口。保留单件图定位问题，但单件全部合格也不能推导多件混搭通过。
+
+当前规定9组必要多件覆盖；末三组专查AI与原生衣装/体块的交界，不能因同时替掉裙腿而漏检：
+
+| 组 | AI槽位 |
+| --- | --- |
+| head2 | hair + face |
+| body3 | top + bottom + legs |
+| figure5 | hair + face + top + bottom + legs |
+| nearFull8 | hair + face + headwear + top + bottom + legs + back + prop |
+| scene3 | background + aura + effect |
+| accessories3 | headwear + back + prop |
+| upper2 | hair + top（原生裙腿，核肩/腰接口） |
+| skirt3 | top + bottom + headwear（原生腿，隐藏补片归AI评98） |
+| stride2 | legs + prop（原生上装/裙，核腰肤与腿足接口） |
+
+若作者提供 source-specific 上衣腰线接触 C，upper2 的 actualAiLayers 与 generatedInterfaceHashes 必须包含其 PNG、source/inputDigest、z49 和 interfaceForSlot:top；五个完整原生组合照旧100，C逐例随AI融合98评审。此C只辅助真实局部接触，不是原生像素，也不改变原生腿或全套标准姿态。详见 COMPATIBILITY_INTERFACES.md。
+
+验收台另支持自定义1~10件AI，混搭至少保留1个原生槽；11件纯AI在全套还原维度检查。每组每轮仍从各槽实际池抽5套新原生上下文，上行原生100，下行同时替入所选AI集合，逐例保守最低98。所有AI槽位至少在必要多件组中被覆盖。
+
+多件评分绑定完整selectedAiSlots、reviewedPartHashes逐键匹配、seed和包含该集合的contextSignature；不可把旧单件分数挪为多件通过。
+
+所选normal本来没有独立部件时，空图不记98。当前Claude、Qwen均无独立back，运行时明确标`availability: not-applicable`；预设保留nearFull8/accessories3组键，实际只替入7/2个适用AI槽，保留该槽原生部件并记录排除原因。N/A不参与分母，也不能靠新增无依据装饰凑槽。自定义选择禁用该空槽；单件页明确显示N/A。
+
+## 参考资料
+
+必须同时读取：
+
+- 选定的 `ai-girls-atlas/assets/zipzippipe/{id}/normal-zipzippipe-*.jpg`。
+- `ai-girls-atlas/characters/{id}/README.md`，以及必要的本地版本指南/关联Markdown。
+- 真实default五层、20张女性classic样例及实际随机抽出的原生组合。
+
+固定选定ZipZipPipe normal分支。不能混入JAdpp、校园版、新版三视图、Codex/Image 2、Ani、Zcode等不同角色或版本。README中的聚合描述与具体图不一致时区分版本，以本套normal图解释细节。DeepSeek饭碗鼓腮和GLM困倦闭口是本轮既有授权适配，单独记录，不冒称原normal自带，也不机械扣掉已授权改编。
+
+## 过程与交付
+
+- 素体、衣装、头发、完整形象四阶段SVG/PNG均保留。
+- 正式验收仅从 Codex 内置浏览器的真实 React 前端取证，复用现有 Doll 及图层解析器；作者离屏图和外部浏览器历史图不替代本轮证据。
+- 独立agent实际看图评分，制作agent不能自给通过分。
+- 每轮把**尤其是原生组合**、AI对照、分数、反对理由、修改建议、实际图层/seed一起回传对应refining agent，修改后再复审。
+- 全部当前版本达到门槛且没有未闭环的必修项，才能宣布验收通过。未覆盖、失败和工具限制如实记录。
+- 已授权的工作不重复请求许可；页面打开请求排队等实际可用性问题需据工具状态处理。保活仅按本任务实际存在、已授权的进程/标记核对与释放，不把历史说明当当前状态。
+
+
+## 姿态差异扣分边界（用户追加）
+
+将独立素体和全套的四肢/躯干姿态与所选标准立绘做poseAudit。只有非常显著差异才扣动作或体态还原分，中等及以下姿态差异不扣分；人体结构、连接和衣物贴合问题仍独立按融合规则评。详见SCORING，报告须绑定当前body与complete哈希和逐部位证据。
+
+
+## 重点审计顺序（用户追加）
+
+肢体、手掌自然度是体块首要项；并行重点核对发型/刘海和服装的立绘还原与原生融合。必须实际看裸模及穿衣/手套/持物状态，不能用尺寸、遮挡、整体均分替代。常规迭代明确缺陷须回作者返工；本期当前R25评完按最新收尾规定停手，仅保留缺陷、建议与未通过状态，详见SCORING重点条款。
+</pre></details><details><summary>COMPATIBILITY_INTERFACES</summary><p><a href="COMPATIBILITY_INTERFACES.md">Markdown 原文</a></p><pre style="white-space:pre-wrap;font:15px/1.8 system-ui"># 当前角色的原生接口：显式作者输入
+
+本接口共用于普通衣橱、导出与Review的 `classic-layers.mjs`。它不修改原生素材或原生100分基准，不证明任何新姿态已经98分。本轮只实现源码和staging；没有public apply。
+
+## A：原生低位道具对应的AI上装/手臂
+
+作者可在自己的profile中提供完整SVG：
+
+```js
+nativeLayers: {
+  prop: nativeDisplayProp,
+  top: {body: nativeTopBody, arms: nativeLowArms, bodyZ: 50, armsZ: 101},
+}
+```
+
+`top`也可为包含完整衣身与手臂的单个SVG字符串。对象形式要求body、arms都真实提供且可见；没有自动沿用标准姿态手臂的分支。默认bodyZ50、armsZ101；z可由作者明确设置为0..120整数。单体top在top槽层级绘制。分层时须实际检查道具/发束/前臂前后关系，不能仅因默认z就认定接触正确。
+
+`renderRemake`产出native-top PNG/SVG及各子层；root未来显式apply时保存top-native及子层，并设置 `variantRole:native-display`、`compatibilityPolicy:native-prop-top-v1`。只有当前AI top与所选prop.characterId为native时才使用它。hide只改变可见性，不改变所选prop身份；隐藏道具不会切回另一套手臂。两槽皆AI时仍使用标准立绘own top。完整native top会替换整套own top层，绝不叠加标准top-arms。
+
+此top是作者选择的真实兼容姿态，**不自动证明全部15个原生道具都能正确持握**。每例仍须看接触点、手指和物体支撑并独立评98；不同道具位置不能靠无限延指或移动原生物解决。本轮不增加逐prop变体；确有必要时再按源指纹扩展。
+
+无真实src/PNG hash、缺失子层hash或未提供新top的角色没有此兼容资格。当前没有flag的角色仍走原行为，不能退回历史standing。staging中使用冻结own SVG的渲染诊断只证明分层/选择路径，不是低位持物艺术稿，不能作为接入示例成品或直接apply。
+
+## B：AI裙×原生腿的作者接触色簇
+
+```text
+node tools/classic-contact-interfaces.mjs gemini
+```
+
+读取真实冻结manifest、cfd原生池，写 `previews/classic-compatibility/gemini/` 中15源1x/4x前后图、输入模板和provenance。默认没有自动画影算法：所有模板 `enabled:false, placeholder:true`，不加入实际item，不改变family或v4签名，也不证明缝隙已修复。
+
+作者在该目录另写authored.json，或在自己的profile.nativeLegInterfaces中提供同样的逐源记录：
+
+```js
+nativeLegInterfaces: {
+  'native-lower-3': {
+    enabled: true, placeholder: false,
+    inputs: /* 原样复制当前templates.json的真实指纹 */,
+    inputDigest: /* 对应SHA256，不能沿用旧bottom的值 */,
+    regions: [[70, 156, 10, 4]], // 仅是语法示意，必须按该源实际衣摆确认
+    maxDepth: 4,
+    palette: ['#df9045', '#fdc68f'], // 必须来自该源或真实default可见腿调色
+    contactSvg: authoredContactMarkup, // 真实非空色簇，不能启用透明模板
+  },
+}
+```
+
+检查冻结输入后可用 `node tools/classic-contact-interfaces.mjs gemini --authored` 生成候选；程序只读固定目录的authored.json。实际source/regions/palette须从真实图确认，示意值不表示适配所有源。
+
+色簇不得用blur/filter/random noise。当前验证限制：1..4个原生坐标小矩形、总面积不超过192；实际色簇不超过96像素、最多4个原生RGB色、单色连续横段不超过8像素。像素必须落在真实腿或既有隐藏支持像素内，并在当前AI衣料下方最多4原生像素的接触范围。此限制仅约束来源和局部性，不是审美评分器；不合适的阴影仍可被独立judge否决。
+
+产生的interface合成“既有derived hiddenPatch＋作者contactTone”，归AI bottom所有；允许覆盖混搭中的腿部接触处，但绝不改原生文件、原生originalFull或两槽皆原生的图。即使原hiddenPatch.pixels为0，真实已校验的作者contact仍可独立选中。两槽皆AI时不注入；没有有效opt-in仍原v4桥层行为。
+
+## C：AI 上衣与原生裤裙腰线的作者接触
+
+R15 `upper2` 五套实际组合确认相同衣尖在高腰牛仔、抬膝裙上仍需局部厚度。作者可提供 `profile.nativeBottomTopContacts[sourceKey]`；这与 A 的整套持物姿态分开，仅增加 z49 的局部翻边/压影，保留 own top-body50 与手臂。只有所选 bottom 为指纹匹配的原生来源时注入，hide 不改变该身份；全 AI 立绘与原生 100 均不注入。
+
+`upperContactInputs(topBodyArtworkHash,native)` 输出有序输入 `{topBodyArtworkHash,nativeSourceKey,nativeSourceRawHash,nativeVisibleBottomHash,algorithmVersion:'authored-top-hem-clusters-v1'}`；`inputDigest` 为此 JSON SHA256。使用真实 top-body PNG，不能用 familyHash 或合并 top PNG。若 A 换成不同 body 子层，旧 C 不匹配，须另画，不能串用。
+
+作者输入含 `enabled:true, placeholder:false, inputs, inputDigest, regions, maxDistance:4, palette, contactSvg`，工具 `renderNativeBottomTopContacts` 只做来源/局部性校验，不自动绘影。限制 1..4 个小矩形，总面积≤256、每矩形宽≤32高≤8、y104..160；实际≤96像素、单色横段≤8；≤6个精确RGB来自当前上衣或该原生lower。像素须在实际上衣边≤4像素并接近原生lower原件≤1像素。空模板禁用，输出 `authored-top-contact-candidate`、`ai-top-native-bottom-contact-v1`、PNG/SVG、源/摘要/作者记录。
+
+`renderRemake` 保存各 source 的 top-contact PNG/design/JSON，显式 selected apply 才写 public。family 仅有效非空 C 新增输入/输出/z/policy；actualAiLayers 和 generatedInterfaceHashes 将 C 归 `AI top`，必须与原生组合共同独立评98，不能继承100或仅凭局部性校验宣称修好。root 对新 hook 的实际当前653组选择与56版族核对均0变化（尚无角色 opt-in，见 previews/classic-compatibility/root-audit/upper-contact-preservation.json）。实际作者图接入后另做真实15源/React审阅。
+
+## B 与共同输入的版族
+
+输入包含bottom自身PNG hash（不使用reviewFamilyHash）、native sourceKey/rawHash、真实unfilled腿hash、原隐藏patch hash、算法版本authored-contact-clusters-v1。inputKey为约定字段JSON，inputDigest为其SHA256；作者管线验证摘要，浏览器同步解析器逐字段匹配当前真实输入和inputKey。更换原生源、改底PNG或改算法不会挪用旧interface。
+
+family payload保留旧 `{own, ownLayers, native}` 的键序；只对真实opt-in增加native-top子层/z/policy或active authored interfaces的输出hash、contact hash、inputs、digest。无flag或全disabled模板保持原family hash。interface输入不引用family hash，因此没有family→interface→family的循环。
+
+## 真实证据与评分
+
+actualAiLayers记录实际own/native-display、每个子层hash/z/compatibilityPolicy、接口inputDigest与source指纹，generatedInterface按 interfaceForSlot 归AI bottom或top、随AI98评审。仅所选AI组件有有效新policy时启用native-context-v5，绑定**全部实际AI层**的hash/z/role/policy；其余角色/组合保持原v3/v4。旧archive和已冻结无flag当前评分不会因安装hook而失效。
+
+模板不启用、无真实contact美术时before/after应相同。不得把透明hook、来源校验或0像素差当作修复或98通过。原生lower仍同源originalFull显示100；原default与20体态样本不掺新接触层。root须冻结新角色资源、重新实际React截图并独立审阅后才能认可新兼容效果。
+</pre></details><details><summary>HUMAN_REVIEW_FOLLOWUP</summary><p><a href="HUMAN_REVIEW_FOLLOWUP.md">Markdown 原文</a></p><pre style="white-space:pre-wrap;font:15px/1.8 system-ui">&gt; 下次评分先读 [统一执行口径](NEXT_REVIEW.md)。本文件中的R25/R26、本期停手及旧归档描述仅属历史，不自动延续；证据已删除时须重新取证。
+
+# 2026-11-10 人类审校后的改进规则
+
+本次原始意见只评价审校时的 `newest`（R19，archiveId `1226b0ff173c9de3048c`）。原文、逐人成品哈希与分数适用范围保存在 `results/archived/human-reviews/20261110-newest-1226b0ff173c9de3048c/`。不得把这些分数套到后续新稿；也不得用旧 AI 评委高分覆盖人类反馈。
+
+## 材质与风格
+
+- 同时对照 `results/user-selected` 的真实分层、当前 normal 立绘和原生 Classic。user-selected 是材质正向参照，不能用它较弱的动作/发型还原替代当前立绘要求。
+- 头发以随发束收放的细密暗边、分叉发梢、局部断续高光表现体积。避免等宽亮柱、反复长 S 带、统一粗描边；表情保留眼睑、瞳孔高光、鼻颊和唇线的原生小尺度色簇。
+- 服装轮廓、褶皱和明暗必须响应肩、肘、胸腰、胯、提裙与承重方向。领口、腋下、袖口、束腰、裙摆、袜靴口形成真实接触与层次；露出不该露出的素体、穿插、重肢体、纸片覆盖感都必须明确扣分。
+- Classic 的像素艺术、Y2K 与 Blingee Pixel 是融合标准的一部分。主暗面、半调与窄亮面应在 140×226 上可读；仅二值化 alpha、添加随机噪声或闪点不能代替材质绘制。浅深底、1×与整数倍均实际看图。
+- 按 SCORING 既有权重评价上述现象：衣料受力/轮廓归体块连接，暗亮色簇归材质，关节和叠压归遮挡接触，像素笔触及 Blingee 协调分别按对应项扣分。维持融合98、素体98、还原90，不改变权重。
+
+## 身体与原生组合
+
+- 素体必须继续与 default 及全部20张不同着装、姿态原生样例同时审阅；检查上臂、肘腕、掌指、腰胯、膝踝、承重与线条收放。没有可见真值的位置明确未知。
+- 原生部件按真实库存扩容：保留扩容前165件的字节/来源，当前共217件，10槽各20件、背饰17件。各槽允许真实数量不同，不用复制、空图或改名凑数。
+- 随机原生组合优先依据源图接口兼容关系抽取，继续保留下装/腿同源联动，进一步避免上衣、腰线、脸与发型的实质缺块。兼容筛选只处理完整性，不能按AI成绩筛seed、排除难样例或为达到98筛有利背景。
+- 每轮记录完整候选池、兼容条件、实际 draws、selection、seed、poolHash 和解析图层。原生组件和全部原生搭配始终按用户指定100；新补画/派生接口按AI融合98独立评审，不冒充原生100。
+
+## 独立审阅与反馈
+
+使用内置浏览器打开真实 React 审阅台。作者各自改稿，评委独立看当前冻结图并绑定本轮哈希/seed；需返工时把原生上下文、AI对照、具体坐标和原因回传对应作者。静态图片不能证明动效通过。旧评分留档，新稿未审的维度保持待评。
+
+
+2026-11-10用户追加：立绘还原必须考虑颜色。对照所选normal及已确认适配，按SCORING颜色规则记录并实际纳入发型、神态、服装、配饰维度，不只核轮廓/动作。
+
+2026-11-10用户最终澄清：颜色还原只重点关注对应部位色相接近立绘，具体色号、明暗、饱和度不必过度一致；以SCORING最新色相规则为准。
+
+2026-11-10用户追加：素体/四肢姿态与标准立绘有非常显著差异才扣还原分，中等及以下差异不扣；本轮必须投入poseAudit逐部位审计，结构与连接问题仍按融合评。
+
+2026-11-10用户强调：体块重点是肢体和手掌自然度；发型、刘海、衣服的还原与融合均为重点。按SCORING逐项目视审计，尺寸通过不等于自然度通过，常规迭代低分须回原agent返工；本期最后停止指令优先，R25评完仅保留返工建议而不再执行。
+
+本轮审计校准：手掌/关节反例尽量附同尺度、相近动作的真实原生局部与源hash。原生式紧凑指群、适度负形、局部直边或合理像素角阶不是独立扣分理由；按SCORING定位AI实际增加的结构、体面与接触缺陷，维持98门槛。
+
+## 后续新增总体反馈：肢体饱满与清晰层次
+
+用户原文（2026-11-10）：
+
+&gt; 1 目前大部分的肢体还是不饱满，线条也清晰，搞得跟骷髅兵似的
+&gt;
+&gt; 2 bligee pixel的风格特点应该是在华丽的同时层次和线条分明，目前还有很多地方糊在一起了
+
+这两点已经逐字通知七位角色作者、独立评委和两个原生/肢体辅助agent。它们是本次持续迭代的新增总体反馈，未逐张指定哈希，不自动改写旧评分，也不混入最初R19人类意见的原始附件。
+
+执行重点为：肢体/掌跟有饱满肉面和自然收放，避免细瘦骨架或细杆；华丽的发束/衣褶/闪图仍须在1×保持主层、轮廓、暗谷/亮峰与前后接触清楚，减少混糊、碎亮噪声和无组织半调。不能用统一加粗、全局锐化/模糊、加装饰或按疑点测线削肉代替重画。按SCORING复审当前冻结版本，门槛和权重不变。
+
+原始要求及独立方法复核进一步澄清：用户的5%指20例比较中明显可感知的差异，default两处截面宽5.025/4.825仅是源点观测，不是所有pose的目标宽。保留真实不利量测及旧报告，先核同解剖、遮挡、投影、相位与原生同尺度可见缺陷；不能为单点过线把饱满肢体压成细杆。方法纠正与几何修复分别记录，不自动清任何角色旧阻断，不改98/90或既有评分。详见SCORING及 [验收来源](USER_CRITERIA_PROVENANCE_20261110.json)。
+
+## 本期验收方式与当前R25评完停手
+
+用户再次明确“使用内置浏览器验收”：正式证据来自 Codex 内置浏览器的真实 React 页面，并与当前 source/body/complete/部件版族、seed、pool、corpus 和可见范围绑定。外部浏览器旧图、作者离屏合成、打开请求 queued 或工具启动均不代替本轮内置浏览器证据。实际视口不足时按五对与20例的真实可见覆盖分段，不预设 fullPage 可用，也不为塞下矩阵任意放大视口。
+
+用户此前要求“再改两轮就先停手”，随后最新明确“这轮评完就停吧，整理好相关文件做好归档就行”。最新要求覆盖旧计划：当前R25七人独立复评结束后只整理归档并停手，不执行R26，不因低分自动返工。GPT16、DeepSeek10、Claude12、Grok13及被中断的Qwen11属于未采用私稿归档（历史文件已不可用），未apply、未验收，不计新完成轮；Gemini和GLM不再起新稿。98/90门槛保持；未通过、待审及历史技术问题继续保留，目标按用户要求暂停，停手不能写成通过。当前有效范围、台账和交付要求见[本期收尾规定](TWO_ROUND_CLOSEOUT_20261110.md)。
+
+原生观察资料分为 [R01–R12手部](../ai-workspace/previews/native-hand-reference-20261110/README.md) 与 [M01–M12衣料/发束](../ai-workspace/previews/native-material-reference-20261110/README.md)，均保留源图、SHA和裁框。两类编号与 bodyCorpus 样例编号互不等同；被遮挡的裸腕、掌跟或布内结构仍未知。借用可见原像素并重建隐藏桥接后，新增部分属于AI派生接口，不能整体继承原生100。
+</pre></details><details><summary>ITERATION_RULES</summary><p><a href="ITERATION_RULES.md">Markdown 原文</a></p><pre style="white-space:pre-wrap;font:15px/1.8 system-ui">&gt; 下次评分先读 [统一执行口径](NEXT_REVIEW.md)。本文件中的R25/R26、本期停手及旧归档描述仅属历史，不自动延续；证据已删除时须重新取证。
+
+# 迭代与修改规则
+
+2026-11-10起执行 [人类审校后的改进规则](HUMAN_REVIEW_FOLLOWUP.md)。人类意见绑定旧newest归档；每位作者分别改善材质/人体贴合，再由独立评委在内置浏览器证据上重新判断。
+
+## 本期停止边界：当前R25评完即停
+
+用户最新要求“这轮评完就停吧，整理好相关文件做好归档就行”，覆盖此前“再改两轮”的执行计划。本期只完成当前R25七人版本的Codex内置浏览器独立复评，再整理归档并停手，不执行R26。七人本轮产物、真实页面证据和独立回包齐全才算本轮完成；重渲染、改名、重截屏或换seed不另计轮数。历史计划与当前台账见[本期收尾规定](TWO_ROUND_CLOSEOUT_20261110.md)。
+
+R25复评结束后停止改图和自动续跑，不因低分再开作者返工或R26。融合/素体98、立绘90及完整验收范围保持；未通过、待审、未覆盖和旧技术问题如实保留。停手不等于验收通过；目标按用户要求暂停，不标为已达标完成。后续是否重启由用户决定。已产生的未采用私稿按归档索引（历史文件已不可用）保留；作者模块恢复R25精确源码，不能在收尾归档时导入私稿。
+
+## 职责与共享边界
+
+- 每位角色保留自己的refining agent：remake_gpt/deepseek/claude/grok/qwen/gemini/glm。
+- 作者只改自己的`tools/classic-remake/{id}.mjs`和自己的`ai-workspace/previews/classic/remake/{id}/`，不可改其他角色、公共工具/规则或运行时清单。
+- root负责公共工具、统一apply、原生池、React、证据归档和综合状态。
+- `classic_body_judge`是独立审阅者，写`ai-workspace/previews/classic/remake/acceptance/`，不替作者改图、不自动抬分。正式评审使用 root 保存的内置浏览器真实 React 图及对应证据；作者离屏合成仅供制作诊断。
+- 作者可以单人运行remake/compare查看过程；**不能自行--apply**打破root冻结的审阅运行时。
+
+## 一轮的状态
+
+`draft → author-reviewed → applied/frozen → evidence-captured → independently-reviewed → revision-required / accepted`。
+
+没有本版本实际图像和匹配哈希，不能从“命令已启动”“工具握手”“打开请求已排队”或“静态量测通过”跳到accepted。改变任一部件使相应评分待复审；改变成品使全套评分待复审；换seed/池/上下文使随机融合评分待本轮评审。
+
+多件AI混搭须重新实际评审，不能拿已合格的单件分数相加/平均推导。变更集合也改变上下文签名；完整partHashes有一个变化就重新审该组。素体必须和default及20个不同着装/姿态原生样例一起评，不能只保留default好看的视角。
+
+未变范围可按 [精确范围携带规则](REVIEW_WORKFLOW.md#6-修改后复评与未变范围携带)保留原分、原 seed、原图和来源；必须明确它是原范围证据。body 未变而只改头发时，可携带匹配的 body/衣装组记录，包括既有失败；旧 full 不能证明新头发下的完整形象。换 hash 不自动清历史形体问题。
+
+## 修改优先级
+
+1. 肢体和手掌的自然饱满肉面、比例与连接；定位细杆、掌跟薄、重复肢体、断边、尖刺、断接及真实持物承压缺陷。
+2. 发型/刘海、衣型与服装材料，同时核对 normal 还原和原生融合；颜色只核对应色相，姿态仅非常显著差异扣还原，中等及以下扣0。
+3. 原生 Classic 像素、Y2K、Blingee Pixel 的清楚轮廓、主暗谷、窄亮峰、小尺度色簇与前后层级；华丽细节不能糊合成一片。
+4. 最后补小纹样/闪点，不能先堆装饰掩盖前三级问题。
+
+素体与服饰共用关节；改变体块后跟随修改衣服，不用长裙遮住不合格素体。default皮肤可直接转SVG保留原像素，重摆pose时不能缩细腿腾空间。皮肤crisp规则不能一并套到所有材质；“颜色相同”不等于“笔触相同”。
+
+default 两处截面宽只描述源点，不是全部姿态的目标宽。用户5%是20例原生对照中明显可感知差异的要求；量测须先建立同解剖对应、可见成分、投影及控制，再结合持续真差和原生同尺度可见缺陷判断。不得为单点过线削肉，旧不利数值与方法不确定性继续保留。真实原生紧凑指群、合理角阶与负形不强改为写实五指；接触先辨明书/碗/柄与悬浮物、立式麦克风、装饰的语义。
+
+## 留痕和检查
+
+- 角色旧轮次留在自己的revision-NN子目录；素体四阶段和校准不得删除来掩盖失败。
+- notes记录收到的原生包、分数、扣分、具体改了什么、检查了什么；作者不自给验收分。
+- 单人node --check、原生分辨率渲染、实际view_image原生/整数倍/局部/浅深底，按需已有检查。禁止主动写测试；不因普通美术改动跑生产build。
+- 标准立绘、角色参考文档、原生库只读；本期用户明确要求维护的规则 MD 可按当前授权更新。审校附件的描述不自动授予执行权限。不要更改阈值、权重或随机组合来“通过”。原生100是参照，不扣原生分。
+- 独立分数保持原始真实值。常规迭代中失败回原作者返工；本期最新停止指令覆盖继续返工的默认流程，R25评完仅整理归档，不再改稿，不能把目标98/90写成已得分。
+
+## 运行和自动处理
+
+已授权的制作、冻结和审阅不重复请求许可。若内置浏览器打开请求返回 queued，先核实际页面；本次通过请用户切回本聊天并展开右侧浏览器恢复连接，这属于获取可用页面，不是重新请求验收授权。观察超时不等于进程终止，应检查同一 handle 或其他权威状态，不能只因超时重启环境。
+
+继续有意义的工作，不能仅因耗时/困难标 blocked 或 complete；同时遵守本期当前R25评完即停的明确要求。Git提交/推送/公开分发未明确要求，保持不做。仅 Classic，保护既有 Fashion 修改。
+
+不得把历史保活说明当作当前状态。若本任务确有已授权且仍存活的临时保活 helper，停手时按实时核对的进程和标记释放；不修改永久电源配置，不误删其他任务标记。Windows 文件锁只按实际错误处理；如确需短暂停止本任务自建预览服务，先核其归属、记录原因并恢复，不能关闭用户应用或修改 ACL。
+</pre></details><details><summary>KNOWN_BODY_FAILURES</summary><p><a href="KNOWN_BODY_FAILURES.md">Markdown 原文</a></p><pre style="white-space:pre-wrap;font:15px/1.8 system-ui"># 素体复审中已确认的反例
+
+本页记录真实独立评审里出现的根因，帮助下一作者轮避免重复。不是自动扣分器，也不替代default＋20逐例独立98判断。
+
+## 连续肢体被分件端盖切断
+
+Grok R3正式body94：垂侧臂x88–91/y118–120、腕根x90–95/y130–132出现贯穿全宽深橙横带；逐像素与浅底1x证明是实际色带，并非透明裂缝或缩放伪影。Claude新稿同类腕根横带也已被独立指出，分数以其正式报告为准。
+
+常见构造原因是上臂、前臂、手各自画闭合暖色描边，重叠端盖成为整厚橙箍。应以完整连续臂/掌外形描外轮廓；跨发、持物或前后层确需拆分时，先构造完整形体再用互补mask分片，保留相同肤面，不在接口重描端盖。内部短折影可说明转面，不能成为拼接环。GPT R3完整臂后旧方底/薄叉已被确认改善，body94→97，但胸前指群小块仍拒98。
+
+不能用全局淡化深边掩盖接口，也不能把所有关节暖影删光。必须对真实原生同解剖体积、有效覆盖、层次和姿态判断。
+
+## 连续Bezier不自动等于自然足掌
+
+Gemini R4旧行移刺已消失，仍因裸足x55–65/y203–215与x85–94/y196–205近薄L、足弓/前掌/趾端体量不足而body95。重点是完整足体与承重，不是禁止任何水平底边；原生本来就有平底像素行。需要复看default真实脚与20源里可见裸足，不能把长靴外廓当足部真值。
+
+同理，小掌不是手臂末端贴一个方片/叉/U架。GPT R3胸手x61–69/y98–105的深橙短块缺掌根浅面/拇指转面而97；DS R3捏掌小楔与托掌U横条使96。保留掌根肉量、拇指侧转与指群包物关系，不能为显指而平均加粗整条前臂。
+
+## 长浅条与假色
+
+新腿和手臂虽连续，长段等宽等亮浅条仍可能像管子；亮/中/暖影需随真实体面转向和收放。给肤面撒glitter、均匀噪点或随机像素不能补偿体积。
+
+透明图放大可显示alpha=1像素的任意RGB。DS round04已对RGB黄/红作浅底合成复核并排除，不能把不可见RGB当真实黄皮肤去修。最终目视判断要以原生1x及正常浅/深衬底的有效覆盖为依据。
+
+## 量测的正确边界
+
+四个断面宽差只辅助，不代表全身或可感知差异≤5%，更不授审美98。default两处源点宽不是所有pose的目标宽；单点超5保留不利诊断，须建立同解剖/控制/持续体量差和原生同尺度可感知缺陷才作确定返工。真正转pose时，保留旧画布点回归，并在变换后的同骨段同归一位置沿真实法向再测，记中心/切线/基准/结果；不能挑一条恰好合格的连通片，也不能为固定坐标削肉、破坏动作。详细规则及旧记录复核边界见SCORING.md与2026-11-10方法独立复核；本说明不清任何旧阻断或视觉低分。
+
+Gemini R4曾只核四臂而遗漏后层小腿欠量。独立calf_correspondence以真实曲线弧长配对source右腿到交膝腿，s=.2/.35/.5/.65/.8中段法向约6.4–6.8px，对default约9.8–10.975px，约薄25–39%；骨段弧长只缩约5%，不能用姿态透视自动解释。应补肌腹后向踝收细，不能整根加成同宽管子。root初始探针保留为探索，独立校正映射/新踝另记，不把二者混成一个已定测量。长袜靴外轮廓不是裸小腿宽度真值。
+
+Qwen R3的折叠上臂、返回前臂与掌真实重叠；单骨隔离四断面合格，而最终union左12.025/7.700px横跨多骨段。这种复合宽度不能误判为单臂肥厚；反过来，量测通过也不能否认掌群同亮楔团的视觉不足。其revision03原样隔离已由独立judge重渲染逐RGBA0验证，详情acceptance/round-07/qwen-isolation-verified.json。
+
+## 已解决反例须按新hash撤销
+
+GPT R4胸掌c803232d…已正式body98/default98/全20为98–99，保留该体块，不沿R3深橙指块继续扣新稿。Grok R4旧肘腕整厚橙箍已消失，body97的剩余异议是足部硬底角/平前掌；GLM R4新腿足已获当前独立视觉认可，正式总分以round09报告为准。修色面不能自动证明轮廓自然，但也不能把已解决旧图问题带到新稿。
+
+## 素体中性内衣遮住了本应在前的指群
+
+Qwen R4视觉97剩左浅楔。作者像素网格证实finishedArms先于中性内衣绘制，x60–62/y104–111的15个真实指群像素被内衣遮住，成图的白手套却已正确在衣前。R5只用互补clip把原指群前置，另6像素掌根/拇指转面，共21RGB bbox[55,103,61,111]、alpha0；几何、骨段、手位及十衣层/完整图均未变。bare body新bfc249ca…已freeze，等新default20正式评；不能因找到原因就自给98。检查同类问题时先定位真实遮挡，不盲给每件重描轮廓或把全臂提到衣前。
+
+## 视觉98后仍须处理新量测证据
+
+Grok R5脚与GLM R5掌通过视觉default20后，root安排更密腿部独立audit。现已发现部分主点之间存在稳健尺寸超差，先排除关节定位和采样控制问题后再交作者；旧98视觉分不删，但不能覆盖新确证。exact body hash技术阻断进入同一验收台，不以换seed掩盖。source/target同像素恒等控制必须为0，profile估计膝踝不精确造成的假差另列。详SCORING与acceptance/round-13/的独立audit，未确认部分不当作实锤，已确认部分不因历史过分而豁免。
+</pre></details><details><summary>MATERIAL_REVIEW_NOTES</summary><p><a href="MATERIAL_REVIEW_NOTES.md">Markdown 原文</a></p><pre style="white-space:pre-wrap;font:15px/1.8 system-ui"># 材质与面部复审笔记
+
+正式分只来自独立reviewer的完整React配对评审，本页只保留已确认异议、源图观察与后续绘制线索。原生完整组合固定100；不能通过降低它们的分数给AI过98。以下局部图不替代完整Blingee/pixel background场景。
+
+## 当前源层并排脚本
+
+`node tools/inspect-classic-head-pigments.mjs {character} {round-NN}`读取该轮真实head2-evidence中的五套native/AI层，逐个核PNG SHA，按真实z合成，只截同坐标头部与面部、最近邻放大，不读可变作者module。输出在`previews/classic/remake/acceptance/{round}/{character}/head-pigments/`：`face-6x.png`、`head-3x.png`、`inputs.json`。这是可检查的补充诊断，不是新的浏览器验收，不产生审美分。
+
+已实际为GPT R4/round07、Qwen R3/round07、DS R3/round04、Claude R3/round05、Grok R4/round08、Gemini R4/round03、GLM R4/round09生成，分别核26或27个输入层。改稿后旧crop与其输入hash一起保留，不叫最新。需要历史输入时用对应原封归档，不把当前新图替入旧评审。
+
+第二版补上两行真实native top/neck以保持下颌alpha的实际衬底，新增`face-with-native-neck-6x.png`、`head-with-native-neck-3x.png`和`inputs-with-native-neck.json`，核36或37层，第一版不覆盖。不含真实颈肤的分离图可能改变下颌半透明边观感，不能只据它断言接缝。必须回到实际混搭与正确源层核实。
+
+## 原生脸部色簇不能被“套原生眼”替代
+
+root实际查看GPT R4五组并排，观察到AI脸为大块浅肤、灰紫眼块与短横口，原生五脸仍有清楚黑睫/暗瞳/眼白、鼻颊唇的局部暖面。此为未评分的具体视觉观察；正式round03旧GPT head2为94.75，新R4头部尚须独立评分。
+
+`defaultHeadPlane()`有意清掉内部表情，适合保留mannequin头缘；不能据此推导成妆面部已98。移植原生眼后若按y把整个深色眼区染成紫条，也可能同时抹掉暗瞳/睫沿，应按真实虹膜、瞳孔、睫沿与高光分别保留色簇。建议使用实际原生面部受光和表情组织作为笔触参考，准确调整角色虹膜/唇弧，不能所有角色共用空白脸加两个色块。
+
+root也实际查看Claude R3与GLM R4并排。Claude已有较清楚的睫瞳层，鼻颊口仍较平；GLM困倦半闭眼闭口是已授权特征，必须保留，可修睑缘/眼白/鼻唇短暖影，不能为追原生大眼就机械睁眼。不同角色神态以normal原图+对应md+用户确认共同判断。
+
+GPT R4 body c803232d…已独立通过98。面部妆容是独立face部件，后续可改face而保持已接受body及其头缘逐像素不变；不能顺带全局改共享head函数使已接受素体漂移。
+
+## Gemini R4清嘴矩形制造了下唇橙横带
+
+root从真实round03 face PNG与native face-1逐像素核实，补真实颈肤后仍可见：新脸y82/x64–75整行约`fec78f`，y83/x65–74整行约`df9147`至`da8e45`；原source中段本是`fbdabb/fde7cf`、`fbdbbb/fce5ce/f0dac4`等局部肤面与粉唇。原因是清嘴代码对x64–75/y78–83全矩形按该行x63/x76端点插值，而y83两端已经在半透明橙色下颌边，把外缘色反铺到内脸。
+
+这不是头发色、透明背景假RGB或“水平姿态就错误”。已反馈Gemini R5收尾修：只清真实粉唇/白口形，用内侧实际嘴周肤面转接，保留非唇原生下颌/下唇短暖影和alpha；不能把外轮廓颜色填满盒子。保留玫金异瞳和小闭口神态。直接图在acceptance/default-face-native-8x.png、gemini-r4-face-only-8x.png；是否解决以新冻结PNG与独立评审为准，root未造新分。
+
+## 材料分面要说明真实转向
+
+round02七角色六组、round03三角色九组的共同正式异议，是长发、布、翼膜、尾鳞、金属重复同宽大亮带，不能靠多加glitter修复。发丝应随发束粗细/卷向形成不等长小簇，缎面亮暗来自腰部受力和翻折，金属是短而相对的深亮边，翼膜跟翼骨拉伸，尾鳞分片叠压。不能用等距条纹、均匀噪点或重复白点假装原生细节。
+
+## 接口与持物也是绘制的一部分
+
+AI裙搭native腿，生成的隐藏区域补片与接触影都归AI bottom，原生100仅覆盖真实原件。完整证据必须记录实际补片hash，独立评分不能忽略硬裙根/假黑圈。标准pose的手不能靠无限延指或移动原生手包强接；真实兼容姿态也应由作者绘制、普通衣橱与验收共用、标AI-owned并按98评，不能回用旧站姿或启用空模板后自称通过。
+</pre></details><details><summary>NATIVE_BASELINE_PROVENANCE</summary><p><a href="NATIVE_BASELINE_PROVENANCE.md">Markdown 原文</a></p><pre style="white-space:pre-wrap;font:15px/1.8 system-ui"># 原生完整基准与 AI 接口来源契约
+
+新策略由 `native-lower-provenance-v1` 明确启用。原生完整组合的100分是用户指定基准；它不授予新增隐藏体块100分，也不证明 AI 混搭达到98分。
+
+本轮扩容池保留20件真实下装源（原15件字节不变，加5件真实裤装），均提供完整140×226首帧。Review 的 bottom、legs 从20个同源配对中无放回抽5，arrangement 同时移动两槽；上衣按源alpha躯干连续性图匹配、与裙腿共同复排，其他槽独立抽样。相同 seed、poolHash、arrangement 重现同一组。五组是有限覆盖，不是穷举。
+
+| 下装选择 | 共享解析器实际绘制 | 评分归属 |
+|---|---|---|
+| 原生裙、腿同源 | 一张 `originalFull`，记录 `coversSlots`、原源hash | 真实原件基准100；没有生成填补 |
+| 原生裙、腿跨源 | 两张真实可见分件，无隐藏补片 | 普通衣橱的片段组合；不称完整原件复现；Review随机基准不产生此种拆配 |
+| AI腿、原生裙 | 原可见裙层、必要真实腰肤context、AI腿 | 腰肤来自原源；整体混搭仍独立评98 |
+| AI裙、原生腿 | 原可见未补腿、独立 `hiddenPatch`、AI裙 | 补片归 AI 替换的接口支持层，随 AI 融合98评审；不能算原生100 |
+| 两槽均AI | 本轮AI自身图层 | 不注入原生隐藏补片 |
+
+`src/classic-layers.mjs` 是普通衣橱与 Review 共用的解析器。相同 manifest、selection、excludeSlots 得到相同图层。完整原生下装在 bottom 的原生层级绘制一次；隐藏补片位于真腿之上、AI裙之下。排除某个 lower 槽时不会借完整源图偷偷显示被排除的槽。
+
+## 素材字段
+
+原生 bottom、legs item 的正式 `src` 分别为真实可见 `bottomPng`、`unfilledLegsPng`，均无生成隐藏体块。两者的 `nativePartition` 包含：
+
+- `policy`、`sourceKey`、`source`、原GIF `sourceFileHash` 与首帧RGBA `sourceRawHash`。
+- `originalFullSrc/originalFullHash` 与 `originalFull` PNG/SVG描述。
+- `visibleBottom`、`visibleLegs`、`waistContext` 的src/svg/artworkHash。腰肤仅复制原源原坐标已有像素。
+- 独立 `hiddenPatch` 描述、像素数和hash。其来源、donor坐标、逐行映射、原源可见像素保护及适用边界在 `metadataSrc`。
+- 候选03独立QC报告及hash。该QC允许有边界的派生参考输入，不把新增接口变成官方裸模。
+
+原15件全部保留，包含弯腿、交叠腿、宽裤和网袜。不能用删难样本或把裸肤塞回裙层避开接口问题。候选03已批准的图层像素继续按hash校验；新增腰肤导出不改变这些图层。
+
+## AI 接口与评分绑定
+
+解析器为 AI裙替换产生的支持层明确写入：
+
+```json
+{
+  &quot;generatedInterface&quot;: true,
+  &quot;slot&quot;: &quot;bottom&quot;,
+  &quot;itemId&quot;: &quot;当前AI-bottom&quot;,
+  &quot;interfaceForItemId&quot;: &quot;当前AI-bottom&quot;,
+  &quot;nativeSourceItemId&quot;: &quot;native-legs-N&quot;,
+  &quot;nativeSourceKey&quot;: &quot;native-lower-N&quot;,
+  &quot;artworkHash&quot;: &quot;独立hiddenPatch的sha256&quot;,
+  &quot;reviewScope&quot;: &quot;AI fusion &gt;=98; never native100&quot;
+}
+```
+
+此层进入每例 `actualAiLayers`，不是原生基准层。页面证据另给 `generatedInterfaceHashes`，键为 `caseId:layer.key`，值为补片hash。独立单件/多件评分 entry 必须提供完全匹配的 `reviewedGeneratedInterfaceHashes`；缺失时显示“新增接口层待评审”。它还须匹配既有 AI part/family hashes、seed、contextSignature 和逐上下文分数。没有自动98分。
+
+新策略 contextSignature 使用v4，包含新池、联动选择、实际 lower layers 和生成接口hash。原生完整首帧、可见分件、补片、腰肤残留、动画源及所有影响渲染的hash均进入新poolHash。更换接口不能借旧评分过关。
+
+后续显式AI-owned接触色簇可与原hiddenPatch合成独立interface；只在AI-bottom×匹配native source指纹时使用，即使原patch为0也可有真实contact。原生pool/原件不改，透明disabled模板不启用。新top/接触policy只对实际opt-in选择使用v5，绑定全部实际AI层；无flag仍保留v4。输入/输出hash、局部色簇限制及作者流程见[COMPATIBILITY_INTERFACES.md](COMPATIBILITY_INTERFACES.md)。这不是新增原生100像素或免审AI98。
+
+## 旧池与素体验收
+
+没有新policy字段的冻结池继续旧解析和抽样路径，使用原native-context-v3。`--reuse-native-pool` 不调用新切分、不新增policy、不重写原部件/接触表，保留当前池原有的 items、partitions、fixtures、coverage、poolHash；只沿用既有角色/素体引用刷新行为。旧轮回放池hash为 `1f340b65f818fc4c7920ecae880ec45adf6ce209676d75288705870e5d1647fe`；当前正式池为CURRENT_STATE所列cfd19b90…，沿用v4。
+
+BODY页的原default和20女性classic样本保持真实原图；不使用隐藏补片。原default五层也不具新policy，原解析保持不变。
+
+来源分离当轮先用 `node tools/build-classic-native-review.mjs --staging` 写入 `previews/native-baseline-provenance/staging/`，该目录保留逐像素来源与渲染证据；此策略之后已由root切入正式cfd池。当前A/B兼容接口工作仍仅源码及 `previews/classic-compatibility/` staging，不执行public apply；新增AI兼容图须由root冻结并另行实际审阅98。
+
+
+## 2026-11-10 扩容与完整性
+
+新增5件裤装的源图/分件/隐藏裤料支持、重合成零差和独立QC位于 `ai-workspace/previews/native-expansion-20261110/`。隐藏支持只复制同源同坐标已遮盖裤料，仍随AI融合评分，不变为原生100。背饰库存仅17件非空原件，其他10槽各20件，共217；不以空图凑20。
+
+`native-complete-torso-v1`对20上衣×20下装的真实alpha在x62..77/y100..136逐行检查至少3个不透明像素，防躯干横向断层。它只验证指定中央区域，不证明全身体形或审美；独立看图仍必需。全部源均须有可用配对，随机抽5件的匹配不读取任何AI图或分数，记录完整候选图与实际draws。
+</pre></details><details><summary>NEXT_REVIEW</summary><p><a href="NEXT_REVIEW.md">Markdown 原文</a></p><pre style="white-space:pre-wrap;font:15px/1.8 system-ui"># 下次评分执行口径
+
+本文件整理本次对话中可复用的要求。与旧文档冲突时，以本文件的澄清为准；SCORING的既有权重保持不变。R25停手、取消R26、两轮上限均为上次任务安排，不是下次默认任务或评分要求。开始评分不自动授权改图、返工或启动作者agent。
+
+## 评分标准
+
+- 纯原生组件与纯原生组合固定100。新增AI补片、隐藏接口、重画或重组的未知体块属于AI派生，不能继承100。
+- AI融合与素体门槛98，立绘还原门槛90。多件每组五例取最低，素体default与20个不同着装/姿态原生样例逐项审阅并取最低；不靠平均、取整、装饰或其他优点抵消明显缺陷。
+- Classic以像素艺术、Y2K、Blingee Pixel为融合语境：华丽且轮廓、线条和层次分明。1×看主面、暗谷、窄峰、发束与前后遮挡；整数倍补看细节。多加闪光、锐化或碎色不能替代结构和材料。
+- 肢体和手掌优先：肩臂肌腹、肘前后转面、前臂收放、腕掌与掌跟要饱满自然，避免细骨杆、针锥掌根和机械关节。素体、穿衣、手套及持物状态一起看；不能用衣服遮问题，也不以统一加粗代替修形。
+- 衣料重点看随身体与受力形成的主褶、压影、袖腔、翻层厚边和腰口共曲面。发型、刘海、衣服同时评价立绘还原与原生融合，两者不能互相替代。
+- 颜色还原只重点关注对应部位色相接近，不要求精确RGB/HEX、明暗、饱和度或面积比例。材质光影和层次是否自然仍属融合评价。
+- 素体/四肢姿态只有与选定标准立绘存在非常显著差异才扣还原分；中等及以下明确扣0。人体结构、体积、连接、接触错误仍独立扣融合分。
+- 不局限default：使用20个不同着装和姿态的原生女性样例校准比例与线条。可感知5%不解释为所有姿态同一画布行、单点宽度±5%硬门，不机械削肉。量测须先确认同解剖部位、投影、遮挡和锚点；未知处标未知，不能编裸腰/腕掌真值。
+- 原生允许紧凑指群、像素角阶、大暗面和适度直边，不要求逐根可数的写实五指。扣分须定位AI额外引入的缺陷。先辨物件语义：真实握持/支撑需接触成立，悬浮物、立式麦克风、装饰不强求握住。
+
+## 下次评分流程
+
+1. 先核当前作品、标准立绘、实际原生池和现存证据。记录本轮source/body/complete/部件与生成接口哈希、pool/corpus、seed和上下文；不得沿用已删除档案的结论作为已验证事实。
+2. 使用Codex内置浏览器实审当前版本，full覆盖立绘/全套/裸模，body覆盖default+20。部件数量可增加，但不得为凑数引入缺块参照；原生下装/腿同源及连接校准仅减少缺块，不保证所有组合自然。
+3. 正式多件验收要求head2、body3、figure5、nearFull8、scene3、accessories3、upper2、skirt3、stride2九组各五对原生/AI。可先用head2/body3/upper2定位失败并结束该轮评分；其余六组标待审，不能宣布完整验收通过。
+4. 导航或滚动后截图与前次操作分开调用。实际打开PNG核编号、原生身份与部件footer；DOM ready、哈希和failedImages=0不证明画面已经绘制。加载页/旧帧排除有效覆盖，同seed/同抽样补证，不挑有利样例洗失败。原生遮挡严重可加辅助视图，但原主场景保留，辅助视图不替主分。
+5. 独立评委按当前图像评分，逐项给分、坐标/样例、原因及适用哈希；指出肢体手掌、发型刘海、衣料的已改善和仍不足。原生同比参考记录来源/裁框，不能仅凭抽象标签扣分。
+6. 还原≥90不证明融合/素体≥98。明确区分已通过、未通过、待审、无法判断；静态图不证明动画。技术疑项只有当前证据支持才解除，方法澄清不等于作品已修复。
+7. 用户另行要求迭代时才回传作者返工；低分如实保留，遵守当次停止指令。结束时交评分表、缺陷、覆盖范围、当前证据位置与校验值。
+
+## 删除归档后的证据边界
+
+旧人类附件只针对当时的newest，不自动套到后续作品。历史轮次分数不作为下次评分起点或保底分。文件已删除就标“历史证据不可用，需重新取证”，不声称已复核、不重建虚构档案，也不为找回旧证明自动恢复旧任务。现存历史台账仅作背景，不能覆盖本文件的下次评分流程。
+</pre></details><details><summary>REVIEW_WORKFLOW</summary><p><a href="REVIEW_WORKFLOW.md">Markdown 原文</a></p><pre style="white-space:pre-wrap;font:15px/1.8 system-ui">&gt; 下次评分先读 [统一执行口径](NEXT_REVIEW.md)。本文件中的R25/R26、本期停手及旧归档描述仅属历史，不自动延续；证据已删除时须重新取证。
+
+# 随机审阅与取证流程
+
+本期按用户最新要求“这轮评完就停吧，整理好相关文件做好归档就行”，完成当前R25的七人内置浏览器独立复评后整理归档并停手，不执行R26。此前两轮计划已被覆盖，保留为历史。计数、台账及未通过时的停止方式见[本期收尾规定](TWO_ROUND_CLOSEOUT_20261110.md)；下述证据范围和98/90门槛保持。
+
+## 1. 冻结当前绘制版本
+
+各角色模块为`tools/classic-remake/{id}.mjs`。作者只写自己的模块和私有revision；root核作者已停笔后统一导入，不能全量import正在修改的其他作者模块。以下命令工作目录为`D:/LLM-show/LLM-show-classic`，角色名单仅为示例：
+
+```powershell
+node tools/archive-classic-runtime.mjs
+node tools/remake-classic.mjs gpt deepseek glm --apply-selected --render-root=ai-workspace/previews/classic/remake/apply-import-r25
+node tools/build-classic-native-review.mjs --reuse-native-pool
+```
+
+`--apply-selected`显式命名1～6位已停笔作者，只import/render这些人；七位全部已停笔时才可用全量`--apply`，两种flag互斥。`--render-root=`是可选的独立导入目录，须位于项目`ai-workspace/previews`内，批次应清楚可追溯；默认导出API保持原行为，body/construction指针必须跟随实际输出。旧预览被占用时保留旧图并生成新批次，不拿旧construction冒充新稿。
+
+导入后用`tools/record-classic-selected-freeze.mjs`记录前置归档ID与本次冻结JSON，核未选角色metadata/items和逐文件SHA不变、原default逐像素差0、五个源哈希未变、七人运行时完整、原生pool/corpus不变。selected apply不刷新七人总作者板/gallery，以免读取其他作者草稿；这些总板可能历史，正式评审以冻结运行时和实际React为准。
+
+当前原生为217件：10槽各20件、背饰17件，保留扩容前165件的PNG字节与来源。新增下装的源同坐标重合成与独立QC继续留档；普通美术改稿复用`--reuse-native-pool`，不要无故重建原生池。确需改池时另核真实性和完整性，poolHash变化后重新取证。当前工作索引为`ai-workspace/previews/classic/remake/HUMAN_FOLLOWUP_STATE.json`，具体版本以manifest及冻结记录为准。
+
+裙腿同源联动，`native-complete-torso-v1`按真实源alpha检查中央躯干连通，减少缺块；它不证明所有全身组合、手掌、发脸及衣料接触均已自然。不得按AI成绩筛seed、排除难样例或降低原生100。
+
+源专属mask或隐藏补片有变化时，先独立QC新增露出部分。同源重合成0差只说明原衣物遮住了修改，不能替代自然体块审阅；新增桥接或补画属于AI接口，绑定哈希评98，不继承原生100。
+
+archive工具保存已apply运行时及原生池所引用的准确PNG/SVG/GIF/Markdown、清单和评分，逐文件SHA核对。位置为`results/archived/runtime/{archiveId}/public`；原URL在该public根下定位。运行时归档、作者源码快照和真实React截图分别保留，不能互相替代。
+
+`manifest.remake.characters`保留completeHash/bodyHash/artworkHashes及冻结bodySrc/bodySvg；各AI槽及ownVariant含artworkHash，body副本带bodyArtworkHash。builder优先取已apply PNG，只在哈希匹配时允许cache/作者preview恢复，绝不把未apply草稿当本轮body。`tools/freeze-classic-review-bodies.mjs`仅恢复与已apply哈希相同的中间产物。单部件不能只绑定成品hash，因为被衣裙遮住的修改未必改变成品。
+
+## 2. 从内置浏览器实际React发起一轮
+
+**正式验收仅使用Codex内置浏览器（IAB）的真实React页面。** 入口示例：
+
+```text
+http://127.0.0.1:5173/?review=1&amp;character=gpt&amp;slot=hair&amp;aiSlots=hair,face&amp;seed=&lt;本轮新随机seed&gt;&amp;arrangement=0&amp;mode=component&amp;scale=1&amp;surface=light
+```
+
+若打开工具返回`queued`，只说明请求已排队，不能记为页面已可见或取证成功。先等待本聊天显示并核实际tab；确需用户操作时，说明工具状态并请其切回本聊天、展开右侧浏览器，不重复请求已授权的验收许可。本次用户确认“页面已打开”后恢复了IAB控制，后续仍按实际页面状态判断。
+
+按nativeCounts各槽实际库存无放回抽5；裙腿同源，上衣依据源alpha连续性图与下装共同复排，其余槽独立。约束不读取AI图或AI分数，也不重抽有利seed。相同seed＋poolHash复现相同draws；正式新一轮换seed，arrangement只是复排固定抽样。
+
+五套纯原生始终100，每套对应同时替入所选AI集合。窄窗（1100px及以下）按每例左右配对，宽窗维持原生上行、AI下行。展示位置不改seed、draws、图层、case ID或分数；截图按实际可见`data-case-id`与`data-kind`计覆盖，不能假定一张窗口图已含五对。
+
+单件只作诊断。正式多件用`aiSlots`或九组预设：`head2/body3/figure5/nearFull8/scene3/accessories3/upper2/skirt3/stride2`，每组每轮抽五套新上下文并保守取最低98。每个selected item须命中本轮资源，记录所有actualAiLayers和完整reviewedPartHashes，不能只force一件；至少保留一个原生槽。适用集合及接口要求见[ACCEPTANCE](ACCEPTANCE.md)。
+
+当前ownVariant与本轮native-display通过共享resolver选择，排除历史standing；没有本轮native展示变体时用当前own。已确认空槽保留预设key、实际数量和`presetExclusions`。Claude、Qwen的独立back为N/A，不能以空图或移除原生背饰授98。
+
+`mode=body`保留default对照，默认抽20例中的5例复查；`corpus=all`展示全部20，最终必须覆盖全量。bodyCorpus独立hash，不因补充素体语料无故改component池。
+
+`inspect=1`追加同seed、同实际层、同坐标的所选部件分离图，仅供无遮挡诊断，不替代完整混搭评分。遮挡补查可用`hide=aura,effect`或界面勾选，只隐藏未选为AI的原生装饰；不能隐藏目标AI，至少保留一个可见原生槽。原seed/draws不变，excludedSlots改变contextSignature，须同时保留原完整混搭。补图不能洗掉目标AI引入的接触/遮挡问题。
+
+## 3. 验证页面证据对象
+
+从当前页面“本页实际选择与图层证据”的`pre[data-review-evidence]`读取DOM中的JSON，或用页面导出按钮；不以与当前DOM无关的隐藏应用状态代替页面证据。
+
+- `artworkApplied`包含当前角色冻结记录，`artworkFamily=classic-body-first-remake-v1`，body副本就绪。
+- `coverage.nativeItems=217`，nativeCounts逐槽匹配，图像加载完成、`naturalWidth&gt;0`、`failedImages=0`。
+- seed、poolHash、draws、contextSignature、每例nativeSelection/aiSelection。
+- baselineLayers、aiLayers、actualAiLayers及每层真实PNG hash/variantRole，确认本轮主体来自`/assets-classic/{id}/remake/`；场景可保留现行AI路径。
+- reviewedPartHash、reviewedCompleteHash、bodyHash/bodyCopyHash及完整selectedAiSlots/reviewedPartHashes；上下文签名须包含集合。
+- bodyCorpus总数、所选ID、bodyCorpusHash、corpusSignature、看5或20的实际范围和逐样例记录。
+- 新增generatedInterfaceHashes和逐源接触接口须完整绑定，不能只看共用主体hash。
+
+component、full、body分别留证。full页面同时核normal、角色Markdown、全套与独立body；body页面核本轮专属素体与原生对照。读取预期版本时只输出必要的`{id,bodyHash,completeHash}`摘要，避免工具截断巨型接口对象造成解析失败；完整指纹仍留在原证据和manifest。
+
+## 4. 保存真实内置浏览器图像
+
+本期实测IAB的`fullPage`截图不可用，采用单张串行的视口截图分段留图，配同一时刻DOM证据。每段记录视口、滚动位置、可见矩形、case/样例ID和PNG SHA；后续工具能力若变化，须重新实际验证，不沿用旧的fullPage承诺。不得用作者离屏合成冒充浏览器证据，也不为塞下矩阵任意放大视口。
+
+1×用于原生像素实审，整数倍补看细节；不变形放大。full三幅图须完整覆盖；component合并实际可见范围覆盖五个native和五个AI；body保存default原生/AI完整对照及全部20个ID。重复case不增加例数。例图不足时继续分段，不能只凭截图尺寸或工具成功响应判定覆盖。
+
+### 逐张核对实际位图（本期补充）
+
+本次已证实：同一次CUA调用里批量滚动、连续截图可能复用上一张位图。DOM已经ready、`naturalWidth&gt;0`、`failedImages=0`或metadata声称目标可见，都不足以证明回包PNG就是该目标；不同SHA也不能单独证明内容正确。
+
+- 滚动/定位与截图分开，**每张截图独立一次CUA调用**。截图回包后实际打开PNG核对，确认正确后再前进，不能在同call循环中批量滚动截图。
+- body图读取实际`#01–#20`标题，并核原生人物/服装/姿态身份与冻结corpus一致。只露出目标标题而没有目标完整人物，不能计作目标覆盖。
+- matrix图核实际“原生N”、对应fixture和footer原生部件ID，逐项对照case/nativeSelection，并确认原生与AI两侧对应同一上下文；不能仅信DOM visible ID。
+- 实际编号/身份确认写入`rasterConfirmation`等记录后才可计有效范围。相同SHA被赋给互斥ID时应触发内容复查，但错位结论仍来自实际PNG，而非只由哈希推断。
+- 失效PNG、原metadata、SHA和不一致原因保留，标记`validForReview:false`；按相同seed、context、当前艺术hash补图，记录替代关系。技术补证不另计美术修改轮数，也不改变美术评分或清历史问题。
+
+R25实际例证见[截图内容审计](../ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/evidence-audit/audit-results.md)：四角色140张仅在该报告指定的编号/身份/fixture/footer范围核对；Qwen旧13张中3张确证错位，整批退为诊断，再按同seed串行补采。新批次与后续角色必须另核，不能外推旧QA覆盖。
+
+文件可组织为：
+
+```text
+ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-NN/{id}/
+  full.png / full-evidence.json / full-segment-*.png
+  head2.png / head2-evidence.json / head2-segment-*.png
+  body3.png / body3-evidence.json / body3-segment-*.png
+  upper2.png / upper2-evidence.json / upper2-segment-*.png
+  body-evidence.json / body-default-*.png / body-strip-*.png
+```
+
+截图后实际打开检查内容。视口或版本在取证前后移动/改变的截图不计有效覆盖；失败、不完整图保留为诊断并明确标识，不能充作完整五对或20例。`invalid-uid-crop.png`等旧错误图继续作废。
+
+root保存IAB原始PNG字节及同页证据，独立评委实际查看这些确切文件。外部Chrome旧图保留其历史来源，不能改标为本轮IAB；旧Chrome裁图、保存路径和fullPage说明不作当前能力承诺或本期替代路线。不得启动未经授权的外部headless浏览器、改安全配置或把巨量base64嵌入可执行脚本。
+
+观察超时不表示tab、进程或任务已终止，应复查同一handle或其他权威状态，不能仅凭超时重新选择浏览器、重启服务或重复创建页面。正常连接沿用当前browser/tab；确有缺失或会话重建时按实际inventory重新绑定，不沿用失效tab闭包。
+
+## 5. 独立评分与回传
+
+独立评委先看20张原生女性样本、选定normal及角色Markdown，再看当前IAB真实图与哈希。融合每组五例按SCORING权重计算、保守取最低98；body保留default与20例逐例判断并取最低98；全套还原90另评。原生100不改，作者不自授验收分。
+
+正式记录重点包括：肢体/掌跟饱满自然、衣料受力和压叠厚度、发型/刘海与衣服的还原和融合、Blingee华丽且层次清楚、对应色相接近、非常显著pose差才扣还原。原生式紧凑指群/角阶/负形不套写实标准；书碗柄与悬浮物/立式麦克风/装饰先辨真实语义。尺寸判断遵守SCORING可感知5%的适用边界，不把default两点宽度设成所有姿态目标。
+
+回原作者的包须含：尤其是原生组合图、AI对照、完整selection/实际源、seed/pool/contextSignature、各维/逐例分数、反对理由和坐标、具体建议、标准图/Markdown核对、版本与接口哈希。不能只发“低于98，请改”。常规迭代可先定位`head2/body3/upper2`的明显失败回修；本期R25评完按最新指令停手，仅记录缺陷与建议。其余六组未审时明确pending，不能外推全部九组通过。
+
+## 6. 修改后复评与未变范围携带
+
+新增素材须核实际服务响应：正确image MIME/字节、加载完成、naturalWidth与failedImages。历史上出现过磁盘有图但HTTP200返回SPA HTML的故障；当前`../frontend/workspace-files.mjs`动态解析受控运行时路径并核真实文件，不能保留“每新增图必重启Vite”的旧做法。技术失败先查当前响应与源，保留失败证据并按相同seed/draws重采；艺术失败的新一轮按当前217件池取新seed，不换有利组合洗分。
+
+Windows实际文件锁须先核目标、已写入范围、归档及进程状态。确需短暂停止本任务自建Vite以完成目录轮换时，先核PID/命令归属，记录实际错误、处理原因并恢复监听/页面；不关闭用户应用、不改ACL、不以观察超时作为重启理由。旧预览占用可用独立`--render-root=`生成新批次并保留真实路径。
+
+`tools/classic-frozen-capture.mjs`只匹配证据范围，不生成新分。携带原分时保留原seed/context、原图/SHA、原报告及matchingScope，包括原失败；不把携带说成本次新seed、新full或新技术清关。
+
+| 范围 | 必须匹配 | 边界 |
+| --- | --- | --- |
+| 共同前提 | character、poolHash | 旧池不能冒充新池 |
+| full | completeHash、bodyHash | 改头后旧full不证明新全套 |
+| body | bodyHash、bodyCopyHash、bodyCorpusHash | 仅头变可携原default＋20，不改称新截图 |
+| component组 | 全selectedAiSlots及每个reviewFamilyHash完整map | 任一所选版族变化重审，不能只比较一张own PNG |
+
+换body hash不自动清旧形体问题；方法纠正与几何修复分别留档。旧不利主线/窗口、源/目标/控制、原结论及未知区域保留，明确指向当前/历史hash；未确认的方法疑项不指导盲削肉面。
+
+`node tools/sync-classic-review-scores.mjs`只导入独立报告、核算既有维度的算术，不生成审美分；`classic-acceptance-status.mjs`按当前body/complete/family/pool/corpus及实际证据聚合。`revision-required`表示有当前真实低分，`pending`表示证据/报告未齐，全部必要范围通过才为`passed`。同版本其他seed的失败不被新合格样例洗掉。
+
+最终通过仍要求适用九组各五例98、default＋20全部98、全套90和必修形体问题闭环。本期当前R25评完即按用户要求停止改图、整理归档并暂停目标，即使仍未满足；保留未通过/待审、未覆盖和后续建议，不执行R26，不标目标已达成。
+
+## 7. 历史回放与结果归档
+
+`review=1&amp;archive={20位小写hex归档ID}`读取`results/archived/runtime/{id}/public`，实际URL前缀为`/LLM-show-classic/results/archived/runtime/{id}/public`。保留原manifest、native-review、scorebook、素材及body/complete/part/pool哈希，导出runtimeArchive并提示历史回放。不能刷新新池冒充旧seed；历史回放不作当前主验收证据。
+
+旧问题的遮挡补查保留原seed、draws、AI版族及完整图，只在原生/AI两侧同样隐藏非目标装饰。以`supplements.originalContextSignature`关联原证据，补图只增加细节，不替代完整Blingee场景或表示新稿通过。旧R2归档及Chrome/fullPage补图保留原始目录与来源，不升级为本期IAB能力或新版本证据。
+
+每个完整候选先精确archive，再用`tools/freeze-classic-results.mjs`导出七人全览、逐人src/rating/rating.json，轮换`results/newest/new/previous`；旧版移入archived。复评后只用`tools/refresh-frozen-classic-ratings.mjs`刷新精确匹配的冻结评分，不改已冻结艺术字节。目录轮换失败先核已经移动的步骤与版本ID，保留可恢复版本再续作，不盲目覆盖目标目录。
+
+最后更新本期收尾台账、实际分数、已改善项、未通过/待审/未覆盖及旧技术问题。原始人类意见仍只绑定R19，后续反馈不套用旧分数。当前R25复评结束后只整理归档并停手，进一步改稿等待用户重启。未采用的GPT16、DeepSeek10、Claude12、Grok13和被中断的Qwen11已单独保留在未采用私稿归档（历史文件已不可用），不导入、不验收、不计已完成轮；七人作者模块已恢复R25精确冻结源码，运行时/newest艺术未变。
+
+## 8. 截图必须实际显示本轮画面
+
+DOM已出现证据、图像加载检查为空、哈希与坐标匹配，都不能单独证明截图已绘出角色。每张正式PNG仍须实际打开，确认正确的原生/AI组合、样例编号和完整体块。新页面导航与首张截图分开调用，先确认页面状态，再取首图；不能把加载页位图与已经更新的DOM拼成有效证据。
+
+本期DS9的head2首例曾真实抓到加载页，独立评委据PNG指出后，保留原图和SHA，以同seed、draws、contextSignature、部件/身体哈希补采不可变segment06。旧segment明确写validForReview:false及原因，原DOM可见观测保留；新补图关联被替代项。有效覆盖和正式评分排除失效位图，字段语义不能写反。
+
+这类补证只修取证故障，不是新的艺术修改轮，也不允许换样绕过低分。恢复后由评委实际打开补图，再补齐对应例评分；未补齐时该例和组保持待评。完整五对与default＋20覆盖以有效实图核对，不能只对DOM计数。
+</pre></details><details><summary>SCORING</summary><p><a href="SCORING.md">Markdown 原文</a></p><pre style="white-space:pre-wrap;font:15px/1.8 system-ui">&gt; 下次评分先读 [统一执行口径](NEXT_REVIEW.md)。本文件中的R25/R26、本期停手及旧归档描述仅属历史，不自动延续；证据已删除时须重新取证。
+
+# 独立评分细则
+
+本轮还须执行 [人类审校后的改进规则](HUMAN_REVIEW_FOLLOWUP.md)，重点实审细密发丝/表情、衣料对身体的受力和叠压、Classic像素与Blingee材质。保持本文件权重和98/90门槛。
+
+本期另执行[当前R25评完停手规定](TWO_ROUND_CLOSEOUT_20261110.md)：最新用户指令覆盖此前两轮计划，R25复评后整理归档并暂停，不执行R26。停止边界不改变评分、门槛、证据范围或历史问题状态；未通过的项目仍如实记未通过。
+
+原生组合100是用户指定参照，不是算法估计。AI分数是有证据的专家审阅判断，不等同精确还原率；不得为达到目标而上调分数、改权重或更换有利取景。
+
+原生分件真实性先独立审查：语义mask必须忠实；为换装补足的隐藏区域属于制作工具新组装的体块，不能仅因donor像素来自原生就自动当100参考。原同源重合成0只说明原裙遮住了修改；新增露出部分仍须检查自然收放、关节/接缝、阴影和笔触。明显橙柱、错归肤色等可否决该派生输入，在修正并独立QC之前不切换素材池。这不等于扣低用户指定的纯原生组合100分。
+
+## 本轮重点：肢体手掌、发型刘海与衣装（2026-11-10 用户追加）
+
+体块审计首先检查肢体与手掌的自然度：肩—上臂—肘—前臂的外廓收放、连续转面，腕—掌—拇指/指群的过渡、屈伸和受力，以及手与书/碗/扇/包链/斧柄等实际接触。避免尖V肘、等宽直杆、几何关节、方块掌、圆洞掌、梳齿指群或断开的掌根。140×226允许原生式手指概括，不强迫每指逐根可数；概括仍须结构合理、轮廓自然。裸模和穿衣/手套状态必须同时看，不能用衣袖遮住不合格手臂或手掌。
+
+重点反例应尽量并列同尺度、相近屈伸/接触的真实原生局部作100参照，记录来源和裁框；不变形放大、不用裸模未知区域虚构真值。原生本来也有的紧凑指群、适度负形、局部直边和合理关节像素角阶，本身不扣分；“尖V/杆/洞”等描述须指出AI额外引入或加剧的真实结构/转面/遮挡缺陷，不能套写实五指或光滑曲线标准。此校准不改变98门槛，也不豁免可见的不自然连接。
+
+2026-11-10用户进一步强调肢体不饱满、呈“骷髅兵”感：必须检查肩臂肌腹、肘前后转面、前臂近端、腕掌/掌跟等是否有真实饱满的肉面和自然收放；不能只剩骨点间的细杆、细轮廓上加纹理或统一描粗外边。也不能为穿过旧画布测线、单条截面或未确定的对应点而削掉合理肉面。可直接比较的真实体量守门仍按下文执行，姿态/对应/重叠不明确须先复核，不以测点数字替代可见自然度。
+
+同次用户强调Blingee Pixel应当华丽而层次、线条分明。发束主谷/转面/分叉，衣褶主暗面/折谷/亮峰，以及袖腔、掌指、道具和裙层的前后遮挡必须在原生1×清楚可读；细密像素与丰富色阶不能糊成一片。碎亮点堆叠、低对比半调混合、全局模糊或锐化、更多闪光均不能代替清楚的形体和层级。融合分照既有像素笔触、体块、材质、Blingee协调和遮挡维度记录，不改权重/98门槛；须给具体糊合区和真实原生同尺度对照。
+
+接触审计先看原图与原生部件真实语义：明确握持/支撑的书、碗、扇、柄、包链须有合理掌指接触；立式麦克风、设定中悬浮的物件、腰饰或胸针不强求手握。不得仅凭手没握住原生装饰就扣AI分；须在上下行对照中定位AI引入或加剧的真实穿插、断接或接触缺陷。原生基准仍100，不能降低其分数，也不能用此条豁免AI自身的实际错误。
+
+发型、刘海和衣服必须双向重点评价：既看与normal的发型轮廓/分缝/刘海方向与长短、标志衣型/袖口/裙层/褶向/对应色相的还原，也看其在真实原生组合中的像素尺度、暗边/发丝簇、材料色面与接触遮挡是否融入。不能用较好的还原分替代融合，也不能为融合把标志刘海或衣型改没。normal原本有意遮眼的刘海按其真实设定审，不把准确的有意遮盖误当技术错误。
+
+维持既有权重和98/90门槛。明显肢体/掌指不自然，或发型刘海/衣料仍有明显异质感时，不得用其他部件、装饰和均分补到98。报告增加重点观察 naturalnessAudit（limbs/palms/wrist/contact及对应body或部件hash）、hairBangsAudit、clothingAudit，具体问题给坐标/样例/证据并回传原作者。量测通过不替代手掌/肢体目视自然度；中小pose偏差不扣还原的规则也不豁免结构或接触缺陷。
+
+## 维度一：融合度（门槛98）
+
+每个角色的适用槽位分别在本轮随机5个原生上下文中评分。每例100分，槽位验收保守取5例最低分；保留逐例分数和理由，禁止平均数掩盖断层。normal没有的独立部件明确N/A，不以空目标给98，也不伪造可见证据。
+
+上述单件是定位阶段；正式验收还须对ACCEPTANCE列的9个多件组（2、3、5、8件AI，含upper2/skirt3/stride2三种跨原生接口）各抽新seed的5套原生组合，逐例最低98。一个角色的多件融合不能由单件分数推算。自定义组另记，不覆盖或洗掉失败的必要组。每件AI与原生、AI彼此的连接/遮挡均按相同细则审阅。
+
+`skirt3`会保留原生腿：新增隐藏补片属于AI接口支持，逐例评分必须覆盖它并以`reviewedGeneratedInterfaceHashes`完整绑定本轮证据表。`upper2`保留原生裙腿，`stride2`保留原生上衣/裙；这些连接不能由原六组裙腿同时替换的结果代替。
+
+| 子项 | 权重 | 比较重点 |
+| --- | ---: | --- |
+| 像素线条与笔触 | 20 | 原生像素密度、暗边有效覆盖、曲线台阶、发丝/衣缝簇；无软化、虚线、突刺或过粗镶边 |
+| 体块比例与连接 | 25 | default头身与四肢体积；肩颈/腕掌/腰胯/膝踝连续；衣服与素体同关节；与原生部件接口无明显断层 |
+| 材质与色阶 | 15 | 肤色、发束、缎面、蕾丝、金属、宝石的主暗/亮面和小尺度色簇；不过度摄影渐变或均匀亮柱 |
+| Blingee Pixel / pixel background协调 | 20 | 在原生迷你闪图世界中融合；像素尺度、glitter高光、星芒/贴纸前后层、背景颜色及人物可读性一致；不靠多加闪光遮缺陷 |
+| 遮挡与接触 | 15 | 发/脸/领/袖/手/道具/裙层关系；手握住物、鞋落在腿上；无重复肢体、穿插、悬空、断轴 |
+| 画布、效果与可读性 | 5 | 140×226坐标与alpha、浅深底边缘；闪效不吞脸/手；动态若声称验证须实际观察帧与节奏 |
+
+加权总分四舍五入不应把明显不合格项抬到98。98+要求几乎无明显可感知异质感；有明显断层、虚线皮肤、几何关节、遮眼或道具断开时应给反对理由，不机械套满分模板。
+
+所有门槛直接用未取整的加权总值判断，最多保留两位小数；整数显示不能把89.75跨成90或97.75跨成98。原专家维度分与理由保持，导入器只核算算术并另存expertReportedScore，不生成审美分。body逐样例的专家整数判断不受此算术规则影响，整体仍保守最低。
+
+### 素体专项守门
+
+独立短预审即使 `requiresRevision:false`，若明确 `requiresFurtherAudit:true`，当前素体仍为 pending，不显示通过。它可以支持把已停候选冻结到验收台供实际 default＋20/全套审阅，但不能替代未覆盖区域的最终判断。既有确认问题可由明确 resolvesBodyHashes 清除，尚待复核的范围与不利观察继续保留。
+
+同一 bodyHash 补完短预审后，独立报告须明确 `requiresFurtherAudit:false`，并在 `resolvesFurtherAuditReports` 列出被完成的预审 `sourceReport` 路径；不是靠较新的日期覆盖旧待评项。发现真实差异则仍记 requiresRevision，不用“范围补齐”清除确认问题。
+
+用户原话要求与20张不同姿态、着装原生样例相比，不能有“5%以上能明显感知到的差异”，并未指定所有姿态的某条骨宽必须相同。原话定位见 [验收要求来源](USER_CRITERIA_PROVENANCE_20261110.json)，方法独立复核见 [报告](../ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/default-point-method-independent-review.md)。直接可比部位采用统一法向量测作为辅助，不能以不同姿态的横截面混比，也不能把28个点外推成全身≤5%。统一的是源图、坐标、alpha和采样口径：原生140×226、双线性alpha&gt;128、0.025px法向采样。default上臂中心(56,104)、轴(-1,12)、宽5.025；前臂中心(48,119)、轴(-11,10)、宽4.825，仅为这两个源截面的观测值，不是全部角色/姿态的目标宽度。记录实际采样部件、中心、轴和哈希；数值宽差不能直接等同可感知差异或审美分。
+
+单线超过5%须如实保留为不利诊断。只有同解剖、同可见成分及投影对应成立，锚点/相位/重采样控制支持持续真实局部体量差异，并能以同尺度原生1×/整数倍对照指出可感知缺陷，才列确定返工项；否则注明待对应或不可比的具体范围，不能统一缩臂、削肉过点。衣料腰胯只标proxy。即使量测通过，细杆肢体、掌跟薄、断续暗边、手掌橙块、行位移刺、关节拼接等目视缺陷仍可否决98。原生default皮肤应成面、连续有覆盖度，不能仅全局crisp.65造成点线后宣布风格一致。
+
+视觉分与尺寸守门独立。真实default＋20的专家98保留其来源；若随后独立量测确认同一body hash仍有真实可比体量超差，该素体仍需返工，不能凭98覆盖新证据。`classic-anatomical-leg-audit-v1`只记录技术发现，不生成或改写审美分：由`classic_body_judge`给出`characters[{id,reviewedBodyHash,requiresRevision,confirmedFindings,evidence}]`，先区分确定差异、相位/映射疑项和未覆盖部位。导入器按当前exact body hash附加阻断；同hash任何未解确认项不被新seed/另一个较好点洗掉。React保留视觉数值并明确显示“形体需返工”，不显示整体通过；改几何后须新hash和复审。没有确认阻断仅代表该次明确范围，不是全身数学误差证明。
+
+换body hash也不自动解除已知问题。某角色有历史确认的尺寸阻断时，新body必须由独立audit以`requiresRevision:false`、当前`reviewedBodyHash`及`resolvesBodyHashes:[此前确认问题的body hash,…]`明确解除；未覆盖全部历史确认项就保持“形体待复核”，不得因为无关手部改色或改名洗掉小腿问题。原同hash确认阻断始终优先，不会被同hash另一个false结论覆盖。`classic-body-audit.mjs`让React与最终汇总共用该规则，仍不生成审美分。
+
+当前素体还必须有独立的可比可见体量复核记录；`not-reviewed`保持待审，不能只因视觉default20都98就显示整个素体验收通过。只审主四臂点、视觉足部或仅给无尺寸问题结论而不保源/目标/对应/控制证据，不满足这个补充守门。审查范围与未覆盖裸模未知区域必须如实写明；没有官方裸腰胯时不编造其尺寸真值。该规则不修改原视觉分，不把不能直接对应的不同pose硬当误差。
+
+独立复核先审核方法适用性，不要求对衣遮/未知裸模捏造数值。原始技术记录永久保留，方法纠正与几何修复分别留档；本次方法说明、同hash新false或换hash都不自动清旧项。须逐finding独立复核确证、待对应和不可比范围，保留不利主线/窗口、源/目标/控制及未覆盖项。稳定同解剖且可感知的真实缺陷仍须返工；仅与default单点数字不同不能独立证明用户不合格。
+
+量测坐标须注明是PNG数组索引中心还是SVG物理坐标。数组索引(x,y)对应SVG物理(x+.5,y+.5)；从raw像素中心反推的source中心线已是数组口径，手写target SVG曲线则须换算−(.5,.5)。不能对某方重复修正，也不能把正确换算当作任意挪有利点。保留raw/换算后、不利邻域与选点依据。
+
+不得仅用profile中估计的knee/ankle标签强判解剖误差。新增方法应先用实际字节相同的原生腿做恒等对照，再记录估计关节造成的误差，使用可见关节转面/原足映射及合理锚点敏感性核对。当前GPT c803…在x35–99/y146–225对default逐RGBA/alpha0差，正确同解剖raw/平滑主线与窗全0；故意套不精确profile膝踝会造左+8.70%、右−9.73%单线及右邻窗超5假差。对其他身体必须区分这个定位误差与在合理锚点范围仍持续的真量差。
+
+主点之外保留邻域多线/窗口敏感性，必要时用真实原生calf在相同局部曲率、切线及有依据的骨段投影长度下、法向宽不变的控制来校准像素采样。nearest/bilinear、等长rigid与沿轴投影控制要分别标清。控制图不自动成为生产美术或原生100参考，更不自动授98；窗口过关不能直接抹掉单线，不同局部曲率的简单全局旋转控制也不能假装完全同pose。只把不能由这些误差解释、解剖对应成立的持续超差列为确定返工项，保留其余未知，不挑有利点。
+
+“固定采样”固定的是基准、骨段及其归一化解剖位置，不是要求所有新pose永远穿过旧画布坐标。若为还原立绘真正旋转/外展骨段，保留旧点作为回归记录，同时明确旧→新中心/切线的姿态变换，在新骨段对应位置沿真实法向再测；两套结果和选点理由都留档。不能用旧点附近恰好的连通片代替新pose体量，也不能任意挪点只挑合格断面。独立评审可追加邻近同解剖断面，不能让尺寸约束反过来破坏立绘动作与连续自然体形。用户的可感知差异5%要求不变；数值诊断须遵守上述适用域，量测始终不授审美98。
+
+### 多姿态/着装素体审阅
+
+default基准与20张不同女性classic着装、体态、姿态和发型一同使用。逐样例记录AI素体的体块/笔触/肤色面/均匀性/关节与pose自然程度差异；原生都为100。默认随机5是本轮复查子集，最终20样例须完整覆盖。对被衣服遮住的原生躯干不可虚构裸模真值，但可观察穿衣后的承重、轮廓与关节感觉。
+
+单独的body融合分亦需98，保留default判断与20样例判断，不能由前者取代后者。每个已看样例有perSampleScores及理由，未看保持待评。Blingee协调考察原生纸娃娃的细密像素/色面/边缘，在着装与场景中自然成立，不能以给裸肤加闪点代替准确身体。
+
+## 维度二：整套立绘还原（门槛90）
+
+### 颜色还原：色相接近（2026-11-10 用户最终澄清，必评）
+
+只重点评价对应部位的色相是否接近本套选定 normal 立绘（或用户明确确认的配色适配）。逐项核对发色、渐变两端的色相、左右瞳色、衣裙鞋袜和配饰的对应色相。不能把应为蓝、紫、银灰、金、红等颜色明显画成另一色相；主色或辅色要对应到正确部位。
+
+具体RGB/HEX色号、明暗、饱和度不作为还原评分的重点，不因合理差异扣分；允许按原生Classic像素材料调整色阶、光影、对比和饱和度。这些光影/材质是否自然，仍在融合维度评价，不能反过来要求复制立绘精确色值。也不设置面积比例或颜色数值误差门槛。
+
+保持六维权重：发色/渐变色相计入「刘海和发型」，瞳色色相计入「神态」，衣裙鞋袜色相计入「服装」，配件色相计入「配饰」。同一色相问题只在所属维度扣一次。正式全套报告的 colorFidelity 观察项记录参考图、已授权适配、对应部位色相差异及扣分归属；不得仅作不影响评分的附注。旧报告缺本项时，该范围保持未覆盖，不补造旧分。
+
+### 素体与四肢姿态差异审计（2026-11-10 用户补充，必评）
+
+必须将当前独立素体、穿衣全套与选定标准立绘并排审计肩/臂/肘/腕的指向、抬手/收手/弯臂关系、骨盆朝向、两腿开合/交叠/屈伸、抬脚和承重。只有非常显著的姿态差异才在立绘还原中扣分；中等及以下差异不因姿态扣分。不能把Classic头身比适配、合理像素简化、局部关节角度或手指位置的中小差异机械扣分，也不新增未经用户指定的角度/距离数值门槛。
+
+非常显著的例子：标准图的标志性举臂被画成完全垂臂，明显交膝/抬脚变为无关的双脚直立，主要屈肘方向或躯干承重关系发生大幅改变，整体动作类别或剪影明显不同。例子用于解释程度，最终须结合角色原图、同坐标素体和穿衣结果说明证据；不能只凭一个局部锚点或单条测量线定性。
+
+正式审阅增加 poseAudit：绑定 reviewedBodyHash、reviewedCompleteHash 和 reference；按躯干、左右臂、左右腿、重心记录 severity（none/minor/moderate/significant，significant专指非常显著）、区域证据、理由及是否扣分。minor/moderate必须明确pose deduction=0。significant才归入原六维中的「动作」或「体态姿势」，同一差异不重复扣分。审计范围未看全则注明pending，不能补造已审结论。
+
+本条只限制姿态偏差的还原扣分。解剖比例/粗细失衡、关节断接、尖刺、重复肢体、衣料不贴合、穿插或持物接触错误仍按融合度的体块/材质/接触标准评审，不因姿态差异较小获豁免。旧报告需按此边界重新审计相关扣分，保留原报告，不由导入器自动抬分。
+
+| 子项 | 权重 | 比较重点 |
+| --- | ---: | --- |
+| 动作 | 20 | 手势、持物、提裙/点颊/抚胸等主要动作及接触 |
+| 神态 | 10 | 眼眉嘴、闭口/微笑/困倦、指定瞳色与角色感觉 |
+| 刘海和发型 | 20 | 偏分、贴面细束、长短层级、卷束/辫节、渐变发色和流向 |
+| 体态姿势 | 15 | default身体上的承重、胯/膝/踝、错步/屈膝/抬脚，而非只移动头 |
+| 服装 | 25 | 领/披肩/泡袖/宽袖口/束腰/裙开口/内衬/褶底/鞋靴的标志轮廓和层级 |
+| 配饰 | 10 | 图标、花徽、星、角翼尾、书、扇包、斧、铃/眼罩等必要特征 |
+
+允许经典QQ秀头身与原生像素的合理简化；扣分应针对原生尺寸仍可读的身份特征缺失，而不是要求复制高分辨率照片。背景华丽、配件数量或情绪词不能补偿核心衣型/发型/pose缺失。
+
+必须核对角色README与所选normal原图，记录版本排除项及已授权适配。分数绑定完整成品哈希；改版后不得沿用旧分数。
+
+## 评分记录最小字段
+
+融合entry：`score, reviewedPartHash, seed, poolHash, contextSignature, reviewer, contextScores[5], reasons, recommendations, evidence`。
+
+如果部件提供本轮native展示变体，reviewedPartHash优先绑定reviewFamilyHash而非仅ownPNG；多件完整map同理。actualAiLayers逐例记录真实PNG hash与variantRole，两个运行时用途都须覆盖，见VARIANTS。
+
+多件融合entry另有`selectedAiSlots, reviewedPartHashes`完整map，按集合key保存；每例actualAiLayers含全部被替入AI层，不能只记录原target一件。
+
+素体entry：`score, reviewedBodyHash, seed, bodyCorpusHash, corpusSignature, perSampleScores, defaultComparison, reviewer, reasons, recommendations, evidence`；匹配本轮样例范围后才可显示通过，5张不能冒称20张。
+
+`defaultComparison`必须含独立`score`和比较理由；UI缺该记录时保持待评。default与所看每张样例都须98，不能只给一个总分。
+
+整套entry：`score, reviewedCompleteHash, reviewer, dimensions, reasons, recommendations, evidence`。
+
+每个问题写到角色、slot、原生坐标/区域、对应上下文和源参考，区分确定问题、风险、未知项。静态截图只能证明该静态画面；未观察动画不能声称动态已通过。
+</pre></details><details><summary>TWO_ROUND_CLOSEOUT_20261110</summary><p><a href="TWO_ROUND_CLOSEOUT_20261110.md">Markdown 原文</a></p><pre style="white-space:pre-wrap;font:15px/1.8 system-ui"># 2026-11-10 · 当前R25评完停手与归档台账
+
+用户最新要求：**“这轮评完就停吧，整理好相关文件做好归档就行”**。本期仅完成当前R25七人内置浏览器独立复评，然后整理归档并停手，不执行R26；后续是否重启由用户决定。文件名保留原名以维持历史链接。
+
+## 当前有效范围与计数
+
+- 当前有效轮次为R25一轮：七人本轮产物、真实页面证据和匹配版本独立回包齐全才记完成。R25闭环后计为1/1，不记成两轮完成。
+- 重渲染、改名、重截屏、换seed、合并已停稿或技术补证不新增美术轮数。缺失回包或证据不能提前写完成。
+- R25评完后只做相关整理归档，不再改图、起稿、导入私稿或自动追加R26。低分仍记录低分，未覆盖仍待审；按用户要求暂停目标，停手不等于最终验收通过。
+
+## 历史计划（已被最新要求覆盖）
+
+此前用户要求“再改两轮就先停手，根据本次对话完善rules和流程的规定，给我更新md文件”，原计划为R25复评后再执行R26。该计划现已取消后续R26执行；历史requestedRounds=2保留，当前requestedEffectiveRounds=1。R26私稿只归档，不计已完成轮、不列待自动续跑。
+
+R23是建立收尾计划时最后一套完整独立评审基线；R24是四位角色先行候选。角色revision编号与统一结果版本编号不同，不以私稿revision数冒充完整复评轮。
+
+## 本期结果台账
+
+以下为本轮最终闭环状态；计数只表示当前审阅已完成，不表示质量通过。
+
+| 统一版本 | 角色稿件或来源 | 冻结与内置浏览器复评 | 轮次状态 |
+| --- | --- | --- | --- |
+| R25 | GPT15、DeepSeek9、Claude11、Grok12、Qwen10、Gemini13、GLM10 | 冻结`7ec0fc573d05e2fefed7`；7/7独立回包与实际内置浏览器证据齐全，分数已回填newest | 当前有效轮完成1/1；质量未通过，按用户要求停手 |
+| R26（取消执行） | GPT16、DeepSeek10、Claude12、Grok13停笔私稿及中断的Qwen11 | 全部未采用、未apply、未验收，已独立归档；Gemini/GLM不再起新稿 | 不执行、不计已完成、不待自动续跑 |
+
+每轮最终补入：`archiveId`、七人的 source/body/complete/部件版族哈希、证据索引、已看范围、独立报告路径及SHA、各维分数、低分原因、待审项、历史技术问题状态。未改范围若携带原证据，须另列其原 seed、上下文和精确匹配范围。
+
+R25的七位作者源码已按原SHA独立保存到 `results/archived/authors/r25-7ec0fc573d05e2fefed7/`；`r25-cohort-source-delta.json`记录相对R23的七人实际变化。未采用R26私稿已独立归档；七人作者模块已恢复为该R25冻结源码并逐SHA核对。未采用私稿不得改写R25运行时、截图或冻结源码，运行时/newest艺术未变。
+
+&lt;!-- closeout-current-snapshot:start --&gt;
+## 最终现场与评分
+
+更新时间：2026-11-10T09:54:49.948Z。**当前有效轮次完成1/1，七人评审已闭环；R26取消执行。** 七人立绘均过90，素体及三组融合全部未达到98，其余六组仍待审，历史技术疑项未清；未宣布最终验收通过。
+
+| 角色 | 立绘≥90 | 素体≥98 | head2≥98 | body3≥98 | upper2≥98 |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| gpt R15 | 94.50 | 95.00 | 92.75 | 93.25 | 91.55 |
+| deepseek R9 | 94.05 | 94.00 | 92.50 | 92.15 | 90.40 |
+| claude R11 | 94.20 | 93.00 | 93.85 | 92.95 | 91.35 |
+| grok R12 | 94.30 | 94.00 | 90.05 | 92.80 | 90.50 |
+| qwen R10 | 95.20 | 94.00 | 94.50 | 93.95 | 92.20 |
+| gemini R13 | 93.30 | 93.00 | 89.90 | 91.35 | 89.60 |
+| glm R10 | 93.90 | 93.00 | 89.55 | 92.10 | 90.40 |
+
+逐项原因、哈希、seed、原生上下文及未覆盖范围见[评委最终汇总](../ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/round08-r25-final-independent-summary.md)和[最终证据索引](../ai-workspace/previews/classic/remake/r25-final-evidence-index.json)。每人实看full、default+20以及head2/body3/upper2各五对，共140个body样例、105对重点混搭。多件取五例最低，原生仍100，评分权重未变。
+
+[独立截图审计](../ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/evidence-audit/audit-results.md)确认前四角色140张及Qwen matrix15张的实际编号/身份或footer。Qwen旧13批次失效保留，仅新verified20用于评分；Gemini/GLM新body20和三组matrix由root逐图实看确认，不冒称属于旧QA140。DeepSeek加载页保留但排除，同seed segment06补齐。Grok同seed隐藏effect仅作辅助定位，原主分不变。
+
+[停手保护验证](../ai-workspace/previews/classic/remake/r25-stop-protection-verification.json)核对1884个运行时美术/配置文件与R25冻结一致，并核实newest成品和七人制作源码。五份私稿已完整复制未采用归档（历史文件已不可用），共454文件，含源模块和逐文件SHA；Qwen11中断边界明确，其他四份作者停笔不等于独立验收。所有私稿未采用、未apply、未验收；制作模块已恢复R25。
+
+归档总入口（历史文件已不可用）汇集本轮证据/报告/规则快照、精确运行时、冻结源码、未采用私稿和原始人类意见。原人类附件只绑定R19，字节保持；本期总体新反馈另入rules。当前只整理归档并停手，后续须用户明确重启，不自动返工。
+&lt;!-- closeout-current-snapshot:end --&gt;
+
+## 本次对话形成的审美与评分口径
+
+| 项目 | 执行规定 |
+| --- | --- |
+| 门槛 | 原生组件和全部纯原生组合由用户指定100；AI融合、素体至少98，全套立绘还原至少90。保持既有权重，逐组取五例最低，不用平均数或显示取整洗掉失败。 |
+| 身体与手掌 | 肩臂肌腹、肘前后、前臂近端、腕掌/掌跟要有自然饱满肉面和连续转面。避免细杆、针锥掌根、几何拼接；统一描粗或衣服遮挡不能代替重画。裸模、穿衣、手套和持物状态一并看。 |
+| 衣料 | 领、腋、袖口、书布、束腰、提裙、裙翻层随肩肘胸腰胯与承重形成主面、暗谷、窄峰、压影和厚边，减少纸片感、贯长浅轨与无组织半调。 |
+| Classic风格 | 像素艺术、Y2K、Blingee Pixel 是融合标准。华丽的同时，1×轮廓、发束主谷、衣褶谷峰、前后层和接触必须清楚；碎亮点、全局锐化/模糊不能代替结构与材质。 |
+| 发型与刘海 | 同时重点核对 normal 的偏分、分缝、贴面束、卷发/辫节、轮廓、刘海和对应色相，以及原生尺度的细簇、断续高光与层级，不能只保一个维度。 |
+| 颜色 | 只重点关注对应部位色相接近。RGB/HEX、明暗、饱和度、面积比例不设还原硬门；材料光影是否自然仍按融合评价。 |
+| 姿态 | 素体、四肢与选定标准立绘只有非常显著的姿态差异才扣还原分。中等及以下明确扣0；结构、粗细、连接、受力错误仍独立评融合。 |
+| 多姿态原生 | 同时比较 default 与20张不同着装、姿态、体态、发型的原生女性样例；不只看 default，不编被衣物遮住的裸腰、腕掌或足部真值。 |
+| 可感知5% | 用户要求的是20例对照中明显可感知差异。default5.025/4.825只是指定源截面观测，不是所有姿态的目标宽。数值判断先审同解剖、可见成分、投影、锚点/相位和重采样控制，再结合持续真差及同倍率可见缺陷，不能机械削肉过点。 |
+| 原生式概括与接触 | 紧凑指群、合理像素角阶和负形不套写实五指标准。先辨明原图语义，书/碗/柄的真实包握或支撑要成立；立式麦克风、悬浮物或装饰不强求手握。 |
+| 历史意见 | 原人类附件只绑定审校时 R19 newest（`1226b0ff173c9de3048c`）。后续总体反馈另记，旧分数不套后续新稿；不因方法澄清自动清旧尺寸观察、历史hash问题或低分。 |
+
+详细依据分别见 [SCORING](SCORING.md)、[ACCEPTANCE](ACCEPTANCE.md)、[人类审校后改进规则](HUMAN_REVIEW_FOLLOWUP.md)及 [用户原始验收措辞定位](USER_CRITERIA_PROVENANCE_20261110.json)。
+
+## 正式复评与证据边界
+
+1. 使用 **Codex 内置浏览器的真实 React 审阅台**，确认当前已冻结版本、实际图层、原生池、corpus、seed和图像加载成功。打开请求 queued、工具启动、作者离屏图或外部浏览器历史图均不计本轮取证。
+2. 1×看原生尺度，整数倍补看细节。本期fullPage实测不可用，逐张串行采集视口图；一张截图独立一次CUA调用，实际打开PNG核编号、原生身份或fixture/footer后再前进。按真实内容覆盖五套原生100与五套AI混搭、default与全部20体态，保留PNG SHA和同页证据，不为塞下矩阵任意放大视口。DOM ready和failedImages0不足以证明位图正确。
+3. full 页面覆盖 normal、全套与裸模；body 页面覆盖 default＋20；多件正式验收仍要求 `head2/body3/figure5/nearFull8/scene3/accessories3/upper2/skirt3/stride2` 九组各五对。新增隐藏接口属于AI，绑定接口哈希评98，不继承原生100。
+4. `head2/body3/upper2` 三组可先定位明显失败并回作者，尚未审的其余六组明确待审。三组结果不能外推最终九组通过；本期停手也不能补造未执行范围。
+5. 独立评委按当前冻结图实际看图，绑定本轮哈希/seed并把原生上下文、AI对照、坐标、理由和建议回传各自作者。未改范围仅按精确 scope 携带原证据，旧 full 不证新 head，换版本或新 seed 不洗旧失败。
+
+## 制作、归档与停手交付
+
+- 七位作者只写自己的角色模块与私有 revision；root 统一选取已停笔作者导入，评委不替作者改图。公共工具与运行时由 root 维护。
+- 当前原生池共217件（十槽各20、背饰17），复用 `--reuse-native-pool`；旧165件字节/来源保留。裙腿同源及中央躯干连通约束减少缺块，但不宣称已证明所有全身组合自然。
+- 正向材料参考：[R01–R12手部](../ai-workspace/previews/native-hand-reference-20261110/README.md)、[M01–M12衣料/发束](../ai-workspace/previews/native-material-reference-20261110/README.md)。编号不混用，源图/裁框/可见与未知边界保留；重建隐藏桥接仍是AI派生。
+- `results/newest / new / previous` 保留最近三版，其他版本与原始人类意见归档；每版保留七人全览、逐人 `src`、`rating`、`rating.json`。精确运行时归档位于 `results/archived/runtime/{archiveId}/public`。
+- 当前R25七人独立复评闭环后汇总实际分数、已改善项、未通过/待审/未覆盖、旧技术问题、归档路径和后续建议，更新本台账与相关MD后停手，目标按用户要求暂停，不执行R26。不主动写测试、跑生产build、commit/push或公开发布。
+
+常规流程与本期停止边界见 [ITERATION_RULES](ITERATION_RULES.md) 与 [REVIEW_WORKFLOW](REVIEW_WORKFLOW.md)。本规定控制本期收尾，不把未通过改为通过，也不替代实际评审证据。
+</pre></details><details><summary>VARIANTS</summary><p><a href="VARIANTS.md">Markdown 原文</a></p><pre style="white-space:pre-wrap;font:15px/1.8 system-ui"># 当前绘制版本与原生姿态适配
+
+本轮道具必须在原生手势中有可见的接触或独立支撑。不能只把AI自己的握物手势复制到图上，声称它兼容所有原生手；不能移动原生手来抬分。
+
+## 同一部件的两个正式运行时变体
+
+作者模块可提供`nativeLayers: {prop: '内部SVG路径'}`。这不是验收台临时替图：`remake-classic.mjs`产出独立预览，统一apply以后保存`prop-native.png/svg`并接入普通衣橱的`defaultVariant`。
+
+- 本角色AI上装控制pose时，使用忠于normal的`layers.prop`持物版。
+- 原生上装控制default pose时，使用本轮作者绘制的`nativeLayers.prop`展示版，例如清楚的书架、碗托或斧架。支撑/夹托/落地脚必须画出，不能用文案解释漂浮。
+- 没有native展示变体的本轮部件继续使用本轮own-pose图，不能退回旧standing。旧文件仍保留作历史材料。
+
+普通衣橱、静态导出、场景导出和验收台共享`src/classic-layers.mjs`。该规则只影响`classic-body-first-remake-v1`部件，原default及原生项目不受影响。root已实际核对原default合成仍与原五层像素差0；当前首版尚无新native展示图，作者完成后才统一apply。
+
+## 哈希和评分
+
+`artworkHash`仍为单个PNG；`reviewFamilyHash`覆盖`{own: ownPNGHash, ownLayers: 子层hash与z或null, native: nativePNGHash|null}`。hair/top的每个实际子层也绑定，避免只看合并PNG漏掉被别层盖住的修改。单件和多件的`reviewedPartHash(es)`优先绑定这个版族哈希；改任一变体/子层都使对应评分待复审。`reviewVariants`、report.nativeDisplayVariants和每例actualAiLayers中的variantRole/artworkHash记实际使用哪张图。
+
+必要多件组会同时覆盖两个用途：accessories3使用原生上装及展示道具，nearFull8包含角色AI上装及持物道具。两者分别实际截图、独立审阅，最低各98。不能只测较容易的一种，也不能用展示版替换normal全套的动作来抬立绘90分。
+
+角色N/A与姿态变体不同：Claude、Qwen无独立back仍是N/A，不为该槽新画道具。nativeLayers现另支持作者完整top，或top:{body,arms,bodyZ?,armsZ?}；仅选当前AI top且所选prop来自native时使用，hide不改变所选身份。它会替换整套own衣身/手臂，不自动叠加own arms；没有显式真实top的角色不变。原生道具位置不同，每例仍须独立评98，不能延指或移动原生物代替适配。完整契约与staging范例见[COMPATIBILITY_INTERFACES.md](COMPATIBILITY_INTERFACES.md)。
+
+新top的native子层/z及native-prop-top-v1 policy绑定family；逐原生腿的AI-owned authored contact interface也可显式输入，输入摘要不引用family，避免循环。新policy只在实际opt-in的选择上启用v5证据签名；无flag仍原v3/v4，透明disabled模板不改变当前角色或历史评分。
+# 完整成品哈希的文件口径
+
+`completeHash`绑定`character.png`：十层各自以原生尺寸PNG渲染后按运行时层次合成，与React实际逐PNG层一致。`04-complete.png`是单份合并设计SVG的阶段渲染，跨层抗锯齿/透明合成可能给出不同字节，不能把它的SHA冒作运行时completeHash；`04-complete-design.svg`保留可编辑设计用途。bodyHash则绑定真正冻结body PNG。报告须明确文件名，不只写含混“full hash”。例如Grok R3阶段04为b5192092…，canonical `character.png`/manifest为270ec635…，不是运行时版本漂移。
+
+</pre></details></main></body></html>

@@ -1,0 +1,114 @@
+{
+  "schema": "classic-independent-native-material-comparison-v1",
+  "reviewer": "classic_body_judge",
+  "archiveId": "7ec0fc573d05e2fefed7",
+  "bodyHash": "9d202ed7daa5fac24cd42ef6978ec23d45eae05cbc00e82adb0ee162f10c9d76",
+  "completeHash": "42cd2e8e41a4d4c813cf0d39ea04f0ea4c185a114b9511a3ec7e9b8de65a5bcc",
+  "policy": "Actual unchanged native crops100; AI per-layer archived pixels used only as detail diagnostics alongside actual IAB. No copying or score from source reuse.",
+  "rows": [
+    {
+      "id": "M05",
+      "source": "D:/LLM-show/qq-show-classic/outfit/翩翩起舞套装.gif",
+      "sourceSha256": "6ad9d1b713794e58a01ba33323424755eba7a203c961d6ed27c560c993c417f7",
+      "nativeCrop": "M05-crop-1x.png",
+      "nativeCropSha256": "e71178d549ca0e7b71f5e948522e234bdd3a709c34d2c0bfa2a15e70f44a22d9",
+      "nativeRect": {
+        "x": 72,
+        "y": 124,
+        "width": 62,
+        "height": 53
+      },
+      "aiRect": {
+        "left": 72,
+        "top": 135,
+        "width": 44,
+        "height": 77
+      },
+      "scale": 6,
+      "visibleSemantics": "舞裙高抬的一层黑灰布、弯曲的深谷、亮峰、宽窄变化的红边与下方另一片黑布。",
+      "limits": "裙里未暴露的折缝、被布遮住的肢体和背面完整结构未知。提裙手语义另见手部R05，M05不等于bodyCorpus样例5。",
+      "doNotCopy": [
+        "不把黑谷换成随机噪点或每个红边都统一加白",
+        "M05是材料编号，禁止与bodyCorpus 05或手部R05混用"
+      ]
+    },
+    {
+      "id": "M08",
+      "source": "D:/LLM-show/qq-show-classic/top/毛领黑色夹克.gif",
+      "sourceSha256": "604fecca87ab816c37f8fc42b95394aad54373634fc4639a6a76d0441931c526",
+      "nativeCrop": "M08-crop-1x.png",
+      "nativeCropSha256": "99dcfae05c273db8f37942dd57c66c45511d3d9a7ad24581d8eaf1e5072f4105",
+      "nativeRect": {
+        "x": 45,
+        "y": 89,
+        "width": 49,
+        "height": 66
+      },
+      "aiRect": {
+        "left": 27,
+        "top": 91,
+        "width": 40,
+        "height": 42
+      },
+      "scale": 6,
+      "visibleSemantics": "黑夹克翻领、前襟厚边、袖部压褶，红内搭在中间，金扣和拉链是独立材料；上缘少量毛领。",
+      "limits": "衣下躯干/肘腕和真正翻领内面的不可见部分未知；不能照搬此上装躯干分支的宽肩/袖粗到女性default。",
+      "doNotCopy": [
+        "不把所有边统一加亮白色",
+        "材料结构可借，人物比例和标志衣型不得随此源改变"
+      ]
+    },
+    {
+      "id": "M09",
+      "source": "D:/LLM-show/qq-show-classic/front-hair/金色长直发.gif",
+      "sourceSha256": "d683f672e8dd46969b11c3d4dd76730aa06f765fd90082070f4af99867eb1f28",
+      "nativeCrop": "M09-crop-1x.png",
+      "nativeCropSha256": "2e7f6f5dddbc7154a885e58d4fad248f78088cd74de175aa98a4f4c4e29ca191",
+      "nativeRect": {
+        "x": 44,
+        "y": 43,
+        "width": 52,
+        "height": 42
+      },
+      "aiRect": {
+        "left": 43,
+        "top": 42,
+        "width": 52,
+        "height": 44
+      },
+      "scale": 6,
+      "visibleSemantics": "独立前发源的头顶与斜刘海、两侧少量长束；裁框覆盖头顶/刘海，不包含全部长发末端。",
+      "limits": "裁框之外的完整长梢、与脸的最终遮挡和被头发遮住的头皮未知。源名/色号不授予角色改色权。",
+      "doNotCopy": [
+        "不能把此斜刘海替换成与normal无关的通用斜分",
+        "金色是此源真实色相，不强迫其他角色染金"
+      ]
+    },
+    {
+      "id": "M11",
+      "source": "D:/LLM-show/qq-show-classic/front-hair/白色非主流发.gif",
+      "sourceSha256": "d49a5b57b7eb865fccb3ef64f1d5c562437cf4b2501e4d72cf5843606f08a26f",
+      "nativeCrop": "M11-crop-1x.png",
+      "nativeCropSha256": "f627d5b8c6470d9cdc05a802d40c403ed5aebfa3ef8fc3bcaa6ed0eef8c5997a",
+      "nativeRect": {
+        "x": 44,
+        "y": 28,
+        "width": 49,
+        "height": 60
+      },
+      "aiRect": {
+        "left": 92,
+        "top": 66,
+        "width": 31,
+        "height": 77
+      },
+      "scale": 6,
+      "visibleSemantics": "此源是白色非主流短发，尖梢与发型只用于识别源；材料观察为奶白亮束与暖灰褐谷，不是银色长发模板。",
+      "limits": "隐藏头皮和发束背面未知；此短发的尖形、暖灰色相、发长均不能自动移植到GPT等normal长发。",
+      "doNotCopy": [
+        "不把此源当银白色号真值或长发造型模板",
+        "不可把所有浅发全球模糊，或为清晰把每束统一描黑"
+      ]
+    }
+  ]
+}

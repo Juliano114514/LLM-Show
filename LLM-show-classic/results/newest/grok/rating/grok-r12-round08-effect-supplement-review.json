@@ -1,0 +1,39 @@
+{
+  "schema": "classic-independent-visible-diagnostic-supplement-v1",
+  "reviewer": "classic_body_judge",
+  "actuallyViewed": true,
+  "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/head2-effect-supplement-case0.json",
+  "sourceEvidenceSha256": "c3d9d4c0fb466a4241f21314d4942879398304e594ec9572ea39640e24b44676",
+  "screenshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/grok/head2-effect-supplement-case0-b1006b4e80.png",
+  "screenshotSha256": "b1006b4e804cfd68ddcf91363ef4a59407ce0334a1f2f5a3e9c0c42f2a7300f6",
+  "mainCaseId": "grok-head2-sd618253f-a0-f0",
+  "seed": "closeout-r25-grok-head2-m50elr7l",
+  "bodyHash": "9d202ed7daa5fac24cd42ef6978ec23d45eae05cbc00e82adb0ee162f10c9d76",
+  "completeHash": "42cd2e8e41a4d4c813cf0d39ea04f0ea4c185a114b9511a3ec7e9b8de65a5bcc",
+  "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+  "integrityChecks": {
+    "seed": true,
+    "bodyHash": true,
+    "reviewedCompleteHash": true,
+    "poolHash": true,
+    "draws": true,
+    "reviewedPartHashes": true,
+    "selectedAiSlots": true,
+    "selectedItemIDs": true,
+    "case0": true,
+    "nativeSelection": true
+  },
+  "onlyPresentationChange": "hide=effect; original seed/draws/part map/native selection unchanged",
+  "findings": [
+    "实际补图双方脸均无遮挡：AI眼眉/张口可读，未见缺眼/缺脸，不由原扫描遮挡猜测五官坏点。",
+    "鼻颊/眼下小面仍较简；额前宽金面/长浅弧和侧尾长浅沿主次不足，与本轮无遮full及其他四例观察一致。",
+    "补图只用于定位被原生effect遮住的可见结构；原生100与完整上下文五例分保持。"
+  ],
+  "replacesMainContext": false,
+  "newSeedDraw": false,
+  "mainHead2ScoreUnchanged": 90.05,
+  "mainContext0ScoreUnchanged": 90.05,
+  "newAestheticScore": null,
+  "priorReportBackup": "grok-r12-round08-review.pre-effect-supplement-713ede2564a7.json",
+  "priorReportSha256": "713ede2564a71cb597acc9fb5b62a1a329a6e5e47234d8c6b44651c230f3c1e5"
+}

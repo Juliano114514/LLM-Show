@@ -1,0 +1,3935 @@
+{
+  "schema": "classic-independent-round02-full-body-fusion-v1",
+  "reviewer": "classic_body_judge",
+  "round": "human-followup-20261110-round02-glm-r8",
+  "character": "glm",
+  "date": "2026-11-10",
+  "nativeBaselineScore": 100,
+  "reference": {
+    "reviewer": "classic_body_judge",
+    "score": 91.7,
+    "weightedRaw": 91.7,
+    "threshold": 90,
+    "passed": true,
+    "reviewedCompleteHash": "f9ae56bb570a6cdc649266bffae416a75f3cad1a93730d19aedc6977660af6be",
+    "reviewedCompleteArtifact": "character.png canonical runtime per-layer composite; exact actual browser fullLayers below.",
+    "reviewedFullLayerHashes": {
+      "glm-background-0": "7b315b231caae462a7af1d9f3126775989112f2660ddbfdd3329a860ef8cbf17",
+      "glm-aura-0": "9c4f058117bae2556db7570fe655ff659751f639ba46090a5b4620d77e964905",
+      "glm-back-0": "cfa34094b62c16b35180743724a61905f53bcc46d0906f96a24b861c9cb193da",
+      "glm-hair-0": "e5c798a59590d2166cff0374acb164b225a1eeb641f5e065169e18e37b1002b7",
+      "glm-legs-0": "e3f7cc6c89cc043a5a754e9c3b083d037121498d99760f122f3a9e96ea4347bc",
+      "glm-bottom-0": "25b5376fb6b72ea005a3a0dd6f43c6b3b487596aa4f69cb6c8463e9dc3d53b7a",
+      "glm-top-0": "4690a9527888f41602fcdfd319aa335156af79df6a3f5b53f2c6f9469d3100d8",
+      "glm-face-0": "944a066f25393f6f7ce08e14e9d153485b4dfed45e67da3fc4005850602606a7",
+      "glm-hair-1": "dad667adf1745383e3b1576b4151f257916407033350e920e04bb10b49633969",
+      "glm-prop-0": "c469ec4cb198e06afb7e0c6a115e64245809122a306cf1de14f62e2627c8647f",
+      "glm-top-1": "48e0f91298c20349bb1065705842a718548823a3f274e9f486a36af4108cd8db",
+      "glm-headwear-0": "301995993fbdcbe807fa3d8a3350ff0c4b16dc5598db5f41ad7e4eef7d292496",
+      "glm-effect-0": "ca43042076786b12815667f0119879fa3637107436012cac138933e932703260"
+    },
+    "reviewedGeneratedInterfaceHashes": {},
+    "seed": "human-20261110-glm-full-yjxf1v1t",
+    "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+    "contextSignature": "native-context-v4-2ecac9d5",
+    "dimensions": {
+      "action": {
+        "score": 100,
+        "weight": 20,
+        "reason": "近颊/横抱书主要动作保留，局部腕指/肘/手位差中等以下不扣pose。所选书的真实接触在融合评。"
+      },
+      "emotion": {
+        "score": 94,
+        "weight": 10,
+        "reason": "半闭困倦眼与闭口授权神态保持，灰瞳对应normal；眉眼/鼻颊局部仍较简。"
+      },
+      "hair": {
+        "score": 86,
+        "weight": 20,
+        "reason": "黑长发、额前刘海和垂侧束可辨，但根部/额前厚瓣及两侧长直板缩并normal细发丝/侧层，发束体量偏单一；黑灰色相成立。"
+      },
+      "pose": {
+        "score": 100,
+        "weight": 15,
+        "reason": "站立错步、两腿主屈伸与承重保留，中小膝/足/重心差扣0；不得用技术尺寸疑项扣pose。"
+      },
+      "clothing": {
+        "score": 84,
+        "weight": 25,
+        "reason": "白衬宽袖、黑束腰/外裙、黑白长裙和蝴蝶结识别成立，normal胸领层级、肘/袖口蓬量/压力褶、裙片错层及短靴细节缩并。黑白/冷蓝灰对应色相接近。"
+      },
+      "accessories": {
+        "score": 91,
+        "weight": 10,
+        "reason": "眼罩、耳尾、Z徽/书/铃铛/链可辨；铃铛小悬挂层级/细纹和裙坠缩并，黑白银/蓝色方向正确。"
+      }
+    },
+    "colorFidelity": {
+      "policy": "User final clarification: corresponding-part hue proximity only. No RGB/HEX, brightness, saturation or area-ratio threshold.",
+      "reference": "ai-girls-atlas/assets/zipzippipe/glm/normal-zipzippipe-pixiv-148186519-p06.jpg",
+      "authorizedAdaptations": [
+        "用户确认半闭困倦眼、闭口神态。"
+      ],
+      "parts": [
+        {
+          "part": "hair",
+          "observation": "黑灰对应normal，不以暗面亮度或面积扣色相分。",
+          "dimension": "hair",
+          "deduction": 0
+        },
+        {
+          "part": "left/right iris",
+          "observation": "灰系双瞳，授权半闭困倦不作为色相偏差。",
+          "dimension": "emotion",
+          "deduction": 0
+        },
+        {
+          "part": "white blouse/black skirt/hem/shoes",
+          "observation": "白黑冷灰对应正确；白靴被简化的小鞋问题属于造型，不按明暗直接扣色相。",
+          "dimension": "clothing",
+          "deduction": 0
+        },
+        {
+          "part": "Z/ear/tail/book/metal/blue",
+          "observation": "黑白Z、银铃链和冷蓝小饰对应接近。",
+          "dimension": "accessories",
+          "deduction": 0
+        }
+      ]
+    },
+    "poseAudit": {
+      "policyVersion": "classic-significant-pose-only-20261110",
+      "reviewer": "classic_body_judge",
+      "reviewedBodyHash": "669e2b6679c5ca41ff73eb312977fe22c72c92ef11a627c303ee72515bb3cee1",
+      "reviewedCompleteHash": "f9ae56bb570a6cdc649266bffae416a75f3cad1a93730d19aedc6977660af6be",
+      "reference": "ai-girls-atlas/assets/zipzippipe/glm/normal-zipzippipe-pixiv-148186519-p06.jpg",
+      "pending": false,
+      "scope": "Actual current frozen body and clothed full are shown beside normal in the full browser screenshot. Image-left/right are canvas sides.",
+      "regions": [
+        {
+          "part": "torso",
+          "severity": "minor",
+          "region": [
+            54,
+            91,
+            85,
+            151
+          ],
+          "reason": "当前略正面，normal胸腰略转，主要站立和抱物胸腰方向保留。",
+          "poseDeduction": 0,
+          "deducted": false,
+          "deductionDimension": null,
+          "evidence": [
+            "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/full.png",
+            "ai-girls-atlas/assets/zipzippipe/glm/normal-zipzippipe-pixiv-148186519-p06.jpg"
+          ]
+        },
+        {
+          "part": "imageLeftArm",
+          "severity": "moderate",
+          "region": [
+            46,
+            86,
+            67,
+            116
+          ],
+          "reason": "屈肘近颊/指近下颌主要关系保留，中小肘/腕/指角差扣0。",
+          "poseDeduction": 0,
+          "deducted": false,
+          "deductionDimension": null,
+          "evidence": [
+            "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/full.png",
+            "ai-girls-atlas/assets/zipzippipe/glm/normal-zipzippipe-pixiv-148186519-p06.jpg"
+          ]
+        },
+        {
+          "part": "imageRightArm",
+          "severity": "moderate",
+          "region": [
+            55,
+            95,
+            94,
+            130
+          ],
+          "reason": "横抱前臂及掌在胸腰前方向成立，局部臂角/手位差中等以下。",
+          "poseDeduction": 0,
+          "deducted": false,
+          "deductionDimension": null,
+          "evidence": [
+            "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/full.png",
+            "ai-girls-atlas/assets/zipzippipe/glm/normal-zipzippipe-pixiv-148186519-p06.jpg"
+          ]
+        },
+        {
+          "part": "imageLeftLeg",
+          "severity": "minor",
+          "region": [
+            50,
+            141,
+            74,
+            222
+          ],
+          "reason": "前腿较直/错步关系保留，局部膝/踝角中小差。",
+          "poseDeduction": 0,
+          "deducted": false,
+          "deductionDimension": null,
+          "evidence": [
+            "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/full.png",
+            "ai-girls-atlas/assets/zipzippipe/glm/normal-zipzippipe-pixiv-148186519-p06.jpg"
+          ]
+        },
+        {
+          "part": "imageRightLeg",
+          "severity": "moderate",
+          "region": [
+            69,
+            141,
+            87,
+            217
+          ],
+          "reason": "后足与前足形成错步，未出现非常显著动作类别变化。",
+          "poseDeduction": 0,
+          "deducted": false,
+          "deductionDimension": null,
+          "evidence": [
+            "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/full.png",
+            "ai-girls-atlas/assets/zipzippipe/glm/normal-zipzippipe-pixiv-148186519-p06.jpg"
+          ]
+        },
+        {
+          "part": "weight",
+          "severity": "moderate",
+          "region": [
+            47,
+            128,
+            91,
+            223
+          ],
+          "reason": "站立/前后足承重类保留；身体自然度/尺寸待审不能当pose差，扣0。",
+          "poseDeduction": 0,
+          "deducted": false,
+          "deductionDimension": null,
+          "evidence": [
+            "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/full.png",
+            "ai-girls-atlas/assets/zipzippipe/glm/normal-zipzippipe-pixiv-148186519-p06.jpg"
+          ]
+        }
+      ],
+      "deductionPolicy": "Minor/moderate pose differences have zero deduction. Significant means very significant only; anatomy and garment/contact failures stay in fusion.",
+      "significantDifferences": []
+    },
+    "reasons": [
+      "本轮normal与实际冻结IAB全套重新审；hue对应接近、六区中小pose差扣0。还原过90不替代身体/多件98。"
+    ],
+    "recommendations": [
+      "近颊和横抱臂先建连续主暗/转面、腕掌肉量与指根小影；保留紧凑短指群，不强画五指。",
+      "书前掌指、腕根和袖口共同画承重/压叠；没有选书的组不改成强抓装饰。",
+      "白袖肘内/袖口压力褶及厚度、胸肋白衬和裙层主谷同改，删贯长亮条。",
+      "黑发先重构发根/额前和侧长束主面、暗谷与末端宽窄，不只撒亮点。",
+      "技术calf/四臂待对应复核，不能按单点盲削或以新body hash/视觉分解除历史。"
+    ],
+    "evidence": {
+      "reactFullImage": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/full.png",
+      "reactFullImageSha256": "6d202ed95c8e093b96408ab782bc7df22eafaac7ebd6d3f9d5a9e6798c8e5b96",
+      "reactFullSnapshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/full-evidence.json",
+      "actuallyViewed": [
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/full.png",
+        "ai-girls-atlas/assets/zipzippipe/glm/normal-zipzippipe-pixiv-148186519-p06.jpg",
+        "ai-girls-atlas/characters/glm/README.md"
+      ],
+      "captureBrowser": "Codex in-app browser",
+      "failedImages": []
+    },
+    "limitations": [
+      "Static image; no animation validation.",
+      "Full-reference passing does not grant body/fusion acceptance."
+    ]
+  },
+  "hybrid": {
+    "head2": {
+      "reviews": [
+        {
+          "reviewer": "classic_body_judge",
+          "score": 83.1,
+          "weightedRaw": 83.1,
+          "threshold": 98,
+          "passed": false,
+          "pending": false,
+          "selectedAiSlots": [
+            "hair",
+            "face"
+          ],
+          "selectedItemIDs": {
+            "face": "glm-face",
+            "hair": "glm-hair"
+          },
+          "reviewedPartHashes": {
+            "face": "bda5e06ea652f12e4076828a2ab23ebcedcab13195dd0bd5bbf78f30e7aaa710",
+            "hair": "74078e900459f430f20c8dc2a289f12ac7ff44badd4829d8f7af038c80e7fafe"
+          },
+          "reviewedGeneratedInterfaceHashes": {},
+          "reviewedCompleteHash": "f9ae56bb570a6cdc649266bffae416a75f3cad1a93730d19aedc6977660af6be",
+          "bodyHash": "669e2b6679c5ca41ff73eb312977fe22c72c92ef11a627c303ee72515bb3cee1",
+          "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+          "seed": "human-20261110-glm-head2-lrq4kurq",
+          "contextSignature": "native-context-v4-1f4efcf5",
+          "draws": {
+            "aura": [
+              "native-aura-20",
+              "native-aura-7",
+              "native-aura-10",
+              "native-aura-19",
+              "native-aura-8"
+            ],
+            "back": [
+              "native-back-6",
+              "native-back-8",
+              "native-back-12",
+              "native-back-16",
+              "native-back-15"
+            ],
+            "background": [
+              "native-background-20",
+              "native-background-16",
+              "native-background-18",
+              "native-background-5",
+              "native-background-19"
+            ],
+            "bottom": [
+              "native-bottom-18",
+              "native-bottom-20",
+              "native-bottom-16",
+              "native-bottom-8",
+              "native-bottom-9"
+            ],
+            "effect": [
+              "native-effect-18",
+              "native-effect-20",
+              "native-effect-16",
+              "native-effect-6",
+              "native-effect-14"
+            ],
+            "face": [
+              "native-face-6",
+              "native-face-3",
+              "native-face-5",
+              "native-face-2",
+              "native-face-20"
+            ],
+            "hair": [
+              "native-hair-15",
+              "native-hair-10",
+              "native-hair-11",
+              "native-hair-13",
+              "native-hair-1"
+            ],
+            "headwear": [
+              "native-headwear-5",
+              "native-headwear-17",
+              "native-headwear-19",
+              "native-headwear-4",
+              "native-headwear-8"
+            ],
+            "legs": [
+              "native-legs-18",
+              "native-legs-20",
+              "native-legs-16",
+              "native-legs-8",
+              "native-legs-9"
+            ],
+            "prop": [
+              "native-prop-19",
+              "native-prop-4",
+              "native-prop-10",
+              "native-prop-20",
+              "native-prop-13"
+            ],
+            "top": [
+              "native-top-18",
+              "native-top-20",
+              "native-top-5",
+              "native-top-1",
+              "native-top-19"
+            ]
+          },
+          "contextScores": [
+            {
+              "caseId": "glm-head2-sf9064863-a0-f0",
+              "fixtureIndex": 0,
+              "score": 83.35,
+              "weightedRaw": 83.35,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 80,
+                  "weight": 20,
+                  "reason": "例1蓝底牛仔裤：困倦脸/帽位置成立，黑发是两大长直片，根部/刘海转面及侧束层次少；不能仅因黑色少亮点扣，问题在整体束体。"
+                },
+                "proportionConnection": {
+                  "score": 89,
+                  "weight": 25,
+                  "reason": "例1蓝底牛仔裤：困倦脸/帽位置成立，黑发是两大长直片，根部/刘海转面及侧束层次少；不能仅因黑色少亮点扣，问题在整体束体。"
+                },
+                "materialColor": {
+                  "score": 75,
+                  "weight": 15,
+                  "reason": "例1蓝底牛仔裤：困倦脸/帽位置成立，黑发是两大长直片，根部/刘海转面及侧束层次少；不能仅因黑色少亮点扣，问题在整体束体。"
+                },
+                "blingeePixel": {
+                  "score": 79,
+                  "weight": 20,
+                  "reason": "例1蓝底牛仔裤：困倦脸/帽位置成立，黑发是两大长直片，根部/刘海转面及侧束层次少；不能仅因黑色少亮点扣，问题在整体束体。"
+                },
+                "occlusionContact": {
+                  "score": 91,
+                  "weight": 15,
+                  "reason": "例1蓝底牛仔裤：困倦脸/帽位置成立，黑发是两大长直片，根部/刘海转面及侧束层次少；不能仅因黑色少亮点扣，问题在整体束体。"
+                },
+                "canvasReadability": {
+                  "score": 88,
+                  "weight": 5,
+                  "reason": "例1蓝底牛仔裤：困倦脸/帽位置成立，黑发是两大长直片，根部/刘海转面及侧束层次少；不能仅因黑色少亮点扣，问题在整体束体。"
+                }
+              },
+              "reason": "例1蓝底牛仔裤：困倦脸/帽位置成立，黑发是两大长直片，根部/刘海转面及侧束层次少；不能仅因黑色少亮点扣，问题在整体束体。",
+              "region": [
+                25,
+                35,
+                125,
+                188
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-20",
+                "back": "native-back-6",
+                "background": "native-background-20",
+                "bottom": "native-bottom-18",
+                "effect": "native-effect-18",
+                "face": "native-face-6",
+                "hair": "native-hair-15",
+                "headwear": "native-headwear-5",
+                "legs": "native-legs-18",
+                "prop": "native-prop-19",
+                "top": "native-top-18"
+              },
+              "aiSelection": {
+                "aura": "native-aura-20",
+                "back": "native-back-6",
+                "background": "native-background-20",
+                "bottom": "native-bottom-18",
+                "effect": "native-effect-18",
+                "face": "glm-face",
+                "hair": "glm-hair",
+                "headwear": "native-headwear-5",
+                "legs": "native-legs-18",
+                "prop": "native-prop-19",
+                "top": "native-top-18"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "face"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "e5c798a59590d2166cff0374acb164b225a1eeb641f5e065169e18e37b1002b7",
+                  "design": "/assets-classic/glm/remake/hair-back-design.svg",
+                  "itemId": "glm-hair",
+                  "key": "glm-hair-0",
+                  "name": "墨蓝长直发",
+                  "reviewFamilyHash": "74078e900459f430f20c8dc2a289f12ac7ff44badd4829d8f7af038c80e7fafe",
+                  "slot": "hair",
+                  "src": "/assets-classic/glm/remake/hair-back.png",
+                  "svg": "/assets-classic/glm/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "944a066f25393f6f7ce08e14e9d153485b4dfed45e67da3fc4005850602606a7",
+                  "itemId": "glm-face",
+                  "key": "glm-face-0",
+                  "name": "灰紫困倦闭口",
+                  "reviewFamilyHash": "bda5e06ea652f12e4076828a2ab23ebcedcab13195dd0bd5bbf78f30e7aaa710",
+                  "slot": "face",
+                  "src": "/assets-classic/glm/remake/face.png",
+                  "svg": "/assets-classic/glm/remake/face.svg",
+                  "variantRole": "own-pose",
+                  "z": 70
+                },
+                {
+                  "artworkHash": "dad667adf1745383e3b1576b4151f257916407033350e920e04bb10b49633969",
+                  "design": "/assets-classic/glm/remake/hair-front-design.svg",
+                  "itemId": "glm-hair",
+                  "key": "glm-hair-1",
+                  "name": "墨蓝长直发",
+                  "reviewFamilyHash": "74078e900459f430f20c8dc2a289f12ac7ff44badd4829d8f7af038c80e7fafe",
+                  "slot": "hair",
+                  "src": "/assets-classic/glm/remake/hair-front.png",
+                  "svg": "/assets-classic/glm/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/head2-evidence.json",
+              "recommendations": [
+                "近颊和横抱臂先建连续主暗/转面、腕掌肉量与指根小影；保留紧凑短指群，不强画五指。",
+                "书前掌指、腕根和袖口共同画承重/压叠；没有选书的组不改成强抓装饰。",
+                "白袖肘内/袖口压力褶及厚度、胸肋白衬和裙层主谷同改，删贯长亮条。",
+                "黑发先重构发根/额前和侧长束主面、暗谷与末端宽窄，不只撒亮点。",
+                "技术calf/四臂待对应复核，不能按单点盲削或以新body hash/视觉分解除历史。"
+              ]
+            },
+            {
+              "caseId": "glm-head2-sf9064863-a0-f1",
+              "fixtureIndex": 1,
+              "score": 83.35,
+              "weightedRaw": 83.35,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 80,
+                  "weight": 20,
+                  "reason": "例2白闪白帽：发/脸/颈无缺块，侧长黑面缺自然深谷/反射转面，额前分瓣厚且直，和原生发簇体积不同。"
+                },
+                "proportionConnection": {
+                  "score": 89,
+                  "weight": 25,
+                  "reason": "例2白闪白帽：发/脸/颈无缺块，侧长黑面缺自然深谷/反射转面，额前分瓣厚且直，和原生发簇体积不同。"
+                },
+                "materialColor": {
+                  "score": 75,
+                  "weight": 15,
+                  "reason": "例2白闪白帽：发/脸/颈无缺块，侧长黑面缺自然深谷/反射转面，额前分瓣厚且直，和原生发簇体积不同。"
+                },
+                "blingeePixel": {
+                  "score": 79,
+                  "weight": 20,
+                  "reason": "例2白闪白帽：发/脸/颈无缺块，侧长黑面缺自然深谷/反射转面，额前分瓣厚且直，和原生发簇体积不同。"
+                },
+                "occlusionContact": {
+                  "score": 91,
+                  "weight": 15,
+                  "reason": "例2白闪白帽：发/脸/颈无缺块，侧长黑面缺自然深谷/反射转面，额前分瓣厚且直，和原生发簇体积不同。"
+                },
+                "canvasReadability": {
+                  "score": 88,
+                  "weight": 5,
+                  "reason": "例2白闪白帽：发/脸/颈无缺块，侧长黑面缺自然深谷/反射转面，额前分瓣厚且直，和原生发簇体积不同。"
+                }
+              },
+              "reason": "例2白闪白帽：发/脸/颈无缺块，侧长黑面缺自然深谷/反射转面，额前分瓣厚且直，和原生发簇体积不同。",
+              "region": [
+                25,
+                35,
+                125,
+                188
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-7",
+                "back": "native-back-8",
+                "background": "native-background-16",
+                "bottom": "native-bottom-20",
+                "effect": "native-effect-20",
+                "face": "native-face-3",
+                "hair": "native-hair-10",
+                "headwear": "native-headwear-17",
+                "legs": "native-legs-20",
+                "prop": "native-prop-4",
+                "top": "native-top-20"
+              },
+              "aiSelection": {
+                "aura": "native-aura-7",
+                "back": "native-back-8",
+                "background": "native-background-16",
+                "bottom": "native-bottom-20",
+                "effect": "native-effect-20",
+                "face": "glm-face",
+                "hair": "glm-hair",
+                "headwear": "native-headwear-17",
+                "legs": "native-legs-20",
+                "prop": "native-prop-4",
+                "top": "native-top-20"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "face"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "e5c798a59590d2166cff0374acb164b225a1eeb641f5e065169e18e37b1002b7",
+                  "design": "/assets-classic/glm/remake/hair-back-design.svg",
+                  "itemId": "glm-hair",
+                  "key": "glm-hair-0",
+                  "name": "墨蓝长直发",
+                  "reviewFamilyHash": "74078e900459f430f20c8dc2a289f12ac7ff44badd4829d8f7af038c80e7fafe",
+                  "slot": "hair",
+                  "src": "/assets-classic/glm/remake/hair-back.png",
+                  "svg": "/assets-classic/glm/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "944a066f25393f6f7ce08e14e9d153485b4dfed45e67da3fc4005850602606a7",
+                  "itemId": "glm-face",
+                  "key": "glm-face-0",
+                  "name": "灰紫困倦闭口",
+                  "reviewFamilyHash": "bda5e06ea652f12e4076828a2ab23ebcedcab13195dd0bd5bbf78f30e7aaa710",
+                  "slot": "face",
+                  "src": "/assets-classic/glm/remake/face.png",
+                  "svg": "/assets-classic/glm/remake/face.svg",
+                  "variantRole": "own-pose",
+                  "z": 70
+                },
+                {
+                  "artworkHash": "dad667adf1745383e3b1576b4151f257916407033350e920e04bb10b49633969",
+                  "design": "/assets-classic/glm/remake/hair-front-design.svg",
+                  "itemId": "glm-hair",
+                  "key": "glm-hair-1",
+                  "name": "墨蓝长直发",
+                  "reviewFamilyHash": "74078e900459f430f20c8dc2a289f12ac7ff44badd4829d8f7af038c80e7fafe",
+                  "slot": "hair",
+                  "src": "/assets-classic/glm/remake/hair-front.png",
+                  "svg": "/assets-classic/glm/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/head2-evidence.json",
+              "recommendations": [
+                "近颊和横抱臂先建连续主暗/转面、腕掌肉量与指根小影；保留紧凑短指群，不强画五指。",
+                "书前掌指、腕根和袖口共同画承重/压叠；没有选书的组不改成强抓装饰。",
+                "白袖肘内/袖口压力褶及厚度、胸肋白衬和裙层主谷同改，删贯长亮条。",
+                "黑发先重构发根/额前和侧长束主面、暗谷与末端宽窄，不只撒亮点。",
+                "技术calf/四臂待对应复核，不能按单点盲削或以新body hash/视觉分解除历史。"
+              ]
+            },
+            {
+              "caseId": "glm-head2-sf9064863-a0-f2",
+              "fixtureIndex": 2,
+              "score": 83.35,
+              "weightedRaw": 83.35,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 80,
+                  "weight": 20,
+                  "reason": "例3绿树话筒：立式话筒不需握；刘海与脸能读，但长发主面太整片，边缘多直段，材料与原生细腻衣发有差。"
+                },
+                "proportionConnection": {
+                  "score": 89,
+                  "weight": 25,
+                  "reason": "例3绿树话筒：立式话筒不需握；刘海与脸能读，但长发主面太整片，边缘多直段，材料与原生细腻衣发有差。"
+                },
+                "materialColor": {
+                  "score": 75,
+                  "weight": 15,
+                  "reason": "例3绿树话筒：立式话筒不需握；刘海与脸能读，但长发主面太整片，边缘多直段，材料与原生细腻衣发有差。"
+                },
+                "blingeePixel": {
+                  "score": 79,
+                  "weight": 20,
+                  "reason": "例3绿树话筒：立式话筒不需握；刘海与脸能读，但长发主面太整片，边缘多直段，材料与原生细腻衣发有差。"
+                },
+                "occlusionContact": {
+                  "score": 91,
+                  "weight": 15,
+                  "reason": "例3绿树话筒：立式话筒不需握；刘海与脸能读，但长发主面太整片，边缘多直段，材料与原生细腻衣发有差。"
+                },
+                "canvasReadability": {
+                  "score": 88,
+                  "weight": 5,
+                  "reason": "例3绿树话筒：立式话筒不需握；刘海与脸能读，但长发主面太整片，边缘多直段，材料与原生细腻衣发有差。"
+                }
+              },
+              "reason": "例3绿树话筒：立式话筒不需握；刘海与脸能读，但长发主面太整片，边缘多直段，材料与原生细腻衣发有差。",
+              "region": [
+                25,
+                35,
+                125,
+                188
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-10",
+                "back": "native-back-12",
+                "background": "native-background-18",
+                "bottom": "native-bottom-16",
+                "effect": "native-effect-16",
+                "face": "native-face-5",
+                "hair": "native-hair-11",
+                "headwear": "native-headwear-19",
+                "legs": "native-legs-16",
+                "prop": "native-prop-10",
+                "top": "native-top-5"
+              },
+              "aiSelection": {
+                "aura": "native-aura-10",
+                "back": "native-back-12",
+                "background": "native-background-18",
+                "bottom": "native-bottom-16",
+                "effect": "native-effect-16",
+                "face": "glm-face",
+                "hair": "glm-hair",
+                "headwear": "native-headwear-19",
+                "legs": "native-legs-16",
+                "prop": "native-prop-10",
+                "top": "native-top-5"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "face"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "e5c798a59590d2166cff0374acb164b225a1eeb641f5e065169e18e37b1002b7",
+                  "design": "/assets-classic/glm/remake/hair-back-design.svg",
+                  "itemId": "glm-hair",
+                  "key": "glm-hair-0",
+                  "name": "墨蓝长直发",
+                  "reviewFamilyHash": "74078e900459f430f20c8dc2a289f12ac7ff44badd4829d8f7af038c80e7fafe",
+                  "slot": "hair",
+                  "src": "/assets-classic/glm/remake/hair-back.png",
+                  "svg": "/assets-classic/glm/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "944a066f25393f6f7ce08e14e9d153485b4dfed45e67da3fc4005850602606a7",
+                  "itemId": "glm-face",
+                  "key": "glm-face-0",
+                  "name": "灰紫困倦闭口",
+                  "reviewFamilyHash": "bda5e06ea652f12e4076828a2ab23ebcedcab13195dd0bd5bbf78f30e7aaa710",
+                  "slot": "face",
+                  "src": "/assets-classic/glm/remake/face.png",
+                  "svg": "/assets-classic/glm/remake/face.svg",
+                  "variantRole": "own-pose",
+                  "z": 70
+                },
+                {
+                  "artworkHash": "dad667adf1745383e3b1576b4151f257916407033350e920e04bb10b49633969",
+                  "design": "/assets-classic/glm/remake/hair-front-design.svg",
+                  "itemId": "glm-hair",
+                  "key": "glm-hair-1",
+                  "name": "墨蓝长直发",
+                  "reviewFamilyHash": "74078e900459f430f20c8dc2a289f12ac7ff44badd4829d8f7af038c80e7fafe",
+                  "slot": "hair",
+                  "src": "/assets-classic/glm/remake/hair-front.png",
+                  "svg": "/assets-classic/glm/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/head2-evidence.json",
+              "recommendations": [
+                "近颊和横抱臂先建连续主暗/转面、腕掌肉量与指根小影；保留紧凑短指群，不强画五指。",
+                "书前掌指、腕根和袖口共同画承重/压叠；没有选书的组不改成强抓装饰。",
+                "白袖肘内/袖口压力褶及厚度、胸肋白衬和裙层主谷同改，删贯长亮条。",
+                "黑发先重构发根/额前和侧长束主面、暗谷与末端宽窄，不只撒亮点。",
+                "技术calf/四臂待对应复核，不能按单点盲削或以新body hash/视觉分解除历史。"
+              ]
+            },
+            {
+              "caseId": "glm-head2-sf9064863-a0-f3",
+              "fixtureIndex": 3,
+              "score": 83.1,
+              "weightedRaw": 83.1,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 80,
+                  "weight": 20,
+                  "reason": "例4书店星效：星遮部分额前，只评可见侧发/脸，仍是长黑板、发根和尾部分组弱；不拿遮挡授98。"
+                },
+                "proportionConnection": {
+                  "score": 89,
+                  "weight": 25,
+                  "reason": "例4书店星效：星遮部分额前，只评可见侧发/脸，仍是长黑板、发根和尾部分组弱；不拿遮挡授98。"
+                },
+                "materialColor": {
+                  "score": 75,
+                  "weight": 15,
+                  "reason": "例4书店星效：星遮部分额前，只评可见侧发/脸，仍是长黑板、发根和尾部分组弱；不拿遮挡授98。"
+                },
+                "blingeePixel": {
+                  "score": 79,
+                  "weight": 20,
+                  "reason": "例4书店星效：星遮部分额前，只评可见侧发/脸，仍是长黑板、发根和尾部分组弱；不拿遮挡授98。"
+                },
+                "occlusionContact": {
+                  "score": 90,
+                  "weight": 15,
+                  "reason": "例4书店星效：星遮部分额前，只评可见侧发/脸，仍是长黑板、发根和尾部分组弱；不拿遮挡授98。"
+                },
+                "canvasReadability": {
+                  "score": 86,
+                  "weight": 5,
+                  "reason": "例4书店星效：星遮部分额前，只评可见侧发/脸，仍是长黑板、发根和尾部分组弱；不拿遮挡授98。"
+                }
+              },
+              "reason": "例4书店星效：星遮部分额前，只评可见侧发/脸，仍是长黑板、发根和尾部分组弱；不拿遮挡授98。",
+              "region": [
+                25,
+                35,
+                125,
+                188
+              ],
+              "visibilityLimitation": "星效遮额前局部。",
+              "scoredVisibleOnly": true,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-19",
+                "back": "native-back-16",
+                "background": "native-background-5",
+                "bottom": "native-bottom-8",
+                "effect": "native-effect-6",
+                "face": "native-face-2",
+                "hair": "native-hair-13",
+                "headwear": "native-headwear-4",
+                "legs": "native-legs-8",
+                "prop": "native-prop-20",
+                "top": "native-top-1"
+              },
+              "aiSelection": {
+                "aura": "native-aura-19",
+                "back": "native-back-16",
+                "background": "native-background-5",
+                "bottom": "native-bottom-8",
+                "effect": "native-effect-6",
+                "face": "glm-face",
+                "hair": "glm-hair",
+                "headwear": "native-headwear-4",
+                "legs": "native-legs-8",
+                "prop": "native-prop-20",
+                "top": "native-top-1"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "face"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "e5c798a59590d2166cff0374acb164b225a1eeb641f5e065169e18e37b1002b7",
+                  "design": "/assets-classic/glm/remake/hair-back-design.svg",
+                  "itemId": "glm-hair",
+                  "key": "glm-hair-0",
+                  "name": "墨蓝长直发",
+                  "reviewFamilyHash": "74078e900459f430f20c8dc2a289f12ac7ff44badd4829d8f7af038c80e7fafe",
+                  "slot": "hair",
+                  "src": "/assets-classic/glm/remake/hair-back.png",
+                  "svg": "/assets-classic/glm/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "944a066f25393f6f7ce08e14e9d153485b4dfed45e67da3fc4005850602606a7",
+                  "itemId": "glm-face",
+                  "key": "glm-face-0",
+                  "name": "灰紫困倦闭口",
+                  "reviewFamilyHash": "bda5e06ea652f12e4076828a2ab23ebcedcab13195dd0bd5bbf78f30e7aaa710",
+                  "slot": "face",
+                  "src": "/assets-classic/glm/remake/face.png",
+                  "svg": "/assets-classic/glm/remake/face.svg",
+                  "variantRole": "own-pose",
+                  "z": 70
+                },
+                {
+                  "artworkHash": "dad667adf1745383e3b1576b4151f257916407033350e920e04bb10b49633969",
+                  "design": "/assets-classic/glm/remake/hair-front-design.svg",
+                  "itemId": "glm-hair",
+                  "key": "glm-hair-1",
+                  "name": "墨蓝长直发",
+                  "reviewFamilyHash": "74078e900459f430f20c8dc2a289f12ac7ff44badd4829d8f7af038c80e7fafe",
+                  "slot": "hair",
+                  "src": "/assets-classic/glm/remake/hair-front.png",
+                  "svg": "/assets-classic/glm/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/head2-evidence.json",
+              "recommendations": [
+                "近颊和横抱臂先建连续主暗/转面、腕掌肉量与指根小影；保留紧凑短指群，不强画五指。",
+                "书前掌指、腕根和袖口共同画承重/压叠；没有选书的组不改成强抓装饰。",
+                "白袖肘内/袖口压力褶及厚度、胸肋白衬和裙层主谷同改，删贯长亮条。",
+                "黑发先重构发根/额前和侧长束主面、暗谷与末端宽窄，不只撒亮点。",
+                "技术calf/四臂待对应复核，不能按单点盲削或以新body hash/视觉分解除历史。"
+              ]
+            },
+            {
+              "caseId": "glm-head2-sf9064863-a0-f4",
+              "fixtureIndex": 4,
+              "score": 83.35,
+              "weightedRaw": 83.35,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 80,
+                  "weight": 20,
+                  "reason": "例5夜城皇冠：黑发身份成立，侧发直长块/头顶厚瓣缺主转面，困倦表情本身不扣融合。"
+                },
+                "proportionConnection": {
+                  "score": 89,
+                  "weight": 25,
+                  "reason": "例5夜城皇冠：黑发身份成立，侧发直长块/头顶厚瓣缺主转面，困倦表情本身不扣融合。"
+                },
+                "materialColor": {
+                  "score": 75,
+                  "weight": 15,
+                  "reason": "例5夜城皇冠：黑发身份成立，侧发直长块/头顶厚瓣缺主转面，困倦表情本身不扣融合。"
+                },
+                "blingeePixel": {
+                  "score": 79,
+                  "weight": 20,
+                  "reason": "例5夜城皇冠：黑发身份成立，侧发直长块/头顶厚瓣缺主转面，困倦表情本身不扣融合。"
+                },
+                "occlusionContact": {
+                  "score": 91,
+                  "weight": 15,
+                  "reason": "例5夜城皇冠：黑发身份成立，侧发直长块/头顶厚瓣缺主转面，困倦表情本身不扣融合。"
+                },
+                "canvasReadability": {
+                  "score": 88,
+                  "weight": 5,
+                  "reason": "例5夜城皇冠：黑发身份成立，侧发直长块/头顶厚瓣缺主转面，困倦表情本身不扣融合。"
+                }
+              },
+              "reason": "例5夜城皇冠：黑发身份成立，侧发直长块/头顶厚瓣缺主转面，困倦表情本身不扣融合。",
+              "region": [
+                25,
+                35,
+                125,
+                188
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-8",
+                "back": "native-back-15",
+                "background": "native-background-19",
+                "bottom": "native-bottom-9",
+                "effect": "native-effect-14",
+                "face": "native-face-20",
+                "hair": "native-hair-1",
+                "headwear": "native-headwear-8",
+                "legs": "native-legs-9",
+                "prop": "native-prop-13",
+                "top": "native-top-19"
+              },
+              "aiSelection": {
+                "aura": "native-aura-8",
+                "back": "native-back-15",
+                "background": "native-background-19",
+                "bottom": "native-bottom-9",
+                "effect": "native-effect-14",
+                "face": "glm-face",
+                "hair": "glm-hair",
+                "headwear": "native-headwear-8",
+                "legs": "native-legs-9",
+                "prop": "native-prop-13",
+                "top": "native-top-19"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "face"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "e5c798a59590d2166cff0374acb164b225a1eeb641f5e065169e18e37b1002b7",
+                  "design": "/assets-classic/glm/remake/hair-back-design.svg",
+                  "itemId": "glm-hair",
+                  "key": "glm-hair-0",
+                  "name": "墨蓝长直发",
+                  "reviewFamilyHash": "74078e900459f430f20c8dc2a289f12ac7ff44badd4829d8f7af038c80e7fafe",
+                  "slot": "hair",
+                  "src": "/assets-classic/glm/remake/hair-back.png",
+                  "svg": "/assets-classic/glm/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "944a066f25393f6f7ce08e14e9d153485b4dfed45e67da3fc4005850602606a7",
+                  "itemId": "glm-face",
+                  "key": "glm-face-0",
+                  "name": "灰紫困倦闭口",
+                  "reviewFamilyHash": "bda5e06ea652f12e4076828a2ab23ebcedcab13195dd0bd5bbf78f30e7aaa710",
+                  "slot": "face",
+                  "src": "/assets-classic/glm/remake/face.png",
+                  "svg": "/assets-classic/glm/remake/face.svg",
+                  "variantRole": "own-pose",
+                  "z": 70
+                },
+                {
+                  "artworkHash": "dad667adf1745383e3b1576b4151f257916407033350e920e04bb10b49633969",
+                  "design": "/assets-classic/glm/remake/hair-front-design.svg",
+                  "itemId": "glm-hair",
+                  "key": "glm-hair-1",
+                  "name": "墨蓝长直发",
+                  "reviewFamilyHash": "74078e900459f430f20c8dc2a289f12ac7ff44badd4829d8f7af038c80e7fafe",
+                  "slot": "hair",
+                  "src": "/assets-classic/glm/remake/hair-front.png",
+                  "svg": "/assets-classic/glm/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/head2-evidence.json",
+              "recommendations": [
+                "近颊和横抱臂先建连续主暗/转面、腕掌肉量与指根小影；保留紧凑短指群，不强画五指。",
+                "书前掌指、腕根和袖口共同画承重/压叠；没有选书的组不改成强抓装饰。",
+                "白袖肘内/袖口压力褶及厚度、胸肋白衬和裙层主谷同改，删贯长亮条。",
+                "黑发先重构发根/额前和侧长束主面、暗谷与末端宽窄，不只撒亮点。",
+                "技术calf/四臂待对应复核，不能按单点盲削或以新body hash/视觉分解除历史。"
+              ]
+            }
+          ],
+          "reasons": [
+            "R8腰胯/股根连续，腿足错步可读；不直接继承旧98或旧几何指控。",
+            "近颊侧x47..65/y88..115掌指与颈部贴合分界弱，肘到掌大片浅面缺主暗/转面。",
+            "横抱臂x61..91/y119..126前臂近水平等宽亮面，腕到掌根只有薄过渡；紧凑指群本身不扣。",
+            "肩/上臂与股根转面仍简化；本次未重跑量测，明确保留技术报告的窄窗/锚点不确定性，不清历史hash。",
+            "近颊和横抱臂先建连续主暗/转面、腕掌肉量与指根小影；保留紧凑短指群，不强画五指。",
+            "书前掌指、腕根和袖口共同画承重/压叠；没有选书的组不改成强抓装饰。",
+            "白袖肘内/袖口压力褶及厚度、胸肋白衬和裙层主谷同改，删贯长亮条。",
+            "黑发先重构发根/额前和侧长束主面、暗谷与末端宽窄，不只撒亮点。",
+            "技术calf/四臂待对应复核，不能按单点盲削或以新body hash/视觉分解除历史。"
+          ],
+          "recommendations": [
+            "近颊和横抱臂先建连续主暗/转面、腕掌肉量与指根小影；保留紧凑短指群，不强画五指。",
+            "书前掌指、腕根和袖口共同画承重/压叠；没有选书的组不改成强抓装饰。",
+            "白袖肘内/袖口压力褶及厚度、胸肋白衬和裙层主谷同改，删贯长亮条。",
+            "黑发先重构发根/额前和侧长束主面、暗谷与末端宽窄，不只撒亮点。",
+            "技术calf/四臂待对应复核，不能按单点盲削或以新body hash/视觉分解除历史。"
+          ],
+          "evidence": {
+            "reactEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/head2-evidence.json",
+            "reactScreenshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/head2.png",
+            "reactScreenshotSha256": "3d1445c9b002aed8ee1aaa818da444f532ee6234013c893d30a724dc1dbe4e43",
+            "captureBrowser": "Codex in-app browser",
+            "failedImages": [],
+            "actuallyViewed": true
+          },
+          "limitations": [
+            "Static only; no animation claim.",
+            "Native complete combinations remain100. Any AI-owned generated support is included with the AI; never inherits100.",
+            "星效遮额前局部。"
+          ]
+        }
+      ]
+    },
+    "body3": {
+      "reviews": [
+        {
+          "reviewer": "classic_body_judge",
+          "score": 82.05,
+          "weightedRaw": 82.05,
+          "threshold": 98,
+          "passed": false,
+          "pending": false,
+          "selectedAiSlots": [
+            "legs",
+            "bottom",
+            "top"
+          ],
+          "selectedItemIDs": {
+            "bottom": "glm-bottom",
+            "legs": "glm-legs",
+            "top": "glm-top"
+          },
+          "reviewedPartHashes": {
+            "bottom": "e104fd377c29470cc2eb85ef1e00f4260d33db181b75eef883a4029f7c9b4803",
+            "legs": "606f885b517d379e17ca105c87f6896f43adc5cafd372f15c338aca6bd450d3f",
+            "top": "eb6cdc037dddb866e813f398a907c653133db2a6edb5252d4c340e325f6d4f5c"
+          },
+          "reviewedGeneratedInterfaceHashes": {},
+          "reviewedCompleteHash": "f9ae56bb570a6cdc649266bffae416a75f3cad1a93730d19aedc6977660af6be",
+          "bodyHash": "669e2b6679c5ca41ff73eb312977fe22c72c92ef11a627c303ee72515bb3cee1",
+          "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+          "seed": "human-20261110-glm-body3-r5vuqkpm",
+          "contextSignature": "native-context-v4-f2e504da",
+          "draws": {
+            "aura": [
+              "native-aura-3",
+              "native-aura-19",
+              "native-aura-20",
+              "native-aura-2",
+              "native-aura-16"
+            ],
+            "back": [
+              "native-back-12",
+              "native-back-3",
+              "native-back-9",
+              "native-back-6",
+              "native-back-2"
+            ],
+            "background": [
+              "native-background-7",
+              "native-background-18",
+              "native-background-20",
+              "native-background-19",
+              "native-background-12"
+            ],
+            "bottom": [
+              "native-bottom-1",
+              "native-bottom-14",
+              "native-bottom-2",
+              "native-bottom-13",
+              "native-bottom-5"
+            ],
+            "effect": [
+              "native-effect-20",
+              "native-effect-1",
+              "native-effect-13",
+              "native-effect-14",
+              "native-effect-3"
+            ],
+            "face": [
+              "native-face-4",
+              "native-face-16",
+              "native-face-3",
+              "native-face-7",
+              "native-face-11"
+            ],
+            "hair": [
+              "native-hair-13",
+              "native-hair-7",
+              "native-hair-15",
+              "native-hair-16",
+              "native-hair-5"
+            ],
+            "headwear": [
+              "native-headwear-12",
+              "native-headwear-11",
+              "native-headwear-5",
+              "native-headwear-20",
+              "native-headwear-18"
+            ],
+            "legs": [
+              "native-legs-1",
+              "native-legs-14",
+              "native-legs-2",
+              "native-legs-13",
+              "native-legs-5"
+            ],
+            "prop": [
+              "native-prop-6",
+              "native-prop-13",
+              "native-prop-9",
+              "native-prop-12",
+              "native-prop-11"
+            ],
+            "top": [
+              "native-top-17",
+              "native-top-1",
+              "native-top-12",
+              "native-top-9",
+              "native-top-19"
+            ]
+          },
+          "contextScores": [
+            {
+              "caseId": "glm-body3-s51016e85-a0-f0",
+              "fixtureIndex": 0,
+              "score": 82.7,
+              "weightedRaw": 82.7,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 83,
+                  "weight": 20,
+                  "reason": "例1蓝夜：腰胯连续、横抱掌比旧版有分组；横白袖仍像光滑厚管，胸白片贴黑腰、黑白裙几道贯长亮条/大楔面缺真实厚度。腰花不需握。"
+                },
+                "proportionConnection": {
+                  "score": 84,
+                  "weight": 25,
+                  "reason": "例1蓝夜：腰胯连续、横抱掌比旧版有分组；横白袖仍像光滑厚管，胸白片贴黑腰、黑白裙几道贯长亮条/大楔面缺真实厚度。腰花不需握。"
+                },
+                "materialColor": {
+                  "score": 78,
+                  "weight": 15,
+                  "reason": "例1蓝夜：腰胯连续、横抱掌比旧版有分组；横白袖仍像光滑厚管，胸白片贴黑腰、黑白裙几道贯长亮条/大楔面缺真实厚度。腰花不需握。"
+                },
+                "blingeePixel": {
+                  "score": 81,
+                  "weight": 20,
+                  "reason": "例1蓝夜：腰胯连续、横抱掌比旧版有分组；横白袖仍像光滑厚管，胸白片贴黑腰、黑白裙几道贯长亮条/大楔面缺真实厚度。腰花不需握。"
+                },
+                "occlusionContact": {
+                  "score": 85,
+                  "weight": 15,
+                  "reason": "例1蓝夜：腰胯连续、横抱掌比旧版有分组；横白袖仍像光滑厚管，胸白片贴黑腰、黑白裙几道贯长亮条/大楔面缺真实厚度。腰花不需握。"
+                },
+                "canvasReadability": {
+                  "score": 89,
+                  "weight": 5,
+                  "reason": "例1蓝夜：腰胯连续、横抱掌比旧版有分组；横白袖仍像光滑厚管，胸白片贴黑腰、黑白裙几道贯长亮条/大楔面缺真实厚度。腰花不需握。"
+                }
+              },
+              "reason": "例1蓝夜：腰胯连续、横抱掌比旧版有分组；横白袖仍像光滑厚管，胸白片贴黑腰、黑白裙几道贯长亮条/大楔面缺真实厚度。腰花不需握。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-3",
+                "back": "native-back-12",
+                "background": "native-background-7",
+                "bottom": "native-bottom-1",
+                "effect": "native-effect-20",
+                "face": "native-face-4",
+                "hair": "native-hair-13",
+                "headwear": "native-headwear-12",
+                "legs": "native-legs-1",
+                "prop": "native-prop-6",
+                "top": "native-top-17"
+              },
+              "aiSelection": {
+                "aura": "native-aura-3",
+                "back": "native-back-12",
+                "background": "native-background-7",
+                "bottom": "glm-bottom",
+                "effect": "native-effect-20",
+                "face": "native-face-4",
+                "hair": "native-hair-13",
+                "headwear": "native-headwear-12",
+                "legs": "glm-legs",
+                "prop": "native-prop-6",
+                "top": "glm-top"
+              },
+              "selectedAiSlots": [
+                "legs",
+                "bottom",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "e3f7cc6c89cc043a5a754e9c3b083d037121498d99760f122f3a9e96ea4347bc",
+                  "itemId": "glm-legs",
+                  "key": "glm-legs-0",
+                  "name": "黑白系带短靴",
+                  "reviewFamilyHash": "606f885b517d379e17ca105c87f6896f43adc5cafd372f15c338aca6bd450d3f",
+                  "slot": "legs",
+                  "src": "/assets-classic/glm/remake/legs.png",
+                  "svg": "/assets-classic/glm/remake/legs.svg",
+                  "variantRole": "own-pose",
+                  "z": 30
+                },
+                {
+                  "artworkHash": "25b5376fb6b72ea005a3a0dd6f43c6b3b487596aa4f69cb6c8463e9dc3d53b7a",
+                  "itemId": "glm-bottom",
+                  "key": "glm-bottom-0",
+                  "name": "墨雪层叠长围裙",
+                  "reviewFamilyHash": "e104fd377c29470cc2eb85ef1e00f4260d33db181b75eef883a4029f7c9b4803",
+                  "slot": "bottom",
+                  "src": "/assets-classic/glm/remake/bottom.png",
+                  "svg": "/assets-classic/glm/remake/bottom.svg",
+                  "variantRole": "own-pose",
+                  "z": 40
+                },
+                {
+                  "artworkHash": "4690a9527888f41602fcdfd319aa335156af79df6a3f5b53f2c6f9469d3100d8",
+                  "design": "/assets-classic/glm/remake/top-body-design.svg",
+                  "itemId": "glm-top",
+                  "key": "glm-top-0",
+                  "name": "银扣蓬袖领结衫",
+                  "reviewFamilyHash": "eb6cdc037dddb866e813f398a907c653133db2a6edb5252d4c340e325f6d4f5c",
+                  "slot": "top",
+                  "src": "/assets-classic/glm/remake/top-body.png",
+                  "svg": "/assets-classic/glm/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "48e0f91298c20349bb1065705842a718548823a3f274e9f486a36af4108cd8db",
+                  "design": "/assets-classic/glm/remake/top-arms-design.svg",
+                  "itemId": "glm-top",
+                  "key": "glm-top-1",
+                  "name": "银扣蓬袖领结衫",
+                  "reviewFamilyHash": "eb6cdc037dddb866e813f398a907c653133db2a6edb5252d4c340e325f6d4f5c",
+                  "slot": "top",
+                  "src": "/assets-classic/glm/remake/top-arms.png",
+                  "svg": "/assets-classic/glm/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body3-evidence.json",
+              "recommendations": [
+                "近颊和横抱臂先建连续主暗/转面、腕掌肉量与指根小影；保留紧凑短指群，不强画五指。",
+                "书前掌指、腕根和袖口共同画承重/压叠；没有选书的组不改成强抓装饰。",
+                "白袖肘内/袖口压力褶及厚度、胸肋白衬和裙层主谷同改，删贯长亮条。",
+                "黑发先重构发根/额前和侧长束主面、暗谷与末端宽窄，不只撒亮点。",
+                "技术calf/四臂待对应复核，不能按单点盲削或以新body hash/视觉分解除历史。"
+              ]
+            },
+            {
+              "caseId": "glm-body3-s51016e85-a0-f1",
+              "fixtureIndex": 1,
+              "score": 82.7,
+              "weightedRaw": 82.7,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 83,
+                  "weight": 20,
+                  "reason": "例2绿树：横前臂/掌根到袖口厚度弱，肘窝没有足够压力暗面；黑腰与长裙主要平铺，随身听挂腰不须抓。"
+                },
+                "proportionConnection": {
+                  "score": 84,
+                  "weight": 25,
+                  "reason": "例2绿树：横前臂/掌根到袖口厚度弱，肘窝没有足够压力暗面；黑腰与长裙主要平铺，随身听挂腰不须抓。"
+                },
+                "materialColor": {
+                  "score": 78,
+                  "weight": 15,
+                  "reason": "例2绿树：横前臂/掌根到袖口厚度弱，肘窝没有足够压力暗面；黑腰与长裙主要平铺，随身听挂腰不须抓。"
+                },
+                "blingeePixel": {
+                  "score": 81,
+                  "weight": 20,
+                  "reason": "例2绿树：横前臂/掌根到袖口厚度弱，肘窝没有足够压力暗面；黑腰与长裙主要平铺，随身听挂腰不须抓。"
+                },
+                "occlusionContact": {
+                  "score": 85,
+                  "weight": 15,
+                  "reason": "例2绿树：横前臂/掌根到袖口厚度弱，肘窝没有足够压力暗面；黑腰与长裙主要平铺，随身听挂腰不须抓。"
+                },
+                "canvasReadability": {
+                  "score": 89,
+                  "weight": 5,
+                  "reason": "例2绿树：横前臂/掌根到袖口厚度弱，肘窝没有足够压力暗面；黑腰与长裙主要平铺，随身听挂腰不须抓。"
+                }
+              },
+              "reason": "例2绿树：横前臂/掌根到袖口厚度弱，肘窝没有足够压力暗面；黑腰与长裙主要平铺，随身听挂腰不须抓。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-19",
+                "back": "native-back-3",
+                "background": "native-background-18",
+                "bottom": "native-bottom-14",
+                "effect": "native-effect-1",
+                "face": "native-face-16",
+                "hair": "native-hair-7",
+                "headwear": "native-headwear-11",
+                "legs": "native-legs-14",
+                "prop": "native-prop-13",
+                "top": "native-top-1"
+              },
+              "aiSelection": {
+                "aura": "native-aura-19",
+                "back": "native-back-3",
+                "background": "native-background-18",
+                "bottom": "glm-bottom",
+                "effect": "native-effect-1",
+                "face": "native-face-16",
+                "hair": "native-hair-7",
+                "headwear": "native-headwear-11",
+                "legs": "glm-legs",
+                "prop": "native-prop-13",
+                "top": "glm-top"
+              },
+              "selectedAiSlots": [
+                "legs",
+                "bottom",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "e3f7cc6c89cc043a5a754e9c3b083d037121498d99760f122f3a9e96ea4347bc",
+                  "itemId": "glm-legs",
+                  "key": "glm-legs-0",
+                  "name": "黑白系带短靴",
+                  "reviewFamilyHash": "606f885b517d379e17ca105c87f6896f43adc5cafd372f15c338aca6bd450d3f",
+                  "slot": "legs",
+                  "src": "/assets-classic/glm/remake/legs.png",
+                  "svg": "/assets-classic/glm/remake/legs.svg",
+                  "variantRole": "own-pose",
+                  "z": 30
+                },
+                {
+                  "artworkHash": "25b5376fb6b72ea005a3a0dd6f43c6b3b487596aa4f69cb6c8463e9dc3d53b7a",
+                  "itemId": "glm-bottom",
+                  "key": "glm-bottom-0",
+                  "name": "墨雪层叠长围裙",
+                  "reviewFamilyHash": "e104fd377c29470cc2eb85ef1e00f4260d33db181b75eef883a4029f7c9b4803",
+                  "slot": "bottom",
+                  "src": "/assets-classic/glm/remake/bottom.png",
+                  "svg": "/assets-classic/glm/remake/bottom.svg",
+                  "variantRole": "own-pose",
+                  "z": 40
+                },
+                {
+                  "artworkHash": "4690a9527888f41602fcdfd319aa335156af79df6a3f5b53f2c6f9469d3100d8",
+                  "design": "/assets-classic/glm/remake/top-body-design.svg",
+                  "itemId": "glm-top",
+                  "key": "glm-top-0",
+                  "name": "银扣蓬袖领结衫",
+                  "reviewFamilyHash": "eb6cdc037dddb866e813f398a907c653133db2a6edb5252d4c340e325f6d4f5c",
+                  "slot": "top",
+                  "src": "/assets-classic/glm/remake/top-body.png",
+                  "svg": "/assets-classic/glm/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "48e0f91298c20349bb1065705842a718548823a3f274e9f486a36af4108cd8db",
+                  "design": "/assets-classic/glm/remake/top-arms-design.svg",
+                  "itemId": "glm-top",
+                  "key": "glm-top-1",
+                  "name": "银扣蓬袖领结衫",
+                  "reviewFamilyHash": "eb6cdc037dddb866e813f398a907c653133db2a6edb5252d4c340e325f6d4f5c",
+                  "slot": "top",
+                  "src": "/assets-classic/glm/remake/top-arms.png",
+                  "svg": "/assets-classic/glm/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body3-evidence.json",
+              "recommendations": [
+                "近颊和横抱臂先建连续主暗/转面、腕掌肉量与指根小影；保留紧凑短指群，不强画五指。",
+                "书前掌指、腕根和袖口共同画承重/压叠；没有选书的组不改成强抓装饰。",
+                "白袖肘内/袖口压力褶及厚度、胸肋白衬和裙层主谷同改，删贯长亮条。",
+                "黑发先重构发根/额前和侧长束主面、暗谷与末端宽窄，不只撒亮点。",
+                "技术calf/四臂待对应复核，不能按单点盲削或以新body hash/视觉分解除历史。"
+              ]
+            },
+            {
+              "caseId": "glm-body3-s51016e85-a0-f2",
+              "fixtureIndex": 2,
+              "score": 82.65,
+              "weightedRaw": 82.65,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 83,
+                  "weight": 20,
+                  "reason": "例3粉樱：肩/袖根可读，横袖与腕掌层次仍硬，裙白主面/黑披片缺错落折谷与层间厚度；花光局部不推隐藏合格。"
+                },
+                "proportionConnection": {
+                  "score": 84,
+                  "weight": 25,
+                  "reason": "例3粉樱：肩/袖根可读，横袖与腕掌层次仍硬，裙白主面/黑披片缺错落折谷与层间厚度；花光局部不推隐藏合格。"
+                },
+                "materialColor": {
+                  "score": 78,
+                  "weight": 15,
+                  "reason": "例3粉樱：肩/袖根可读，横袖与腕掌层次仍硬，裙白主面/黑披片缺错落折谷与层间厚度；花光局部不推隐藏合格。"
+                },
+                "blingeePixel": {
+                  "score": 81,
+                  "weight": 20,
+                  "reason": "例3粉樱：肩/袖根可读，横袖与腕掌层次仍硬，裙白主面/黑披片缺错落折谷与层间厚度；花光局部不推隐藏合格。"
+                },
+                "occlusionContact": {
+                  "score": 85,
+                  "weight": 15,
+                  "reason": "例3粉樱：肩/袖根可读，横袖与腕掌层次仍硬，裙白主面/黑披片缺错落折谷与层间厚度；花光局部不推隐藏合格。"
+                },
+                "canvasReadability": {
+                  "score": 88,
+                  "weight": 5,
+                  "reason": "例3粉樱：肩/袖根可读，横袖与腕掌层次仍硬，裙白主面/黑披片缺错落折谷与层间厚度；花光局部不推隐藏合格。"
+                }
+              },
+              "reason": "例3粉樱：肩/袖根可读，横袖与腕掌层次仍硬，裙白主面/黑披片缺错落折谷与层间厚度；花光局部不推隐藏合格。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-20",
+                "back": "native-back-9",
+                "background": "native-background-20",
+                "bottom": "native-bottom-2",
+                "effect": "native-effect-13",
+                "face": "native-face-3",
+                "hair": "native-hair-15",
+                "headwear": "native-headwear-5",
+                "legs": "native-legs-2",
+                "prop": "native-prop-9",
+                "top": "native-top-12"
+              },
+              "aiSelection": {
+                "aura": "native-aura-20",
+                "back": "native-back-9",
+                "background": "native-background-20",
+                "bottom": "glm-bottom",
+                "effect": "native-effect-13",
+                "face": "native-face-3",
+                "hair": "native-hair-15",
+                "headwear": "native-headwear-5",
+                "legs": "glm-legs",
+                "prop": "native-prop-9",
+                "top": "glm-top"
+              },
+              "selectedAiSlots": [
+                "legs",
+                "bottom",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "e3f7cc6c89cc043a5a754e9c3b083d037121498d99760f122f3a9e96ea4347bc",
+                  "itemId": "glm-legs",
+                  "key": "glm-legs-0",
+                  "name": "黑白系带短靴",
+                  "reviewFamilyHash": "606f885b517d379e17ca105c87f6896f43adc5cafd372f15c338aca6bd450d3f",
+                  "slot": "legs",
+                  "src": "/assets-classic/glm/remake/legs.png",
+                  "svg": "/assets-classic/glm/remake/legs.svg",
+                  "variantRole": "own-pose",
+                  "z": 30
+                },
+                {
+                  "artworkHash": "25b5376fb6b72ea005a3a0dd6f43c6b3b487596aa4f69cb6c8463e9dc3d53b7a",
+                  "itemId": "glm-bottom",
+                  "key": "glm-bottom-0",
+                  "name": "墨雪层叠长围裙",
+                  "reviewFamilyHash": "e104fd377c29470cc2eb85ef1e00f4260d33db181b75eef883a4029f7c9b4803",
+                  "slot": "bottom",
+                  "src": "/assets-classic/glm/remake/bottom.png",
+                  "svg": "/assets-classic/glm/remake/bottom.svg",
+                  "variantRole": "own-pose",
+                  "z": 40
+                },
+                {
+                  "artworkHash": "4690a9527888f41602fcdfd319aa335156af79df6a3f5b53f2c6f9469d3100d8",
+                  "design": "/assets-classic/glm/remake/top-body-design.svg",
+                  "itemId": "glm-top",
+                  "key": "glm-top-0",
+                  "name": "银扣蓬袖领结衫",
+                  "reviewFamilyHash": "eb6cdc037dddb866e813f398a907c653133db2a6edb5252d4c340e325f6d4f5c",
+                  "slot": "top",
+                  "src": "/assets-classic/glm/remake/top-body.png",
+                  "svg": "/assets-classic/glm/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "48e0f91298c20349bb1065705842a718548823a3f274e9f486a36af4108cd8db",
+                  "design": "/assets-classic/glm/remake/top-arms-design.svg",
+                  "itemId": "glm-top",
+                  "key": "glm-top-1",
+                  "name": "银扣蓬袖领结衫",
+                  "reviewFamilyHash": "eb6cdc037dddb866e813f398a907c653133db2a6edb5252d4c340e325f6d4f5c",
+                  "slot": "top",
+                  "src": "/assets-classic/glm/remake/top-arms.png",
+                  "svg": "/assets-classic/glm/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body3-evidence.json",
+              "recommendations": [
+                "近颊和横抱臂先建连续主暗/转面、腕掌肉量与指根小影；保留紧凑短指群，不强画五指。",
+                "书前掌指、腕根和袖口共同画承重/压叠；没有选书的组不改成强抓装饰。",
+                "白袖肘内/袖口压力褶及厚度、胸肋白衬和裙层主谷同改，删贯长亮条。",
+                "黑发先重构发根/额前和侧长束主面、暗谷与末端宽窄，不只撒亮点。",
+                "技术calf/四臂待对应复核，不能按单点盲削或以新body hash/视觉分解除历史。"
+              ]
+            },
+            {
+              "caseId": "glm-body3-s51016e85-a0-f3",
+              "fixtureIndex": 3,
+              "score": 82.7,
+              "weightedRaw": 82.7,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 83,
+                  "weight": 20,
+                  "reason": "例4紫夜竖弓：独立竖弓不强求横抱手去抓；可见白袖/胸片和黑腰缺共同转面，裙前几道硬亮条仍异质。"
+                },
+                "proportionConnection": {
+                  "score": 84,
+                  "weight": 25,
+                  "reason": "例4紫夜竖弓：独立竖弓不强求横抱手去抓；可见白袖/胸片和黑腰缺共同转面，裙前几道硬亮条仍异质。"
+                },
+                "materialColor": {
+                  "score": 78,
+                  "weight": 15,
+                  "reason": "例4紫夜竖弓：独立竖弓不强求横抱手去抓；可见白袖/胸片和黑腰缺共同转面，裙前几道硬亮条仍异质。"
+                },
+                "blingeePixel": {
+                  "score": 81,
+                  "weight": 20,
+                  "reason": "例4紫夜竖弓：独立竖弓不强求横抱手去抓；可见白袖/胸片和黑腰缺共同转面，裙前几道硬亮条仍异质。"
+                },
+                "occlusionContact": {
+                  "score": 85,
+                  "weight": 15,
+                  "reason": "例4紫夜竖弓：独立竖弓不强求横抱手去抓；可见白袖/胸片和黑腰缺共同转面，裙前几道硬亮条仍异质。"
+                },
+                "canvasReadability": {
+                  "score": 89,
+                  "weight": 5,
+                  "reason": "例4紫夜竖弓：独立竖弓不强求横抱手去抓；可见白袖/胸片和黑腰缺共同转面，裙前几道硬亮条仍异质。"
+                }
+              },
+              "reason": "例4紫夜竖弓：独立竖弓不强求横抱手去抓；可见白袖/胸片和黑腰缺共同转面，裙前几道硬亮条仍异质。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-2",
+                "back": "native-back-6",
+                "background": "native-background-19",
+                "bottom": "native-bottom-13",
+                "effect": "native-effect-14",
+                "face": "native-face-7",
+                "hair": "native-hair-16",
+                "headwear": "native-headwear-20",
+                "legs": "native-legs-13",
+                "prop": "native-prop-12",
+                "top": "native-top-9"
+              },
+              "aiSelection": {
+                "aura": "native-aura-2",
+                "back": "native-back-6",
+                "background": "native-background-19",
+                "bottom": "glm-bottom",
+                "effect": "native-effect-14",
+                "face": "native-face-7",
+                "hair": "native-hair-16",
+                "headwear": "native-headwear-20",
+                "legs": "glm-legs",
+                "prop": "native-prop-12",
+                "top": "glm-top"
+              },
+              "selectedAiSlots": [
+                "legs",
+                "bottom",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "e3f7cc6c89cc043a5a754e9c3b083d037121498d99760f122f3a9e96ea4347bc",
+                  "itemId": "glm-legs",
+                  "key": "glm-legs-0",
+                  "name": "黑白系带短靴",
+                  "reviewFamilyHash": "606f885b517d379e17ca105c87f6896f43adc5cafd372f15c338aca6bd450d3f",
+                  "slot": "legs",
+                  "src": "/assets-classic/glm/remake/legs.png",
+                  "svg": "/assets-classic/glm/remake/legs.svg",
+                  "variantRole": "own-pose",
+                  "z": 30
+                },
+                {
+                  "artworkHash": "25b5376fb6b72ea005a3a0dd6f43c6b3b487596aa4f69cb6c8463e9dc3d53b7a",
+                  "itemId": "glm-bottom",
+                  "key": "glm-bottom-0",
+                  "name": "墨雪层叠长围裙",
+                  "reviewFamilyHash": "e104fd377c29470cc2eb85ef1e00f4260d33db181b75eef883a4029f7c9b4803",
+                  "slot": "bottom",
+                  "src": "/assets-classic/glm/remake/bottom.png",
+                  "svg": "/assets-classic/glm/remake/bottom.svg",
+                  "variantRole": "own-pose",
+                  "z": 40
+                },
+                {
+                  "artworkHash": "4690a9527888f41602fcdfd319aa335156af79df6a3f5b53f2c6f9469d3100d8",
+                  "design": "/assets-classic/glm/remake/top-body-design.svg",
+                  "itemId": "glm-top",
+                  "key": "glm-top-0",
+                  "name": "银扣蓬袖领结衫",
+                  "reviewFamilyHash": "eb6cdc037dddb866e813f398a907c653133db2a6edb5252d4c340e325f6d4f5c",
+                  "slot": "top",
+                  "src": "/assets-classic/glm/remake/top-body.png",
+                  "svg": "/assets-classic/glm/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "48e0f91298c20349bb1065705842a718548823a3f274e9f486a36af4108cd8db",
+                  "design": "/assets-classic/glm/remake/top-arms-design.svg",
+                  "itemId": "glm-top",
+                  "key": "glm-top-1",
+                  "name": "银扣蓬袖领结衫",
+                  "reviewFamilyHash": "eb6cdc037dddb866e813f398a907c653133db2a6edb5252d4c340e325f6d4f5c",
+                  "slot": "top",
+                  "src": "/assets-classic/glm/remake/top-arms.png",
+                  "svg": "/assets-classic/glm/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body3-evidence.json",
+              "recommendations": [
+                "近颊和横抱臂先建连续主暗/转面、腕掌肉量与指根小影；保留紧凑短指群，不强画五指。",
+                "书前掌指、腕根和袖口共同画承重/压叠；没有选书的组不改成强抓装饰。",
+                "白袖肘内/袖口压力褶及厚度、胸肋白衬和裙层主谷同改，删贯长亮条。",
+                "黑发先重构发根/额前和侧长束主面、暗谷与末端宽窄，不只撒亮点。",
+                "技术calf/四臂待对应复核，不能按单点盲削或以新body hash/视觉分解除历史。"
+              ]
+            },
+            {
+              "caseId": "glm-body3-s51016e85-a0-f4",
+              "fixtureIndex": 4,
+              "score": 82.05,
+              "weightedRaw": 82.05,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 82,
+                  "weight": 20,
+                  "reason": "例5蓝闪爱心棒：中心被饰物/星遮，侧袖和下裙仍见平滑厚管与大楔形黑白面；未选书时空抱物式手势不作为缺书错误。"
+                },
+                "proportionConnection": {
+                  "score": 84,
+                  "weight": 25,
+                  "reason": "例5蓝闪爱心棒：中心被饰物/星遮，侧袖和下裙仍见平滑厚管与大楔形黑白面；未选书时空抱物式手势不作为缺书错误。"
+                },
+                "materialColor": {
+                  "score": 78,
+                  "weight": 15,
+                  "reason": "例5蓝闪爱心棒：中心被饰物/星遮，侧袖和下裙仍见平滑厚管与大楔形黑白面；未选书时空抱物式手势不作为缺书错误。"
+                },
+                "blingeePixel": {
+                  "score": 80,
+                  "weight": 20,
+                  "reason": "例5蓝闪爱心棒：中心被饰物/星遮，侧袖和下裙仍见平滑厚管与大楔形黑白面；未选书时空抱物式手势不作为缺书错误。"
+                },
+                "occlusionContact": {
+                  "score": 84,
+                  "weight": 15,
+                  "reason": "例5蓝闪爱心棒：中心被饰物/星遮，侧袖和下裙仍见平滑厚管与大楔形黑白面；未选书时空抱物式手势不作为缺书错误。"
+                },
+                "canvasReadability": {
+                  "score": 87,
+                  "weight": 5,
+                  "reason": "例5蓝闪爱心棒：中心被饰物/星遮，侧袖和下裙仍见平滑厚管与大楔形黑白面；未选书时空抱物式手势不作为缺书错误。"
+                }
+              },
+              "reason": "例5蓝闪爱心棒：中心被饰物/星遮，侧袖和下裙仍见平滑厚管与大楔形黑白面；未选书时空抱物式手势不作为缺书错误。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": "中心饰物/星效遮挡，仅评可见侧袖/裙。",
+              "scoredVisibleOnly": true,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-16",
+                "back": "native-back-2",
+                "background": "native-background-12",
+                "bottom": "native-bottom-5",
+                "effect": "native-effect-3",
+                "face": "native-face-11",
+                "hair": "native-hair-5",
+                "headwear": "native-headwear-18",
+                "legs": "native-legs-5",
+                "prop": "native-prop-11",
+                "top": "native-top-19"
+              },
+              "aiSelection": {
+                "aura": "native-aura-16",
+                "back": "native-back-2",
+                "background": "native-background-12",
+                "bottom": "glm-bottom",
+                "effect": "native-effect-3",
+                "face": "native-face-11",
+                "hair": "native-hair-5",
+                "headwear": "native-headwear-18",
+                "legs": "glm-legs",
+                "prop": "native-prop-11",
+                "top": "glm-top"
+              },
+              "selectedAiSlots": [
+                "legs",
+                "bottom",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "e3f7cc6c89cc043a5a754e9c3b083d037121498d99760f122f3a9e96ea4347bc",
+                  "itemId": "glm-legs",
+                  "key": "glm-legs-0",
+                  "name": "黑白系带短靴",
+                  "reviewFamilyHash": "606f885b517d379e17ca105c87f6896f43adc5cafd372f15c338aca6bd450d3f",
+                  "slot": "legs",
+                  "src": "/assets-classic/glm/remake/legs.png",
+                  "svg": "/assets-classic/glm/remake/legs.svg",
+                  "variantRole": "own-pose",
+                  "z": 30
+                },
+                {
+                  "artworkHash": "25b5376fb6b72ea005a3a0dd6f43c6b3b487596aa4f69cb6c8463e9dc3d53b7a",
+                  "itemId": "glm-bottom",
+                  "key": "glm-bottom-0",
+                  "name": "墨雪层叠长围裙",
+                  "reviewFamilyHash": "e104fd377c29470cc2eb85ef1e00f4260d33db181b75eef883a4029f7c9b4803",
+                  "slot": "bottom",
+                  "src": "/assets-classic/glm/remake/bottom.png",
+                  "svg": "/assets-classic/glm/remake/bottom.svg",
+                  "variantRole": "own-pose",
+                  "z": 40
+                },
+                {
+                  "artworkHash": "4690a9527888f41602fcdfd319aa335156af79df6a3f5b53f2c6f9469d3100d8",
+                  "design": "/assets-classic/glm/remake/top-body-design.svg",
+                  "itemId": "glm-top",
+                  "key": "glm-top-0",
+                  "name": "银扣蓬袖领结衫",
+                  "reviewFamilyHash": "eb6cdc037dddb866e813f398a907c653133db2a6edb5252d4c340e325f6d4f5c",
+                  "slot": "top",
+                  "src": "/assets-classic/glm/remake/top-body.png",
+                  "svg": "/assets-classic/glm/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "48e0f91298c20349bb1065705842a718548823a3f274e9f486a36af4108cd8db",
+                  "design": "/assets-classic/glm/remake/top-arms-design.svg",
+                  "itemId": "glm-top",
+                  "key": "glm-top-1",
+                  "name": "银扣蓬袖领结衫",
+                  "reviewFamilyHash": "eb6cdc037dddb866e813f398a907c653133db2a6edb5252d4c340e325f6d4f5c",
+                  "slot": "top",
+                  "src": "/assets-classic/glm/remake/top-arms.png",
+                  "svg": "/assets-classic/glm/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body3-evidence.json",
+              "recommendations": [
+                "近颊和横抱臂先建连续主暗/转面、腕掌肉量与指根小影；保留紧凑短指群，不强画五指。",
+                "书前掌指、腕根和袖口共同画承重/压叠；没有选书的组不改成强抓装饰。",
+                "白袖肘内/袖口压力褶及厚度、胸肋白衬和裙层主谷同改，删贯长亮条。",
+                "黑发先重构发根/额前和侧长束主面、暗谷与末端宽窄，不只撒亮点。",
+                "技术calf/四臂待对应复核，不能按单点盲削或以新body hash/视觉分解除历史。"
+              ]
+            }
+          ],
+          "reasons": [
+            "R8腰胯/股根连续，腿足错步可读；不直接继承旧98或旧几何指控。",
+            "近颊侧x47..65/y88..115掌指与颈部贴合分界弱，肘到掌大片浅面缺主暗/转面。",
+            "横抱臂x61..91/y119..126前臂近水平等宽亮面，腕到掌根只有薄过渡；紧凑指群本身不扣。",
+            "肩/上臂与股根转面仍简化；本次未重跑量测，明确保留技术报告的窄窗/锚点不确定性，不清历史hash。",
+            "近颊和横抱臂先建连续主暗/转面、腕掌肉量与指根小影；保留紧凑短指群，不强画五指。",
+            "书前掌指、腕根和袖口共同画承重/压叠；没有选书的组不改成强抓装饰。",
+            "白袖肘内/袖口压力褶及厚度、胸肋白衬和裙层主谷同改，删贯长亮条。",
+            "黑发先重构发根/额前和侧长束主面、暗谷与末端宽窄，不只撒亮点。",
+            "技术calf/四臂待对应复核，不能按单点盲削或以新body hash/视觉分解除历史。"
+          ],
+          "recommendations": [
+            "近颊和横抱臂先建连续主暗/转面、腕掌肉量与指根小影；保留紧凑短指群，不强画五指。",
+            "书前掌指、腕根和袖口共同画承重/压叠；没有选书的组不改成强抓装饰。",
+            "白袖肘内/袖口压力褶及厚度、胸肋白衬和裙层主谷同改，删贯长亮条。",
+            "黑发先重构发根/额前和侧长束主面、暗谷与末端宽窄，不只撒亮点。",
+            "技术calf/四臂待对应复核，不能按单点盲削或以新body hash/视觉分解除历史。"
+          ],
+          "evidence": {
+            "reactEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body3-evidence.json",
+            "reactScreenshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body3.png",
+            "reactScreenshotSha256": "5142cad9a2fe2742644815f9d02b955a6bb276f4f4751733029b75c1db705504",
+            "captureBrowser": "Codex in-app browser",
+            "failedImages": [],
+            "actuallyViewed": true
+          },
+          "limitations": [
+            "Static only; no animation claim.",
+            "Native complete combinations remain100. Any AI-owned generated support is included with the AI; never inherits100.",
+            "中心饰物/星效遮挡，仅评可见侧袖/裙。"
+          ]
+        }
+      ]
+    },
+    "upper2": {
+      "reviews": [
+        {
+          "reviewer": "classic_body_judge",
+          "score": 81.1,
+          "weightedRaw": 81.1,
+          "threshold": 98,
+          "passed": false,
+          "pending": false,
+          "selectedAiSlots": [
+            "hair",
+            "top"
+          ],
+          "selectedItemIDs": {
+            "hair": "glm-hair",
+            "top": "glm-top"
+          },
+          "reviewedPartHashes": {
+            "hair": "74078e900459f430f20c8dc2a289f12ac7ff44badd4829d8f7af038c80e7fafe",
+            "top": "eb6cdc037dddb866e813f398a907c653133db2a6edb5252d4c340e325f6d4f5c"
+          },
+          "reviewedGeneratedInterfaceHashes": {},
+          "reviewedCompleteHash": "f9ae56bb570a6cdc649266bffae416a75f3cad1a93730d19aedc6977660af6be",
+          "bodyHash": "669e2b6679c5ca41ff73eb312977fe22c72c92ef11a627c303ee72515bb3cee1",
+          "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+          "seed": "human-20261110-glm-upper2-jw14t7br",
+          "contextSignature": "native-context-v4-59b3e8bb",
+          "draws": {
+            "aura": [
+              "native-aura-20",
+              "native-aura-14",
+              "native-aura-16",
+              "native-aura-5",
+              "native-aura-15"
+            ],
+            "back": [
+              "native-back-2",
+              "native-back-8",
+              "native-back-7",
+              "native-back-5",
+              "native-back-13"
+            ],
+            "background": [
+              "native-background-6",
+              "native-background-5",
+              "native-background-13",
+              "native-background-17",
+              "native-background-10"
+            ],
+            "bottom": [
+              "native-bottom-9",
+              "native-bottom-19",
+              "native-bottom-17",
+              "native-bottom-6",
+              "native-bottom-15"
+            ],
+            "effect": [
+              "native-effect-18",
+              "native-effect-19",
+              "native-effect-11",
+              "native-effect-1",
+              "native-effect-4"
+            ],
+            "face": [
+              "native-face-20",
+              "native-face-8",
+              "native-face-5",
+              "native-face-3",
+              "native-face-15"
+            ],
+            "hair": [
+              "native-hair-1",
+              "native-hair-9",
+              "native-hair-19",
+              "native-hair-5",
+              "native-hair-8"
+            ],
+            "headwear": [
+              "native-headwear-7",
+              "native-headwear-8",
+              "native-headwear-13",
+              "native-headwear-20",
+              "native-headwear-6"
+            ],
+            "legs": [
+              "native-legs-9",
+              "native-legs-19",
+              "native-legs-17",
+              "native-legs-6",
+              "native-legs-15"
+            ],
+            "prop": [
+              "native-prop-19",
+              "native-prop-10",
+              "native-prop-4",
+              "native-prop-2",
+              "native-prop-1"
+            ],
+            "top": [
+              "native-top-16",
+              "native-top-10",
+              "native-top-3",
+              "native-top-20",
+              "native-top-19"
+            ]
+          },
+          "contextScores": [
+            {
+              "caseId": "glm-upper2-s9893ef50-a0-f0",
+              "fixtureIndex": 0,
+              "score": 81.35,
+              "weightedRaw": 81.35,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 81,
+                  "weight": 20,
+                  "reason": "例1海底黑裙：腰饰不需握；胸白片到黑腰像平铺，横袖腕口缺收放/压叠，落在原生裙腰过硬；黑发直板异质。"
+                },
+                "proportionConnection": {
+                  "score": 83,
+                  "weight": 25,
+                  "reason": "例1海底黑裙：腰饰不需握；胸白片到黑腰像平铺，横袖腕口缺收放/压叠，落在原生裙腰过硬；黑发直板异质。"
+                },
+                "materialColor": {
+                  "score": 77,
+                  "weight": 15,
+                  "reason": "例1海底黑裙：腰饰不需握；胸白片到黑腰像平铺，横袖腕口缺收放/压叠，落在原生裙腰过硬；黑发直板异质。"
+                },
+                "blingeePixel": {
+                  "score": 80,
+                  "weight": 20,
+                  "reason": "例1海底黑裙：腰饰不需握；胸白片到黑腰像平铺，横袖腕口缺收放/压叠，落在原生裙腰过硬；黑发直板异质。"
+                },
+                "occlusionContact": {
+                  "score": 83,
+                  "weight": 15,
+                  "reason": "例1海底黑裙：腰饰不需握；胸白片到黑腰像平铺，横袖腕口缺收放/压叠，落在原生裙腰过硬；黑发直板异质。"
+                },
+                "canvasReadability": {
+                  "score": 88,
+                  "weight": 5,
+                  "reason": "例1海底黑裙：腰饰不需握；胸白片到黑腰像平铺，横袖腕口缺收放/压叠，落在原生裙腰过硬；黑发直板异质。"
+                }
+              },
+              "reason": "例1海底黑裙：腰饰不需握；胸白片到黑腰像平铺，横袖腕口缺收放/压叠，落在原生裙腰过硬；黑发直板异质。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-20",
+                "back": "native-back-2",
+                "background": "native-background-6",
+                "bottom": "native-bottom-9",
+                "effect": "native-effect-18",
+                "face": "native-face-20",
+                "hair": "native-hair-1",
+                "headwear": "native-headwear-7",
+                "legs": "native-legs-9",
+                "prop": "native-prop-19",
+                "top": "native-top-16"
+              },
+              "aiSelection": {
+                "aura": "native-aura-20",
+                "back": "native-back-2",
+                "background": "native-background-6",
+                "bottom": "native-bottom-9",
+                "effect": "native-effect-18",
+                "face": "native-face-20",
+                "hair": "glm-hair",
+                "headwear": "native-headwear-7",
+                "legs": "native-legs-9",
+                "prop": "native-prop-19",
+                "top": "glm-top"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "e5c798a59590d2166cff0374acb164b225a1eeb641f5e065169e18e37b1002b7",
+                  "design": "/assets-classic/glm/remake/hair-back-design.svg",
+                  "itemId": "glm-hair",
+                  "key": "glm-hair-0",
+                  "name": "墨蓝长直发",
+                  "reviewFamilyHash": "74078e900459f430f20c8dc2a289f12ac7ff44badd4829d8f7af038c80e7fafe",
+                  "slot": "hair",
+                  "src": "/assets-classic/glm/remake/hair-back.png",
+                  "svg": "/assets-classic/glm/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "4690a9527888f41602fcdfd319aa335156af79df6a3f5b53f2c6f9469d3100d8",
+                  "design": "/assets-classic/glm/remake/top-body-design.svg",
+                  "itemId": "glm-top",
+                  "key": "glm-top-0",
+                  "name": "银扣蓬袖领结衫",
+                  "reviewFamilyHash": "eb6cdc037dddb866e813f398a907c653133db2a6edb5252d4c340e325f6d4f5c",
+                  "slot": "top",
+                  "src": "/assets-classic/glm/remake/top-body.png",
+                  "svg": "/assets-classic/glm/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "dad667adf1745383e3b1576b4151f257916407033350e920e04bb10b49633969",
+                  "design": "/assets-classic/glm/remake/hair-front-design.svg",
+                  "itemId": "glm-hair",
+                  "key": "glm-hair-1",
+                  "name": "墨蓝长直发",
+                  "reviewFamilyHash": "74078e900459f430f20c8dc2a289f12ac7ff44badd4829d8f7af038c80e7fafe",
+                  "slot": "hair",
+                  "src": "/assets-classic/glm/remake/hair-front.png",
+                  "svg": "/assets-classic/glm/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                },
+                {
+                  "artworkHash": "48e0f91298c20349bb1065705842a718548823a3f274e9f486a36af4108cd8db",
+                  "design": "/assets-classic/glm/remake/top-arms-design.svg",
+                  "itemId": "glm-top",
+                  "key": "glm-top-1",
+                  "name": "银扣蓬袖领结衫",
+                  "reviewFamilyHash": "eb6cdc037dddb866e813f398a907c653133db2a6edb5252d4c340e325f6d4f5c",
+                  "slot": "top",
+                  "src": "/assets-classic/glm/remake/top-arms.png",
+                  "svg": "/assets-classic/glm/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/upper2-evidence.json",
+              "recommendations": [
+                "近颊和横抱臂先建连续主暗/转面、腕掌肉量与指根小影；保留紧凑短指群，不强画五指。",
+                "书前掌指、腕根和袖口共同画承重/压叠；没有选书的组不改成强抓装饰。",
+                "白袖肘内/袖口压力褶及厚度、胸肋白衬和裙层主谷同改，删贯长亮条。",
+                "黑发先重构发根/额前和侧长束主面、暗谷与末端宽窄，不只撒亮点。",
+                "技术calf/四臂待对应复核，不能按单点盲削或以新body hash/视觉分解除历史。"
+              ]
+            },
+            {
+              "caseId": "glm-upper2-s9893ef50-a0-f1",
+              "fixtureIndex": 1,
+              "score": 81.35,
+              "weightedRaw": 81.35,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 81,
+                  "weight": 20,
+                  "reason": "例2立式话筒宽裤：话筒原生也未持，不强求新手接；横袖/掌根和腰口叠层硬，缺布松量及与原生裤胯共同曲面。"
+                },
+                "proportionConnection": {
+                  "score": 83,
+                  "weight": 25,
+                  "reason": "例2立式话筒宽裤：话筒原生也未持，不强求新手接；横袖/掌根和腰口叠层硬，缺布松量及与原生裤胯共同曲面。"
+                },
+                "materialColor": {
+                  "score": 77,
+                  "weight": 15,
+                  "reason": "例2立式话筒宽裤：话筒原生也未持，不强求新手接；横袖/掌根和腰口叠层硬，缺布松量及与原生裤胯共同曲面。"
+                },
+                "blingeePixel": {
+                  "score": 80,
+                  "weight": 20,
+                  "reason": "例2立式话筒宽裤：话筒原生也未持，不强求新手接；横袖/掌根和腰口叠层硬，缺布松量及与原生裤胯共同曲面。"
+                },
+                "occlusionContact": {
+                  "score": 83,
+                  "weight": 15,
+                  "reason": "例2立式话筒宽裤：话筒原生也未持，不强求新手接；横袖/掌根和腰口叠层硬，缺布松量及与原生裤胯共同曲面。"
+                },
+                "canvasReadability": {
+                  "score": 88,
+                  "weight": 5,
+                  "reason": "例2立式话筒宽裤：话筒原生也未持，不强求新手接；横袖/掌根和腰口叠层硬，缺布松量及与原生裤胯共同曲面。"
+                }
+              },
+              "reason": "例2立式话筒宽裤：话筒原生也未持，不强求新手接；横袖/掌根和腰口叠层硬，缺布松量及与原生裤胯共同曲面。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-14",
+                "back": "native-back-8",
+                "background": "native-background-5",
+                "bottom": "native-bottom-19",
+                "effect": "native-effect-19",
+                "face": "native-face-8",
+                "hair": "native-hair-9",
+                "headwear": "native-headwear-8",
+                "legs": "native-legs-19",
+                "prop": "native-prop-10",
+                "top": "native-top-10"
+              },
+              "aiSelection": {
+                "aura": "native-aura-14",
+                "back": "native-back-8",
+                "background": "native-background-5",
+                "bottom": "native-bottom-19",
+                "effect": "native-effect-19",
+                "face": "native-face-8",
+                "hair": "glm-hair",
+                "headwear": "native-headwear-8",
+                "legs": "native-legs-19",
+                "prop": "native-prop-10",
+                "top": "glm-top"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "e5c798a59590d2166cff0374acb164b225a1eeb641f5e065169e18e37b1002b7",
+                  "design": "/assets-classic/glm/remake/hair-back-design.svg",
+                  "itemId": "glm-hair",
+                  "key": "glm-hair-0",
+                  "name": "墨蓝长直发",
+                  "reviewFamilyHash": "74078e900459f430f20c8dc2a289f12ac7ff44badd4829d8f7af038c80e7fafe",
+                  "slot": "hair",
+                  "src": "/assets-classic/glm/remake/hair-back.png",
+                  "svg": "/assets-classic/glm/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "4690a9527888f41602fcdfd319aa335156af79df6a3f5b53f2c6f9469d3100d8",
+                  "design": "/assets-classic/glm/remake/top-body-design.svg",
+                  "itemId": "glm-top",
+                  "key": "glm-top-0",
+                  "name": "银扣蓬袖领结衫",
+                  "reviewFamilyHash": "eb6cdc037dddb866e813f398a907c653133db2a6edb5252d4c340e325f6d4f5c",
+                  "slot": "top",
+                  "src": "/assets-classic/glm/remake/top-body.png",
+                  "svg": "/assets-classic/glm/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "dad667adf1745383e3b1576b4151f257916407033350e920e04bb10b49633969",
+                  "design": "/assets-classic/glm/remake/hair-front-design.svg",
+                  "itemId": "glm-hair",
+                  "key": "glm-hair-1",
+                  "name": "墨蓝长直发",
+                  "reviewFamilyHash": "74078e900459f430f20c8dc2a289f12ac7ff44badd4829d8f7af038c80e7fafe",
+                  "slot": "hair",
+                  "src": "/assets-classic/glm/remake/hair-front.png",
+                  "svg": "/assets-classic/glm/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                },
+                {
+                  "artworkHash": "48e0f91298c20349bb1065705842a718548823a3f274e9f486a36af4108cd8db",
+                  "design": "/assets-classic/glm/remake/top-arms-design.svg",
+                  "itemId": "glm-top",
+                  "key": "glm-top-1",
+                  "name": "银扣蓬袖领结衫",
+                  "reviewFamilyHash": "eb6cdc037dddb866e813f398a907c653133db2a6edb5252d4c340e325f6d4f5c",
+                  "slot": "top",
+                  "src": "/assets-classic/glm/remake/top-arms.png",
+                  "svg": "/assets-classic/glm/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/upper2-evidence.json",
+              "recommendations": [
+                "近颊和横抱臂先建连续主暗/转面、腕掌肉量与指根小影；保留紧凑短指群，不强画五指。",
+                "书前掌指、腕根和袖口共同画承重/压叠；没有选书的组不改成强抓装饰。",
+                "白袖肘内/袖口压力褶及厚度、胸肋白衬和裙层主谷同改，删贯长亮条。",
+                "黑发先重构发根/额前和侧长束主面、暗谷与末端宽窄，不只撒亮点。",
+                "技术calf/四臂待对应复核，不能按单点盲削或以新body hash/视觉分解除历史。"
+              ]
+            },
+            {
+              "caseId": "glm-upper2-s9893ef50-a0-f2",
+              "fixtureIndex": 2,
+              "score": 81.35,
+              "weightedRaw": 81.35,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 81,
+                  "weight": 20,
+                  "reason": "例3黑底卡其裤：腰链不需握；可见手腕/袖口仍薄硬，白衣黑腰和原生裤胯分成独立层，长发大面平。"
+                },
+                "proportionConnection": {
+                  "score": 83,
+                  "weight": 25,
+                  "reason": "例3黑底卡其裤：腰链不需握；可见手腕/袖口仍薄硬，白衣黑腰和原生裤胯分成独立层，长发大面平。"
+                },
+                "materialColor": {
+                  "score": 77,
+                  "weight": 15,
+                  "reason": "例3黑底卡其裤：腰链不需握；可见手腕/袖口仍薄硬，白衣黑腰和原生裤胯分成独立层，长发大面平。"
+                },
+                "blingeePixel": {
+                  "score": 80,
+                  "weight": 20,
+                  "reason": "例3黑底卡其裤：腰链不需握；可见手腕/袖口仍薄硬，白衣黑腰和原生裤胯分成独立层，长发大面平。"
+                },
+                "occlusionContact": {
+                  "score": 83,
+                  "weight": 15,
+                  "reason": "例3黑底卡其裤：腰链不需握；可见手腕/袖口仍薄硬，白衣黑腰和原生裤胯分成独立层，长发大面平。"
+                },
+                "canvasReadability": {
+                  "score": 88,
+                  "weight": 5,
+                  "reason": "例3黑底卡其裤：腰链不需握；可见手腕/袖口仍薄硬，白衣黑腰和原生裤胯分成独立层，长发大面平。"
+                }
+              },
+              "reason": "例3黑底卡其裤：腰链不需握；可见手腕/袖口仍薄硬，白衣黑腰和原生裤胯分成独立层，长发大面平。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-16",
+                "back": "native-back-7",
+                "background": "native-background-13",
+                "bottom": "native-bottom-17",
+                "effect": "native-effect-11",
+                "face": "native-face-5",
+                "hair": "native-hair-19",
+                "headwear": "native-headwear-13",
+                "legs": "native-legs-17",
+                "prop": "native-prop-4",
+                "top": "native-top-3"
+              },
+              "aiSelection": {
+                "aura": "native-aura-16",
+                "back": "native-back-7",
+                "background": "native-background-13",
+                "bottom": "native-bottom-17",
+                "effect": "native-effect-11",
+                "face": "native-face-5",
+                "hair": "glm-hair",
+                "headwear": "native-headwear-13",
+                "legs": "native-legs-17",
+                "prop": "native-prop-4",
+                "top": "glm-top"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "e5c798a59590d2166cff0374acb164b225a1eeb641f5e065169e18e37b1002b7",
+                  "design": "/assets-classic/glm/remake/hair-back-design.svg",
+                  "itemId": "glm-hair",
+                  "key": "glm-hair-0",
+                  "name": "墨蓝长直发",
+                  "reviewFamilyHash": "74078e900459f430f20c8dc2a289f12ac7ff44badd4829d8f7af038c80e7fafe",
+                  "slot": "hair",
+                  "src": "/assets-classic/glm/remake/hair-back.png",
+                  "svg": "/assets-classic/glm/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "4690a9527888f41602fcdfd319aa335156af79df6a3f5b53f2c6f9469d3100d8",
+                  "design": "/assets-classic/glm/remake/top-body-design.svg",
+                  "itemId": "glm-top",
+                  "key": "glm-top-0",
+                  "name": "银扣蓬袖领结衫",
+                  "reviewFamilyHash": "eb6cdc037dddb866e813f398a907c653133db2a6edb5252d4c340e325f6d4f5c",
+                  "slot": "top",
+                  "src": "/assets-classic/glm/remake/top-body.png",
+                  "svg": "/assets-classic/glm/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "dad667adf1745383e3b1576b4151f257916407033350e920e04bb10b49633969",
+                  "design": "/assets-classic/glm/remake/hair-front-design.svg",
+                  "itemId": "glm-hair",
+                  "key": "glm-hair-1",
+                  "name": "墨蓝长直发",
+                  "reviewFamilyHash": "74078e900459f430f20c8dc2a289f12ac7ff44badd4829d8f7af038c80e7fafe",
+                  "slot": "hair",
+                  "src": "/assets-classic/glm/remake/hair-front.png",
+                  "svg": "/assets-classic/glm/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                },
+                {
+                  "artworkHash": "48e0f91298c20349bb1065705842a718548823a3f274e9f486a36af4108cd8db",
+                  "design": "/assets-classic/glm/remake/top-arms-design.svg",
+                  "itemId": "glm-top",
+                  "key": "glm-top-1",
+                  "name": "银扣蓬袖领结衫",
+                  "reviewFamilyHash": "eb6cdc037dddb866e813f398a907c653133db2a6edb5252d4c340e325f6d4f5c",
+                  "slot": "top",
+                  "src": "/assets-classic/glm/remake/top-arms.png",
+                  "svg": "/assets-classic/glm/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/upper2-evidence.json",
+              "recommendations": [
+                "近颊和横抱臂先建连续主暗/转面、腕掌肉量与指根小影；保留紧凑短指群，不强画五指。",
+                "书前掌指、腕根和袖口共同画承重/压叠；没有选书的组不改成强抓装饰。",
+                "白袖肘内/袖口压力褶及厚度、胸肋白衬和裙层主谷同改，删贯长亮条。",
+                "黑发先重构发根/额前和侧长束主面、暗谷与末端宽窄，不只撒亮点。",
+                "技术calf/四臂待对应复核，不能按单点盲削或以新body hash/视觉分解除历史。"
+              ]
+            },
+            {
+              "caseId": "glm-upper2-s9893ef50-a0-f3",
+              "fixtureIndex": 3,
+              "score": 81.35,
+              "weightedRaw": 81.35,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 81,
+                  "weight": 20,
+                  "reason": "例4粉短裙：小包为肩/链包语义不自动强抓。白横袖到掌根与黑衣/原生裙腰有硬拼感，袖肘仍像光滑管。"
+                },
+                "proportionConnection": {
+                  "score": 83,
+                  "weight": 25,
+                  "reason": "例4粉短裙：小包为肩/链包语义不自动强抓。白横袖到掌根与黑衣/原生裙腰有硬拼感，袖肘仍像光滑管。"
+                },
+                "materialColor": {
+                  "score": 77,
+                  "weight": 15,
+                  "reason": "例4粉短裙：小包为肩/链包语义不自动强抓。白横袖到掌根与黑衣/原生裙腰有硬拼感，袖肘仍像光滑管。"
+                },
+                "blingeePixel": {
+                  "score": 80,
+                  "weight": 20,
+                  "reason": "例4粉短裙：小包为肩/链包语义不自动强抓。白横袖到掌根与黑衣/原生裙腰有硬拼感，袖肘仍像光滑管。"
+                },
+                "occlusionContact": {
+                  "score": 83,
+                  "weight": 15,
+                  "reason": "例4粉短裙：小包为肩/链包语义不自动强抓。白横袖到掌根与黑衣/原生裙腰有硬拼感，袖肘仍像光滑管。"
+                },
+                "canvasReadability": {
+                  "score": 88,
+                  "weight": 5,
+                  "reason": "例4粉短裙：小包为肩/链包语义不自动强抓。白横袖到掌根与黑衣/原生裙腰有硬拼感，袖肘仍像光滑管。"
+                }
+              },
+              "reason": "例4粉短裙：小包为肩/链包语义不自动强抓。白横袖到掌根与黑衣/原生裙腰有硬拼感，袖肘仍像光滑管。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-5",
+                "back": "native-back-5",
+                "background": "native-background-17",
+                "bottom": "native-bottom-6",
+                "effect": "native-effect-1",
+                "face": "native-face-3",
+                "hair": "native-hair-5",
+                "headwear": "native-headwear-20",
+                "legs": "native-legs-6",
+                "prop": "native-prop-2",
+                "top": "native-top-20"
+              },
+              "aiSelection": {
+                "aura": "native-aura-5",
+                "back": "native-back-5",
+                "background": "native-background-17",
+                "bottom": "native-bottom-6",
+                "effect": "native-effect-1",
+                "face": "native-face-3",
+                "hair": "glm-hair",
+                "headwear": "native-headwear-20",
+                "legs": "native-legs-6",
+                "prop": "native-prop-2",
+                "top": "glm-top"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "e5c798a59590d2166cff0374acb164b225a1eeb641f5e065169e18e37b1002b7",
+                  "design": "/assets-classic/glm/remake/hair-back-design.svg",
+                  "itemId": "glm-hair",
+                  "key": "glm-hair-0",
+                  "name": "墨蓝长直发",
+                  "reviewFamilyHash": "74078e900459f430f20c8dc2a289f12ac7ff44badd4829d8f7af038c80e7fafe",
+                  "slot": "hair",
+                  "src": "/assets-classic/glm/remake/hair-back.png",
+                  "svg": "/assets-classic/glm/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "4690a9527888f41602fcdfd319aa335156af79df6a3f5b53f2c6f9469d3100d8",
+                  "design": "/assets-classic/glm/remake/top-body-design.svg",
+                  "itemId": "glm-top",
+                  "key": "glm-top-0",
+                  "name": "银扣蓬袖领结衫",
+                  "reviewFamilyHash": "eb6cdc037dddb866e813f398a907c653133db2a6edb5252d4c340e325f6d4f5c",
+                  "slot": "top",
+                  "src": "/assets-classic/glm/remake/top-body.png",
+                  "svg": "/assets-classic/glm/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "dad667adf1745383e3b1576b4151f257916407033350e920e04bb10b49633969",
+                  "design": "/assets-classic/glm/remake/hair-front-design.svg",
+                  "itemId": "glm-hair",
+                  "key": "glm-hair-1",
+                  "name": "墨蓝长直发",
+                  "reviewFamilyHash": "74078e900459f430f20c8dc2a289f12ac7ff44badd4829d8f7af038c80e7fafe",
+                  "slot": "hair",
+                  "src": "/assets-classic/glm/remake/hair-front.png",
+                  "svg": "/assets-classic/glm/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                },
+                {
+                  "artworkHash": "48e0f91298c20349bb1065705842a718548823a3f274e9f486a36af4108cd8db",
+                  "design": "/assets-classic/glm/remake/top-arms-design.svg",
+                  "itemId": "glm-top",
+                  "key": "glm-top-1",
+                  "name": "银扣蓬袖领结衫",
+                  "reviewFamilyHash": "eb6cdc037dddb866e813f398a907c653133db2a6edb5252d4c340e325f6d4f5c",
+                  "slot": "top",
+                  "src": "/assets-classic/glm/remake/top-arms.png",
+                  "svg": "/assets-classic/glm/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/upper2-evidence.json",
+              "recommendations": [
+                "近颊和横抱臂先建连续主暗/转面、腕掌肉量与指根小影；保留紧凑短指群，不强画五指。",
+                "书前掌指、腕根和袖口共同画承重/压叠；没有选书的组不改成强抓装饰。",
+                "白袖肘内/袖口压力褶及厚度、胸肋白衬和裙层主谷同改，删贯长亮条。",
+                "黑发先重构发根/额前和侧长束主面、暗谷与末端宽窄，不只撒亮点。",
+                "技术calf/四臂待对应复核，不能按单点盲削或以新body hash/视觉分解除历史。"
+              ]
+            },
+            {
+              "caseId": "glm-upper2-s9893ef50-a0-f4",
+              "fixtureIndex": 4,
+              "score": 81.1,
+              "weightedRaw": 81.1,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 81,
+                  "weight": 20,
+                  "reason": "例5花束粉房：花遮中心，只评侧袖/腰与发；仍平板/直长块。未清楚看到的花茎握点不认定必然断握。"
+                },
+                "proportionConnection": {
+                  "score": 83,
+                  "weight": 25,
+                  "reason": "例5花束粉房：花遮中心，只评侧袖/腰与发；仍平板/直长块。未清楚看到的花茎握点不认定必然断握。"
+                },
+                "materialColor": {
+                  "score": 77,
+                  "weight": 15,
+                  "reason": "例5花束粉房：花遮中心，只评侧袖/腰与发；仍平板/直长块。未清楚看到的花茎握点不认定必然断握。"
+                },
+                "blingeePixel": {
+                  "score": 80,
+                  "weight": 20,
+                  "reason": "例5花束粉房：花遮中心，只评侧袖/腰与发；仍平板/直长块。未清楚看到的花茎握点不认定必然断握。"
+                },
+                "occlusionContact": {
+                  "score": 82,
+                  "weight": 15,
+                  "reason": "例5花束粉房：花遮中心，只评侧袖/腰与发；仍平板/直长块。未清楚看到的花茎握点不认定必然断握。"
+                },
+                "canvasReadability": {
+                  "score": 86,
+                  "weight": 5,
+                  "reason": "例5花束粉房：花遮中心，只评侧袖/腰与发；仍平板/直长块。未清楚看到的花茎握点不认定必然断握。"
+                }
+              },
+              "reason": "例5花束粉房：花遮中心，只评侧袖/腰与发；仍平板/直长块。未清楚看到的花茎握点不认定必然断握。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": "花束遮胸腹大部，未给隐藏面高分。",
+              "scoredVisibleOnly": true,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-15",
+                "back": "native-back-13",
+                "background": "native-background-10",
+                "bottom": "native-bottom-15",
+                "effect": "native-effect-4",
+                "face": "native-face-15",
+                "hair": "native-hair-8",
+                "headwear": "native-headwear-6",
+                "legs": "native-legs-15",
+                "prop": "native-prop-1",
+                "top": "native-top-19"
+              },
+              "aiSelection": {
+                "aura": "native-aura-15",
+                "back": "native-back-13",
+                "background": "native-background-10",
+                "bottom": "native-bottom-15",
+                "effect": "native-effect-4",
+                "face": "native-face-15",
+                "hair": "glm-hair",
+                "headwear": "native-headwear-6",
+                "legs": "native-legs-15",
+                "prop": "native-prop-1",
+                "top": "glm-top"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "e5c798a59590d2166cff0374acb164b225a1eeb641f5e065169e18e37b1002b7",
+                  "design": "/assets-classic/glm/remake/hair-back-design.svg",
+                  "itemId": "glm-hair",
+                  "key": "glm-hair-0",
+                  "name": "墨蓝长直发",
+                  "reviewFamilyHash": "74078e900459f430f20c8dc2a289f12ac7ff44badd4829d8f7af038c80e7fafe",
+                  "slot": "hair",
+                  "src": "/assets-classic/glm/remake/hair-back.png",
+                  "svg": "/assets-classic/glm/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "4690a9527888f41602fcdfd319aa335156af79df6a3f5b53f2c6f9469d3100d8",
+                  "design": "/assets-classic/glm/remake/top-body-design.svg",
+                  "itemId": "glm-top",
+                  "key": "glm-top-0",
+                  "name": "银扣蓬袖领结衫",
+                  "reviewFamilyHash": "eb6cdc037dddb866e813f398a907c653133db2a6edb5252d4c340e325f6d4f5c",
+                  "slot": "top",
+                  "src": "/assets-classic/glm/remake/top-body.png",
+                  "svg": "/assets-classic/glm/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "dad667adf1745383e3b1576b4151f257916407033350e920e04bb10b49633969",
+                  "design": "/assets-classic/glm/remake/hair-front-design.svg",
+                  "itemId": "glm-hair",
+                  "key": "glm-hair-1",
+                  "name": "墨蓝长直发",
+                  "reviewFamilyHash": "74078e900459f430f20c8dc2a289f12ac7ff44badd4829d8f7af038c80e7fafe",
+                  "slot": "hair",
+                  "src": "/assets-classic/glm/remake/hair-front.png",
+                  "svg": "/assets-classic/glm/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                },
+                {
+                  "artworkHash": "48e0f91298c20349bb1065705842a718548823a3f274e9f486a36af4108cd8db",
+                  "design": "/assets-classic/glm/remake/top-arms-design.svg",
+                  "itemId": "glm-top",
+                  "key": "glm-top-1",
+                  "name": "银扣蓬袖领结衫",
+                  "reviewFamilyHash": "eb6cdc037dddb866e813f398a907c653133db2a6edb5252d4c340e325f6d4f5c",
+                  "slot": "top",
+                  "src": "/assets-classic/glm/remake/top-arms.png",
+                  "svg": "/assets-classic/glm/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/upper2-evidence.json",
+              "recommendations": [
+                "近颊和横抱臂先建连续主暗/转面、腕掌肉量与指根小影；保留紧凑短指群，不强画五指。",
+                "书前掌指、腕根和袖口共同画承重/压叠；没有选书的组不改成强抓装饰。",
+                "白袖肘内/袖口压力褶及厚度、胸肋白衬和裙层主谷同改，删贯长亮条。",
+                "黑发先重构发根/额前和侧长束主面、暗谷与末端宽窄，不只撒亮点。",
+                "技术calf/四臂待对应复核，不能按单点盲削或以新body hash/视觉分解除历史。"
+              ]
+            }
+          ],
+          "reasons": [
+            "R8腰胯/股根连续，腿足错步可读；不直接继承旧98或旧几何指控。",
+            "近颊侧x47..65/y88..115掌指与颈部贴合分界弱，肘到掌大片浅面缺主暗/转面。",
+            "横抱臂x61..91/y119..126前臂近水平等宽亮面，腕到掌根只有薄过渡；紧凑指群本身不扣。",
+            "肩/上臂与股根转面仍简化；本次未重跑量测，明确保留技术报告的窄窗/锚点不确定性，不清历史hash。",
+            "近颊和横抱臂先建连续主暗/转面、腕掌肉量与指根小影；保留紧凑短指群，不强画五指。",
+            "书前掌指、腕根和袖口共同画承重/压叠；没有选书的组不改成强抓装饰。",
+            "白袖肘内/袖口压力褶及厚度、胸肋白衬和裙层主谷同改，删贯长亮条。",
+            "黑发先重构发根/额前和侧长束主面、暗谷与末端宽窄，不只撒亮点。",
+            "技术calf/四臂待对应复核，不能按单点盲削或以新body hash/视觉分解除历史。"
+          ],
+          "recommendations": [
+            "近颊和横抱臂先建连续主暗/转面、腕掌肉量与指根小影；保留紧凑短指群，不强画五指。",
+            "书前掌指、腕根和袖口共同画承重/压叠；没有选书的组不改成强抓装饰。",
+            "白袖肘内/袖口压力褶及厚度、胸肋白衬和裙层主谷同改，删贯长亮条。",
+            "黑发先重构发根/额前和侧长束主面、暗谷与末端宽窄，不只撒亮点。",
+            "技术calf/四臂待对应复核，不能按单点盲削或以新body hash/视觉分解除历史。"
+          ],
+          "evidence": {
+            "reactEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/upper2-evidence.json",
+            "reactScreenshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/upper2.png",
+            "reactScreenshotSha256": "5f8eca73347eecb009949a1b30d9c50d6e0e2dc7bf2098ec0c5e4c6afe87e125",
+            "captureBrowser": "Codex in-app browser",
+            "failedImages": [],
+            "actuallyViewed": true
+          },
+          "limitations": [
+            "Static only; no animation claim.",
+            "Native complete combinations remain100. Any AI-owned generated support is included with the AI; never inherits100.",
+            "花束遮胸腹大部，未给隐藏面高分。"
+          ]
+        }
+      ]
+    }
+  },
+  "bodyDiagnostic": {
+    "status": "all20-visual-completed; requires-revision",
+    "reviewedBodyHash": "669e2b6679c5ca41ff73eb312977fe22c72c92ef11a627c303ee72515bb3cee1",
+    "confirmedVisualFindings": [
+      "R8腰胯/股根连续，腿足错步可读；不直接继承旧98或旧几何指控。",
+      "近颊侧x47..65/y88..115掌指与颈部贴合分界弱，肘到掌大片浅面缺主暗/转面。",
+      "横抱臂x61..91/y119..126前臂近水平等宽亮面，腕到掌根只有薄过渡；紧凑指群本身不扣。",
+      "肩/上臂与股根转面仍简化；本次未重跑量测，明确保留技术报告的窄窗/锚点不确定性，不清历史hash。"
+    ]
+  },
+  "notReviewed": [
+    "其他六个必要多件组figure5/nearFull8/scene3/accessories3/skirt3/stride2仍pending，前三组失败，未冒充总验收。",
+    "独立可比体量技术守门未在本报告执行；已有尺寸未解/疑项不由本次视觉分清除。",
+    "动画未审。"
+  ],
+  "body": {
+    "reviewer": "classic_body_judge",
+    "score": 86,
+    "threshold": 98,
+    "passed": false,
+    "pending": false,
+    "requiresRevision": true,
+    "reviewedBodyHash": "669e2b6679c5ca41ff73eb312977fe22c72c92ef11a627c303ee72515bb3cee1",
+    "reviewedCompleteHash": "f9ae56bb570a6cdc649266bffae416a75f3cad1a93730d19aedc6977660af6be",
+    "seed": "human-20261110-glm-r8-body-xm204",
+    "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+    "bodyCorpusHash": "3451692764c29845da8f6c5b579069c3f1bec6309b7b9765bcc11843167082c7",
+    "corpusSignature": "body-corpus-context-v1-aa2d1bc9",
+    "coverage": {
+      "default": true,
+      "samplesViewed": 20,
+      "requiredSamples": 20,
+      "selectedIds": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20"
+      ],
+      "browserAllTwentyVerified": true
+    },
+    "aggregation": "Minimum of newly judged current default and all20. Older scores and author diagnostics are not inherited.",
+    "defaultComparison": {
+      "score": 88,
+      "passed": false,
+      "reasons": [
+        "R8腰胯/股根连续，腿足错步可读；不直接继承旧98或旧几何指控。",
+        "近颊侧x47..65/y88..115掌指与颈部贴合分界弱，肘到掌大片浅面缺主暗/转面。",
+        "横抱臂x61..91/y119..126前臂近水平等宽亮面，腕到掌根只有薄过渡；紧凑指群本身不扣。",
+        "肩/上臂与股根转面仍简化；本次未重跑量测，明确保留技术报告的窄窗/锚点不确定性，不清历史hash。"
+      ],
+      "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body-default-efa3a2189e.png"
+    },
+    "perSampleScores": [
+      {
+        "id": "01",
+        "sample": 1,
+        "label": "抱臂天使礼服",
+        "score": 87,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生交叠臂有前后压叠体积，GLM近颊/横抱腕掌和肘内主面仍薄。"
+        ],
+        "regions": [
+          [
+            46,
+            86,
+            67,
+            117
+          ],
+          [
+            57,
+            96,
+            94,
+            130
+          ],
+          [
+            54,
+            130,
+            84,
+            170
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body-strip-02-723c468efc.png",
+        "evidenceSha256": "723c468efc0219cf404b6f57125a183565d0524e19f1c560668c6fa241392690",
+        "source": "qq-show-classic/outfit/白色天使套装.gif",
+        "layers": [
+          "qq-show-classic/back-hair/白金蝴蝶结波浪长发.gif",
+          "qq-show-classic/outfit/白色天使套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/白金蝴蝶结波浪长发.gif"
+        ],
+        "nativeImageHash": "c0c31cf662e153e299a0ec392c8a518242385bccaba17a90609393f8b9e0024f",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "02",
+        "sample": 2,
+        "label": "蓝白捧花公主裙",
+        "score": 88,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "捧花手腕收放自然；GLM横前臂等宽亮面及掌根薄。"
+        ],
+        "regions": [
+          [
+            46,
+            86,
+            67,
+            117
+          ],
+          [
+            57,
+            96,
+            94,
+            130
+          ],
+          [
+            54,
+            130,
+            84,
+            170
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body-strip-02-723c468efc.png",
+        "evidenceSha256": "723c468efc0219cf404b6f57125a183565d0524e19f1c560668c6fa241392690",
+        "source": "qq-show-classic/outfit/白色公主裙黄色捧花套装.gif",
+        "layers": [
+          "qq-show-classic/back-hair/金色长卷发.gif",
+          "qq-show-classic/outfit/白色公主裙黄色捧花套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/金色长卷发.gif"
+        ],
+        "nativeImageHash": "59429f0f599cc8711a6b88e8472f7aa99f8f76dfee38a89d31f2e6d22e66025d",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "03",
+        "sample": 3,
+        "label": "薄荷裙抬手",
+        "score": 86,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生圆肘/掌体直接校准，GLM肩肘转面和近颊掌指分界不足。"
+        ],
+        "regions": [
+          [
+            46,
+            86,
+            67,
+            117
+          ],
+          [
+            57,
+            96,
+            94,
+            130
+          ],
+          [
+            54,
+            130,
+            84,
+            170
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body-strip-02-723c468efc.png",
+        "evidenceSha256": "723c468efc0219cf404b6f57125a183565d0524e19f1c560668c6fa241392690",
+        "source": "qq-show-classic/outfit/薄荷裙套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/薄荷裙套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/粉紫双马尾.gif"
+        ],
+        "nativeImageHash": "ae902b32ef1eec9558c5516b375ed1d20b9da2e2ef9beeadcbed0852fa8285ae",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "04",
+        "sample": 4,
+        "label": "蓝白学院裙垂袖",
+        "score": 87,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "不把袖宽当裸臂真值，看腕掌收放，GLM横腕薄。"
+        ],
+        "regions": [
+          [
+            46,
+            86,
+            67,
+            117
+          ],
+          [
+            57,
+            96,
+            94,
+            130
+          ],
+          [
+            54,
+            130,
+            84,
+            170
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body-strip-02-723c468efc.png",
+        "evidenceSha256": "723c468efc0219cf404b6f57125a183565d0524e19f1c560668c6fa241392690",
+        "source": "qq-show-classic/outfit/蓝白学院风连衣裙.gif",
+        "layers": [
+          "qq-show-classic/outfit/蓝白学院风连衣裙.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/黑色齐刘海麻花辫.gif"
+        ],
+        "nativeImageHash": "0bb87dbcc04e43d970312468cf6a70c2f3e599dcb7f9cd44afa8d6a626cc158d",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "05",
+        "sample": 5,
+        "label": "粉背心交叉腿",
+        "score": 87,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "错步/新髋股根连贯，横前臂平面和掌根弱仍可见。"
+        ],
+        "regions": [
+          [
+            46,
+            86,
+            67,
+            117
+          ],
+          [
+            57,
+            96,
+            94,
+            130
+          ],
+          [
+            54,
+            130,
+            84,
+            170
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body-strip-08-e017cd4545.png",
+        "evidenceSha256": "e017cd4545a9fdc699287a0baa236dc060edf29c4da4b279c30cb44330d59114",
+        "source": "qq-show-classic/outfit/粉色背心蓝裙套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/粉色背心蓝裙套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/红棕斜扎长发.gif"
+        ],
+        "nativeImageHash": "0562e149b22af6279fdc78c20021a393d0e38eb3875cb4f5fc80aa0ecaa49db3",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "06",
+        "sample": 6,
+        "label": "黄色开衩动势裙",
+        "score": 86,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "不要求舞姿，比较肩胯及腕掌曲面，GLM横臂/近颊臂色面单一。"
+        ],
+        "regions": [
+          [
+            46,
+            86,
+            67,
+            117
+          ],
+          [
+            57,
+            96,
+            94,
+            130
+          ],
+          [
+            54,
+            130,
+            84,
+            170
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body-strip-08-e017cd4545.png",
+        "evidenceSha256": "e017cd4545a9fdc699287a0baa236dc060edf29c4da4b279c30cb44330d59114",
+        "source": "qq-show-classic/outfit/灵动开衩裙套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/灵动开衩裙套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/金棕波浪长发.gif"
+        ],
+        "nativeImageHash": "d7cd7c0c1ee129394de9247d9524425984c0af9cc4d61b828b5de466e4656f5a",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "07",
+        "sample": 7,
+        "label": "深蓝露肩低位交手",
+        "score": 86,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生肩与低掌收放自然，GLM肩肘和掌根体积少。"
+        ],
+        "regions": [
+          [
+            46,
+            86,
+            67,
+            117
+          ],
+          [
+            57,
+            96,
+            94,
+            130
+          ],
+          [
+            54,
+            130,
+            84,
+            170
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body-strip-08-e017cd4545.png",
+        "evidenceSha256": "e017cd4545a9fdc699287a0baa236dc060edf29c4da4b279c30cb44330d59114",
+        "source": "qq-show-classic/outfit/深蓝一字肩连衣裙.gif",
+        "layers": [
+          "qq-show-classic/outfit/深蓝一字肩连衣裙.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/黑色侧扎长羊毛卷.gif"
+        ],
+        "nativeImageHash": "c255624cb7baa4049082f15e326dc89be47e73e679510d260c3274eb56bb8f9f",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "08",
+        "sample": 8,
+        "label": "黑红舞裙外展",
+        "score": 86,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生提裙手/肘有厚度，GLM横腕掌和近颊分界弱，不要求同舞姿。"
+        ],
+        "regions": [
+          [
+            46,
+            86,
+            67,
+            117
+          ],
+          [
+            57,
+            96,
+            94,
+            130
+          ],
+          [
+            54,
+            130,
+            84,
+            170
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body-strip-08-e017cd4545.png",
+        "evidenceSha256": "e017cd4545a9fdc699287a0baa236dc060edf29c4da4b279c30cb44330d59114",
+        "source": "qq-show-classic/outfit/翩翩起舞套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/翩翩起舞套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/红棕公主卷发.gif"
+        ],
+        "nativeImageHash": "fba21eaf6b1dca9acf3517f5f49b83e36212292ef596a0e1428e5aec27e9fa15",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "09",
+        "sample": 9,
+        "label": "碎花吊带牛仔持包",
+        "score": 87,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生持包掌腕肉面丰富，GLM横抱掌根薄；不要求持此包。"
+        ],
+        "regions": [
+          [
+            46,
+            86,
+            67,
+            117
+          ],
+          [
+            57,
+            96,
+            94,
+            130
+          ],
+          [
+            54,
+            130,
+            84,
+            170
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body-strip-08-e017cd4545.png",
+        "evidenceSha256": "e017cd4545a9fdc699287a0baa236dc060edf29c4da4b279c30cb44330d59114",
+        "source": "qq-show-classic/outfit/白色碎花吊带牛仔套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/白色碎花吊带牛仔套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/深棕梨花头.gif"
+        ],
+        "nativeImageHash": "7d9023e477d336bcbc3d40a1ebbfce00e18c818128c385f3c579edd79a252d5d",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "10",
+        "sample": 10,
+        "label": "紫色礼裙侧收持花",
+        "score": 88,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "长裙遮腿不供裸腰尺寸；GLM腰胯改善，腕掌自然度不足。"
+        ],
+        "regions": [
+          [
+            46,
+            86,
+            67,
+            117
+          ],
+          [
+            57,
+            96,
+            94,
+            130
+          ],
+          [
+            54,
+            130,
+            84,
+            170
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body-strip-08-e017cd4545.png",
+        "evidenceSha256": "e017cd4545a9fdc699287a0baa236dc060edf29c4da4b279c30cb44330d59114",
+        "source": "qq-show-classic/outfit/紫色礼裙花束套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/紫色礼裙花束套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/金棕雏菊发饰罗马卷.gif"
+        ],
+        "nativeImageHash": "97cc4b9f7392eef5769178ec8ec83bbe5d2866890248a2f5fdf3fb6639d26966",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "11",
+        "sample": 11,
+        "label": "薄荷绿盘腿坐姿",
+        "score": 87,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生坐姿可见肩腕体积，GLM横臂/近颊掌分界仍薄；不要求坐姿。"
+        ],
+        "regions": [
+          [
+            46,
+            86,
+            67,
+            117
+          ],
+          [
+            57,
+            96,
+            94,
+            130
+          ],
+          [
+            54,
+            130,
+            84,
+            170
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body-strip-14-0028701f7a.png",
+        "evidenceSha256": "0028701f7aeb81b9b445166eb2ef0b044dde1c901fbc91548842c46be02bcbba",
+        "source": "qq-show-classic/outfit/薄荷绿套装坐姿.gif",
+        "layers": [
+          "qq-show-classic/outfit/薄荷绿套装坐姿.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/棕色卷波波头.gif"
+        ],
+        "nativeImageHash": "1c8a1a789202f9b07fccc0c6a25ed4d62a5a6f766e557ebfc27aa9e236c29b8a",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "12",
+        "sample": 12,
+        "label": "抹茶旗袍椅坐",
+        "score": 88,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "旗袍椅子不推裸腰，GLM腕掌收放和肩内转面不足。"
+        ],
+        "regions": [
+          [
+            46,
+            86,
+            67,
+            117
+          ],
+          [
+            57,
+            96,
+            94,
+            130
+          ],
+          [
+            54,
+            130,
+            84,
+            170
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body-strip-14-0028701f7a.png",
+        "evidenceSha256": "0028701f7aeb81b9b445166eb2ef0b044dde1c901fbc91548842c46be02bcbba",
+        "source": "qq-show-classic/outfit/抹茶旗袍坐姿.gif",
+        "layers": [
+          "qq-show-classic/outfit/抹茶旗袍坐姿.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/棕咖黄月季发饰盘发.gif"
+        ],
+        "nativeImageHash": "f523574a47c5517e56de2555ecfb4845bc5eddca7864ae7272ee5d093975d841",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "13",
+        "sample": 13,
+        "label": "黄色短袖爱心坐姿",
+        "score": 87,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "不要求坐姿；新髋根连续，手臂和掌的转面仍弱。"
+        ],
+        "regions": [
+          [
+            46,
+            86,
+            67,
+            117
+          ],
+          [
+            57,
+            96,
+            94,
+            130
+          ],
+          [
+            54,
+            130,
+            84,
+            170
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body-strip-14-0028701f7a.png",
+        "evidenceSha256": "0028701f7aeb81b9b445166eb2ef0b044dde1c901fbc91548842c46be02bcbba",
+        "source": "qq-show-classic/outfit/黄色短袖短裙爱心坐姿.gif",
+        "layers": [
+          "qq-show-classic/outfit/黄色短袖短裙爱心坐姿.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/黑色双丸子头.gif"
+        ],
+        "nativeImageHash": "f7c9e5fd22cb186e7f67e2f77f0829e656eef91b74f83def14c37560e597fd17",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "14",
+        "sample": 14,
+        "label": "粉礼裙花朵坐姿",
+        "score": 87,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生紧凑花掌有体面，GLM不是指少，而是掌根/指根暗面缺。"
+        ],
+        "regions": [
+          [
+            46,
+            86,
+            67,
+            117
+          ],
+          [
+            57,
+            96,
+            94,
+            130
+          ],
+          [
+            54,
+            130,
+            84,
+            170
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body-strip-14-0028701f7a.png",
+        "evidenceSha256": "0028701f7aeb81b9b445166eb2ef0b044dde1c901fbc91548842c46be02bcbba",
+        "source": "qq-show-classic/outfit/浅粉礼裙花朵坐姿套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/浅粉礼裙花朵坐姿套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/粉色高马尾.gif"
+        ],
+        "nativeImageHash": "7deae5777a0bc52ea716fbe8e59c05e32cf1a32d1922b6b8e1d476065e8758b9",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "15",
+        "sample": 15,
+        "label": "秋千白纱悬坐",
+        "score": 86,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "不要求秋千握绳，比较腕掌和肘内连续性，GLM色面少。"
+        ],
+        "regions": [
+          [
+            46,
+            86,
+            67,
+            117
+          ],
+          [
+            57,
+            96,
+            94,
+            130
+          ],
+          [
+            54,
+            130,
+            84,
+            170
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body-strip-14-0028701f7a.png",
+        "evidenceSha256": "0028701f7aeb81b9b445166eb2ef0b044dde1c901fbc91548842c46be02bcbba",
+        "source": "qq-show-classic/outfit/秋千白色薄纱裙套装.gif",
+        "layers": [
+          "qq-show-classic/back-hair/深棕蝴蝶结斜刘海长发.gif",
+          "qq-show-classic/outfit/秋千白色薄纱裙套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/深棕蝴蝶结斜刘海长发.gif"
+        ],
+        "nativeImageHash": "6949b442eaeffae544840a252bfca0b8656c4f1c5703d80f5bdc0fdec02a093b",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "16",
+        "sample": 16,
+        "label": "牛仔背带持麦",
+        "score": 88,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "错步/股根连贯，臂掌/肩肘仍未达到原生自然度。"
+        ],
+        "regions": [
+          [
+            46,
+            86,
+            67,
+            117
+          ],
+          [
+            57,
+            96,
+            94,
+            130
+          ],
+          [
+            54,
+            130,
+            84,
+            170
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body-strip-14-0028701f7a.png",
+        "evidenceSha256": "0028701f7aeb81b9b445166eb2ef0b044dde1c901fbc91548842c46be02bcbba",
+        "source": "qq-show-classic/outfit/吊带牛仔裤麦克风套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/吊带牛仔裤麦克风套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/酒红双马尾.gif"
+        ],
+        "nativeImageHash": "fb624b9fbe3e853bb9b66582cfb5993197a1905ab4ff958cbb380621d662ec5b",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "17",
+        "sample": 17,
+        "label": "朱砂旗袍持扇",
+        "score": 86,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生握扇短掌有包覆转面，GLM横抱腕掌薄，不要求持扇。"
+        ],
+        "regions": [
+          [
+            46,
+            86,
+            67,
+            117
+          ],
+          [
+            57,
+            96,
+            94,
+            130
+          ],
+          [
+            54,
+            130,
+            84,
+            170
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body-strip-20-cb1edea889.png",
+        "evidenceSha256": "cb1edea88958571b62538977b2e38f5a7ab669b79554e6de03944dc9020ed738",
+        "source": "qq-show-classic/outfit/高开衩朱砂红旗袍.gif",
+        "layers": [
+          "qq-show-classic/outfit/高开衩朱砂红旗袍.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/玫瑰盘发.gif"
+        ],
+        "nativeImageHash": "12ad1f177551bf37e4949696fc63acece1b955f0f9227db92ce2830bf0e059f6",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "18",
+        "sample": 18,
+        "label": "紫短裙举臂长靴",
+        "score": 86,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "举臂差异不扣pose，只比较肩峰/肘内，GLM较平。"
+        ],
+        "regions": [
+          [
+            46,
+            86,
+            67,
+            117
+          ],
+          [
+            57,
+            96,
+            94,
+            130
+          ],
+          [
+            54,
+            130,
+            84,
+            170
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body-strip-20-cb1edea889.png",
+        "evidenceSha256": "cb1edea88958571b62538977b2e38f5a7ab669b79554e6de03944dc9020ed738",
+        "source": "qq-show-classic/outfit/背心紫短裙白长靴套装.gif",
+        "layers": [
+          "qq-show-classic/back-hair/动漫蓝蝴蝶结马尾.gif",
+          "qq-show-classic/outfit/背心紫短裙白长靴套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/动漫蓝蝴蝶结马尾.gif"
+        ],
+        "nativeImageHash": "9b525b93d6794ef7c03bc2e5e93f5c18f744752094e92ca8f5a1f8d235a410e8",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "19",
+        "sample": 19,
+        "label": "白短外套牛仔短裙",
+        "score": 88,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生斜腿/肩腕形成承重，GLM错步保留但上肢主面弱。"
+        ],
+        "regions": [
+          [
+            46,
+            86,
+            67,
+            117
+          ],
+          [
+            57,
+            96,
+            94,
+            130
+          ],
+          [
+            54,
+            130,
+            84,
+            170
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body-strip-20-cb1edea889.png",
+        "evidenceSha256": "cb1edea88958571b62538977b2e38f5a7ab669b79554e6de03944dc9020ed738",
+        "source": "qq-show-classic/outfit/白色短外套牛仔短裙套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/白色短外套牛仔短裙套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/棕橙长编发.gif"
+        ],
+        "nativeImageHash": "e570beb4dd7330818e30f0e9a99f1131054e7621d48447b311a19fc909c2c75e",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "20",
+        "sample": 20,
+        "label": "紫色蝴蝶仙子",
+        "score": 88,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "仙裙不供隐藏裸模尺寸，GLM裸臂/掌根薄仍直接可见。"
+        ],
+        "regions": [
+          [
+            46,
+            86,
+            67,
+            117
+          ],
+          [
+            57,
+            96,
+            94,
+            130
+          ],
+          [
+            54,
+            130,
+            84,
+            170
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body-strip-20-cb1edea889.png",
+        "evidenceSha256": "cb1edea88958571b62538977b2e38f5a7ab669b79554e6de03944dc9020ed738",
+        "source": "qq-show-classic/outfit/蝴蝶仙子套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/蝴蝶仙子套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/炫紫闪耀双马尾卷发.gif"
+        ],
+        "nativeImageHash": "70112fde68175423d693e4d6efd1d9ea8a0ec13422c4fa4e5dab1c3ce76fa702",
+        "poseDifferenceDeduction": 0
+      }
+    ],
+    "reasons": [
+      "R8腰胯/股根连续，腿足错步可读；不直接继承旧98或旧几何指控。",
+      "近颊侧x47..65/y88..115掌指与颈部贴合分界弱，肘到掌大片浅面缺主暗/转面。",
+      "横抱臂x61..91/y119..126前臂近水平等宽亮面，腕到掌根只有薄过渡；紧凑指群本身不扣。",
+      "肩/上臂与股根转面仍简化；本次未重跑量测，明确保留技术报告的窄窗/锚点不确定性，不清历史hash。"
+    ],
+    "recommendations": [
+      "近颊和横抱臂先建连续主暗/转面、腕掌肉量与指根小影；保留紧凑短指群，不强画五指。",
+      "书前掌指、腕根和袖口共同画承重/压叠；没有选书的组不改成强抓装饰。",
+      "白袖肘内/袖口压力褶及厚度、胸肋白衬和裙层主谷同改，删贯长亮条。",
+      "黑发先重构发根/额前和侧长束主面、暗谷与末端宽窄，不只撒亮点。",
+      "技术calf/四臂待对应复核，不能按单点盲削或以新body hash/视觉分解除历史。"
+    ],
+    "limitations": [
+      "未执行新的独立尺寸量测，不声明全身<=5%或任何区域>5%。",
+      "当前视觉已失败98；新hash/原生手参考不自动解除历史技术阻断。",
+      "原生衣装不提供被遮住裸腰胯真值。"
+    ],
+    "evidence": {
+      "reactBodyImage": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body-default-efa3a2189e.png",
+      "reactBodyImageSha256": "efa3a2189eb7527b8cd016860e8261a3cf022d04bfcf4340a9d33a2aaaf5d6c5",
+      "reactBodySnapshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body-evidence.json",
+      "reactFullImage": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/full.png",
+      "reactFullImageSha256": "6d202ed95c8e093b96408ab782bc7df22eafaac7ebd6d3f9d5a9e6798c8e5b96",
+      "reactFullSnapshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/full-evidence.json",
+      "actuallyViewed": [
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body-default-efa3a2189e.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body-strip-02-723c468efc.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body-strip-08-e017cd4545.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body-strip-14-0028701f7a.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body-strip-20-cb1edea889.png"
+      ],
+      "diagnosticBody6x": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/glm-round02-body-6x.png",
+      "diagnosticNearestCrops": [
+        "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/glm-round02-body-strip-02-723c468efc.png",
+        "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/glm-round02-body-strip-08-e017cd4545.png",
+        "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/glm-round02-body-strip-14-0028701f7a.png",
+        "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/glm-round02-body-strip-20-cb1edea889.png"
+      ],
+      "captureBrowser": "Codex in-app browser",
+      "failedImages": []
+    },
+    "evidenceIntegrity": {
+      "status": "all20-actually-viewed; immutable screenshot hashes verified",
+      "labelsActuallyChecked": [
+        "01 抱臂天使礼服",
+        "02 蓝白捧花公主裙",
+        "03 薄荷裙抬手",
+        "04 蓝白学院裙垂袖",
+        "05 粉背心交叉腿",
+        "06 黄色开衩动势裙",
+        "07 深蓝露肩低位交手",
+        "08 黑红舞裙外展",
+        "09 碎花吊带牛仔持包",
+        "10 紫色礼裙侧收持花",
+        "11 薄荷绿盘腿坐姿",
+        "12 抹茶旗袍椅坐",
+        "13 黄色短袖爱心坐姿",
+        "14 粉礼裙花朵坐姿",
+        "15 秋千白纱悬坐",
+        "16 牛仔背带持麦",
+        "17 朱砂旗袍持扇",
+        "18 紫短裙举臂长靴",
+        "19 白短外套牛仔短裙",
+        "20 紫色蝴蝶仙子"
+      ]
+    }
+  },
+  "naturalnessAudit": {
+    "reviewer": "classic_body_judge",
+    "status": "requires-revision",
+    "reviewedBodyHash": "669e2b6679c5ca41ff73eb312977fe22c72c92ef11a627c303ee72515bb3cee1",
+    "reviewedCompleteHash": "f9ae56bb570a6cdc649266bffae416a75f3cad1a93730d19aedc6977660af6be",
+    "reviewedPartHashes": {
+      "bottom": "e104fd377c29470cc2eb85ef1e00f4260d33db181b75eef883a4029f7c9b4803",
+      "legs": "606f885b517d379e17ca105c87f6896f43adc5cafd372f15c338aca6bd450d3f",
+      "top": "eb6cdc037dddb866e813f398a907c653133db2a6edb5252d4c340e325f6d4f5c"
+    },
+    "scope": "当前裸模default+20与full/head2/body3/upper2真实IAB；图像左右为画布左右。",
+    "limbs": {
+      "regions": [
+        [
+          46,
+          86,
+          67,
+          117
+        ],
+        [
+          57,
+          96,
+          94,
+          130
+        ],
+        [
+          54,
+          130,
+          84,
+          170
+        ]
+      ],
+      "findings": [
+        "R8腰胯/股根连续，腿足错步可读；不直接继承旧98或旧几何指控。",
+        "近颊侧x47..65/y88..115掌指与颈部贴合分界弱，肘到掌大片浅面缺主暗/转面。",
+        "横抱臂x61..91/y119..126前臂近水平等宽亮面，腕到掌根只有薄过渡；紧凑指群本身不扣。",
+        "肩/上臂与股根转面仍简化；本次未重跑量测，明确保留技术报告的窄窗/锚点不确定性，不清历史hash。"
+      ]
+    },
+    "palms": {
+      "regions": [
+        [
+          57,
+          84,
+          69,
+          101
+        ],
+        [
+          51,
+          117,
+          68,
+          129
+        ]
+      ],
+      "findings": [
+        "低手短指/拇指与书前位置可读，不要求五根写实；不因短叉/负形直接判洞。",
+        "掌体/腕过渡较薄，近颊掌指在颈旁缺局部分界；书前掌根缺明确承重面。"
+      ]
+    },
+    "wrist": {
+      "regions": [
+        [
+          57,
+          84,
+          69,
+          101
+        ],
+        [
+          51,
+          117,
+          68,
+          129
+        ]
+      ],
+      "findings": [
+        "横抱腕根需向掌展开并与袖口同一受力，近颊腕/袖口也须有收放/局部压力面。"
+      ]
+    },
+    "contact": {
+      "findings": [
+        "全套书在掌后、手在书前可追踪，没有强说不接书；掌指压书边/腕根/袖口承重仍不充分。",
+        "未选自身book时不强求书出现；原生立式话筒、竖弓、腰饰/挎包不强求抓。"
+      ],
+      "policy": "先看实际源语义及上下行AI新增影响；立式/悬浮/腰饰/肩挎包/地面摆件不强求手握。没选角色自己prop也不要求出现。"
+    },
+    "nativeHandCalibration": {
+      "actuallyViewed": [
+        "ai-workspace/previews/native-hand-reference-20261110/contact-sheet.png",
+        "ai-workspace/previews/native-hand-reference-20261110/README.md"
+      ],
+      "policy": "紧凑原生指群可自然，不要求逐根数五指；弯掌负形不直接判掌心洞，严格看腕掌连接与真实受力。"
+    },
+    "evidence": [
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/full.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body3.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/upper2.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body-default-efa3a2189e.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body-strip-02-723c468efc.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body-strip-08-e017cd4545.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body-strip-14-0028701f7a.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body-strip-20-cb1edea889.png",
+      "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/glm-r8-actual-frozen-hand-diagnostic-16x.png"
+    ],
+    "poseExemptionDoesNotClearFusion": true
+  },
+  "hairBangsAudit": {
+    "status": "requires-revision",
+    "reviewedPartHashes": {
+      "face": "bda5e06ea652f12e4076828a2ab23ebcedcab13195dd0bd5bbf78f30e7aaa710",
+      "hair": "74078e900459f430f20c8dc2a289f12ac7ff44badd4829d8f7af038c80e7fafe"
+    },
+    "reference": "ai-girls-atlas/assets/zipzippipe/glm/normal-zipzippipe-pixiv-148186519-p06.jpg",
+    "regions": [
+      [
+        44,
+        39,
+        95,
+        87
+      ],
+      [
+        28,
+        64,
+        123,
+        197
+      ]
+    ],
+    "fidelity": "黑长发、额前刘海和垂侧束可辨，但根部/额前厚瓣及两侧长直板缩并normal细发丝/侧层，发束体量偏单一；黑灰色相成立。",
+    "integration": [
+      "head2五例中黑发长直整片，额前厚瓣/发根转面和侧束层次不足。",
+      "不能靠小灰亮点或线密度补整体束体，需要主面和不等宽侧束/末端。"
+    ],
+    "evidence": [
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/full.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/head2.png"
+    ]
+  },
+  "clothingAudit": {
+    "status": "requires-revision",
+    "reviewedPartHashes": {
+      "bottom": "e104fd377c29470cc2eb85ef1e00f4260d33db181b75eef883a4029f7c9b4803",
+      "legs": "606f885b517d379e17ca105c87f6896f43adc5cafd372f15c338aca6bd450d3f",
+      "top": "eb6cdc037dddb866e813f398a907c653133db2a6edb5252d4c340e325f6d4f5c"
+    },
+    "reviewedGeneratedInterfaceHashes": {},
+    "reference": "ai-girls-atlas/assets/zipzippipe/glm/normal-zipzippipe-pixiv-148186519-p06.jpg",
+    "regions": [
+      [
+        31,
+        87,
+        126,
+        223
+      ]
+    ],
+    "fidelity": "白衬宽袖、黑束腰/外裙、黑白长裙和蝴蝶结识别成立，normal胸领层级、肘/袖口蓬量/压力褶、裙片错层及短靴细节缩并。黑白/冷蓝灰对应色相接近。",
+    "integration": [
+      "白横袖比R7碎线改善，但仍像光滑厚管，肘内/袖口压力褶和厚度不自然。",
+      "胸白片平贴黑腰，黑白裙少数贯长亮条/大楔面，缺错落主褶和层间深度。"
+    ],
+    "evidence": [
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/full.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/body3.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-02/glm/upper2.png"
+    ]
+  },
+  "runtimeIntegrity": {
+    "checkedAtUtc": "2026-11-10T05:22:58.068Z",
+    "bodyPngByteHash": "669e2b6679c5ca41ff73eb312977fe22c72c92ef11a627c303ee72515bb3cee1",
+    "manifestCompleteHash": "f9ae56bb570a6cdc649266bffae416a75f3cad1a93730d19aedc6977660af6be",
+    "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+    "allFullLayersByteVerified": true,
+    "authorNewerCandidateUsed": false
+  },
+  "technicalFollowup": {
+    "reviewer": "classic_body_judge",
+    "reviewedBodyHash": "669e2b6679c5ca41ff73eb312977fe22c72c92ef11a627c303ee72515bb3cee1",
+    "reviewedCompleteHash": "f9ae56bb570a6cdc649266bffae416a75f3cad1a93730d19aedc6977660af6be",
+    "sourceReport": "ai-workspace/previews/limb-audit-20261110/technical-review.json",
+    "sourceReportSha256": "87c680cbb70a5edcea329a889eb8d3aa3080785faa13e2deb4769b2bddcc93e5",
+    "actuallyRead": "ai-workspace/previews/limb-audit-20261110/technical-review.md",
+    "requiresFurtherAudit": true,
+    "resolvesBodyHashes": [],
+    "clearedFindingIDs": [],
+    "unchangedHistoricalBlocks": true,
+    "scope": "独立实际看本版裸模default+20/全套及手局部；技术报告文本已读，本次未独立复跑其法向量测/锚点对应，故不以confirmedFindings空数组或窗口均值授尺寸通过。",
+    "reasons": [
+      "历史左calf近膝持续窗改善，但远端s.76窄窗和备选踝映射仍未收敛；四臂源/目标解剖位置映射未齐。",
+      "不按单线盲削、也不借原足字节相同或当前hash清整个旧body。"
+    ]
+  }
+}

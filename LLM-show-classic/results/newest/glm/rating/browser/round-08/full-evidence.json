@@ -1,0 +1,2411 @@
+{
+  "animate": false,
+  "arrangement": 0,
+  "artworkApplied": true,
+  "artworkFamily": "classic-body-first-remake-v1",
+  "baselineAuthority": "User instruction",
+  "baselineScore": 100,
+  "bodyCopyHash": "e1766d044a9424b1b5a1674f74bda0ecb878ec7c0a223c68ea116d65a3509220",
+  "bodyCorpus": {
+    "analysisJsonSrc": "/assets-classic/native-review/body-corpus/classic-twenty-analysis.json",
+    "analysisReviewer": "classic_body_judge",
+    "analysisSrc": "/assets-classic/native-review/body-corpus/classic-twenty-analysis.md",
+    "anatomicalGate": {
+      "policy": "A new body hash requires an independent audit explicitly resolving previous confirmed body hashes; seeds and unrelated edits cannot clear findings.",
+      "reports": [
+        {
+          "requiresRevision": true,
+          "reviewedBodyHash": "2ebb1b247dd77f6610016182ce2fef62253d68792573b6a68ba4c45a9fb38ad2",
+          "sourceReport": "ai-workspace/previews/classic/remake/acceptance/round-13/leg-audit.json"
+        }
+      ],
+      "scope": "Only explicitly audited regions; not a whole-body mathematical error claim.",
+      "status": "pending",
+      "tolerancePercent": 5
+    },
+    "bodyCorpusHash": "3451692764c29845da8f6c5b579069c3f1bec6309b7b9765bcc11843167082c7",
+    "corpusSignature": "body-corpus-context-v1-b2417b0c",
+    "missingDependencies": [],
+    "ready": true,
+    "required": 20,
+    "score": {
+      "anatomicalReviewRequired": true,
+      "passed": false,
+      "pending": true,
+      "text": "形体待复核",
+      "visualPending": true
+    },
+    "selected": [
+      {
+        "analysis": {
+          "bodyAndJoints": "肩颈仍接近default尺度，胸腔坐直；上臂下垂，肘略弯，双掌撑在身旁。大腿向两侧打开，小腿横折，膝盖以浅面连接而非独立圆盘。",
+          "brushColorMaterial": "腿部沿横向弧线有暖暗底边和浅亮顶面；衣料在腰胯处聚褶，用少量阴影提示坐下的压缩。黑鞋暗大形配窄蓝灰高光，未给整条腿白色边框。",
+          "hairContourAndHighlights": "棕色卷波波头亮带短而宽，头顶高光成簇，两侧卷边与耳朵遮挡清楚。",
+          "nonTransferable": "坐姿的投影腿长与站姿不可比较；不能把张开的双膝总宽当胯宽；不要求站立AI复制盘腿。",
+          "title": "薄荷绿盘腿坐姿",
+          "transferable": "借坐姿关节如何保持同一皮肤笔触、肘撑地掌根承重；说明换姿势后原生画风仍由边缘和色面维系。"
+        },
+        "analysisActuallyViewed": true,
+        "composition": "Curated combination of real original female outfit, matching back hair if present, original default makeup, and a different original front hairstyle. No added default limbs; not claimed an original official bundled outfit.",
+        "frame": 0,
+        "hair": "qq-show-classic/front-hair/棕色卷波波头.gif",
+        "id": "11",
+        "imageHash": "1c8a1a789202f9b07fccc0c6a25ed4d62a5a6f766e557ebfc27aa9e236c29b8a",
+        "label": "薄荷绿盘腿坐姿",
+        "layers": [
+          "qq-show-classic/outfit/薄荷绿套装坐姿.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/棕色卷波波头.gif"
+        ],
+        "nativeBaselineScore": 100,
+        "pose": "坐姿 · 屈髋屈膝",
+        "sample": 11,
+        "source": "qq-show-classic/outfit/薄荷绿套装坐姿.gif",
+        "src": "/assets-classic/native-review/body-corpus/11.png"
+      },
+      {
+        "analysis": {
+          "bodyAndJoints": "躯干明显前倾，一侧胳膊抬至脸侧、另一侧臂向身后伸出握麦；肩—肘—腕由连续折弧表达，上臂和前臂粗细仍与default相近。胯后移、双腿由直裤包覆。",
+          "brushColorMaterial": "裸臂边缘为暖橙深线，手指围绕黑麦形成对向拇指；牛仔褶用偏灰蓝的密集窄色阶，裤兜与褶谷分开，红袖/腕饰有鲜明材质亮面。",
+          "hairContourAndHighlights": "酒红双马尾用近黑外缘、红棕亮束和蓝白结形配件，细辫不必逐根同亮；齐刘海的底边完整但有细小节奏。",
+          "nonTransferable": "宽裤管不是裸腿；动作前倾不是所有AI都应弯腰；麦的透视和斧/书不同，不能复用同一手形。",
+          "title": "牛仔背带持麦",
+          "transferable": "借前倾姿态仍保持classic手臂密度，以及道具握持的掌指关系；说明身体可以变姿而非把细杆斜放。"
+        },
+        "analysisActuallyViewed": true,
+        "composition": "Curated combination of real original female outfit, matching back hair if present, original default makeup, and a different original front hairstyle. No added default limbs; not claimed an original official bundled outfit.",
+        "frame": 0,
+        "hair": "qq-show-classic/front-hair/酒红双马尾.gif",
+        "id": "16",
+        "imageHash": "fb624b9fbe3e853bb9b66582cfb5993197a1905ab4ff958cbb380621d662ec5b",
+        "label": "牛仔背带持麦",
+        "layers": [
+          "qq-show-classic/outfit/吊带牛仔裤麦克风套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/酒红双马尾.gif"
+        ],
+        "nativeBaselineScore": 100,
+        "pose": "持麦 · 裸肩长裤",
+        "sample": 16,
+        "source": "qq-show-classic/outfit/吊带牛仔裤麦克风套装.gif",
+        "src": "/assets-classic/native-review/body-corpus/16.png"
+      },
+      {
+        "analysis": {
+          "bodyAndJoints": "肩线裸露且略不对称，长袖包住弯肘；两前臂在腹前低位相遇，掌指有明确收拢。两腿微分、膝向内，袜靴从小腿中段开始。",
+          "brushColorMaterial": "露肩的暖暗边与深蓝衣边相邻仍清楚；蓝衣靠纵向深褶、少量高亮线和破口皮肤区区分层次，灰靴用硬亮边说明皮革。",
+          "hairContourAndHighlights": "黑色侧卷发有多簇断续灰褐亮面，不是每根发丝都同亮；外轮廓细碎但没有连续白色描边。",
+          "nonTransferable": "破口露肤不是关节阴影；深色衣袖宽度不能用于裸臂数值验收；发簇密度不要求所有浅发照抄。",
+          "title": "深蓝露肩低位交手",
+          "transferable": "借裸肩与泡袖的交界、低位交手前后层、黑发暗部的保留；可用于Claude/GLM。"
+        },
+        "analysisActuallyViewed": true,
+        "composition": "Curated combination of real original female outfit, matching back hair if present, original default makeup, and a different original front hairstyle. No added default limbs; not claimed an original official bundled outfit.",
+        "frame": 0,
+        "hair": "qq-show-classic/front-hair/黑色侧扎长羊毛卷.gif",
+        "id": "07",
+        "imageHash": "c255624cb7baa4049082f15e326dc89be47e73e679510d260c3274eb56bb8f9f",
+        "label": "深蓝露肩低位交手",
+        "layers": [
+          "qq-show-classic/outfit/深蓝一字肩连衣裙.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/黑色侧扎长羊毛卷.gif"
+        ],
+        "nativeBaselineScore": 100,
+        "pose": "露肩 · 低位交手",
+        "sample": 7,
+        "source": "qq-show-classic/outfit/深蓝一字肩连衣裙.gif",
+        "src": "/assets-classic/native-review/body-corpus/07.png"
+      },
+      {
+        "analysis": {
+          "bodyAndJoints": "上身近正面、腰胯向一侧移；持扇臂屈肘外展，腕小而掌指环住扇柄；另一臂低垂，手指轻收。开衩露出长前腿，后腿由裙影隔开，踝部收束。",
+          "brushColorMaterial": "红旗袍有织纹点阵、侧缝深影和局部高光，金色盘扣/刺绣用稀疏亮点；裸臂和腿维持暖边与少量浅面。扇骨硬亮线与皮肤弧线互不混淆。",
+          "hairContourAndHighlights": "玫瑰盘发为大暗棕底，花饰粉金明亮，鬓角细卷只占少量像素；发饰可见但不替代发型轮廓。",
+          "nonTransferable": "扇面张角属于道具，不证明手腕姿势相同；高开衩下只见一侧大腿，不能推断被裙遮住另一腿。",
+          "title": "朱砂旗袍持扇",
+          "transferable": "Qwen扇掌、扇骨和旗袍/外袍材质的直接参照，也可对GPT开衩长腿边缘。"
+        },
+        "analysisActuallyViewed": true,
+        "composition": "Curated combination of real original female outfit, matching back hair if present, original default makeup, and a different original front hairstyle. No added default limbs; not claimed an original official bundled outfit.",
+        "frame": 0,
+        "hair": "qq-show-classic/front-hair/玫瑰盘发.gif",
+        "id": "17",
+        "imageHash": "12ad1f177551bf37e4949696fc63acece1b955f0f9227db92ce2830bf0e059f6",
+        "label": "朱砂旗袍持扇",
+        "layers": [
+          "qq-show-classic/outfit/高开衩朱砂红旗袍.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/玫瑰盘发.gif"
+        ],
+        "nativeBaselineScore": 100,
+        "pose": "旗袍 · 腰胯开衩",
+        "sample": 17,
+        "source": "qq-show-classic/outfit/高开衩朱砂红旗袍.gif",
+        "src": "/assets-classic/native-review/body-corpus/17.png"
+      },
+      {
+        "analysis": {
+          "bodyAndJoints": "身体修长近正面，一肩略高，左右胳膊贴身下垂；持包手在大腿外侧，手指和提带相交。胯腿由长上衣和喇叭裤包住，脚分前后。",
+          "brushColorMaterial": "裸臂暖边为细实线，腕处只加短阴影；碎花纹样稀疏有色块间隔，牛仔裤用深蓝大形、青蓝缝影与裤脚亮点，包是红色折面。",
+          "hairContourAndHighlights": "深棕梨花头以大暗底和竖向细亮束塑造头顶、下部内卷以成组高光，眉眼周围留出清楚脸形。",
+          "nonTransferable": "裤管不能当腿厚，长吊带边界不能当裸腰；小包的硬折面不能迁移成肤色硬块。",
+          "title": "碎花吊带牛仔持包",
+          "transferable": "借手袋链/提手与手指关系、自然贴身臂、不均匀但有方向的发束高光；直接参考Qwen手袋。"
+        },
+        "analysisActuallyViewed": true,
+        "composition": "Curated combination of real original female outfit, matching back hair if present, original default makeup, and a different original front hairstyle. No added default limbs; not claimed an original official bundled outfit.",
+        "frame": 0,
+        "hair": "qq-show-classic/front-hair/深棕梨花头.gif",
+        "id": "09",
+        "imageHash": "7d9023e477d336bcbc3d40a1ebbfce00e18c818128c385f3c579edd79a252d5d",
+        "label": "碎花吊带牛仔持包",
+        "layers": [
+          "qq-show-classic/outfit/白色碎花吊带牛仔套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/深棕梨花头.gif"
+        ],
+        "nativeBaselineScore": 100,
+        "pose": "手持包 · 修长下肢",
+        "sample": 9,
+        "source": "qq-show-classic/outfit/白色碎花吊带牛仔套装.gif",
+        "src": "/assets-classic/native-review/body-corpus/09.png"
+      }
+    ],
+    "selectedIds": [
+      "11",
+      "16",
+      "07",
+      "17",
+      "09"
+    ],
+    "selectionMode": "random",
+    "total": 20
+  },
+  "bodyHash": "e1766d044a9424b1b5a1674f74bda0ecb878ec7c0a223c68ea116d65a3509220",
+  "bodyReady": true,
+  "cases": [
+    {
+      "actualAiLayers": [
+        {
+          "artworkHash": "a640007fce2d05242820cfc35b4c04c98917da0dcaa5b9ab146443cebdc8d69c",
+          "design": "/assets-classic/glm/remake/hair-back-design.svg",
+          "itemId": "glm-hair",
+          "key": "glm-hair-0",
+          "name": "墨蓝长直发",
+          "reviewFamilyHash": "7b10d54943fac46fae885d15d08ce69d916036734757ace29c1d95d67e02ea88",
+          "slot": "hair",
+          "src": "/assets-classic/glm/remake/hair-back.png",
+          "svg": "/assets-classic/glm/remake/hair-back.svg",
+          "variantRole": "own-pose",
+          "z": 20
+        },
+        {
+          "artworkHash": "502fa4b2fc5aa70f04b235ad6aa648a8037f35c56e7e215c385913167326e4cc",
+          "design": "/assets-classic/glm/remake/hair-front-design.svg",
+          "itemId": "glm-hair",
+          "key": "glm-hair-1",
+          "name": "墨蓝长直发",
+          "reviewFamilyHash": "7b10d54943fac46fae885d15d08ce69d916036734757ace29c1d95d67e02ea88",
+          "slot": "hair",
+          "src": "/assets-classic/glm/remake/hair-front.png",
+          "svg": "/assets-classic/glm/remake/hair-front.svg",
+          "variantRole": "own-pose",
+          "z": 80
+        }
+      ],
+      "aiLayers": [
+        {
+          "animatedSrc": "/assets-classic/native-review/background-5-original.gif",
+          "artworkHash": "b7af88426a5c0167e51019b1014f7fc5de83f0b072ffbdd4045db77252be1e4a",
+          "itemId": "native-background-5",
+          "key": "native-background-5-0",
+          "name": "唱片商店",
+          "slot": "background",
+          "src": "/assets-classic/native-review/background-5.png",
+          "svg": "/assets-classic/native-review/background-5.svg",
+          "variantRole": "default",
+          "z": 0
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/aura-13-original.gif",
+          "artworkHash": "ec6ffc8ba660a2fb2c76750e8e3713f124b7f95ded8ec7c025f2679deb5e35c7",
+          "itemId": "native-aura-13",
+          "key": "native-aura-13-0",
+          "name": "魔法封印",
+          "slot": "aura",
+          "src": "/assets-classic/native-review/aura-13.png",
+          "svg": "/assets-classic/native-review/aura-13.svg",
+          "variantRole": "default",
+          "z": 5
+        },
+        {
+          "artworkHash": "4d11919d99e525e8fc4023ff2a1dd69898fe02ab0209c0d3f7716b939471ad54",
+          "itemId": "native-back-5",
+          "key": "native-back-5-0",
+          "name": "小恶魔",
+          "slot": "back",
+          "src": "/assets-classic/native-review/back-5.png",
+          "svg": "/assets-classic/native-review/back-5.svg",
+          "variantRole": "default",
+          "z": 10
+        },
+        {
+          "artworkHash": "a640007fce2d05242820cfc35b4c04c98917da0dcaa5b9ab146443cebdc8d69c",
+          "design": "/assets-classic/glm/remake/hair-back-design.svg",
+          "itemId": "glm-hair",
+          "key": "glm-hair-0",
+          "name": "墨蓝长直发",
+          "reviewFamilyHash": "7b10d54943fac46fae885d15d08ce69d916036734757ace29c1d95d67e02ea88",
+          "slot": "hair",
+          "src": "/assets-classic/glm/remake/hair-back.png",
+          "svg": "/assets-classic/glm/remake/hair-back.svg",
+          "variantRole": "own-pose",
+          "z": 20
+        },
+        {
+          "artworkHash": "8ce42fca81e91086b02ecf11b8dc455c7721be249bf4934f76c67d3ab66d1ac6",
+          "coversItemIds": [
+            "native-bottom-8",
+            "native-legs-8"
+          ],
+          "coversSlots": [
+            "bottom",
+            "legs"
+          ],
+          "itemId": "native-bottom-8",
+          "key": "native-bottom-8-original-full-lower",
+          "name": "灰牛仔半裙",
+          "nativeLowerRole": "original-full-lower",
+          "nativeOriginal": true,
+          "nativeSourceKey": "native-lower-8",
+          "slot": "bottom",
+          "sourceHash": "5a5e576d0d6d8631765912a858271cb56c8d5e97595ee7bc5d10585afb4869da",
+          "src": "/assets-classic/native-review/lower-8-original-full.png",
+          "svg": "/assets-classic/native-review/lower-8-original-full.svg",
+          "z": 40
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/top-6-original.gif",
+          "artworkHash": "819ba7c2f81bb517c37fc7d8a812b2d4948442bbcbbdabf6a68d8e0fa632e5c8",
+          "itemId": "native-top-6",
+          "key": "native-top-6-0",
+          "name": "粉色短外套",
+          "slot": "top",
+          "src": "/assets-classic/native-review/top-6.png",
+          "svg": "/assets-classic/native-review/top-6.svg",
+          "variantRole": "default",
+          "z": 50
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/face-7-original.gif",
+          "artworkHash": "48a4d6991ed0fabf233f2f45cf083f7b9d5dd3858e1e0298b7d19b75479f9746",
+          "itemId": "native-face-7",
+          "key": "native-face-7-0",
+          "name": "黑瞳笑眼",
+          "slot": "face",
+          "src": "/assets-classic/native-review/face-7.png",
+          "svg": "/assets-classic/native-review/face-7.svg",
+          "variantRole": "default",
+          "z": 60
+        },
+        {
+          "artworkHash": "502fa4b2fc5aa70f04b235ad6aa648a8037f35c56e7e215c385913167326e4cc",
+          "design": "/assets-classic/glm/remake/hair-front-design.svg",
+          "itemId": "glm-hair",
+          "key": "glm-hair-1",
+          "name": "墨蓝长直发",
+          "reviewFamilyHash": "7b10d54943fac46fae885d15d08ce69d916036734757ace29c1d95d67e02ea88",
+          "slot": "hair",
+          "src": "/assets-classic/glm/remake/hair-front.png",
+          "svg": "/assets-classic/glm/remake/hair-front.svg",
+          "variantRole": "own-pose",
+          "z": 80
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/headwear-3-original.gif",
+          "artworkHash": "1efe85626d88f45a75a3632bf5d7caad66d4deaad703e878e5d14ec46cc1cea2",
+          "itemId": "native-headwear-3",
+          "key": "native-headwear-3-0",
+          "name": "白色小猫渔夫帽",
+          "slot": "headwear",
+          "src": "/assets-classic/native-review/headwear-3.png",
+          "svg": "/assets-classic/native-review/headwear-3.svg",
+          "variantRole": "default",
+          "z": 90
+        },
+        {
+          "artworkHash": "3ef414ac053e0d39db7c14b8abb5a0382261628e32dff88f64b806cb41102c3e",
+          "itemId": "native-prop-1",
+          "key": "native-prop-1-0",
+          "name": "粉玫瑰花束",
+          "slot": "prop",
+          "src": "/assets-classic/native-review/prop-1.png",
+          "svg": "/assets-classic/native-review/prop-1.svg",
+          "variantRole": "default",
+          "z": 100
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/effect-15-original.gif",
+          "artworkHash": "e265a7c00e9cf1af27a7fea96c5d2884bff97af6457a5b4992cc1061f7655f80",
+          "itemId": "native-effect-15",
+          "key": "native-effect-15-0",
+          "name": "云朵双子星",
+          "slot": "effect",
+          "src": "/assets-classic/native-review/effect-15.png",
+          "svg": "/assets-classic/native-review/effect-15.svg",
+          "variantRole": "default",
+          "z": 110
+        }
+      ],
+      "aiSelection": {
+        "aura": "native-aura-13",
+        "back": "native-back-5",
+        "background": "native-background-5",
+        "bottom": "native-bottom-8",
+        "effect": "native-effect-15",
+        "face": "native-face-7",
+        "hair": "glm-hair",
+        "headwear": "native-headwear-3",
+        "legs": "native-legs-8",
+        "prop": "native-prop-1",
+        "top": "native-top-6"
+      },
+      "baselineLayers": [
+        {
+          "animatedSrc": "/assets-classic/native-review/background-5-original.gif",
+          "artworkHash": "b7af88426a5c0167e51019b1014f7fc5de83f0b072ffbdd4045db77252be1e4a",
+          "itemId": "native-background-5",
+          "key": "native-background-5-0",
+          "name": "唱片商店",
+          "slot": "background",
+          "src": "/assets-classic/native-review/background-5.png",
+          "svg": "/assets-classic/native-review/background-5.svg",
+          "variantRole": "default",
+          "z": 0
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/aura-13-original.gif",
+          "artworkHash": "ec6ffc8ba660a2fb2c76750e8e3713f124b7f95ded8ec7c025f2679deb5e35c7",
+          "itemId": "native-aura-13",
+          "key": "native-aura-13-0",
+          "name": "魔法封印",
+          "slot": "aura",
+          "src": "/assets-classic/native-review/aura-13.png",
+          "svg": "/assets-classic/native-review/aura-13.svg",
+          "variantRole": "default",
+          "z": 5
+        },
+        {
+          "artworkHash": "4d11919d99e525e8fc4023ff2a1dd69898fe02ab0209c0d3f7716b939471ad54",
+          "itemId": "native-back-5",
+          "key": "native-back-5-0",
+          "name": "小恶魔",
+          "slot": "back",
+          "src": "/assets-classic/native-review/back-5.png",
+          "svg": "/assets-classic/native-review/back-5.svg",
+          "variantRole": "default",
+          "z": 10
+        },
+        {
+          "artworkHash": "8ce42fca81e91086b02ecf11b8dc455c7721be249bf4934f76c67d3ab66d1ac6",
+          "coversItemIds": [
+            "native-bottom-8",
+            "native-legs-8"
+          ],
+          "coversSlots": [
+            "bottom",
+            "legs"
+          ],
+          "itemId": "native-bottom-8",
+          "key": "native-bottom-8-original-full-lower",
+          "name": "灰牛仔半裙",
+          "nativeLowerRole": "original-full-lower",
+          "nativeOriginal": true,
+          "nativeSourceKey": "native-lower-8",
+          "slot": "bottom",
+          "sourceHash": "5a5e576d0d6d8631765912a858271cb56c8d5e97595ee7bc5d10585afb4869da",
+          "src": "/assets-classic/native-review/lower-8-original-full.png",
+          "svg": "/assets-classic/native-review/lower-8-original-full.svg",
+          "z": 40
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/top-6-original.gif",
+          "artworkHash": "819ba7c2f81bb517c37fc7d8a812b2d4948442bbcbbdabf6a68d8e0fa632e5c8",
+          "itemId": "native-top-6",
+          "key": "native-top-6-0",
+          "name": "粉色短外套",
+          "slot": "top",
+          "src": "/assets-classic/native-review/top-6.png",
+          "svg": "/assets-classic/native-review/top-6.svg",
+          "variantRole": "default",
+          "z": 50
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/face-7-original.gif",
+          "artworkHash": "48a4d6991ed0fabf233f2f45cf083f7b9d5dd3858e1e0298b7d19b75479f9746",
+          "itemId": "native-face-7",
+          "key": "native-face-7-0",
+          "name": "黑瞳笑眼",
+          "slot": "face",
+          "src": "/assets-classic/native-review/face-7.png",
+          "svg": "/assets-classic/native-review/face-7.svg",
+          "variantRole": "default",
+          "z": 60
+        },
+        {
+          "artworkHash": "6e7ab90934239b5ef38dff142a6cdace868f58aeca70677f906c5a0099211fa9",
+          "itemId": "native-hair-12",
+          "key": "native-hair-12-0",
+          "name": "玫瑰盘发",
+          "slot": "hair",
+          "src": "/assets-classic/native-review/hair-12-front.png",
+          "svg": "/assets-classic/native-review/hair-12-front.svg",
+          "variantRole": "default",
+          "z": 80
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/headwear-3-original.gif",
+          "artworkHash": "1efe85626d88f45a75a3632bf5d7caad66d4deaad703e878e5d14ec46cc1cea2",
+          "itemId": "native-headwear-3",
+          "key": "native-headwear-3-0",
+          "name": "白色小猫渔夫帽",
+          "slot": "headwear",
+          "src": "/assets-classic/native-review/headwear-3.png",
+          "svg": "/assets-classic/native-review/headwear-3.svg",
+          "variantRole": "default",
+          "z": 90
+        },
+        {
+          "artworkHash": "3ef414ac053e0d39db7c14b8abb5a0382261628e32dff88f64b806cb41102c3e",
+          "itemId": "native-prop-1",
+          "key": "native-prop-1-0",
+          "name": "粉玫瑰花束",
+          "slot": "prop",
+          "src": "/assets-classic/native-review/prop-1.png",
+          "svg": "/assets-classic/native-review/prop-1.svg",
+          "variantRole": "default",
+          "z": 100
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/effect-15-original.gif",
+          "artworkHash": "e265a7c00e9cf1af27a7fea96c5d2884bff97af6457a5b4992cc1061f7655f80",
+          "itemId": "native-effect-15",
+          "key": "native-effect-15-0",
+          "name": "云朵双子星",
+          "slot": "effect",
+          "src": "/assets-classic/native-review/effect-15.png",
+          "svg": "/assets-classic/native-review/effect-15.svg",
+          "variantRole": "default",
+          "z": 110
+        }
+      ],
+      "fixtureIndex": 0,
+      "forcedCurrentVersion": true,
+      "id": "glm-custom:hair-s656d82d5-a0-f0",
+      "isolatedNativeLayers": [
+        {
+          "artworkHash": "6e7ab90934239b5ef38dff142a6cdace868f58aeca70677f906c5a0099211fa9",
+          "itemId": "native-hair-12",
+          "key": "native-hair-12-0",
+          "name": "玫瑰盘发",
+          "slot": "hair",
+          "src": "/assets-classic/native-review/hair-12-front.png",
+          "svg": "/assets-classic/native-review/hair-12-front.svg",
+          "variantRole": "default",
+          "z": 80
+        }
+      ],
+      "nativeSelection": {
+        "aura": "native-aura-13",
+        "back": "native-back-5",
+        "background": "native-background-5",
+        "bottom": "native-bottom-8",
+        "effect": "native-effect-15",
+        "face": "native-face-7",
+        "hair": "native-hair-12",
+        "headwear": "native-headwear-3",
+        "legs": "native-legs-8",
+        "prop": "native-prop-1",
+        "top": "native-top-6"
+      },
+      "seed": "closeout-r25-glm-full-oh4raukp",
+      "selectedAiSlots": [
+        "hair"
+      ],
+      "selectedItemIDs": {
+        "hair": "glm-hair"
+      },
+      "substitutedItemId": "glm-hair",
+      "substitutedSlot": "hair"
+    },
+    {
+      "actualAiLayers": [
+        {
+          "artworkHash": "a640007fce2d05242820cfc35b4c04c98917da0dcaa5b9ab146443cebdc8d69c",
+          "design": "/assets-classic/glm/remake/hair-back-design.svg",
+          "itemId": "glm-hair",
+          "key": "glm-hair-0",
+          "name": "墨蓝长直发",
+          "reviewFamilyHash": "7b10d54943fac46fae885d15d08ce69d916036734757ace29c1d95d67e02ea88",
+          "slot": "hair",
+          "src": "/assets-classic/glm/remake/hair-back.png",
+          "svg": "/assets-classic/glm/remake/hair-back.svg",
+          "variantRole": "own-pose",
+          "z": 20
+        },
+        {
+          "artworkHash": "502fa4b2fc5aa70f04b235ad6aa648a8037f35c56e7e215c385913167326e4cc",
+          "design": "/assets-classic/glm/remake/hair-front-design.svg",
+          "itemId": "glm-hair",
+          "key": "glm-hair-1",
+          "name": "墨蓝长直发",
+          "reviewFamilyHash": "7b10d54943fac46fae885d15d08ce69d916036734757ace29c1d95d67e02ea88",
+          "slot": "hair",
+          "src": "/assets-classic/glm/remake/hair-front.png",
+          "svg": "/assets-classic/glm/remake/hair-front.svg",
+          "variantRole": "own-pose",
+          "z": 80
+        }
+      ],
+      "aiLayers": [
+        {
+          "animatedSrc": "/assets-classic/native-review/background-17-original.gif",
+          "artworkHash": "24cfc45212d2c02e1cfb0f1725acd266aed03181e64878851babfa38856a0026",
+          "itemId": "native-background-17",
+          "key": "native-background-17-0",
+          "name": "冰雪冷月",
+          "slot": "background",
+          "src": "/assets-classic/native-review/background-17.png",
+          "svg": "/assets-classic/native-review/background-17.svg",
+          "variantRole": "default",
+          "z": 0
+        },
+        {
+          "artworkHash": "d0b3c9dd10f31b66efe8a92ad5f8a86fbda4e4b3446201021b6121cba894ae6f",
+          "itemId": "native-aura-20",
+          "key": "native-aura-20-0",
+          "name": "游乐园气球",
+          "slot": "aura",
+          "src": "/assets-classic/native-review/aura-20.png",
+          "svg": "/assets-classic/native-review/aura-20.svg",
+          "variantRole": "default",
+          "z": 5
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/back-3-original.gif",
+          "artworkHash": "a8180da3051de30bbe2e880a64105f75824329e561eeb3210c065d7e8595fc50",
+          "itemId": "native-back-3",
+          "key": "native-back-3-0",
+          "name": "粉紫蝴蝶",
+          "slot": "back",
+          "src": "/assets-classic/native-review/back-3.png",
+          "svg": "/assets-classic/native-review/back-3.svg",
+          "variantRole": "default",
+          "z": 10
+        },
+        {
+          "artworkHash": "a640007fce2d05242820cfc35b4c04c98917da0dcaa5b9ab146443cebdc8d69c",
+          "design": "/assets-classic/glm/remake/hair-back-design.svg",
+          "itemId": "glm-hair",
+          "key": "glm-hair-0",
+          "name": "墨蓝长直发",
+          "reviewFamilyHash": "7b10d54943fac46fae885d15d08ce69d916036734757ace29c1d95d67e02ea88",
+          "slot": "hair",
+          "src": "/assets-classic/glm/remake/hair-back.png",
+          "svg": "/assets-classic/glm/remake/hair-back.svg",
+          "variantRole": "own-pose",
+          "z": 20
+        },
+        {
+          "artworkHash": "0fca9ae3b5851a87e01e9eb4698fd2986ebfdd797edf9fd4bddb15de195741f1",
+          "coversItemIds": [
+            "native-bottom-7",
+            "native-legs-7"
+          ],
+          "coversSlots": [
+            "bottom",
+            "legs"
+          ],
+          "itemId": "native-bottom-7",
+          "key": "native-bottom-7-original-full-lower",
+          "name": "白色低腰裤",
+          "nativeLowerRole": "original-full-lower",
+          "nativeOriginal": true,
+          "nativeSourceKey": "native-lower-7",
+          "slot": "bottom",
+          "sourceHash": "b4cd52863b90294fea387c76cc0dc53b8c294ba6bf6f3dfae9034a426f229dee",
+          "src": "/assets-classic/native-review/lower-7-original-full.png",
+          "svg": "/assets-classic/native-review/lower-7-original-full.svg",
+          "z": 40
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/top-8-original.gif",
+          "artworkHash": "9461d5f2dd16699283031dce7164ea8deef01ee5e908f2a9de488f7d292cde2b",
+          "itemId": "native-top-8",
+          "key": "native-top-8-0",
+          "name": "粉红斜肩针织衫",
+          "slot": "top",
+          "src": "/assets-classic/native-review/top-8.png",
+          "svg": "/assets-classic/native-review/top-8.svg",
+          "variantRole": "default",
+          "z": 50
+        },
+        {
+          "artworkHash": "767fd7642ebc5b98c0899ff143de96b856d8d490074bc845188fa8c7e040617d",
+          "itemId": "native-face-12",
+          "key": "native-face-12-0",
+          "name": "浅棕瞳腮红",
+          "slot": "face",
+          "src": "/assets-classic/native-review/face-12.png",
+          "svg": "/assets-classic/native-review/face-12.svg",
+          "variantRole": "default",
+          "z": 60
+        },
+        {
+          "artworkHash": "502fa4b2fc5aa70f04b235ad6aa648a8037f35c56e7e215c385913167326e4cc",
+          "design": "/assets-classic/glm/remake/hair-front-design.svg",
+          "itemId": "glm-hair",
+          "key": "glm-hair-1",
+          "name": "墨蓝长直发",
+          "reviewFamilyHash": "7b10d54943fac46fae885d15d08ce69d916036734757ace29c1d95d67e02ea88",
+          "slot": "hair",
+          "src": "/assets-classic/glm/remake/hair-front.png",
+          "svg": "/assets-classic/glm/remake/hair-front.svg",
+          "variantRole": "own-pose",
+          "z": 80
+        },
+        {
+          "artworkHash": "5d579e863bd182c9a93777bd791e53c62fb8529d875ed811b5e87a6b5df08acd",
+          "itemId": "native-headwear-10",
+          "key": "native-headwear-10-0",
+          "name": "海军贝雷帽",
+          "slot": "headwear",
+          "src": "/assets-classic/native-review/headwear-10.png",
+          "svg": "/assets-classic/native-review/headwear-10.svg",
+          "variantRole": "default",
+          "z": 90
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/prop-5-original.gif",
+          "artworkHash": "1afe3e1291b91accd762adf0605526248a3908121ef506fe5cadab96949f459a",
+          "itemId": "native-prop-5",
+          "key": "native-prop-5-0",
+          "name": "蝴蝶胸针",
+          "slot": "prop",
+          "src": "/assets-classic/native-review/prop-5.png",
+          "svg": "/assets-classic/native-review/prop-5.svg",
+          "variantRole": "default",
+          "z": 100
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/effect-8-original.gif",
+          "artworkHash": "603fcb2d9584dc0ba392c5141794649ed9fd45e4e5d6a3975639028e3fd9e25c",
+          "itemId": "native-effect-8",
+          "key": "native-effect-8-0",
+          "name": "蓝色爱心泡泡",
+          "slot": "effect",
+          "src": "/assets-classic/native-review/effect-8.png",
+          "svg": "/assets-classic/native-review/effect-8.svg",
+          "variantRole": "default",
+          "z": 110
+        }
+      ],
+      "aiSelection": {
+        "aura": "native-aura-20",
+        "back": "native-back-3",
+        "background": "native-background-17",
+        "bottom": "native-bottom-7",
+        "effect": "native-effect-8",
+        "face": "native-face-12",
+        "hair": "glm-hair",
+        "headwear": "native-headwear-10",
+        "legs": "native-legs-7",
+        "prop": "native-prop-5",
+        "top": "native-top-8"
+      },
+      "baselineLayers": [
+        {
+          "animatedSrc": "/assets-classic/native-review/background-17-original.gif",
+          "artworkHash": "24cfc45212d2c02e1cfb0f1725acd266aed03181e64878851babfa38856a0026",
+          "itemId": "native-background-17",
+          "key": "native-background-17-0",
+          "name": "冰雪冷月",
+          "slot": "background",
+          "src": "/assets-classic/native-review/background-17.png",
+          "svg": "/assets-classic/native-review/background-17.svg",
+          "variantRole": "default",
+          "z": 0
+        },
+        {
+          "artworkHash": "d0b3c9dd10f31b66efe8a92ad5f8a86fbda4e4b3446201021b6121cba894ae6f",
+          "itemId": "native-aura-20",
+          "key": "native-aura-20-0",
+          "name": "游乐园气球",
+          "slot": "aura",
+          "src": "/assets-classic/native-review/aura-20.png",
+          "svg": "/assets-classic/native-review/aura-20.svg",
+          "variantRole": "default",
+          "z": 5
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/back-3-original.gif",
+          "artworkHash": "a8180da3051de30bbe2e880a64105f75824329e561eeb3210c065d7e8595fc50",
+          "itemId": "native-back-3",
+          "key": "native-back-3-0",
+          "name": "粉紫蝴蝶",
+          "slot": "back",
+          "src": "/assets-classic/native-review/back-3.png",
+          "svg": "/assets-classic/native-review/back-3.svg",
+          "variantRole": "default",
+          "z": 10
+        },
+        {
+          "artworkHash": "0fca9ae3b5851a87e01e9eb4698fd2986ebfdd797edf9fd4bddb15de195741f1",
+          "coversItemIds": [
+            "native-bottom-7",
+            "native-legs-7"
+          ],
+          "coversSlots": [
+            "bottom",
+            "legs"
+          ],
+          "itemId": "native-bottom-7",
+          "key": "native-bottom-7-original-full-lower",
+          "name": "白色低腰裤",
+          "nativeLowerRole": "original-full-lower",
+          "nativeOriginal": true,
+          "nativeSourceKey": "native-lower-7",
+          "slot": "bottom",
+          "sourceHash": "b4cd52863b90294fea387c76cc0dc53b8c294ba6bf6f3dfae9034a426f229dee",
+          "src": "/assets-classic/native-review/lower-7-original-full.png",
+          "svg": "/assets-classic/native-review/lower-7-original-full.svg",
+          "z": 40
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/top-8-original.gif",
+          "artworkHash": "9461d5f2dd16699283031dce7164ea8deef01ee5e908f2a9de488f7d292cde2b",
+          "itemId": "native-top-8",
+          "key": "native-top-8-0",
+          "name": "粉红斜肩针织衫",
+          "slot": "top",
+          "src": "/assets-classic/native-review/top-8.png",
+          "svg": "/assets-classic/native-review/top-8.svg",
+          "variantRole": "default",
+          "z": 50
+        },
+        {
+          "artworkHash": "767fd7642ebc5b98c0899ff143de96b856d8d490074bc845188fa8c7e040617d",
+          "itemId": "native-face-12",
+          "key": "native-face-12-0",
+          "name": "浅棕瞳腮红",
+          "slot": "face",
+          "src": "/assets-classic/native-review/face-12.png",
+          "svg": "/assets-classic/native-review/face-12.svg",
+          "variantRole": "default",
+          "z": 60
+        },
+        {
+          "artworkHash": "6b6ecc9c7a0612d7d29157d27108221e3d901e4f868d6386cef2eb3bb6b15fa3",
+          "itemId": "native-hair-17",
+          "key": "native-hair-17-0",
+          "name": "白金卷双马尾",
+          "slot": "hair",
+          "src": "/assets-classic/native-review/hair-17-front.png",
+          "svg": "/assets-classic/native-review/hair-17-front.svg",
+          "variantRole": "default",
+          "z": 80
+        },
+        {
+          "artworkHash": "5d579e863bd182c9a93777bd791e53c62fb8529d875ed811b5e87a6b5df08acd",
+          "itemId": "native-headwear-10",
+          "key": "native-headwear-10-0",
+          "name": "海军贝雷帽",
+          "slot": "headwear",
+          "src": "/assets-classic/native-review/headwear-10.png",
+          "svg": "/assets-classic/native-review/headwear-10.svg",
+          "variantRole": "default",
+          "z": 90
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/prop-5-original.gif",
+          "artworkHash": "1afe3e1291b91accd762adf0605526248a3908121ef506fe5cadab96949f459a",
+          "itemId": "native-prop-5",
+          "key": "native-prop-5-0",
+          "name": "蝴蝶胸针",
+          "slot": "prop",
+          "src": "/assets-classic/native-review/prop-5.png",
+          "svg": "/assets-classic/native-review/prop-5.svg",
+          "variantRole": "default",
+          "z": 100
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/effect-8-original.gif",
+          "artworkHash": "603fcb2d9584dc0ba392c5141794649ed9fd45e4e5d6a3975639028e3fd9e25c",
+          "itemId": "native-effect-8",
+          "key": "native-effect-8-0",
+          "name": "蓝色爱心泡泡",
+          "slot": "effect",
+          "src": "/assets-classic/native-review/effect-8.png",
+          "svg": "/assets-classic/native-review/effect-8.svg",
+          "variantRole": "default",
+          "z": 110
+        }
+      ],
+      "fixtureIndex": 1,
+      "forcedCurrentVersion": true,
+      "id": "glm-custom:hair-s656d82d5-a0-f1",
+      "isolatedNativeLayers": [
+        {
+          "artworkHash": "6b6ecc9c7a0612d7d29157d27108221e3d901e4f868d6386cef2eb3bb6b15fa3",
+          "itemId": "native-hair-17",
+          "key": "native-hair-17-0",
+          "name": "白金卷双马尾",
+          "slot": "hair",
+          "src": "/assets-classic/native-review/hair-17-front.png",
+          "svg": "/assets-classic/native-review/hair-17-front.svg",
+          "variantRole": "default",
+          "z": 80
+        }
+      ],
+      "nativeSelection": {
+        "aura": "native-aura-20",
+        "back": "native-back-3",
+        "background": "native-background-17",
+        "bottom": "native-bottom-7",
+        "effect": "native-effect-8",
+        "face": "native-face-12",
+        "hair": "native-hair-17",
+        "headwear": "native-headwear-10",
+        "legs": "native-legs-7",
+        "prop": "native-prop-5",
+        "top": "native-top-8"
+      },
+      "seed": "closeout-r25-glm-full-oh4raukp",
+      "selectedAiSlots": [
+        "hair"
+      ],
+      "selectedItemIDs": {
+        "hair": "glm-hair"
+      },
+      "substitutedItemId": "glm-hair",
+      "substitutedSlot": "hair"
+    },
+    {
+      "actualAiLayers": [
+        {
+          "artworkHash": "a640007fce2d05242820cfc35b4c04c98917da0dcaa5b9ab146443cebdc8d69c",
+          "design": "/assets-classic/glm/remake/hair-back-design.svg",
+          "itemId": "glm-hair",
+          "key": "glm-hair-0",
+          "name": "墨蓝长直发",
+          "reviewFamilyHash": "7b10d54943fac46fae885d15d08ce69d916036734757ace29c1d95d67e02ea88",
+          "slot": "hair",
+          "src": "/assets-classic/glm/remake/hair-back.png",
+          "svg": "/assets-classic/glm/remake/hair-back.svg",
+          "variantRole": "own-pose",
+          "z": 20
+        },
+        {
+          "artworkHash": "502fa4b2fc5aa70f04b235ad6aa648a8037f35c56e7e215c385913167326e4cc",
+          "design": "/assets-classic/glm/remake/hair-front-design.svg",
+          "itemId": "glm-hair",
+          "key": "glm-hair-1",
+          "name": "墨蓝长直发",
+          "reviewFamilyHash": "7b10d54943fac46fae885d15d08ce69d916036734757ace29c1d95d67e02ea88",
+          "slot": "hair",
+          "src": "/assets-classic/glm/remake/hair-front.png",
+          "svg": "/assets-classic/glm/remake/hair-front.svg",
+          "variantRole": "own-pose",
+          "z": 80
+        }
+      ],
+      "aiLayers": [
+        {
+          "animatedSrc": "/assets-classic/native-review/background-9-original.gif",
+          "artworkHash": "45fe851781a6a740da9a6e9a9af800a655d1c9c5bf98f8c20879c60ec3319af1",
+          "itemId": "native-background-9",
+          "key": "native-background-9-0",
+          "name": "中式楼阁",
+          "slot": "background",
+          "src": "/assets-classic/native-review/background-9.png",
+          "svg": "/assets-classic/native-review/background-9.svg",
+          "variantRole": "default",
+          "z": 0
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/aura-18-original.gif",
+          "artworkHash": "83b2f183baf0ac99396726b55b655ec9b8cf5a6c73a0f4d03af93b328779d3b8",
+          "itemId": "native-aura-18",
+          "key": "native-aura-18-0",
+          "name": "飘落樱花",
+          "slot": "aura",
+          "src": "/assets-classic/native-review/aura-18.png",
+          "svg": "/assets-classic/native-review/aura-18.svg",
+          "variantRole": "default",
+          "z": 5
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/back-4-original.gif",
+          "artworkHash": "0c61a55abe06ba559936e68a6e353b1ef8883ccd245e3942815dcc3daca2a93a",
+          "itemId": "native-back-4",
+          "key": "native-back-4-0",
+          "name": "蓝色闪蝶",
+          "slot": "back",
+          "src": "/assets-classic/native-review/back-4.png",
+          "svg": "/assets-classic/native-review/back-4.svg",
+          "variantRole": "default",
+          "z": 10
+        },
+        {
+          "artworkHash": "a640007fce2d05242820cfc35b4c04c98917da0dcaa5b9ab146443cebdc8d69c",
+          "design": "/assets-classic/glm/remake/hair-back-design.svg",
+          "itemId": "glm-hair",
+          "key": "glm-hair-0",
+          "name": "墨蓝长直发",
+          "reviewFamilyHash": "7b10d54943fac46fae885d15d08ce69d916036734757ace29c1d95d67e02ea88",
+          "slot": "hair",
+          "src": "/assets-classic/glm/remake/hair-back.png",
+          "svg": "/assets-classic/glm/remake/hair-back.svg",
+          "variantRole": "own-pose",
+          "z": 20
+        },
+        {
+          "artworkHash": "5ce9c1a8c1b0df2f84d7bdcd00950bd7e25912ff209dd37a3c4d5ea7b20732e1",
+          "coversItemIds": [
+            "native-bottom-5",
+            "native-legs-5"
+          ],
+          "coversSlots": [
+            "bottom",
+            "legs"
+          ],
+          "itemId": "native-bottom-5",
+          "key": "native-bottom-5-original-full-lower",
+          "name": "红腰带牛仔迷你裙",
+          "nativeLowerRole": "original-full-lower",
+          "nativeOriginal": true,
+          "nativeSourceKey": "native-lower-5",
+          "slot": "bottom",
+          "sourceHash": "f755eb54b3fb49dd8748a9e95e62a34bb843a41c579f122a6ad6788969614214",
+          "src": "/assets-classic/native-review/lower-5-original-full.png",
+          "svg": "/assets-classic/native-review/lower-5-original-full.svg",
+          "z": 40
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/top-5-original.gif",
+          "artworkHash": "61b3d702069404f982ea2192c7a186aa7b32c8fe4fc9aeace275c9ee170b70ed",
+          "itemId": "native-top-5",
+          "key": "native-top-5-0",
+          "name": "白色毛绒环扣外套",
+          "slot": "top",
+          "src": "/assets-classic/native-review/top-5.png",
+          "svg": "/assets-classic/native-review/top-5.svg",
+          "variantRole": "default",
+          "z": 50
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/face-17-original.gif",
+          "artworkHash": "abfe22d00cd050ca774292232e17936ffad2dc3cc3b7335d4192768a45f63d33",
+          "itemId": "native-face-17",
+          "key": "native-face-17-0",
+          "name": "天蓝眨眼",
+          "slot": "face",
+          "src": "/assets-classic/native-review/face-17.png",
+          "svg": "/assets-classic/native-review/face-17.svg",
+          "variantRole": "default",
+          "z": 60
+        },
+        {
+          "artworkHash": "502fa4b2fc5aa70f04b235ad6aa648a8037f35c56e7e215c385913167326e4cc",
+          "design": "/assets-classic/glm/remake/hair-front-design.svg",
+          "itemId": "glm-hair",
+          "key": "glm-hair-1",
+          "name": "墨蓝长直发",
+          "reviewFamilyHash": "7b10d54943fac46fae885d15d08ce69d916036734757ace29c1d95d67e02ea88",
+          "slot": "hair",
+          "src": "/assets-classic/glm/remake/hair-front.png",
+          "svg": "/assets-classic/glm/remake/hair-front.svg",
+          "variantRole": "own-pose",
+          "z": 80
+        },
+        {
+          "artworkHash": "f00d460d368d0119963fc86913a8ae90e901af30d243ebad2c7fc9a268a55083",
+          "itemId": "native-headwear-14",
+          "key": "native-headwear-14-0",
+          "name": "月亮额头坠饰",
+          "slot": "headwear",
+          "src": "/assets-classic/native-review/headwear-14.png",
+          "svg": "/assets-classic/native-review/headwear-14.svg",
+          "variantRole": "default",
+          "z": 90
+        },
+        {
+          "artworkHash": "b906a5b76b8953e1d0ee2be44a799f791900103294cdea115493d1018bb55545",
+          "itemId": "native-prop-17",
+          "key": "native-prop-17-0",
+          "name": "黄色水晶",
+          "slot": "prop",
+          "src": "/assets-classic/native-review/prop-17.png",
+          "svg": "/assets-classic/native-review/prop-17.svg",
+          "variantRole": "default",
+          "z": 100
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/effect-12-original.gif",
+          "artworkHash": "3fe0995ba479ef994c5e5645b3b8809d9658c9a642d48728b0107a970c341830",
+          "itemId": "native-effect-12",
+          "key": "native-effect-12-0",
+          "name": "飘落玫瑰",
+          "slot": "effect",
+          "src": "/assets-classic/native-review/effect-12.png",
+          "svg": "/assets-classic/native-review/effect-12.svg",
+          "variantRole": "default",
+          "z": 110
+        }
+      ],
+      "aiSelection": {
+        "aura": "native-aura-18",
+        "back": "native-back-4",
+        "background": "native-background-9",
+        "bottom": "native-bottom-5",
+        "effect": "native-effect-12",
+        "face": "native-face-17",
+        "hair": "glm-hair",
+        "headwear": "native-headwear-14",
+        "legs": "native-legs-5",
+        "prop": "native-prop-17",
+        "top": "native-top-5"
+      },
+      "baselineLayers": [
+        {
+          "animatedSrc": "/assets-classic/native-review/background-9-original.gif",
+          "artworkHash": "45fe851781a6a740da9a6e9a9af800a655d1c9c5bf98f8c20879c60ec3319af1",
+          "itemId": "native-background-9",
+          "key": "native-background-9-0",
+          "name": "中式楼阁",
+          "slot": "background",
+          "src": "/assets-classic/native-review/background-9.png",
+          "svg": "/assets-classic/native-review/background-9.svg",
+          "variantRole": "default",
+          "z": 0
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/aura-18-original.gif",
+          "artworkHash": "83b2f183baf0ac99396726b55b655ec9b8cf5a6c73a0f4d03af93b328779d3b8",
+          "itemId": "native-aura-18",
+          "key": "native-aura-18-0",
+          "name": "飘落樱花",
+          "slot": "aura",
+          "src": "/assets-classic/native-review/aura-18.png",
+          "svg": "/assets-classic/native-review/aura-18.svg",
+          "variantRole": "default",
+          "z": 5
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/back-4-original.gif",
+          "artworkHash": "0c61a55abe06ba559936e68a6e353b1ef8883ccd245e3942815dcc3daca2a93a",
+          "itemId": "native-back-4",
+          "key": "native-back-4-0",
+          "name": "蓝色闪蝶",
+          "slot": "back",
+          "src": "/assets-classic/native-review/back-4.png",
+          "svg": "/assets-classic/native-review/back-4.svg",
+          "variantRole": "default",
+          "z": 10
+        },
+        {
+          "artworkHash": "5ce9c1a8c1b0df2f84d7bdcd00950bd7e25912ff209dd37a3c4d5ea7b20732e1",
+          "coversItemIds": [
+            "native-bottom-5",
+            "native-legs-5"
+          ],
+          "coversSlots": [
+            "bottom",
+            "legs"
+          ],
+          "itemId": "native-bottom-5",
+          "key": "native-bottom-5-original-full-lower",
+          "name": "红腰带牛仔迷你裙",
+          "nativeLowerRole": "original-full-lower",
+          "nativeOriginal": true,
+          "nativeSourceKey": "native-lower-5",
+          "slot": "bottom",
+          "sourceHash": "f755eb54b3fb49dd8748a9e95e62a34bb843a41c579f122a6ad6788969614214",
+          "src": "/assets-classic/native-review/lower-5-original-full.png",
+          "svg": "/assets-classic/native-review/lower-5-original-full.svg",
+          "z": 40
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/top-5-original.gif",
+          "artworkHash": "61b3d702069404f982ea2192c7a186aa7b32c8fe4fc9aeace275c9ee170b70ed",
+          "itemId": "native-top-5",
+          "key": "native-top-5-0",
+          "name": "白色毛绒环扣外套",
+          "slot": "top",
+          "src": "/assets-classic/native-review/top-5.png",
+          "svg": "/assets-classic/native-review/top-5.svg",
+          "variantRole": "default",
+          "z": 50
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/face-17-original.gif",
+          "artworkHash": "abfe22d00cd050ca774292232e17936ffad2dc3cc3b7335d4192768a45f63d33",
+          "itemId": "native-face-17",
+          "key": "native-face-17-0",
+          "name": "天蓝眨眼",
+          "slot": "face",
+          "src": "/assets-classic/native-review/face-17.png",
+          "svg": "/assets-classic/native-review/face-17.svg",
+          "variantRole": "default",
+          "z": 60
+        },
+        {
+          "animatedArtworkHash": "3e81935c1e5c515a514f096f2cb5ac3053424edb61f20482047788264bb0221c",
+          "animatedSrc": "/assets-classic/native-review/hair-20-front-original.gif",
+          "artworkHash": "d01eebba562f98386e8183c31647dd2763de81e3c1efdb1b89ace6b319041ec1",
+          "itemId": "native-hair-20",
+          "key": "native-hair-20-0",
+          "name": "动漫金棕短发",
+          "slot": "hair",
+          "src": "/assets-classic/native-review/hair-20-front.png",
+          "svg": "/assets-classic/native-review/hair-20-front.svg",
+          "variantRole": "default",
+          "z": 80
+        },
+        {
+          "artworkHash": "f00d460d368d0119963fc86913a8ae90e901af30d243ebad2c7fc9a268a55083",
+          "itemId": "native-headwear-14",
+          "key": "native-headwear-14-0",
+          "name": "月亮额头坠饰",
+          "slot": "headwear",
+          "src": "/assets-classic/native-review/headwear-14.png",
+          "svg": "/assets-classic/native-review/headwear-14.svg",
+          "variantRole": "default",
+          "z": 90
+        },
+        {
+          "artworkHash": "b906a5b76b8953e1d0ee2be44a799f791900103294cdea115493d1018bb55545",
+          "itemId": "native-prop-17",
+          "key": "native-prop-17-0",
+          "name": "黄色水晶",
+          "slot": "prop",
+          "src": "/assets-classic/native-review/prop-17.png",
+          "svg": "/assets-classic/native-review/prop-17.svg",
+          "variantRole": "default",
+          "z": 100
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/effect-12-original.gif",
+          "artworkHash": "3fe0995ba479ef994c5e5645b3b8809d9658c9a642d48728b0107a970c341830",
+          "itemId": "native-effect-12",
+          "key": "native-effect-12-0",
+          "name": "飘落玫瑰",
+          "slot": "effect",
+          "src": "/assets-classic/native-review/effect-12.png",
+          "svg": "/assets-classic/native-review/effect-12.svg",
+          "variantRole": "default",
+          "z": 110
+        }
+      ],
+      "fixtureIndex": 2,
+      "forcedCurrentVersion": true,
+      "id": "glm-custom:hair-s656d82d5-a0-f2",
+      "isolatedNativeLayers": [
+        {
+          "animatedArtworkHash": "3e81935c1e5c515a514f096f2cb5ac3053424edb61f20482047788264bb0221c",
+          "animatedSrc": "/assets-classic/native-review/hair-20-front-original.gif",
+          "artworkHash": "d01eebba562f98386e8183c31647dd2763de81e3c1efdb1b89ace6b319041ec1",
+          "itemId": "native-hair-20",
+          "key": "native-hair-20-0",
+          "name": "动漫金棕短发",
+          "slot": "hair",
+          "src": "/assets-classic/native-review/hair-20-front.png",
+          "svg": "/assets-classic/native-review/hair-20-front.svg",
+          "variantRole": "default",
+          "z": 80
+        }
+      ],
+      "nativeSelection": {
+        "aura": "native-aura-18",
+        "back": "native-back-4",
+        "background": "native-background-9",
+        "bottom": "native-bottom-5",
+        "effect": "native-effect-12",
+        "face": "native-face-17",
+        "hair": "native-hair-20",
+        "headwear": "native-headwear-14",
+        "legs": "native-legs-5",
+        "prop": "native-prop-17",
+        "top": "native-top-5"
+      },
+      "seed": "closeout-r25-glm-full-oh4raukp",
+      "selectedAiSlots": [
+        "hair"
+      ],
+      "selectedItemIDs": {
+        "hair": "glm-hair"
+      },
+      "substitutedItemId": "glm-hair",
+      "substitutedSlot": "hair"
+    },
+    {
+      "actualAiLayers": [
+        {
+          "artworkHash": "a640007fce2d05242820cfc35b4c04c98917da0dcaa5b9ab146443cebdc8d69c",
+          "design": "/assets-classic/glm/remake/hair-back-design.svg",
+          "itemId": "glm-hair",
+          "key": "glm-hair-0",
+          "name": "墨蓝长直发",
+          "reviewFamilyHash": "7b10d54943fac46fae885d15d08ce69d916036734757ace29c1d95d67e02ea88",
+          "slot": "hair",
+          "src": "/assets-classic/glm/remake/hair-back.png",
+          "svg": "/assets-classic/glm/remake/hair-back.svg",
+          "variantRole": "own-pose",
+          "z": 20
+        },
+        {
+          "artworkHash": "502fa4b2fc5aa70f04b235ad6aa648a8037f35c56e7e215c385913167326e4cc",
+          "design": "/assets-classic/glm/remake/hair-front-design.svg",
+          "itemId": "glm-hair",
+          "key": "glm-hair-1",
+          "name": "墨蓝长直发",
+          "reviewFamilyHash": "7b10d54943fac46fae885d15d08ce69d916036734757ace29c1d95d67e02ea88",
+          "slot": "hair",
+          "src": "/assets-classic/glm/remake/hair-front.png",
+          "svg": "/assets-classic/glm/remake/hair-front.svg",
+          "variantRole": "own-pose",
+          "z": 80
+        }
+      ],
+      "aiLayers": [
+        {
+          "animatedSrc": "/assets-classic/native-review/background-7-original.gif",
+          "artworkHash": "6cbccb067a51a6d7806fbef1d0a07fddc55c0cb950c2b8c575c24483784493c2",
+          "itemId": "native-background-7",
+          "key": "native-background-7-0",
+          "name": "静谧紫夜",
+          "slot": "background",
+          "src": "/assets-classic/native-review/background-7.png",
+          "svg": "/assets-classic/native-review/background-7.svg",
+          "variantRole": "default",
+          "z": 0
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/aura-9-original.gif",
+          "artworkHash": "be5025e4638f0adad0522d52706551e4984682a6f49fe0f6fdcb8ef30fb06f8a",
+          "itemId": "native-aura-9",
+          "key": "native-aura-9-0",
+          "name": "彩色舞台聚光灯",
+          "slot": "aura",
+          "src": "/assets-classic/native-review/aura-9.png",
+          "svg": "/assets-classic/native-review/aura-9.svg",
+          "variantRole": "default",
+          "z": 5
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/back-1-original.gif",
+          "artworkHash": "1a1c00653070bd28afd1568e51202edd6e0f57fec4f886468969b7f1f4237b10",
+          "itemId": "native-back-1",
+          "key": "native-back-1-0",
+          "name": "白色天使",
+          "slot": "back",
+          "src": "/assets-classic/native-review/back-1.png",
+          "svg": "/assets-classic/native-review/back-1.svg",
+          "variantRole": "default",
+          "z": 10
+        },
+        {
+          "artworkHash": "a640007fce2d05242820cfc35b4c04c98917da0dcaa5b9ab146443cebdc8d69c",
+          "design": "/assets-classic/glm/remake/hair-back-design.svg",
+          "itemId": "glm-hair",
+          "key": "glm-hair-0",
+          "name": "墨蓝长直发",
+          "reviewFamilyHash": "7b10d54943fac46fae885d15d08ce69d916036734757ace29c1d95d67e02ea88",
+          "slot": "hair",
+          "src": "/assets-classic/glm/remake/hair-back.png",
+          "svg": "/assets-classic/glm/remake/hair-back.svg",
+          "variantRole": "own-pose",
+          "z": 20
+        },
+        {
+          "artworkHash": "84135554b0f7da7465b46640bd28500ea1c32e64055b92c4d8fef809f0691a85",
+          "coversItemIds": [
+            "native-bottom-6",
+            "native-legs-6"
+          ],
+          "coversSlots": [
+            "bottom",
+            "legs"
+          ],
+          "itemId": "native-bottom-6",
+          "key": "native-bottom-6-original-full-lower",
+          "name": "粉色百褶短裙",
+          "nativeLowerRole": "original-full-lower",
+          "nativeOriginal": true,
+          "nativeSourceKey": "native-lower-6",
+          "slot": "bottom",
+          "sourceHash": "1ea13a8dff6be279316bd3e6652d732817d80486cb9bfa3e13453b2a254e26c4",
+          "src": "/assets-classic/native-review/lower-6-original-full.png",
+          "svg": "/assets-classic/native-review/lower-6-original-full.svg",
+          "z": 40
+        },
+        {
+          "artworkHash": "79481df6dc6e44fd15054158548de7d8037a0811ebbce82ae17f11ab02f82bbc",
+          "itemId": "native-top-2",
+          "key": "native-top-2-0",
+          "name": "绑带白色背心",
+          "slot": "top",
+          "src": "/assets-classic/native-review/top-2.png",
+          "svg": "/assets-classic/native-review/top-2.svg",
+          "variantRole": "default",
+          "z": 50
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/face-9-original.gif",
+          "artworkHash": "53c286e65ff27ff04109a515d44120190195bd8ff923553d64bb682281547032",
+          "itemId": "native-face-9",
+          "key": "native-face-9-0",
+          "name": "魔法绿",
+          "slot": "face",
+          "src": "/assets-classic/native-review/face-9.png",
+          "svg": "/assets-classic/native-review/face-9.svg",
+          "variantRole": "default",
+          "z": 60
+        },
+        {
+          "artworkHash": "502fa4b2fc5aa70f04b235ad6aa648a8037f35c56e7e215c385913167326e4cc",
+          "design": "/assets-classic/glm/remake/hair-front-design.svg",
+          "itemId": "glm-hair",
+          "key": "glm-hair-1",
+          "name": "墨蓝长直发",
+          "reviewFamilyHash": "7b10d54943fac46fae885d15d08ce69d916036734757ace29c1d95d67e02ea88",
+          "slot": "hair",
+          "src": "/assets-classic/glm/remake/hair-front.png",
+          "svg": "/assets-classic/glm/remake/hair-front.svg",
+          "variantRole": "own-pose",
+          "z": 80
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/headwear-8-original.gif",
+          "artworkHash": "5c6770c7ec9fcbe96475f79177895590b12bb6a03b5ffc8f539145ebf5954570",
+          "itemId": "native-headwear-8",
+          "key": "native-headwear-8-0",
+          "name": "公主皇冠",
+          "slot": "headwear",
+          "src": "/assets-classic/native-review/headwear-8.png",
+          "svg": "/assets-classic/native-review/headwear-8.svg",
+          "variantRole": "default",
+          "z": 90
+        },
+        {
+          "artworkHash": "d5d017648eba2362f79c33b445638734829c622106b8f79139a9be7d8d16b606",
+          "itemId": "native-prop-16",
+          "key": "native-prop-16-0",
+          "name": "红白电吉他",
+          "slot": "prop",
+          "src": "/assets-classic/native-review/prop-16.png",
+          "svg": "/assets-classic/native-review/prop-16.svg",
+          "variantRole": "default",
+          "z": 100
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/effect-19-original.gif",
+          "artworkHash": "0eba5381d032f2b4204c67c2ab9c76528c96667cf286eb13116b99c719f09c4d",
+          "itemId": "native-effect-19",
+          "key": "native-effect-19-0",
+          "name": "炫彩星星",
+          "slot": "effect",
+          "src": "/assets-classic/native-review/effect-19.png",
+          "svg": "/assets-classic/native-review/effect-19.svg",
+          "variantRole": "default",
+          "z": 110
+        }
+      ],
+      "aiSelection": {
+        "aura": "native-aura-9",
+        "back": "native-back-1",
+        "background": "native-background-7",
+        "bottom": "native-bottom-6",
+        "effect": "native-effect-19",
+        "face": "native-face-9",
+        "hair": "glm-hair",
+        "headwear": "native-headwear-8",
+        "legs": "native-legs-6",
+        "prop": "native-prop-16",
+        "top": "native-top-2"
+      },
+      "baselineLayers": [
+        {
+          "animatedSrc": "/assets-classic/native-review/background-7-original.gif",
+          "artworkHash": "6cbccb067a51a6d7806fbef1d0a07fddc55c0cb950c2b8c575c24483784493c2",
+          "itemId": "native-background-7",
+          "key": "native-background-7-0",
+          "name": "静谧紫夜",
+          "slot": "background",
+          "src": "/assets-classic/native-review/background-7.png",
+          "svg": "/assets-classic/native-review/background-7.svg",
+          "variantRole": "default",
+          "z": 0
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/aura-9-original.gif",
+          "artworkHash": "be5025e4638f0adad0522d52706551e4984682a6f49fe0f6fdcb8ef30fb06f8a",
+          "itemId": "native-aura-9",
+          "key": "native-aura-9-0",
+          "name": "彩色舞台聚光灯",
+          "slot": "aura",
+          "src": "/assets-classic/native-review/aura-9.png",
+          "svg": "/assets-classic/native-review/aura-9.svg",
+          "variantRole": "default",
+          "z": 5
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/back-1-original.gif",
+          "artworkHash": "1a1c00653070bd28afd1568e51202edd6e0f57fec4f886468969b7f1f4237b10",
+          "itemId": "native-back-1",
+          "key": "native-back-1-0",
+          "name": "白色天使",
+          "slot": "back",
+          "src": "/assets-classic/native-review/back-1.png",
+          "svg": "/assets-classic/native-review/back-1.svg",
+          "variantRole": "default",
+          "z": 10
+        },
+        {
+          "artworkHash": "84135554b0f7da7465b46640bd28500ea1c32e64055b92c4d8fef809f0691a85",
+          "coversItemIds": [
+            "native-bottom-6",
+            "native-legs-6"
+          ],
+          "coversSlots": [
+            "bottom",
+            "legs"
+          ],
+          "itemId": "native-bottom-6",
+          "key": "native-bottom-6-original-full-lower",
+          "name": "粉色百褶短裙",
+          "nativeLowerRole": "original-full-lower",
+          "nativeOriginal": true,
+          "nativeSourceKey": "native-lower-6",
+          "slot": "bottom",
+          "sourceHash": "1ea13a8dff6be279316bd3e6652d732817d80486cb9bfa3e13453b2a254e26c4",
+          "src": "/assets-classic/native-review/lower-6-original-full.png",
+          "svg": "/assets-classic/native-review/lower-6-original-full.svg",
+          "z": 40
+        },
+        {
+          "artworkHash": "79481df6dc6e44fd15054158548de7d8037a0811ebbce82ae17f11ab02f82bbc",
+          "itemId": "native-top-2",
+          "key": "native-top-2-0",
+          "name": "绑带白色背心",
+          "slot": "top",
+          "src": "/assets-classic/native-review/top-2.png",
+          "svg": "/assets-classic/native-review/top-2.svg",
+          "variantRole": "default",
+          "z": 50
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/face-9-original.gif",
+          "artworkHash": "53c286e65ff27ff04109a515d44120190195bd8ff923553d64bb682281547032",
+          "itemId": "native-face-9",
+          "key": "native-face-9-0",
+          "name": "魔法绿",
+          "slot": "face",
+          "src": "/assets-classic/native-review/face-9.png",
+          "svg": "/assets-classic/native-review/face-9.svg",
+          "variantRole": "default",
+          "z": 60
+        },
+        {
+          "artworkHash": "67aded4d4eaf2b0e52be5fecb301bb93c2807ed93b10cb8157fd1d3862fc5012",
+          "itemId": "native-hair-11",
+          "key": "native-hair-11-0",
+          "name": "棕橙长编发",
+          "slot": "hair",
+          "src": "/assets-classic/native-review/hair-11-front.png",
+          "svg": "/assets-classic/native-review/hair-11-front.svg",
+          "variantRole": "default",
+          "z": 80
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/headwear-8-original.gif",
+          "artworkHash": "5c6770c7ec9fcbe96475f79177895590b12bb6a03b5ffc8f539145ebf5954570",
+          "itemId": "native-headwear-8",
+          "key": "native-headwear-8-0",
+          "name": "公主皇冠",
+          "slot": "headwear",
+          "src": "/assets-classic/native-review/headwear-8.png",
+          "svg": "/assets-classic/native-review/headwear-8.svg",
+          "variantRole": "default",
+          "z": 90
+        },
+        {
+          "artworkHash": "d5d017648eba2362f79c33b445638734829c622106b8f79139a9be7d8d16b606",
+          "itemId": "native-prop-16",
+          "key": "native-prop-16-0",
+          "name": "红白电吉他",
+          "slot": "prop",
+          "src": "/assets-classic/native-review/prop-16.png",
+          "svg": "/assets-classic/native-review/prop-16.svg",
+          "variantRole": "default",
+          "z": 100
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/effect-19-original.gif",
+          "artworkHash": "0eba5381d032f2b4204c67c2ab9c76528c96667cf286eb13116b99c719f09c4d",
+          "itemId": "native-effect-19",
+          "key": "native-effect-19-0",
+          "name": "炫彩星星",
+          "slot": "effect",
+          "src": "/assets-classic/native-review/effect-19.png",
+          "svg": "/assets-classic/native-review/effect-19.svg",
+          "variantRole": "default",
+          "z": 110
+        }
+      ],
+      "fixtureIndex": 3,
+      "forcedCurrentVersion": true,
+      "id": "glm-custom:hair-s656d82d5-a0-f3",
+      "isolatedNativeLayers": [
+        {
+          "artworkHash": "67aded4d4eaf2b0e52be5fecb301bb93c2807ed93b10cb8157fd1d3862fc5012",
+          "itemId": "native-hair-11",
+          "key": "native-hair-11-0",
+          "name": "棕橙长编发",
+          "slot": "hair",
+          "src": "/assets-classic/native-review/hair-11-front.png",
+          "svg": "/assets-classic/native-review/hair-11-front.svg",
+          "variantRole": "default",
+          "z": 80
+        }
+      ],
+      "nativeSelection": {
+        "aura": "native-aura-9",
+        "back": "native-back-1",
+        "background": "native-background-7",
+        "bottom": "native-bottom-6",
+        "effect": "native-effect-19",
+        "face": "native-face-9",
+        "hair": "native-hair-11",
+        "headwear": "native-headwear-8",
+        "legs": "native-legs-6",
+        "prop": "native-prop-16",
+        "top": "native-top-2"
+      },
+      "seed": "closeout-r25-glm-full-oh4raukp",
+      "selectedAiSlots": [
+        "hair"
+      ],
+      "selectedItemIDs": {
+        "hair": "glm-hair"
+      },
+      "substitutedItemId": "glm-hair",
+      "substitutedSlot": "hair"
+    },
+    {
+      "actualAiLayers": [
+        {
+          "artworkHash": "a640007fce2d05242820cfc35b4c04c98917da0dcaa5b9ab146443cebdc8d69c",
+          "design": "/assets-classic/glm/remake/hair-back-design.svg",
+          "itemId": "glm-hair",
+          "key": "glm-hair-0",
+          "name": "墨蓝长直发",
+          "reviewFamilyHash": "7b10d54943fac46fae885d15d08ce69d916036734757ace29c1d95d67e02ea88",
+          "slot": "hair",
+          "src": "/assets-classic/glm/remake/hair-back.png",
+          "svg": "/assets-classic/glm/remake/hair-back.svg",
+          "variantRole": "own-pose",
+          "z": 20
+        },
+        {
+          "artworkHash": "502fa4b2fc5aa70f04b235ad6aa648a8037f35c56e7e215c385913167326e4cc",
+          "design": "/assets-classic/glm/remake/hair-front-design.svg",
+          "itemId": "glm-hair",
+          "key": "glm-hair-1",
+          "name": "墨蓝长直发",
+          "reviewFamilyHash": "7b10d54943fac46fae885d15d08ce69d916036734757ace29c1d95d67e02ea88",
+          "slot": "hair",
+          "src": "/assets-classic/glm/remake/hair-front.png",
+          "svg": "/assets-classic/glm/remake/hair-front.svg",
+          "variantRole": "own-pose",
+          "z": 80
+        }
+      ],
+      "aiLayers": [
+        {
+          "animatedSrc": "/assets-classic/native-review/background-6-original.gif",
+          "artworkHash": "df2db28a7380ea1e6cc80da2a7358140a5478d1490f013d7e6faf01077d4e6ca",
+          "itemId": "native-background-6",
+          "key": "native-background-6-0",
+          "name": "海底世界",
+          "slot": "background",
+          "src": "/assets-classic/native-review/background-6.png",
+          "svg": "/assets-classic/native-review/background-6.svg",
+          "variantRole": "default",
+          "z": 0
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/aura-7-original.gif",
+          "artworkHash": "9fcb98add65627a75a500a252111ff8691b550eb0c472bd168e97d3c78a10466",
+          "itemId": "native-aura-7",
+          "key": "native-aura-7-0",
+          "name": "爱心舞台",
+          "slot": "aura",
+          "src": "/assets-classic/native-review/aura-7.png",
+          "svg": "/assets-classic/native-review/aura-7.svg",
+          "variantRole": "default",
+          "z": 5
+        },
+        {
+          "artworkHash": "78eb86886ee06f9e5a148a3c2af6f5859a29e35ea9d66e8e74d2ccb72dc6da0f",
+          "itemId": "native-back-10",
+          "key": "native-back-10-0",
+          "name": "幻彩蝴蝶",
+          "slot": "back",
+          "src": "/assets-classic/native-review/back-10.png",
+          "svg": "/assets-classic/native-review/back-10.svg",
+          "variantRole": "default",
+          "z": 10
+        },
+        {
+          "artworkHash": "a640007fce2d05242820cfc35b4c04c98917da0dcaa5b9ab146443cebdc8d69c",
+          "design": "/assets-classic/glm/remake/hair-back-design.svg",
+          "itemId": "glm-hair",
+          "key": "glm-hair-0",
+          "name": "墨蓝长直发",
+          "reviewFamilyHash": "7b10d54943fac46fae885d15d08ce69d916036734757ace29c1d95d67e02ea88",
+          "slot": "hair",
+          "src": "/assets-classic/glm/remake/hair-back.png",
+          "svg": "/assets-classic/glm/remake/hair-back.svg",
+          "variantRole": "own-pose",
+          "z": 20
+        },
+        {
+          "artworkHash": "fcfc06f47e576a9b87cd1b824354eef05dd514bfcf74cb7c81acb651585f0d6f",
+          "coversItemIds": [
+            "native-bottom-2",
+            "native-legs-2"
+          ],
+          "coversSlots": [
+            "bottom",
+            "legs"
+          ],
+          "itemId": "native-bottom-2",
+          "key": "native-bottom-2-original-full-lower",
+          "name": "经典牛仔短裤",
+          "nativeLowerRole": "original-full-lower",
+          "nativeOriginal": true,
+          "nativeSourceKey": "native-lower-2",
+          "slot": "bottom",
+          "sourceHash": "e89902ba85b9b0e9aeb5ae52d4d02fc3d1588f990b89edfa237dd01fd87beb86",
+          "src": "/assets-classic/native-review/lower-2-original-full.png",
+          "svg": "/assets-classic/native-review/lower-2-original-full.svg",
+          "z": 40
+        },
+        {
+          "artworkHash": "6db08b3cd6d1adff4381ab047a4b3ae4cf710293d8c062729205549b30cea930",
+          "itemId": "native-top-18",
+          "key": "native-top-18-0",
+          "name": "工装夹克叠穿",
+          "slot": "top",
+          "src": "/assets-classic/native-review/top-18.png",
+          "svg": "/assets-classic/native-review/top-18.svg",
+          "variantRole": "default",
+          "z": 50
+        },
+        {
+          "artworkHash": "51703487906216236aeec1e0b7e9c615c7daf8a9f0d9bd183dc851dbb40b3ae0",
+          "itemId": "native-face-11",
+          "key": "native-face-11-0",
+          "name": "樱花",
+          "slot": "face",
+          "src": "/assets-classic/native-review/face-11.png",
+          "svg": "/assets-classic/native-review/face-11.svg",
+          "variantRole": "default",
+          "z": 60
+        },
+        {
+          "artworkHash": "502fa4b2fc5aa70f04b235ad6aa648a8037f35c56e7e215c385913167326e4cc",
+          "design": "/assets-classic/glm/remake/hair-front-design.svg",
+          "itemId": "glm-hair",
+          "key": "glm-hair-1",
+          "name": "墨蓝长直发",
+          "reviewFamilyHash": "7b10d54943fac46fae885d15d08ce69d916036734757ace29c1d95d67e02ea88",
+          "slot": "hair",
+          "src": "/assets-classic/glm/remake/hair-front.png",
+          "svg": "/assets-classic/glm/remake/hair-front.svg",
+          "variantRole": "own-pose",
+          "z": 80
+        },
+        {
+          "artworkHash": "12b7ab0b22eda30101a4a843fec87bdee881a57f61b48cbb460541a59b5bf5a4",
+          "itemId": "native-headwear-11",
+          "key": "native-headwear-11-0",
+          "name": "黑色优雅渔夫帽",
+          "slot": "headwear",
+          "src": "/assets-classic/native-review/headwear-11.png",
+          "svg": "/assets-classic/native-review/headwear-11.svg",
+          "variantRole": "default",
+          "z": 90
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/prop-20-original.gif",
+          "artworkHash": "18efe420186a8c7b213eda65a56cbdc71faaf955d37e9e82f98c9de8c62d5c09",
+          "itemId": "native-prop-20",
+          "key": "native-prop-20-0",
+          "name": "粉色爱心腰饰",
+          "slot": "prop",
+          "src": "/assets-classic/native-review/prop-20.png",
+          "svg": "/assets-classic/native-review/prop-20.svg",
+          "variantRole": "default",
+          "z": 100
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/effect-2-original.gif",
+          "artworkHash": "9e81a546e5c4e895333d72fa9cccc685d8d7eed0ba77e08ebbdbe6559d5a47d8",
+          "itemId": "native-effect-2",
+          "key": "native-effect-2-0",
+          "name": "红粉落花",
+          "slot": "effect",
+          "src": "/assets-classic/native-review/effect-2.png",
+          "svg": "/assets-classic/native-review/effect-2.svg",
+          "variantRole": "default",
+          "z": 110
+        }
+      ],
+      "aiSelection": {
+        "aura": "native-aura-7",
+        "back": "native-back-10",
+        "background": "native-background-6",
+        "bottom": "native-bottom-2",
+        "effect": "native-effect-2",
+        "face": "native-face-11",
+        "hair": "glm-hair",
+        "headwear": "native-headwear-11",
+        "legs": "native-legs-2",
+        "prop": "native-prop-20",
+        "top": "native-top-18"
+      },
+      "baselineLayers": [
+        {
+          "animatedSrc": "/assets-classic/native-review/background-6-original.gif",
+          "artworkHash": "df2db28a7380ea1e6cc80da2a7358140a5478d1490f013d7e6faf01077d4e6ca",
+          "itemId": "native-background-6",
+          "key": "native-background-6-0",
+          "name": "海底世界",
+          "slot": "background",
+          "src": "/assets-classic/native-review/background-6.png",
+          "svg": "/assets-classic/native-review/background-6.svg",
+          "variantRole": "default",
+          "z": 0
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/aura-7-original.gif",
+          "artworkHash": "9fcb98add65627a75a500a252111ff8691b550eb0c472bd168e97d3c78a10466",
+          "itemId": "native-aura-7",
+          "key": "native-aura-7-0",
+          "name": "爱心舞台",
+          "slot": "aura",
+          "src": "/assets-classic/native-review/aura-7.png",
+          "svg": "/assets-classic/native-review/aura-7.svg",
+          "variantRole": "default",
+          "z": 5
+        },
+        {
+          "artworkHash": "78eb86886ee06f9e5a148a3c2af6f5859a29e35ea9d66e8e74d2ccb72dc6da0f",
+          "itemId": "native-back-10",
+          "key": "native-back-10-0",
+          "name": "幻彩蝴蝶",
+          "slot": "back",
+          "src": "/assets-classic/native-review/back-10.png",
+          "svg": "/assets-classic/native-review/back-10.svg",
+          "variantRole": "default",
+          "z": 10
+        },
+        {
+          "artworkHash": "fcfc06f47e576a9b87cd1b824354eef05dd514bfcf74cb7c81acb651585f0d6f",
+          "coversItemIds": [
+            "native-bottom-2",
+            "native-legs-2"
+          ],
+          "coversSlots": [
+            "bottom",
+            "legs"
+          ],
+          "itemId": "native-bottom-2",
+          "key": "native-bottom-2-original-full-lower",
+          "name": "经典牛仔短裤",
+          "nativeLowerRole": "original-full-lower",
+          "nativeOriginal": true,
+          "nativeSourceKey": "native-lower-2",
+          "slot": "bottom",
+          "sourceHash": "e89902ba85b9b0e9aeb5ae52d4d02fc3d1588f990b89edfa237dd01fd87beb86",
+          "src": "/assets-classic/native-review/lower-2-original-full.png",
+          "svg": "/assets-classic/native-review/lower-2-original-full.svg",
+          "z": 40
+        },
+        {
+          "artworkHash": "6db08b3cd6d1adff4381ab047a4b3ae4cf710293d8c062729205549b30cea930",
+          "itemId": "native-top-18",
+          "key": "native-top-18-0",
+          "name": "工装夹克叠穿",
+          "slot": "top",
+          "src": "/assets-classic/native-review/top-18.png",
+          "svg": "/assets-classic/native-review/top-18.svg",
+          "variantRole": "default",
+          "z": 50
+        },
+        {
+          "artworkHash": "51703487906216236aeec1e0b7e9c615c7daf8a9f0d9bd183dc851dbb40b3ae0",
+          "itemId": "native-face-11",
+          "key": "native-face-11-0",
+          "name": "樱花",
+          "slot": "face",
+          "src": "/assets-classic/native-review/face-11.png",
+          "svg": "/assets-classic/native-review/face-11.svg",
+          "variantRole": "default",
+          "z": 60
+        },
+        {
+          "artworkHash": "18f0318967afc57e1e112092ca0a7f7acb0f3d73170ba894f6d0c7b56a8094a8",
+          "itemId": "native-hair-5",
+          "key": "native-hair-5-0",
+          "name": "粉紫双马尾",
+          "slot": "hair",
+          "src": "/assets-classic/native-review/hair-5-front.png",
+          "svg": "/assets-classic/native-review/hair-5-front.svg",
+          "variantRole": "default",
+          "z": 80
+        },
+        {
+          "artworkHash": "12b7ab0b22eda30101a4a843fec87bdee881a57f61b48cbb460541a59b5bf5a4",
+          "itemId": "native-headwear-11",
+          "key": "native-headwear-11-0",
+          "name": "黑色优雅渔夫帽",
+          "slot": "headwear",
+          "src": "/assets-classic/native-review/headwear-11.png",
+          "svg": "/assets-classic/native-review/headwear-11.svg",
+          "variantRole": "default",
+          "z": 90
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/prop-20-original.gif",
+          "artworkHash": "18efe420186a8c7b213eda65a56cbdc71faaf955d37e9e82f98c9de8c62d5c09",
+          "itemId": "native-prop-20",
+          "key": "native-prop-20-0",
+          "name": "粉色爱心腰饰",
+          "slot": "prop",
+          "src": "/assets-classic/native-review/prop-20.png",
+          "svg": "/assets-classic/native-review/prop-20.svg",
+          "variantRole": "default",
+          "z": 100
+        },
+        {
+          "animatedSrc": "/assets-classic/native-review/effect-2-original.gif",
+          "artworkHash": "9e81a546e5c4e895333d72fa9cccc685d8d7eed0ba77e08ebbdbe6559d5a47d8",
+          "itemId": "native-effect-2",
+          "key": "native-effect-2-0",
+          "name": "红粉落花",
+          "slot": "effect",
+          "src": "/assets-classic/native-review/effect-2.png",
+          "svg": "/assets-classic/native-review/effect-2.svg",
+          "variantRole": "default",
+          "z": 110
+        }
+      ],
+      "fixtureIndex": 4,
+      "forcedCurrentVersion": true,
+      "id": "glm-custom:hair-s656d82d5-a0-f4",
+      "isolatedNativeLayers": [
+        {
+          "artworkHash": "18f0318967afc57e1e112092ca0a7f7acb0f3d73170ba894f6d0c7b56a8094a8",
+          "itemId": "native-hair-5",
+          "key": "native-hair-5-0",
+          "name": "粉紫双马尾",
+          "slot": "hair",
+          "src": "/assets-classic/native-review/hair-5-front.png",
+          "svg": "/assets-classic/native-review/hair-5-front.svg",
+          "variantRole": "default",
+          "z": 80
+        }
+      ],
+      "nativeSelection": {
+        "aura": "native-aura-7",
+        "back": "native-back-10",
+        "background": "native-background-6",
+        "bottom": "native-bottom-2",
+        "effect": "native-effect-2",
+        "face": "native-face-11",
+        "hair": "native-hair-5",
+        "headwear": "native-headwear-11",
+        "legs": "native-legs-2",
+        "prop": "native-prop-20",
+        "top": "native-top-18"
+      },
+      "seed": "closeout-r25-glm-full-oh4raukp",
+      "selectedAiSlots": [
+        "hair"
+      ],
+      "selectedItemIDs": {
+        "hair": "glm-hair"
+      },
+      "substitutedItemId": "glm-hair",
+      "substitutedSlot": "hair"
+    }
+  ],
+  "character": "glm",
+  "contextSignature": "native-context-v4-de23ad79",
+  "coverage": {
+    "arrangements": 5,
+    "completenessPolicy": "native-complete-torso-v1",
+    "corpusCoverage": {
+      "enumeratedAll": false,
+      "selected": 5,
+      "total": 20
+    },
+    "drawWithoutReplacement": true,
+    "exhaustive": false,
+    "fixturesOnThisPage": 5,
+    "hybridPresetCount": 9,
+    "nativeCounts": {
+      "aura": 20,
+      "back": 17,
+      "background": 20,
+      "bottom": 20,
+      "effect": 20,
+      "face": 20,
+      "hair": 20,
+      "headwear": 20,
+      "legs": 20,
+      "prop": 20,
+      "top": 20
+    },
+    "nativeItems": 217,
+    "nativeSlotsCount": 10,
+    "newSeedPerReview": true,
+    "originalsPerSlot": 17,
+    "selectedAiSlotsCount": 1,
+    "substitutionsPerContext": 1,
+    "visibleNativeSlotsCount": 10
+  },
+  "draws": {
+    "aura": [
+      "native-aura-13",
+      "native-aura-20",
+      "native-aura-18",
+      "native-aura-9",
+      "native-aura-7"
+    ],
+    "back": [
+      "native-back-5",
+      "native-back-3",
+      "native-back-4",
+      "native-back-1",
+      "native-back-10"
+    ],
+    "background": [
+      "native-background-5",
+      "native-background-17",
+      "native-background-9",
+      "native-background-7",
+      "native-background-6"
+    ],
+    "bottom": [
+      "native-bottom-8",
+      "native-bottom-7",
+      "native-bottom-5",
+      "native-bottom-6",
+      "native-bottom-2"
+    ],
+    "effect": [
+      "native-effect-15",
+      "native-effect-8",
+      "native-effect-12",
+      "native-effect-19",
+      "native-effect-2"
+    ],
+    "face": [
+      "native-face-7",
+      "native-face-12",
+      "native-face-17",
+      "native-face-9",
+      "native-face-11"
+    ],
+    "hair": [
+      "native-hair-12",
+      "native-hair-17",
+      "native-hair-20",
+      "native-hair-11",
+      "native-hair-5"
+    ],
+    "headwear": [
+      "native-headwear-3",
+      "native-headwear-10",
+      "native-headwear-14",
+      "native-headwear-8",
+      "native-headwear-11"
+    ],
+    "legs": [
+      "native-legs-8",
+      "native-legs-7",
+      "native-legs-5",
+      "native-legs-6",
+      "native-legs-2"
+    ],
+    "prop": [
+      "native-prop-1",
+      "native-prop-5",
+      "native-prop-17",
+      "native-prop-16",
+      "native-prop-20"
+    ],
+    "top": [
+      "native-top-6",
+      "native-top-8",
+      "native-top-5",
+      "native-top-2",
+      "native-top-18"
+    ]
+  },
+  "excludedSlots": [],
+  "forceRefinePolicy": "Every selected AI item uses current-family artwork only. Authored current native-display variants are selected by the shared resolver for native tops; own-pose variants are used with the matching AI top. Historical defaultVariants are excluded from review. Hashes cover both current variants.",
+  "fullLayers": [
+    {
+      "animatedSrc": "/assets-classic/glm/background.gif",
+      "artworkHash": "7b315b231caae462a7af1d9f3126775989112f2660ddbfdd3329a860ef8cbf17",
+      "itemId": "glm-background",
+      "key": "glm-background-0",
+      "name": "月夜午睡书房",
+      "slot": "background",
+      "src": "/assets-classic/glm/background.png",
+      "svg": "/assets-classic/glm/background.svg",
+      "variantRole": "pose:glm",
+      "z": 0
+    },
+    {
+      "artworkHash": "9c4f058117bae2556db7570fe655ff659751f639ba46090a5b4620d77e964905",
+      "itemId": "glm-aura",
+      "key": "glm-aura-0",
+      "name": "银月梦环",
+      "slot": "aura",
+      "src": "/assets-classic/glm/remake/aura.png",
+      "svg": "/assets-classic/glm/remake/aura.svg",
+      "variantRole": "pose:glm",
+      "z": 5
+    },
+    {
+      "artworkHash": "097d5cf7cbf38af763546c94ee5b995cddca4e1d87a64c4ed9b22b8f2a8ce6be",
+      "itemId": "glm-back",
+      "key": "glm-back-0",
+      "name": "白尖墨狐尾",
+      "reviewFamilyHash": "733a3a4c69860f82957f2a5573c64c68d69ff4544e884c7fd312a75057f13cc0",
+      "slot": "back",
+      "src": "/assets-classic/glm/remake/back.png",
+      "svg": "/assets-classic/glm/remake/back.svg",
+      "variantRole": "own-pose",
+      "z": 10
+    },
+    {
+      "artworkHash": "a640007fce2d05242820cfc35b4c04c98917da0dcaa5b9ab146443cebdc8d69c",
+      "design": "/assets-classic/glm/remake/hair-back-design.svg",
+      "itemId": "glm-hair",
+      "key": "glm-hair-0",
+      "name": "墨蓝长直发",
+      "reviewFamilyHash": "7b10d54943fac46fae885d15d08ce69d916036734757ace29c1d95d67e02ea88",
+      "slot": "hair",
+      "src": "/assets-classic/glm/remake/hair-back.png",
+      "svg": "/assets-classic/glm/remake/hair-back.svg",
+      "variantRole": "own-pose",
+      "z": 20
+    },
+    {
+      "artworkHash": "e3f7cc6c89cc043a5a754e9c3b083d037121498d99760f122f3a9e96ea4347bc",
+      "itemId": "glm-legs",
+      "key": "glm-legs-0",
+      "name": "黑白系带短靴",
+      "reviewFamilyHash": "606f885b517d379e17ca105c87f6896f43adc5cafd372f15c338aca6bd450d3f",
+      "slot": "legs",
+      "src": "/assets-classic/glm/remake/legs.png",
+      "svg": "/assets-classic/glm/remake/legs.svg",
+      "variantRole": "own-pose",
+      "z": 30
+    },
+    {
+      "artworkHash": "974db998e1f90484e9ecedc6a2965b5a6ce350e37f48774b2d0a3f60fbcb67de",
+      "itemId": "glm-bottom",
+      "key": "glm-bottom-0",
+      "name": "墨雪层叠长围裙",
+      "reviewFamilyHash": "2a85b6e37b60efaab7c08543c1dae4e51766627219f6a2e2a2f2419c21d2977b",
+      "slot": "bottom",
+      "src": "/assets-classic/glm/remake/bottom.png",
+      "svg": "/assets-classic/glm/remake/bottom.svg",
+      "variantRole": "own-pose",
+      "z": 40
+    },
+    {
+      "artworkHash": "dda4c6e4851bdf19ae0964ee674215b60cb72a8db282a52b4912b67c471f48b9",
+      "design": "/assets-classic/glm/remake/top-body-design.svg",
+      "itemId": "glm-top",
+      "key": "glm-top-0",
+      "name": "银扣蓬袖领结衫",
+      "reviewFamilyHash": "33498fb9736f92450a0ebf2c53444132cceb316f5b853b159fa2a0021bf88962",
+      "slot": "top",
+      "src": "/assets-classic/glm/remake/top-body.png",
+      "svg": "/assets-classic/glm/remake/top-body.svg",
+      "variantRole": "own-pose",
+      "z": 50
+    },
+    {
+      "artworkHash": "944a066f25393f6f7ce08e14e9d153485b4dfed45e67da3fc4005850602606a7",
+      "itemId": "glm-face",
+      "key": "glm-face-0",
+      "name": "灰紫困倦闭口",
+      "reviewFamilyHash": "bda5e06ea652f12e4076828a2ab23ebcedcab13195dd0bd5bbf78f30e7aaa710",
+      "slot": "face",
+      "src": "/assets-classic/glm/remake/face.png",
+      "svg": "/assets-classic/glm/remake/face.svg",
+      "variantRole": "own-pose",
+      "z": 70
+    },
+    {
+      "artworkHash": "502fa4b2fc5aa70f04b235ad6aa648a8037f35c56e7e215c385913167326e4cc",
+      "design": "/assets-classic/glm/remake/hair-front-design.svg",
+      "itemId": "glm-hair",
+      "key": "glm-hair-1",
+      "name": "墨蓝长直发",
+      "reviewFamilyHash": "7b10d54943fac46fae885d15d08ce69d916036734757ace29c1d95d67e02ea88",
+      "slot": "hair",
+      "src": "/assets-classic/glm/remake/hair-front.png",
+      "svg": "/assets-classic/glm/remake/hair-front.svg",
+      "variantRole": "own-pose",
+      "z": 80
+    },
+    {
+      "artworkHash": "e1f20354571ae56b86db43a2172516a4044211c77f4d8f2bdba5c593328f7390",
+      "itemId": "glm-prop",
+      "key": "glm-prop-0",
+      "name": "Z 纹黑银书",
+      "reviewFamilyHash": "30128545ff84a9e2479af050d7efac84e093e8d10b8185fc3f5fd58cde58e9ea",
+      "slot": "prop",
+      "src": "/assets-classic/glm/remake/prop.png",
+      "svg": "/assets-classic/glm/remake/prop.svg",
+      "variantRole": "own-pose",
+      "z": 84
+    },
+    {
+      "artworkHash": "55f53f7f9e6cbdc44f798d5658448437bb5ebb5c76096fd1b33021018912911e",
+      "design": "/assets-classic/glm/remake/top-arms-design.svg",
+      "itemId": "glm-top",
+      "key": "glm-top-1",
+      "name": "银扣蓬袖领结衫",
+      "reviewFamilyHash": "33498fb9736f92450a0ebf2c53444132cceb316f5b853b159fa2a0021bf88962",
+      "slot": "top",
+      "src": "/assets-classic/glm/remake/top-arms.png",
+      "svg": "/assets-classic/glm/remake/top-arms.svg",
+      "variantRole": "own-pose",
+      "z": 85
+    },
+    {
+      "artworkHash": "4c610491f4670258c4d5f7d49e645e50acd3bbcec9356712ff53f88d2438e13f",
+      "itemId": "glm-headwear",
+      "key": "glm-headwear-0",
+      "name": "睡眠眼罩铃铛狐耳",
+      "reviewFamilyHash": "20eb2a95e23b73001c097ad2abec588e17b2736db9b7b93341a177c899d9ef6f",
+      "slot": "headwear",
+      "src": "/assets-classic/glm/remake/headwear.png",
+      "svg": "/assets-classic/glm/remake/headwear.svg",
+      "variantRole": "own-pose",
+      "z": 90
+    },
+    {
+      "artworkHash": "ca43042076786b12815667f0119879fa3637107436012cac138933e932703260",
+      "itemId": "glm-effect",
+      "key": "glm-effect-0",
+      "name": "银蓝微光",
+      "slot": "effect",
+      "src": "/assets-classic/glm/effect.png",
+      "svg": "/assets-classic/glm/effect.svg",
+      "variantRole": "pose:glm",
+      "z": 110
+    }
+  ],
+  "fullPreset": {
+    "aura": "glm-aura",
+    "back": "glm-back",
+    "background": "glm-background",
+    "bottom": "glm-bottom",
+    "effect": "glm-effect",
+    "face": "glm-face",
+    "hair": "glm-hair",
+    "headwear": "glm-headwear",
+    "legs": "glm-legs",
+    "prop": "glm-prop",
+    "top": "glm-top"
+  },
+  "generatedInterfaceHashes": {},
+  "generatedInterfaceRule": "AI-owned replacement support; fusion>=98; never native100",
+  "hybridKey": "custom:hair",
+  "isolatedDiagnostics": {
+    "enabled": false,
+    "replacesFullMixScoring": false,
+    "source": "Same cases and resolved layers, filtered to selected AI slots for supplementary unobstructed inspection"
+  },
+  "lowerPolicy": {
+    "coupledSlots": [
+      "bottom",
+      "legs"
+    ],
+    "generatedInterfaceOwner": "AI bottom replacement",
+    "generatedInterfaceThreshold": 98,
+    "id": "native-lower-provenance-v1",
+    "nativeBaseline": "originalFull only; no generated interface pixels",
+    "partialNativeAcrossSources": "original visible fragments only; no generated fill",
+    "qcReportHash": "7c151e487bcc9f9956825159efb03a6a4e7107c0adbed0499db25c95faa1b568",
+    "sourceCount": 20
+  },
+  "mode": "full",
+  "nativeLowerCoupled": true,
+  "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+  "presetExclusions": [],
+  "reference": "/assets-classic/native-review/references/glm.jpg",
+  "reviewedCompleteHash": "3bdf7da43285f319a39e8d74130817c87b1229dda6cfe7e6c882ee4074c1eedf",
+  "reviewedPartHash": "7b10d54943fac46fae885d15d08ce69d916036734757ace29c1d95d67e02ea88",
+  "reviewedPartHashes": {
+    "hair": "7b10d54943fac46fae885d15d08ce69d916036734757ace29c1d95d67e02ea88"
+  },
+  "roleUnavailableSlots": [],
+  "runtimeArchive": null,
+  "scale": 1,
+  "schema": "classic-react-review-v3",
+  "scoreStatus": {
+    "body": {
+      "anatomicalReviewRequired": true,
+      "passed": false,
+      "pending": true,
+      "text": "形体待复核",
+      "visualPending": true
+    },
+    "fusion": {
+      "passed": false,
+      "pending": true,
+      "text": "87 · 版本待复审"
+    },
+    "hybrid": {
+      "passed": false,
+      "pending": true,
+      "text": "待独立多件评审"
+    },
+    "reference": {
+      "passed": false,
+      "pending": true,
+      "text": "92.75 · 版本待复审"
+    },
+    "singleFusionDiagnostic": {
+      "passed": false,
+      "pending": true,
+      "text": "87 · 版本待复审"
+    }
+  },
+  "seed": "closeout-r25-glm-full-oh4raukp",
+  "selectedAiSlots": [
+    "hair"
+  ],
+  "selectedItemIDs": {
+    "hair": "glm-hair"
+  },
+  "slot": "hair",
+  "surface": "light",
+  "thresholds": {
+    "body": 98,
+    "fusion": 98,
+    "reference": 90
+  },
+  "unavailableSelectedSlots": [],
+  "visibilityFollowUp": {
+    "originalDrawsUnchanged": true,
+    "requestedHiddenNativeDecor": [],
+    "substitutesForUnhiddenReview": false
+  },
+  "capture": {
+    "browser": "Codex in-app browser",
+    "url": "http://127.0.0.1:5173/?review=1&character=glm&slot=hair&aiSlots=hair&seed=closeout-r25-glm-full-oh4raukp&arrangement=0&mode=full&scale=1&surface=light",
+    "renderedAtUtc": "2026-11-10T09:38:38.645Z",
+    "viewport": {
+      "height": 536,
+      "scrollY": 642,
+      "width": 511
+    },
+    "failedImages": [],
+    "fullFigures": [
+      {
+        "bottom": 350.5625,
+        "height": 226,
+        "index": 0,
+        "left": 28,
+        "right": 168,
+        "top": 124.5625,
+        "width": 140
+      },
+      {
+        "bottom": 350.5625,
+        "height": 226,
+        "index": 1,
+        "left": 180,
+        "right": 320,
+        "top": 124.5625,
+        "width": 140
+      },
+      {
+        "bottom": 350.5625,
+        "height": 226,
+        "index": 2,
+        "left": 332,
+        "right": 472,
+        "top": 124.5625,
+        "width": 140
+      }
+    ],
+    "fullSegments": [
+      {
+        "file": "full.png",
+        "sha256": "973a877ba277f40024ac23e878b457ff46f9286c3ac99bfbb0aca66d7f307c30",
+        "viewport": {
+          "height": 536,
+          "scrollY": 642,
+          "width": 511
+        },
+        "visible": [],
+        "images": [
+          {
+            "bottom": 350.5625,
+            "height": 226,
+            "index": 0,
+            "left": 28,
+            "right": 168,
+            "top": 124.5625,
+            "width": 140
+          },
+          {
+            "bottom": 350.5625,
+            "height": 226,
+            "index": 1,
+            "left": 180,
+            "right": 320,
+            "top": 124.5625,
+            "width": 140
+          },
+          {
+            "bottom": 350.5625,
+            "height": 226,
+            "index": 2,
+            "left": 332,
+            "right": 472,
+            "top": 124.5625,
+            "width": 140
+          }
+        ]
+      }
+    ]
+  }
+}

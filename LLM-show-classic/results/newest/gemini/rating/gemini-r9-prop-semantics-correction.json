@@ -1,0 +1,1821 @@
+{
+  "schema": "classic-independent-prop-semantics-correction-v1",
+  "reviewer": "classic_body_judge",
+  "character": "gemini",
+  "round": "human-followup-20261110-gemini-r9-prop-semantics-correction",
+  "date": "2026-11-10",
+  "nativeBaselineScore": 100,
+  "supersedesReasonAssignment": {
+    "sourceReport": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/gemini-r9-first-review.json",
+    "scope": "仅body3/upper2接触维度重新独立目视评分并修正与装饰握持有关的事实归因；其余五维原数值、全套还原、head2/身体覆盖不变。",
+    "notArtworkImprovement": true,
+    "reason": "首轮把立式话筒/竖直吉他和部分装饰误作必须握持，归因错误；逐原件及同seed上下行实际复核。"
+  },
+  "reviewedBodyHash": "94db199a8d055bbbb06a3e24d638cb749ee10874b471215c9e6344b46437138d",
+  "reviewedCompleteHash": "aadc3b891da253e9b4e91572751a49e8ad2052e0bc245640cc7a162334040804",
+  "sourceSemantics": [
+    {
+      "id": "native-prop-3",
+      "name": "复古美式邮差包",
+      "originalSource": "qq-show-classic/other-accessories/复古美式邮差包.gif",
+      "sourceRawHash": "902de052ca38214a63b2c39f22c1c450e9762ed8fa846de16ef7e855dfeb2ac2",
+      "convertedPartHash": "ce002d029f2418591661d3c0a1d5be66ff3a0ec71541d349429a5253443ac85c",
+      "actualSourceViewedViaNearestFrame0": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/native-prop-3-semantic-4x.png",
+      "semantics": "有跨肩长带的斜挎邮差包；不需要手握维持。"
+    },
+    {
+      "id": "native-prop-7",
+      "name": "粉色挂坠腰链",
+      "originalSource": "qq-show-classic/other-accessories/粉色挂坠腰链.gif",
+      "sourceRawHash": "5a6c16f9f240691f7caf5a0b31f3efaef01006ea1b5f77351c6d7d5b1a510744",
+      "convertedPartHash": "86fe054f482e657841c900bf63c7a67e37d7816dd2ab70f4dc7f066b5cdd5f46",
+      "actualSourceViewedViaNearestFrame0": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/native-prop-7-semantic-4x.png",
+      "semantics": "腰链；不强求手握。"
+    },
+    {
+      "id": "native-prop-10",
+      "name": "麦克风",
+      "originalSource": "qq-show-classic/other-accessories/麦克风.gif",
+      "sourceRawHash": "aea3380de4db9d61a6e127ad5debd672f961aa398eaa35d643f02d78402d18a7",
+      "convertedPartHash": "2dec62799870efaaa4e4269c504d77dfbe87c02d22d75e467b0feee1b3b3da21",
+      "actualSourceViewedViaNearestFrame0": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/native-prop-10-semantic-4x.png",
+      "semantics": "有三脚地架的立式麦克风；不强求手握。"
+    },
+    {
+      "id": "native-prop-14",
+      "name": "樱桃胸针",
+      "originalSource": "qq-show-classic/other-accessories/樱桃胸针.gif",
+      "sourceRawHash": "2126d68ba452916fb8531dceaf90624273454a7ea1cf65e2c3379ea157821028",
+      "convertedPartHash": "8690f9340c9042ae9164b74c6dde4466305c75832d6705325a5beb421ca42ba2",
+      "actualSourceViewedViaNearestFrame0": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/native-prop-14-semantic-4x.png",
+      "semantics": "樱桃胸针；不强求手握。"
+    },
+    {
+      "id": "native-prop-16",
+      "name": "红白电吉他",
+      "originalSource": "qq-show-classic/other-accessories/红白电吉他.gif",
+      "sourceRawHash": "b5bbf8ac7ede671651ed99b95479153b84eb2808528e552c8741e35435ad297d",
+      "convertedPartHash": "d5d017648eba2362f79c33b445638734829c622106b8f79139a9be7d8d16b606",
+      "actualSourceViewedViaNearestFrame0": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/native-prop-16-semantic-4x.png",
+      "semantics": "竖直放于下身旁的独立红白电吉他图件；仅不握不能认定AI错。"
+    },
+    {
+      "id": "native-prop-18",
+      "name": "柳丁皮带",
+      "originalSource": "qq-show-classic/other-accessories/柳丁皮带.gif",
+      "sourceRawHash": "fd06bd992b73e7775ad66bf6d666c75e0ee54e42203c8a9cbe155ec4964a33d5",
+      "convertedPartHash": "df151a69832bfb395ccd0101e139a00798d2905cce443e5789052a98ddba9d9e",
+      "actualSourceViewedViaNearestFrame0": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/native-prop-18-semantic-4x.png",
+      "semantics": "腰部皮带；不强求手握。"
+    }
+  ],
+  "hybrid": {
+    "body3": {
+      "reviews": [
+        {
+          "reviewer": "classic_body_judge",
+          "score": 79.55,
+          "weightedRaw": 79.55,
+          "threshold": 98,
+          "passed": false,
+          "pending": false,
+          "selectedAiSlots": [
+            "legs",
+            "bottom",
+            "top"
+          ],
+          "selectedItemIDs": {
+            "bottom": "gemini-bottom",
+            "legs": "gemini-legs",
+            "top": "gemini-top"
+          },
+          "reviewedPartHashes": {
+            "bottom": "793cc065d66478fc7229fc4978771b52a30dfdfb4af75320e6e366493f460e78",
+            "legs": "c84d7e721d6f21bd2d8316f65201498eaa69a11c68b0472604e6c57eee4fb02d",
+            "top": "ce9dfa5b60c71c177f7996c88ee858eda1c879225e3d56d771150aa226b7e96c"
+          },
+          "reviewedGeneratedInterfaceHashes": {},
+          "reviewedCompleteHash": "aadc3b891da253e9b4e91572751a49e8ad2052e0bc245640cc7a162334040804",
+          "bodyHash": "94db199a8d055bbbb06a3e24d638cb749ee10874b471215c9e6344b46437138d",
+          "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+          "seed": "human-20261110-gemini-body3-3i36wywp",
+          "contextSignature": "native-context-v4-ac4d24ef",
+          "draws": {
+            "aura": [
+              "native-aura-17",
+              "native-aura-1",
+              "native-aura-20",
+              "native-aura-5",
+              "native-aura-10"
+            ],
+            "back": [
+              "native-back-5",
+              "native-back-11",
+              "native-back-3",
+              "native-back-2",
+              "native-back-12"
+            ],
+            "background": [
+              "native-background-17",
+              "native-background-15",
+              "native-background-8",
+              "native-background-14",
+              "native-background-10"
+            ],
+            "bottom": [
+              "native-bottom-12",
+              "native-bottom-14",
+              "native-bottom-3",
+              "native-bottom-1",
+              "native-bottom-6"
+            ],
+            "effect": [
+              "native-effect-12",
+              "native-effect-3",
+              "native-effect-5",
+              "native-effect-4",
+              "native-effect-11"
+            ],
+            "face": [
+              "native-face-11",
+              "native-face-5",
+              "native-face-13",
+              "native-face-17",
+              "native-face-20"
+            ],
+            "hair": [
+              "native-hair-14",
+              "native-hair-15",
+              "native-hair-3",
+              "native-hair-5",
+              "native-hair-7"
+            ],
+            "headwear": [
+              "native-headwear-20",
+              "native-headwear-15",
+              "native-headwear-7",
+              "native-headwear-8",
+              "native-headwear-5"
+            ],
+            "legs": [
+              "native-legs-12",
+              "native-legs-14",
+              "native-legs-3",
+              "native-legs-1",
+              "native-legs-6"
+            ],
+            "prop": [
+              "native-prop-3",
+              "native-prop-18",
+              "native-prop-16",
+              "native-prop-7",
+              "native-prop-14"
+            ],
+            "top": [
+              "native-top-8",
+              "native-top-11",
+              "native-top-20",
+              "native-top-7",
+              "native-top-14"
+            ]
+          },
+          "contextScores": [
+            {
+              "caseId": "gemini-body3-s38430f61-a0-f0",
+              "fixtureIndex": 0,
+              "score": 80.1,
+              "weightedRaw": 80.1,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 81,
+                  "weight": 20,
+                  "reason": "保留首轮此维数值：例1月夜：邮差包的跨肩带在原生与AI行均存在，不要求新手抓包。未见因点颊手而新增包断接；仍见白袖内片/外袖层的深度与腕口转折不充分。原五维袖板/衣料反例保留。（道具不握不再作为此维扣分理由。）"
+                },
+                "proportionConnection": {
+                  "score": 78,
+                  "weight": 25,
+                  "reason": "保留首轮此维数值：例1月夜：邮差包的跨肩带在原生与AI行均存在，不要求新手抓包。未见因点颊手而新增包断接；仍见白袖内片/外袖层的深度与腕口转折不充分。原五维袖板/衣料反例保留。（道具不握不再作为此维扣分理由。）"
+                },
+                "materialColor": {
+                  "score": 74,
+                  "weight": 15,
+                  "reason": "保留首轮此维数值：例1月夜：邮差包的跨肩带在原生与AI行均存在，不要求新手抓包。未见因点颊手而新增包断接；仍见白袖内片/外袖层的深度与腕口转折不充分。原五维袖板/衣料反例保留。（道具不握不再作为此维扣分理由。）"
+                },
+                "blingeePixel": {
+                  "score": 78,
+                  "weight": 20,
+                  "reason": "保留首轮此维数值：例1月夜：邮差包的跨肩带在原生与AI行均存在，不要求新手抓包。未见因点颊手而新增包断接；仍见白袖内片/外袖层的深度与腕口转折不充分。原五维袖板/衣料反例保留。（道具不握不再作为此维扣分理由。）"
+                },
+                "occlusionContact": {
+                  "score": 88,
+                  "weight": 15,
+                  "reason": "例1月夜：邮差包的跨肩带在原生与AI行均存在，不要求新手抓包。未见因点颊手而新增包断接；仍见白袖内片/外袖层的深度与腕口转折不充分。原五维袖板/衣料反例保留。"
+                },
+                "canvasReadability": {
+                  "score": 90,
+                  "weight": 5,
+                  "reason": "保留首轮此维数值：例1月夜：邮差包的跨肩带在原生与AI行均存在，不要求新手抓包。未见因点颊手而新增包断接；仍见白袖内片/外袖层的深度与腕口转折不充分。原五维袖板/衣料反例保留。（道具不握不再作为此维扣分理由。）"
+                }
+              },
+              "reason": "例1月夜：邮差包的跨肩带在原生与AI行均存在，不要求新手抓包。未见因点颊手而新增包断接；仍见白袖内片/外袖层的深度与腕口转折不充分。原五维袖板/衣料反例保留。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-17",
+                "back": "native-back-5",
+                "background": "native-background-17",
+                "bottom": "native-bottom-12",
+                "effect": "native-effect-12",
+                "face": "native-face-11",
+                "hair": "native-hair-14",
+                "headwear": "native-headwear-20",
+                "legs": "native-legs-12",
+                "prop": "native-prop-3",
+                "top": "native-top-8"
+              },
+              "aiSelection": {
+                "aura": "native-aura-17",
+                "back": "native-back-5",
+                "background": "native-background-17",
+                "bottom": "gemini-bottom",
+                "effect": "native-effect-12",
+                "face": "native-face-11",
+                "hair": "native-hair-14",
+                "headwear": "native-headwear-20",
+                "legs": "gemini-legs",
+                "prop": "native-prop-3",
+                "top": "gemini-top"
+              },
+              "selectedAiSlots": [
+                "legs",
+                "bottom",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "a3b16218ae6f2be9886d80df9f5f69dbb4ffe165e40e42d4c675b74c1f02097c",
+                  "itemId": "gemini-legs",
+                  "key": "gemini-legs-0",
+                  "name": "白堆袜星蓝厚底鞋",
+                  "reviewFamilyHash": "c84d7e721d6f21bd2d8316f65201498eaa69a11c68b0472604e6c57eee4fb02d",
+                  "slot": "legs",
+                  "src": "/assets-classic/gemini/remake/legs.png",
+                  "svg": "/assets-classic/gemini/remake/legs.svg",
+                  "variantRole": "own-pose",
+                  "z": 30
+                },
+                {
+                  "artworkHash": "1f6be42017c4a2362201338725d0823b3a6130a75d2a5d6846c6c54338ce3ab0",
+                  "itemId": "gemini-bottom",
+                  "key": "gemini-bottom-0",
+                  "name": "星链燕尾不对称短裙",
+                  "reviewFamilyHash": "793cc065d66478fc7229fc4978771b52a30dfdfb4af75320e6e366493f460e78",
+                  "slot": "bottom",
+                  "src": "/assets-classic/gemini/remake/bottom.png",
+                  "svg": "/assets-classic/gemini/remake/bottom.svg",
+                  "variantRole": "own-pose",
+                  "z": 40
+                },
+                {
+                  "artworkHash": "8fae4fa5fd996954679c67691b442c43b33e5d4356f5b2954cb8eee36f7ff36a",
+                  "design": "/assets-classic/gemini/remake/top-body-design.svg",
+                  "itemId": "gemini-top",
+                  "key": "gemini-top-0",
+                  "name": "星纹露肩垂袖短衣",
+                  "reviewFamilyHash": "ce9dfa5b60c71c177f7996c88ee858eda1c879225e3d56d771150aa226b7e96c",
+                  "slot": "top",
+                  "src": "/assets-classic/gemini/remake/top-body.png",
+                  "svg": "/assets-classic/gemini/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "d6a8656df283e7bb53067a7e36917bc7291cb443df78dc6e11023bd20019dcf0",
+                  "design": "/assets-classic/gemini/remake/top-arms-design.svg",
+                  "itemId": "gemini-top",
+                  "key": "gemini-top-1",
+                  "name": "星纹露肩垂袖短衣",
+                  "reviewFamilyHash": "ce9dfa5b60c71c177f7996c88ee858eda1c879225e3d56d771150aa226b7e96c",
+                  "slot": "top",
+                  "src": "/assets-classic/gemini/remake/top-arms.png",
+                  "svg": "/assets-classic/gemini/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gemini/body3-evidence.json",
+              "recommendations": [
+                "继续修袖内外层/腕掌体面、裙层/衣料；不为站架/竖吉他或腰饰新增强迫抓握动作。"
+              ],
+              "semanticCorrection": {
+                "previousContactScore": 66,
+                "previousReason": "例1月夜雪地：R9肩膝轮廓比旧body连续，但袖内白三角像独立板，外袖金边/暗布未围绕肘腕转面，原生斜包与新手无可读接触。",
+                "scope": "Only contact dimension rejudged; five non-contact scores remain exactly unchanged."
+              }
+            },
+            {
+              "caseId": "gemini-body3-s38430f61-a0-f1",
+              "fixtureIndex": 1,
+              "score": 79.9,
+              "weightedRaw": 79.9,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 81,
+                  "weight": 20,
+                  "reason": "保留首轮此维数值：例2星光城市：原生皮带按腰饰看，非待握道具。腕掌与袖口能连接，内衬/外袖折层深度仍简单；不因装饰未握扣分。原胸星白片、裙扇片的材料/结构分保持。（道具不握不再作为此维扣分理由。）"
+                },
+                "proportionConnection": {
+                  "score": 78,
+                  "weight": 25,
+                  "reason": "保留首轮此维数值：例2星光城市：原生皮带按腰饰看，非待握道具。腕掌与袖口能连接，内衬/外袖折层深度仍简单；不因装饰未握扣分。原胸星白片、裙扇片的材料/结构分保持。（道具不握不再作为此维扣分理由。）"
+                },
+                "materialColor": {
+                  "score": 74,
+                  "weight": 15,
+                  "reason": "保留首轮此维数值：例2星光城市：原生皮带按腰饰看，非待握道具。腕掌与袖口能连接，内衬/外袖折层深度仍简单；不因装饰未握扣分。原胸星白片、裙扇片的材料/结构分保持。（道具不握不再作为此维扣分理由。）"
+                },
+                "blingeePixel": {
+                  "score": 78,
+                  "weight": 20,
+                  "reason": "保留首轮此维数值：例2星光城市：原生皮带按腰饰看，非待握道具。腕掌与袖口能连接，内衬/外袖折层深度仍简单；不因装饰未握扣分。原胸星白片、裙扇片的材料/结构分保持。（道具不握不再作为此维扣分理由。）"
+                },
+                "occlusionContact": {
+                  "score": 87,
+                  "weight": 15,
+                  "reason": "例2星光城市：原生皮带按腰饰看，非待握道具。腕掌与袖口能连接，内衬/外袖折层深度仍简单；不因装饰未握扣分。原胸星白片、裙扇片的材料/结构分保持。"
+                },
+                "canvasReadability": {
+                  "score": 89,
+                  "weight": 5,
+                  "reason": "保留首轮此维数值：例2星光城市：原生皮带按腰饰看，非待握道具。腕掌与袖口能连接，内衬/外袖折层深度仍简单；不因装饰未握扣分。原胸星白片、裙扇片的材料/结构分保持。（道具不握不再作为此维扣分理由。）"
+                }
+              },
+              "reason": "例2星光城市：原生皮带按腰饰看，非待握道具。腕掌与袖口能连接，内衬/外袖折层深度仍简单；不因装饰未握扣分。原胸星白片、裙扇片的材料/结构分保持。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-1",
+                "back": "native-back-11",
+                "background": "native-background-15",
+                "bottom": "native-bottom-14",
+                "effect": "native-effect-3",
+                "face": "native-face-5",
+                "hair": "native-hair-15",
+                "headwear": "native-headwear-15",
+                "legs": "native-legs-14",
+                "prop": "native-prop-18",
+                "top": "native-top-11"
+              },
+              "aiSelection": {
+                "aura": "native-aura-1",
+                "back": "native-back-11",
+                "background": "native-background-15",
+                "bottom": "gemini-bottom",
+                "effect": "native-effect-3",
+                "face": "native-face-5",
+                "hair": "native-hair-15",
+                "headwear": "native-headwear-15",
+                "legs": "gemini-legs",
+                "prop": "native-prop-18",
+                "top": "gemini-top"
+              },
+              "selectedAiSlots": [
+                "legs",
+                "bottom",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "a3b16218ae6f2be9886d80df9f5f69dbb4ffe165e40e42d4c675b74c1f02097c",
+                  "itemId": "gemini-legs",
+                  "key": "gemini-legs-0",
+                  "name": "白堆袜星蓝厚底鞋",
+                  "reviewFamilyHash": "c84d7e721d6f21bd2d8316f65201498eaa69a11c68b0472604e6c57eee4fb02d",
+                  "slot": "legs",
+                  "src": "/assets-classic/gemini/remake/legs.png",
+                  "svg": "/assets-classic/gemini/remake/legs.svg",
+                  "variantRole": "own-pose",
+                  "z": 30
+                },
+                {
+                  "artworkHash": "1f6be42017c4a2362201338725d0823b3a6130a75d2a5d6846c6c54338ce3ab0",
+                  "itemId": "gemini-bottom",
+                  "key": "gemini-bottom-0",
+                  "name": "星链燕尾不对称短裙",
+                  "reviewFamilyHash": "793cc065d66478fc7229fc4978771b52a30dfdfb4af75320e6e366493f460e78",
+                  "slot": "bottom",
+                  "src": "/assets-classic/gemini/remake/bottom.png",
+                  "svg": "/assets-classic/gemini/remake/bottom.svg",
+                  "variantRole": "own-pose",
+                  "z": 40
+                },
+                {
+                  "artworkHash": "8fae4fa5fd996954679c67691b442c43b33e5d4356f5b2954cb8eee36f7ff36a",
+                  "design": "/assets-classic/gemini/remake/top-body-design.svg",
+                  "itemId": "gemini-top",
+                  "key": "gemini-top-0",
+                  "name": "星纹露肩垂袖短衣",
+                  "reviewFamilyHash": "ce9dfa5b60c71c177f7996c88ee858eda1c879225e3d56d771150aa226b7e96c",
+                  "slot": "top",
+                  "src": "/assets-classic/gemini/remake/top-body.png",
+                  "svg": "/assets-classic/gemini/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "d6a8656df283e7bb53067a7e36917bc7291cb443df78dc6e11023bd20019dcf0",
+                  "design": "/assets-classic/gemini/remake/top-arms-design.svg",
+                  "itemId": "gemini-top",
+                  "key": "gemini-top-1",
+                  "name": "星纹露肩垂袖短衣",
+                  "reviewFamilyHash": "ce9dfa5b60c71c177f7996c88ee858eda1c879225e3d56d771150aa226b7e96c",
+                  "slot": "top",
+                  "src": "/assets-classic/gemini/remake/top-arms.png",
+                  "svg": "/assets-classic/gemini/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gemini/body3-evidence.json",
+              "recommendations": [
+                "继续修袖内外层/腕掌体面、裙层/衣料；不为站架/竖吉他或腰饰新增强迫抓握动作。"
+              ],
+              "semanticCorrection": {
+                "previousContactScore": 67,
+                "previousReason": "例2星光城市：短上衣胸前星/白片和胸廓贴合弱，短裙白裥是硬扇片；膝腿承重与衣摆层级没有互相响应。",
+                "scope": "Only contact dimension rejudged; five non-contact scores remain exactly unchanged."
+              }
+            },
+            {
+              "caseId": "gemini-body3-s38430f61-a0-f2",
+              "fixtureIndex": 2,
+              "score": 79.55,
+              "weightedRaw": 79.55,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 80,
+                  "weight": 20,
+                  "reason": "保留首轮此维数值：例3气球吉他：源件是竖直下身旁独立吉他；原生与AI行都不握。新裙/腿替换后未见需要强迫新手去握的断轴；其与左袖的遮挡可读，袖内层到腕口深度仍简化。撤回“接触失败明确”。（道具不握不再作为此维扣分理由。）"
+                },
+                "proportionConnection": {
+                  "score": 77,
+                  "weight": 25,
+                  "reason": "保留首轮此维数值：例3气球吉他：源件是竖直下身旁独立吉他；原生与AI行都不握。新裙/腿替换后未见需要强迫新手去握的断轴；其与左袖的遮挡可读，袖内层到腕口深度仍简化。撤回“接触失败明确”。（道具不握不再作为此维扣分理由。）"
+                },
+                "materialColor": {
+                  "score": 73,
+                  "weight": 15,
+                  "reason": "保留首轮此维数值：例3气球吉他：源件是竖直下身旁独立吉他；原生与AI行都不握。新裙/腿替换后未见需要强迫新手去握的断轴；其与左袖的遮挡可读，袖内层到腕口深度仍简化。撤回“接触失败明确”。（道具不握不再作为此维扣分理由。）"
+                },
+                "blingeePixel": {
+                  "score": 77,
+                  "weight": 20,
+                  "reason": "保留首轮此维数值：例3气球吉他：源件是竖直下身旁独立吉他；原生与AI行都不握。新裙/腿替换后未见需要强迫新手去握的断轴；其与左袖的遮挡可读，袖内层到腕口深度仍简化。撤回“接触失败明确”。（道具不握不再作为此维扣分理由。）"
+                },
+                "occlusionContact": {
+                  "score": 90,
+                  "weight": 15,
+                  "reason": "例3气球吉他：源件是竖直下身旁独立吉他；原生与AI行都不握。新裙/腿替换后未见需要强迫新手去握的断轴；其与左袖的遮挡可读，袖内层到腕口深度仍简化。撤回“接触失败明确”。"
+                },
+                "canvasReadability": {
+                  "score": 89,
+                  "weight": 5,
+                  "reason": "保留首轮此维数值：例3气球吉他：源件是竖直下身旁独立吉他；原生与AI行都不握。新裙/腿替换后未见需要强迫新手去握的断轴；其与左袖的遮挡可读，袖内层到腕口深度仍简化。撤回“接触失败明确”。（道具不握不再作为此维扣分理由。）"
+                }
+              },
+              "reason": "例3气球吉他：源件是竖直下身旁独立吉他；原生与AI行都不握。新裙/腿替换后未见需要强迫新手去握的断轴；其与左袖的遮挡可读，袖内层到腕口深度仍简化。撤回“接触失败明确”。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-20",
+                "back": "native-back-3",
+                "background": "native-background-8",
+                "bottom": "native-bottom-3",
+                "effect": "native-effect-5",
+                "face": "native-face-13",
+                "hair": "native-hair-3",
+                "headwear": "native-headwear-7",
+                "legs": "native-legs-3",
+                "prop": "native-prop-16",
+                "top": "native-top-20"
+              },
+              "aiSelection": {
+                "aura": "native-aura-20",
+                "back": "native-back-3",
+                "background": "native-background-8",
+                "bottom": "gemini-bottom",
+                "effect": "native-effect-5",
+                "face": "native-face-13",
+                "hair": "native-hair-3",
+                "headwear": "native-headwear-7",
+                "legs": "gemini-legs",
+                "prop": "native-prop-16",
+                "top": "gemini-top"
+              },
+              "selectedAiSlots": [
+                "legs",
+                "bottom",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "a3b16218ae6f2be9886d80df9f5f69dbb4ffe165e40e42d4c675b74c1f02097c",
+                  "itemId": "gemini-legs",
+                  "key": "gemini-legs-0",
+                  "name": "白堆袜星蓝厚底鞋",
+                  "reviewFamilyHash": "c84d7e721d6f21bd2d8316f65201498eaa69a11c68b0472604e6c57eee4fb02d",
+                  "slot": "legs",
+                  "src": "/assets-classic/gemini/remake/legs.png",
+                  "svg": "/assets-classic/gemini/remake/legs.svg",
+                  "variantRole": "own-pose",
+                  "z": 30
+                },
+                {
+                  "artworkHash": "1f6be42017c4a2362201338725d0823b3a6130a75d2a5d6846c6c54338ce3ab0",
+                  "itemId": "gemini-bottom",
+                  "key": "gemini-bottom-0",
+                  "name": "星链燕尾不对称短裙",
+                  "reviewFamilyHash": "793cc065d66478fc7229fc4978771b52a30dfdfb4af75320e6e366493f460e78",
+                  "slot": "bottom",
+                  "src": "/assets-classic/gemini/remake/bottom.png",
+                  "svg": "/assets-classic/gemini/remake/bottom.svg",
+                  "variantRole": "own-pose",
+                  "z": 40
+                },
+                {
+                  "artworkHash": "8fae4fa5fd996954679c67691b442c43b33e5d4356f5b2954cb8eee36f7ff36a",
+                  "design": "/assets-classic/gemini/remake/top-body-design.svg",
+                  "itemId": "gemini-top",
+                  "key": "gemini-top-0",
+                  "name": "星纹露肩垂袖短衣",
+                  "reviewFamilyHash": "ce9dfa5b60c71c177f7996c88ee858eda1c879225e3d56d771150aa226b7e96c",
+                  "slot": "top",
+                  "src": "/assets-classic/gemini/remake/top-body.png",
+                  "svg": "/assets-classic/gemini/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "d6a8656df283e7bb53067a7e36917bc7291cb443df78dc6e11023bd20019dcf0",
+                  "design": "/assets-classic/gemini/remake/top-arms-design.svg",
+                  "itemId": "gemini-top",
+                  "key": "gemini-top-1",
+                  "name": "星纹露肩垂袖短衣",
+                  "reviewFamilyHash": "ce9dfa5b60c71c177f7996c88ee858eda1c879225e3d56d771150aa226b7e96c",
+                  "slot": "top",
+                  "src": "/assets-classic/gemini/remake/top-arms.png",
+                  "svg": "/assets-classic/gemini/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gemini/body3-evidence.json",
+              "recommendations": [
+                "继续修袖内外层/腕掌体面、裙层/衣料；不为站架/竖吉他或腰饰新增强迫抓握动作。"
+              ],
+              "semanticCorrection": {
+                "previousContactScore": 62,
+                "previousReason": "例3气球吉他：新点颊手/外指手没有握住原生吉他，接触失败明确；袖折和短裙分层仍像平的拼片。",
+                "scope": "Only contact dimension rejudged; five non-contact scores remain exactly unchanged."
+              }
+            },
+            {
+              "caseId": "gemini-body3-s38430f61-a0-f3",
+              "fixtureIndex": 3,
+              "score": 80,
+              "weightedRaw": 80,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 81,
+                  "weight": 20,
+                  "reason": "保留首轮此维数值：例4粉心气球：原生腰链不须手握，心饰遮住局部；可见袖口/掌仍接合，层内厚度与前后面欠细。原可见袖板、裙根/露腰衣口的非接触维度分不变。（道具不握不再作为此维扣分理由。）"
+                },
+                "proportionConnection": {
+                  "score": 78,
+                  "weight": 25,
+                  "reason": "保留首轮此维数值：例4粉心气球：原生腰链不须手握，心饰遮住局部；可见袖口/掌仍接合，层内厚度与前后面欠细。原可见袖板、裙根/露腰衣口的非接触维度分不变。（道具不握不再作为此维扣分理由。）"
+                },
+                "materialColor": {
+                  "score": 74,
+                  "weight": 15,
+                  "reason": "保留首轮此维数值：例4粉心气球：原生腰链不须手握，心饰遮住局部；可见袖口/掌仍接合，层内厚度与前后面欠细。原可见袖板、裙根/露腰衣口的非接触维度分不变。（道具不握不再作为此维扣分理由。）"
+                },
+                "blingeePixel": {
+                  "score": 78,
+                  "weight": 20,
+                  "reason": "保留首轮此维数值：例4粉心气球：原生腰链不须手握，心饰遮住局部；可见袖口/掌仍接合，层内厚度与前后面欠细。原可见袖板、裙根/露腰衣口的非接触维度分不变。（道具不握不再作为此维扣分理由。）"
+                },
+                "occlusionContact": {
+                  "score": 88,
+                  "weight": 15,
+                  "reason": "例4粉心气球：原生腰链不须手握，心饰遮住局部；可见袖口/掌仍接合，层内厚度与前后面欠细。原可见袖板、裙根/露腰衣口的非接触维度分不变。"
+                },
+                "canvasReadability": {
+                  "score": 88,
+                  "weight": 5,
+                  "reason": "保留首轮此维数值：例4粉心气球：原生腰链不须手握，心饰遮住局部；可见袖口/掌仍接合，层内厚度与前后面欠细。原可见袖板、裙根/露腰衣口的非接触维度分不变。（道具不握不再作为此维扣分理由。）"
+                }
+              },
+              "reason": "例4粉心气球：原生腰链不须手握，心饰遮住局部；可见袖口/掌仍接合，层内厚度与前后面欠细。原可见袖板、裙根/露腰衣口的非接触维度分不变。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-5",
+                "back": "native-back-2",
+                "background": "native-background-14",
+                "bottom": "native-bottom-1",
+                "effect": "native-effect-4",
+                "face": "native-face-17",
+                "hair": "native-hair-5",
+                "headwear": "native-headwear-8",
+                "legs": "native-legs-1",
+                "prop": "native-prop-7",
+                "top": "native-top-7"
+              },
+              "aiSelection": {
+                "aura": "native-aura-5",
+                "back": "native-back-2",
+                "background": "native-background-14",
+                "bottom": "gemini-bottom",
+                "effect": "native-effect-4",
+                "face": "native-face-17",
+                "hair": "native-hair-5",
+                "headwear": "native-headwear-8",
+                "legs": "gemini-legs",
+                "prop": "native-prop-7",
+                "top": "gemini-top"
+              },
+              "selectedAiSlots": [
+                "legs",
+                "bottom",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "a3b16218ae6f2be9886d80df9f5f69dbb4ffe165e40e42d4c675b74c1f02097c",
+                  "itemId": "gemini-legs",
+                  "key": "gemini-legs-0",
+                  "name": "白堆袜星蓝厚底鞋",
+                  "reviewFamilyHash": "c84d7e721d6f21bd2d8316f65201498eaa69a11c68b0472604e6c57eee4fb02d",
+                  "slot": "legs",
+                  "src": "/assets-classic/gemini/remake/legs.png",
+                  "svg": "/assets-classic/gemini/remake/legs.svg",
+                  "variantRole": "own-pose",
+                  "z": 30
+                },
+                {
+                  "artworkHash": "1f6be42017c4a2362201338725d0823b3a6130a75d2a5d6846c6c54338ce3ab0",
+                  "itemId": "gemini-bottom",
+                  "key": "gemini-bottom-0",
+                  "name": "星链燕尾不对称短裙",
+                  "reviewFamilyHash": "793cc065d66478fc7229fc4978771b52a30dfdfb4af75320e6e366493f460e78",
+                  "slot": "bottom",
+                  "src": "/assets-classic/gemini/remake/bottom.png",
+                  "svg": "/assets-classic/gemini/remake/bottom.svg",
+                  "variantRole": "own-pose",
+                  "z": 40
+                },
+                {
+                  "artworkHash": "8fae4fa5fd996954679c67691b442c43b33e5d4356f5b2954cb8eee36f7ff36a",
+                  "design": "/assets-classic/gemini/remake/top-body-design.svg",
+                  "itemId": "gemini-top",
+                  "key": "gemini-top-0",
+                  "name": "星纹露肩垂袖短衣",
+                  "reviewFamilyHash": "ce9dfa5b60c71c177f7996c88ee858eda1c879225e3d56d771150aa226b7e96c",
+                  "slot": "top",
+                  "src": "/assets-classic/gemini/remake/top-body.png",
+                  "svg": "/assets-classic/gemini/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "d6a8656df283e7bb53067a7e36917bc7291cb443df78dc6e11023bd20019dcf0",
+                  "design": "/assets-classic/gemini/remake/top-arms-design.svg",
+                  "itemId": "gemini-top",
+                  "key": "gemini-top-1",
+                  "name": "星纹露肩垂袖短衣",
+                  "reviewFamilyHash": "ce9dfa5b60c71c177f7996c88ee858eda1c879225e3d56d771150aa226b7e96c",
+                  "slot": "top",
+                  "src": "/assets-classic/gemini/remake/top-arms.png",
+                  "svg": "/assets-classic/gemini/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gemini/body3-evidence.json",
+              "recommendations": [
+                "继续修袖内外层/腕掌体面、裙层/衣料；不为站架/竖吉他或腰饰新增强迫抓握动作。"
+              ],
+              "semanticCorrection": {
+                "previousContactScore": 67,
+                "previousReason": "例4粉心气球：原生心饰遮部分胸/腰，可见袖布和裙根仍是板状翻层，皮肤与露腰衣口关系过直；不能以心饰遮挡消除问题。",
+                "scope": "Only contact dimension rejudged; five non-contact scores remain exactly unchanged."
+              }
+            },
+            {
+              "caseId": "gemini-body3-s38430f61-a0-f4",
+              "fixtureIndex": 4,
+              "score": 80.35,
+              "weightedRaw": 80.35,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 81,
+                  "weight": 20,
+                  "reason": "保留首轮此维数值：例5粉房：源件为樱桃胸针，位于胸前而非手持物；点颊手不用抓胸针。未见新增断接，袖内外层/腕口深度仍欠自然；原袖板、裙褶的五维扣分保留。（道具不握不再作为此维扣分理由。）"
+                },
+                "proportionConnection": {
+                  "score": 78,
+                  "weight": 25,
+                  "reason": "保留首轮此维数值：例5粉房：源件为樱桃胸针，位于胸前而非手持物；点颊手不用抓胸针。未见新增断接，袖内外层/腕口深度仍欠自然；原袖板、裙褶的五维扣分保留。（道具不握不再作为此维扣分理由。）"
+                },
+                "materialColor": {
+                  "score": 74,
+                  "weight": 15,
+                  "reason": "保留首轮此维数值：例5粉房：源件为樱桃胸针，位于胸前而非手持物；点颊手不用抓胸针。未见新增断接，袖内外层/腕口深度仍欠自然；原袖板、裙褶的五维扣分保留。（道具不握不再作为此维扣分理由。）"
+                },
+                "blingeePixel": {
+                  "score": 78,
+                  "weight": 20,
+                  "reason": "保留首轮此维数值：例5粉房：源件为樱桃胸针，位于胸前而非手持物；点颊手不用抓胸针。未见新增断接，袖内外层/腕口深度仍欠自然；原袖板、裙褶的五维扣分保留。（道具不握不再作为此维扣分理由。）"
+                },
+                "occlusionContact": {
+                  "score": 90,
+                  "weight": 15,
+                  "reason": "例5粉房：源件为樱桃胸针，位于胸前而非手持物；点颊手不用抓胸针。未见新增断接，袖内外层/腕口深度仍欠自然；原袖板、裙褶的五维扣分保留。"
+                },
+                "canvasReadability": {
+                  "score": 89,
+                  "weight": 5,
+                  "reason": "保留首轮此维数值：例5粉房：源件为樱桃胸针，位于胸前而非手持物；点颊手不用抓胸针。未见新增断接，袖内外层/腕口深度仍欠自然；原袖板、裙褶的五维扣分保留。（道具不握不再作为此维扣分理由。）"
+                }
+              },
+              "reason": "例5粉房：源件为樱桃胸针，位于胸前而非手持物；点颊手不用抓胸针。未见新增断接，袖内外层/腕口深度仍欠自然；原袖板、裙褶的五维扣分保留。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-10",
+                "back": "native-back-12",
+                "background": "native-background-10",
+                "bottom": "native-bottom-6",
+                "effect": "native-effect-11",
+                "face": "native-face-20",
+                "hair": "native-hair-7",
+                "headwear": "native-headwear-5",
+                "legs": "native-legs-6",
+                "prop": "native-prop-14",
+                "top": "native-top-14"
+              },
+              "aiSelection": {
+                "aura": "native-aura-10",
+                "back": "native-back-12",
+                "background": "native-background-10",
+                "bottom": "gemini-bottom",
+                "effect": "native-effect-11",
+                "face": "native-face-20",
+                "hair": "native-hair-7",
+                "headwear": "native-headwear-5",
+                "legs": "gemini-legs",
+                "prop": "native-prop-14",
+                "top": "gemini-top"
+              },
+              "selectedAiSlots": [
+                "legs",
+                "bottom",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "a3b16218ae6f2be9886d80df9f5f69dbb4ffe165e40e42d4c675b74c1f02097c",
+                  "itemId": "gemini-legs",
+                  "key": "gemini-legs-0",
+                  "name": "白堆袜星蓝厚底鞋",
+                  "reviewFamilyHash": "c84d7e721d6f21bd2d8316f65201498eaa69a11c68b0472604e6c57eee4fb02d",
+                  "slot": "legs",
+                  "src": "/assets-classic/gemini/remake/legs.png",
+                  "svg": "/assets-classic/gemini/remake/legs.svg",
+                  "variantRole": "own-pose",
+                  "z": 30
+                },
+                {
+                  "artworkHash": "1f6be42017c4a2362201338725d0823b3a6130a75d2a5d6846c6c54338ce3ab0",
+                  "itemId": "gemini-bottom",
+                  "key": "gemini-bottom-0",
+                  "name": "星链燕尾不对称短裙",
+                  "reviewFamilyHash": "793cc065d66478fc7229fc4978771b52a30dfdfb4af75320e6e366493f460e78",
+                  "slot": "bottom",
+                  "src": "/assets-classic/gemini/remake/bottom.png",
+                  "svg": "/assets-classic/gemini/remake/bottom.svg",
+                  "variantRole": "own-pose",
+                  "z": 40
+                },
+                {
+                  "artworkHash": "8fae4fa5fd996954679c67691b442c43b33e5d4356f5b2954cb8eee36f7ff36a",
+                  "design": "/assets-classic/gemini/remake/top-body-design.svg",
+                  "itemId": "gemini-top",
+                  "key": "gemini-top-0",
+                  "name": "星纹露肩垂袖短衣",
+                  "reviewFamilyHash": "ce9dfa5b60c71c177f7996c88ee858eda1c879225e3d56d771150aa226b7e96c",
+                  "slot": "top",
+                  "src": "/assets-classic/gemini/remake/top-body.png",
+                  "svg": "/assets-classic/gemini/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "d6a8656df283e7bb53067a7e36917bc7291cb443df78dc6e11023bd20019dcf0",
+                  "design": "/assets-classic/gemini/remake/top-arms-design.svg",
+                  "itemId": "gemini-top",
+                  "key": "gemini-top-1",
+                  "name": "星纹露肩垂袖短衣",
+                  "reviewFamilyHash": "ce9dfa5b60c71c177f7996c88ee858eda1c879225e3d56d771150aa226b7e96c",
+                  "slot": "top",
+                  "src": "/assets-classic/gemini/remake/top-arms.png",
+                  "svg": "/assets-classic/gemini/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gemini/body3-evidence.json",
+              "recommendations": [
+                "继续修袖内外层/腕掌体面、裙层/衣料；不为站架/竖吉他或腰饰新增强迫抓握动作。"
+              ],
+              "semanticCorrection": {
+                "previousContactScore": 65,
+                "previousReason": "例5粉房：白袖内片/外袖边像互不相关三角板，裙褶未根据屈腿/胯的受力开合，原生持物和点颊掌的关系不成立。",
+                "scope": "Only contact dimension rejudged; five non-contact scores remain exactly unchanged."
+              }
+            }
+          ],
+          "reasons": [
+            "经源件+上下行重新审，原生装饰不握不是AI错误。",
+            "仅重评接触一维；材料/身体连接/像素等五维原值不改，组仍需返工。"
+          ],
+          "recommendations": [
+            "保留角色点颊/侧指主动作，改真实袖/掌接缝与衣料体积，不为非握持装饰变姿势。"
+          ],
+          "evidence": {
+            "reactEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gemini/body3-evidence.json",
+            "reactScreenshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gemini/body3.png",
+            "reactScreenshotSha256": "4f6737a48dcc56af9309689cc0e204d06a517afb3b2c070b3ffc8465212c5198",
+            "captureBrowser": "Codex in-app browser",
+            "failedImages": [],
+            "actuallyViewed": true,
+            "semanticActuallyViewed": [
+              "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gemini/body3.png",
+              "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/gemini-r9-body3-case1-semantic-pair.png",
+              "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/gemini-r9-body3-case2-semantic-pair.png",
+              "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/gemini-r9-body3-case3-semantic-pair.png",
+              "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/gemini-r9-body3-case4-semantic-pair.png",
+              "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/gemini-r9-body3-case5-semantic-pair.png",
+              "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/native-prop-3-semantic-4x.png",
+              "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/native-prop-7-semantic-4x.png",
+              "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/native-prop-10-semantic-4x.png",
+              "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/native-prop-14-semantic-4x.png",
+              "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/native-prop-16-semantic-4x.png",
+              "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/native-prop-18-semantic-4x.png"
+            ]
+          },
+          "limitations": [
+            "Static only; no animation claim.",
+            "Native complete combinations remain100. Any AI-owned generated support is included with the AI; never inherits100."
+          ],
+          "semanticCorrection": true,
+          "supersedesReport": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/gemini-r9-first-review.json"
+        }
+      ]
+    },
+    "upper2": {
+      "reviews": [
+        {
+          "reviewer": "classic_body_judge",
+          "score": 78.1,
+          "weightedRaw": 78.1,
+          "threshold": 98,
+          "passed": false,
+          "pending": false,
+          "selectedAiSlots": [
+            "hair",
+            "top"
+          ],
+          "selectedItemIDs": {
+            "hair": "gemini-hair",
+            "top": "gemini-top"
+          },
+          "reviewedPartHashes": {
+            "hair": "749e43d33d537cd4e4094890f3f32e25adea5d44931ab748532848404b83a962",
+            "top": "ce9dfa5b60c71c177f7996c88ee858eda1c879225e3d56d771150aa226b7e96c"
+          },
+          "reviewedGeneratedInterfaceHashes": {},
+          "reviewedCompleteHash": "aadc3b891da253e9b4e91572751a49e8ad2052e0bc245640cc7a162334040804",
+          "bodyHash": "94db199a8d055bbbb06a3e24d638cb749ee10874b471215c9e6344b46437138d",
+          "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+          "seed": "human-20261110-gemini-upper2-s95sgs06",
+          "contextSignature": "native-context-v4-d0a89bd7",
+          "draws": {
+            "aura": [
+              "native-aura-5",
+              "native-aura-11",
+              "native-aura-12",
+              "native-aura-15",
+              "native-aura-6"
+            ],
+            "back": [
+              "native-back-7",
+              "native-back-5",
+              "native-back-16",
+              "native-back-17",
+              "native-back-8"
+            ],
+            "background": [
+              "native-background-17",
+              "native-background-12",
+              "native-background-2",
+              "native-background-18",
+              "native-background-4"
+            ],
+            "bottom": [
+              "native-bottom-14",
+              "native-bottom-13",
+              "native-bottom-7",
+              "native-bottom-9",
+              "native-bottom-1"
+            ],
+            "effect": [
+              "native-effect-7",
+              "native-effect-16",
+              "native-effect-17",
+              "native-effect-10",
+              "native-effect-18"
+            ],
+            "face": [
+              "native-face-1",
+              "native-face-14",
+              "native-face-15",
+              "native-face-12",
+              "native-face-18"
+            ],
+            "hair": [
+              "native-hair-8",
+              "native-hair-14",
+              "native-hair-12",
+              "native-hair-19",
+              "native-hair-1"
+            ],
+            "headwear": [
+              "native-headwear-5",
+              "native-headwear-13",
+              "native-headwear-3",
+              "native-headwear-12",
+              "native-headwear-9"
+            ],
+            "legs": [
+              "native-legs-14",
+              "native-legs-13",
+              "native-legs-7",
+              "native-legs-9",
+              "native-legs-1"
+            ],
+            "prop": [
+              "native-prop-18",
+              "native-prop-10",
+              "native-prop-20",
+              "native-prop-16",
+              "native-prop-13"
+            ],
+            "top": [
+              "native-top-13",
+              "native-top-12",
+              "native-top-5",
+              "native-top-19",
+              "native-top-3"
+            ]
+          },
+          "contextScores": [
+            {
+              "caseId": "gemini-upper2-s3ba778e4-a0-f0",
+              "fixtureIndex": 0,
+              "score": 79.05,
+              "weightedRaw": 79.05,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 81,
+                  "weight": 20,
+                  "reason": "保留首轮此维数值：例1气球黑裙：腰带为装饰不要求抓握。手与袖口实际相接，袖层内外边/腕部转向仍偏硬，故接触维度仍未98；原露腰衣型本身不扣，原材料/体面反例保留。（道具不握不再作为此维扣分理由。）"
+                },
+                "proportionConnection": {
+                  "score": 76,
+                  "weight": 25,
+                  "reason": "保留首轮此维数值：例1气球黑裙：腰带为装饰不要求抓握。手与袖口实际相接，袖层内外边/腕部转向仍偏硬，故接触维度仍未98；原露腰衣型本身不扣，原材料/体面反例保留。（道具不握不再作为此维扣分理由。）"
+                },
+                "materialColor": {
+                  "score": 73,
+                  "weight": 15,
+                  "reason": "保留首轮此维数值：例1气球黑裙：腰带为装饰不要求抓握。手与袖口实际相接，袖层内外边/腕部转向仍偏硬，故接触维度仍未98；原露腰衣型本身不扣，原材料/体面反例保留。（道具不握不再作为此维扣分理由。）"
+                },
+                "blingeePixel": {
+                  "score": 77,
+                  "weight": 20,
+                  "reason": "保留首轮此维数值：例1气球黑裙：腰带为装饰不要求抓握。手与袖口实际相接，袖层内外边/腕部转向仍偏硬，故接触维度仍未98；原露腰衣型本身不扣，原材料/体面反例保留。（道具不握不再作为此维扣分理由。）"
+                },
+                "occlusionContact": {
+                  "score": 87,
+                  "weight": 15,
+                  "reason": "例1气球黑裙：腰带为装饰不要求抓握。手与袖口实际相接，袖层内外边/腕部转向仍偏硬，故接触维度仍未98；原露腰衣型本身不扣，原材料/体面反例保留。"
+                },
+                "canvasReadability": {
+                  "score": 89,
+                  "weight": 5,
+                  "reason": "保留首轮此维数值：例1气球黑裙：腰带为装饰不要求抓握。手与袖口实际相接，袖层内外边/腕部转向仍偏硬，故接触维度仍未98；原露腰衣型本身不扣，原材料/体面反例保留。（道具不握不再作为此维扣分理由。）"
+                }
+              },
+              "reason": "例1气球黑裙：腰带为装饰不要求抓握。手与袖口实际相接，袖层内外边/腕部转向仍偏硬，故接触维度仍未98；原露腰衣型本身不扣，原材料/体面反例保留。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-5",
+                "back": "native-back-7",
+                "background": "native-background-17",
+                "bottom": "native-bottom-14",
+                "effect": "native-effect-7",
+                "face": "native-face-1",
+                "hair": "native-hair-8",
+                "headwear": "native-headwear-5",
+                "legs": "native-legs-14",
+                "prop": "native-prop-18",
+                "top": "native-top-13"
+              },
+              "aiSelection": {
+                "aura": "native-aura-5",
+                "back": "native-back-7",
+                "background": "native-background-17",
+                "bottom": "native-bottom-14",
+                "effect": "native-effect-7",
+                "face": "native-face-1",
+                "hair": "gemini-hair",
+                "headwear": "native-headwear-5",
+                "legs": "native-legs-14",
+                "prop": "native-prop-18",
+                "top": "gemini-top"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "88966b87d3acce79682488d8f064017c0cdbfa17f242678c57be8c092ee91d56",
+                  "design": "/assets-classic/gemini/remake/hair-back-design.svg",
+                  "itemId": "gemini-hair",
+                  "key": "gemini-hair-0",
+                  "name": "星虹渐变长卷发",
+                  "reviewFamilyHash": "749e43d33d537cd4e4094890f3f32e25adea5d44931ab748532848404b83a962",
+                  "slot": "hair",
+                  "src": "/assets-classic/gemini/remake/hair-back.png",
+                  "svg": "/assets-classic/gemini/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "8fae4fa5fd996954679c67691b442c43b33e5d4356f5b2954cb8eee36f7ff36a",
+                  "design": "/assets-classic/gemini/remake/top-body-design.svg",
+                  "itemId": "gemini-top",
+                  "key": "gemini-top-0",
+                  "name": "星纹露肩垂袖短衣",
+                  "reviewFamilyHash": "ce9dfa5b60c71c177f7996c88ee858eda1c879225e3d56d771150aa226b7e96c",
+                  "slot": "top",
+                  "src": "/assets-classic/gemini/remake/top-body.png",
+                  "svg": "/assets-classic/gemini/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "e3134403178b66c849b7e87a43f05958b670c9dca2220a1ed4f9c2366afbbe50",
+                  "design": "/assets-classic/gemini/remake/hair-front-design.svg",
+                  "itemId": "gemini-hair",
+                  "key": "gemini-hair-1",
+                  "name": "星虹渐变长卷发",
+                  "reviewFamilyHash": "749e43d33d537cd4e4094890f3f32e25adea5d44931ab748532848404b83a962",
+                  "slot": "hair",
+                  "src": "/assets-classic/gemini/remake/hair-front.png",
+                  "svg": "/assets-classic/gemini/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                },
+                {
+                  "artworkHash": "d6a8656df283e7bb53067a7e36917bc7291cb443df78dc6e11023bd20019dcf0",
+                  "design": "/assets-classic/gemini/remake/top-arms-design.svg",
+                  "itemId": "gemini-top",
+                  "key": "gemini-top-1",
+                  "name": "星纹露肩垂袖短衣",
+                  "reviewFamilyHash": "ce9dfa5b60c71c177f7996c88ee858eda1c879225e3d56d771150aa226b7e96c",
+                  "slot": "top",
+                  "src": "/assets-classic/gemini/remake/top-arms.png",
+                  "svg": "/assets-classic/gemini/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gemini/upper2-evidence.json",
+              "recommendations": [
+                "继续修袖内外层/腕掌体面、裙层/衣料；不为站架/竖吉他或腰饰新增强迫抓握动作。"
+              ],
+              "semanticCorrection": {
+                "previousContactScore": 65,
+                "previousReason": "例1气球黑裙：露腰为角色原衣型，本身不扣分；但短上衣到身体/裙腰的转面平，袖口白片像硬板，宽紫发压在原生腿裙上异质。",
+                "scope": "Only contact dimension rejudged; five non-contact scores remain exactly unchanged."
+              }
+            },
+            {
+              "caseId": "gemini-upper2-s3ba778e4-a0-f1",
+              "fixtureIndex": 1,
+              "score": 79.45,
+              "weightedRaw": 79.45,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 81,
+                  "weight": 20,
+                  "reason": "保留首轮此维数值：例2海边话筒：原GIF有三脚地架、原生行双手也未握话筒；AI点颊手不握不构成错误。话筒在胸前的遮挡原生已有，未确认新增穿插/断轴。剩余袖内外层与腕口/衣口深度简化，不改五维衣料/连接分。（道具不握不再作为此维扣分理由。）"
+                },
+                "proportionConnection": {
+                  "score": 76,
+                  "weight": 25,
+                  "reason": "保留首轮此维数值：例2海边话筒：原GIF有三脚地架、原生行双手也未握话筒；AI点颊手不握不构成错误。话筒在胸前的遮挡原生已有，未确认新增穿插/断轴。剩余袖内外层与腕口/衣口深度简化，不改五维衣料/连接分。（道具不握不再作为此维扣分理由。）"
+                },
+                "materialColor": {
+                  "score": 73,
+                  "weight": 15,
+                  "reason": "保留首轮此维数值：例2海边话筒：原GIF有三脚地架、原生行双手也未握话筒；AI点颊手不握不构成错误。话筒在胸前的遮挡原生已有，未确认新增穿插/断轴。剩余袖内外层与腕口/衣口深度简化，不改五维衣料/连接分。（道具不握不再作为此维扣分理由。）"
+                },
+                "blingeePixel": {
+                  "score": 77,
+                  "weight": 20,
+                  "reason": "保留首轮此维数值：例2海边话筒：原GIF有三脚地架、原生行双手也未握话筒；AI点颊手不握不构成错误。话筒在胸前的遮挡原生已有，未确认新增穿插/断轴。剩余袖内外层与腕口/衣口深度简化，不改五维衣料/连接分。（道具不握不再作为此维扣分理由。）"
+                },
+                "occlusionContact": {
+                  "score": 90,
+                  "weight": 15,
+                  "reason": "例2海边话筒：原GIF有三脚地架、原生行双手也未握话筒；AI点颊手不握不构成错误。话筒在胸前的遮挡原生已有，未确认新增穿插/断轴。剩余袖内外层与腕口/衣口深度简化，不改五维衣料/连接分。"
+                },
+                "canvasReadability": {
+                  "score": 88,
+                  "weight": 5,
+                  "reason": "保留首轮此维数值：例2海边话筒：原GIF有三脚地架、原生行双手也未握话筒；AI点颊手不握不构成错误。话筒在胸前的遮挡原生已有，未确认新增穿插/断轴。剩余袖内外层与腕口/衣口深度简化，不改五维衣料/连接分。（道具不握不再作为此维扣分理由。）"
+                }
+              },
+              "reason": "例2海边话筒：原GIF有三脚地架、原生行双手也未握话筒；AI点颊手不握不构成错误。话筒在胸前的遮挡原生已有，未确认新增穿插/断轴。剩余袖内外层与腕口/衣口深度简化，不改五维衣料/连接分。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-11",
+                "back": "native-back-5",
+                "background": "native-background-12",
+                "bottom": "native-bottom-13",
+                "effect": "native-effect-16",
+                "face": "native-face-14",
+                "hair": "native-hair-14",
+                "headwear": "native-headwear-13",
+                "legs": "native-legs-13",
+                "prop": "native-prop-10",
+                "top": "native-top-12"
+              },
+              "aiSelection": {
+                "aura": "native-aura-11",
+                "back": "native-back-5",
+                "background": "native-background-12",
+                "bottom": "native-bottom-13",
+                "effect": "native-effect-16",
+                "face": "native-face-14",
+                "hair": "gemini-hair",
+                "headwear": "native-headwear-13",
+                "legs": "native-legs-13",
+                "prop": "native-prop-10",
+                "top": "gemini-top"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "88966b87d3acce79682488d8f064017c0cdbfa17f242678c57be8c092ee91d56",
+                  "design": "/assets-classic/gemini/remake/hair-back-design.svg",
+                  "itemId": "gemini-hair",
+                  "key": "gemini-hair-0",
+                  "name": "星虹渐变长卷发",
+                  "reviewFamilyHash": "749e43d33d537cd4e4094890f3f32e25adea5d44931ab748532848404b83a962",
+                  "slot": "hair",
+                  "src": "/assets-classic/gemini/remake/hair-back.png",
+                  "svg": "/assets-classic/gemini/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "8fae4fa5fd996954679c67691b442c43b33e5d4356f5b2954cb8eee36f7ff36a",
+                  "design": "/assets-classic/gemini/remake/top-body-design.svg",
+                  "itemId": "gemini-top",
+                  "key": "gemini-top-0",
+                  "name": "星纹露肩垂袖短衣",
+                  "reviewFamilyHash": "ce9dfa5b60c71c177f7996c88ee858eda1c879225e3d56d771150aa226b7e96c",
+                  "slot": "top",
+                  "src": "/assets-classic/gemini/remake/top-body.png",
+                  "svg": "/assets-classic/gemini/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "e3134403178b66c849b7e87a43f05958b670c9dca2220a1ed4f9c2366afbbe50",
+                  "design": "/assets-classic/gemini/remake/hair-front-design.svg",
+                  "itemId": "gemini-hair",
+                  "key": "gemini-hair-1",
+                  "name": "星虹渐变长卷发",
+                  "reviewFamilyHash": "749e43d33d537cd4e4094890f3f32e25adea5d44931ab748532848404b83a962",
+                  "slot": "hair",
+                  "src": "/assets-classic/gemini/remake/hair-front.png",
+                  "svg": "/assets-classic/gemini/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                },
+                {
+                  "artworkHash": "d6a8656df283e7bb53067a7e36917bc7291cb443df78dc6e11023bd20019dcf0",
+                  "design": "/assets-classic/gemini/remake/top-arms-design.svg",
+                  "itemId": "gemini-top",
+                  "key": "gemini-top-1",
+                  "name": "星纹露肩垂袖短衣",
+                  "reviewFamilyHash": "ce9dfa5b60c71c177f7996c88ee858eda1c879225e3d56d771150aa226b7e96c",
+                  "slot": "top",
+                  "src": "/assets-classic/gemini/remake/top-arms.png",
+                  "svg": "/assets-classic/gemini/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gemini/upper2-evidence.json",
+              "recommendations": [
+                "继续修袖内外层/腕掌体面、裙层/衣料；不为站架/竖吉他或腰饰新增强迫抓握动作。"
+              ],
+              "semanticCorrection": {
+                "previousContactScore": 62,
+                "previousReason": "例2海边话筒：原生话筒在点颊手外的胸前，没有可读握持；袖内外布和原生裙腰连接硬，不是完整人体衣料。",
+                "scope": "Only contact dimension rejudged; five non-contact scores remain exactly unchanged."
+              }
+            },
+            {
+              "caseId": "gemini-upper2-s3ba778e4-a0-f2",
+              "fixtureIndex": 2,
+              "score": 79.9,
+              "weightedRaw": 79.9,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 82,
+                  "weight": 20,
+                  "reason": "保留首轮此维数值：例3田园白裤：爱心腰饰在原生/AI均作腰饰，不需手握；腕掌/袖口连接成立但袖层厚度弱。原上衣胸肋/弯肘和原生裤腰像独立短甲、发大紫块的反例保留。（道具不握不再作为此维扣分理由。）"
+                },
+                "proportionConnection": {
+                  "score": 77,
+                  "weight": 25,
+                  "reason": "保留首轮此维数值：例3田园白裤：爱心腰饰在原生/AI均作腰饰，不需手握；腕掌/袖口连接成立但袖层厚度弱。原上衣胸肋/弯肘和原生裤腰像独立短甲、发大紫块的反例保留。（道具不握不再作为此维扣分理由。）"
+                },
+                "materialColor": {
+                  "score": 74,
+                  "weight": 15,
+                  "reason": "保留首轮此维数值：例3田园白裤：爱心腰饰在原生/AI均作腰饰，不需手握；腕掌/袖口连接成立但袖层厚度弱。原上衣胸肋/弯肘和原生裤腰像独立短甲、发大紫块的反例保留。（道具不握不再作为此维扣分理由。）"
+                },
+                "blingeePixel": {
+                  "score": 78,
+                  "weight": 20,
+                  "reason": "保留首轮此维数值：例3田园白裤：爱心腰饰在原生/AI均作腰饰，不需手握；腕掌/袖口连接成立但袖层厚度弱。原上衣胸肋/弯肘和原生裤腰像独立短甲、发大紫块的反例保留。（道具不握不再作为此维扣分理由。）"
+                },
+                "occlusionContact": {
+                  "score": 87,
+                  "weight": 15,
+                  "reason": "例3田园白裤：爱心腰饰在原生/AI均作腰饰，不需手握；腕掌/袖口连接成立但袖层厚度弱。原上衣胸肋/弯肘和原生裤腰像独立短甲、发大紫块的反例保留。"
+                },
+                "canvasReadability": {
+                  "score": 90,
+                  "weight": 5,
+                  "reason": "保留首轮此维数值：例3田园白裤：爱心腰饰在原生/AI均作腰饰，不需手握；腕掌/袖口连接成立但袖层厚度弱。原上衣胸肋/弯肘和原生裤腰像独立短甲、发大紫块的反例保留。（道具不握不再作为此维扣分理由。）"
+                }
+              },
+              "reason": "例3田园白裤：爱心腰饰在原生/AI均作腰饰，不需手握；腕掌/袖口连接成立但袖层厚度弱。原上衣胸肋/弯肘和原生裤腰像独立短甲、发大紫块的反例保留。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-12",
+                "back": "native-back-16",
+                "background": "native-background-2",
+                "bottom": "native-bottom-7",
+                "effect": "native-effect-17",
+                "face": "native-face-15",
+                "hair": "native-hair-12",
+                "headwear": "native-headwear-3",
+                "legs": "native-legs-7",
+                "prop": "native-prop-20",
+                "top": "native-top-5"
+              },
+              "aiSelection": {
+                "aura": "native-aura-12",
+                "back": "native-back-16",
+                "background": "native-background-2",
+                "bottom": "native-bottom-7",
+                "effect": "native-effect-17",
+                "face": "native-face-15",
+                "hair": "gemini-hair",
+                "headwear": "native-headwear-3",
+                "legs": "native-legs-7",
+                "prop": "native-prop-20",
+                "top": "gemini-top"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "88966b87d3acce79682488d8f064017c0cdbfa17f242678c57be8c092ee91d56",
+                  "design": "/assets-classic/gemini/remake/hair-back-design.svg",
+                  "itemId": "gemini-hair",
+                  "key": "gemini-hair-0",
+                  "name": "星虹渐变长卷发",
+                  "reviewFamilyHash": "749e43d33d537cd4e4094890f3f32e25adea5d44931ab748532848404b83a962",
+                  "slot": "hair",
+                  "src": "/assets-classic/gemini/remake/hair-back.png",
+                  "svg": "/assets-classic/gemini/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "8fae4fa5fd996954679c67691b442c43b33e5d4356f5b2954cb8eee36f7ff36a",
+                  "design": "/assets-classic/gemini/remake/top-body-design.svg",
+                  "itemId": "gemini-top",
+                  "key": "gemini-top-0",
+                  "name": "星纹露肩垂袖短衣",
+                  "reviewFamilyHash": "ce9dfa5b60c71c177f7996c88ee858eda1c879225e3d56d771150aa226b7e96c",
+                  "slot": "top",
+                  "src": "/assets-classic/gemini/remake/top-body.png",
+                  "svg": "/assets-classic/gemini/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "e3134403178b66c849b7e87a43f05958b670c9dca2220a1ed4f9c2366afbbe50",
+                  "design": "/assets-classic/gemini/remake/hair-front-design.svg",
+                  "itemId": "gemini-hair",
+                  "key": "gemini-hair-1",
+                  "name": "星虹渐变长卷发",
+                  "reviewFamilyHash": "749e43d33d537cd4e4094890f3f32e25adea5d44931ab748532848404b83a962",
+                  "slot": "hair",
+                  "src": "/assets-classic/gemini/remake/hair-front.png",
+                  "svg": "/assets-classic/gemini/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                },
+                {
+                  "artworkHash": "d6a8656df283e7bb53067a7e36917bc7291cb443df78dc6e11023bd20019dcf0",
+                  "design": "/assets-classic/gemini/remake/top-arms-design.svg",
+                  "itemId": "gemini-top",
+                  "key": "gemini-top-1",
+                  "name": "星纹露肩垂袖短衣",
+                  "reviewFamilyHash": "ce9dfa5b60c71c177f7996c88ee858eda1c879225e3d56d771150aa226b7e96c",
+                  "slot": "top",
+                  "src": "/assets-classic/gemini/remake/top-arms.png",
+                  "svg": "/assets-classic/gemini/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gemini/upper2-evidence.json",
+              "recommendations": [
+                "继续修袖内外层/腕掌体面、裙层/衣料；不为站架/竖吉他或腰饰新增强迫抓握动作。"
+              ],
+              "semanticCorrection": {
+                "previousContactScore": 66,
+                "previousReason": "例3田园白裤：露腰/金边位置有识别，但上衣体面未顺肋廓和弯肘，落到原生白裤腰像独立短甲，发尾大紫块较平。",
+                "scope": "Only contact dimension rejudged; five non-contact scores remain exactly unchanged."
+              }
+            },
+            {
+              "caseId": "gemini-upper2-s3ba778e4-a0-f3",
+              "fixtureIndex": 3,
+              "score": 78.1,
+              "weightedRaw": 78.1,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 80,
+                  "weight": 20,
+                  "reason": "保留首轮此维数值：例4扫描绿树：吉他与原生裙腿的坐标/源件保持，原生手也未持；新AI上衣/发袖未在可见处造成明确新增断握/断轴。扫描遮头胸，不推断被遮面；可见腕口/内衬厚度仍简单，原可见袖板/腰口材料分不改。（道具不握不再作为此维扣分理由。）"
+                },
+                "proportionConnection": {
+                  "score": 76,
+                  "weight": 25,
+                  "reason": "保留首轮此维数值：例4扫描绿树：吉他与原生裙腿的坐标/源件保持，原生手也未持；新AI上衣/发袖未在可见处造成明确新增断握/断轴。扫描遮头胸，不推断被遮面；可见腕口/内衬厚度仍简单，原可见袖板/腰口材料分不改。（道具不握不再作为此维扣分理由。）"
+                },
+                "materialColor": {
+                  "score": 72,
+                  "weight": 15,
+                  "reason": "保留首轮此维数值：例4扫描绿树：吉他与原生裙腿的坐标/源件保持，原生手也未持；新AI上衣/发袖未在可见处造成明确新增断握/断轴。扫描遮头胸，不推断被遮面；可见腕口/内衬厚度仍简单，原可见袖板/腰口材料分不改。（道具不握不再作为此维扣分理由。）"
+                },
+                "blingeePixel": {
+                  "score": 76,
+                  "weight": 20,
+                  "reason": "保留首轮此维数值：例4扫描绿树：吉他与原生裙腿的坐标/源件保持，原生手也未持；新AI上衣/发袖未在可见处造成明确新增断握/断轴。扫描遮头胸，不推断被遮面；可见腕口/内衬厚度仍简单，原可见袖板/腰口材料分不改。（道具不握不再作为此维扣分理由。）"
+                },
+                "occlusionContact": {
+                  "score": 90,
+                  "weight": 15,
+                  "reason": "例4扫描绿树：吉他与原生裙腿的坐标/源件保持，原生手也未持；新AI上衣/发袖未在可见处造成明确新增断握/断轴。扫描遮头胸，不推断被遮面；可见腕口/内衬厚度仍简单，原可见袖板/腰口材料分不改。"
+                },
+                "canvasReadability": {
+                  "score": 72,
+                  "weight": 5,
+                  "reason": "保留首轮此维数值：例4扫描绿树：吉他与原生裙腿的坐标/源件保持，原生手也未持；新AI上衣/发袖未在可见处造成明确新增断握/断轴。扫描遮头胸，不推断被遮面；可见腕口/内衬厚度仍简单，原可见袖板/腰口材料分不改。（道具不握不再作为此维扣分理由。）"
+                }
+              },
+              "reason": "例4扫描绿树：吉他与原生裙腿的坐标/源件保持，原生手也未持；新AI上衣/发袖未在可见处造成明确新增断握/断轴。扫描遮头胸，不推断被遮面；可见腕口/内衬厚度仍简单，原可见袖板/腰口材料分不改。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": "扫描罩遮头胸，未见部分不推98通过。",
+              "scoredVisibleOnly": true,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-15",
+                "back": "native-back-17",
+                "background": "native-background-18",
+                "bottom": "native-bottom-9",
+                "effect": "native-effect-10",
+                "face": "native-face-12",
+                "hair": "native-hair-19",
+                "headwear": "native-headwear-12",
+                "legs": "native-legs-9",
+                "prop": "native-prop-16",
+                "top": "native-top-19"
+              },
+              "aiSelection": {
+                "aura": "native-aura-15",
+                "back": "native-back-17",
+                "background": "native-background-18",
+                "bottom": "native-bottom-9",
+                "effect": "native-effect-10",
+                "face": "native-face-12",
+                "hair": "gemini-hair",
+                "headwear": "native-headwear-12",
+                "legs": "native-legs-9",
+                "prop": "native-prop-16",
+                "top": "gemini-top"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "88966b87d3acce79682488d8f064017c0cdbfa17f242678c57be8c092ee91d56",
+                  "design": "/assets-classic/gemini/remake/hair-back-design.svg",
+                  "itemId": "gemini-hair",
+                  "key": "gemini-hair-0",
+                  "name": "星虹渐变长卷发",
+                  "reviewFamilyHash": "749e43d33d537cd4e4094890f3f32e25adea5d44931ab748532848404b83a962",
+                  "slot": "hair",
+                  "src": "/assets-classic/gemini/remake/hair-back.png",
+                  "svg": "/assets-classic/gemini/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "8fae4fa5fd996954679c67691b442c43b33e5d4356f5b2954cb8eee36f7ff36a",
+                  "design": "/assets-classic/gemini/remake/top-body-design.svg",
+                  "itemId": "gemini-top",
+                  "key": "gemini-top-0",
+                  "name": "星纹露肩垂袖短衣",
+                  "reviewFamilyHash": "ce9dfa5b60c71c177f7996c88ee858eda1c879225e3d56d771150aa226b7e96c",
+                  "slot": "top",
+                  "src": "/assets-classic/gemini/remake/top-body.png",
+                  "svg": "/assets-classic/gemini/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "e3134403178b66c849b7e87a43f05958b670c9dca2220a1ed4f9c2366afbbe50",
+                  "design": "/assets-classic/gemini/remake/hair-front-design.svg",
+                  "itemId": "gemini-hair",
+                  "key": "gemini-hair-1",
+                  "name": "星虹渐变长卷发",
+                  "reviewFamilyHash": "749e43d33d537cd4e4094890f3f32e25adea5d44931ab748532848404b83a962",
+                  "slot": "hair",
+                  "src": "/assets-classic/gemini/remake/hair-front.png",
+                  "svg": "/assets-classic/gemini/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                },
+                {
+                  "artworkHash": "d6a8656df283e7bb53067a7e36917bc7291cb443df78dc6e11023bd20019dcf0",
+                  "design": "/assets-classic/gemini/remake/top-arms-design.svg",
+                  "itemId": "gemini-top",
+                  "key": "gemini-top-1",
+                  "name": "星纹露肩垂袖短衣",
+                  "reviewFamilyHash": "ce9dfa5b60c71c177f7996c88ee858eda1c879225e3d56d771150aa226b7e96c",
+                  "slot": "top",
+                  "src": "/assets-classic/gemini/remake/top-arms.png",
+                  "svg": "/assets-classic/gemini/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gemini/upper2-evidence.json",
+              "recommendations": [
+                "继续修袖内外层/腕掌体面、裙层/衣料；不为站架/竖吉他或腰饰新增强迫抓握动作。"
+              ],
+              "semanticCorrection": {
+                "previousContactScore": 65,
+                "previousReason": "例4扫描绿树：胸/头被扫描遮住，侧袖/腰口可见仍板状，原生吉他与新手势不持握；仅评可见失败。",
+                "scope": "Only contact dimension rejudged; five non-contact scores remain exactly unchanged."
+              }
+            },
+            {
+              "caseId": "gemini-upper2-s3ba778e4-a0-f4",
+              "fixtureIndex": 4,
+              "score": 79.3,
+              "weightedRaw": 79.3,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 81,
+                  "weight": 20,
+                  "reason": "保留首轮此维数值：例5粉心裸足：随身听挂于腰带并有耳机线，不强迫抓握；原生上衣附带手包随top替换移除，不把它误作遗失的独立prop。新手袖连接连续但层厚/腕转面不足，原胸衣/袖内衬和腰侧的五维反例保持。（道具不握不再作为此维扣分理由。）"
+                },
+                "proportionConnection": {
+                  "score": 77,
+                  "weight": 25,
+                  "reason": "保留首轮此维数值：例5粉心裸足：随身听挂于腰带并有耳机线，不强迫抓握；原生上衣附带手包随top替换移除，不把它误作遗失的独立prop。新手袖连接连续但层厚/腕转面不足，原胸衣/袖内衬和腰侧的五维反例保持。（道具不握不再作为此维扣分理由。）"
+                },
+                "materialColor": {
+                  "score": 73,
+                  "weight": 15,
+                  "reason": "保留首轮此维数值：例5粉心裸足：随身听挂于腰带并有耳机线，不强迫抓握；原生上衣附带手包随top替换移除，不把它误作遗失的独立prop。新手袖连接连续但层厚/腕转面不足，原胸衣/袖内衬和腰侧的五维反例保持。（道具不握不再作为此维扣分理由。）"
+                },
+                "blingeePixel": {
+                  "score": 77,
+                  "weight": 20,
+                  "reason": "保留首轮此维数值：例5粉心裸足：随身听挂于腰带并有耳机线，不强迫抓握；原生上衣附带手包随top替换移除，不把它误作遗失的独立prop。新手袖连接连续但层厚/腕转面不足，原胸衣/袖内衬和腰侧的五维反例保持。（道具不握不再作为此维扣分理由。）"
+                },
+                "occlusionContact": {
+                  "score": 87,
+                  "weight": 15,
+                  "reason": "例5粉心裸足：随身听挂于腰带并有耳机线，不强迫抓握；原生上衣附带手包随top替换移除，不把它误作遗失的独立prop。新手袖连接连续但层厚/腕转面不足，原胸衣/袖内衬和腰侧的五维反例保持。"
+                },
+                "canvasReadability": {
+                  "score": 89,
+                  "weight": 5,
+                  "reason": "保留首轮此维数值：例5粉心裸足：随身听挂于腰带并有耳机线，不强迫抓握；原生上衣附带手包随top替换移除，不把它误作遗失的独立prop。新手袖连接连续但层厚/腕转面不足，原胸衣/袖内衬和腰侧的五维反例保持。（道具不握不再作为此维扣分理由。）"
+                }
+              },
+              "reason": "例5粉心裸足：随身听挂于腰带并有耳机线，不强迫抓握；原生上衣附带手包随top替换移除，不把它误作遗失的独立prop。新手袖连接连续但层厚/腕转面不足，原胸衣/袖内衬和腰侧的五维反例保持。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-6",
+                "back": "native-back-8",
+                "background": "native-background-4",
+                "bottom": "native-bottom-1",
+                "effect": "native-effect-18",
+                "face": "native-face-18",
+                "hair": "native-hair-1",
+                "headwear": "native-headwear-9",
+                "legs": "native-legs-1",
+                "prop": "native-prop-13",
+                "top": "native-top-3"
+              },
+              "aiSelection": {
+                "aura": "native-aura-6",
+                "back": "native-back-8",
+                "background": "native-background-4",
+                "bottom": "native-bottom-1",
+                "effect": "native-effect-18",
+                "face": "native-face-18",
+                "hair": "gemini-hair",
+                "headwear": "native-headwear-9",
+                "legs": "native-legs-1",
+                "prop": "native-prop-13",
+                "top": "gemini-top"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "88966b87d3acce79682488d8f064017c0cdbfa17f242678c57be8c092ee91d56",
+                  "design": "/assets-classic/gemini/remake/hair-back-design.svg",
+                  "itemId": "gemini-hair",
+                  "key": "gemini-hair-0",
+                  "name": "星虹渐变长卷发",
+                  "reviewFamilyHash": "749e43d33d537cd4e4094890f3f32e25adea5d44931ab748532848404b83a962",
+                  "slot": "hair",
+                  "src": "/assets-classic/gemini/remake/hair-back.png",
+                  "svg": "/assets-classic/gemini/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "8fae4fa5fd996954679c67691b442c43b33e5d4356f5b2954cb8eee36f7ff36a",
+                  "design": "/assets-classic/gemini/remake/top-body-design.svg",
+                  "itemId": "gemini-top",
+                  "key": "gemini-top-0",
+                  "name": "星纹露肩垂袖短衣",
+                  "reviewFamilyHash": "ce9dfa5b60c71c177f7996c88ee858eda1c879225e3d56d771150aa226b7e96c",
+                  "slot": "top",
+                  "src": "/assets-classic/gemini/remake/top-body.png",
+                  "svg": "/assets-classic/gemini/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "e3134403178b66c849b7e87a43f05958b670c9dca2220a1ed4f9c2366afbbe50",
+                  "design": "/assets-classic/gemini/remake/hair-front-design.svg",
+                  "itemId": "gemini-hair",
+                  "key": "gemini-hair-1",
+                  "name": "星虹渐变长卷发",
+                  "reviewFamilyHash": "749e43d33d537cd4e4094890f3f32e25adea5d44931ab748532848404b83a962",
+                  "slot": "hair",
+                  "src": "/assets-classic/gemini/remake/hair-front.png",
+                  "svg": "/assets-classic/gemini/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                },
+                {
+                  "artworkHash": "d6a8656df283e7bb53067a7e36917bc7291cb443df78dc6e11023bd20019dcf0",
+                  "design": "/assets-classic/gemini/remake/top-arms-design.svg",
+                  "itemId": "gemini-top",
+                  "key": "gemini-top-1",
+                  "name": "星纹露肩垂袖短衣",
+                  "reviewFamilyHash": "ce9dfa5b60c71c177f7996c88ee858eda1c879225e3d56d771150aa226b7e96c",
+                  "slot": "top",
+                  "src": "/assets-classic/gemini/remake/top-arms.png",
+                  "svg": "/assets-classic/gemini/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gemini/upper2-evidence.json",
+              "recommendations": [
+                "继续修袖内外层/腕掌体面、裙层/衣料；不为站架/竖吉他或腰饰新增强迫抓握动作。"
+              ],
+              "semanticCorrection": {
+                "previousContactScore": 65,
+                "previousReason": "例5粉心裸足：露腰是合理衣型，问题在胸衣/白袖内衬缺厚度与同关节压力褶，腰侧轮廓过窄直，和原生长腿的体块语言分离。",
+                "scope": "Only contact dimension rejudged; five non-contact scores remain exactly unchanged."
+              }
+            }
+          ],
+          "reasons": [
+            "经源件+上下行重新审，原生装饰不握不是AI错误。",
+            "仅重评接触一维；材料/身体连接/像素等五维原值不改，组仍需返工。"
+          ],
+          "recommendations": [
+            "保留角色点颊/侧指主动作，改真实袖/掌接缝与衣料体积，不为非握持装饰变姿势。"
+          ],
+          "evidence": {
+            "reactEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gemini/upper2-evidence.json",
+            "reactScreenshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gemini/upper2.png",
+            "reactScreenshotSha256": "d295496a0e699762a11d559769a31fb26de0b4498bf3508e978e1289158a55f3",
+            "captureBrowser": "Codex in-app browser",
+            "failedImages": [],
+            "actuallyViewed": true,
+            "semanticActuallyViewed": [
+              "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gemini/upper2.png",
+              "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/gemini-r9-upper2-case1-semantic-pair.png",
+              "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/gemini-r9-upper2-case2-semantic-pair.png",
+              "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/gemini-r9-upper2-case3-semantic-pair.png",
+              "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/gemini-r9-upper2-case4-semantic-pair.png",
+              "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/gemini-r9-upper2-case5-semantic-pair.png",
+              "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/native-prop-3-semantic-4x.png",
+              "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/native-prop-7-semantic-4x.png",
+              "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/native-prop-10-semantic-4x.png",
+              "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/native-prop-14-semantic-4x.png",
+              "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/native-prop-16-semantic-4x.png",
+              "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/native-prop-18-semantic-4x.png"
+            ]
+          },
+          "limitations": [
+            "Static only; no animation claim.",
+            "Native complete combinations remain100. Any AI-owned generated support is included with the AI; never inherits100.",
+            "扫描罩遮头胸，未见部分不推98通过。"
+          ],
+          "semanticCorrection": true,
+          "supersedesReport": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/gemini-r9-first-review.json"
+        }
+      ]
+    }
+  },
+  "scopeLimits": [
+    "并非新美术版本，不用纠错宣称作者改进。",
+    "这里只完成原生道具语义和相应接触重审；袖板、材质、腰/裙根结构的真实反例保持，仍失败98。",
+    "扫描遮挡只评实际可见区域，不把缺视图作为高分依据。",
+    "其他角色旧报告的相似持物归因仍需各自核源/看上下行，不能自动套用本次更正分。"
+  ]
+}

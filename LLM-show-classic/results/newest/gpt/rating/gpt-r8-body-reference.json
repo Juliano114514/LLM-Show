@@ -1,0 +1,951 @@
+{
+  "schema": "classic-independent-body-reference-v1",
+  "round": "human-followup-20261110-gpt-r8",
+  "reviewer": "classic_body_judge",
+  "character": "gpt",
+  "date": "2026-11-10",
+  "nativeBaselineScore": 100,
+  "body": {
+    "score": 80,
+    "threshold": 98,
+    "passed": false,
+    "requiresRevision": true,
+    "reviewedBodyHash": "c803232d40ac266f2545366fb9c672835f340562f014cb0dd87eb458fcd90d84",
+    "seed": "human-20261110-gpt-body-k7o6wnf3",
+    "bodyCorpusHash": "3451692764c29845da8f6c5b579069c3f1bec6309b7b9765bcc11843167082c7",
+    "corpusSignature": "body-corpus-context-v1-32c20706",
+    "reviewer": "classic_body_judge",
+    "coverage": {
+      "default": true,
+      "sourceReferenceSamplesViewed": 20,
+      "browserAllTwentyVerified": false,
+      "requiredSamples": 20,
+      "selectedIds": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20"
+      ]
+    },
+    "aggregation": "Minimum of newly judged default and all twenty observed samples. Old score98 is historical, not inherited.",
+    "defaultComparison": {
+      "score": 83,
+      "passed": false,
+      "reasons": [
+        "头身尺度及原生下腿总体保留，但新肩/上臂像细直轨，右肘尖V，腕掌收放弱；髋—股根y130..147有近水平亮带和方形插接。",
+        "原生下段腿像素相同仅证明该区域来源；不能证明新肩腰胯和整身承重自然。"
+      ],
+      "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gpt/body-default.png"
+    },
+    "perSampleScores": [],
+    "reasons": [
+      "本轮重新看default及20例，没有凭c803 hash未变沿用旧98。",
+      "主要确证缺陷是修改过的肩肘腕及腰胯股根连续性；不将原生小腿自身降分，不虚称全身尺寸误差。"
+    ],
+    "recommendations": [
+      "先修肩—肘—腕的连续收放：肩根不能是平行细直轨，右肘不能是尖V，掌根须有肉面且与手指分组衔接。",
+      "先画腰胯/上大腿连续体块再贴衣：消除y130..147近水平色带和方形股根；原生小腿/足可保留，不为假定裸腰宽度编尺寸真值。",
+      "胸衣围绕胸腔、抚胸手、腋下与束腰画相应暗面/压褶；裙褶从腰侧/胯/开衩受力处出发，不能一根等宽亮线跑完整裙。",
+      "长发维持normal分缝和银紫色相，先稳定暗缝/整束色面，再放不等长短亮簇；翼膜、发束、缎面不能共用同宽软亮带。",
+      "同seed回放已知失败；新几何/部件hash后用新seed正式复审。不能用量化色阶、旧body98或新pool解释为已通过。"
+    ],
+    "limitations": [
+      "未执行新法向尺寸测量，不把视觉不足写成已量得>5%。",
+      "官方无独立裸腰胯，当前裸腰形态只能按自然轮廓/上下连接判断。",
+      "同一AI身体与20例逐项比较语言和自然感，不要求复制20套pose。",
+      "All20 provisional visual comparisons retained separately; formal perSampleScores remains empty until corrected browser strips are actually inspected."
+    ],
+    "evidence": {
+      "reactBodyImage": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gpt/body-default.png",
+      "reactBodyImageSha256": "565d4350e87b73aee553b02c027aed7969da02a8cdf8289aca92888d5d82d7bf",
+      "reactBodySnapshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gpt/body-evidence.json",
+      "reactFullImage": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gpt/full.png",
+      "reactFullImageSha256": "dca8ab7d0bd40facbec08bb5a2c00d25670e1fa3e5614f0d20d300fddecbf07c",
+      "reactFullSnapshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gpt/full-evidence.json",
+      "actuallyViewed": [
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gpt/body-default.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gpt/body-strip-02.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gpt/body-strip-06.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gpt/body-strip-12.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gpt/body-strip-18.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gpt/body-strip-20.png"
+      ],
+      "diagnosticBody6x": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/gpt-r8-body-diagnostic-6x.png",
+      "captureBrowser": "Codex in-app browser",
+      "failedImages": []
+    },
+    "provisionalPerSampleScores": [
+      {
+        "id": "01",
+        "sample": 1,
+        "label": "抱臂天使礼服",
+        "score": 83,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生抱臂的肩—肘内收有圆润收放，GPT抚胸臂仍有细直上臂轨和肘尖，胸前掌根像硬贴；不从原礼服推裸腰尺寸。"
+        ],
+        "regions": [
+          [
+            50,
+            92,
+            98,
+            122
+          ],
+          [
+            55,
+            128,
+            83,
+            149
+          ]
+        ],
+        "limitations": "不同pose不强求同形；不从遮住的躯干/腿编造官方裸模尺寸。此为视觉判断，不是新法向量测结论。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gpt/body-strip-02.png",
+        "source": "qq-show-classic/outfit/白色天使套装.gif",
+        "layers": [
+          "qq-show-classic/back-hair/白金蝴蝶结波浪长发.gif",
+          "qq-show-classic/outfit/白色天使套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/白金蝴蝶结波浪长发.gif"
+        ],
+        "nativeImageHash": "c0c31cf662e153e299a0ec392c8a518242385bccaba17a90609393f8b9e0024f"
+      },
+      {
+        "id": "02",
+        "sample": 2,
+        "label": "蓝白捧花公主裙",
+        "score": 84,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生捧花前臂从袖口到掌根自然收窄，GPT前臂亮面较等宽、右肘是尖折；长裙所遮腿不作直接尺寸真值。"
+        ],
+        "regions": [
+          [
+            50,
+            92,
+            98,
+            122
+          ],
+          [
+            55,
+            128,
+            83,
+            149
+          ]
+        ],
+        "limitations": "不同pose不强求同形；不从遮住的躯干/腿编造官方裸模尺寸。此为视觉判断，不是新法向量测结论。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gpt/body-strip-02.png",
+        "source": "qq-show-classic/outfit/白色公主裙黄色捧花套装.gif",
+        "layers": [
+          "qq-show-classic/back-hair/金色长卷发.gif",
+          "qq-show-classic/outfit/白色公主裙黄色捧花套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/金色长卷发.gif"
+        ],
+        "nativeImageHash": "59429f0f599cc8711a6b88e8472f7aa99f8f76dfee38a89d31f2e6d22e66025d"
+      },
+      {
+        "id": "03",
+        "sample": 3,
+        "label": "薄荷裙抬手",
+        "score": 80,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生外展抬掌有肩峰/肘/腕连续弧，GPT右肩到上臂的平行细轨、尖V肘和掌根收放差最明显。"
+        ],
+        "regions": [
+          [
+            50,
+            92,
+            98,
+            122
+          ],
+          [
+            55,
+            128,
+            83,
+            149
+          ]
+        ],
+        "limitations": "不同pose不强求同形；不从遮住的躯干/腿编造官方裸模尺寸。此为视觉判断，不是新法向量测结论。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gpt/body-strip-06.png",
+        "source": "qq-show-classic/outfit/薄荷裙套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/薄荷裙套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/粉紫双马尾.gif"
+        ],
+        "nativeImageHash": "ae902b32ef1eec9558c5516b375ed1d20b9da2e2ef9beeadcbed0852fa8285ae"
+      },
+      {
+        "id": "04",
+        "sample": 4,
+        "label": "蓝白学院裙垂袖",
+        "score": 84,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生垂袖虽遮上臂，衣袖到小掌仍显示关节方向；GPT肩根与上臂衔接偏方，腰胯股根的近水平色带仍见。"
+        ],
+        "regions": [
+          [
+            50,
+            92,
+            98,
+            122
+          ],
+          [
+            55,
+            128,
+            83,
+            149
+          ]
+        ],
+        "limitations": "不同pose不强求同形；不从遮住的躯干/腿编造官方裸模尺寸。此为视觉判断，不是新法向量测结论。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gpt/body-strip-06.png",
+        "source": "qq-show-classic/outfit/蓝白学院风连衣裙.gif",
+        "layers": [
+          "qq-show-classic/outfit/蓝白学院风连衣裙.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/黑色齐刘海麻花辫.gif"
+        ],
+        "nativeImageHash": "0bb87dbcc04e43d970312468cf6a70c2f3e599dcb7f9cd44afa8d6a626cc158d"
+      },
+      {
+        "id": "05",
+        "sample": 5,
+        "label": "粉背心交叉腿",
+        "score": 82,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "交叉腿样例显示承重/膝向和髋部连续感；GPT保留default原腿不因此扣原生分，但新髋片到原股根的方形插接破坏整体。"
+        ],
+        "regions": [
+          [
+            50,
+            92,
+            98,
+            122
+          ],
+          [
+            55,
+            128,
+            83,
+            149
+          ]
+        ],
+        "limitations": "不同pose不强求同形；不从遮住的躯干/腿编造官方裸模尺寸。此为视觉判断，不是新法向量测结论。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gpt/body-strip-06.png",
+        "source": "qq-show-classic/outfit/粉色背心蓝裙套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/粉色背心蓝裙套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/红棕斜扎长发.gif"
+        ],
+        "nativeImageHash": "0562e149b22af6279fdc78c20021a393d0e38eb3875cb4f5fc80aa0ecaa49db3"
+      },
+      {
+        "id": "06",
+        "sample": 6,
+        "label": "黄色开衩动势裙",
+        "score": 81,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生转身开衩衣装中的肩胯反向和手臂弧线自然，GPT上身正面窄直、腰胯新旧色带平接；不要求复制其pose。"
+        ],
+        "regions": [
+          [
+            50,
+            92,
+            98,
+            122
+          ],
+          [
+            55,
+            128,
+            83,
+            149
+          ]
+        ],
+        "limitations": "不同pose不强求同形；不从遮住的躯干/腿编造官方裸模尺寸。此为视觉判断，不是新法向量测结论。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gpt/body-strip-06.png",
+        "source": "qq-show-classic/outfit/灵动开衩裙套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/灵动开衩裙套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/金棕波浪长发.gif"
+        ],
+        "nativeImageHash": "d7cd7c0c1ee129394de9247d9524425984c0af9cc4d61b828b5de466e4656f5a"
+      },
+      {
+        "id": "07",
+        "sample": 7,
+        "label": "深蓝露肩低位交手",
+        "score": 84,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生露肩小臂的暗边随肉面变化，GPT肩—臂像两条细直线；掌有指组但掌根与腕仍硬。"
+        ],
+        "regions": [
+          [
+            50,
+            92,
+            98,
+            122
+          ],
+          [
+            55,
+            128,
+            83,
+            149
+          ]
+        ],
+        "limitations": "不同pose不强求同形；不从遮住的躯干/腿编造官方裸模尺寸。此为视觉判断，不是新法向量测结论。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gpt/body-strip-06.png",
+        "source": "qq-show-classic/outfit/深蓝一字肩连衣裙.gif",
+        "layers": [
+          "qq-show-classic/outfit/深蓝一字肩连衣裙.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/黑色侧扎长羊毛卷.gif"
+        ],
+        "nativeImageHash": "c255624cb7baa4049082f15e326dc89be47e73e679510d260c3274eb56bb8f9f"
+      },
+      {
+        "id": "08",
+        "sample": 8,
+        "label": "黑红舞裙外展",
+        "score": 81,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生舞裙外展臂在肘和腕有收放，GPT右臂尖折和长等宽亮带欠自然；舞裙外宽不当人体宽。"
+        ],
+        "regions": [
+          [
+            50,
+            92,
+            98,
+            122
+          ],
+          [
+            55,
+            128,
+            83,
+            149
+          ]
+        ],
+        "limitations": "不同pose不强求同形；不从遮住的躯干/腿编造官方裸模尺寸。此为视觉判断，不是新法向量测结论。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gpt/body-strip-06.png",
+        "source": "qq-show-classic/outfit/翩翩起舞套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/翩翩起舞套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/红棕公主卷发.gif"
+        ],
+        "nativeImageHash": "fba21eaf6b1dca9acf3517f5f49b83e36212292ef596a0e1428e5aec27e9fa15"
+      },
+      {
+        "id": "09",
+        "sample": 9,
+        "label": "碎花吊带牛仔持包",
+        "score": 83,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生站姿肩颈/持包手有重心联系，GPT颈下肩端偏方、上臂与胸腔关系僵；不拿长裤外廓当裸腿。"
+        ],
+        "regions": [
+          [
+            50,
+            92,
+            98,
+            122
+          ],
+          [
+            55,
+            128,
+            83,
+            149
+          ]
+        ],
+        "limitations": "不同pose不强求同形；不从遮住的躯干/腿编造官方裸模尺寸。此为视觉判断，不是新法向量测结论。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gpt/body-strip-12.png",
+        "source": "qq-show-classic/outfit/白色碎花吊带牛仔套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/白色碎花吊带牛仔套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/深棕梨花头.gif"
+        ],
+        "nativeImageHash": "7d9023e477d336bcbc3d40a1ebbfce00e18c818128c385f3c579edd79a252d5d"
+      },
+      {
+        "id": "10",
+        "sample": 10,
+        "label": "紫色礼裙侧收持花",
+        "score": 84,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生礼裙持花表现柔和肩/肘体积，GPT腕掌还像细轨接指扇；腿被裙遮住，未知范围不造真值。"
+        ],
+        "regions": [
+          [
+            50,
+            92,
+            98,
+            122
+          ],
+          [
+            55,
+            128,
+            83,
+            149
+          ]
+        ],
+        "limitations": "不同pose不强求同形；不从遮住的躯干/腿编造官方裸模尺寸。此为视觉判断，不是新法向量测结论。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gpt/body-strip-12.png",
+        "source": "qq-show-classic/outfit/紫色礼裙花束套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/紫色礼裙花束套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/金棕雏菊发饰罗马卷.gif"
+        ],
+        "nativeImageHash": "97cc4b9f7392eef5769178ec8ec83bbe5d2866890248a2f5fdf3fb6639d26966"
+      },
+      {
+        "id": "11",
+        "sample": 11,
+        "label": "薄荷绿盘腿坐姿",
+        "score": 82,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "盘坐原生显示胯—大腿在姿态变化中连续，GPT新髋与原生股根近水平接缝仍不自然；坐姿不与站姿同y测宽。"
+        ],
+        "regions": [
+          [
+            50,
+            92,
+            98,
+            122
+          ],
+          [
+            55,
+            128,
+            83,
+            149
+          ]
+        ],
+        "limitations": "不同pose不强求同形；不从遮住的躯干/腿编造官方裸模尺寸。此为视觉判断，不是新法向量测结论。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gpt/body-strip-12.png",
+        "source": "qq-show-classic/outfit/薄荷绿套装坐姿.gif",
+        "layers": [
+          "qq-show-classic/outfit/薄荷绿套装坐姿.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/棕色卷波波头.gif"
+        ],
+        "nativeImageHash": "1c8a1a789202f9b07fccc0c6a25ed4d62a5a6f766e557ebfc27aa9e236c29b8a"
+      },
+      {
+        "id": "12",
+        "sample": 12,
+        "label": "抹茶旗袍椅坐",
+        "score": 82,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "侧坐原生的胸腰—髋承重关系连贯，GPT窄长躯干到方股根像分装两段；不据椅/裙遮挡反推裸腰。"
+        ],
+        "regions": [
+          [
+            50,
+            92,
+            98,
+            122
+          ],
+          [
+            55,
+            128,
+            83,
+            149
+          ]
+        ],
+        "limitations": "不同pose不强求同形；不从遮住的躯干/腿编造官方裸模尺寸。此为视觉判断，不是新法向量测结论。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gpt/body-strip-12.png",
+        "source": "qq-show-classic/outfit/抹茶旗袍坐姿.gif",
+        "layers": [
+          "qq-show-classic/outfit/抹茶旗袍坐姿.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/棕咖黄月季发饰盘发.gif"
+        ],
+        "nativeImageHash": "f523574a47c5517e56de2555ecfb4845bc5eddca7864ae7272ee5d093975d841"
+      },
+      {
+        "id": "13",
+        "sample": 13,
+        "label": "黄色短袖爱心坐姿",
+        "score": 82,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "爱心坐姿的肩/膝转面连贯，GPT上臂和右肘的直轨/尖折仍见；不因pose不同本身扣分。"
+        ],
+        "regions": [
+          [
+            50,
+            92,
+            98,
+            122
+          ],
+          [
+            55,
+            128,
+            83,
+            149
+          ]
+        ],
+        "limitations": "不同pose不强求同形；不从遮住的躯干/腿编造官方裸模尺寸。此为视觉判断，不是新法向量测结论。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gpt/body-strip-12.png",
+        "source": "qq-show-classic/outfit/黄色短袖短裙爱心坐姿.gif",
+        "layers": [
+          "qq-show-classic/outfit/黄色短袖短裙爱心坐姿.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/黑色双丸子头.gif"
+        ],
+        "nativeImageHash": "f7c9e5fd22cb186e7f67e2f77f0829e656eef91b74f83def14c37560e597fd17"
+      },
+      {
+        "id": "14",
+        "sample": 14,
+        "label": "粉礼裙花朵坐姿",
+        "score": 84,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "礼裙收臂由肩到掌自然收放，GPT掌/领处硬贴、上臂厚度变化弱；长裙下裸腿未知。"
+        ],
+        "regions": [
+          [
+            50,
+            92,
+            98,
+            122
+          ],
+          [
+            55,
+            128,
+            83,
+            149
+          ]
+        ],
+        "limitations": "不同pose不强求同形；不从遮住的躯干/腿编造官方裸模尺寸。此为视觉判断，不是新法向量测结论。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gpt/body-strip-12.png",
+        "source": "qq-show-classic/outfit/浅粉礼裙花朵坐姿套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/浅粉礼裙花朵坐姿套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/粉色高马尾.gif"
+        ],
+        "nativeImageHash": "7deae5777a0bc52ea716fbe8e59c05e32cf1a32d1922b6b8e1d476065e8758b9"
+      },
+      {
+        "id": "15",
+        "sample": 15,
+        "label": "秋千白纱悬坐",
+        "score": 84,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "秋千抓绳肩肘腕方向一致，GPT腕掌接续与肘弧仍生硬；不把原生裙边当胯线。"
+        ],
+        "regions": [
+          [
+            50,
+            92,
+            98,
+            122
+          ],
+          [
+            55,
+            128,
+            83,
+            149
+          ]
+        ],
+        "limitations": "不同pose不强求同形；不从遮住的躯干/腿编造官方裸模尺寸。此为视觉判断，不是新法向量测结论。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gpt/body-strip-18.png",
+        "source": "qq-show-classic/outfit/秋千白色薄纱裙套装.gif",
+        "layers": [
+          "qq-show-classic/back-hair/深棕蝴蝶结斜刘海长发.gif",
+          "qq-show-classic/outfit/秋千白色薄纱裙套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/深棕蝴蝶结斜刘海长发.gif"
+        ],
+        "nativeImageHash": "6949b442eaeffae544840a252bfca0b8656c4f1c5703d80f5bdc0fdec02a093b"
+      },
+      {
+        "id": "16",
+        "sample": 16,
+        "label": "牛仔背带持麦",
+        "score": 82,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生持麦裸肩展示细臂仍有体积，GPT肩/上臂两条轨线感明显，新股根色带与长裤参照的连续承重不同。"
+        ],
+        "regions": [
+          [
+            50,
+            92,
+            98,
+            122
+          ],
+          [
+            55,
+            128,
+            83,
+            149
+          ]
+        ],
+        "limitations": "不同pose不强求同形；不从遮住的躯干/腿编造官方裸模尺寸。此为视觉判断，不是新法向量测结论。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gpt/body-strip-18.png",
+        "source": "qq-show-classic/outfit/吊带牛仔裤麦克风套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/吊带牛仔裤麦克风套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/酒红双马尾.gif"
+        ],
+        "nativeImageHash": "fb624b9fbe3e853bb9b66582cfb5993197a1905ab4ff958cbb380621d662ec5b"
+      },
+      {
+        "id": "17",
+        "sample": 17,
+        "label": "朱砂旗袍持扇",
+        "score": 81,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "旗袍持扇的肩—肘—腕、开衩腿弧线流畅；GPT右肘尖折和髋股根方接较显眼，不按不同腿pose同坐标量宽。"
+        ],
+        "regions": [
+          [
+            50,
+            92,
+            98,
+            122
+          ],
+          [
+            55,
+            128,
+            83,
+            149
+          ]
+        ],
+        "limitations": "不同pose不强求同形；不从遮住的躯干/腿编造官方裸模尺寸。此为视觉判断，不是新法向量测结论。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gpt/body-strip-18.png",
+        "source": "qq-show-classic/outfit/高开衩朱砂红旗袍.gif",
+        "layers": [
+          "qq-show-classic/outfit/高开衩朱砂红旗袍.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/玫瑰盘发.gif"
+        ],
+        "nativeImageHash": "12ad1f177551bf37e4949696fc63acece1b955f0f9227db92ce2830bf0e059f6"
+      },
+      {
+        "id": "18",
+        "sample": 18,
+        "label": "紫短裙举臂长靴",
+        "score": 82,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生举臂肩峰/上臂不成直杆，GPT肩根—上臂的细直结构与肘尖仍欠柔和；靴外宽不作裸腿真值。"
+        ],
+        "regions": [
+          [
+            50,
+            92,
+            98,
+            122
+          ],
+          [
+            55,
+            128,
+            83,
+            149
+          ]
+        ],
+        "limitations": "不同pose不强求同形；不从遮住的躯干/腿编造官方裸模尺寸。此为视觉判断，不是新法向量测结论。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gpt/body-strip-18.png",
+        "source": "qq-show-classic/outfit/背心紫短裙白长靴套装.gif",
+        "layers": [
+          "qq-show-classic/back-hair/动漫蓝蝴蝶结马尾.gif",
+          "qq-show-classic/outfit/背心紫短裙白长靴套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/动漫蓝蝴蝶结马尾.gif"
+        ],
+        "nativeImageHash": "9b525b93d6794ef7c03bc2e5e93f5c18f744752094e92ca8f5a1f8d235a410e8"
+      },
+      {
+        "id": "19",
+        "sample": 19,
+        "label": "白短外套牛仔短裙",
+        "score": 83,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "短外套斜腿原生的袖口到掌、胯膝踝方向统一，GPT股根水平接缝和上身刚直仍破坏整体承重。"
+        ],
+        "regions": [
+          [
+            50,
+            92,
+            98,
+            122
+          ],
+          [
+            55,
+            128,
+            83,
+            149
+          ]
+        ],
+        "limitations": "不同pose不强求同形；不从遮住的躯干/腿编造官方裸模尺寸。此为视觉判断，不是新法向量测结论。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gpt/body-strip-18.png",
+        "source": "qq-show-classic/outfit/白色短外套牛仔短裙套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/白色短外套牛仔短裙套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/棕橙长编发.gif"
+        ],
+        "nativeImageHash": "e570beb4dd7330818e30f0e9a99f1131054e7621d48447b311a19fc909c2c75e"
+      },
+      {
+        "id": "20",
+        "sample": 20,
+        "label": "紫色蝴蝶仙子",
+        "score": 84,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生腰前手有掌根浅面及非镜像指组，GPT抚胸手/掌根硬贴仍见；透明翼/裙不作为裸体测量。"
+        ],
+        "regions": [
+          [
+            50,
+            92,
+            98,
+            122
+          ],
+          [
+            55,
+            128,
+            83,
+            149
+          ]
+        ],
+        "limitations": "不同pose不强求同形；不从遮住的躯干/腿编造官方裸模尺寸。此为视觉判断，不是新法向量测结论。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gpt/body-strip-18.png",
+        "source": "qq-show-classic/outfit/蝴蝶仙子套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/蝴蝶仙子套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/炫紫闪耀双马尾卷发.gif"
+        ],
+        "nativeImageHash": "70112fde68175423d693e4d6efd1d9ea8a0ec13422c4fa4e5dab1c3ce76fa702"
+      }
+    ],
+    "pending": true,
+    "evidenceIntegrity": {
+      "status": "replacement-captures-pending",
+      "reason": "Some IAB body-strip images contain the previous viewport after scrolling. DOM visibility metadata alone cannot establish all20 visual coverage."
+    }
+  },
+  "reference": {
+    "score": 87,
+    "weightedRaw": 87,
+    "threshold": 90,
+    "passed": false,
+    "reviewer": "classic_body_judge",
+    "reviewedCompleteHash": "e047d3d208675b0d1bc9a8c6b707d42f7430a38afa4f2d2c1a1aa6521c064a09",
+    "reviewedCompleteArtifact": "character.png canonical runtime per-layer composite; actual full browser layers also bound below.",
+    "seed": "human-20261110-gpt-full-9eg0uvtd",
+    "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+    "contextSignature": "native-context-v4-9faa3c1",
+    "reviewedFullLayerHashes": {
+      "gpt-background-0": "9a986ab555f81b4493b27405cce89085b28e5af468ccb175649a286abc651260",
+      "gpt-aura-0": "b46d7e033390db7cfdba718b483e6da1e87a5bca4d3de2b77d91189395faa3df",
+      "gpt-back-0": "b8f0d69a6d9f09abe28efe1751020964f8c02332c8c0b17b5a9bf9698302cdf7",
+      "gpt-hair-0": "a93bcfda878cadae36f3ea78f74d1649c8ed0c9691eb18325ee5d345d142f450",
+      "gpt-legs-0": "0ffffdf8b1c0a14af637aaac7c1ca5081ba842024dd1dc5c025c1e701560756b",
+      "gpt-bottom-0": "9fbb71f52f0d61959c9421082087aeec444255dfefafef1ae642de5d6345cbec",
+      "gpt-top-0": "4e7bdb6ad44c185f4a6703287ef696931d91d1b9627699dcba6b6922100ec4c8",
+      "gpt-face-0": "1f141a970c62e3b6b2873634a2f4b4c204074efc91969db341d651e0872f4799",
+      "gpt-hair-1": "34c37c62ae4fb95ab1cb51090969ba9795c4e1f4253161c5f1b6b4929d4e775b",
+      "gpt-prop-0": "5dd59f191cc1b54b3b9a5e45206a4812b341099fb8d6e19462dc61b154a6ec45",
+      "gpt-top-1": "20ae9dace70a96e38cc31298cfb3c47f12fd0180654d13b39d80e858b6cf4c10",
+      "gpt-headwear-0": "040d753c0a191c6569303b6851df7cd799ed96d7ce5b897ba8533603f7c79afd",
+      "gpt-effect-0": "5daeadffe95416208929a42ce065fafdb14b7cb8c92e48ec61b94da21683a8b6"
+    },
+    "reviewedGeneratedInterfaceHashes": {},
+    "dimensions": {
+      "action": {
+        "score": 93,
+        "weight": 20,
+        "region": [
+          44,
+          85,
+          123,
+          126
+        ],
+        "reason": "抚胸/近领手与外展托云掌都清楚；normal指尖更细、腕姿更舒展，经典简化有距离。"
+      },
+      "emotion": {
+        "score": 85,
+        "weight": 10,
+        "region": [
+          52,
+          55,
+          86,
+          83
+        ],
+        "reason": "闭口安静神态成立，淡紫瞳色相接近normal；眼睑/瞳白小面较淡且更圆，原图略垂上睑的沉静目光弱。色阶对比差在融合中评，不按RGB扣色相分。"
+      },
+      "hair": {
+        "score": 88,
+        "weight": 20,
+        "region": [
+          28,
+          40,
+          121,
+          187
+        ],
+        "reason": "银白紫色相及分缝、额前贴面束、肩后长发层级可辨；normal细窄不等长翻卷被概括成宽S束，头侧卷幅/发梢层级不足。银紫为既有授权适配。"
+      },
+      "pose": {
+        "score": 82,
+        "weight": 15,
+        "region": [
+          48,
+          90,
+          102,
+          220
+        ],
+        "reason": "保留抚胸/外展上身和开衩前腿，但腰胯几乎正面竖直、原图肩胯微偏与承重变化弱，股根插接感破坏整体姿态。"
+      },
+      "clothing": {
+        "score": 84,
+        "weight": 25,
+        "region": [
+          36,
+          82,
+          127,
+          220
+        ],
+        "reason": "高领露肩、胸前银饰、上臂束带/垂袖、开衩长裙和拖摆可辨。normal侧腰开口、胸腹收放、袖布内外翻折与裙下摆层级仍缩并，胸衣像窄桶、裙的主要褶谷位置与身体受力联系不足。白/银/紫色相方向接近，不因面积/亮度/饱和单独扣分。"
+      },
+      "accessories": {
+        "score": 90,
+        "weight": 10,
+        "region": [
+          17,
+          15,
+          132,
+          220
+        ],
+        "reason": "角翼尾、侧头结徽、银链/云符识别成立；角鳞转面、耳侧细坠和长裙多个结徽简化较多。角翼尾银紫、云蓝色相均接近选定normal/授权适配。"
+      }
+    },
+    "colorFidelity": {
+      "policy": "User final clarification: corresponding-part hue proximity only; no RGB/HEX, brightness, saturation or area-ratio threshold.",
+      "reference": "ai-girls-atlas/assets/zipzippipe/gpt/normal-zipzippipe-pixiv-148186519-p03.jpg",
+      "authorizedAdaptations": [
+        "GPT silver-lilac palette retained from prior explicit user approval."
+      ],
+      "parts": [
+        {
+          "part": "hair/gradient",
+          "observed": "银白主发/浅紫暗束，与normal及银紫授权适配接近；未见蓝/紫整块误换。",
+          "hueClose": true,
+          "deductionDimension": "hair",
+          "hueSpecificDeduction": 0
+        },
+        {
+          "part": "left/right iris",
+          "observed": "两眼为淡紫/灰紫，符合normal；不按虹膜精确RGB或饱和扣分。",
+          "hueClose": true,
+          "deductionDimension": "emotion",
+          "hueSpecificDeduction": 0
+        },
+        {
+          "part": "dress/shoes",
+          "observed": "白银与浅紫衣裙鞋饰色相接近；局部冷灰反光是材料光影问题，未视为明显错色。",
+          "hueClose": true,
+          "deductionDimension": "clothing",
+          "hueSpecificDeduction": 0
+        },
+        {
+          "part": "horn/wing/tail/silver ornaments/cloud",
+          "observed": "银紫角翼尾、银色饰物和蓝云色相对应normal。",
+          "hueClose": true,
+          "deductionDimension": "accessories",
+          "hueSpecificDeduction": 0
+        }
+      ],
+      "limitations": "本轮不以明暗、饱和、面积关系另扣还原分；材料是否自然仍已在融合维度扣分。"
+    },
+    "reasons": [
+      "实际看本轮full及normal原图/角色README，重新评分，不沿用旧91.45。",
+      "动作和身份可辨，但腰胯姿态/衣型层级尚不足90；颜色色相本身未发现需另扣的明显错色。"
+    ],
+    "recommendations": [
+      "先修肩—肘—腕的连续收放：肩根不能是平行细直轨，右肘不能是尖V，掌根须有肉面且与手指分组衔接。",
+      "先画腰胯/上大腿连续体块再贴衣：消除y130..147近水平色带和方形股根；原生小腿/足可保留，不为假定裸腰宽度编尺寸真值。",
+      "胸衣围绕胸腔、抚胸手、腋下与束腰画相应暗面/压褶；裙褶从腰侧/胯/开衩受力处出发，不能一根等宽亮线跑完整裙。",
+      "长发维持normal分缝和银紫色相，先稳定暗缝/整束色面，再放不等长短亮簇；翼膜、发束、缎面不能共用同宽软亮带。",
+      "同seed回放已知失败；新几何/部件hash后用新seed正式复审。不能用量化色阶、旧body98或新pool解释为已通过。"
+    ],
+    "evidence": {
+      "reactFullImage": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gpt/full.png",
+      "reactFullImageSha256": "dca8ab7d0bd40facbec08bb5a2c00d25670e1fa3e5614f0d20d300fddecbf07c",
+      "reactFullSnapshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gpt/full-evidence.json",
+      "actuallyViewed": [
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/gpt/full.png",
+        "ai-girls-atlas/assets/zipzippipe/gpt/normal-zipzippipe-pixiv-148186519-p03.jpg",
+        "ai-girls-atlas/characters/gpt/README.md"
+      ],
+      "captureBrowser": "Codex in-app browser",
+      "failedImages": []
+    },
+    "limitations": [
+      "只看静态，不宣称动画通过。",
+      "还原与融合分别计分，色相接近不抵消材质和人体缺陷。"
+    ]
+  },
+  "notReviewed": [
+    "Verified all20 browser body capture pending replacement strips.",
+    "New dimensional audit; no false >5% measurement claim.",
+    "Other six fusion groups."
+  ]
+}

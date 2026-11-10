@@ -1,0 +1,82 @@
+{
+  "schema": "classic-independent-native-comparison-v1",
+  "reviewer": "classic_body_judge",
+  "bodyHash": "849c8080c50d6ae30617438dd361b25e55262ad5ccdf9878f65c9b877e7547fc",
+  "completeHash": "6e44a715bb8b1cd56d81ea9ba5bf4c2c8e2cf0c0f4dd5ff3b6436dab0bf45a2a",
+  "rows": [
+    {
+      "nativeId": "R02",
+      "nativeSource": "qq-show-classic/outfit/白色天使套装.gif",
+      "sourceRawHash": "53d3241a50f9c95e118d417019d4bc23e72ce078353d7376a91bb2fdcae5e8d8",
+      "nativeCrop": "R02-crop-1x.png",
+      "nativeCropHash": "38c72347fcac05618201c0891412e3ad8045be5904b5831bba1ad1ce3b19e159",
+      "nativeRect": {
+        "x": 47,
+        "y": 82,
+        "width": 38,
+        "height": 37
+      },
+      "aiRect": {
+        "left": 45,
+        "top": 91,
+        "width": 23,
+        "height": 28
+      },
+      "scale": 6,
+      "limits": [
+        "不能把交叠中的隐藏手指当成完整裸手轮廓",
+        "不能把羽毛或礼裙遮住的肩/胸/腰自行补成原生100"
+      ]
+    },
+    {
+      "nativeId": "R03",
+      "nativeSource": "qq-show-classic/outfit/抱抱白熊套装.gif",
+      "sourceRawHash": "a8f967d7b89105e2d46b0c1d73b308ded8e3b65f4c51cc289b5bc1f37216d701",
+      "nativeCrop": "R03-detail-1x.png",
+      "nativeCropHash": "62985e26a538a6da39b960a9c48755a1a10bec83d0516688839c888d232c0360",
+      "nativeRect": {
+        "x": 34,
+        "y": 117,
+        "width": 17,
+        "height": 19
+      },
+      "aiRect": {
+        "left": 51,
+        "top": 117,
+        "width": 24,
+        "height": 15
+      },
+      "scale": 6,
+      "limits": [
+        "不能直接把熊形换成书后声称接触成立",
+        "隐藏肘腕、黄色带结和熊轮廓都不可当裸手语义mask"
+      ]
+    },
+    {
+      "nativeId": "R12",
+      "nativeSource": "qq-show-classic/outfit/吊带牛仔裤麦克风套装.gif",
+      "sourceRawHash": "4ce297ca0365985b9e49e130d14767c168d671fc2c3292cba26cf31fea3a9567",
+      "nativeCrop": "R12-detail-1x.png",
+      "nativeCropHash": "57fb3870c57e2aca174ad7f49a1b8652fd18f6803fa98958c8703c0f0f78f622",
+      "nativeRect": {
+        "x": 44,
+        "y": 86,
+        "width": 18,
+        "height": 21
+      },
+      "aiRect": {
+        "left": 52,
+        "top": 86,
+        "width": 19,
+        "height": 21
+      },
+      "scale": 6,
+      "limits": [
+        "不能声称此参考已证明实际点颊或书边握持",
+        "红腕带隐藏的腕根不能被当成完整裸手原生资产"
+      ]
+    }
+  ],
+  "evidence": "glm-r9-native-contact-comparison-6x.png",
+  "policy": "Native100 unchanged; no warp/mirror/recolor. R02 self overlap, R03 bear-front fingers, R12 compact near-face palm without actual cheek-contact truth. No actual native book grip/hidden bare anatomy asserted."
+}

@@ -1,0 +1,225 @@
+{
+  "schema": "classic-independent-body-reference-v1",
+  "reviewer": "classic_body_judge",
+  "round": "human-followup-20261110-deepseek-r5",
+  "character": "deepseek",
+  "date": "2026-11-10",
+  "nativeBaselineScore": 100,
+  "body": {
+    "reviewer": "classic_body_judge",
+    "score": 79,
+    "threshold": 98,
+    "passed": false,
+    "pending": true,
+    "requiresRevision": true,
+    "reviewedBodyHash": "b4a901c19572b3c3ce632dcfaaedb88ac46c7c2e8333b50a105a84ea67fe55f0",
+    "seed": "human-20261110-deepseek-body-lne2dn5c",
+    "bodyCorpusHash": "3451692764c29845da8f6c5b579069c3f1bec6309b7b9765bcc11843167082c7",
+    "corpusSignature": "body-corpus-context-v1-53a51a7",
+    "coverage": {
+      "default": true,
+      "browserAllTwentyVerified": false,
+      "requiredSamples": 20
+    },
+    "defaultComparison": {
+      "score": 79,
+      "passed": false,
+      "reasons": [
+        "腰胯x57..81/y129..149是长直方框，髋股根平接；左臂肩到掌几乎一路细直，肘体积弱；右肘尖V、托掌像双水平薄片。",
+        "头身原生尺度保留不等于新肩腰胯自然，腿下段来自原生不替整身承重通过。"
+      ],
+      "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/deepseek/body-default.png"
+    },
+    "perSampleScores": [],
+    "reasons": [
+      "本轮default与真实full已确认人体仍需返工，不沿用旧98。",
+      "等待root修正滚动后截图滞后一帧的问题，再补浏览器全部20例；不把DOM列出20当作全部已目视。"
+    ],
+    "recommendations": [
+      "腰胯与上大腿先画连续曲面：去掉x57..81/y129..149方框/长直边/股根横带，身体中心线与足部承重统一；不臆造官方裸腰宽度。",
+      "左臂不可肩到掌一路细直杆，补肘转向/前臂收放；右肘去尖V，托掌重画掌根肉面/短拇指与指组，和碗沿真实相接。",
+      "胸围兜和深蓝侧衣沿肋廓包裹，腋与袖根相接；袖布在肘窝/袖口有压力折；提裙掌处的褶皱从该手向裙身发散。",
+      "白围裙用不等长聚褶/翻边分出棉布体积，深蓝裙用更窄断的暗亮簇说明垂褶；不把描边或白点当材质。",
+      "保留蓝/深蓝/白的对应色相、鲸尾、授权饭碗鼓腮；细化发缝与末端不等长束，别退回无动作旧站姿。"
+    ],
+    "limitations": [
+      "没有新量测，不声称已数学证明>5%或全身<=5%。",
+      "没有官方裸腰/胯真值，不按猜测尺寸强判。"
+    ],
+    "evidence": {
+      "reactBodyImage": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/deepseek/body-default.png",
+      "reactBodyImageSha256": "c94a9061056baebbd78fe667f4f929e5a83f89530571bf042ea05663e7b2444e",
+      "reactBodySnapshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/deepseek/body-evidence.json",
+      "diagnosticBody6x": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/deepseek-r5-body-diagnostic-6x.png",
+      "captureBrowser": "Codex in-app browser",
+      "failedImages": []
+    },
+    "evidenceIntegrity": {
+      "status": "all20-browser-captures-pending-verification"
+    }
+  },
+  "reference": {
+    "reviewer": "classic_body_judge",
+    "score": 85.8,
+    "weightedRaw": 85.8,
+    "threshold": 90,
+    "passed": false,
+    "reviewedCompleteHash": "c3f908029ea5670cfc3306dffa13ada17b1e2d5163f4326c92396abc9a30f8f4",
+    "reviewedCompleteArtifact": "character.png canonical runtime per-layer composite",
+    "reviewedFullLayerHashes": {
+      "deepseek-background-0": "a3b49eb8b3be0f17d96f56cec71efd9037ddd71fee99df3ed474f36003201213",
+      "deepseek-aura-0": "f3cf10773d7cd346b25be89d1e24acfd0662a40559d6f96ee4969c52cf0d6010",
+      "deepseek-back-0": "ba02bcef179e93335fa1af815a0047872b46799fe1e6292b3a4a39956b326df4",
+      "deepseek-hair-0": "62a0e7c27300d3d291bc6ec369b3f288e8c47eccc74bef3fc98896f53df34de0",
+      "deepseek-legs-0": "49beb2bda248a4805e9904f0b01dbe88d3e4d738ffd53c2c836fb8d513b05bfc",
+      "deepseek-bottom-0": "e3ab5fc3e1566785037ee3391615f9138b89963488ebafd14adae37ae5ad3c7c",
+      "deepseek-top-0": "9aa0a9c65351d5dd2b72f432ed2f23776ad12b1dfd859ce9cba78885ad39cb60",
+      "deepseek-face-0": "7c3956d7c2074dd8fbdc6113f4570a07210944eaa9286881123ad164b02e85d0",
+      "deepseek-hair-1": "2afbd1ec042d88e6523dd6032e60523a378cd975867e7030a5e7f07dd30b94fd",
+      "deepseek-prop-0": "24601e2cd8fc79a3a9426dec9787c16a58200c5e631e6970468930e2bf83d51b",
+      "deepseek-top-1": "e23b3fbf184d7f59823e70ee214a663e1af5f5af266fdafc927170c85f3f0fa6",
+      "deepseek-headwear-0": "0a9237ccb996bc7fbe6e91858fdc116810bc08bca7f816dff10da4b92eac9c73",
+      "deepseek-effect-0": "1d9266904cf1405548a6ad0f20ffa0e73eb8e3f17ddc0bb769bc7e8afa600eaa"
+    },
+    "reviewedGeneratedInterfaceHashes": {},
+    "seed": "human-20261110-deepseek-full-rnyid62r",
+    "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+    "contextSignature": "native-context-v4-d560768d",
+    "dimensions": {
+      "action": {
+        "score": 92,
+        "weight": 20,
+        "region": [
+          29,
+          89,
+          118,
+          140
+        ],
+        "reason": "提裙/外托掌和饭碗动作清楚；鼓腮饭碗为授权适配。normal抓裙指法和袖口松量更明确，左掌与裙根受力仍弱。"
+      },
+      "emotion": {
+        "score": 88,
+        "weight": 10,
+        "region": [
+          52,
+          57,
+          86,
+          85
+        ],
+        "reason": "授权鼓腮/米粒保持活泼感觉，蓝瞳色相接近normal；眼睑与口颊变化较简单，不按精确色值扣分。"
+      },
+      "hair": {
+        "score": 87,
+        "weight": 20,
+        "region": [
+          26,
+          35,
+          121,
+          183
+        ],
+        "reason": "深蓝与浅蓝发束、呆毛、中央长刘海和向左流动长卷保留；normal的分组卷幅/细尖发束仍更丰富，当前末端宽S片重复。"
+      },
+      "pose": {
+        "score": 79,
+        "weight": 15,
+        "region": [
+          47,
+          89,
+          98,
+          220
+        ],
+        "reason": "提裙站姿识别成立，但胸腰胯近正面长直，原图上身/裙的反向动势和腿部前后承重差弱，髋股根方接进一步削弱自然度。"
+      },
+      "clothing": {
+        "score": 81,
+        "weight": 25,
+        "region": [
+          28,
+          84,
+          122,
+          219
+        ],
+        "reason": "女仆帽、露肩深袖、白胸围兜/围裙/鲸标、深蓝裙和小鞋可辨；normal袖管蓬量、袖口翻折、提裙引起的放射褶/内衬和围裙厚度缩并，白片像硬贴，衣型体积不足。"
+      },
+      "accessories": {
+        "score": 91,
+        "weight": 10,
+        "region": [
+          22,
+          22,
+          133,
+          220
+        ],
+        "reason": "鲸鳍耳、呆毛、单尾双尾鳍、蝶结和饭碗清楚；尾鳍/边饰和帽褶小细节缩并。蓝/深蓝/白及饰物对应色相成立。"
+      }
+    },
+    "colorFidelity": {
+      "policy": "Corresponding-part hue proximity only; no exact RGB/HEX, brightness, saturation or area-ratio penalty.",
+      "reference": "ai-girls-atlas/assets/zipzippipe/deepseek/normal-zipzippipe-pixiv-148186519-p00.jpg",
+      "authorizedAdaptations": [
+        "Rice bowl, puffed cheeks and rice grain are explicitly authorized."
+      ],
+      "parts": [
+        {
+          "part": "hair/gradient",
+          "observed": "深蓝主发与浅蓝发束对应normal，渐变/挑亮仍在蓝色相，未发现整块错色。",
+          "hueClose": true,
+          "deductionDimension": "hair",
+          "hueSpecificDeduction": 0
+        },
+        {
+          "part": "left/right iris",
+          "observed": "两眼蓝色，与normal对应。",
+          "hueClose": true,
+          "deductionDimension": "emotion",
+          "hueSpecificDeduction": 0
+        },
+        {
+          "part": "clothing/shoes",
+          "observed": "深蓝衣裙/鞋、白胸片围裙和浅蓝内裙对应normal；不因亮度/饱和差扣色相分。",
+          "hueClose": true,
+          "deductionDimension": "clothing",
+          "hueSpecificDeduction": 0
+        },
+        {
+          "part": "tail/maid hat/ribbons/bowl",
+          "observed": "蓝尾、白帽、蓝饰及授权白饭蓝白碗色相明确。",
+          "hueClose": true,
+          "deductionDimension": "accessories",
+          "hueSpecificDeduction": 0
+        }
+      ]
+    },
+    "reasons": [
+      "实际看本轮full与normal，不沿用旧91.15。",
+      "动作和配色识别清楚，但姿态及女仆衣型/体积/层级不足90；融合另有显著低分。"
+    ],
+    "recommendations": [
+      "腰胯与上大腿先画连续曲面：去掉x57..81/y129..149方框/长直边/股根横带，身体中心线与足部承重统一；不臆造官方裸腰宽度。",
+      "左臂不可肩到掌一路细直杆，补肘转向/前臂收放；右肘去尖V，托掌重画掌根肉面/短拇指与指组，和碗沿真实相接。",
+      "胸围兜和深蓝侧衣沿肋廓包裹，腋与袖根相接；袖布在肘窝/袖口有压力折；提裙掌处的褶皱从该手向裙身发散。",
+      "白围裙用不等长聚褶/翻边分出棉布体积，深蓝裙用更窄断的暗亮簇说明垂褶；不把描边或白点当材质。",
+      "保留蓝/深蓝/白的对应色相、鲸尾、授权饭碗鼓腮；细化发缝与末端不等长束，别退回无动作旧站姿。"
+    ],
+    "evidence": {
+      "reactFullImage": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/deepseek/full.png",
+      "reactFullImageSha256": "ac848f552e965ee6c31f69fc7a501facb08c286d036e08901dee0a79fbae8786",
+      "reactFullSnapshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/deepseek/full-evidence.json",
+      "captureBrowser": "Codex in-app browser",
+      "failedImages": [],
+      "actuallyViewed": [
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/deepseek/full.png",
+        "ai-girls-atlas/assets/zipzippipe/deepseek/normal-zipzippipe-pixiv-148186519-p00.jpg",
+        "ai-girls-atlas/characters/deepseek/README.md"
+      ]
+    },
+    "limitations": [
+      "静态图；色相接近不抵消衣型和人体问题。"
+    ]
+  },
+  "notReviewed": [
+    "Verified browser all20 body strips.",
+    "New dimensional audit.",
+    "Other six fusion groups."
+  ]
+}

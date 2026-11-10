@@ -1,0 +1,1845 @@
+{
+  "schema": "classic-independent-prop-semantics-correction-v1",
+  "reviewer": "classic_body_judge",
+  "character": "qwen",
+  "date": "2026-11-10",
+  "round": "human-followup-20261110-qwen-r6-prop-semantics-correction",
+  "nativeBaselineScore": 100,
+  "reviewedBodyHash": "bfc249ca53355ccccf83d9cab1849e04548db1c649df2cbc5bfda518dca11cb6",
+  "reviewedCompleteHash": "cdfcaece94f0b2d0dec0787ea4fece02883bd8bfb1652c00774d639210ac75d8",
+  "supersedesReasonAssignment": {
+    "sourceReport": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/qwen-r6-first-review.json",
+    "scope": "仅明确错误的原生道具握持归因及相关接触维度；同组其他例和五个非接触维度数值逐项保持。",
+    "notArtworkImprovement": true
+  },
+  "sourceSemantics": [
+    {
+      "id": "native-prop-3",
+      "name": "复古美式邮差包",
+      "source": "qq-show-classic/other-accessories/复古美式邮差包.gif",
+      "sourceRawHash": "902de052ca38214a63b2c39f22c1c450e9762ed8fa846de16ef7e855dfeb2ac2",
+      "convertedPartHash": "ce002d029f2418591661d3c0a1d5be66ff3a0ec71541d349429a5253443ac85c",
+      "semantics": "斜挎邮差包有跨肩长带，不需要手抓包。",
+      "actualSourceViewedViaNearestFrame0": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/native-prop-3-semantic-4x.png"
+    },
+    {
+      "id": "native-prop-15",
+      "name": "运动包",
+      "source": "qq-show-classic/other-accessories/运动包.gif",
+      "sourceRawHash": "078493ad47946788780401f6496efe9d7ca87f858ca9de63dc01b8124a53e3d8",
+      "convertedPartHash": "691b45c27d68a501cdd4ea923ac8954cc0efbb3b442381416ae3dd654b704d6b",
+      "semantics": "地面运动包，本次上下行都未由手提，不要求新手接包带。",
+      "actualSourceViewedViaNearestFrame0": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/native-prop-15-semantic-4x.png"
+    },
+    {
+      "id": "native-prop-18",
+      "name": "柳丁皮带",
+      "source": "qq-show-classic/other-accessories/柳丁皮带.gif",
+      "sourceRawHash": "fd06bd992b73e7775ad66bf6d666c75e0ee54e42203c8a9cbe155ec4964a33d5",
+      "convertedPartHash": "df151a69832bfb395ccd0101e139a00798d2905cce443e5789052a98ddba9d9e",
+      "semantics": "腰部皮带，不需要抓握。",
+      "actualSourceViewedViaNearestFrame0": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/native-prop-18-semantic-4x.png"
+    }
+  ],
+  "nativeHandCalibration": {
+    "actuallyViewed": [
+      "ai-workspace/previews/native-hand-reference-20261110/contact-sheet.png",
+      "ai-workspace/previews/native-hand-reference-20261110/README.md"
+    ],
+    "contactSheetSha256": "0d7c09d257c31df1887c1c1fbd18b9e9b45056853d696d7ab9cb6d13fb111697",
+    "observations": [
+      "原生R01/R04/R09短掌/指群靠少量错阶和暗亮簇读形，五指不必逐根可数。",
+      "R03/R06/R07/R10/R11有物件/布/把手穿入指群的前后层；负形可能是绳/柄/把手周围背景，不能仅凭圆/环轮廓指控掌心洞。",
+      "裸腕掌与袖/手套实际连续、掌根体积和所需真实接触仍严格；源件只作诊断，不给派生手或AI自动100/98。",
+      "本次不改变姿态/色相分或原素体分，不由紧凑指群参考自动授自然度通过。"
+    ]
+  },
+  "hybrid": {
+    "body3": {
+      "reviews": [
+        {
+          "reviewer": "classic_body_judge",
+          "score": 75.05,
+          "weightedRaw": 75.05,
+          "threshold": 98,
+          "passed": false,
+          "pending": false,
+          "selectedAiSlots": [
+            "legs",
+            "bottom",
+            "top"
+          ],
+          "selectedItemIDs": {
+            "bottom": "qwen-bottom",
+            "legs": "qwen-legs",
+            "top": "qwen-top"
+          },
+          "reviewedPartHashes": {
+            "bottom": "8c2b056ddae45de3c2573101d567fc2463ec03b267cafadecee5210635a58e79",
+            "legs": "7c00c34da44894c1f9c1384aaf94d260875096bd642160803c964496694b297d",
+            "top": "bbacafda11771f3e16b9ee06da51802fdce828b4e9f4ac61886c9d685ece3740"
+          },
+          "reviewedGeneratedInterfaceHashes": {},
+          "reviewedCompleteHash": "cdfcaece94f0b2d0dec0787ea4fece02883bd8bfb1652c00774d639210ac75d8",
+          "bodyHash": "bfc249ca53355ccccf83d9cab1849e04548db1c649df2cbc5bfda518dca11cb6",
+          "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+          "seed": "human-20261110-qwen-body3-52jfv00m",
+          "contextSignature": "native-context-v4-1a3b3a95",
+          "draws": {
+            "aura": [
+              "native-aura-3",
+              "native-aura-10",
+              "native-aura-14",
+              "native-aura-13",
+              "native-aura-5"
+            ],
+            "back": [
+              "native-back-14",
+              "native-back-4",
+              "native-back-8",
+              "native-back-16",
+              "native-back-1"
+            ],
+            "background": [
+              "native-background-19",
+              "native-background-18",
+              "native-background-12",
+              "native-background-16",
+              "native-background-8"
+            ],
+            "bottom": [
+              "native-bottom-14",
+              "native-bottom-19",
+              "native-bottom-11",
+              "native-bottom-20",
+              "native-bottom-18"
+            ],
+            "effect": [
+              "native-effect-19",
+              "native-effect-20",
+              "native-effect-12",
+              "native-effect-17",
+              "native-effect-11"
+            ],
+            "face": [
+              "native-face-20",
+              "native-face-4",
+              "native-face-18",
+              "native-face-12",
+              "native-face-15"
+            ],
+            "hair": [
+              "native-hair-14",
+              "native-hair-2",
+              "native-hair-18",
+              "native-hair-5",
+              "native-hair-4"
+            ],
+            "headwear": [
+              "native-headwear-10",
+              "native-headwear-2",
+              "native-headwear-20",
+              "native-headwear-12",
+              "native-headwear-16"
+            ],
+            "legs": [
+              "native-legs-14",
+              "native-legs-19",
+              "native-legs-11",
+              "native-legs-20",
+              "native-legs-18"
+            ],
+            "prop": [
+              "native-prop-13",
+              "native-prop-18",
+              "native-prop-14",
+              "native-prop-9",
+              "native-prop-6"
+            ],
+            "top": [
+              "native-top-20",
+              "native-top-7",
+              "native-top-18",
+              "native-top-16",
+              "native-top-14"
+            ]
+          },
+          "contextScores": [
+            {
+              "caseId": "qwen-body3-sba7fc9f1-a0-f0",
+              "fixtureIndex": 0,
+              "score": 76.2,
+              "weightedRaw": 76.2,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 81,
+                  "weight": 20,
+                  "reason": "例1城市星闪：白内衫/蓝前裙是几条长亮面，肩/宽袖像折扇板，腰根与裙摆没有共同受力；原生腰侧物停在固定位置。"
+                },
+                "proportionConnection": {
+                  "score": 76,
+                  "weight": 25,
+                  "reason": "例1城市星闪：白内衫/蓝前裙是几条长亮面，肩/宽袖像折扇板，腰根与裙摆没有共同受力；原生腰侧物停在固定位置。"
+                },
+                "materialColor": {
+                  "score": 73,
+                  "weight": 15,
+                  "reason": "例1城市星闪：白内衫/蓝前裙是几条长亮面，肩/宽袖像折扇板，腰根与裙摆没有共同受力；原生腰侧物停在固定位置。"
+                },
+                "blingeePixel": {
+                  "score": 77,
+                  "weight": 20,
+                  "reason": "例1城市星闪：白内衫/蓝前裙是几条长亮面，肩/宽袖像折扇板，腰根与裙摆没有共同受力；原生腰侧物停在固定位置。"
+                },
+                "occlusionContact": {
+                  "score": 68,
+                  "weight": 15,
+                  "reason": "例1城市星闪：白内衫/蓝前裙是几条长亮面，肩/宽袖像折扇板，腰根与裙摆没有共同受力；原生腰侧物停在固定位置。"
+                },
+                "canvasReadability": {
+                  "score": 89,
+                  "weight": 5,
+                  "reason": "例1城市星闪：白内衫/蓝前裙是几条长亮面，肩/宽袖像折扇板，腰根与裙摆没有共同受力；原生腰侧物停在固定位置。"
+                }
+              },
+              "reason": "例1城市星闪：白内衫/蓝前裙是几条长亮面，肩/宽袖像折扇板，腰根与裙摆没有共同受力；原生腰侧物停在固定位置。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-3",
+                "back": "native-back-14",
+                "background": "native-background-19",
+                "bottom": "native-bottom-14",
+                "effect": "native-effect-19",
+                "face": "native-face-20",
+                "hair": "native-hair-14",
+                "headwear": "native-headwear-10",
+                "legs": "native-legs-14",
+                "prop": "native-prop-13",
+                "top": "native-top-20"
+              },
+              "aiSelection": {
+                "aura": "native-aura-3",
+                "back": "native-back-14",
+                "background": "native-background-19",
+                "bottom": "qwen-bottom",
+                "effect": "native-effect-19",
+                "face": "native-face-20",
+                "hair": "native-hair-14",
+                "headwear": "native-headwear-10",
+                "legs": "qwen-legs",
+                "prop": "native-prop-13",
+                "top": "qwen-top"
+              },
+              "selectedAiSlots": [
+                "legs",
+                "bottom",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "874de0f847f5043208d15203f2dffcec65afeab7a1e007ac4688e60c9c707c98",
+                  "itemId": "qwen-legs",
+                  "key": "qwen-legs-0",
+                  "name": "云纹蓝金低跟鞋",
+                  "reviewFamilyHash": "7c00c34da44894c1f9c1384aaf94d260875096bd642160803c964496694b297d",
+                  "slot": "legs",
+                  "src": "/assets-classic/qwen/remake/legs.png",
+                  "svg": "/assets-classic/qwen/remake/legs.svg",
+                  "variantRole": "own-pose",
+                  "z": 30
+                },
+                {
+                  "artworkHash": "5a3c0d207f380ebc14c558a6b834ebca21ad543f2a5a9a930a535a718e8b4e45",
+                  "itemId": "qwen-bottom",
+                  "key": "qwen-bottom-0",
+                  "name": "云锦层叠长裙",
+                  "reviewFamilyHash": "8c2b056ddae45de3c2573101d567fc2463ec03b267cafadecee5210635a58e79",
+                  "slot": "bottom",
+                  "src": "/assets-classic/qwen/remake/bottom.png",
+                  "svg": "/assets-classic/qwen/remake/bottom.svg",
+                  "variantRole": "own-pose",
+                  "z": 40
+                },
+                {
+                  "artworkHash": "f7b38eeaf83d85758c5245528a58ac2d9bd66b21259654bdb26f60387376d07c",
+                  "design": "/assets-classic/qwen/remake/top-body-design.svg",
+                  "itemId": "qwen-top",
+                  "key": "qwen-top-0",
+                  "name": "盘扣白衫金边披袖",
+                  "reviewFamilyHash": "bbacafda11771f3e16b9ee06da51802fdce828b4e9f4ac61886c9d685ece3740",
+                  "slot": "top",
+                  "src": "/assets-classic/qwen/remake/top-body.png",
+                  "svg": "/assets-classic/qwen/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "4900444ac2702f0ef19fdb98aa4cd25ed4911e75e6326d9096307c3bbf71c575",
+                  "design": "/assets-classic/qwen/remake/top-arms-design.svg",
+                  "itemId": "qwen-top",
+                  "key": "qwen-top-1",
+                  "name": "盘扣白衫金边披袖",
+                  "reviewFamilyHash": "bbacafda11771f3e16b9ee06da51802fdce828b4e9f4ac61886c9d685ece3740",
+                  "slot": "top",
+                  "src": "/assets-classic/qwen/remake/top-arms.png",
+                  "svg": "/assets-classic/qwen/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/qwen/body3-evidence.json",
+              "recommendations": [
+                "先让躯干—腰胯—股根连续，去掉水平裤片与膝附近横断亮面；不用长裙遮掉体块问题。",
+                "低位臂/腕/提链掌重画自然收放，链/包与手指有真实接触；持扇臂袖口和肘弯用同一关节。",
+                "白内裙/蓝袍先画围绕胸腰胯和提链手的主褶面，再加金线；宽袖不能只做扇形三角板。",
+                "长发/辫节用分组暗缝和不等长亮簇，保留所选normal蓝紫色相与偏分，不退回旧卷发。"
+              ]
+            },
+            {
+              "caseId": "qwen-body3-sba7fc9f1-a0-f1",
+              "fixtureIndex": 1,
+              "score": 78.15,
+              "weightedRaw": 78.15,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 81,
+                  "weight": 20,
+                  "reason": "保留原此维数值；删除不成立的道具归因。例2绿树场景：独立源prop为腰带，不是小包；原生top自带手提包随top替换移除，不是AI漏握的独立prop。撤回“新持扇手不握小包”。当前袖口到手套/腕的收放层次仍弱，宽袖/白胸片缺布厚度的五维原分保留。"
+                },
+                "proportionConnection": {
+                  "score": 76,
+                  "weight": 25,
+                  "reason": "保留原此维数值；删除不成立的道具归因。例2绿树场景：独立源prop为腰带，不是小包；原生top自带手提包随top替换移除，不是AI漏握的独立prop。撤回“新持扇手不握小包”。当前袖口到手套/腕的收放层次仍弱，宽袖/白胸片缺布厚度的五维原分保留。"
+                },
+                "materialColor": {
+                  "score": 73,
+                  "weight": 15,
+                  "reason": "保留原此维数值；删除不成立的道具归因。例2绿树场景：独立源prop为腰带，不是小包；原生top自带手提包随top替换移除，不是AI漏握的独立prop。撤回“新持扇手不握小包”。当前袖口到手套/腕的收放层次仍弱，宽袖/白胸片缺布厚度的五维原分保留。"
+                },
+                "blingeePixel": {
+                  "score": 77,
+                  "weight": 20,
+                  "reason": "保留原此维数值；删除不成立的道具归因。例2绿树场景：独立源prop为腰带，不是小包；原生top自带手提包随top替换移除，不是AI漏握的独立prop。撤回“新持扇手不握小包”。当前袖口到手套/腕的收放层次仍弱，宽袖/白胸片缺布厚度的五维原分保留。"
+                },
+                "occlusionContact": {
+                  "score": 81,
+                  "weight": 15,
+                  "reason": "例2绿树场景：独立源prop为腰带，不是小包；原生top自带手提包随top替换移除，不是AI漏握的独立prop。撤回“新持扇手不握小包”。当前袖口到手套/腕的收放层次仍弱，宽袖/白胸片缺布厚度的五维原分保留。"
+                },
+                "canvasReadability": {
+                  "score": 89,
+                  "weight": 5,
+                  "reason": "保留原此维数值；删除不成立的道具归因。例2绿树场景：独立源prop为腰带，不是小包；原生top自带手提包随top替换移除，不是AI漏握的独立prop。撤回“新持扇手不握小包”。当前袖口到手套/腕的收放层次仍弱，宽袖/白胸片缺布厚度的五维原分保留。"
+                }
+              },
+              "reason": "例2绿树场景：独立源prop为腰带，不是小包；原生top自带手提包随top替换移除，不是AI漏握的独立prop。撤回“新持扇手不握小包”。当前袖口到手套/腕的收放层次仍弱，宽袖/白胸片缺布厚度的五维原分保留。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-10",
+                "back": "native-back-4",
+                "background": "native-background-18",
+                "bottom": "native-bottom-19",
+                "effect": "native-effect-20",
+                "face": "native-face-4",
+                "hair": "native-hair-2",
+                "headwear": "native-headwear-2",
+                "legs": "native-legs-19",
+                "prop": "native-prop-18",
+                "top": "native-top-7"
+              },
+              "aiSelection": {
+                "aura": "native-aura-10",
+                "back": "native-back-4",
+                "background": "native-background-18",
+                "bottom": "qwen-bottom",
+                "effect": "native-effect-20",
+                "face": "native-face-4",
+                "hair": "native-hair-2",
+                "headwear": "native-headwear-2",
+                "legs": "qwen-legs",
+                "prop": "native-prop-18",
+                "top": "qwen-top"
+              },
+              "selectedAiSlots": [
+                "legs",
+                "bottom",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "874de0f847f5043208d15203f2dffcec65afeab7a1e007ac4688e60c9c707c98",
+                  "itemId": "qwen-legs",
+                  "key": "qwen-legs-0",
+                  "name": "云纹蓝金低跟鞋",
+                  "reviewFamilyHash": "7c00c34da44894c1f9c1384aaf94d260875096bd642160803c964496694b297d",
+                  "slot": "legs",
+                  "src": "/assets-classic/qwen/remake/legs.png",
+                  "svg": "/assets-classic/qwen/remake/legs.svg",
+                  "variantRole": "own-pose",
+                  "z": 30
+                },
+                {
+                  "artworkHash": "5a3c0d207f380ebc14c558a6b834ebca21ad543f2a5a9a930a535a718e8b4e45",
+                  "itemId": "qwen-bottom",
+                  "key": "qwen-bottom-0",
+                  "name": "云锦层叠长裙",
+                  "reviewFamilyHash": "8c2b056ddae45de3c2573101d567fc2463ec03b267cafadecee5210635a58e79",
+                  "slot": "bottom",
+                  "src": "/assets-classic/qwen/remake/bottom.png",
+                  "svg": "/assets-classic/qwen/remake/bottom.svg",
+                  "variantRole": "own-pose",
+                  "z": 40
+                },
+                {
+                  "artworkHash": "f7b38eeaf83d85758c5245528a58ac2d9bd66b21259654bdb26f60387376d07c",
+                  "design": "/assets-classic/qwen/remake/top-body-design.svg",
+                  "itemId": "qwen-top",
+                  "key": "qwen-top-0",
+                  "name": "盘扣白衫金边披袖",
+                  "reviewFamilyHash": "bbacafda11771f3e16b9ee06da51802fdce828b4e9f4ac61886c9d685ece3740",
+                  "slot": "top",
+                  "src": "/assets-classic/qwen/remake/top-body.png",
+                  "svg": "/assets-classic/qwen/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "4900444ac2702f0ef19fdb98aa4cd25ed4911e75e6326d9096307c3bbf71c575",
+                  "design": "/assets-classic/qwen/remake/top-arms-design.svg",
+                  "itemId": "qwen-top",
+                  "key": "qwen-top-1",
+                  "name": "盘扣白衫金边披袖",
+                  "reviewFamilyHash": "bbacafda11771f3e16b9ee06da51802fdce828b4e9f4ac61886c9d685ece3740",
+                  "slot": "top",
+                  "src": "/assets-classic/qwen/remake/top-arms.png",
+                  "svg": "/assets-classic/qwen/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/qwen/body3-evidence.json",
+              "recommendations": [
+                "继续修真实腕掌/衣袖接缝和衣料体积；不为非握持装饰/未选道具强改角色主动作。"
+              ],
+              "semanticCorrection": {
+                "previousContactScore": 66,
+                "previousReason": "例2绿树场景：宽袖肘弯和白袖口没有布的厚度/松量，白胸面到束腰直落，原生小包与新持扇式手不建立握持。",
+                "scope": "Only contact score and false attribution revised; other five dimension numbers unchanged."
+              }
+            },
+            {
+              "caseId": "qwen-body3-sba7fc9f1-a0-f2",
+              "fixtureIndex": 2,
+              "score": 76.85,
+              "weightedRaw": 76.85,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 81,
+                  "weight": 20,
+                  "reason": "例3海边：衣裙轮廓完整但像白蓝板片，中心长亮条和外袍金边未顺胸胯弧面，低位掌/链包区域转面生硬。"
+                },
+                "proportionConnection": {
+                  "score": 77,
+                  "weight": 25,
+                  "reason": "例3海边：衣裙轮廓完整但像白蓝板片，中心长亮条和外袍金边未顺胸胯弧面，低位掌/链包区域转面生硬。"
+                },
+                "materialColor": {
+                  "score": 74,
+                  "weight": 15,
+                  "reason": "例3海边：衣裙轮廓完整但像白蓝板片，中心长亮条和外袍金边未顺胸胯弧面，低位掌/链包区域转面生硬。"
+                },
+                "blingeePixel": {
+                  "score": 78,
+                  "weight": 20,
+                  "reason": "例3海边：衣裙轮廓完整但像白蓝板片，中心长亮条和外袍金边未顺胸胯弧面，低位掌/链包区域转面生硬。"
+                },
+                "occlusionContact": {
+                  "score": 68,
+                  "weight": 15,
+                  "reason": "例3海边：衣裙轮廓完整但像白蓝板片，中心长亮条和外袍金边未顺胸胯弧面，低位掌/链包区域转面生硬。"
+                },
+                "canvasReadability": {
+                  "score": 90,
+                  "weight": 5,
+                  "reason": "例3海边：衣裙轮廓完整但像白蓝板片，中心长亮条和外袍金边未顺胸胯弧面，低位掌/链包区域转面生硬。"
+                }
+              },
+              "reason": "例3海边：衣裙轮廓完整但像白蓝板片，中心长亮条和外袍金边未顺胸胯弧面，低位掌/链包区域转面生硬。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-14",
+                "back": "native-back-8",
+                "background": "native-background-12",
+                "bottom": "native-bottom-11",
+                "effect": "native-effect-12",
+                "face": "native-face-18",
+                "hair": "native-hair-18",
+                "headwear": "native-headwear-20",
+                "legs": "native-legs-11",
+                "prop": "native-prop-14",
+                "top": "native-top-18"
+              },
+              "aiSelection": {
+                "aura": "native-aura-14",
+                "back": "native-back-8",
+                "background": "native-background-12",
+                "bottom": "qwen-bottom",
+                "effect": "native-effect-12",
+                "face": "native-face-18",
+                "hair": "native-hair-18",
+                "headwear": "native-headwear-20",
+                "legs": "qwen-legs",
+                "prop": "native-prop-14",
+                "top": "qwen-top"
+              },
+              "selectedAiSlots": [
+                "legs",
+                "bottom",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "874de0f847f5043208d15203f2dffcec65afeab7a1e007ac4688e60c9c707c98",
+                  "itemId": "qwen-legs",
+                  "key": "qwen-legs-0",
+                  "name": "云纹蓝金低跟鞋",
+                  "reviewFamilyHash": "7c00c34da44894c1f9c1384aaf94d260875096bd642160803c964496694b297d",
+                  "slot": "legs",
+                  "src": "/assets-classic/qwen/remake/legs.png",
+                  "svg": "/assets-classic/qwen/remake/legs.svg",
+                  "variantRole": "own-pose",
+                  "z": 30
+                },
+                {
+                  "artworkHash": "5a3c0d207f380ebc14c558a6b834ebca21ad543f2a5a9a930a535a718e8b4e45",
+                  "itemId": "qwen-bottom",
+                  "key": "qwen-bottom-0",
+                  "name": "云锦层叠长裙",
+                  "reviewFamilyHash": "8c2b056ddae45de3c2573101d567fc2463ec03b267cafadecee5210635a58e79",
+                  "slot": "bottom",
+                  "src": "/assets-classic/qwen/remake/bottom.png",
+                  "svg": "/assets-classic/qwen/remake/bottom.svg",
+                  "variantRole": "own-pose",
+                  "z": 40
+                },
+                {
+                  "artworkHash": "f7b38eeaf83d85758c5245528a58ac2d9bd66b21259654bdb26f60387376d07c",
+                  "design": "/assets-classic/qwen/remake/top-body-design.svg",
+                  "itemId": "qwen-top",
+                  "key": "qwen-top-0",
+                  "name": "盘扣白衫金边披袖",
+                  "reviewFamilyHash": "bbacafda11771f3e16b9ee06da51802fdce828b4e9f4ac61886c9d685ece3740",
+                  "slot": "top",
+                  "src": "/assets-classic/qwen/remake/top-body.png",
+                  "svg": "/assets-classic/qwen/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "4900444ac2702f0ef19fdb98aa4cd25ed4911e75e6326d9096307c3bbf71c575",
+                  "design": "/assets-classic/qwen/remake/top-arms-design.svg",
+                  "itemId": "qwen-top",
+                  "key": "qwen-top-1",
+                  "name": "盘扣白衫金边披袖",
+                  "reviewFamilyHash": "bbacafda11771f3e16b9ee06da51802fdce828b4e9f4ac61886c9d685ece3740",
+                  "slot": "top",
+                  "src": "/assets-classic/qwen/remake/top-arms.png",
+                  "svg": "/assets-classic/qwen/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/qwen/body3-evidence.json",
+              "recommendations": [
+                "先让躯干—腰胯—股根连续，去掉水平裤片与膝附近横断亮面；不用长裙遮掉体块问题。",
+                "低位臂/腕/提链掌重画自然收放，链/包与手指有真实接触；持扇臂袖口和肘弯用同一关节。",
+                "白内裙/蓝袍先画围绕胸腰胯和提链手的主褶面，再加金线；宽袖不能只做扇形三角板。",
+                "长发/辫节用分组暗缝和不等长亮簇，保留所选normal蓝紫色相与偏分，不退回旧卷发。"
+              ]
+            },
+            {
+              "caseId": "qwen-body3-sba7fc9f1-a0-f3",
+              "fixtureIndex": 3,
+              "score": 75.05,
+              "weightedRaw": 75.05,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 80,
+                  "weight": 20,
+                  "reason": "例4蓝夜猫耳：袖体/手和肋廓分层明显，腰线硬带接长裙；长亮面单一，原生光效不替AI衣料的真实转折。"
+                },
+                "proportionConnection": {
+                  "score": 75,
+                  "weight": 25,
+                  "reason": "例4蓝夜猫耳：袖体/手和肋廓分层明显，腰线硬带接长裙；长亮面单一，原生光效不替AI衣料的真实转折。"
+                },
+                "materialColor": {
+                  "score": 72,
+                  "weight": 15,
+                  "reason": "例4蓝夜猫耳：袖体/手和肋廓分层明显，腰线硬带接长裙；长亮面单一，原生光效不替AI衣料的真实转折。"
+                },
+                "blingeePixel": {
+                  "score": 76,
+                  "weight": 20,
+                  "reason": "例4蓝夜猫耳：袖体/手和肋廓分层明显，腰线硬带接长裙；长亮面单一，原生光效不替AI衣料的真实转折。"
+                },
+                "occlusionContact": {
+                  "score": 66,
+                  "weight": 15,
+                  "reason": "例4蓝夜猫耳：袖体/手和肋廓分层明显，腰线硬带接长裙；长亮面单一，原生光效不替AI衣料的真实转折。"
+                },
+                "canvasReadability": {
+                  "score": 88,
+                  "weight": 5,
+                  "reason": "例4蓝夜猫耳：袖体/手和肋廓分层明显，腰线硬带接长裙；长亮面单一，原生光效不替AI衣料的真实转折。"
+                }
+              },
+              "reason": "例4蓝夜猫耳：袖体/手和肋廓分层明显，腰线硬带接长裙；长亮面单一，原生光效不替AI衣料的真实转折。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-13",
+                "back": "native-back-16",
+                "background": "native-background-16",
+                "bottom": "native-bottom-20",
+                "effect": "native-effect-17",
+                "face": "native-face-12",
+                "hair": "native-hair-5",
+                "headwear": "native-headwear-12",
+                "legs": "native-legs-20",
+                "prop": "native-prop-9",
+                "top": "native-top-16"
+              },
+              "aiSelection": {
+                "aura": "native-aura-13",
+                "back": "native-back-16",
+                "background": "native-background-16",
+                "bottom": "qwen-bottom",
+                "effect": "native-effect-17",
+                "face": "native-face-12",
+                "hair": "native-hair-5",
+                "headwear": "native-headwear-12",
+                "legs": "qwen-legs",
+                "prop": "native-prop-9",
+                "top": "qwen-top"
+              },
+              "selectedAiSlots": [
+                "legs",
+                "bottom",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "874de0f847f5043208d15203f2dffcec65afeab7a1e007ac4688e60c9c707c98",
+                  "itemId": "qwen-legs",
+                  "key": "qwen-legs-0",
+                  "name": "云纹蓝金低跟鞋",
+                  "reviewFamilyHash": "7c00c34da44894c1f9c1384aaf94d260875096bd642160803c964496694b297d",
+                  "slot": "legs",
+                  "src": "/assets-classic/qwen/remake/legs.png",
+                  "svg": "/assets-classic/qwen/remake/legs.svg",
+                  "variantRole": "own-pose",
+                  "z": 30
+                },
+                {
+                  "artworkHash": "5a3c0d207f380ebc14c558a6b834ebca21ad543f2a5a9a930a535a718e8b4e45",
+                  "itemId": "qwen-bottom",
+                  "key": "qwen-bottom-0",
+                  "name": "云锦层叠长裙",
+                  "reviewFamilyHash": "8c2b056ddae45de3c2573101d567fc2463ec03b267cafadecee5210635a58e79",
+                  "slot": "bottom",
+                  "src": "/assets-classic/qwen/remake/bottom.png",
+                  "svg": "/assets-classic/qwen/remake/bottom.svg",
+                  "variantRole": "own-pose",
+                  "z": 40
+                },
+                {
+                  "artworkHash": "f7b38eeaf83d85758c5245528a58ac2d9bd66b21259654bdb26f60387376d07c",
+                  "design": "/assets-classic/qwen/remake/top-body-design.svg",
+                  "itemId": "qwen-top",
+                  "key": "qwen-top-0",
+                  "name": "盘扣白衫金边披袖",
+                  "reviewFamilyHash": "bbacafda11771f3e16b9ee06da51802fdce828b4e9f4ac61886c9d685ece3740",
+                  "slot": "top",
+                  "src": "/assets-classic/qwen/remake/top-body.png",
+                  "svg": "/assets-classic/qwen/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "4900444ac2702f0ef19fdb98aa4cd25ed4911e75e6326d9096307c3bbf71c575",
+                  "design": "/assets-classic/qwen/remake/top-arms-design.svg",
+                  "itemId": "qwen-top",
+                  "key": "qwen-top-1",
+                  "name": "盘扣白衫金边披袖",
+                  "reviewFamilyHash": "bbacafda11771f3e16b9ee06da51802fdce828b4e9f4ac61886c9d685ece3740",
+                  "slot": "top",
+                  "src": "/assets-classic/qwen/remake/top-arms.png",
+                  "svg": "/assets-classic/qwen/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/qwen/body3-evidence.json",
+              "recommendations": [
+                "先让躯干—腰胯—股根连续，去掉水平裤片与膝附近横断亮面；不用长裙遮掉体块问题。",
+                "低位臂/腕/提链掌重画自然收放，链/包与手指有真实接触；持扇臂袖口和肘弯用同一关节。",
+                "白内裙/蓝袍先画围绕胸腰胯和提链手的主褶面，再加金线；宽袖不能只做扇形三角板。",
+                "长发/辫节用分组暗缝和不等长亮簇，保留所选normal蓝紫色相与偏分，不退回旧卷发。"
+              ]
+            },
+            {
+              "caseId": "qwen-body3-sba7fc9f1-a0-f4",
+              "fixtureIndex": 4,
+              "score": 76.05,
+              "weightedRaw": 76.05,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 81,
+                  "weight": 20,
+                  "reason": "例5气球城市：胸白片、蓝袍、腰带三层平贴，围绕持扇肘/低位手的衣褶不足，裙面缺主褶峰/谷层级。"
+                },
+                "proportionConnection": {
+                  "score": 76,
+                  "weight": 25,
+                  "reason": "例5气球城市：胸白片、蓝袍、腰带三层平贴，围绕持扇肘/低位手的衣褶不足，裙面缺主褶峰/谷层级。"
+                },
+                "materialColor": {
+                  "score": 73,
+                  "weight": 15,
+                  "reason": "例5气球城市：胸白片、蓝袍、腰带三层平贴，围绕持扇肘/低位手的衣褶不足，裙面缺主褶峰/谷层级。"
+                },
+                "blingeePixel": {
+                  "score": 77,
+                  "weight": 20,
+                  "reason": "例5气球城市：胸白片、蓝袍、腰带三层平贴，围绕持扇肘/低位手的衣褶不足，裙面缺主褶峰/谷层级。"
+                },
+                "occlusionContact": {
+                  "score": 67,
+                  "weight": 15,
+                  "reason": "例5气球城市：胸白片、蓝袍、腰带三层平贴，围绕持扇肘/低位手的衣褶不足，裙面缺主褶峰/谷层级。"
+                },
+                "canvasReadability": {
+                  "score": 89,
+                  "weight": 5,
+                  "reason": "例5气球城市：胸白片、蓝袍、腰带三层平贴，围绕持扇肘/低位手的衣褶不足，裙面缺主褶峰/谷层级。"
+                }
+              },
+              "reason": "例5气球城市：胸白片、蓝袍、腰带三层平贴，围绕持扇肘/低位手的衣褶不足，裙面缺主褶峰/谷层级。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-5",
+                "back": "native-back-1",
+                "background": "native-background-8",
+                "bottom": "native-bottom-18",
+                "effect": "native-effect-11",
+                "face": "native-face-15",
+                "hair": "native-hair-4",
+                "headwear": "native-headwear-16",
+                "legs": "native-legs-18",
+                "prop": "native-prop-6",
+                "top": "native-top-14"
+              },
+              "aiSelection": {
+                "aura": "native-aura-5",
+                "back": "native-back-1",
+                "background": "native-background-8",
+                "bottom": "qwen-bottom",
+                "effect": "native-effect-11",
+                "face": "native-face-15",
+                "hair": "native-hair-4",
+                "headwear": "native-headwear-16",
+                "legs": "qwen-legs",
+                "prop": "native-prop-6",
+                "top": "qwen-top"
+              },
+              "selectedAiSlots": [
+                "legs",
+                "bottom",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "874de0f847f5043208d15203f2dffcec65afeab7a1e007ac4688e60c9c707c98",
+                  "itemId": "qwen-legs",
+                  "key": "qwen-legs-0",
+                  "name": "云纹蓝金低跟鞋",
+                  "reviewFamilyHash": "7c00c34da44894c1f9c1384aaf94d260875096bd642160803c964496694b297d",
+                  "slot": "legs",
+                  "src": "/assets-classic/qwen/remake/legs.png",
+                  "svg": "/assets-classic/qwen/remake/legs.svg",
+                  "variantRole": "own-pose",
+                  "z": 30
+                },
+                {
+                  "artworkHash": "5a3c0d207f380ebc14c558a6b834ebca21ad543f2a5a9a930a535a718e8b4e45",
+                  "itemId": "qwen-bottom",
+                  "key": "qwen-bottom-0",
+                  "name": "云锦层叠长裙",
+                  "reviewFamilyHash": "8c2b056ddae45de3c2573101d567fc2463ec03b267cafadecee5210635a58e79",
+                  "slot": "bottom",
+                  "src": "/assets-classic/qwen/remake/bottom.png",
+                  "svg": "/assets-classic/qwen/remake/bottom.svg",
+                  "variantRole": "own-pose",
+                  "z": 40
+                },
+                {
+                  "artworkHash": "f7b38eeaf83d85758c5245528a58ac2d9bd66b21259654bdb26f60387376d07c",
+                  "design": "/assets-classic/qwen/remake/top-body-design.svg",
+                  "itemId": "qwen-top",
+                  "key": "qwen-top-0",
+                  "name": "盘扣白衫金边披袖",
+                  "reviewFamilyHash": "bbacafda11771f3e16b9ee06da51802fdce828b4e9f4ac61886c9d685ece3740",
+                  "slot": "top",
+                  "src": "/assets-classic/qwen/remake/top-body.png",
+                  "svg": "/assets-classic/qwen/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "4900444ac2702f0ef19fdb98aa4cd25ed4911e75e6326d9096307c3bbf71c575",
+                  "design": "/assets-classic/qwen/remake/top-arms-design.svg",
+                  "itemId": "qwen-top",
+                  "key": "qwen-top-1",
+                  "name": "盘扣白衫金边披袖",
+                  "reviewFamilyHash": "bbacafda11771f3e16b9ee06da51802fdce828b4e9f4ac61886c9d685ece3740",
+                  "slot": "top",
+                  "src": "/assets-classic/qwen/remake/top-arms.png",
+                  "svg": "/assets-classic/qwen/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/qwen/body3-evidence.json",
+              "recommendations": [
+                "先让躯干—腰胯—股根连续，去掉水平裤片与膝附近横断亮面；不用长裙遮掉体块问题。",
+                "低位臂/腕/提链掌重画自然收放，链/包与手指有真实接触；持扇臂袖口和肘弯用同一关节。",
+                "白内裙/蓝袍先画围绕胸腰胯和提链手的主褶面，再加金线；宽袖不能只做扇形三角板。",
+                "长发/辫节用分组暗缝和不等长亮簇，保留所选normal蓝紫色相与偏分，不退回旧卷发。"
+              ]
+            }
+          ],
+          "reasons": [
+            "已实际重看同seed旧PNG上下行及源GIF首帧，修正明确错误的握持归因。",
+            "只改列出的接触维度；其余例原分和五维材料/结构原分保留，组仍失败98。"
+          ],
+          "recommendations": [
+            "优先真实袖/掌连接及衣料体积；不要去抓立式/悬浮/腰饰/肩挎或地面装饰。"
+          ],
+          "evidence": {
+            "reactEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/qwen/body3-evidence.json",
+            "reactScreenshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/qwen/body3.png",
+            "reactScreenshotSha256": "2f3993dd18b2647597655c169f0f0730cd7daba2ad91d1f6f31594df82f3ba64",
+            "captureBrowser": "Codex in-app browser",
+            "failedImages": [],
+            "actuallyViewed": true,
+            "semanticActuallyViewed": [
+              "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/qwen/body3.png",
+              "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/qwen-first-body3-case2-semantic-pair.png",
+              "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/native-prop-3-semantic-4x.png",
+              "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/native-prop-15-semantic-4x.png",
+              "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/native-prop-18-semantic-4x.png",
+              "ai-workspace/previews/native-hand-reference-20261110/contact-sheet.png",
+              "ai-workspace/previews/native-hand-reference-20261110/README.md"
+            ]
+          },
+          "limitations": [
+            "Static only; no animation claim.",
+            "Native complete combinations remain100. Any AI-owned generated support is included with the AI; never inherits100."
+          ],
+          "semanticCorrection": true,
+          "supersedesReport": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/qwen-r6-first-review.json",
+          "originalFiveNonContactScoresPreserved": true,
+          "changedCaseIDs": [
+            "qwen-body3-sba7fc9f1-a0-f1"
+          ]
+        }
+      ]
+    },
+    "upper2": {
+      "reviews": [
+        {
+          "reviewer": "classic_body_judge",
+          "score": 74.95,
+          "weightedRaw": 74.95,
+          "threshold": 98,
+          "passed": false,
+          "pending": false,
+          "selectedAiSlots": [
+            "hair",
+            "top"
+          ],
+          "selectedItemIDs": {
+            "hair": "qwen-hair",
+            "top": "qwen-top"
+          },
+          "reviewedPartHashes": {
+            "hair": "55de23ab65320b30c82450c3cc1f8bce95cd44cd45b0454c1329b9785f4093be",
+            "top": "bbacafda11771f3e16b9ee06da51802fdce828b4e9f4ac61886c9d685ece3740"
+          },
+          "reviewedGeneratedInterfaceHashes": {},
+          "reviewedCompleteHash": "cdfcaece94f0b2d0dec0787ea4fece02883bd8bfb1652c00774d639210ac75d8",
+          "bodyHash": "bfc249ca53355ccccf83d9cab1849e04548db1c649df2cbc5bfda518dca11cb6",
+          "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+          "seed": "human-20261110-qwen-upper2-n9gbgisc",
+          "contextSignature": "native-context-v4-6a7dd780",
+          "draws": {
+            "aura": [
+              "native-aura-12",
+              "native-aura-4",
+              "native-aura-20",
+              "native-aura-2",
+              "native-aura-11"
+            ],
+            "back": [
+              "native-back-16",
+              "native-back-13",
+              "native-back-2",
+              "native-back-6",
+              "native-back-1"
+            ],
+            "background": [
+              "native-background-18",
+              "native-background-17",
+              "native-background-1",
+              "native-background-7",
+              "native-background-3"
+            ],
+            "bottom": [
+              "native-bottom-7",
+              "native-bottom-17",
+              "native-bottom-6",
+              "native-bottom-5",
+              "native-bottom-1"
+            ],
+            "effect": [
+              "native-effect-7",
+              "native-effect-3",
+              "native-effect-12",
+              "native-effect-5",
+              "native-effect-9"
+            ],
+            "face": [
+              "native-face-6",
+              "native-face-2",
+              "native-face-15",
+              "native-face-7",
+              "native-face-20"
+            ],
+            "hair": [
+              "native-hair-3",
+              "native-hair-5",
+              "native-hair-19",
+              "native-hair-2",
+              "native-hair-10"
+            ],
+            "headwear": [
+              "native-headwear-11",
+              "native-headwear-9",
+              "native-headwear-10",
+              "native-headwear-7",
+              "native-headwear-3"
+            ],
+            "legs": [
+              "native-legs-7",
+              "native-legs-17",
+              "native-legs-6",
+              "native-legs-5",
+              "native-legs-1"
+            ],
+            "prop": [
+              "native-prop-3",
+              "native-prop-19",
+              "native-prop-1",
+              "native-prop-15",
+              "native-prop-7"
+            ],
+            "top": [
+              "native-top-19",
+              "native-top-16",
+              "native-top-15",
+              "native-top-7",
+              "native-top-2"
+            ]
+          },
+          "contextScores": [
+            {
+              "caseId": "qwen-upper2-s8ea2e342-a0-f0",
+              "fixtureIndex": 0,
+              "score": 77.55,
+              "weightedRaw": 77.55,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 81,
+                  "weight": 20,
+                  "reason": "保留原此维数值；删除不成立的道具归因。例1绿树白裤：邮差包有跨肩带，无需新手抓住包；带在上下行均可追踪，未确认新增断接。宽袖到手套/腕及裤腰叠压仍硬，独立胸甲式白衣/袖的五维原分保留。"
+                },
+                "proportionConnection": {
+                  "score": 73,
+                  "weight": 25,
+                  "reason": "保留原此维数值；删除不成立的道具归因。例1绿树白裤：邮差包有跨肩带，无需新手抓住包；带在上下行均可追踪，未确认新增断接。宽袖到手套/腕及裤腰叠压仍硬，独立胸甲式白衣/袖的五维原分保留。"
+                },
+                "materialColor": {
+                  "score": 73,
+                  "weight": 15,
+                  "reason": "保留原此维数值；删除不成立的道具归因。例1绿树白裤：邮差包有跨肩带，无需新手抓住包；带在上下行均可追踪，未确认新增断接。宽袖到手套/腕及裤腰叠压仍硬，独立胸甲式白衣/袖的五维原分保留。"
+                },
+                "blingeePixel": {
+                  "score": 77,
+                  "weight": 20,
+                  "reason": "保留原此维数值；删除不成立的道具归因。例1绿树白裤：邮差包有跨肩带，无需新手抓住包；带在上下行均可追踪，未确认新增断接。宽袖到手套/腕及裤腰叠压仍硬，独立胸甲式白衣/袖的五维原分保留。"
+                },
+                "occlusionContact": {
+                  "score": 82,
+                  "weight": 15,
+                  "reason": "例1绿树白裤：邮差包有跨肩带，无需新手抓住包；带在上下行均可追踪，未确认新增断接。宽袖到手套/腕及裤腰叠压仍硬，独立胸甲式白衣/袖的五维原分保留。"
+                },
+                "canvasReadability": {
+                  "score": 89,
+                  "weight": 5,
+                  "reason": "保留原此维数值；删除不成立的道具归因。例1绿树白裤：邮差包有跨肩带，无需新手抓住包；带在上下行均可追踪，未确认新增断接。宽袖到手套/腕及裤腰叠压仍硬，独立胸甲式白衣/袖的五维原分保留。"
+                }
+              },
+              "reason": "例1绿树白裤：邮差包有跨肩带，无需新手抓住包；带在上下行均可追踪，未确认新增断接。宽袖到手套/腕及裤腰叠压仍硬，独立胸甲式白衣/袖的五维原分保留。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-12",
+                "back": "native-back-16",
+                "background": "native-background-18",
+                "bottom": "native-bottom-7",
+                "effect": "native-effect-7",
+                "face": "native-face-6",
+                "hair": "native-hair-3",
+                "headwear": "native-headwear-11",
+                "legs": "native-legs-7",
+                "prop": "native-prop-3",
+                "top": "native-top-19"
+              },
+              "aiSelection": {
+                "aura": "native-aura-12",
+                "back": "native-back-16",
+                "background": "native-background-18",
+                "bottom": "native-bottom-7",
+                "effect": "native-effect-7",
+                "face": "native-face-6",
+                "hair": "qwen-hair",
+                "headwear": "native-headwear-11",
+                "legs": "native-legs-7",
+                "prop": "native-prop-3",
+                "top": "qwen-top"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "76861b759b1b0e31873339e299a1c0e64da0833cfe7db629afaff95852286fb9",
+                  "design": "/assets-classic/qwen/remake/hair-back-design.svg",
+                  "itemId": "qwen-hair",
+                  "key": "qwen-hair-0",
+                  "name": "青蓝长卷辫",
+                  "reviewFamilyHash": "55de23ab65320b30c82450c3cc1f8bce95cd44cd45b0454c1329b9785f4093be",
+                  "slot": "hair",
+                  "src": "/assets-classic/qwen/remake/hair-back.png",
+                  "svg": "/assets-classic/qwen/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "f7b38eeaf83d85758c5245528a58ac2d9bd66b21259654bdb26f60387376d07c",
+                  "design": "/assets-classic/qwen/remake/top-body-design.svg",
+                  "itemId": "qwen-top",
+                  "key": "qwen-top-0",
+                  "name": "盘扣白衫金边披袖",
+                  "reviewFamilyHash": "bbacafda11771f3e16b9ee06da51802fdce828b4e9f4ac61886c9d685ece3740",
+                  "slot": "top",
+                  "src": "/assets-classic/qwen/remake/top-body.png",
+                  "svg": "/assets-classic/qwen/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "0df0c2901571c0d565800e07fa9b71f623d3e5757f4abfd4c35f59146d2bf849",
+                  "design": "/assets-classic/qwen/remake/hair-front-design.svg",
+                  "itemId": "qwen-hair",
+                  "key": "qwen-hair-1",
+                  "name": "青蓝长卷辫",
+                  "reviewFamilyHash": "55de23ab65320b30c82450c3cc1f8bce95cd44cd45b0454c1329b9785f4093be",
+                  "slot": "hair",
+                  "src": "/assets-classic/qwen/remake/hair-front.png",
+                  "svg": "/assets-classic/qwen/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                },
+                {
+                  "artworkHash": "4900444ac2702f0ef19fdb98aa4cd25ed4911e75e6326d9096307c3bbf71c575",
+                  "design": "/assets-classic/qwen/remake/top-arms-design.svg",
+                  "itemId": "qwen-top",
+                  "key": "qwen-top-1",
+                  "name": "盘扣白衫金边披袖",
+                  "reviewFamilyHash": "bbacafda11771f3e16b9ee06da51802fdce828b4e9f4ac61886c9d685ece3740",
+                  "slot": "top",
+                  "src": "/assets-classic/qwen/remake/top-arms.png",
+                  "svg": "/assets-classic/qwen/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/qwen/upper2-evidence.json",
+              "recommendations": [
+                "继续修真实腕掌/衣袖接缝和衣料体积；不为非握持装饰/未选道具强改角色主动作。"
+              ],
+              "semanticCorrection": {
+                "previousContactScore": 65,
+                "previousReason": "例1绿树白裤：短上衣像独立胸甲落到原生裤腰，宽袖与胳膊/胯的方向不呼应，手袋/原生道具接触不连贯。",
+                "scope": "Only contact score and false attribution revised; other five dimension numbers unchanged."
+              }
+            },
+            {
+              "caseId": "qwen-upper2-s8ea2e342-a0-f1",
+              "fixtureIndex": 1,
+              "score": 75.2,
+              "weightedRaw": 75.2,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 81,
+                  "weight": 20,
+                  "reason": "例2蓝夜卡其裤：白胸/黑蓝袖块没有包裹肋廓，腰部直横带与原生宽裤胯断开；金线只是沿外边装饰。"
+                },
+                "proportionConnection": {
+                  "score": 74,
+                  "weight": 25,
+                  "reason": "例2蓝夜卡其裤：白胸/黑蓝袖块没有包裹肋廓，腰部直横带与原生宽裤胯断开；金线只是沿外边装饰。"
+                },
+                "materialColor": {
+                  "score": 73,
+                  "weight": 15,
+                  "reason": "例2蓝夜卡其裤：白胸/黑蓝袖块没有包裹肋廓，腰部直横带与原生宽裤胯断开；金线只是沿外边装饰。"
+                },
+                "blingeePixel": {
+                  "score": 77,
+                  "weight": 20,
+                  "reason": "例2蓝夜卡其裤：白胸/黑蓝袖块没有包裹肋廓，腰部直横带与原生宽裤胯断开；金线只是沿外边装饰。"
+                },
+                "occlusionContact": {
+                  "score": 65,
+                  "weight": 15,
+                  "reason": "例2蓝夜卡其裤：白胸/黑蓝袖块没有包裹肋廓，腰部直横带与原生宽裤胯断开；金线只是沿外边装饰。"
+                },
+                "canvasReadability": {
+                  "score": 88,
+                  "weight": 5,
+                  "reason": "例2蓝夜卡其裤：白胸/黑蓝袖块没有包裹肋廓，腰部直横带与原生宽裤胯断开；金线只是沿外边装饰。"
+                }
+              },
+              "reason": "例2蓝夜卡其裤：白胸/黑蓝袖块没有包裹肋廓，腰部直横带与原生宽裤胯断开；金线只是沿外边装饰。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-4",
+                "back": "native-back-13",
+                "background": "native-background-17",
+                "bottom": "native-bottom-17",
+                "effect": "native-effect-3",
+                "face": "native-face-2",
+                "hair": "native-hair-5",
+                "headwear": "native-headwear-9",
+                "legs": "native-legs-17",
+                "prop": "native-prop-19",
+                "top": "native-top-16"
+              },
+              "aiSelection": {
+                "aura": "native-aura-4",
+                "back": "native-back-13",
+                "background": "native-background-17",
+                "bottom": "native-bottom-17",
+                "effect": "native-effect-3",
+                "face": "native-face-2",
+                "hair": "qwen-hair",
+                "headwear": "native-headwear-9",
+                "legs": "native-legs-17",
+                "prop": "native-prop-19",
+                "top": "qwen-top"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "76861b759b1b0e31873339e299a1c0e64da0833cfe7db629afaff95852286fb9",
+                  "design": "/assets-classic/qwen/remake/hair-back-design.svg",
+                  "itemId": "qwen-hair",
+                  "key": "qwen-hair-0",
+                  "name": "青蓝长卷辫",
+                  "reviewFamilyHash": "55de23ab65320b30c82450c3cc1f8bce95cd44cd45b0454c1329b9785f4093be",
+                  "slot": "hair",
+                  "src": "/assets-classic/qwen/remake/hair-back.png",
+                  "svg": "/assets-classic/qwen/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "f7b38eeaf83d85758c5245528a58ac2d9bd66b21259654bdb26f60387376d07c",
+                  "design": "/assets-classic/qwen/remake/top-body-design.svg",
+                  "itemId": "qwen-top",
+                  "key": "qwen-top-0",
+                  "name": "盘扣白衫金边披袖",
+                  "reviewFamilyHash": "bbacafda11771f3e16b9ee06da51802fdce828b4e9f4ac61886c9d685ece3740",
+                  "slot": "top",
+                  "src": "/assets-classic/qwen/remake/top-body.png",
+                  "svg": "/assets-classic/qwen/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "0df0c2901571c0d565800e07fa9b71f623d3e5757f4abfd4c35f59146d2bf849",
+                  "design": "/assets-classic/qwen/remake/hair-front-design.svg",
+                  "itemId": "qwen-hair",
+                  "key": "qwen-hair-1",
+                  "name": "青蓝长卷辫",
+                  "reviewFamilyHash": "55de23ab65320b30c82450c3cc1f8bce95cd44cd45b0454c1329b9785f4093be",
+                  "slot": "hair",
+                  "src": "/assets-classic/qwen/remake/hair-front.png",
+                  "svg": "/assets-classic/qwen/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                },
+                {
+                  "artworkHash": "4900444ac2702f0ef19fdb98aa4cd25ed4911e75e6326d9096307c3bbf71c575",
+                  "design": "/assets-classic/qwen/remake/top-arms-design.svg",
+                  "itemId": "qwen-top",
+                  "key": "qwen-top-1",
+                  "name": "盘扣白衫金边披袖",
+                  "reviewFamilyHash": "bbacafda11771f3e16b9ee06da51802fdce828b4e9f4ac61886c9d685ece3740",
+                  "slot": "top",
+                  "src": "/assets-classic/qwen/remake/top-arms.png",
+                  "svg": "/assets-classic/qwen/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/qwen/upper2-evidence.json",
+              "recommendations": [
+                "先让躯干—腰胯—股根连续，去掉水平裤片与膝附近横断亮面；不用长裙遮掉体块问题。",
+                "低位臂/腕/提链掌重画自然收放，链/包与手指有真实接触；持扇臂袖口和肘弯用同一关节。",
+                "白内裙/蓝袍先画围绕胸腰胯和提链手的主褶面，再加金线；宽袖不能只做扇形三角板。",
+                "长发/辫节用分组暗缝和不等长亮簇，保留所选normal蓝紫色相与偏分，不退回旧卷发。"
+              ]
+            },
+            {
+              "caseId": "qwen-upper2-s8ea2e342-a0-f2",
+              "fixtureIndex": 2,
+              "score": 74.95,
+              "weightedRaw": 74.95,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 81,
+                  "weight": 20,
+                  "reason": "例3花束气球：花束遮胸腹大部，可见侧袖/腰根仍是平片硬接，长发整长条；只评可见失败，不能推未见胸衣合格。"
+                },
+                "proportionConnection": {
+                  "score": 75,
+                  "weight": 25,
+                  "reason": "例3花束气球：花束遮胸腹大部，可见侧袖/腰根仍是平片硬接，长发整长条；只评可见失败，不能推未见胸衣合格。"
+                },
+                "materialColor": {
+                  "score": 73,
+                  "weight": 15,
+                  "reason": "例3花束气球：花束遮胸腹大部，可见侧袖/腰根仍是平片硬接，长发整长条；只评可见失败，不能推未见胸衣合格。"
+                },
+                "blingeePixel": {
+                  "score": 77,
+                  "weight": 20,
+                  "reason": "例3花束气球：花束遮胸腹大部，可见侧袖/腰根仍是平片硬接，长发整长条；只评可见失败，不能推未见胸衣合格。"
+                },
+                "occlusionContact": {
+                  "score": 66,
+                  "weight": 15,
+                  "reason": "例3花束气球：花束遮胸腹大部，可见侧袖/腰根仍是平片硬接，长发整长条；只评可见失败，不能推未见胸衣合格。"
+                },
+                "canvasReadability": {
+                  "score": 75,
+                  "weight": 5,
+                  "reason": "例3花束气球：花束遮胸腹大部，可见侧袖/腰根仍是平片硬接，长发整长条；只评可见失败，不能推未见胸衣合格。"
+                }
+              },
+              "reason": "例3花束气球：花束遮胸腹大部，可见侧袖/腰根仍是平片硬接，长发整长条；只评可见失败，不能推未见胸衣合格。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": "原生花束遮胸腹，保留完整图；上衣中心材质需同seed补充诊断。",
+              "scoredVisibleOnly": true,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-20",
+                "back": "native-back-2",
+                "background": "native-background-1",
+                "bottom": "native-bottom-6",
+                "effect": "native-effect-12",
+                "face": "native-face-15",
+                "hair": "native-hair-19",
+                "headwear": "native-headwear-10",
+                "legs": "native-legs-6",
+                "prop": "native-prop-1",
+                "top": "native-top-15"
+              },
+              "aiSelection": {
+                "aura": "native-aura-20",
+                "back": "native-back-2",
+                "background": "native-background-1",
+                "bottom": "native-bottom-6",
+                "effect": "native-effect-12",
+                "face": "native-face-15",
+                "hair": "qwen-hair",
+                "headwear": "native-headwear-10",
+                "legs": "native-legs-6",
+                "prop": "native-prop-1",
+                "top": "qwen-top"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "76861b759b1b0e31873339e299a1c0e64da0833cfe7db629afaff95852286fb9",
+                  "design": "/assets-classic/qwen/remake/hair-back-design.svg",
+                  "itemId": "qwen-hair",
+                  "key": "qwen-hair-0",
+                  "name": "青蓝长卷辫",
+                  "reviewFamilyHash": "55de23ab65320b30c82450c3cc1f8bce95cd44cd45b0454c1329b9785f4093be",
+                  "slot": "hair",
+                  "src": "/assets-classic/qwen/remake/hair-back.png",
+                  "svg": "/assets-classic/qwen/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "f7b38eeaf83d85758c5245528a58ac2d9bd66b21259654bdb26f60387376d07c",
+                  "design": "/assets-classic/qwen/remake/top-body-design.svg",
+                  "itemId": "qwen-top",
+                  "key": "qwen-top-0",
+                  "name": "盘扣白衫金边披袖",
+                  "reviewFamilyHash": "bbacafda11771f3e16b9ee06da51802fdce828b4e9f4ac61886c9d685ece3740",
+                  "slot": "top",
+                  "src": "/assets-classic/qwen/remake/top-body.png",
+                  "svg": "/assets-classic/qwen/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "0df0c2901571c0d565800e07fa9b71f623d3e5757f4abfd4c35f59146d2bf849",
+                  "design": "/assets-classic/qwen/remake/hair-front-design.svg",
+                  "itemId": "qwen-hair",
+                  "key": "qwen-hair-1",
+                  "name": "青蓝长卷辫",
+                  "reviewFamilyHash": "55de23ab65320b30c82450c3cc1f8bce95cd44cd45b0454c1329b9785f4093be",
+                  "slot": "hair",
+                  "src": "/assets-classic/qwen/remake/hair-front.png",
+                  "svg": "/assets-classic/qwen/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                },
+                {
+                  "artworkHash": "4900444ac2702f0ef19fdb98aa4cd25ed4911e75e6326d9096307c3bbf71c575",
+                  "design": "/assets-classic/qwen/remake/top-arms-design.svg",
+                  "itemId": "qwen-top",
+                  "key": "qwen-top-1",
+                  "name": "盘扣白衫金边披袖",
+                  "reviewFamilyHash": "bbacafda11771f3e16b9ee06da51802fdce828b4e9f4ac61886c9d685ece3740",
+                  "slot": "top",
+                  "src": "/assets-classic/qwen/remake/top-arms.png",
+                  "svg": "/assets-classic/qwen/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/qwen/upper2-evidence.json",
+              "recommendations": [
+                "先让躯干—腰胯—股根连续，去掉水平裤片与膝附近横断亮面；不用长裙遮掉体块问题。",
+                "低位臂/腕/提链掌重画自然收放，链/包与手指有真实接触；持扇臂袖口和肘弯用同一关节。",
+                "白内裙/蓝袍先画围绕胸腰胯和提链手的主褶面，再加金线；宽袖不能只做扇形三角板。",
+                "长发/辫节用分组暗缝和不等长亮簇，保留所选normal蓝紫色相与偏分，不退回旧卷发。"
+              ]
+            },
+            {
+              "caseId": "qwen-upper2-s8ea2e342-a0-f3",
+              "fixtureIndex": 3,
+              "score": 78.4,
+              "weightedRaw": 78.4,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 82,
+                  "weight": 20,
+                  "reason": "保留原此维数值；删除不成立的道具归因。例4月夜短裙：运动包位于地面，原生行也不提，不要求低手与包带相连。紧凑弯掌/环形负形本身不直接认掌心洞；可见手套/掌根与袖口收放层次仍简单。保留上衣方板与裙腰平铺的五维原分。"
+                },
+                "proportionConnection": {
+                  "score": 74,
+                  "weight": 25,
+                  "reason": "保留原此维数值；删除不成立的道具归因。例4月夜短裙：运动包位于地面，原生行也不提，不要求低手与包带相连。紧凑弯掌/环形负形本身不直接认掌心洞；可见手套/掌根与袖口收放层次仍简单。保留上衣方板与裙腰平铺的五维原分。"
+                },
+                "materialColor": {
+                  "score": 74,
+                  "weight": 15,
+                  "reason": "保留原此维数值；删除不成立的道具归因。例4月夜短裙：运动包位于地面，原生行也不提，不要求低手与包带相连。紧凑弯掌/环形负形本身不直接认掌心洞；可见手套/掌根与袖口收放层次仍简单。保留上衣方板与裙腰平铺的五维原分。"
+                },
+                "blingeePixel": {
+                  "score": 78,
+                  "weight": 20,
+                  "reason": "保留原此维数值；删除不成立的道具归因。例4月夜短裙：运动包位于地面，原生行也不提，不要求低手与包带相连。紧凑弯掌/环形负形本身不直接认掌心洞；可见手套/掌根与袖口收放层次仍简单。保留上衣方板与裙腰平铺的五维原分。"
+                },
+                "occlusionContact": {
+                  "score": 82,
+                  "weight": 15,
+                  "reason": "例4月夜短裙：运动包位于地面，原生行也不提，不要求低手与包带相连。紧凑弯掌/环形负形本身不直接认掌心洞；可见手套/掌根与袖口收放层次仍简单。保留上衣方板与裙腰平铺的五维原分。"
+                },
+                "canvasReadability": {
+                  "score": 90,
+                  "weight": 5,
+                  "reason": "保留原此维数值；删除不成立的道具归因。例4月夜短裙：运动包位于地面，原生行也不提，不要求低手与包带相连。紧凑弯掌/环形负形本身不直接认掌心洞；可见手套/掌根与袖口收放层次仍简单。保留上衣方板与裙腰平铺的五维原分。"
+                }
+              },
+              "reason": "例4月夜短裙：运动包位于地面，原生行也不提，不要求低手与包带相连。紧凑弯掌/环形负形本身不直接认掌心洞；可见手套/掌根与袖口收放层次仍简单。保留上衣方板与裙腰平铺的五维原分。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-2",
+                "back": "native-back-6",
+                "background": "native-background-7",
+                "bottom": "native-bottom-5",
+                "effect": "native-effect-5",
+                "face": "native-face-7",
+                "hair": "native-hair-2",
+                "headwear": "native-headwear-7",
+                "legs": "native-legs-5",
+                "prop": "native-prop-15",
+                "top": "native-top-7"
+              },
+              "aiSelection": {
+                "aura": "native-aura-2",
+                "back": "native-back-6",
+                "background": "native-background-7",
+                "bottom": "native-bottom-5",
+                "effect": "native-effect-5",
+                "face": "native-face-7",
+                "hair": "qwen-hair",
+                "headwear": "native-headwear-7",
+                "legs": "native-legs-5",
+                "prop": "native-prop-15",
+                "top": "qwen-top"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "76861b759b1b0e31873339e299a1c0e64da0833cfe7db629afaff95852286fb9",
+                  "design": "/assets-classic/qwen/remake/hair-back-design.svg",
+                  "itemId": "qwen-hair",
+                  "key": "qwen-hair-0",
+                  "name": "青蓝长卷辫",
+                  "reviewFamilyHash": "55de23ab65320b30c82450c3cc1f8bce95cd44cd45b0454c1329b9785f4093be",
+                  "slot": "hair",
+                  "src": "/assets-classic/qwen/remake/hair-back.png",
+                  "svg": "/assets-classic/qwen/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "f7b38eeaf83d85758c5245528a58ac2d9bd66b21259654bdb26f60387376d07c",
+                  "design": "/assets-classic/qwen/remake/top-body-design.svg",
+                  "itemId": "qwen-top",
+                  "key": "qwen-top-0",
+                  "name": "盘扣白衫金边披袖",
+                  "reviewFamilyHash": "bbacafda11771f3e16b9ee06da51802fdce828b4e9f4ac61886c9d685ece3740",
+                  "slot": "top",
+                  "src": "/assets-classic/qwen/remake/top-body.png",
+                  "svg": "/assets-classic/qwen/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "0df0c2901571c0d565800e07fa9b71f623d3e5757f4abfd4c35f59146d2bf849",
+                  "design": "/assets-classic/qwen/remake/hair-front-design.svg",
+                  "itemId": "qwen-hair",
+                  "key": "qwen-hair-1",
+                  "name": "青蓝长卷辫",
+                  "reviewFamilyHash": "55de23ab65320b30c82450c3cc1f8bce95cd44cd45b0454c1329b9785f4093be",
+                  "slot": "hair",
+                  "src": "/assets-classic/qwen/remake/hair-front.png",
+                  "svg": "/assets-classic/qwen/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                },
+                {
+                  "artworkHash": "4900444ac2702f0ef19fdb98aa4cd25ed4911e75e6326d9096307c3bbf71c575",
+                  "design": "/assets-classic/qwen/remake/top-arms-design.svg",
+                  "itemId": "qwen-top",
+                  "key": "qwen-top-1",
+                  "name": "盘扣白衫金边披袖",
+                  "reviewFamilyHash": "bbacafda11771f3e16b9ee06da51802fdce828b4e9f4ac61886c9d685ece3740",
+                  "slot": "top",
+                  "src": "/assets-classic/qwen/remake/top-arms.png",
+                  "svg": "/assets-classic/qwen/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/qwen/upper2-evidence.json",
+              "recommendations": [
+                "继续修真实腕掌/衣袖接缝和衣料体积；不为非握持装饰/未选道具强改角色主动作。"
+              ],
+              "semanticCorrection": {
+                "previousContactScore": 66,
+                "previousReason": "例4月夜短裙：上衣/宽袖完整但像方折纸板，衣底和原生短裙腰各自平铺，低垂手为固定圆圈，腕/包带无肉面联系。",
+                "scope": "Only contact score and false attribution revised; other five dimension numbers unchanged."
+              }
+            },
+            {
+              "caseId": "qwen-upper2-s8ea2e342-a0-f4",
+              "fixtureIndex": 4,
+              "score": 75,
+              "weightedRaw": 75,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 81,
+                  "weight": 20,
+                  "reason": "例5白蓝闪景：裸腿/原生裙无缺块，AI白衫到腰的长度/形体僵直、蓝袖缺肘皱和袖口收放；原生肩饰/手势与新衣不成整体。"
+                },
+                "proportionConnection": {
+                  "score": 73,
+                  "weight": 25,
+                  "reason": "例5白蓝闪景：裸腿/原生裙无缺块，AI白衫到腰的长度/形体僵直、蓝袖缺肘皱和袖口收放；原生肩饰/手势与新衣不成整体。"
+                },
+                "materialColor": {
+                  "score": 73,
+                  "weight": 15,
+                  "reason": "例5白蓝闪景：裸腿/原生裙无缺块，AI白衫到腰的长度/形体僵直、蓝袖缺肘皱和袖口收放；原生肩饰/手势与新衣不成整体。"
+                },
+                "blingeePixel": {
+                  "score": 77,
+                  "weight": 20,
+                  "reason": "例5白蓝闪景：裸腿/原生裙无缺块，AI白衫到腰的长度/形体僵直、蓝袖缺肘皱和袖口收放；原生肩饰/手势与新衣不成整体。"
+                },
+                "occlusionContact": {
+                  "score": 65,
+                  "weight": 15,
+                  "reason": "例5白蓝闪景：裸腿/原生裙无缺块，AI白衫到腰的长度/形体僵直、蓝袖缺肘皱和袖口收放；原生肩饰/手势与新衣不成整体。"
+                },
+                "canvasReadability": {
+                  "score": 89,
+                  "weight": 5,
+                  "reason": "例5白蓝闪景：裸腿/原生裙无缺块，AI白衫到腰的长度/形体僵直、蓝袖缺肘皱和袖口收放；原生肩饰/手势与新衣不成整体。"
+                }
+              },
+              "reason": "例5白蓝闪景：裸腿/原生裙无缺块，AI白衫到腰的长度/形体僵直、蓝袖缺肘皱和袖口收放；原生肩饰/手势与新衣不成整体。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-11",
+                "back": "native-back-1",
+                "background": "native-background-3",
+                "bottom": "native-bottom-1",
+                "effect": "native-effect-9",
+                "face": "native-face-20",
+                "hair": "native-hair-10",
+                "headwear": "native-headwear-3",
+                "legs": "native-legs-1",
+                "prop": "native-prop-7",
+                "top": "native-top-2"
+              },
+              "aiSelection": {
+                "aura": "native-aura-11",
+                "back": "native-back-1",
+                "background": "native-background-3",
+                "bottom": "native-bottom-1",
+                "effect": "native-effect-9",
+                "face": "native-face-20",
+                "hair": "qwen-hair",
+                "headwear": "native-headwear-3",
+                "legs": "native-legs-1",
+                "prop": "native-prop-7",
+                "top": "qwen-top"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "76861b759b1b0e31873339e299a1c0e64da0833cfe7db629afaff95852286fb9",
+                  "design": "/assets-classic/qwen/remake/hair-back-design.svg",
+                  "itemId": "qwen-hair",
+                  "key": "qwen-hair-0",
+                  "name": "青蓝长卷辫",
+                  "reviewFamilyHash": "55de23ab65320b30c82450c3cc1f8bce95cd44cd45b0454c1329b9785f4093be",
+                  "slot": "hair",
+                  "src": "/assets-classic/qwen/remake/hair-back.png",
+                  "svg": "/assets-classic/qwen/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "f7b38eeaf83d85758c5245528a58ac2d9bd66b21259654bdb26f60387376d07c",
+                  "design": "/assets-classic/qwen/remake/top-body-design.svg",
+                  "itemId": "qwen-top",
+                  "key": "qwen-top-0",
+                  "name": "盘扣白衫金边披袖",
+                  "reviewFamilyHash": "bbacafda11771f3e16b9ee06da51802fdce828b4e9f4ac61886c9d685ece3740",
+                  "slot": "top",
+                  "src": "/assets-classic/qwen/remake/top-body.png",
+                  "svg": "/assets-classic/qwen/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "0df0c2901571c0d565800e07fa9b71f623d3e5757f4abfd4c35f59146d2bf849",
+                  "design": "/assets-classic/qwen/remake/hair-front-design.svg",
+                  "itemId": "qwen-hair",
+                  "key": "qwen-hair-1",
+                  "name": "青蓝长卷辫",
+                  "reviewFamilyHash": "55de23ab65320b30c82450c3cc1f8bce95cd44cd45b0454c1329b9785f4093be",
+                  "slot": "hair",
+                  "src": "/assets-classic/qwen/remake/hair-front.png",
+                  "svg": "/assets-classic/qwen/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                },
+                {
+                  "artworkHash": "4900444ac2702f0ef19fdb98aa4cd25ed4911e75e6326d9096307c3bbf71c575",
+                  "design": "/assets-classic/qwen/remake/top-arms-design.svg",
+                  "itemId": "qwen-top",
+                  "key": "qwen-top-1",
+                  "name": "盘扣白衫金边披袖",
+                  "reviewFamilyHash": "bbacafda11771f3e16b9ee06da51802fdce828b4e9f4ac61886c9d685ece3740",
+                  "slot": "top",
+                  "src": "/assets-classic/qwen/remake/top-arms.png",
+                  "svg": "/assets-classic/qwen/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/qwen/upper2-evidence.json",
+              "recommendations": [
+                "先让躯干—腰胯—股根连续，去掉水平裤片与膝附近横断亮面；不用长裙遮掉体块问题。",
+                "低位臂/腕/提链掌重画自然收放，链/包与手指有真实接触；持扇臂袖口和肘弯用同一关节。",
+                "白内裙/蓝袍先画围绕胸腰胯和提链手的主褶面，再加金线；宽袖不能只做扇形三角板。",
+                "长发/辫节用分组暗缝和不等长亮簇，保留所选normal蓝紫色相与偏分，不退回旧卷发。"
+              ]
+            }
+          ],
+          "reasons": [
+            "已实际重看同seed旧PNG上下行及源GIF首帧，修正明确错误的握持归因。",
+            "只改列出的接触维度；其余例原分和五维材料/结构原分保留，组仍失败98。"
+          ],
+          "recommendations": [
+            "优先真实袖/掌连接及衣料体积；不要去抓立式/悬浮/腰饰/肩挎或地面装饰。"
+          ],
+          "evidence": {
+            "reactEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/qwen/upper2-evidence.json",
+            "reactScreenshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/qwen/upper2.png",
+            "reactScreenshotSha256": "81b3a5bb7494062ea9fe36fcbca4fd81ff1acf2d7244f8d56e96565549affd82",
+            "captureBrowser": "Codex in-app browser",
+            "failedImages": [],
+            "actuallyViewed": true,
+            "semanticActuallyViewed": [
+              "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/qwen/upper2.png",
+              "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/qwen-first-upper2-case1-semantic-pair.png",
+              "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/qwen-first-upper2-case4-semantic-pair.png",
+              "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/native-prop-3-semantic-4x.png",
+              "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/native-prop-15-semantic-4x.png",
+              "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/native-prop-18-semantic-4x.png",
+              "ai-workspace/previews/native-hand-reference-20261110/contact-sheet.png",
+              "ai-workspace/previews/native-hand-reference-20261110/README.md"
+            ]
+          },
+          "limitations": [
+            "Static only; no animation claim.",
+            "Native complete combinations remain100. Any AI-owned generated support is included with the AI; never inherits100.",
+            "原生花束遮胸腹，保留完整图；上衣中心材质需同seed补充诊断。"
+          ],
+          "semanticCorrection": true,
+          "supersedesReport": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/qwen-r6-first-review.json",
+          "originalFiveNonContactScoresPreserved": true,
+          "changedCaseIDs": [
+            "qwen-upper2-s8ea2e342-a0-f0",
+            "qwen-upper2-s8ea2e342-a0-f3"
+          ]
+        }
+      ]
+    }
+  },
+  "auditCoverage": {
+    "head2": {
+      "status": "no-change",
+      "reason": "本轮文本核对本组5条既有理由，未重评head2画面；其中未对换发/脸强加道具握持；原生手/道具不被此组替换。此处不重授head2分。"
+    },
+    "body3": {
+      "status": "same-seed-source-semantic-reinspection",
+      "unchangedCases": [
+        {
+          "caseId": "qwen-body3-sba7fc9f1-a0-f0",
+          "status": "no-change",
+          "reason": "此例既有理由未明确以本轮纠错的非握持道具断握为扣分依据；未借语义更正重评其他缺陷。"
+        },
+        {
+          "caseId": "qwen-body3-sba7fc9f1-a0-f2",
+          "status": "no-change",
+          "reason": "此例既有理由未明确以本轮纠错的非握持道具断握为扣分依据；未借语义更正重评其他缺陷。"
+        },
+        {
+          "caseId": "qwen-body3-sba7fc9f1-a0-f3",
+          "status": "no-change",
+          "reason": "此例既有理由未明确以本轮纠错的非握持道具断握为扣分依据；未借语义更正重评其他缺陷。"
+        },
+        {
+          "caseId": "qwen-body3-sba7fc9f1-a0-f4",
+          "status": "no-change",
+          "reason": "此例既有理由未明确以本轮纠错的非握持道具断握为扣分依据；未借语义更正重评其他缺陷。"
+        }
+      ]
+    },
+    "upper2": {
+      "status": "same-seed-source-semantic-reinspection",
+      "unchangedCases": [
+        {
+          "caseId": "qwen-upper2-s8ea2e342-a0-f1",
+          "status": "no-change",
+          "reason": "此例既有理由未明确以本轮纠错的非握持道具断握为扣分依据；未借语义更正重评其他缺陷。"
+        },
+        {
+          "caseId": "qwen-upper2-s8ea2e342-a0-f2",
+          "status": "no-change",
+          "reason": "此例既有理由未明确以本轮纠错的非握持道具断握为扣分依据；未借语义更正重评其他缺陷。"
+        },
+        {
+          "caseId": "qwen-upper2-s8ea2e342-a0-f4",
+          "status": "no-change",
+          "reason": "此例既有理由未明确以本轮纠错的非握持道具断握为扣分依据；未借语义更正重评其他缺陷。"
+        }
+      ]
+    }
+  },
+  "scopeLimits": [
+    "保留旧文件，报告不代表新美术改进。",
+    "只对已实际看过的旧seed/旧PNG源语义纠错；不用Gemini分数自动给他人加分。",
+    "selectedAiSlots不含prop时，不要求出现未选的自身书/斧/扇/链包。真实手持物若已选，仍须合理掌指接触。",
+    "不以紧凑手指、指不可逐根数、或存在弯掌负形单独判拓扑失败；腕掌连接/受力仍严格。",
+    "源生基准100；五维材料/体块/像素等真实失败不变。",
+    "本报告不重新评分full、body或其他必要融合组，不解除技术尺寸阻断。"
+  ]
+}

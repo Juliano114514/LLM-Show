@@ -1,0 +1,82 @@
+{
+  "schema": "classic-independent-native-comparison-v1",
+  "reviewer": "classic_body_judge",
+  "bodyHash": "00f4e5ae8dd34a056e23bc77f7bf2405355ad2e3b413b31ed0975cb42afc1f9c",
+  "completeHash": "c833a690535593da558981a31bafd9c9ab476fb585e8e9549ec458589c3620d7",
+  "rows": [
+    {
+      "nativeId": "R02",
+      "nativeSource": "qq-show-classic/outfit/白色天使套装.gif",
+      "sourceRawHash": "53d3241a50f9c95e118d417019d4bc23e72ce078353d7376a91bb2fdcae5e8d8",
+      "nativeCrop": "R02-crop-1x.png",
+      "nativeCropHash": "38c72347fcac05618201c0891412e3ad8045be5904b5831bba1ad1ce3b19e159",
+      "nativeRect": {
+        "x": 47,
+        "y": 82,
+        "width": 38,
+        "height": 37
+      },
+      "aiRect": {
+        "left": 44,
+        "top": 94,
+        "width": 26,
+        "height": 31
+      },
+      "scale": 6,
+      "limits": [
+        "不能把交叠中的隐藏手指当成完整裸手轮廓",
+        "不能把羽毛或礼裙遮住的肩/胸/腰自行补成原生100"
+      ]
+    },
+    {
+      "nativeId": "R03",
+      "nativeSource": "qq-show-classic/outfit/抱抱白熊套装.gif",
+      "sourceRawHash": "a8f967d7b89105e2d46b0c1d73b308ded8e3b65f4c51cc289b5bc1f37216d701",
+      "nativeCrop": "R03-detail-1x.png",
+      "nativeCropHash": "62985e26a538a6da39b960a9c48755a1a10bec83d0516688839c888d232c0360",
+      "nativeRect": {
+        "x": 34,
+        "y": 117,
+        "width": 17,
+        "height": 19
+      },
+      "aiRect": {
+        "left": 52,
+        "top": 101,
+        "width": 20,
+        "height": 23
+      },
+      "scale": 6,
+      "limits": [
+        "不能直接把熊形换成书后声称接触成立",
+        "隐藏肘腕、黄色带结和熊轮廓都不可当裸手语义mask"
+      ]
+    },
+    {
+      "nativeId": "R05",
+      "nativeSource": "qq-show-classic/outfit/翩翩起舞套装.gif",
+      "sourceRawHash": "6ad9d1b713794e58a01ba33323424755eba7a203c961d6ed27c560c993c417f7",
+      "nativeCrop": "R05-detail-1x.png",
+      "nativeCropHash": "341885756b73e87100af1e88d996d3568da10e4241db617c9e60b7f2a8a652b2",
+      "nativeRect": {
+        "x": 16,
+        "y": 92,
+        "width": 19,
+        "height": 14
+      },
+      "aiRect": {
+        "left": 81,
+        "top": 120,
+        "width": 16,
+        "height": 27
+      },
+      "scale": 6,
+      "limits": [
+        "不可从被布遮住的部分臆补完整原生裸掌",
+        "不要把黑白腕环或红裙折线当人体关节/指缝"
+      ]
+    }
+  ],
+  "evidence": "claude-r9-native-contact-comparison-6x.png",
+  "policy": "Native100 unchanged; no warp/mirror/recolor. R02 self overlap, R03 bear-front fingers, R05 different cloth pinch. No actual native book grip/hidden bare anatomy asserted."
+}

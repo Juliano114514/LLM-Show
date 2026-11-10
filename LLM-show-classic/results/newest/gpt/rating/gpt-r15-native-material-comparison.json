@@ -1,0 +1,114 @@
+{
+  "schema": "classic-independent-native-material-comparison-v1",
+  "reviewer": "classic_body_judge",
+  "archiveId": "7ec0fc573d05e2fefed7",
+  "bodyHash": "db3246d678b1b8ab62adc6797a45ad13f4fadf81e2ce1ee8e3958f64edc1bf9f",
+  "completeHash": "7aede45d06b71e26dd79859fead4a04a7455cbb2eceb6237decd7b064efcfe50",
+  "policy": "Actual unchanged native crops100; AI per-layer archived pixels used only as detail diagnostics alongside actual IAB. No copying or score from source reuse.",
+  "rows": [
+    {
+      "id": "M01",
+      "source": "D:/LLM-show/qq-show-classic/outfit/白色公主裙黄色捧花套装.gif",
+      "sourceSha256": "facfc20cebb4b8cb4b9562901cdc3b70997cb3beba3cf98687efdf1d0f223880",
+      "nativeCrop": "M01-crop-1x.png",
+      "nativeCropSha256": "afd58dfefaa55cd179c8f57a458afdfec73e91ce37c8b705983d6dd5c824c2e5",
+      "nativeRect": {
+        "x": 41,
+        "y": 145,
+        "width": 76,
+        "height": 68
+      },
+      "aiRect": {
+        "left": 47,
+        "top": 145,
+        "width": 62,
+        "height": 69
+      },
+      "scale": 6,
+      "visibleSemantics": "裁框可见长裙的主浅面、浅青折谷、斜向上层布边、蝴蝶结与下层菱形蕾丝。上方花束少量进入框顶，不属于衣料折谷。",
+      "limits": "只见正面衣料与叠层。裙后、折缝内部和被裙遮住的腰胯/腿体积未知。",
+      "doNotCopy": [
+        "不要照搬整幅白青色号，角色对应色相仍按normal",
+        "不把蕾丝菱格铺满所有布料或拿裙宽反推裸胯"
+      ]
+    },
+    {
+      "id": "M02",
+      "source": "D:/LLM-show/qq-show-classic/outfit/缎面白色礼服套装.gif",
+      "sourceSha256": "7479ed47eb457810d06833ab423d7b38a694bf71e4c34255d5d7ba391584dc6c",
+      "nativeCrop": "M02-crop-1x.png",
+      "nativeCropSha256": "41127258de5e792c867db56cff0e0fc60ecb5c3dd7fc3804bab207a9d548be6a",
+      "nativeRect": {
+        "x": 44,
+        "y": 147,
+        "width": 60,
+        "height": 64
+      },
+      "aiRect": {
+        "left": 58,
+        "top": 145,
+        "width": 50,
+        "height": 70
+      },
+      "scale": 6,
+      "visibleSemantics": "可见纵向褶带、弯垂的U形/弧形折谷、几条贴近折底的白边和少量星芒。星芒属于特效性装饰，不是每条褶的峰。",
+      "limits": "反面布料、实际袖内腔及所有被裙遮挡的身体未知；只看首帧，星芒是否闪烁未观察。",
+      "doNotCopy": [
+        "不能靠增加星芒替代衣褶暗面",
+        "白银布也不必用纯黑谷；此源的灰紫对比是它自己的材料选择"
+      ]
+    },
+    {
+      "id": "M03",
+      "source": "D:/LLM-show/qq-show-classic/outfit/蓝白学院风连衣裙.gif",
+      "sourceSha256": "a81e34c8451cf7aa4d3dd305976e4412951702065deec454730343e4d22a5a1d",
+      "nativeCrop": "M03-crop-1x.png",
+      "nativeCropSha256": "cb68d894a7922e2ef2fce79244321b3b5ea3e2d239ea42c20196604f84953dd7",
+      "nativeRect": {
+        "x": 77,
+        "y": 99,
+        "width": 29,
+        "height": 42
+      },
+      "aiRect": {
+        "left": 80,
+        "top": 98,
+        "width": 31,
+        "height": 61
+      },
+      "scale": 6,
+      "visibleSemantics": "白袖从肩侧垂到手腕，外缘灰绿/灰米色带，末端袖口翻折成短厚边；可见手从袖口下露出。",
+      "limits": "袖腔内部、被袖遮住的肘/上臂和准确裸腕轮廓未知。不能由此造官方裸臂mask。",
+      "doNotCopy": [
+        "不能把灰袖缘当皮肤暗线",
+        "不能用袖覆盖掩盖不合格的裸肘/腕，或凭此编出袖腔内部"
+      ]
+    },
+    {
+      "id": "M11",
+      "source": "D:/LLM-show/qq-show-classic/front-hair/白色非主流发.gif",
+      "sourceSha256": "d49a5b57b7eb865fccb3ef64f1d5c562437cf4b2501e4d72cf5843606f08a26f",
+      "nativeCrop": "M11-crop-1x.png",
+      "nativeCropSha256": "f627d5b8c6470d9cdc05a802d40c403ed5aebfa3ef8fc3bcaa6ed0eef8c5997a",
+      "nativeRect": {
+        "x": 44,
+        "y": 28,
+        "width": 49,
+        "height": 60
+      },
+      "aiRect": {
+        "left": 42,
+        "top": 36,
+        "width": 57,
+        "height": 59
+      },
+      "scale": 6,
+      "visibleSemantics": "此源是白色非主流短发，尖梢与发型只用于识别源；材料观察为奶白亮束与暖灰褐谷，不是银色长发模板。",
+      "limits": "隐藏头皮和发束背面未知；此短发的尖形、暖灰色相、发长均不能自动移植到GPT等normal长发。",
+      "doNotCopy": [
+        "不把此源当银白色号真值或长发造型模板",
+        "不可把所有浅发全球模糊，或为清晰把每束统一描黑"
+      ]
+    }
+  ]
+}

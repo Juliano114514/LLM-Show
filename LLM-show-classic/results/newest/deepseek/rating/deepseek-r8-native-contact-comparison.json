@@ -1,0 +1,79 @@
+{
+  "schema": "classic-independent-native-comparison-v1",
+  "reviewer": "classic_body_judge",
+  "body": "611d260db2a840a6ebc6b668846ac6b2c85d27fb49fdcc7cb7c8457780e7f01b",
+  "complete": "ad13ee795e084a465c9e35eff87db705457da53b3edc7d2eab790b03f50d8557",
+  "rows": [
+    {
+      "nativeId": "R01",
+      "nativeSource": "qq-show-classic/top/default.gif",
+      "sourceRawHash": "2b95176a80335efba1785a43fcd8fda448f541ac968bdb860d45bff2b89e8663",
+      "nativeFrameHash": "b08b49d2369c9db64a95b3a76c6ccd4fb0469c1ad7f04c098b0e064547af97bb",
+      "nativeRect": {
+        "left": 28,
+        "top": 86,
+        "width": 40,
+        "height": 50
+      },
+      "aiRect": {
+        "left": 33,
+        "top": 93,
+        "width": 30,
+        "height": 48
+      },
+      "scale": 6,
+      "limits": [
+        "不要逐像素复制两只张掌去表达握柄或捏裙",
+        "身体衣料覆盖部分不提供裸胸/腰真值"
+      ]
+    },
+    {
+      "nativeId": "R04",
+      "nativeSource": "qq-show-classic/top/斜肩红色毛衣.gif",
+      "sourceRawHash": "7f4a1f95dc7351fedb982b8daeadd1aad101c185cef0caf4e7c4f0924c646fb1",
+      "nativeFrameHash": "8a4d51daa6a48b700bfb2dfb7c416e751248edeb488fd9799ffe36897f979c61",
+      "nativeRect": {
+        "left": 76,
+        "top": 98,
+        "width": 37,
+        "height": 33
+      },
+      "aiRect": {
+        "left": 81,
+        "top": 94,
+        "width": 36,
+        "height": 32
+      },
+      "scale": 6,
+      "limits": [
+        "没有碗底/云的真实接触证据",
+        "不能照搬袖管覆盖来掩盖自己的裸肘或腕接缝"
+      ]
+    },
+    {
+      "nativeId": "R05",
+      "nativeSource": "qq-show-classic/outfit/翩翩起舞套装.gif",
+      "sourceRawHash": "6ad9d1b713794e58a01ba33323424755eba7a203c961d6ed27c560c993c417f7",
+      "nativeFrameHash": "c80e751497001fe4053870c84c3e8892028fe6e0531fe736581d630b426e3ac6",
+      "nativeRect": {
+        "left": 16,
+        "top": 92,
+        "width": 19,
+        "height": 14
+      },
+      "aiRect": {
+        "left": 32,
+        "top": 123,
+        "width": 18,
+        "height": 20
+      },
+      "scale": 6,
+      "limits": [
+        "不可从被布遮住的部分臆补完整原生裸掌",
+        "不要把黑白腕环或红裙折线当人体关节/指缝"
+      ]
+    }
+  ],
+  "evidence": "deepseek-r8-native-contact-comparison-6x.png",
+  "policy": "Native100 unchanged, diagnostic not a new asset. Different poses/covered native anatomy not a size truth. R04 empty palm not a real bowl source; R05 partial cloth-covered hand not complete bare palm."
+}

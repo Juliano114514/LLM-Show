@@ -1,0 +1,29 @@
+{
+  "schema": "classic-user-criteria-provenance-v1",
+  "sourceThreadId": "01a1c104-1353-7e31-a0df-6eb30f0843d9",
+  "sourceKind": "Original user messages inspected from the local conversation record; not an attached-document instruction or a remembered summary",
+  "messages": [
+    {
+      "ordinal": 589,
+      "timestamp": "2026-11-09T16:11:53.450Z",
+      "quote": "最终的比对，请抽出20张女体classic qq秀的不同姿态、着装、体态、发型的素材，分析其体块、笔触、和风格，然后再和每一个ai娘的素体进行比较和打分，不能和这20个样例有5%以上能明显感知到的差异"
+    },
+    {
+      "ordinal": 1080,
+      "timestamp": "2026-11-09T16:33:19.959Z",
+      "quote": "# 打分标准需要，更加严格，提升到，融合度98+，立绘还原度90+，并且立绘细节需要结合D:\\LLM-show\\ai-girls-atlas\\characters中的对应md文件一并分析"
+    },
+    {
+      "ordinal": 2130,
+      "timestamp": "2026-11-09T17:06:07.647Z",
+      "quote": "对于ai娘的素体，并且不只是和原生default素体的比对，还要和不同着装、姿态的classic qq秀放在一起打分和评判，请对md文件和验收台做出相应调整"
+    }
+  ],
+  "interpretationUnderIndependentReview": "The user's 5% criterion describes clearly perceptible differences against the twenty native examples. A fixed normal-width percentage at one default-body cross-section is a diagnostic implementation choice, not an explicitly requested universal numeric acceptance criterion.",
+  "invariants": [
+    "Native components and all native combinations remain 100 by user definition",
+    "Fusion and body 98, reference fidelity 90; original weights remain unchanged",
+    "No automatic acceptance, changed scores, or erasure of adverse measurements follows from reviewing the measurement method",
+    "Natural full limbs, palms and distinct ornate pixel layers remain current user priorities"
+  ]
+}

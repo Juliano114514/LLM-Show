@@ -1,0 +1,4488 @@
+{
+  "schema": "classic-independent-full-body-fusion-v1",
+  "reviewer": "classic_body_judge",
+  "round": "human-followup-20261110-round07-claude-r10",
+  "character": "claude",
+  "date": "2026-11-10",
+  "nativeBaselineScore": 100,
+  "reference": {
+    "reviewer": "classic_body_judge",
+    "score": 93.3,
+    "weightedRaw": 93.3,
+    "threshold": 90,
+    "passed": true,
+    "reviewedCompleteHash": "86d8b70f36032745b12f0510a69a4f6ebefdd665ea13d18fbaa177a601d317be",
+    "reviewedCompleteArtifact": "character.png canonical runtime per-layer composite; exact actual browser fullLayers below.",
+    "reviewedFullLayerHashes": {
+      "claude-background-0": "669a0be70f8e3887f16e497bfa710a957f7abe7d1bef44d446f1ecc22c7cb6e6",
+      "claude-aura-0": "22c3d44e491460767029398d391981b9b0157ca6e15cc6bac6b5ef4142c88f14",
+      "claude-back-0": "03c05428ba57bf42a7768c4c41dd6bdaf0f1dd79d1929bef24d3ab68cae9da7f",
+      "claude-hair-0": "9f7af1a3c719a83d585eb29152ad19078644e816d52f4164254c4569973d62ce",
+      "claude-legs-0": "189524e1cb1848c0fc7dc74a6b3300fc99d523f5f390278275d70b270e655d81",
+      "claude-bottom-0": "d3a80178584e85a0acb990261d3cd22415574f4dca338ed3e1be0aa3b063fa2b",
+      "claude-top-0": "8dff0e30f8d73e3abaa926bc86c2abdd091d40200525d6478901bfd88673fd63",
+      "claude-face-0": "406c9e83fc27b4cc4cde0e579be951a7861cfde4691728396485470626f40c56",
+      "claude-hair-1": "0845ae1c9249b18f8f27a94454f31b6bd54c0ce690f8b1c98f86d9c6dc3abe43",
+      "claude-prop-0": "6d701391cb7f62acc7a3ab678355b65dba23ae873a956edc390dd0ad4e6d7e0f",
+      "claude-top-1": "e62436a743480c580c3242c4588b07beb05a8dbcedde0ae2991bf822bf205308",
+      "claude-headwear-0": "4871c6d8b5102bcda7735d62bb22f090dc45bdd35fbffc4c0519f4c35b62d505",
+      "claude-effect-0": "ce584b4c428c8794449d6e8e5bca0e3f4a1e9e6441fb16dd44d7d34fc5b93f4b"
+    },
+    "reviewedGeneratedInterfaceHashes": {},
+    "seed": "human-20261110-claude-full-gm4rsdot",
+    "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+    "contextSignature": "native-context-v4-4ba97b0b",
+    "dimensions": {
+      "action": {
+        "score": 100,
+        "weight": 20,
+        "reason": "胸前抱书屈臂与另一臂低垂近裙主动作在，中小腕指/肘角差扣0；接触结构另评融合。"
+      },
+      "emotion": {
+        "score": 90,
+        "weight": 10,
+        "reason": "偏平静闭口与棕色瞳可辨，normal细眉睑/口颊层次仍简；不把Classic合理简化当动作差。"
+      },
+      "hair": {
+        "score": 90,
+        "weight": 20,
+        "reason": "橙长发、偏分长刘海与贴脸束成立；R10恢复松弯/C卷尾，比旧直扇束更近normal，少数粗束仍缩并normal细散长层。"
+      },
+      "pose": {
+        "score": 100,
+        "weight": 15,
+        "reason": "直立前后足/裙下承重主类近，膝踝/重心中小差扣0，不借尺寸疑项扣pose。"
+      },
+      "clothing": {
+        "score": 88,
+        "weight": 25,
+        "reason": "白衬泡袖、黑束腰/外披、奶白内裙/橙垂片与靴可辨；袖口/裙翻边有厚度改善，normal胸领荷叶、裙片层叠/刺绣与长腰饰仍简化。"
+      },
+      "accessories": {
+        "score": 93,
+        "weight": 10,
+        "reason": "书、太阳花/黑结、金链/坠与衣饰识别成立，金纹/小饰悬挂层次与书封细节缩并。"
+      }
+    },
+    "colorFidelity": {
+      "policy": "User final clarification: corresponding-part hue proximity only. No RGB/HEX, brightness, saturation or area-ratio threshold.",
+      "reference": "ai-girls-atlas/assets/zipzippipe/claude/normal-zipzippipe-pixiv-148186519-p02.jpg",
+      "authorizedAdaptations": [
+        "闭口神态按用户既定适配审。"
+      ],
+      "parts": [
+        {
+          "part": "hair and ends",
+          "observation": "橙棕发色对应normal，深浅/饱和差不另扣，尾端无明显换色相。",
+          "dimension": "hair",
+          "deduction": 0
+        },
+        {
+          "part": "left/right iris",
+          "observation": "棕系双瞳接近normal，不按RGB/亮度扣。",
+          "dimension": "emotion",
+          "deduction": 0
+        },
+        {
+          "part": "blouse/inner skirt/outer skirt/orange panel/boots",
+          "observation": "奶白衬裙/黑棕束腰外片/橙垂片/浅靴在对应部位色相近，面积与明暗不单独扣。",
+          "dimension": "clothing",
+          "deduction": 0
+        },
+        {
+          "part": "flower/ribbon/book/chain",
+          "observation": "橙花、黑结、棕书、金链对应近。",
+          "dimension": "accessories",
+          "deduction": 0
+        }
+      ]
+    },
+    "poseAudit": {
+      "policyVersion": "classic-significant-pose-only-20261110",
+      "reviewer": "classic_body_judge",
+      "reviewedBodyHash": "4f3bdbb5c0f982ea2b40836c29eabe8beaf277f007b10299e7753beb59c58106",
+      "reviewedCompleteHash": "86d8b70f36032745b12f0510a69a4f6ebefdd665ea13d18fbaa177a601d317be",
+      "reference": "ai-girls-atlas/assets/zipzippipe/claude/normal-zipzippipe-pixiv-148186519-p02.jpg",
+      "pending": false,
+      "scope": "Actual current frozen body and clothed full are shown beside normal in the full browser screenshot. Image-left/right are canvas sides.",
+      "regions": [
+        {
+          "part": "torso",
+          "severity": "minor",
+          "region": [
+            54,
+            91,
+            85,
+            151
+          ],
+          "reason": "略正面化为中小差，抱书胸腰主方向保留。",
+          "poseDeduction": 0,
+          "deducted": false,
+          "deductionDimension": null,
+          "evidence": [
+            "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/full.png",
+            "ai-girls-atlas/assets/zipzippipe/claude/normal-zipzippipe-pixiv-148186519-p02.jpg"
+          ]
+        },
+        {
+          "part": "imageLeftArm",
+          "severity": "moderate",
+          "region": [
+            45,
+            92,
+            68,
+            124
+          ],
+          "reason": "胸前屈臂持书方向在，局部肘腕/短指角中等以下扣0。",
+          "poseDeduction": 0,
+          "deducted": false,
+          "deductionDimension": null,
+          "evidence": [
+            "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/full.png",
+            "ai-girls-atlas/assets/zipzippipe/claude/normal-zipzippipe-pixiv-148186519-p02.jpg"
+          ]
+        },
+        {
+          "part": "imageRightArm",
+          "severity": "moderate",
+          "region": [
+            81,
+            94,
+            95,
+            144
+          ],
+          "reason": "低垂弯臂/手近裙方向保留，局部手位差扣0，掌根自然度另扣融合。",
+          "poseDeduction": 0,
+          "deducted": false,
+          "deductionDimension": null,
+          "evidence": [
+            "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/full.png",
+            "ai-girls-atlas/assets/zipzippipe/claude/normal-zipzippipe-pixiv-148186519-p02.jpg"
+          ]
+        },
+        {
+          "part": "imageLeftLeg",
+          "severity": "minor",
+          "region": [
+            50,
+            142,
+            73,
+            223
+          ],
+          "reason": "裙下向下承重腿主类近，局部膝踝差扣0。",
+          "poseDeduction": 0,
+          "deducted": false,
+          "deductionDimension": null,
+          "evidence": [
+            "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/full.png",
+            "ai-girls-atlas/assets/zipzippipe/claude/normal-zipzippipe-pixiv-148186519-p02.jpg"
+          ]
+        },
+        {
+          "part": "imageRightLeg",
+          "severity": "minor",
+          "region": [
+            69,
+            142,
+            88,
+            220
+          ],
+          "reason": "后足略错开关系近，未成无关动作类。",
+          "poseDeduction": 0,
+          "deducted": false,
+          "deductionDimension": null,
+          "evidence": [
+            "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/full.png",
+            "ai-girls-atlas/assets/zipzippipe/claude/normal-zipzippipe-pixiv-148186519-p02.jpg"
+          ]
+        },
+        {
+          "part": "weight",
+          "severity": "moderate",
+          "region": [
+            48,
+            130,
+            95,
+            225
+          ],
+          "reason": "站立承重类保留，中小重心/足角差扣0，隐藏腿不编骨点。",
+          "poseDeduction": 0,
+          "deducted": false,
+          "deductionDimension": null,
+          "evidence": [
+            "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/full.png",
+            "ai-girls-atlas/assets/zipzippipe/claude/normal-zipzippipe-pixiv-148186519-p02.jpg"
+          ]
+        }
+      ],
+      "deductionPolicy": "Minor/moderate pose differences have zero deduction. Significant means very significant only; anatomy and garment/contact failures stay in fusion.",
+      "significantDifferences": []
+    },
+    "reasons": [
+      "本轮normal与实际冻结IAB全套重新审；hue对应接近、六区中小pose差扣0。还原过90不替代身体/多件98。"
+    ],
+    "recommendations": [
+      "保留右腕掌加肉/连续与书前接位，局部重画低掌跟/拇指根展开的短肉面及承压，不按default源点削肉。",
+      "袖腔/书缘/捏裙布口同关节整理短压影与厚度，不强补五指或把所有负形填满。",
+      "保留新松弯/C尾，主束根谷与长短小簇再分层，不回宽直扇束或只加长浅边。",
+      "白裙/橙垂片按腰胯/提点重布主谷和翻层短厚边，删贯长均匀浅轨；上衣与原生裙裤腰口共同转面。",
+      "技术历史逐finding待复核，新hash/视觉分/源像素研究均不自动清关。"
+    ],
+    "evidence": {
+      "reactFullImage": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/full.png",
+      "reactFullImageSha256": "a21d76f5bd947459cce1b4442b320260fe680d36f97536dccb2c694121e3ce72",
+      "reactFullSnapshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/full-evidence.json",
+      "actuallyViewed": [
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/full.png",
+        "ai-girls-atlas/assets/zipzippipe/claude/normal-zipzippipe-pixiv-148186519-p02.jpg",
+        "ai-girls-atlas/characters/claude/README.md"
+      ],
+      "captureBrowser": "Codex in-app browser",
+      "failedImages": [],
+      "reactFullImages": [
+        {
+          "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/full.png",
+          "sha256": "a21d76f5bd947459cce1b4442b320260fe680d36f97536dccb2c694121e3ce72",
+          "images": [
+            {
+              "bottom": 350.5625,
+              "index": 0,
+              "left": 28,
+              "right": 168,
+              "top": 124.5625
+            },
+            {
+              "bottom": 350.5625,
+              "index": 1,
+              "left": 180,
+              "right": 320,
+              "top": 124.5625
+            },
+            {
+              "bottom": 350.5625,
+              "index": 2,
+              "left": 332,
+              "right": 472,
+              "top": 124.5625
+            }
+          ]
+        }
+      ]
+    },
+    "limitations": [
+      "Static image; no animation validation.",
+      "Full-reference passing does not grant body/fusion acceptance."
+    ]
+  },
+  "hybrid": {
+    "head2": {
+      "reviews": [
+        {
+          "reviewer": "classic_body_judge",
+          "score": 89.2,
+          "weightedRaw": 89.2,
+          "threshold": 98,
+          "passed": false,
+          "pending": false,
+          "selectedAiSlots": [
+            "hair",
+            "face"
+          ],
+          "selectedItemIDs": {
+            "face": "claude-face",
+            "hair": "claude-hair"
+          },
+          "reviewedPartHashes": {
+            "face": "d384e039feeed838d8111f82bc47300edc70c45a40163aacdbaa62b2f2f93322",
+            "hair": "7352d4a82e3915289784b3aa7bdc887395b4e360c1b736e53152c19d29ec024f"
+          },
+          "reviewedGeneratedInterfaceHashes": {},
+          "reviewedCompleteHash": "86d8b70f36032745b12f0510a69a4f6ebefdd665ea13d18fbaa177a601d317be",
+          "bodyHash": "4f3bdbb5c0f982ea2b40836c29eabe8beaf277f007b10299e7753beb59c58106",
+          "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+          "seed": "human-20261110-claude-head2-5ifmali8",
+          "contextSignature": "native-context-v4-55c21abe",
+          "draws": {
+            "aura": [
+              "native-aura-13",
+              "native-aura-7",
+              "native-aura-14",
+              "native-aura-5",
+              "native-aura-9"
+            ],
+            "back": [
+              "native-back-11",
+              "native-back-14",
+              "native-back-17",
+              "native-back-10",
+              "native-back-5"
+            ],
+            "background": [
+              "native-background-13",
+              "native-background-16",
+              "native-background-17",
+              "native-background-8",
+              "native-background-14"
+            ],
+            "bottom": [
+              "native-bottom-14",
+              "native-bottom-3",
+              "native-bottom-20",
+              "native-bottom-17",
+              "native-bottom-16"
+            ],
+            "effect": [
+              "native-effect-14",
+              "native-effect-13",
+              "native-effect-10",
+              "native-effect-9",
+              "native-effect-4"
+            ],
+            "face": [
+              "native-face-6",
+              "native-face-4",
+              "native-face-1",
+              "native-face-18",
+              "native-face-7"
+            ],
+            "hair": [
+              "native-hair-19",
+              "native-hair-15",
+              "native-hair-9",
+              "native-hair-4",
+              "native-hair-13"
+            ],
+            "headwear": [
+              "native-headwear-11",
+              "native-headwear-14",
+              "native-headwear-13",
+              "native-headwear-15",
+              "native-headwear-17"
+            ],
+            "legs": [
+              "native-legs-14",
+              "native-legs-3",
+              "native-legs-20",
+              "native-legs-17",
+              "native-legs-16"
+            ],
+            "prop": [
+              "native-prop-10",
+              "native-prop-20",
+              "native-prop-12",
+              "native-prop-6",
+              "native-prop-8"
+            ],
+            "top": [
+              "native-top-16",
+              "native-top-2",
+              "native-top-1",
+              "native-top-12",
+              "native-top-18"
+            ]
+          },
+          "contextScores": [
+            {
+              "caseId": "claude-head2-s2433dabc-a0-f0",
+              "fixtureIndex": 0,
+              "score": 89.5,
+              "weightedRaw": 89.5,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 88,
+                  "weight": 20,
+                  "reason": "例1黑底金翼话筒：发帽接位完整，松弯卷尾回归；长橙面/反射边仍较宽，根叠压/小束谷层不足，话筒不需抓。"
+                },
+                "proportionConnection": {
+                  "score": 93,
+                  "weight": 25,
+                  "reason": "例1黑底金翼话筒：发帽接位完整，松弯卷尾回归；长橙面/反射边仍较宽，根叠压/小束谷层不足，话筒不需抓。"
+                },
+                "materialColor": {
+                  "score": 85,
+                  "weight": 15,
+                  "reason": "例1黑底金翼话筒：发帽接位完整，松弯卷尾回归；长橙面/反射边仍较宽，根叠压/小束谷层不足，话筒不需抓。"
+                },
+                "blingeePixel": {
+                  "score": 87,
+                  "weight": 20,
+                  "reason": "例1黑底金翼话筒：发帽接位完整，松弯卷尾回归；长橙面/反射边仍较宽，根叠压/小束谷层不足，话筒不需抓。"
+                },
+                "occlusionContact": {
+                  "score": 93,
+                  "weight": 15,
+                  "reason": "例1黑底金翼话筒：发帽接位完整，松弯卷尾回归；长橙面/反射边仍较宽，根叠压/小束谷层不足，话筒不需抓。"
+                },
+                "canvasReadability": {
+                  "score": 91,
+                  "weight": 5,
+                  "reason": "例1黑底金翼话筒：发帽接位完整，松弯卷尾回归；长橙面/反射边仍较宽，根叠压/小束谷层不足，话筒不需抓。"
+                }
+              },
+              "reason": "例1黑底金翼话筒：发帽接位完整，松弯卷尾回归；长橙面/反射边仍较宽，根叠压/小束谷层不足，话筒不需抓。",
+              "region": [
+                25,
+                35,
+                125,
+                188
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-13",
+                "back": "native-back-11",
+                "background": "native-background-13",
+                "bottom": "native-bottom-14",
+                "effect": "native-effect-14",
+                "face": "native-face-6",
+                "hair": "native-hair-19",
+                "headwear": "native-headwear-11",
+                "legs": "native-legs-14",
+                "prop": "native-prop-10",
+                "top": "native-top-16"
+              },
+              "aiSelection": {
+                "aura": "native-aura-13",
+                "back": "native-back-11",
+                "background": "native-background-13",
+                "bottom": "native-bottom-14",
+                "effect": "native-effect-14",
+                "face": "claude-face",
+                "hair": "claude-hair",
+                "headwear": "native-headwear-11",
+                "legs": "native-legs-14",
+                "prop": "native-prop-10",
+                "top": "native-top-16"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "face"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "9f7af1a3c719a83d585eb29152ad19078644e816d52f4164254c4569973d62ce",
+                  "design": "/assets-classic/claude/remake/hair-back-design.svg",
+                  "itemId": "claude-hair",
+                  "key": "claude-hair-0",
+                  "name": "蜜橘长卷发",
+                  "reviewFamilyHash": "7352d4a82e3915289784b3aa7bdc887395b4e360c1b736e53152c19d29ec024f",
+                  "slot": "hair",
+                  "src": "/assets-classic/claude/remake/hair-back.png",
+                  "svg": "/assets-classic/claude/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "406c9e83fc27b4cc4cde0e579be951a7861cfde4691728396485470626f40c56",
+                  "itemId": "claude-face",
+                  "key": "claude-face-0",
+                  "name": "茶金舒缓静容",
+                  "reviewFamilyHash": "d384e039feeed838d8111f82bc47300edc70c45a40163aacdbaa62b2f2f93322",
+                  "slot": "face",
+                  "src": "/assets-classic/claude/remake/face.png",
+                  "svg": "/assets-classic/claude/remake/face.svg",
+                  "variantRole": "own-pose",
+                  "z": 70
+                },
+                {
+                  "artworkHash": "0845ae1c9249b18f8f27a94454f31b6bd54c0ce690f8b1c98f86d9c6dc3abe43",
+                  "design": "/assets-classic/claude/remake/hair-front-design.svg",
+                  "itemId": "claude-hair",
+                  "key": "claude-hair-1",
+                  "name": "蜜橘长卷发",
+                  "reviewFamilyHash": "7352d4a82e3915289784b3aa7bdc887395b4e360c1b736e53152c19d29ec024f",
+                  "slot": "hair",
+                  "src": "/assets-classic/claude/remake/hair-front.png",
+                  "svg": "/assets-classic/claude/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/head2-evidence.json",
+              "recommendations": [
+                "保留右腕掌加肉/连续与书前接位，局部重画低掌跟/拇指根展开的短肉面及承压，不按default源点削肉。",
+                "袖腔/书缘/捏裙布口同关节整理短压影与厚度，不强补五指或把所有负形填满。",
+                "保留新松弯/C尾，主束根谷与长短小簇再分层，不回宽直扇束或只加长浅边。",
+                "白裙/橙垂片按腰胯/提点重布主谷和翻层短厚边，删贯长均匀浅轨；上衣与原生裙裤腰口共同转面。",
+                "技术历史逐finding待复核，新hash/视觉分/源像素研究均不自动清关。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/head2.png"
+              ]
+            },
+            {
+              "caseId": "claude-head2-s2433dabc-a0-f1",
+              "fixtureIndex": 1,
+              "score": 89.5,
+              "weightedRaw": 89.5,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 88,
+                  "weight": 20,
+                  "reason": "例2蓝樱金翼：长刘海和松卷分叉可读，不沿用R9直扇束指控；主束内部仍大橙面与长浅边，鼻颊/眼下小面简。"
+                },
+                "proportionConnection": {
+                  "score": 93,
+                  "weight": 25,
+                  "reason": "例2蓝樱金翼：长刘海和松卷分叉可读，不沿用R9直扇束指控；主束内部仍大橙面与长浅边，鼻颊/眼下小面简。"
+                },
+                "materialColor": {
+                  "score": 85,
+                  "weight": 15,
+                  "reason": "例2蓝樱金翼：长刘海和松卷分叉可读，不沿用R9直扇束指控；主束内部仍大橙面与长浅边，鼻颊/眼下小面简。"
+                },
+                "blingeePixel": {
+                  "score": 87,
+                  "weight": 20,
+                  "reason": "例2蓝樱金翼：长刘海和松卷分叉可读，不沿用R9直扇束指控；主束内部仍大橙面与长浅边，鼻颊/眼下小面简。"
+                },
+                "occlusionContact": {
+                  "score": 93,
+                  "weight": 15,
+                  "reason": "例2蓝樱金翼：长刘海和松卷分叉可读，不沿用R9直扇束指控；主束内部仍大橙面与长浅边，鼻颊/眼下小面简。"
+                },
+                "canvasReadability": {
+                  "score": 91,
+                  "weight": 5,
+                  "reason": "例2蓝樱金翼：长刘海和松卷分叉可读，不沿用R9直扇束指控；主束内部仍大橙面与长浅边，鼻颊/眼下小面简。"
+                }
+              },
+              "reason": "例2蓝樱金翼：长刘海和松卷分叉可读，不沿用R9直扇束指控；主束内部仍大橙面与长浅边，鼻颊/眼下小面简。",
+              "region": [
+                25,
+                35,
+                125,
+                188
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-7",
+                "back": "native-back-14",
+                "background": "native-background-16",
+                "bottom": "native-bottom-3",
+                "effect": "native-effect-13",
+                "face": "native-face-4",
+                "hair": "native-hair-15",
+                "headwear": "native-headwear-14",
+                "legs": "native-legs-3",
+                "prop": "native-prop-20",
+                "top": "native-top-2"
+              },
+              "aiSelection": {
+                "aura": "native-aura-7",
+                "back": "native-back-14",
+                "background": "native-background-16",
+                "bottom": "native-bottom-3",
+                "effect": "native-effect-13",
+                "face": "claude-face",
+                "hair": "claude-hair",
+                "headwear": "native-headwear-14",
+                "legs": "native-legs-3",
+                "prop": "native-prop-20",
+                "top": "native-top-2"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "face"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "9f7af1a3c719a83d585eb29152ad19078644e816d52f4164254c4569973d62ce",
+                  "design": "/assets-classic/claude/remake/hair-back-design.svg",
+                  "itemId": "claude-hair",
+                  "key": "claude-hair-0",
+                  "name": "蜜橘长卷发",
+                  "reviewFamilyHash": "7352d4a82e3915289784b3aa7bdc887395b4e360c1b736e53152c19d29ec024f",
+                  "slot": "hair",
+                  "src": "/assets-classic/claude/remake/hair-back.png",
+                  "svg": "/assets-classic/claude/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "406c9e83fc27b4cc4cde0e579be951a7861cfde4691728396485470626f40c56",
+                  "itemId": "claude-face",
+                  "key": "claude-face-0",
+                  "name": "茶金舒缓静容",
+                  "reviewFamilyHash": "d384e039feeed838d8111f82bc47300edc70c45a40163aacdbaa62b2f2f93322",
+                  "slot": "face",
+                  "src": "/assets-classic/claude/remake/face.png",
+                  "svg": "/assets-classic/claude/remake/face.svg",
+                  "variantRole": "own-pose",
+                  "z": 70
+                },
+                {
+                  "artworkHash": "0845ae1c9249b18f8f27a94454f31b6bd54c0ce690f8b1c98f86d9c6dc3abe43",
+                  "design": "/assets-classic/claude/remake/hair-front-design.svg",
+                  "itemId": "claude-hair",
+                  "key": "claude-hair-1",
+                  "name": "蜜橘长卷发",
+                  "reviewFamilyHash": "7352d4a82e3915289784b3aa7bdc887395b4e360c1b736e53152c19d29ec024f",
+                  "slot": "hair",
+                  "src": "/assets-classic/claude/remake/hair-front.png",
+                  "svg": "/assets-classic/claude/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/head2-evidence.json",
+              "recommendations": [
+                "保留右腕掌加肉/连续与书前接位，局部重画低掌跟/拇指根展开的短肉面及承压，不按default源点削肉。",
+                "袖腔/书缘/捏裙布口同关节整理短压影与厚度，不强补五指或把所有负形填满。",
+                "保留新松弯/C尾，主束根谷与长短小簇再分层，不回宽直扇束或只加长浅边。",
+                "白裙/橙垂片按腰胯/提点重布主谷和翻层短厚边，删贯长均匀浅轨；上衣与原生裙裤腰口共同转面。",
+                "技术历史逐finding待复核，新hash/视觉分/源像素研究均不自动清关。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/head2-segment-02-aaa684ed59.png"
+              ]
+            },
+            {
+              "caseId": "claude-head2-s2433dabc-a0-f2",
+              "fixtureIndex": 2,
+              "score": 89.2,
+              "weightedRaw": 89.2,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 88,
+                  "weight": 20,
+                  "reason": "例3雪月扫描：只评露出侧发/下束，根谷/反射峰分工仍弱，扫描遮头胸不授隐藏98。"
+                },
+                "proportionConnection": {
+                  "score": 93,
+                  "weight": 25,
+                  "reason": "例3雪月扫描：只评露出侧发/下束，根谷/反射峰分工仍弱，扫描遮头胸不授隐藏98。"
+                },
+                "materialColor": {
+                  "score": 85,
+                  "weight": 15,
+                  "reason": "例3雪月扫描：只评露出侧发/下束，根谷/反射峰分工仍弱，扫描遮头胸不授隐藏98。"
+                },
+                "blingeePixel": {
+                  "score": 87,
+                  "weight": 20,
+                  "reason": "例3雪月扫描：只评露出侧发/下束，根谷/反射峰分工仍弱，扫描遮头胸不授隐藏98。"
+                },
+                "occlusionContact": {
+                  "score": 93,
+                  "weight": 15,
+                  "reason": "例3雪月扫描：只评露出侧发/下束，根谷/反射峰分工仍弱，扫描遮头胸不授隐藏98。"
+                },
+                "canvasReadability": {
+                  "score": 85,
+                  "weight": 5,
+                  "reason": "例3雪月扫描：只评露出侧发/下束，根谷/反射峰分工仍弱，扫描遮头胸不授隐藏98。"
+                }
+              },
+              "reason": "例3雪月扫描：只评露出侧发/下束，根谷/反射峰分工仍弱，扫描遮头胸不授隐藏98。",
+              "region": [
+                25,
+                35,
+                125,
+                188
+              ],
+              "visibilityLimitation": "扫描遮额脸/胸局部，仅评可见侧发。",
+              "scoredVisibleOnly": true,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-14",
+                "back": "native-back-17",
+                "background": "native-background-17",
+                "bottom": "native-bottom-20",
+                "effect": "native-effect-10",
+                "face": "native-face-1",
+                "hair": "native-hair-9",
+                "headwear": "native-headwear-13",
+                "legs": "native-legs-20",
+                "prop": "native-prop-12",
+                "top": "native-top-1"
+              },
+              "aiSelection": {
+                "aura": "native-aura-14",
+                "back": "native-back-17",
+                "background": "native-background-17",
+                "bottom": "native-bottom-20",
+                "effect": "native-effect-10",
+                "face": "claude-face",
+                "hair": "claude-hair",
+                "headwear": "native-headwear-13",
+                "legs": "native-legs-20",
+                "prop": "native-prop-12",
+                "top": "native-top-1"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "face"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "9f7af1a3c719a83d585eb29152ad19078644e816d52f4164254c4569973d62ce",
+                  "design": "/assets-classic/claude/remake/hair-back-design.svg",
+                  "itemId": "claude-hair",
+                  "key": "claude-hair-0",
+                  "name": "蜜橘长卷发",
+                  "reviewFamilyHash": "7352d4a82e3915289784b3aa7bdc887395b4e360c1b736e53152c19d29ec024f",
+                  "slot": "hair",
+                  "src": "/assets-classic/claude/remake/hair-back.png",
+                  "svg": "/assets-classic/claude/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "406c9e83fc27b4cc4cde0e579be951a7861cfde4691728396485470626f40c56",
+                  "itemId": "claude-face",
+                  "key": "claude-face-0",
+                  "name": "茶金舒缓静容",
+                  "reviewFamilyHash": "d384e039feeed838d8111f82bc47300edc70c45a40163aacdbaa62b2f2f93322",
+                  "slot": "face",
+                  "src": "/assets-classic/claude/remake/face.png",
+                  "svg": "/assets-classic/claude/remake/face.svg",
+                  "variantRole": "own-pose",
+                  "z": 70
+                },
+                {
+                  "artworkHash": "0845ae1c9249b18f8f27a94454f31b6bd54c0ce690f8b1c98f86d9c6dc3abe43",
+                  "design": "/assets-classic/claude/remake/hair-front-design.svg",
+                  "itemId": "claude-hair",
+                  "key": "claude-hair-1",
+                  "name": "蜜橘长卷发",
+                  "reviewFamilyHash": "7352d4a82e3915289784b3aa7bdc887395b4e360c1b736e53152c19d29ec024f",
+                  "slot": "hair",
+                  "src": "/assets-classic/claude/remake/hair-front.png",
+                  "svg": "/assets-classic/claude/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/head2-evidence.json",
+              "recommendations": [
+                "保留右腕掌加肉/连续与书前接位，局部重画低掌跟/拇指根展开的短肉面及承压，不按default源点削肉。",
+                "袖腔/书缘/捏裙布口同关节整理短压影与厚度，不强补五指或把所有负形填满。",
+                "保留新松弯/C尾，主束根谷与长短小簇再分层，不回宽直扇束或只加长浅边。",
+                "白裙/橙垂片按腰胯/提点重布主谷和翻层短厚边，删贯长均匀浅轨；上衣与原生裙裤腰口共同转面。",
+                "技术历史逐finding待复核，新hash/视觉分/源像素研究均不自动清关。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/head2-segment-03-463c29dc5b.png"
+              ]
+            },
+            {
+              "caseId": "claude-head2-s2433dabc-a0-f3",
+              "fixtureIndex": 3,
+              "score": 89.5,
+              "weightedRaw": 89.5,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 88,
+                  "weight": 20,
+                  "reason": "例4夜楼气球：松弯发尾层次较旧提升，侧主束仍宽平，根部短叠影与较细簇交错不足，帽接位可读。"
+                },
+                "proportionConnection": {
+                  "score": 93,
+                  "weight": 25,
+                  "reason": "例4夜楼气球：松弯发尾层次较旧提升，侧主束仍宽平，根部短叠影与较细簇交错不足，帽接位可读。"
+                },
+                "materialColor": {
+                  "score": 85,
+                  "weight": 15,
+                  "reason": "例4夜楼气球：松弯发尾层次较旧提升，侧主束仍宽平，根部短叠影与较细簇交错不足，帽接位可读。"
+                },
+                "blingeePixel": {
+                  "score": 87,
+                  "weight": 20,
+                  "reason": "例4夜楼气球：松弯发尾层次较旧提升，侧主束仍宽平，根部短叠影与较细簇交错不足，帽接位可读。"
+                },
+                "occlusionContact": {
+                  "score": 93,
+                  "weight": 15,
+                  "reason": "例4夜楼气球：松弯发尾层次较旧提升，侧主束仍宽平，根部短叠影与较细簇交错不足，帽接位可读。"
+                },
+                "canvasReadability": {
+                  "score": 91,
+                  "weight": 5,
+                  "reason": "例4夜楼气球：松弯发尾层次较旧提升，侧主束仍宽平，根部短叠影与较细簇交错不足，帽接位可读。"
+                }
+              },
+              "reason": "例4夜楼气球：松弯发尾层次较旧提升，侧主束仍宽平，根部短叠影与较细簇交错不足，帽接位可读。",
+              "region": [
+                25,
+                35,
+                125,
+                188
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-5",
+                "back": "native-back-10",
+                "background": "native-background-8",
+                "bottom": "native-bottom-17",
+                "effect": "native-effect-9",
+                "face": "native-face-18",
+                "hair": "native-hair-4",
+                "headwear": "native-headwear-15",
+                "legs": "native-legs-17",
+                "prop": "native-prop-6",
+                "top": "native-top-12"
+              },
+              "aiSelection": {
+                "aura": "native-aura-5",
+                "back": "native-back-10",
+                "background": "native-background-8",
+                "bottom": "native-bottom-17",
+                "effect": "native-effect-9",
+                "face": "claude-face",
+                "hair": "claude-hair",
+                "headwear": "native-headwear-15",
+                "legs": "native-legs-17",
+                "prop": "native-prop-6",
+                "top": "native-top-12"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "face"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "9f7af1a3c719a83d585eb29152ad19078644e816d52f4164254c4569973d62ce",
+                  "design": "/assets-classic/claude/remake/hair-back-design.svg",
+                  "itemId": "claude-hair",
+                  "key": "claude-hair-0",
+                  "name": "蜜橘长卷发",
+                  "reviewFamilyHash": "7352d4a82e3915289784b3aa7bdc887395b4e360c1b736e53152c19d29ec024f",
+                  "slot": "hair",
+                  "src": "/assets-classic/claude/remake/hair-back.png",
+                  "svg": "/assets-classic/claude/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "406c9e83fc27b4cc4cde0e579be951a7861cfde4691728396485470626f40c56",
+                  "itemId": "claude-face",
+                  "key": "claude-face-0",
+                  "name": "茶金舒缓静容",
+                  "reviewFamilyHash": "d384e039feeed838d8111f82bc47300edc70c45a40163aacdbaa62b2f2f93322",
+                  "slot": "face",
+                  "src": "/assets-classic/claude/remake/face.png",
+                  "svg": "/assets-classic/claude/remake/face.svg",
+                  "variantRole": "own-pose",
+                  "z": 70
+                },
+                {
+                  "artworkHash": "0845ae1c9249b18f8f27a94454f31b6bd54c0ce690f8b1c98f86d9c6dc3abe43",
+                  "design": "/assets-classic/claude/remake/hair-front-design.svg",
+                  "itemId": "claude-hair",
+                  "key": "claude-hair-1",
+                  "name": "蜜橘长卷发",
+                  "reviewFamilyHash": "7352d4a82e3915289784b3aa7bdc887395b4e360c1b736e53152c19d29ec024f",
+                  "slot": "hair",
+                  "src": "/assets-classic/claude/remake/hair-front.png",
+                  "svg": "/assets-classic/claude/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/head2-evidence.json",
+              "recommendations": [
+                "保留右腕掌加肉/连续与书前接位，局部重画低掌跟/拇指根展开的短肉面及承压，不按default源点削肉。",
+                "袖腔/书缘/捏裙布口同关节整理短压影与厚度，不强补五指或把所有负形填满。",
+                "保留新松弯/C尾，主束根谷与长短小簇再分层，不回宽直扇束或只加长浅边。",
+                "白裙/橙垂片按腰胯/提点重布主谷和翻层短厚边，删贯长均匀浅轨；上衣与原生裙裤腰口共同转面。",
+                "技术历史逐finding待复核，新hash/视觉分/源像素研究均不自动清关。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/head2-segment-04-f4a55398a9.png"
+              ]
+            },
+            {
+              "caseId": "claude-head2-s2433dabc-a0-f4",
+              "fixtureIndex": 4,
+              "score": 89.5,
+              "weightedRaw": 89.5,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 88,
+                  "weight": 20,
+                  "reason": "例5雪蓝白帽：冠/刘海与脸完整，卷尾有宽窄，主束内长反射带/大面仍像几片橙带，未达原生发簇层次。"
+                },
+                "proportionConnection": {
+                  "score": 93,
+                  "weight": 25,
+                  "reason": "例5雪蓝白帽：冠/刘海与脸完整，卷尾有宽窄，主束内长反射带/大面仍像几片橙带，未达原生发簇层次。"
+                },
+                "materialColor": {
+                  "score": 85,
+                  "weight": 15,
+                  "reason": "例5雪蓝白帽：冠/刘海与脸完整，卷尾有宽窄，主束内长反射带/大面仍像几片橙带，未达原生发簇层次。"
+                },
+                "blingeePixel": {
+                  "score": 87,
+                  "weight": 20,
+                  "reason": "例5雪蓝白帽：冠/刘海与脸完整，卷尾有宽窄，主束内长反射带/大面仍像几片橙带，未达原生发簇层次。"
+                },
+                "occlusionContact": {
+                  "score": 93,
+                  "weight": 15,
+                  "reason": "例5雪蓝白帽：冠/刘海与脸完整，卷尾有宽窄，主束内长反射带/大面仍像几片橙带，未达原生发簇层次。"
+                },
+                "canvasReadability": {
+                  "score": 91,
+                  "weight": 5,
+                  "reason": "例5雪蓝白帽：冠/刘海与脸完整，卷尾有宽窄，主束内长反射带/大面仍像几片橙带，未达原生发簇层次。"
+                }
+              },
+              "reason": "例5雪蓝白帽：冠/刘海与脸完整，卷尾有宽窄，主束内长反射带/大面仍像几片橙带，未达原生发簇层次。",
+              "region": [
+                25,
+                35,
+                125,
+                188
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-9",
+                "back": "native-back-5",
+                "background": "native-background-14",
+                "bottom": "native-bottom-16",
+                "effect": "native-effect-4",
+                "face": "native-face-7",
+                "hair": "native-hair-13",
+                "headwear": "native-headwear-17",
+                "legs": "native-legs-16",
+                "prop": "native-prop-8",
+                "top": "native-top-18"
+              },
+              "aiSelection": {
+                "aura": "native-aura-9",
+                "back": "native-back-5",
+                "background": "native-background-14",
+                "bottom": "native-bottom-16",
+                "effect": "native-effect-4",
+                "face": "claude-face",
+                "hair": "claude-hair",
+                "headwear": "native-headwear-17",
+                "legs": "native-legs-16",
+                "prop": "native-prop-8",
+                "top": "native-top-18"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "face"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "9f7af1a3c719a83d585eb29152ad19078644e816d52f4164254c4569973d62ce",
+                  "design": "/assets-classic/claude/remake/hair-back-design.svg",
+                  "itemId": "claude-hair",
+                  "key": "claude-hair-0",
+                  "name": "蜜橘长卷发",
+                  "reviewFamilyHash": "7352d4a82e3915289784b3aa7bdc887395b4e360c1b736e53152c19d29ec024f",
+                  "slot": "hair",
+                  "src": "/assets-classic/claude/remake/hair-back.png",
+                  "svg": "/assets-classic/claude/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "406c9e83fc27b4cc4cde0e579be951a7861cfde4691728396485470626f40c56",
+                  "itemId": "claude-face",
+                  "key": "claude-face-0",
+                  "name": "茶金舒缓静容",
+                  "reviewFamilyHash": "d384e039feeed838d8111f82bc47300edc70c45a40163aacdbaa62b2f2f93322",
+                  "slot": "face",
+                  "src": "/assets-classic/claude/remake/face.png",
+                  "svg": "/assets-classic/claude/remake/face.svg",
+                  "variantRole": "own-pose",
+                  "z": 70
+                },
+                {
+                  "artworkHash": "0845ae1c9249b18f8f27a94454f31b6bd54c0ce690f8b1c98f86d9c6dc3abe43",
+                  "design": "/assets-classic/claude/remake/hair-front-design.svg",
+                  "itemId": "claude-hair",
+                  "key": "claude-hair-1",
+                  "name": "蜜橘长卷发",
+                  "reviewFamilyHash": "7352d4a82e3915289784b3aa7bdc887395b4e360c1b736e53152c19d29ec024f",
+                  "slot": "hair",
+                  "src": "/assets-classic/claude/remake/hair-front.png",
+                  "svg": "/assets-classic/claude/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/head2-evidence.json",
+              "recommendations": [
+                "保留右腕掌加肉/连续与书前接位，局部重画低掌跟/拇指根展开的短肉面及承压，不按default源点削肉。",
+                "袖腔/书缘/捏裙布口同关节整理短压影与厚度，不强补五指或把所有负形填满。",
+                "保留新松弯/C尾，主束根谷与长短小簇再分层，不回宽直扇束或只加长浅边。",
+                "白裙/橙垂片按腰胯/提点重布主谷和翻层短厚边，删贯长均匀浅轨；上衣与原生裙裤腰口共同转面。",
+                "技术历史逐finding待复核，新hash/视觉分/源像素研究均不自动清关。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/head2-segment-05-3067c219a1.png"
+              ]
+            }
+          ],
+          "reasons": [
+            "R10右远腕/掌跟比R9有加肉和连续，肩肘/腰胯、股根主轮廓连贯；左屈臂与书前短指接位成立。",
+            "右远前臂x84..89/y125..135到掌x85..92/y135..142仍是长浅窄带接小尖楔，腕向掌展开/拇指根的短转面和饱满掌跟不足。",
+            "左书手不判缺握，手/书/袖口已有前后关系；掌跟短承压与袖口局部折谷仍偏软，紧凑指群本身允许。",
+            "本次未独立重测腿或全骨段，旧技术/历史不因新hash或局部视觉改善清除，不把default源两截面当全姿态宽目标。",
+            "保留右腕掌加肉/连续与书前接位，局部重画低掌跟/拇指根展开的短肉面及承压，不按default源点削肉。",
+            "袖腔/书缘/捏裙布口同关节整理短压影与厚度，不强补五指或把所有负形填满。",
+            "保留新松弯/C尾，主束根谷与长短小簇再分层，不回宽直扇束或只加长浅边。",
+            "白裙/橙垂片按腰胯/提点重布主谷和翻层短厚边，删贯长均匀浅轨；上衣与原生裙裤腰口共同转面。",
+            "技术历史逐finding待复核，新hash/视觉分/源像素研究均不自动清关。"
+          ],
+          "recommendations": [
+            "保留右腕掌加肉/连续与书前接位，局部重画低掌跟/拇指根展开的短肉面及承压，不按default源点削肉。",
+            "袖腔/书缘/捏裙布口同关节整理短压影与厚度，不强补五指或把所有负形填满。",
+            "保留新松弯/C尾，主束根谷与长短小簇再分层，不回宽直扇束或只加长浅边。",
+            "白裙/橙垂片按腰胯/提点重布主谷和翻层短厚边，删贯长均匀浅轨；上衣与原生裙裤腰口共同转面。",
+            "技术历史逐finding待复核，新hash/视觉分/源像素研究均不自动清关。"
+          ],
+          "evidence": {
+            "reactEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/head2-evidence.json",
+            "reactScreenshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/head2.png",
+            "reactScreenshotSha256": "c6ae01323ccf7ddc8cebbdc8cff106a0f49c959aa1ced45d532d7bfea7ee726d",
+            "captureBrowser": "Codex in-app browser",
+            "failedImages": [],
+            "actuallyViewed": true,
+            "reactScreenshots": [
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/head2.png",
+                "sha256": "c6ae01323ccf7ddc8cebbdc8cff106a0f49c959aa1ced45d532d7bfea7ee726d",
+                "visible": [
+                  {
+                    "bottom": 424.953125,
+                    "caseId": "claude-head2-s2433dabc-a0-f0",
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 112.03125
+                  },
+                  {
+                    "bottom": 424.953125,
+                    "caseId": "claude-head2-s2433dabc-a0-f0",
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 112.03125
+                  }
+                ]
+              },
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/head2-segment-02-aaa684ed59.png",
+                "sha256": "aaa684ed597191d0584bd755c39d4fd61b5eb8a46875dbd34c5425abab585bdd",
+                "visible": [
+                  {
+                    "bottom": 424.875,
+                    "caseId": "claude-head2-s2433dabc-a0-f1",
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 111.953125
+                  },
+                  {
+                    "bottom": 424.875,
+                    "caseId": "claude-head2-s2433dabc-a0-f1",
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 111.953125
+                  }
+                ]
+              },
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/head2-segment-03-463c29dc5b.png",
+                "sha256": "463c29dc5b57d7c262b032ebe02b997a6033283eef0f2aaf1e37b0f7e68dab41",
+                "visible": [
+                  {
+                    "bottom": 424.796875,
+                    "caseId": "claude-head2-s2433dabc-a0-f2",
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 111.875
+                  },
+                  {
+                    "bottom": 424.796875,
+                    "caseId": "claude-head2-s2433dabc-a0-f2",
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 111.875
+                  }
+                ]
+              },
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/head2-segment-04-f4a55398a9.png",
+                "sha256": "f4a55398a97a098dbbff33c33a79e5fc38dcf444d73f835e9c9ea2a15e77e6e8",
+                "visible": [
+                  {
+                    "bottom": 424.71875,
+                    "caseId": "claude-head2-s2433dabc-a0-f3",
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 111.796875
+                  },
+                  {
+                    "bottom": 424.71875,
+                    "caseId": "claude-head2-s2433dabc-a0-f3",
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 111.796875
+                  }
+                ]
+              },
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/head2-segment-05-3067c219a1.png",
+                "sha256": "3067c219a12af74a32a234da17e8478e5dc386faf4d5ca9ba78970f5001f9823",
+                "visible": [
+                  {
+                    "bottom": 424.640625,
+                    "caseId": "claude-head2-s2433dabc-a0-f4",
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 111.71875
+                  },
+                  {
+                    "bottom": 424.640625,
+                    "caseId": "claude-head2-s2433dabc-a0-f4",
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 111.71875
+                  }
+                ]
+              }
+            ],
+            "actuallyViewedViaDiagnostic": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/claude-r10-head2-from-browser-segments-2x.png",
+            "diagnosticIndex": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/claude-r10-segment-diagnostic-index.json",
+            "segmented": true,
+            "allNativeAiCasePairsActuallyViewed": true
+          },
+          "limitations": [
+            "Static only; no animation claim.",
+            "Native complete combinations remain100. Any AI-owned generated support is included with the AI; never inherits100.",
+            "扫描遮额脸/胸局部，仅评可见侧发。"
+          ],
+          "layoutIntegrity": null
+        }
+      ]
+    },
+    "body3": {
+      "reviews": [
+        {
+          "reviewer": "classic_body_judge",
+          "score": 88.85,
+          "weightedRaw": 88.85,
+          "threshold": 98,
+          "passed": false,
+          "pending": false,
+          "selectedAiSlots": [
+            "legs",
+            "bottom",
+            "top"
+          ],
+          "selectedItemIDs": {
+            "bottom": "claude-bottom",
+            "legs": "claude-legs",
+            "top": "claude-top"
+          },
+          "reviewedPartHashes": {
+            "bottom": "174fcbd35b8eb53745d86eb3edf04e49c6f80f814c485c2831cbbf84e388314f",
+            "legs": "6cb320253be621718627e48c58a0c8140d23055ccc9df7e62168f5c7735c316d",
+            "top": "786c024c6f93086f748753136a8874fd8094f6c1cc4f0c0b3acf36662130f766"
+          },
+          "reviewedGeneratedInterfaceHashes": {},
+          "reviewedCompleteHash": "86d8b70f36032745b12f0510a69a4f6ebefdd665ea13d18fbaa177a601d317be",
+          "bodyHash": "4f3bdbb5c0f982ea2b40836c29eabe8beaf277f007b10299e7753beb59c58106",
+          "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+          "seed": "human-20261110-claude-body3-vupoq2bv",
+          "contextSignature": "native-context-v4-c5abec3e",
+          "draws": {
+            "aura": [
+              "native-aura-17",
+              "native-aura-14",
+              "native-aura-20",
+              "native-aura-5",
+              "native-aura-8"
+            ],
+            "back": [
+              "native-back-3",
+              "native-back-4",
+              "native-back-8",
+              "native-back-2",
+              "native-back-16"
+            ],
+            "background": [
+              "native-background-16",
+              "native-background-5",
+              "native-background-13",
+              "native-background-3",
+              "native-background-17"
+            ],
+            "bottom": [
+              "native-bottom-6",
+              "native-bottom-2",
+              "native-bottom-11",
+              "native-bottom-14",
+              "native-bottom-5"
+            ],
+            "effect": [
+              "native-effect-8",
+              "native-effect-20",
+              "native-effect-16",
+              "native-effect-13",
+              "native-effect-9"
+            ],
+            "face": [
+              "native-face-5",
+              "native-face-10",
+              "native-face-15",
+              "native-face-4",
+              "native-face-3"
+            ],
+            "hair": [
+              "native-hair-9",
+              "native-hair-19",
+              "native-hair-5",
+              "native-hair-10",
+              "native-hair-16"
+            ],
+            "headwear": [
+              "native-headwear-14",
+              "native-headwear-10",
+              "native-headwear-19",
+              "native-headwear-9",
+              "native-headwear-17"
+            ],
+            "legs": [
+              "native-legs-6",
+              "native-legs-2",
+              "native-legs-11",
+              "native-legs-14",
+              "native-legs-5"
+            ],
+            "prop": [
+              "native-prop-15",
+              "native-prop-1",
+              "native-prop-9",
+              "native-prop-6",
+              "native-prop-16"
+            ],
+            "top": [
+              "native-top-7",
+              "native-top-15",
+              "native-top-19",
+              "native-top-11",
+              "native-top-16"
+            ]
+          },
+          "contextScores": [
+            {
+              "caseId": "claude-body3-se1a2e3b3-a0-f0",
+              "fixtureIndex": 0,
+              "score": 89.15,
+              "weightedRaw": 89.15,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 89,
+                  "weight": 20,
+                  "reason": "例1蓝夜地面包：地面包不需抓。书式屈臂/袖袋可读，右腕掌与袖口有改善，但低掌跟/指根短转面少，白裙长浅轨和橙片主谷弱。"
+                },
+                "proportionConnection": {
+                  "score": 90,
+                  "weight": 25,
+                  "reason": "例1蓝夜地面包：地面包不需抓。书式屈臂/袖袋可读，右腕掌与袖口有改善，但低掌跟/指根短转面少，白裙长浅轨和橙片主谷弱。"
+                },
+                "materialColor": {
+                  "score": 86,
+                  "weight": 15,
+                  "reason": "例1蓝夜地面包：地面包不需抓。书式屈臂/袖袋可读，右腕掌与袖口有改善，但低掌跟/指根短转面少，白裙长浅轨和橙片主谷弱。"
+                },
+                "blingeePixel": {
+                  "score": 88,
+                  "weight": 20,
+                  "reason": "例1蓝夜地面包：地面包不需抓。书式屈臂/袖袋可读，右腕掌与袖口有改善，但低掌跟/指根短转面少，白裙长浅轨和橙片主谷弱。"
+                },
+                "occlusionContact": {
+                  "score": 92,
+                  "weight": 15,
+                  "reason": "例1蓝夜地面包：地面包不需抓。书式屈臂/袖袋可读，右腕掌与袖口有改善，但低掌跟/指根短转面少，白裙长浅轨和橙片主谷弱。"
+                },
+                "canvasReadability": {
+                  "score": 91,
+                  "weight": 5,
+                  "reason": "例1蓝夜地面包：地面包不需抓。书式屈臂/袖袋可读，右腕掌与袖口有改善，但低掌跟/指根短转面少，白裙长浅轨和橙片主谷弱。"
+                }
+              },
+              "reason": "例1蓝夜地面包：地面包不需抓。书式屈臂/袖袋可读，右腕掌与袖口有改善，但低掌跟/指根短转面少，白裙长浅轨和橙片主谷弱。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-17",
+                "back": "native-back-3",
+                "background": "native-background-16",
+                "bottom": "native-bottom-6",
+                "effect": "native-effect-8",
+                "face": "native-face-5",
+                "hair": "native-hair-9",
+                "headwear": "native-headwear-14",
+                "legs": "native-legs-6",
+                "prop": "native-prop-15",
+                "top": "native-top-7"
+              },
+              "aiSelection": {
+                "aura": "native-aura-17",
+                "back": "native-back-3",
+                "background": "native-background-16",
+                "bottom": "claude-bottom",
+                "effect": "native-effect-8",
+                "face": "native-face-5",
+                "hair": "native-hair-9",
+                "headwear": "native-headwear-14",
+                "legs": "claude-legs",
+                "prop": "native-prop-15",
+                "top": "claude-top"
+              },
+              "selectedAiSlots": [
+                "legs",
+                "bottom",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "189524e1cb1848c0fc7dc74a6b3300fc99d523f5f390278275d70b270e655d81",
+                  "itemId": "claude-legs",
+                  "key": "claude-legs-0",
+                  "name": "奶油系带靴",
+                  "reviewFamilyHash": "6cb320253be621718627e48c58a0c8140d23055ccc9df7e62168f5c7735c316d",
+                  "slot": "legs",
+                  "src": "/assets-classic/claude/remake/legs.png",
+                  "svg": "/assets-classic/claude/remake/legs.svg",
+                  "variantRole": "own-pose",
+                  "z": 30
+                },
+                {
+                  "artworkHash": "d3a80178584e85a0acb990261d3cd22415574f4dca338ed3e1be0aa3b063fa2b",
+                  "itemId": "claude-bottom",
+                  "key": "claude-bottom-0",
+                  "name": "橘光层叠裙",
+                  "reviewFamilyHash": "174fcbd35b8eb53745d86eb3edf04e49c6f80f814c485c2831cbbf84e388314f",
+                  "slot": "bottom",
+                  "src": "/assets-classic/claude/remake/bottom.png",
+                  "svg": "/assets-classic/claude/remake/bottom.svg",
+                  "variantRole": "own-pose",
+                  "z": 40
+                },
+                {
+                  "artworkHash": "8dff0e30f8d73e3abaa926bc86c2abdd091d40200525d6478901bfd88673fd63",
+                  "design": "/assets-classic/claude/remake/top-body-design.svg",
+                  "itemId": "claude-top",
+                  "key": "claude-top-0",
+                  "name": "奶油花边衬衣",
+                  "reviewFamilyHash": "786c024c6f93086f748753136a8874fd8094f6c1cc4f0c0b3acf36662130f766",
+                  "slot": "top",
+                  "src": "/assets-classic/claude/remake/top-body.png",
+                  "svg": "/assets-classic/claude/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "e62436a743480c580c3242c4588b07beb05a8dbcedde0ae2991bf822bf205308",
+                  "design": "/assets-classic/claude/remake/top-arms-design.svg",
+                  "itemId": "claude-top",
+                  "key": "claude-top-1",
+                  "name": "奶油花边衬衣",
+                  "reviewFamilyHash": "786c024c6f93086f748753136a8874fd8094f6c1cc4f0c0b3acf36662130f766",
+                  "slot": "top",
+                  "src": "/assets-classic/claude/remake/top-arms.png",
+                  "svg": "/assets-classic/claude/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body3-evidence.json",
+              "recommendations": [
+                "保留右腕掌加肉/连续与书前接位，局部重画低掌跟/拇指根展开的短肉面及承压，不按default源点削肉。",
+                "袖腔/书缘/捏裙布口同关节整理短压影与厚度，不强补五指或把所有负形填满。",
+                "保留新松弯/C尾，主束根谷与长短小簇再分层，不回宽直扇束或只加长浅边。",
+                "白裙/橙垂片按腰胯/提点重布主谷和翻层短厚边，删贯长均匀浅轨；上衣与原生裙裤腰口共同转面。",
+                "技术历史逐finding待复核，新hash/视觉分/源像素研究均不自动清关。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body3.png"
+              ]
+            },
+            {
+              "caseId": "claude-body3-se1a2e3b3-a0-f1",
+              "fixtureIndex": 1,
+              "score": 88.85,
+              "weightedRaw": 88.85,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 89,
+                  "weight": 20,
+                  "reason": "例2街景花束：花遮胸腰，只评露出袖/低掌/裙；短厚边有改善，袖腔与掌布压影仍软，裙层贯长浅轨/大橙面不足。"
+                },
+                "proportionConnection": {
+                  "score": 90,
+                  "weight": 25,
+                  "reason": "例2街景花束：花遮胸腰，只评露出袖/低掌/裙；短厚边有改善，袖腔与掌布压影仍软，裙层贯长浅轨/大橙面不足。"
+                },
+                "materialColor": {
+                  "score": 86,
+                  "weight": 15,
+                  "reason": "例2街景花束：花遮胸腰，只评露出袖/低掌/裙；短厚边有改善，袖腔与掌布压影仍软，裙层贯长浅轨/大橙面不足。"
+                },
+                "blingeePixel": {
+                  "score": 88,
+                  "weight": 20,
+                  "reason": "例2街景花束：花遮胸腰，只评露出袖/低掌/裙；短厚边有改善，袖腔与掌布压影仍软，裙层贯长浅轨/大橙面不足。"
+                },
+                "occlusionContact": {
+                  "score": 92,
+                  "weight": 15,
+                  "reason": "例2街景花束：花遮胸腰，只评露出袖/低掌/裙；短厚边有改善，袖腔与掌布压影仍软，裙层贯长浅轨/大橙面不足。"
+                },
+                "canvasReadability": {
+                  "score": 85,
+                  "weight": 5,
+                  "reason": "例2街景花束：花遮胸腰，只评露出袖/低掌/裙；短厚边有改善，袖腔与掌布压影仍软，裙层贯长浅轨/大橙面不足。"
+                }
+              },
+              "reason": "例2街景花束：花遮胸腰，只评露出袖/低掌/裙；短厚边有改善，袖腔与掌布压影仍软，裙层贯长浅轨/大橙面不足。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": "花束遮胸腰大部，不推隐藏握点。",
+              "scoredVisibleOnly": true,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-14",
+                "back": "native-back-4",
+                "background": "native-background-5",
+                "bottom": "native-bottom-2",
+                "effect": "native-effect-20",
+                "face": "native-face-10",
+                "hair": "native-hair-19",
+                "headwear": "native-headwear-10",
+                "legs": "native-legs-2",
+                "prop": "native-prop-1",
+                "top": "native-top-15"
+              },
+              "aiSelection": {
+                "aura": "native-aura-14",
+                "back": "native-back-4",
+                "background": "native-background-5",
+                "bottom": "claude-bottom",
+                "effect": "native-effect-20",
+                "face": "native-face-10",
+                "hair": "native-hair-19",
+                "headwear": "native-headwear-10",
+                "legs": "claude-legs",
+                "prop": "native-prop-1",
+                "top": "claude-top"
+              },
+              "selectedAiSlots": [
+                "legs",
+                "bottom",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "189524e1cb1848c0fc7dc74a6b3300fc99d523f5f390278275d70b270e655d81",
+                  "itemId": "claude-legs",
+                  "key": "claude-legs-0",
+                  "name": "奶油系带靴",
+                  "reviewFamilyHash": "6cb320253be621718627e48c58a0c8140d23055ccc9df7e62168f5c7735c316d",
+                  "slot": "legs",
+                  "src": "/assets-classic/claude/remake/legs.png",
+                  "svg": "/assets-classic/claude/remake/legs.svg",
+                  "variantRole": "own-pose",
+                  "z": 30
+                },
+                {
+                  "artworkHash": "d3a80178584e85a0acb990261d3cd22415574f4dca338ed3e1be0aa3b063fa2b",
+                  "itemId": "claude-bottom",
+                  "key": "claude-bottom-0",
+                  "name": "橘光层叠裙",
+                  "reviewFamilyHash": "174fcbd35b8eb53745d86eb3edf04e49c6f80f814c485c2831cbbf84e388314f",
+                  "slot": "bottom",
+                  "src": "/assets-classic/claude/remake/bottom.png",
+                  "svg": "/assets-classic/claude/remake/bottom.svg",
+                  "variantRole": "own-pose",
+                  "z": 40
+                },
+                {
+                  "artworkHash": "8dff0e30f8d73e3abaa926bc86c2abdd091d40200525d6478901bfd88673fd63",
+                  "design": "/assets-classic/claude/remake/top-body-design.svg",
+                  "itemId": "claude-top",
+                  "key": "claude-top-0",
+                  "name": "奶油花边衬衣",
+                  "reviewFamilyHash": "786c024c6f93086f748753136a8874fd8094f6c1cc4f0c0b3acf36662130f766",
+                  "slot": "top",
+                  "src": "/assets-classic/claude/remake/top-body.png",
+                  "svg": "/assets-classic/claude/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "e62436a743480c580c3242c4588b07beb05a8dbcedde0ae2991bf822bf205308",
+                  "design": "/assets-classic/claude/remake/top-arms-design.svg",
+                  "itemId": "claude-top",
+                  "key": "claude-top-1",
+                  "name": "奶油花边衬衣",
+                  "reviewFamilyHash": "786c024c6f93086f748753136a8874fd8094f6c1cc4f0c0b3acf36662130f766",
+                  "slot": "top",
+                  "src": "/assets-classic/claude/remake/top-arms.png",
+                  "svg": "/assets-classic/claude/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body3-evidence.json",
+              "recommendations": [
+                "保留右腕掌加肉/连续与书前接位，局部重画低掌跟/拇指根展开的短肉面及承压，不按default源点削肉。",
+                "袖腔/书缘/捏裙布口同关节整理短压影与厚度，不强补五指或把所有负形填满。",
+                "保留新松弯/C尾，主束根谷与长短小簇再分层，不回宽直扇束或只加长浅边。",
+                "白裙/橙垂片按腰胯/提点重布主谷和翻层短厚边，删贯长均匀浅轨；上衣与原生裙裤腰口共同转面。",
+                "技术历史逐finding待复核，新hash/视觉分/源像素研究均不自动清关。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body3-segment-02-9f510581b1.png"
+              ]
+            },
+            {
+              "caseId": "claude-body3-se1a2e3b3-a0-f2",
+              "fixtureIndex": 2,
+              "score": 89.15,
+              "weightedRaw": 89.15,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 89,
+                  "weight": 20,
+                  "reason": "例3黑底蝴蝶：胸前原生饰不强求握，袖口弧折和腰胯连续；低掌仍小楔片，袖腔/裙翻层短厚度与主谷不够。"
+                },
+                "proportionConnection": {
+                  "score": 90,
+                  "weight": 25,
+                  "reason": "例3黑底蝴蝶：胸前原生饰不强求握，袖口弧折和腰胯连续；低掌仍小楔片，袖腔/裙翻层短厚度与主谷不够。"
+                },
+                "materialColor": {
+                  "score": 86,
+                  "weight": 15,
+                  "reason": "例3黑底蝴蝶：胸前原生饰不强求握，袖口弧折和腰胯连续；低掌仍小楔片，袖腔/裙翻层短厚度与主谷不够。"
+                },
+                "blingeePixel": {
+                  "score": 88,
+                  "weight": 20,
+                  "reason": "例3黑底蝴蝶：胸前原生饰不强求握，袖口弧折和腰胯连续；低掌仍小楔片，袖腔/裙翻层短厚度与主谷不够。"
+                },
+                "occlusionContact": {
+                  "score": 92,
+                  "weight": 15,
+                  "reason": "例3黑底蝴蝶：胸前原生饰不强求握，袖口弧折和腰胯连续；低掌仍小楔片，袖腔/裙翻层短厚度与主谷不够。"
+                },
+                "canvasReadability": {
+                  "score": 91,
+                  "weight": 5,
+                  "reason": "例3黑底蝴蝶：胸前原生饰不强求握，袖口弧折和腰胯连续；低掌仍小楔片，袖腔/裙翻层短厚度与主谷不够。"
+                }
+              },
+              "reason": "例3黑底蝴蝶：胸前原生饰不强求握，袖口弧折和腰胯连续；低掌仍小楔片，袖腔/裙翻层短厚度与主谷不够。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-20",
+                "back": "native-back-8",
+                "background": "native-background-13",
+                "bottom": "native-bottom-11",
+                "effect": "native-effect-16",
+                "face": "native-face-15",
+                "hair": "native-hair-5",
+                "headwear": "native-headwear-19",
+                "legs": "native-legs-11",
+                "prop": "native-prop-9",
+                "top": "native-top-19"
+              },
+              "aiSelection": {
+                "aura": "native-aura-20",
+                "back": "native-back-8",
+                "background": "native-background-13",
+                "bottom": "claude-bottom",
+                "effect": "native-effect-16",
+                "face": "native-face-15",
+                "hair": "native-hair-5",
+                "headwear": "native-headwear-19",
+                "legs": "claude-legs",
+                "prop": "native-prop-9",
+                "top": "claude-top"
+              },
+              "selectedAiSlots": [
+                "legs",
+                "bottom",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "189524e1cb1848c0fc7dc74a6b3300fc99d523f5f390278275d70b270e655d81",
+                  "itemId": "claude-legs",
+                  "key": "claude-legs-0",
+                  "name": "奶油系带靴",
+                  "reviewFamilyHash": "6cb320253be621718627e48c58a0c8140d23055ccc9df7e62168f5c7735c316d",
+                  "slot": "legs",
+                  "src": "/assets-classic/claude/remake/legs.png",
+                  "svg": "/assets-classic/claude/remake/legs.svg",
+                  "variantRole": "own-pose",
+                  "z": 30
+                },
+                {
+                  "artworkHash": "d3a80178584e85a0acb990261d3cd22415574f4dca338ed3e1be0aa3b063fa2b",
+                  "itemId": "claude-bottom",
+                  "key": "claude-bottom-0",
+                  "name": "橘光层叠裙",
+                  "reviewFamilyHash": "174fcbd35b8eb53745d86eb3edf04e49c6f80f814c485c2831cbbf84e388314f",
+                  "slot": "bottom",
+                  "src": "/assets-classic/claude/remake/bottom.png",
+                  "svg": "/assets-classic/claude/remake/bottom.svg",
+                  "variantRole": "own-pose",
+                  "z": 40
+                },
+                {
+                  "artworkHash": "8dff0e30f8d73e3abaa926bc86c2abdd091d40200525d6478901bfd88673fd63",
+                  "design": "/assets-classic/claude/remake/top-body-design.svg",
+                  "itemId": "claude-top",
+                  "key": "claude-top-0",
+                  "name": "奶油花边衬衣",
+                  "reviewFamilyHash": "786c024c6f93086f748753136a8874fd8094f6c1cc4f0c0b3acf36662130f766",
+                  "slot": "top",
+                  "src": "/assets-classic/claude/remake/top-body.png",
+                  "svg": "/assets-classic/claude/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "e62436a743480c580c3242c4588b07beb05a8dbcedde0ae2991bf822bf205308",
+                  "design": "/assets-classic/claude/remake/top-arms-design.svg",
+                  "itemId": "claude-top",
+                  "key": "claude-top-1",
+                  "name": "奶油花边衬衣",
+                  "reviewFamilyHash": "786c024c6f93086f748753136a8874fd8094f6c1cc4f0c0b3acf36662130f766",
+                  "slot": "top",
+                  "src": "/assets-classic/claude/remake/top-arms.png",
+                  "svg": "/assets-classic/claude/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body3-evidence.json",
+              "recommendations": [
+                "保留右腕掌加肉/连续与书前接位，局部重画低掌跟/拇指根展开的短肉面及承压，不按default源点削肉。",
+                "袖腔/书缘/捏裙布口同关节整理短压影与厚度，不强补五指或把所有负形填满。",
+                "保留新松弯/C尾，主束根谷与长短小簇再分层，不回宽直扇束或只加长浅边。",
+                "白裙/橙垂片按腰胯/提点重布主谷和翻层短厚边，删贯长均匀浅轨；上衣与原生裙裤腰口共同转面。",
+                "技术历史逐finding待复核，新hash/视觉分/源像素研究均不自动清关。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body3-segment-03-dfb119bd86.png"
+              ]
+            },
+            {
+              "caseId": "claude-body3-se1a2e3b3-a0-f3",
+              "fixtureIndex": 3,
+              "score": 89.1,
+              "weightedRaw": 89.1,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 89,
+                  "weight": 20,
+                  "reason": "例4雪樱腰花：腰花不需抓；白袖/黑腰主面近原生，但腕掌短承压与翻裙厚边仍不足，不能用花遮隐藏面补98。"
+                },
+                "proportionConnection": {
+                  "score": 90,
+                  "weight": 25,
+                  "reason": "例4雪樱腰花：腰花不需抓；白袖/黑腰主面近原生，但腕掌短承压与翻裙厚边仍不足，不能用花遮隐藏面补98。"
+                },
+                "materialColor": {
+                  "score": 86,
+                  "weight": 15,
+                  "reason": "例4雪樱腰花：腰花不需抓；白袖/黑腰主面近原生，但腕掌短承压与翻裙厚边仍不足，不能用花遮隐藏面补98。"
+                },
+                "blingeePixel": {
+                  "score": 88,
+                  "weight": 20,
+                  "reason": "例4雪樱腰花：腰花不需抓；白袖/黑腰主面近原生，但腕掌短承压与翻裙厚边仍不足，不能用花遮隐藏面补98。"
+                },
+                "occlusionContact": {
+                  "score": 92,
+                  "weight": 15,
+                  "reason": "例4雪樱腰花：腰花不需抓；白袖/黑腰主面近原生，但腕掌短承压与翻裙厚边仍不足，不能用花遮隐藏面补98。"
+                },
+                "canvasReadability": {
+                  "score": 90,
+                  "weight": 5,
+                  "reason": "例4雪樱腰花：腰花不需抓；白袖/黑腰主面近原生，但腕掌短承压与翻裙厚边仍不足，不能用花遮隐藏面补98。"
+                }
+              },
+              "reason": "例4雪樱腰花：腰花不需抓；白袖/黑腰主面近原生，但腕掌短承压与翻裙厚边仍不足，不能用花遮隐藏面补98。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-5",
+                "back": "native-back-2",
+                "background": "native-background-3",
+                "bottom": "native-bottom-14",
+                "effect": "native-effect-13",
+                "face": "native-face-4",
+                "hair": "native-hair-10",
+                "headwear": "native-headwear-9",
+                "legs": "native-legs-14",
+                "prop": "native-prop-6",
+                "top": "native-top-11"
+              },
+              "aiSelection": {
+                "aura": "native-aura-5",
+                "back": "native-back-2",
+                "background": "native-background-3",
+                "bottom": "claude-bottom",
+                "effect": "native-effect-13",
+                "face": "native-face-4",
+                "hair": "native-hair-10",
+                "headwear": "native-headwear-9",
+                "legs": "claude-legs",
+                "prop": "native-prop-6",
+                "top": "claude-top"
+              },
+              "selectedAiSlots": [
+                "legs",
+                "bottom",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "189524e1cb1848c0fc7dc74a6b3300fc99d523f5f390278275d70b270e655d81",
+                  "itemId": "claude-legs",
+                  "key": "claude-legs-0",
+                  "name": "奶油系带靴",
+                  "reviewFamilyHash": "6cb320253be621718627e48c58a0c8140d23055ccc9df7e62168f5c7735c316d",
+                  "slot": "legs",
+                  "src": "/assets-classic/claude/remake/legs.png",
+                  "svg": "/assets-classic/claude/remake/legs.svg",
+                  "variantRole": "own-pose",
+                  "z": 30
+                },
+                {
+                  "artworkHash": "d3a80178584e85a0acb990261d3cd22415574f4dca338ed3e1be0aa3b063fa2b",
+                  "itemId": "claude-bottom",
+                  "key": "claude-bottom-0",
+                  "name": "橘光层叠裙",
+                  "reviewFamilyHash": "174fcbd35b8eb53745d86eb3edf04e49c6f80f814c485c2831cbbf84e388314f",
+                  "slot": "bottom",
+                  "src": "/assets-classic/claude/remake/bottom.png",
+                  "svg": "/assets-classic/claude/remake/bottom.svg",
+                  "variantRole": "own-pose",
+                  "z": 40
+                },
+                {
+                  "artworkHash": "8dff0e30f8d73e3abaa926bc86c2abdd091d40200525d6478901bfd88673fd63",
+                  "design": "/assets-classic/claude/remake/top-body-design.svg",
+                  "itemId": "claude-top",
+                  "key": "claude-top-0",
+                  "name": "奶油花边衬衣",
+                  "reviewFamilyHash": "786c024c6f93086f748753136a8874fd8094f6c1cc4f0c0b3acf36662130f766",
+                  "slot": "top",
+                  "src": "/assets-classic/claude/remake/top-body.png",
+                  "svg": "/assets-classic/claude/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "e62436a743480c580c3242c4588b07beb05a8dbcedde0ae2991bf822bf205308",
+                  "design": "/assets-classic/claude/remake/top-arms-design.svg",
+                  "itemId": "claude-top",
+                  "key": "claude-top-1",
+                  "name": "奶油花边衬衣",
+                  "reviewFamilyHash": "786c024c6f93086f748753136a8874fd8094f6c1cc4f0c0b3acf36662130f766",
+                  "slot": "top",
+                  "src": "/assets-classic/claude/remake/top-arms.png",
+                  "svg": "/assets-classic/claude/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body3-evidence.json",
+              "recommendations": [
+                "保留右腕掌加肉/连续与书前接位，局部重画低掌跟/拇指根展开的短肉面及承压，不按default源点削肉。",
+                "袖腔/书缘/捏裙布口同关节整理短压影与厚度，不强补五指或把所有负形填满。",
+                "保留新松弯/C尾，主束根谷与长短小簇再分层，不回宽直扇束或只加长浅边。",
+                "白裙/橙垂片按腰胯/提点重布主谷和翻层短厚边，删贯长均匀浅轨；上衣与原生裙裤腰口共同转面。",
+                "技术历史逐finding待复核，新hash/视觉分/源像素研究均不自动清关。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body3-segment-04-e892799a06.png"
+              ]
+            },
+            {
+              "caseId": "claude-body3-se1a2e3b3-a0-f4",
+              "fixtureIndex": 4,
+              "score": 89.15,
+              "weightedRaw": 89.15,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 89,
+                  "weight": 20,
+                  "reason": "例5雪蓝竖吉他：吉他原生下半身摆件不强求握；袖/掌在同一关节，低掌跟薄和白裙长浅轨/橙垂片平面仍见。"
+                },
+                "proportionConnection": {
+                  "score": 90,
+                  "weight": 25,
+                  "reason": "例5雪蓝竖吉他：吉他原生下半身摆件不强求握；袖/掌在同一关节，低掌跟薄和白裙长浅轨/橙垂片平面仍见。"
+                },
+                "materialColor": {
+                  "score": 86,
+                  "weight": 15,
+                  "reason": "例5雪蓝竖吉他：吉他原生下半身摆件不强求握；袖/掌在同一关节，低掌跟薄和白裙长浅轨/橙垂片平面仍见。"
+                },
+                "blingeePixel": {
+                  "score": 88,
+                  "weight": 20,
+                  "reason": "例5雪蓝竖吉他：吉他原生下半身摆件不强求握；袖/掌在同一关节，低掌跟薄和白裙长浅轨/橙垂片平面仍见。"
+                },
+                "occlusionContact": {
+                  "score": 92,
+                  "weight": 15,
+                  "reason": "例5雪蓝竖吉他：吉他原生下半身摆件不强求握；袖/掌在同一关节，低掌跟薄和白裙长浅轨/橙垂片平面仍见。"
+                },
+                "canvasReadability": {
+                  "score": 91,
+                  "weight": 5,
+                  "reason": "例5雪蓝竖吉他：吉他原生下半身摆件不强求握；袖/掌在同一关节，低掌跟薄和白裙长浅轨/橙垂片平面仍见。"
+                }
+              },
+              "reason": "例5雪蓝竖吉他：吉他原生下半身摆件不强求握；袖/掌在同一关节，低掌跟薄和白裙长浅轨/橙垂片平面仍见。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-8",
+                "back": "native-back-16",
+                "background": "native-background-17",
+                "bottom": "native-bottom-5",
+                "effect": "native-effect-9",
+                "face": "native-face-3",
+                "hair": "native-hair-16",
+                "headwear": "native-headwear-17",
+                "legs": "native-legs-5",
+                "prop": "native-prop-16",
+                "top": "native-top-16"
+              },
+              "aiSelection": {
+                "aura": "native-aura-8",
+                "back": "native-back-16",
+                "background": "native-background-17",
+                "bottom": "claude-bottom",
+                "effect": "native-effect-9",
+                "face": "native-face-3",
+                "hair": "native-hair-16",
+                "headwear": "native-headwear-17",
+                "legs": "claude-legs",
+                "prop": "native-prop-16",
+                "top": "claude-top"
+              },
+              "selectedAiSlots": [
+                "legs",
+                "bottom",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "189524e1cb1848c0fc7dc74a6b3300fc99d523f5f390278275d70b270e655d81",
+                  "itemId": "claude-legs",
+                  "key": "claude-legs-0",
+                  "name": "奶油系带靴",
+                  "reviewFamilyHash": "6cb320253be621718627e48c58a0c8140d23055ccc9df7e62168f5c7735c316d",
+                  "slot": "legs",
+                  "src": "/assets-classic/claude/remake/legs.png",
+                  "svg": "/assets-classic/claude/remake/legs.svg",
+                  "variantRole": "own-pose",
+                  "z": 30
+                },
+                {
+                  "artworkHash": "d3a80178584e85a0acb990261d3cd22415574f4dca338ed3e1be0aa3b063fa2b",
+                  "itemId": "claude-bottom",
+                  "key": "claude-bottom-0",
+                  "name": "橘光层叠裙",
+                  "reviewFamilyHash": "174fcbd35b8eb53745d86eb3edf04e49c6f80f814c485c2831cbbf84e388314f",
+                  "slot": "bottom",
+                  "src": "/assets-classic/claude/remake/bottom.png",
+                  "svg": "/assets-classic/claude/remake/bottom.svg",
+                  "variantRole": "own-pose",
+                  "z": 40
+                },
+                {
+                  "artworkHash": "8dff0e30f8d73e3abaa926bc86c2abdd091d40200525d6478901bfd88673fd63",
+                  "design": "/assets-classic/claude/remake/top-body-design.svg",
+                  "itemId": "claude-top",
+                  "key": "claude-top-0",
+                  "name": "奶油花边衬衣",
+                  "reviewFamilyHash": "786c024c6f93086f748753136a8874fd8094f6c1cc4f0c0b3acf36662130f766",
+                  "slot": "top",
+                  "src": "/assets-classic/claude/remake/top-body.png",
+                  "svg": "/assets-classic/claude/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "e62436a743480c580c3242c4588b07beb05a8dbcedde0ae2991bf822bf205308",
+                  "design": "/assets-classic/claude/remake/top-arms-design.svg",
+                  "itemId": "claude-top",
+                  "key": "claude-top-1",
+                  "name": "奶油花边衬衣",
+                  "reviewFamilyHash": "786c024c6f93086f748753136a8874fd8094f6c1cc4f0c0b3acf36662130f766",
+                  "slot": "top",
+                  "src": "/assets-classic/claude/remake/top-arms.png",
+                  "svg": "/assets-classic/claude/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body3-evidence.json",
+              "recommendations": [
+                "保留右腕掌加肉/连续与书前接位，局部重画低掌跟/拇指根展开的短肉面及承压，不按default源点削肉。",
+                "袖腔/书缘/捏裙布口同关节整理短压影与厚度，不强补五指或把所有负形填满。",
+                "保留新松弯/C尾，主束根谷与长短小簇再分层，不回宽直扇束或只加长浅边。",
+                "白裙/橙垂片按腰胯/提点重布主谷和翻层短厚边，删贯长均匀浅轨；上衣与原生裙裤腰口共同转面。",
+                "技术历史逐finding待复核，新hash/视觉分/源像素研究均不自动清关。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body3-segment-05-342c7928f6.png"
+              ]
+            }
+          ],
+          "reasons": [
+            "R10右远腕/掌跟比R9有加肉和连续，肩肘/腰胯、股根主轮廓连贯；左屈臂与书前短指接位成立。",
+            "右远前臂x84..89/y125..135到掌x85..92/y135..142仍是长浅窄带接小尖楔，腕向掌展开/拇指根的短转面和饱满掌跟不足。",
+            "左书手不判缺握，手/书/袖口已有前后关系；掌跟短承压与袖口局部折谷仍偏软，紧凑指群本身允许。",
+            "本次未独立重测腿或全骨段，旧技术/历史不因新hash或局部视觉改善清除，不把default源两截面当全姿态宽目标。",
+            "保留右腕掌加肉/连续与书前接位，局部重画低掌跟/拇指根展开的短肉面及承压，不按default源点削肉。",
+            "袖腔/书缘/捏裙布口同关节整理短压影与厚度，不强补五指或把所有负形填满。",
+            "保留新松弯/C尾，主束根谷与长短小簇再分层，不回宽直扇束或只加长浅边。",
+            "白裙/橙垂片按腰胯/提点重布主谷和翻层短厚边，删贯长均匀浅轨；上衣与原生裙裤腰口共同转面。",
+            "技术历史逐finding待复核，新hash/视觉分/源像素研究均不自动清关。"
+          ],
+          "recommendations": [
+            "保留右腕掌加肉/连续与书前接位，局部重画低掌跟/拇指根展开的短肉面及承压，不按default源点削肉。",
+            "袖腔/书缘/捏裙布口同关节整理短压影与厚度，不强补五指或把所有负形填满。",
+            "保留新松弯/C尾，主束根谷与长短小簇再分层，不回宽直扇束或只加长浅边。",
+            "白裙/橙垂片按腰胯/提点重布主谷和翻层短厚边，删贯长均匀浅轨；上衣与原生裙裤腰口共同转面。",
+            "技术历史逐finding待复核，新hash/视觉分/源像素研究均不自动清关。"
+          ],
+          "evidence": {
+            "reactEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body3-evidence.json",
+            "reactScreenshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body3.png",
+            "reactScreenshotSha256": "3e931d13defdd23a0bca3e67eab2e08b5a431df2c2e1697d74bb4b8523bf95d9",
+            "captureBrowser": "Codex in-app browser",
+            "failedImages": [],
+            "actuallyViewed": true,
+            "reactScreenshots": [
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body3.png",
+                "sha256": "3e931d13defdd23a0bca3e67eab2e08b5a431df2c2e1697d74bb4b8523bf95d9",
+                "visible": [
+                  {
+                    "bottom": 431.4375,
+                    "caseId": "claude-body3-se1a2e3b3-a0-f0",
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 104.578125
+                  },
+                  {
+                    "bottom": 431.4375,
+                    "caseId": "claude-body3-se1a2e3b3-a0-f0",
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 104.578125
+                  }
+                ]
+              },
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body3-segment-02-9f510581b1.png",
+                "sha256": "9f510581b1a44cd2f23881b1029dfffe0493ebcf2acc292c028016532f2cfb8f",
+                "visible": [
+                  {
+                    "bottom": 431.296875,
+                    "caseId": "claude-body3-se1a2e3b3-a0-f1",
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 104.4375
+                  },
+                  {
+                    "bottom": 431.296875,
+                    "caseId": "claude-body3-se1a2e3b3-a0-f1",
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 104.4375
+                  }
+                ]
+              },
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body3-segment-03-dfb119bd86.png",
+                "sha256": "dfb119bd864103d0cea832191334c10f6980c3205a98df84040e1cb7386fdd39",
+                "visible": [
+                  {
+                    "bottom": 431.15625,
+                    "caseId": "claude-body3-se1a2e3b3-a0-f2",
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 104.296875
+                  },
+                  {
+                    "bottom": 431.15625,
+                    "caseId": "claude-body3-se1a2e3b3-a0-f2",
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 104.296875
+                  }
+                ]
+              },
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body3-segment-04-e892799a06.png",
+                "sha256": "e892799a06ee344789e4e185b2b1681301df24db49138c7e3b27e3d7ecd75005",
+                "visible": [
+                  {
+                    "bottom": 431.015625,
+                    "caseId": "claude-body3-se1a2e3b3-a0-f3",
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 104.15625
+                  },
+                  {
+                    "bottom": 431.015625,
+                    "caseId": "claude-body3-se1a2e3b3-a0-f3",
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 104.15625
+                  }
+                ]
+              },
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body3-segment-05-342c7928f6.png",
+                "sha256": "342c7928f6073228956f47a7c88b808fda044fd44da3a0ecbb09d651e71608fb",
+                "visible": [
+                  {
+                    "bottom": 431.875,
+                    "caseId": "claude-body3-se1a2e3b3-a0-f4",
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 105.015625
+                  },
+                  {
+                    "bottom": 431.875,
+                    "caseId": "claude-body3-se1a2e3b3-a0-f4",
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 105.015625
+                  }
+                ]
+              }
+            ],
+            "actuallyViewedViaDiagnostic": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/claude-r10-body3-from-browser-segments-2x.png",
+            "diagnosticIndex": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/claude-r10-segment-diagnostic-index.json",
+            "segmented": true,
+            "allNativeAiCasePairsActuallyViewed": true
+          },
+          "limitations": [
+            "Static only; no animation claim.",
+            "Native complete combinations remain100. Any AI-owned generated support is included with the AI; never inherits100.",
+            "花束遮胸腰大部，不推隐藏握点。"
+          ],
+          "layoutIntegrity": null
+        }
+      ]
+    },
+    "upper2": {
+      "reviews": [
+        {
+          "reviewer": "classic_body_judge",
+          "score": 87.35,
+          "weightedRaw": 87.35,
+          "threshold": 98,
+          "passed": false,
+          "pending": false,
+          "selectedAiSlots": [
+            "hair",
+            "top"
+          ],
+          "selectedItemIDs": {
+            "hair": "claude-hair",
+            "top": "claude-top"
+          },
+          "reviewedPartHashes": {
+            "hair": "7352d4a82e3915289784b3aa7bdc887395b4e360c1b736e53152c19d29ec024f",
+            "top": "786c024c6f93086f748753136a8874fd8094f6c1cc4f0c0b3acf36662130f766"
+          },
+          "reviewedGeneratedInterfaceHashes": {},
+          "reviewedCompleteHash": "86d8b70f36032745b12f0510a69a4f6ebefdd665ea13d18fbaa177a601d317be",
+          "bodyHash": "4f3bdbb5c0f982ea2b40836c29eabe8beaf277f007b10299e7753beb59c58106",
+          "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+          "seed": "human-20261110-claude-upper2-mw7unwd3",
+          "contextSignature": "native-context-v4-4d1d000",
+          "draws": {
+            "aura": [
+              "native-aura-13",
+              "native-aura-9",
+              "native-aura-2",
+              "native-aura-17",
+              "native-aura-10"
+            ],
+            "back": [
+              "native-back-4",
+              "native-back-3",
+              "native-back-1",
+              "native-back-12",
+              "native-back-16"
+            ],
+            "background": [
+              "native-background-20",
+              "native-background-14",
+              "native-background-11",
+              "native-background-6",
+              "native-background-18"
+            ],
+            "bottom": [
+              "native-bottom-17",
+              "native-bottom-7",
+              "native-bottom-15",
+              "native-bottom-10",
+              "native-bottom-12"
+            ],
+            "effect": [
+              "native-effect-11",
+              "native-effect-13",
+              "native-effect-5",
+              "native-effect-18",
+              "native-effect-2"
+            ],
+            "face": [
+              "native-face-11",
+              "native-face-4",
+              "native-face-6",
+              "native-face-13",
+              "native-face-14"
+            ],
+            "hair": [
+              "native-hair-19",
+              "native-hair-7",
+              "native-hair-12",
+              "native-hair-16",
+              "native-hair-8"
+            ],
+            "headwear": [
+              "native-headwear-9",
+              "native-headwear-6",
+              "native-headwear-15",
+              "native-headwear-16",
+              "native-headwear-13"
+            ],
+            "legs": [
+              "native-legs-17",
+              "native-legs-7",
+              "native-legs-15",
+              "native-legs-10",
+              "native-legs-12"
+            ],
+            "prop": [
+              "native-prop-7",
+              "native-prop-17",
+              "native-prop-12",
+              "native-prop-4",
+              "native-prop-19"
+            ],
+            "top": [
+              "native-top-8",
+              "native-top-15",
+              "native-top-19",
+              "native-top-12",
+              "native-top-5"
+            ]
+          },
+          "contextScores": [
+            {
+              "caseId": "claude-upper2-sf12a495b-a0-f0",
+              "fixtureIndex": 0,
+              "score": 87.45,
+              "weightedRaw": 87.45,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 88,
+                  "weight": 20,
+                  "reason": "例1夜城卡其裤：弧袖/束腰完整，新低腕掌比旧连贯；腰口落原生裤胯仍硬，袖腔/掌跟短面和长橙发主谷弱。"
+                },
+                "proportionConnection": {
+                  "score": 88,
+                  "weight": 25,
+                  "reason": "例1夜城卡其裤：弧袖/束腰完整，新低腕掌比旧连贯；腰口落原生裤胯仍硬，袖腔/掌跟短面和长橙发主谷弱。"
+                },
+                "materialColor": {
+                  "score": 84,
+                  "weight": 15,
+                  "reason": "例1夜城卡其裤：弧袖/束腰完整，新低腕掌比旧连贯；腰口落原生裤胯仍硬，袖腔/掌跟短面和长橙发主谷弱。"
+                },
+                "blingeePixel": {
+                  "score": 86,
+                  "weight": 20,
+                  "reason": "例1夜城卡其裤：弧袖/束腰完整，新低腕掌比旧连贯；腰口落原生裤胯仍硬，袖腔/掌跟短面和长橙发主谷弱。"
+                },
+                "occlusionContact": {
+                  "score": 90,
+                  "weight": 15,
+                  "reason": "例1夜城卡其裤：弧袖/束腰完整，新低腕掌比旧连贯；腰口落原生裤胯仍硬，袖腔/掌跟短面和长橙发主谷弱。"
+                },
+                "canvasReadability": {
+                  "score": 91,
+                  "weight": 5,
+                  "reason": "例1夜城卡其裤：弧袖/束腰完整，新低腕掌比旧连贯；腰口落原生裤胯仍硬，袖腔/掌跟短面和长橙发主谷弱。"
+                }
+              },
+              "reason": "例1夜城卡其裤：弧袖/束腰完整，新低腕掌比旧连贯；腰口落原生裤胯仍硬，袖腔/掌跟短面和长橙发主谷弱。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-13",
+                "back": "native-back-4",
+                "background": "native-background-20",
+                "bottom": "native-bottom-17",
+                "effect": "native-effect-11",
+                "face": "native-face-11",
+                "hair": "native-hair-19",
+                "headwear": "native-headwear-9",
+                "legs": "native-legs-17",
+                "prop": "native-prop-7",
+                "top": "native-top-8"
+              },
+              "aiSelection": {
+                "aura": "native-aura-13",
+                "back": "native-back-4",
+                "background": "native-background-20",
+                "bottom": "native-bottom-17",
+                "effect": "native-effect-11",
+                "face": "native-face-11",
+                "hair": "claude-hair",
+                "headwear": "native-headwear-9",
+                "legs": "native-legs-17",
+                "prop": "native-prop-7",
+                "top": "claude-top"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "9f7af1a3c719a83d585eb29152ad19078644e816d52f4164254c4569973d62ce",
+                  "design": "/assets-classic/claude/remake/hair-back-design.svg",
+                  "itemId": "claude-hair",
+                  "key": "claude-hair-0",
+                  "name": "蜜橘长卷发",
+                  "reviewFamilyHash": "7352d4a82e3915289784b3aa7bdc887395b4e360c1b736e53152c19d29ec024f",
+                  "slot": "hair",
+                  "src": "/assets-classic/claude/remake/hair-back.png",
+                  "svg": "/assets-classic/claude/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "8dff0e30f8d73e3abaa926bc86c2abdd091d40200525d6478901bfd88673fd63",
+                  "design": "/assets-classic/claude/remake/top-body-design.svg",
+                  "itemId": "claude-top",
+                  "key": "claude-top-0",
+                  "name": "奶油花边衬衣",
+                  "reviewFamilyHash": "786c024c6f93086f748753136a8874fd8094f6c1cc4f0c0b3acf36662130f766",
+                  "slot": "top",
+                  "src": "/assets-classic/claude/remake/top-body.png",
+                  "svg": "/assets-classic/claude/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "0845ae1c9249b18f8f27a94454f31b6bd54c0ce690f8b1c98f86d9c6dc3abe43",
+                  "design": "/assets-classic/claude/remake/hair-front-design.svg",
+                  "itemId": "claude-hair",
+                  "key": "claude-hair-1",
+                  "name": "蜜橘长卷发",
+                  "reviewFamilyHash": "7352d4a82e3915289784b3aa7bdc887395b4e360c1b736e53152c19d29ec024f",
+                  "slot": "hair",
+                  "src": "/assets-classic/claude/remake/hair-front.png",
+                  "svg": "/assets-classic/claude/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                },
+                {
+                  "artworkHash": "e62436a743480c580c3242c4588b07beb05a8dbcedde0ae2991bf822bf205308",
+                  "design": "/assets-classic/claude/remake/top-arms-design.svg",
+                  "itemId": "claude-top",
+                  "key": "claude-top-1",
+                  "name": "奶油花边衬衣",
+                  "reviewFamilyHash": "786c024c6f93086f748753136a8874fd8094f6c1cc4f0c0b3acf36662130f766",
+                  "slot": "top",
+                  "src": "/assets-classic/claude/remake/top-arms.png",
+                  "svg": "/assets-classic/claude/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/upper2-evidence.json",
+              "recommendations": [
+                "保留右腕掌加肉/连续与书前接位，局部重画低掌跟/拇指根展开的短肉面及承压，不按default源点削肉。",
+                "袖腔/书缘/捏裙布口同关节整理短压影与厚度，不强补五指或把所有负形填满。",
+                "保留新松弯/C尾，主束根谷与长短小簇再分层，不回宽直扇束或只加长浅边。",
+                "白裙/橙垂片按腰胯/提点重布主谷和翻层短厚边，删贯长均匀浅轨；上衣与原生裙裤腰口共同转面。",
+                "技术历史逐finding待复核，新hash/视觉分/源像素研究均不自动清关。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/upper2.png"
+              ]
+            },
+            {
+              "caseId": "claude-upper2-sf12a495b-a0-f1",
+              "fixtureIndex": 1,
+              "score": 87.45,
+              "weightedRaw": 87.45,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 88,
+                  "weight": 20,
+                  "reason": "例2蓝樱白裤：浮晶/肩挎物不需握；上衣腰口与裤胯分层硬，袖口厚边有改善但低掌跟/布指压面浅。"
+                },
+                "proportionConnection": {
+                  "score": 88,
+                  "weight": 25,
+                  "reason": "例2蓝樱白裤：浮晶/肩挎物不需握；上衣腰口与裤胯分层硬，袖口厚边有改善但低掌跟/布指压面浅。"
+                },
+                "materialColor": {
+                  "score": 84,
+                  "weight": 15,
+                  "reason": "例2蓝樱白裤：浮晶/肩挎物不需握；上衣腰口与裤胯分层硬，袖口厚边有改善但低掌跟/布指压面浅。"
+                },
+                "blingeePixel": {
+                  "score": 86,
+                  "weight": 20,
+                  "reason": "例2蓝樱白裤：浮晶/肩挎物不需握；上衣腰口与裤胯分层硬，袖口厚边有改善但低掌跟/布指压面浅。"
+                },
+                "occlusionContact": {
+                  "score": 90,
+                  "weight": 15,
+                  "reason": "例2蓝樱白裤：浮晶/肩挎物不需握；上衣腰口与裤胯分层硬，袖口厚边有改善但低掌跟/布指压面浅。"
+                },
+                "canvasReadability": {
+                  "score": 91,
+                  "weight": 5,
+                  "reason": "例2蓝樱白裤：浮晶/肩挎物不需握；上衣腰口与裤胯分层硬，袖口厚边有改善但低掌跟/布指压面浅。"
+                }
+              },
+              "reason": "例2蓝樱白裤：浮晶/肩挎物不需握；上衣腰口与裤胯分层硬，袖口厚边有改善但低掌跟/布指压面浅。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-9",
+                "back": "native-back-3",
+                "background": "native-background-14",
+                "bottom": "native-bottom-7",
+                "effect": "native-effect-13",
+                "face": "native-face-4",
+                "hair": "native-hair-7",
+                "headwear": "native-headwear-6",
+                "legs": "native-legs-7",
+                "prop": "native-prop-17",
+                "top": "native-top-15"
+              },
+              "aiSelection": {
+                "aura": "native-aura-9",
+                "back": "native-back-3",
+                "background": "native-background-14",
+                "bottom": "native-bottom-7",
+                "effect": "native-effect-13",
+                "face": "native-face-4",
+                "hair": "claude-hair",
+                "headwear": "native-headwear-6",
+                "legs": "native-legs-7",
+                "prop": "native-prop-17",
+                "top": "claude-top"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "9f7af1a3c719a83d585eb29152ad19078644e816d52f4164254c4569973d62ce",
+                  "design": "/assets-classic/claude/remake/hair-back-design.svg",
+                  "itemId": "claude-hair",
+                  "key": "claude-hair-0",
+                  "name": "蜜橘长卷发",
+                  "reviewFamilyHash": "7352d4a82e3915289784b3aa7bdc887395b4e360c1b736e53152c19d29ec024f",
+                  "slot": "hair",
+                  "src": "/assets-classic/claude/remake/hair-back.png",
+                  "svg": "/assets-classic/claude/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "8dff0e30f8d73e3abaa926bc86c2abdd091d40200525d6478901bfd88673fd63",
+                  "design": "/assets-classic/claude/remake/top-body-design.svg",
+                  "itemId": "claude-top",
+                  "key": "claude-top-0",
+                  "name": "奶油花边衬衣",
+                  "reviewFamilyHash": "786c024c6f93086f748753136a8874fd8094f6c1cc4f0c0b3acf36662130f766",
+                  "slot": "top",
+                  "src": "/assets-classic/claude/remake/top-body.png",
+                  "svg": "/assets-classic/claude/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "0845ae1c9249b18f8f27a94454f31b6bd54c0ce690f8b1c98f86d9c6dc3abe43",
+                  "design": "/assets-classic/claude/remake/hair-front-design.svg",
+                  "itemId": "claude-hair",
+                  "key": "claude-hair-1",
+                  "name": "蜜橘长卷发",
+                  "reviewFamilyHash": "7352d4a82e3915289784b3aa7bdc887395b4e360c1b736e53152c19d29ec024f",
+                  "slot": "hair",
+                  "src": "/assets-classic/claude/remake/hair-front.png",
+                  "svg": "/assets-classic/claude/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                },
+                {
+                  "artworkHash": "e62436a743480c580c3242c4588b07beb05a8dbcedde0ae2991bf822bf205308",
+                  "design": "/assets-classic/claude/remake/top-arms-design.svg",
+                  "itemId": "claude-top",
+                  "key": "claude-top-1",
+                  "name": "奶油花边衬衣",
+                  "reviewFamilyHash": "786c024c6f93086f748753136a8874fd8094f6c1cc4f0c0b3acf36662130f766",
+                  "slot": "top",
+                  "src": "/assets-classic/claude/remake/top-arms.png",
+                  "svg": "/assets-classic/claude/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/upper2-evidence.json",
+              "recommendations": [
+                "保留右腕掌加肉/连续与书前接位，局部重画低掌跟/拇指根展开的短肉面及承压，不按default源点削肉。",
+                "袖腔/书缘/捏裙布口同关节整理短压影与厚度，不强补五指或把所有负形填满。",
+                "保留新松弯/C尾，主束根谷与长短小簇再分层，不回宽直扇束或只加长浅边。",
+                "白裙/橙垂片按腰胯/提点重布主谷和翻层短厚边，删贯长均匀浅轨；上衣与原生裙裤腰口共同转面。",
+                "技术历史逐finding待复核，新hash/视觉分/源像素研究均不自动清关。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/upper2-segment-02-5bf29a38e2.png"
+              ]
+            },
+            {
+              "caseId": "claude-upper2-sf12a495b-a0-f2",
+              "fixtureIndex": 2,
+              "score": 87.45,
+              "weightedRaw": 87.45,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 88,
+                  "weight": 20,
+                  "reason": "例3樱树牛仔裤金弓：独立竖弓不要求持；白袖弧谷和胸腰形在，低掌/袖腔承压短面弱，衣腰接口厚度不足。"
+                },
+                "proportionConnection": {
+                  "score": 88,
+                  "weight": 25,
+                  "reason": "例3樱树牛仔裤金弓：独立竖弓不要求持；白袖弧谷和胸腰形在，低掌/袖腔承压短面弱，衣腰接口厚度不足。"
+                },
+                "materialColor": {
+                  "score": 84,
+                  "weight": 15,
+                  "reason": "例3樱树牛仔裤金弓：独立竖弓不要求持；白袖弧谷和胸腰形在，低掌/袖腔承压短面弱，衣腰接口厚度不足。"
+                },
+                "blingeePixel": {
+                  "score": 86,
+                  "weight": 20,
+                  "reason": "例3樱树牛仔裤金弓：独立竖弓不要求持；白袖弧谷和胸腰形在，低掌/袖腔承压短面弱，衣腰接口厚度不足。"
+                },
+                "occlusionContact": {
+                  "score": 90,
+                  "weight": 15,
+                  "reason": "例3樱树牛仔裤金弓：独立竖弓不要求持；白袖弧谷和胸腰形在，低掌/袖腔承压短面弱，衣腰接口厚度不足。"
+                },
+                "canvasReadability": {
+                  "score": 91,
+                  "weight": 5,
+                  "reason": "例3樱树牛仔裤金弓：独立竖弓不要求持；白袖弧谷和胸腰形在，低掌/袖腔承压短面弱，衣腰接口厚度不足。"
+                }
+              },
+              "reason": "例3樱树牛仔裤金弓：独立竖弓不要求持；白袖弧谷和胸腰形在，低掌/袖腔承压短面弱，衣腰接口厚度不足。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-2",
+                "back": "native-back-1",
+                "background": "native-background-11",
+                "bottom": "native-bottom-15",
+                "effect": "native-effect-5",
+                "face": "native-face-6",
+                "hair": "native-hair-12",
+                "headwear": "native-headwear-15",
+                "legs": "native-legs-15",
+                "prop": "native-prop-12",
+                "top": "native-top-19"
+              },
+              "aiSelection": {
+                "aura": "native-aura-2",
+                "back": "native-back-1",
+                "background": "native-background-11",
+                "bottom": "native-bottom-15",
+                "effect": "native-effect-5",
+                "face": "native-face-6",
+                "hair": "claude-hair",
+                "headwear": "native-headwear-15",
+                "legs": "native-legs-15",
+                "prop": "native-prop-12",
+                "top": "claude-top"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "9f7af1a3c719a83d585eb29152ad19078644e816d52f4164254c4569973d62ce",
+                  "design": "/assets-classic/claude/remake/hair-back-design.svg",
+                  "itemId": "claude-hair",
+                  "key": "claude-hair-0",
+                  "name": "蜜橘长卷发",
+                  "reviewFamilyHash": "7352d4a82e3915289784b3aa7bdc887395b4e360c1b736e53152c19d29ec024f",
+                  "slot": "hair",
+                  "src": "/assets-classic/claude/remake/hair-back.png",
+                  "svg": "/assets-classic/claude/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "8dff0e30f8d73e3abaa926bc86c2abdd091d40200525d6478901bfd88673fd63",
+                  "design": "/assets-classic/claude/remake/top-body-design.svg",
+                  "itemId": "claude-top",
+                  "key": "claude-top-0",
+                  "name": "奶油花边衬衣",
+                  "reviewFamilyHash": "786c024c6f93086f748753136a8874fd8094f6c1cc4f0c0b3acf36662130f766",
+                  "slot": "top",
+                  "src": "/assets-classic/claude/remake/top-body.png",
+                  "svg": "/assets-classic/claude/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "0845ae1c9249b18f8f27a94454f31b6bd54c0ce690f8b1c98f86d9c6dc3abe43",
+                  "design": "/assets-classic/claude/remake/hair-front-design.svg",
+                  "itemId": "claude-hair",
+                  "key": "claude-hair-1",
+                  "name": "蜜橘长卷发",
+                  "reviewFamilyHash": "7352d4a82e3915289784b3aa7bdc887395b4e360c1b736e53152c19d29ec024f",
+                  "slot": "hair",
+                  "src": "/assets-classic/claude/remake/hair-front.png",
+                  "svg": "/assets-classic/claude/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                },
+                {
+                  "artworkHash": "e62436a743480c580c3242c4588b07beb05a8dbcedde0ae2991bf822bf205308",
+                  "design": "/assets-classic/claude/remake/top-arms-design.svg",
+                  "itemId": "claude-top",
+                  "key": "claude-top-1",
+                  "name": "奶油花边衬衣",
+                  "reviewFamilyHash": "786c024c6f93086f748753136a8874fd8094f6c1cc4f0c0b3acf36662130f766",
+                  "slot": "top",
+                  "src": "/assets-classic/claude/remake/top-arms.png",
+                  "svg": "/assets-classic/claude/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/upper2-evidence.json",
+              "recommendations": [
+                "保留右腕掌加肉/连续与书前接位，局部重画低掌跟/拇指根展开的短肉面及承压，不按default源点削肉。",
+                "袖腔/书缘/捏裙布口同关节整理短压影与厚度，不强补五指或把所有负形填满。",
+                "保留新松弯/C尾，主束根谷与长短小簇再分层，不回宽直扇束或只加长浅边。",
+                "白裙/橙垂片按腰胯/提点重布主谷和翻层短厚边，删贯长均匀浅轨；上衣与原生裙裤腰口共同转面。",
+                "技术历史逐finding待复核，新hash/视觉分/源像素研究均不自动清关。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/upper2-segment-03-5d64937312.png"
+              ]
+            },
+            {
+              "caseId": "claude-upper2-sf12a495b-a0-f3",
+              "fixtureIndex": 3,
+              "score": 87.45,
+              "weightedRaw": 87.45,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 88,
+                  "weight": 20,
+                  "reason": "例4海底红裙：原生腰饰不需抓；袖口/腕掌改善后仍欠短转面，白衣黑腰与红裙上缘共同体面不足。"
+                },
+                "proportionConnection": {
+                  "score": 88,
+                  "weight": 25,
+                  "reason": "例4海底红裙：原生腰饰不需抓；袖口/腕掌改善后仍欠短转面，白衣黑腰与红裙上缘共同体面不足。"
+                },
+                "materialColor": {
+                  "score": 84,
+                  "weight": 15,
+                  "reason": "例4海底红裙：原生腰饰不需抓；袖口/腕掌改善后仍欠短转面，白衣黑腰与红裙上缘共同体面不足。"
+                },
+                "blingeePixel": {
+                  "score": 86,
+                  "weight": 20,
+                  "reason": "例4海底红裙：原生腰饰不需抓；袖口/腕掌改善后仍欠短转面，白衣黑腰与红裙上缘共同体面不足。"
+                },
+                "occlusionContact": {
+                  "score": 90,
+                  "weight": 15,
+                  "reason": "例4海底红裙：原生腰饰不需抓；袖口/腕掌改善后仍欠短转面，白衣黑腰与红裙上缘共同体面不足。"
+                },
+                "canvasReadability": {
+                  "score": 91,
+                  "weight": 5,
+                  "reason": "例4海底红裙：原生腰饰不需抓；袖口/腕掌改善后仍欠短转面，白衣黑腰与红裙上缘共同体面不足。"
+                }
+              },
+              "reason": "例4海底红裙：原生腰饰不需抓；袖口/腕掌改善后仍欠短转面，白衣黑腰与红裙上缘共同体面不足。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-17",
+                "back": "native-back-12",
+                "background": "native-background-6",
+                "bottom": "native-bottom-10",
+                "effect": "native-effect-18",
+                "face": "native-face-13",
+                "hair": "native-hair-16",
+                "headwear": "native-headwear-16",
+                "legs": "native-legs-10",
+                "prop": "native-prop-4",
+                "top": "native-top-12"
+              },
+              "aiSelection": {
+                "aura": "native-aura-17",
+                "back": "native-back-12",
+                "background": "native-background-6",
+                "bottom": "native-bottom-10",
+                "effect": "native-effect-18",
+                "face": "native-face-13",
+                "hair": "claude-hair",
+                "headwear": "native-headwear-16",
+                "legs": "native-legs-10",
+                "prop": "native-prop-4",
+                "top": "claude-top"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "9f7af1a3c719a83d585eb29152ad19078644e816d52f4164254c4569973d62ce",
+                  "design": "/assets-classic/claude/remake/hair-back-design.svg",
+                  "itemId": "claude-hair",
+                  "key": "claude-hair-0",
+                  "name": "蜜橘长卷发",
+                  "reviewFamilyHash": "7352d4a82e3915289784b3aa7bdc887395b4e360c1b736e53152c19d29ec024f",
+                  "slot": "hair",
+                  "src": "/assets-classic/claude/remake/hair-back.png",
+                  "svg": "/assets-classic/claude/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "8dff0e30f8d73e3abaa926bc86c2abdd091d40200525d6478901bfd88673fd63",
+                  "design": "/assets-classic/claude/remake/top-body-design.svg",
+                  "itemId": "claude-top",
+                  "key": "claude-top-0",
+                  "name": "奶油花边衬衣",
+                  "reviewFamilyHash": "786c024c6f93086f748753136a8874fd8094f6c1cc4f0c0b3acf36662130f766",
+                  "slot": "top",
+                  "src": "/assets-classic/claude/remake/top-body.png",
+                  "svg": "/assets-classic/claude/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "0845ae1c9249b18f8f27a94454f31b6bd54c0ce690f8b1c98f86d9c6dc3abe43",
+                  "design": "/assets-classic/claude/remake/hair-front-design.svg",
+                  "itemId": "claude-hair",
+                  "key": "claude-hair-1",
+                  "name": "蜜橘长卷发",
+                  "reviewFamilyHash": "7352d4a82e3915289784b3aa7bdc887395b4e360c1b736e53152c19d29ec024f",
+                  "slot": "hair",
+                  "src": "/assets-classic/claude/remake/hair-front.png",
+                  "svg": "/assets-classic/claude/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                },
+                {
+                  "artworkHash": "e62436a743480c580c3242c4588b07beb05a8dbcedde0ae2991bf822bf205308",
+                  "design": "/assets-classic/claude/remake/top-arms-design.svg",
+                  "itemId": "claude-top",
+                  "key": "claude-top-1",
+                  "name": "奶油花边衬衣",
+                  "reviewFamilyHash": "786c024c6f93086f748753136a8874fd8094f6c1cc4f0c0b3acf36662130f766",
+                  "slot": "top",
+                  "src": "/assets-classic/claude/remake/top-arms.png",
+                  "svg": "/assets-classic/claude/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/upper2-evidence.json",
+              "recommendations": [
+                "保留右腕掌加肉/连续与书前接位，局部重画低掌跟/拇指根展开的短肉面及承压，不按default源点削肉。",
+                "袖腔/书缘/捏裙布口同关节整理短压影与厚度，不强补五指或把所有负形填满。",
+                "保留新松弯/C尾，主束根谷与长短小簇再分层，不回宽直扇束或只加长浅边。",
+                "白裙/橙垂片按腰胯/提点重布主谷和翻层短厚边，删贯长均匀浅轨；上衣与原生裙裤腰口共同转面。",
+                "技术历史逐finding待复核，新hash/视觉分/源像素研究均不自动清关。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/upper2-segment-04-bb4f7852dd.png"
+              ]
+            },
+            {
+              "caseId": "claude-upper2-sf12a495b-a0-f4",
+              "fixtureIndex": 4,
+              "score": 87.35,
+              "weightedRaw": 87.35,
+              "passed": false,
+              "pending": false,
+              "nativeBaselineScore": 100,
+              "dimensions": {
+                "pixelStroke": {
+                  "score": 88,
+                  "weight": 20,
+                  "reason": "例5绿水蓝裙腰花：腰花非握物，低手不因无书而错；掌跟短体面、袖腔与腰裙厚度仍弱，后发长橙面偏平。"
+                },
+                "proportionConnection": {
+                  "score": 88,
+                  "weight": 25,
+                  "reason": "例5绿水蓝裙腰花：腰花非握物，低手不因无书而错；掌跟短体面、袖腔与腰裙厚度仍弱，后发长橙面偏平。"
+                },
+                "materialColor": {
+                  "score": 84,
+                  "weight": 15,
+                  "reason": "例5绿水蓝裙腰花：腰花非握物，低手不因无书而错；掌跟短体面、袖腔与腰裙厚度仍弱，后发长橙面偏平。"
+                },
+                "blingeePixel": {
+                  "score": 86,
+                  "weight": 20,
+                  "reason": "例5绿水蓝裙腰花：腰花非握物，低手不因无书而错；掌跟短体面、袖腔与腰裙厚度仍弱，后发长橙面偏平。"
+                },
+                "occlusionContact": {
+                  "score": 90,
+                  "weight": 15,
+                  "reason": "例5绿水蓝裙腰花：腰花非握物，低手不因无书而错；掌跟短体面、袖腔与腰裙厚度仍弱，后发长橙面偏平。"
+                },
+                "canvasReadability": {
+                  "score": 89,
+                  "weight": 5,
+                  "reason": "例5绿水蓝裙腰花：腰花非握物，低手不因无书而错；掌跟短体面、袖腔与腰裙厚度仍弱，后发长橙面偏平。"
+                }
+              },
+              "reason": "例5绿水蓝裙腰花：腰花非握物，低手不因无书而错；掌跟短体面、袖腔与腰裙厚度仍弱，后发长橙面偏平。",
+              "region": [
+                29,
+                88,
+                127,
+                223
+              ],
+              "visibilityLimitation": null,
+              "scoredVisibleOnly": false,
+              "supplementUsed": false,
+              "nativeSelection": {
+                "aura": "native-aura-10",
+                "back": "native-back-16",
+                "background": "native-background-18",
+                "bottom": "native-bottom-12",
+                "effect": "native-effect-2",
+                "face": "native-face-14",
+                "hair": "native-hair-8",
+                "headwear": "native-headwear-13",
+                "legs": "native-legs-12",
+                "prop": "native-prop-19",
+                "top": "native-top-5"
+              },
+              "aiSelection": {
+                "aura": "native-aura-10",
+                "back": "native-back-16",
+                "background": "native-background-18",
+                "bottom": "native-bottom-12",
+                "effect": "native-effect-2",
+                "face": "native-face-14",
+                "hair": "claude-hair",
+                "headwear": "native-headwear-13",
+                "legs": "native-legs-12",
+                "prop": "native-prop-19",
+                "top": "claude-top"
+              },
+              "selectedAiSlots": [
+                "hair",
+                "top"
+              ],
+              "actualAiLayers": [
+                {
+                  "artworkHash": "9f7af1a3c719a83d585eb29152ad19078644e816d52f4164254c4569973d62ce",
+                  "design": "/assets-classic/claude/remake/hair-back-design.svg",
+                  "itemId": "claude-hair",
+                  "key": "claude-hair-0",
+                  "name": "蜜橘长卷发",
+                  "reviewFamilyHash": "7352d4a82e3915289784b3aa7bdc887395b4e360c1b736e53152c19d29ec024f",
+                  "slot": "hair",
+                  "src": "/assets-classic/claude/remake/hair-back.png",
+                  "svg": "/assets-classic/claude/remake/hair-back.svg",
+                  "variantRole": "own-pose",
+                  "z": 20
+                },
+                {
+                  "artworkHash": "8dff0e30f8d73e3abaa926bc86c2abdd091d40200525d6478901bfd88673fd63",
+                  "design": "/assets-classic/claude/remake/top-body-design.svg",
+                  "itemId": "claude-top",
+                  "key": "claude-top-0",
+                  "name": "奶油花边衬衣",
+                  "reviewFamilyHash": "786c024c6f93086f748753136a8874fd8094f6c1cc4f0c0b3acf36662130f766",
+                  "slot": "top",
+                  "src": "/assets-classic/claude/remake/top-body.png",
+                  "svg": "/assets-classic/claude/remake/top-body.svg",
+                  "variantRole": "own-pose",
+                  "z": 50
+                },
+                {
+                  "artworkHash": "0845ae1c9249b18f8f27a94454f31b6bd54c0ce690f8b1c98f86d9c6dc3abe43",
+                  "design": "/assets-classic/claude/remake/hair-front-design.svg",
+                  "itemId": "claude-hair",
+                  "key": "claude-hair-1",
+                  "name": "蜜橘长卷发",
+                  "reviewFamilyHash": "7352d4a82e3915289784b3aa7bdc887395b4e360c1b736e53152c19d29ec024f",
+                  "slot": "hair",
+                  "src": "/assets-classic/claude/remake/hair-front.png",
+                  "svg": "/assets-classic/claude/remake/hair-front.svg",
+                  "variantRole": "own-pose",
+                  "z": 80
+                },
+                {
+                  "artworkHash": "e62436a743480c580c3242c4588b07beb05a8dbcedde0ae2991bf822bf205308",
+                  "design": "/assets-classic/claude/remake/top-arms-design.svg",
+                  "itemId": "claude-top",
+                  "key": "claude-top-1",
+                  "name": "奶油花边衬衣",
+                  "reviewFamilyHash": "786c024c6f93086f748753136a8874fd8094f6c1cc4f0c0b3acf36662130f766",
+                  "slot": "top",
+                  "src": "/assets-classic/claude/remake/top-arms.png",
+                  "svg": "/assets-classic/claude/remake/top-arms.svg",
+                  "variantRole": "own-pose",
+                  "z": 85
+                }
+              ],
+              "generatedInterfaceLayers": [],
+              "sourceEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/upper2-evidence.json",
+              "recommendations": [
+                "保留右腕掌加肉/连续与书前接位，局部重画低掌跟/拇指根展开的短肉面及承压，不按default源点削肉。",
+                "袖腔/书缘/捏裙布口同关节整理短压影与厚度，不强补五指或把所有负形填满。",
+                "保留新松弯/C尾，主束根谷与长短小簇再分层，不回宽直扇束或只加长浅边。",
+                "白裙/橙垂片按腰胯/提点重布主谷和翻层短厚边，删贯长均匀浅轨；上衣与原生裙裤腰口共同转面。",
+                "技术历史逐finding待复核，新hash/视觉分/源像素研究均不自动清关。"
+              ],
+              "evidenceScreenshots": [
+                "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/upper2-segment-05-5dfbba6452.png"
+              ]
+            }
+          ],
+          "reasons": [
+            "R10右远腕/掌跟比R9有加肉和连续，肩肘/腰胯、股根主轮廓连贯；左屈臂与书前短指接位成立。",
+            "右远前臂x84..89/y125..135到掌x85..92/y135..142仍是长浅窄带接小尖楔，腕向掌展开/拇指根的短转面和饱满掌跟不足。",
+            "左书手不判缺握，手/书/袖口已有前后关系；掌跟短承压与袖口局部折谷仍偏软，紧凑指群本身允许。",
+            "本次未独立重测腿或全骨段，旧技术/历史不因新hash或局部视觉改善清除，不把default源两截面当全姿态宽目标。",
+            "保留右腕掌加肉/连续与书前接位，局部重画低掌跟/拇指根展开的短肉面及承压，不按default源点削肉。",
+            "袖腔/书缘/捏裙布口同关节整理短压影与厚度，不强补五指或把所有负形填满。",
+            "保留新松弯/C尾，主束根谷与长短小簇再分层，不回宽直扇束或只加长浅边。",
+            "白裙/橙垂片按腰胯/提点重布主谷和翻层短厚边，删贯长均匀浅轨；上衣与原生裙裤腰口共同转面。",
+            "技术历史逐finding待复核，新hash/视觉分/源像素研究均不自动清关。"
+          ],
+          "recommendations": [
+            "保留右腕掌加肉/连续与书前接位，局部重画低掌跟/拇指根展开的短肉面及承压，不按default源点削肉。",
+            "袖腔/书缘/捏裙布口同关节整理短压影与厚度，不强补五指或把所有负形填满。",
+            "保留新松弯/C尾，主束根谷与长短小簇再分层，不回宽直扇束或只加长浅边。",
+            "白裙/橙垂片按腰胯/提点重布主谷和翻层短厚边，删贯长均匀浅轨；上衣与原生裙裤腰口共同转面。",
+            "技术历史逐finding待复核，新hash/视觉分/源像素研究均不自动清关。"
+          ],
+          "evidence": {
+            "reactEvidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/upper2-evidence.json",
+            "reactScreenshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/upper2.png",
+            "reactScreenshotSha256": "1d1d4794e1acb171977639f5e77463e7dc5f9ade0999beb43182ce90fbb57eff",
+            "captureBrowser": "Codex in-app browser",
+            "failedImages": [],
+            "actuallyViewed": true,
+            "reactScreenshots": [
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/upper2.png",
+                "sha256": "1d1d4794e1acb171977639f5e77463e7dc5f9ade0999beb43182ce90fbb57eff",
+                "visible": [
+                  {
+                    "bottom": 424.953125,
+                    "caseId": "claude-upper2-sf12a495b-a0-f0",
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 112.03125
+                  },
+                  {
+                    "bottom": 424.953125,
+                    "caseId": "claude-upper2-sf12a495b-a0-f0",
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 112.03125
+                  }
+                ]
+              },
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/upper2-segment-02-5bf29a38e2.png",
+                "sha256": "5bf29a38e296a0b22d209ccaef715497a801098f051d11a0487c9eb545267736",
+                "visible": [
+                  {
+                    "bottom": 424.875,
+                    "caseId": "claude-upper2-sf12a495b-a0-f1",
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 111.953125
+                  },
+                  {
+                    "bottom": 424.875,
+                    "caseId": "claude-upper2-sf12a495b-a0-f1",
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 111.953125
+                  }
+                ]
+              },
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/upper2-segment-03-5d64937312.png",
+                "sha256": "5d64937312b3a608dae29c2507fe180e896b3b6ba2febfa506094865d4c82c97",
+                "visible": [
+                  {
+                    "bottom": 424.796875,
+                    "caseId": "claude-upper2-sf12a495b-a0-f2",
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 111.875
+                  },
+                  {
+                    "bottom": 424.796875,
+                    "caseId": "claude-upper2-sf12a495b-a0-f2",
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 111.875
+                  }
+                ]
+              },
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/upper2-segment-04-bb4f7852dd.png",
+                "sha256": "bb4f7852dd6087c9048ab1353224db172b49c032b090974e9d79c1ec64394eb0",
+                "visible": [
+                  {
+                    "bottom": 424.71875,
+                    "caseId": "claude-upper2-sf12a495b-a0-f3",
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 111.796875
+                  },
+                  {
+                    "bottom": 424.71875,
+                    "caseId": "claude-upper2-sf12a495b-a0-f3",
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 111.796875
+                  }
+                ]
+              },
+              {
+                "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/upper2-segment-05-5dfbba6452.png",
+                "sha256": "5dfbba6452cb38e399f9c231bcda5812c12d4fc14f6eb912d03cd06c58911dab",
+                "visible": [
+                  {
+                    "bottom": 424.640625,
+                    "caseId": "claude-upper2-sf12a495b-a0-f4",
+                    "kind": "native",
+                    "left": 16,
+                    "right": 176,
+                    "top": 111.71875
+                  },
+                  {
+                    "bottom": 424.640625,
+                    "caseId": "claude-upper2-sf12a495b-a0-f4",
+                    "kind": "ai",
+                    "left": 177,
+                    "right": 337,
+                    "top": 111.71875
+                  }
+                ]
+              }
+            ],
+            "actuallyViewedViaDiagnostic": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/claude-r10-upper2-from-browser-segments-2x.png",
+            "diagnosticIndex": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/claude-r10-segment-diagnostic-index.json",
+            "segmented": true,
+            "allNativeAiCasePairsActuallyViewed": true
+          },
+          "limitations": [
+            "Static only; no animation claim.",
+            "Native complete combinations remain100. Any AI-owned generated support is included with the AI; never inherits100."
+          ],
+          "layoutIntegrity": null
+        }
+      ]
+    }
+  },
+  "bodyDiagnostic": {
+    "status": "all20-visual-completed; requires-revision",
+    "reviewedBodyHash": "4f3bdbb5c0f982ea2b40836c29eabe8beaf277f007b10299e7753beb59c58106",
+    "confirmedVisualFindings": [
+      "R10右远腕/掌跟比R9有加肉和连续，肩肘/腰胯、股根主轮廓连贯；左屈臂与书前短指接位成立。",
+      "右远前臂x84..89/y125..135到掌x85..92/y135..142仍是长浅窄带接小尖楔，腕向掌展开/拇指根的短转面和饱满掌跟不足。",
+      "左书手不判缺握，手/书/袖口已有前后关系；掌跟短承压与袖口局部折谷仍偏软，紧凑指群本身允许。",
+      "本次未独立重测腿或全骨段，旧技术/历史不因新hash或局部视觉改善清除，不把default源两截面当全姿态宽目标。"
+    ]
+  },
+  "notReviewed": [
+    "其他六个必要多件组figure5/nearFull8/scene3/accessories3/skirt3/stride2仍pending，前三组失败，未冒充总验收。",
+    "独立可比体量技术守门未在本报告执行；已有尺寸未解/疑项不由本次视觉分清除。",
+    "动画未审。"
+  ],
+  "body": {
+    "reviewer": "classic_body_judge",
+    "score": 89,
+    "threshold": 98,
+    "passed": false,
+    "pending": false,
+    "requiresRevision": true,
+    "reviewedBodyHash": "4f3bdbb5c0f982ea2b40836c29eabe8beaf277f007b10299e7753beb59c58106",
+    "reviewedCompleteHash": "86d8b70f36032745b12f0510a69a4f6ebefdd665ea13d18fbaa177a601d317be",
+    "seed": "human-20261110-claude-body-vrt9gx8r",
+    "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+    "bodyCorpusHash": "3451692764c29845da8f6c5b579069c3f1bec6309b7b9765bcc11843167082c7",
+    "corpusSignature": "body-corpus-context-v1-16a9d5db",
+    "coverage": {
+      "default": true,
+      "samplesViewed": 20,
+      "requiredSamples": 20,
+      "selectedIds": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20"
+      ],
+      "browserAllTwentyVerified": true
+    },
+    "aggregation": "Minimum of newly judged current default and all20. Older scores and author diagnostics are not inherited.",
+    "defaultComparison": {
+      "score": 92,
+      "passed": false,
+      "reasons": [
+        "R10右远腕/掌跟比R9有加肉和连续，肩肘/腰胯、股根主轮廓连贯；左屈臂与书前短指接位成立。",
+        "右远前臂x84..89/y125..135到掌x85..92/y135..142仍是长浅窄带接小尖楔，腕向掌展开/拇指根的短转面和饱满掌跟不足。",
+        "左书手不判缺握，手/书/袖口已有前后关系；掌跟短承压与袖口局部折谷仍偏软，紧凑指群本身允许。",
+        "本次未独立重测腿或全骨段，旧技术/历史不因新hash或局部视觉改善清除，不把default源两截面当全姿态宽目标。"
+      ],
+      "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-default-4b359b8657.png"
+    },
+    "perSampleScores": [
+      {
+        "id": "01",
+        "sample": 1,
+        "label": "抱臂天使礼服",
+        "score": 91,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生交叠掌腕短压面自然，Claude书前接位在，掌跟短体面仍少。"
+        ],
+        "regions": [
+          [
+            45,
+            92,
+            68,
+            124
+          ],
+          [
+            81,
+            94,
+            95,
+            144
+          ],
+          [
+            54,
+            130,
+            84,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-01-f7f3283c10.png",
+        "evidenceSha256": "f7f3283c1006d6529eae6f1fefa78fd32f7d2a10849078e4f2055214bdc46196",
+        "source": "qq-show-classic/outfit/白色天使套装.gif",
+        "layers": [
+          "qq-show-classic/back-hair/白金蝴蝶结波浪长发.gif",
+          "qq-show-classic/outfit/白色天使套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/白金蝴蝶结波浪长发.gif"
+        ],
+        "nativeImageHash": "c0c31cf662e153e299a0ec392c8a518242385bccaba17a90609393f8b9e0024f",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "02",
+        "sample": 2,
+        "label": "蓝白捧花公主裙",
+        "score": 92,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生捧花短掌饱满，Claude低掌改善但掌根/拇指转面弱。"
+        ],
+        "regions": [
+          [
+            45,
+            92,
+            68,
+            124
+          ],
+          [
+            81,
+            94,
+            95,
+            144
+          ],
+          [
+            54,
+            130,
+            84,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-02-5b83f17b81.png",
+        "evidenceSha256": "5b83f17b81bced5679784399304d76093b1fa565cb4eff81ae7e2b68771dd743",
+        "source": "qq-show-classic/outfit/白色公主裙黄色捧花套装.gif",
+        "layers": [
+          "qq-show-classic/back-hair/金色长卷发.gif",
+          "qq-show-classic/outfit/白色公主裙黄色捧花套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/金色长卷发.gif"
+        ],
+        "nativeImageHash": "59429f0f599cc8711a6b88e8472f7aa99f8f76dfee38a89d31f2e6d22e66025d",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "03",
+        "sample": 3,
+        "label": "薄荷裙抬手",
+        "score": 90,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "不要求相同举指姿态，Claude低腕向掌展开仍少。"
+        ],
+        "regions": [
+          [
+            45,
+            92,
+            68,
+            124
+          ],
+          [
+            81,
+            94,
+            95,
+            144
+          ],
+          [
+            54,
+            130,
+            84,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-03-a5629ddbf4.png",
+        "evidenceSha256": "a5629ddbf4d09408c384ed035f543ae591709b876ee2261ac80c1f97869fe52f",
+        "source": "qq-show-classic/outfit/薄荷裙套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/薄荷裙套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/粉紫双马尾.gif"
+        ],
+        "nativeImageHash": "ae902b32ef1eec9558c5516b375ed1d20b9da2e2ef9beeadcbed0852fa8285ae",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "04",
+        "sample": 4,
+        "label": "蓝白学院裙垂袖",
+        "score": 91,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生袖遮不推裸臂宽，Claude露出的远腕掌仍薄楔。"
+        ],
+        "regions": [
+          [
+            45,
+            92,
+            68,
+            124
+          ],
+          [
+            81,
+            94,
+            95,
+            144
+          ],
+          [
+            54,
+            130,
+            84,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-04-9f0266005f.png",
+        "evidenceSha256": "9f0266005fa2496dc33e76d356252c498b2e4b9a2fd063d52ae89939e4326ada",
+        "source": "qq-show-classic/outfit/蓝白学院风连衣裙.gif",
+        "layers": [
+          "qq-show-classic/outfit/蓝白学院风连衣裙.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/黑色齐刘海麻花辫.gif"
+        ],
+        "nativeImageHash": "0bb87dbcc04e43d970312468cf6a70c2f3e599dcb7f9cd44afa8d6a626cc158d",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "05",
+        "sample": 5,
+        "label": "粉背心交叉腿",
+        "score": 91,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "错足/股根连贯，Claude书手接位在，低掌跟仍需饱满短面。"
+        ],
+        "regions": [
+          [
+            45,
+            92,
+            68,
+            124
+          ],
+          [
+            81,
+            94,
+            95,
+            144
+          ],
+          [
+            54,
+            130,
+            84,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-05-774f58636a.png",
+        "evidenceSha256": "774f58636a564527062adf33743240fc3a26b79b60df5535c1a1c70a6662e3ab",
+        "source": "qq-show-classic/outfit/粉色背心蓝裙套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/粉色背心蓝裙套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/红棕斜扎长发.gif"
+        ],
+        "nativeImageHash": "0562e149b22af6279fdc78c20021a393d0e38eb3875cb4f5fc80aa0ecaa49db3",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "06",
+        "sample": 6,
+        "label": "黄色开衩动势裙",
+        "score": 90,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "舞姿不同扣0，比较关节/掌根肉面，Claude低掌层次弱。"
+        ],
+        "regions": [
+          [
+            45,
+            92,
+            68,
+            124
+          ],
+          [
+            81,
+            94,
+            95,
+            144
+          ],
+          [
+            54,
+            130,
+            84,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-06-8b97fb4efb.png",
+        "evidenceSha256": "8b97fb4efbb8b565f77d16b0db0ebd55f2f6f5c3d927c82161a2521e1612544f",
+        "source": "qq-show-classic/outfit/灵动开衩裙套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/灵动开衩裙套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/金棕波浪长发.gif"
+        ],
+        "nativeImageHash": "d7cd7c0c1ee129394de9247d9524425984c0af9cc4d61b828b5de466e4656f5a",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "07",
+        "sample": 7,
+        "label": "深蓝露肩低位交手",
+        "score": 90,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生低交手短转面丰富，Claude低掌小楔/腕面较平。"
+        ],
+        "regions": [
+          [
+            45,
+            92,
+            68,
+            124
+          ],
+          [
+            81,
+            94,
+            95,
+            144
+          ],
+          [
+            54,
+            130,
+            84,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-07-5ef1da75e0.png",
+        "evidenceSha256": "5ef1da75e01136b1681ae17c3e3e32033d160e810d210bde3e768dd946b3f542",
+        "source": "qq-show-classic/outfit/深蓝一字肩连衣裙.gif",
+        "layers": [
+          "qq-show-classic/outfit/深蓝一字肩连衣裙.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/黑色侧扎长羊毛卷.gif"
+        ],
+        "nativeImageHash": "c255624cb7baa4049082f15e326dc89be47e73e679510d260c3274eb56bb8f9f",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "08",
+        "sample": 8,
+        "label": "黑红舞裙外展",
+        "score": 89,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生提布指群允许概括，Claude接点在而掌跟/短压影不足。"
+        ],
+        "regions": [
+          [
+            45,
+            92,
+            68,
+            124
+          ],
+          [
+            81,
+            94,
+            95,
+            144
+          ],
+          [
+            54,
+            130,
+            84,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-08-81a0d61fb9.png",
+        "evidenceSha256": "81a0d61fb9d24d715cc228d47cb79fc5b744168cc1b135825ccc53ab98783b1d",
+        "source": "qq-show-classic/outfit/翩翩起舞套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/翩翩起舞套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/红棕公主卷发.gif"
+        ],
+        "nativeImageHash": "fba21eaf6b1dca9acf3517f5f49b83e36212292ef596a0e1428e5aec27e9fa15",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "09",
+        "sample": 9,
+        "label": "碎花吊带牛仔持包",
+        "score": 90,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生提包掌有转面，Claude不因指少扣，低腕掌根仍弱。"
+        ],
+        "regions": [
+          [
+            45,
+            92,
+            68,
+            124
+          ],
+          [
+            81,
+            94,
+            95,
+            144
+          ],
+          [
+            54,
+            130,
+            84,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-09-f4a4896f4e.png",
+        "evidenceSha256": "f4a4896f4e36a740afdca50dbff2d320f07353ffa562716bdb2adeabe8df94eb",
+        "source": "qq-show-classic/outfit/白色碎花吊带牛仔套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/白色碎花吊带牛仔套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/深棕梨花头.gif"
+        ],
+        "nativeImageHash": "7d9023e477d336bcbc3d40a1ebbfce00e18c818128c385f3c579edd79a252d5d",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "10",
+        "sample": 10,
+        "label": "紫色礼裙侧收持花",
+        "score": 91,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "长裙不供裸腰真值，Claude躯干连续，低掌短面少。"
+        ],
+        "regions": [
+          [
+            45,
+            92,
+            68,
+            124
+          ],
+          [
+            81,
+            94,
+            95,
+            144
+          ],
+          [
+            54,
+            130,
+            84,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-10-c6e98d3c8a.png",
+        "evidenceSha256": "c6e98d3c8a44bca9e1a01ab46892538d106dd2454172f1e58a2951eb1265a846",
+        "source": "qq-show-classic/outfit/紫色礼裙花束套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/紫色礼裙花束套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/金棕雏菊发饰罗马卷.gif"
+        ],
+        "nativeImageHash": "97cc4b9f7392eef5769178ec8ec83bbe5d2866890248a2f5fdf3fb6639d26966",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "11",
+        "sample": 11,
+        "label": "薄荷绿盘腿坐姿",
+        "score": 92,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "坐姿不同扣0，Claude肩肘可读，远腕掌的展开/短面弱。"
+        ],
+        "regions": [
+          [
+            45,
+            92,
+            68,
+            124
+          ],
+          [
+            81,
+            94,
+            95,
+            144
+          ],
+          [
+            54,
+            130,
+            84,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-11-22e7f20f57.png",
+        "evidenceSha256": "22e7f20f572b93369e6a6cf58ad4598e892194a99e144f14140a30548ca26e94",
+        "source": "qq-show-classic/outfit/薄荷绿套装坐姿.gif",
+        "layers": [
+          "qq-show-classic/outfit/薄荷绿套装坐姿.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/棕色卷波波头.gif"
+        ],
+        "nativeImageHash": "1c8a1a789202f9b07fccc0c6a25ed4d62a5a6f766e557ebfc27aa9e236c29b8a",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "12",
+        "sample": 12,
+        "label": "抹茶旗袍椅坐",
+        "score": 92,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "旗袍/椅子不推隐藏尺寸，Claude低掌加肉但短转面不足。"
+        ],
+        "regions": [
+          [
+            45,
+            92,
+            68,
+            124
+          ],
+          [
+            81,
+            94,
+            95,
+            144
+          ],
+          [
+            54,
+            130,
+            84,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-12-dbd82c6687.png",
+        "evidenceSha256": "dbd82c668734ba1b3ec6bc0656d64eb372d6ae50c25d51448f232a19f47afe90",
+        "source": "qq-show-classic/outfit/抹茶旗袍坐姿.gif",
+        "layers": [
+          "qq-show-classic/outfit/抹茶旗袍坐姿.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/棕咖黄月季发饰盘发.gif"
+        ],
+        "nativeImageHash": "f523574a47c5517e56de2555ecfb4845bc5eddca7864ae7272ee5d093975d841",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "13",
+        "sample": 13,
+        "label": "黄色短袖爱心坐姿",
+        "score": 91,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "不要求折腿坐，Claude前后足主类在，低掌跟较简。"
+        ],
+        "regions": [
+          [
+            45,
+            92,
+            68,
+            124
+          ],
+          [
+            81,
+            94,
+            95,
+            144
+          ],
+          [
+            54,
+            130,
+            84,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-13-b0cb323e35.png",
+        "evidenceSha256": "b0cb323e35b5a07a2dad19d5be2786744437efc6a142b124b942dbd3799361d3",
+        "source": "qq-show-classic/outfit/黄色短袖短裙爱心坐姿.gif",
+        "layers": [
+          "qq-show-classic/outfit/黄色短袖短裙爱心坐姿.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/黑色双丸子头.gif"
+        ],
+        "nativeImageHash": "f7c9e5fd22cb186e7f67e2f77f0829e656eef91b74f83def14c37560e597fd17",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "14",
+        "sample": 14,
+        "label": "粉礼裙花朵坐姿",
+        "score": 91,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生花掌可紧凑，Claude书手短指接位在，低手短压面弱。"
+        ],
+        "regions": [
+          [
+            45,
+            92,
+            68,
+            124
+          ],
+          [
+            81,
+            94,
+            95,
+            144
+          ],
+          [
+            54,
+            130,
+            84,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-14-3bde498a2b.png",
+        "evidenceSha256": "3bde498a2b74e2a669713ae30937c69f10d193712696cd569dee2a6459988b10",
+        "source": "qq-show-classic/outfit/浅粉礼裙花朵坐姿套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/浅粉礼裙花朵坐姿套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/粉色高马尾.gif"
+        ],
+        "nativeImageHash": "7deae5777a0bc52ea716fbe8e59c05e32cf1a32d1922b6b8e1d476065e8758b9",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "15",
+        "sample": 15,
+        "label": "秋千白纱悬坐",
+        "score": 90,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "不要求抓绳，Claude右远腕连续改善，掌跟层次不足。"
+        ],
+        "regions": [
+          [
+            45,
+            92,
+            68,
+            124
+          ],
+          [
+            81,
+            94,
+            95,
+            144
+          ],
+          [
+            54,
+            130,
+            84,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-15-eabcfa0fb6.png",
+        "evidenceSha256": "eabcfa0fb69d98395072fb78149ab3412056b6f915363210f7e4e56390584b3c",
+        "source": "qq-show-classic/outfit/秋千白色薄纱裙套装.gif",
+        "layers": [
+          "qq-show-classic/back-hair/深棕蝴蝶结斜刘海长发.gif",
+          "qq-show-classic/outfit/秋千白色薄纱裙套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/深棕蝴蝶结斜刘海长发.gif"
+        ],
+        "nativeImageHash": "6949b442eaeffae544840a252bfca0b8656c4f1c5703d80f5bdc0fdec02a093b",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "16",
+        "sample": 16,
+        "label": "牛仔背带持麦",
+        "score": 91,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生直臂可简化，Claude不因直线扣，低腕掌短体面弱。"
+        ],
+        "regions": [
+          [
+            45,
+            92,
+            68,
+            124
+          ],
+          [
+            81,
+            94,
+            95,
+            144
+          ],
+          [
+            54,
+            130,
+            84,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-16-c7c2b78d75.png",
+        "evidenceSha256": "c7c2b78d75e62e6ed072a58c0f5c1a468ec30047f308cb9c56f644e99d5dc7e5",
+        "source": "qq-show-classic/outfit/吊带牛仔裤麦克风套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/吊带牛仔裤麦克风套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/酒红双马尾.gif"
+        ],
+        "nativeImageHash": "fb624b9fbe3e853bb9b66582cfb5993197a1905ab4ff958cbb380621d662ec5b",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "17",
+        "sample": 17,
+        "label": "朱砂旗袍持扇",
+        "score": 90,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "原生扇掌局部厚度自然，Claude低掌仍小楔，不要求扇动作。"
+        ],
+        "regions": [
+          [
+            45,
+            92,
+            68,
+            124
+          ],
+          [
+            81,
+            94,
+            95,
+            144
+          ],
+          [
+            54,
+            130,
+            84,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-17-9e0c114908.png",
+        "evidenceSha256": "9e0c114908e92db7e8bfee26377947ff63247b8e79cc48e89e1393cf7718bf37",
+        "source": "qq-show-classic/outfit/高开衩朱砂红旗袍.gif",
+        "layers": [
+          "qq-show-classic/outfit/高开衩朱砂红旗袍.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/玫瑰盘发.gif"
+        ],
+        "nativeImageHash": "12ad1f177551bf37e4949696fc63acece1b955f0f9227db92ce2830bf0e059f6",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "18",
+        "sample": 18,
+        "label": "紫短裙举臂长靴",
+        "score": 90,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "举臂不同扣0，Claude书前短指可接受，低腕掌根仍弱。"
+        ],
+        "regions": [
+          [
+            45,
+            92,
+            68,
+            124
+          ],
+          [
+            81,
+            94,
+            95,
+            144
+          ],
+          [
+            54,
+            130,
+            84,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-18-ec7065ff15.png",
+        "evidenceSha256": "ec7065ff15ab92f4bdcb4940b48a32c9a1b83147813bc6529b0315d465d82c7b",
+        "source": "qq-show-classic/outfit/背心紫短裙白长靴套装.gif",
+        "layers": [
+          "qq-show-classic/back-hair/动漫蓝蝴蝶结马尾.gif",
+          "qq-show-classic/outfit/背心紫短裙白长靴套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/动漫蓝蝴蝶结马尾.gif"
+        ],
+        "nativeImageHash": "9b525b93d6794ef7c03bc2e5e93f5c18f744752094e92ca8f5a1f8d235a410e8",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "19",
+        "sample": 19,
+        "label": "白短外套牛仔短裙",
+        "score": 91,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "错步承重保持，未新量测腿，Claude低掌自然度仍不足。"
+        ],
+        "regions": [
+          [
+            45,
+            92,
+            68,
+            124
+          ],
+          [
+            81,
+            94,
+            95,
+            144
+          ],
+          [
+            54,
+            130,
+            84,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-19-464e5d26a2.png",
+        "evidenceSha256": "464e5d26a24bb86a4295ec8eaacca66df28e0cf91dc9838536a7802976f9035f",
+        "source": "qq-show-classic/outfit/白色短外套牛仔短裙套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/白色短外套牛仔短裙套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/棕橙长编发.gif"
+        ],
+        "nativeImageHash": "e570beb4dd7330818e30f0e9a99f1131054e7621d48447b311a19fc909c2c75e",
+        "poseDifferenceDeduction": 0
+      },
+      {
+        "id": "20",
+        "sample": 20,
+        "label": "紫色蝴蝶仙子",
+        "score": 92,
+        "passed": false,
+        "nativeBaselineScore": 100,
+        "reasons": [
+          "仙裙遮处不编裸模真值，Claude低掌根/袖口短承压不足。"
+        ],
+        "regions": [
+          [
+            45,
+            92,
+            68,
+            124
+          ],
+          [
+            81,
+            94,
+            95,
+            144
+          ],
+          [
+            54,
+            130,
+            84,
+            175
+          ]
+        ],
+        "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-20-59168b7c29.png",
+        "evidenceSha256": "59168b7c297a416edf79f9c2a540448c25ddad494a77fb7b1f33d24f0232c53a",
+        "source": "qq-show-classic/outfit/蝴蝶仙子套装.gif",
+        "layers": [
+          "qq-show-classic/outfit/蝴蝶仙子套装.gif",
+          "qq-show-classic/makeup/default.png",
+          "qq-show-classic/front-hair/炫紫闪耀双马尾卷发.gif"
+        ],
+        "nativeImageHash": "70112fde68175423d693e4d6efd1d9ea8a0ec13422c4fa4e5dab1c3ce76fa702",
+        "poseDifferenceDeduction": 0
+      }
+    ],
+    "reasons": [
+      "R10右远腕/掌跟比R9有加肉和连续，肩肘/腰胯、股根主轮廓连贯；左屈臂与书前短指接位成立。",
+      "右远前臂x84..89/y125..135到掌x85..92/y135..142仍是长浅窄带接小尖楔，腕向掌展开/拇指根的短转面和饱满掌跟不足。",
+      "左书手不判缺握，手/书/袖口已有前后关系；掌跟短承压与袖口局部折谷仍偏软，紧凑指群本身允许。",
+      "本次未独立重测腿或全骨段，旧技术/历史不因新hash或局部视觉改善清除，不把default源两截面当全姿态宽目标。"
+    ],
+    "recommendations": [
+      "保留右腕掌加肉/连续与书前接位，局部重画低掌跟/拇指根展开的短肉面及承压，不按default源点削肉。",
+      "袖腔/书缘/捏裙布口同关节整理短压影与厚度，不强补五指或把所有负形填满。",
+      "保留新松弯/C尾，主束根谷与长短小簇再分层，不回宽直扇束或只加长浅边。",
+      "白裙/橙垂片按腰胯/提点重布主谷和翻层短厚边，删贯长均匀浅轨；上衣与原生裙裤腰口共同转面。",
+      "技术历史逐finding待复核，新hash/视觉分/源像素研究均不自动清关。"
+    ],
+    "limitations": [
+      "未执行新的独立尺寸量测，不声明全身<=5%或任何区域>5%。",
+      "当前视觉已失败98；新hash/原生手参考不自动解除历史技术阻断。",
+      "原生衣装不提供被遮住裸腰胯真值。"
+    ],
+    "evidence": {
+      "reactBodyImage": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-default-4b359b8657.png",
+      "reactBodyImageSha256": "4b359b86571f896c4a0bcad24a97d63c19da25c477832a4cf7be86db048d4fd5",
+      "reactBodySnapshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-evidence.json",
+      "reactFullImage": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/full.png",
+      "reactFullImageSha256": "a21d76f5bd947459cce1b4442b320260fe680d36f97536dccb2c694121e3ce72",
+      "reactFullSnapshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/full-evidence.json",
+      "actuallyViewed": [
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-default-4b359b8657.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-01-f7f3283c10.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-02-5b83f17b81.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-03-a5629ddbf4.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-04-9f0266005f.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-05-774f58636a.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-06-8b97fb4efb.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-07-5ef1da75e0.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-08-81a0d61fb9.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-09-f4a4896f4e.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-10-c6e98d3c8a.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-11-22e7f20f57.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-12-dbd82c6687.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-13-b0cb323e35.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-14-3bde498a2b.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-15-eabcfa0fb6.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-16-c7c2b78d75.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-17-9e0c114908.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-18-ec7065ff15.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-19-464e5d26a2.png",
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-20-59168b7c29.png"
+      ],
+      "diagnosticBody6x": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/claude-round07-body-6x.png",
+      "diagnosticNearestCrops": [],
+      "captureBrowser": "Codex in-app browser",
+      "failedImages": [],
+      "reactFullImages": [
+        {
+          "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/full.png",
+          "sha256": "a21d76f5bd947459cce1b4442b320260fe680d36f97536dccb2c694121e3ce72",
+          "images": [
+            {
+              "bottom": 350.5625,
+              "index": 0,
+              "left": 28,
+              "right": 168,
+              "top": 124.5625
+            },
+            {
+              "bottom": 350.5625,
+              "index": 1,
+              "left": 180,
+              "right": 320,
+              "top": 124.5625
+            },
+            {
+              "bottom": 350.5625,
+              "index": 2,
+              "left": 332,
+              "right": 472,
+              "top": 124.5625
+            }
+          ]
+        }
+      ],
+      "actualCorpusReadingMethod": "All20 immutable one-ID screenshots cropped by recorded bounds into five nearest2x reading sheets; no re-render or artwork edit.",
+      "diagnosticIndex": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/claude-r10-segment-diagnostic-index.json",
+      "diagnosticCorpusSheets": [
+        "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/claude-r10-body-corpus-sheet-1-2x.png",
+        "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/claude-r10-body-corpus-sheet-2-2x.png",
+        "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/claude-r10-body-corpus-sheet-3-2x.png",
+        "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/claude-r10-body-corpus-sheet-4-2x.png",
+        "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/claude-r10-body-corpus-sheet-5-2x.png"
+      ]
+    },
+    "evidenceIntegrity": {
+      "status": "all20-actually-viewed; immutable screenshot hashes verified",
+      "labelsActuallyChecked": [
+        "01 抱臂天使礼服",
+        "02 蓝白捧花公主裙",
+        "03 薄荷裙抬手",
+        "04 蓝白学院裙垂袖",
+        "05 粉背心交叉腿",
+        "06 黄色开衩动势裙",
+        "07 深蓝露肩低位交手",
+        "08 黑红舞裙外展",
+        "09 碎花吊带牛仔持包",
+        "10 紫色礼裙侧收持花",
+        "11 薄荷绿盘腿坐姿",
+        "12 抹茶旗袍椅坐",
+        "13 黄色短袖爱心坐姿",
+        "14 粉礼裙花朵坐姿",
+        "15 秋千白纱悬坐",
+        "16 牛仔背带持麦",
+        "17 朱砂旗袍持扇",
+        "18 紫短裙举臂长靴",
+        "19 白短外套牛仔短裙",
+        "20 紫色蝴蝶仙子"
+      ]
+    }
+  },
+  "naturalnessAudit": {
+    "reviewer": "classic_body_judge",
+    "status": "requires-revision",
+    "reviewedBodyHash": "4f3bdbb5c0f982ea2b40836c29eabe8beaf277f007b10299e7753beb59c58106",
+    "reviewedCompleteHash": "86d8b70f36032745b12f0510a69a4f6ebefdd665ea13d18fbaa177a601d317be",
+    "reviewedPartHashes": {
+      "bottom": "174fcbd35b8eb53745d86eb3edf04e49c6f80f814c485c2831cbbf84e388314f",
+      "legs": "6cb320253be621718627e48c58a0c8140d23055ccc9df7e62168f5c7735c316d",
+      "top": "786c024c6f93086f748753136a8874fd8094f6c1cc4f0c0b3acf36662130f766"
+    },
+    "scope": "当前裸模default+20与full/head2/body3/upper2真实IAB；图像左右为画布左右。",
+    "limbs": {
+      "regions": [
+        [
+          45,
+          92,
+          68,
+          124
+        ],
+        [
+          81,
+          94,
+          95,
+          144
+        ],
+        [
+          54,
+          130,
+          84,
+          175
+        ]
+      ],
+      "findings": [
+        "R10右远腕/掌跟比R9有加肉和连续，肩肘/腰胯、股根主轮廓连贯；左屈臂与书前短指接位成立。",
+        "右远前臂x84..89/y125..135到掌x85..92/y135..142仍是长浅窄带接小尖楔，腕向掌展开/拇指根的短转面和饱满掌跟不足。",
+        "左书手不判缺握，手/书/袖口已有前后关系；掌跟短承压与袖口局部折谷仍偏软，紧凑指群本身允许。",
+        "本次未独立重测腿或全骨段，旧技术/历史不因新hash或局部视觉改善清除，不把default源两截面当全姿态宽目标。"
+      ]
+    },
+    "palms": {
+      "regions": [
+        [
+          52,
+          101,
+          68,
+          121
+        ],
+        [
+          83,
+          125,
+          95,
+          144
+        ]
+      ],
+      "findings": [
+        "R02/R03/R05/R11同6x允许紧凑指群和合理角阶；R05布遮手不推完整裸掌真值。",
+        "低掌跟/拇指根仍偏小楔，短肉面/转面不足，而非要求五根写实指。",
+        "书前短指/书边接位真实存在，局部承压短面可加强。"
+      ]
+    },
+    "wrist": {
+      "regions": [
+        [
+          52,
+          101,
+          68,
+          121
+        ],
+        [
+          83,
+          125,
+          95,
+          144
+        ]
+      ],
+      "findings": [
+        "低腕掌连续改善，仍缺从远前臂向掌展开的局部宽窄和短转向；袖口厚边不能代腕掌体积。"
+      ]
+    },
+    "contact": {
+      "findings": [
+        "全套书在掌后、指群在书前可追踪，不再判缺握；捏裙指群与布口在，短压影/布厚仍弱。",
+        "未选书的组不要求书出现；立式话筒/竖吉他/竖弓/浮晶/地面包/腰饰不强求抓。",
+        "R03为抱熊指群、R11为硬包柄，仅校准可见掌腕短面，不当真实书/布握点或隐藏腕真值。"
+      ],
+      "policy": "先看实际源语义及上下行AI新增影响；立式/悬浮/腰饰/肩挎包/地面摆件不强求手握。没选角色自己prop也不要求出现。"
+    },
+    "nativeHandCalibration": {
+      "actuallyViewed": [
+        "ai-workspace/previews/native-hand-reference-20261110/contact-sheet.png",
+        "ai-workspace/previews/native-hand-reference-20261110/README.md"
+      ],
+      "policy": "紧凑原生指群可自然，不要求逐根数五指；弯掌负形不直接判掌心洞，严格看腕掌连接与真实受力。"
+    },
+    "evidence": [
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/full.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body3.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body3-segment-02-9f510581b1.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body3-segment-03-dfb119bd86.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body3-segment-04-e892799a06.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body3-segment-05-342c7928f6.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/upper2.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/upper2-segment-02-5bf29a38e2.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/upper2-segment-03-5d64937312.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/upper2-segment-04-bb4f7852dd.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/upper2-segment-05-5dfbba6452.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-default-4b359b8657.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-01-f7f3283c10.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-02-5b83f17b81.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-03-a5629ddbf4.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-04-9f0266005f.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-05-774f58636a.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-06-8b97fb4efb.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-07-5ef1da75e0.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-08-81a0d61fb9.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-09-f4a4896f4e.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-10-c6e98d3c8a.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-11-22e7f20f57.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-12-dbd82c6687.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-13-b0cb323e35.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-14-3bde498a2b.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-15-eabcfa0fb6.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-16-c7c2b78d75.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-17-9e0c114908.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-18-ec7065ff15.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-19-464e5d26a2.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body-strip-20-59168b7c29.png"
+    ],
+    "poseExemptionDoesNotClearFusion": true,
+    "nativeComparisons": {
+      "actuallyViewed": true,
+      "evidence": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/claude-r10-native-contact-comparison-6x.png",
+      "provenance": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/claude-r10-native-contact-comparison.json",
+      "scale": "same6x nearest/no warp/no mirror",
+      "acceptableNativeFeatures": [
+        "紧凑短指群/合理角阶和负形",
+        "原生直臂适度概括",
+        "R05衣遮处不推完整裸掌"
+      ],
+      "positiveCurrentFindings": [
+        "书前短指/书边接位成立",
+        "右远腕掌加肉/连续改善",
+        "新松弯C尾与袖口/下摆短暗边改善"
+      ],
+      "aiSpecificDifferences": [
+        "低掌跟/拇指根仍小楔，腕向掌展开短肉面少",
+        "书缘/捏布与袖腔承压短面软",
+        "白裙浅轨和橙垂片主谷/翻层厚度不足"
+      ],
+      "limits": [
+        "R02自交叠不提供实际书握点",
+        "R03抱熊/R11硬柄不当书与布握点真值",
+        "R05衣遮指群不推隐藏裸掌"
+      ]
+    },
+    "fullnessAndLayerClarity": {
+      "status": "requires-revision",
+      "improvements": [
+        "右腕掌连续与局部加肉",
+        "松弯C尾、袖口/下摆短暗边"
+      ],
+      "remaining": [
+        "低掌根短转面/书布承压不足",
+        "白裙长浅轨/橙片大面",
+        "发束根谷/小束层次弱"
+      ],
+      "policy": "Preserve compact original finger groups. No default-source-width shaving or automatic source-pixel100."
+    }
+  },
+  "hairBangsAudit": {
+    "status": "requires-revision",
+    "reviewedPartHashes": {
+      "face": "d384e039feeed838d8111f82bc47300edc70c45a40163aacdbaa62b2f2f93322",
+      "hair": "7352d4a82e3915289784b3aa7bdc887395b4e360c1b736e53152c19d29ec024f"
+    },
+    "reference": "ai-girls-atlas/assets/zipzippipe/claude/normal-zipzippipe-pixiv-148186519-p02.jpg",
+    "regions": [
+      [
+        44,
+        39,
+        96,
+        88
+      ],
+      [
+        27,
+        74,
+        119,
+        194
+      ]
+    ],
+    "fidelity": "橙长发、偏分长刘海与贴脸束成立；R10恢复松弯/C卷尾，比旧直扇束更近normal，少数粗束仍缩并normal细散长层。",
+    "integration": [
+      "R10松弯/C卷尾恢复，更接近normal散长卷层，不沿用旧直扇束缺陷。",
+      "主束内部仍宽橙面/长反射边，根部短叠影和小束谷层弱，需华丽而层次分明。"
+    ],
+    "evidence": [
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/full.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/head2.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/head2-segment-02-aaa684ed59.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/head2-segment-03-463c29dc5b.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/head2-segment-04-f4a55398a9.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/head2-segment-05-3067c219a1.png"
+    ]
+  },
+  "clothingAudit": {
+    "status": "requires-revision",
+    "reviewedPartHashes": {
+      "bottom": "174fcbd35b8eb53745d86eb3edf04e49c6f80f814c485c2831cbbf84e388314f",
+      "legs": "6cb320253be621718627e48c58a0c8140d23055ccc9df7e62168f5c7735c316d",
+      "top": "786c024c6f93086f748753136a8874fd8094f6c1cc4f0c0b3acf36662130f766"
+    },
+    "reviewedGeneratedInterfaceHashes": {},
+    "reference": "ai-girls-atlas/assets/zipzippipe/claude/normal-zipzippipe-pixiv-148186519-p02.jpg",
+    "regions": [
+      [
+        31,
+        87,
+        126,
+        223
+      ]
+    ],
+    "fidelity": "白衬泡袖、黑束腰/外披、奶白内裙/橙垂片与靴可辨；袖口/裙翻边有厚度改善，normal胸领荷叶、裙片层叠/刺绣与长腰饰仍简化。",
+    "integration": [
+      "袖袋/袖口及下摆短暗边真实更清楚，书手接位和弧形腰封成立。",
+      "白裙x57..78/y145..206多贯长浅轨，橙垂片x74..85/y143..204仍大平面；主谷不等长/翻层短厚边不足。",
+      "袖口开腔/低掌与布前后短压影仍软，上衣到原生裙裤腰口体面偏硬。"
+    ],
+    "evidence": [
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/full.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body3.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body3-segment-02-9f510581b1.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body3-segment-03-dfb119bd86.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body3-segment-04-e892799a06.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/body3-segment-05-342c7928f6.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/upper2.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/upper2-segment-02-5bf29a38e2.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/upper2-segment-03-5d64937312.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/upper2-segment-04-bb4f7852dd.png",
+      "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-07/claude/upper2-segment-05-5dfbba6452.png"
+    ]
+  },
+  "runtimeIntegrity": {
+    "checkedAtUtc": "2026-11-10T07:37:35.689Z",
+    "bodyPngByteHash": "4f3bdbb5c0f982ea2b40836c29eabe8beaf277f007b10299e7753beb59c58106",
+    "manifestCompleteHash": "86d8b70f36032745b12f0510a69a4f6ebefdd665ea13d18fbaa177a601d317be",
+    "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+    "allFullLayersByteVerified": true,
+    "authorNewerCandidateUsed": false
+  },
+  "technicalFollowup": {
+    "reviewer": "classic_body_judge",
+    "reviewedBodyHash": "4f3bdbb5c0f982ea2b40836c29eabe8beaf277f007b10299e7753beb59c58106",
+    "reviewedCompleteHash": "86d8b70f36032745b12f0510a69a4f6ebefdd665ea13d18fbaa177a601d317be",
+    "requiresFurtherAudit": true,
+    "resolvesBodyHashes": [],
+    "clearedFindingIDs": [],
+    "unchangedHistoricalBlocks": true,
+    "scope": "当前默认20/三组实际视觉；未独立重跑旧腿/全骨段量测。",
+    "methodApplicability": {
+      "status": "needs-current-hash-recheck",
+      "rawAdverseRecordsRetained": true,
+      "defaultWidthsAreSourceObservations": true,
+      "methodCorrectionIsNotGeometryRepair": true
+    },
+    "reasons": [
+      "旧技术/真实视觉记录均保留，未逐finding完成新哈希对应复核。",
+      "当前低腕掌仍失败98；不将同hash假false、换hash、作者借原生像素或方法说明当全身通关。"
+    ]
+  }
+}

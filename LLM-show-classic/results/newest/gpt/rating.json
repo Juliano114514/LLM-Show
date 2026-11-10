@@ -1,0 +1,2313 @@
+{
+  "schema": "classic-organized-rating-v2",
+  "character": "gpt",
+  "version": "newest",
+  "archiveId": "7ec0fc573d05e2fefed7",
+  "freezeCreatedAt": "2026-11-10T08:37:40.437Z",
+  "bodyHash": "db3246d678b1b8ab62adc6797a45ad13f4fadf81e2ce1ee8e3958f64edc1bf9f",
+  "completeHash": "7aede45d06b71e26dd79859fead4a04a7455cbb2eceb6237decd7b064efcfe50",
+  "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+  "nativeCounts": {
+    "background": 20,
+    "aura": 20,
+    "back": 17,
+    "hair": 20,
+    "legs": 20,
+    "bottom": 20,
+    "top": 20,
+    "face": 20,
+    "headwear": 20,
+    "prop": 20,
+    "effect": 20
+  },
+  "status": "revision-required",
+  "acceptance": {
+    "status": "revision-required",
+    "body": {
+      "status": "revision-required",
+      "threshold": 98,
+      "reviews": [
+        {
+          "sourceReport": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/gpt-r15-round08-review.json",
+          "seed": "closeout-r25-gpt-body-z360lb1l",
+          "score": 95,
+          "defaultScore": 97,
+          "minimumSampleScore": 95,
+          "errors": []
+        }
+      ],
+      "anatomy": {
+        "status": "not-reviewed",
+        "tolerancePercent": 5,
+        "scope": "Only explicitly audited regions; not a whole-body mathematical error claim.",
+        "policy": "A new body hash requires an independent audit explicitly resolving previous confirmed body hashes; seeds and unrelated edits cannot clear findings.",
+        "reviews": [],
+        "blockers": [],
+        "outstandingHistory": [],
+        "furtherAuditRequired": []
+      },
+      "errors": [
+        "An independent current-body audit of the directly comparable visible anatomy is still required; a visual score alone is insufficient."
+      ]
+    },
+    "multi": {
+      "head2": {
+        "status": "revision-required",
+        "threshold": 98,
+        "selectedAiSlots": [
+          "hair",
+          "face"
+        ],
+        "notApplicable": [],
+        "reviews": [
+          {
+            "sourceReport": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/gpt-r15-round08-review.json",
+            "seed": "closeout-r25-gpt-head2-4mhb5uuw",
+            "score": 92.75,
+            "minimumContextScore": 92.75,
+            "errors": []
+          }
+        ],
+        "errors": []
+      },
+      "body3": {
+        "status": "revision-required",
+        "threshold": 98,
+        "selectedAiSlots": [
+          "top",
+          "bottom",
+          "legs"
+        ],
+        "notApplicable": [],
+        "reviews": [
+          {
+            "sourceReport": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/gpt-r15-round08-review.json",
+            "seed": "closeout-r25-gpt-body3-17n4omm9",
+            "score": 93.25,
+            "minimumContextScore": 93.25,
+            "errors": []
+          }
+        ],
+        "errors": []
+      },
+      "figure5": {
+        "status": "pending",
+        "threshold": 98,
+        "selectedAiSlots": [
+          "hair",
+          "face",
+          "top",
+          "bottom",
+          "legs"
+        ],
+        "notApplicable": [],
+        "reviews": [],
+        "errors": [
+          "No current-pool review of this complete AI part set."
+        ]
+      },
+      "nearFull8": {
+        "status": "pending",
+        "threshold": 98,
+        "selectedAiSlots": [
+          "hair",
+          "face",
+          "headwear",
+          "top",
+          "bottom",
+          "legs",
+          "back",
+          "prop"
+        ],
+        "notApplicable": [],
+        "reviews": [],
+        "errors": [
+          "No current-pool review of this complete AI part set."
+        ]
+      },
+      "scene3": {
+        "status": "pending",
+        "threshold": 98,
+        "selectedAiSlots": [
+          "background",
+          "aura",
+          "effect"
+        ],
+        "notApplicable": [],
+        "reviews": [],
+        "errors": [
+          "No current-pool review of this complete AI part set."
+        ]
+      },
+      "accessories3": {
+        "status": "pending",
+        "threshold": 98,
+        "selectedAiSlots": [
+          "headwear",
+          "back",
+          "prop"
+        ],
+        "notApplicable": [],
+        "reviews": [],
+        "errors": [
+          "No current-pool review of this complete AI part set."
+        ]
+      },
+      "upper2": {
+        "status": "revision-required",
+        "threshold": 98,
+        "selectedAiSlots": [
+          "hair",
+          "top"
+        ],
+        "notApplicable": [],
+        "reviews": [
+          {
+            "sourceReport": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/gpt-r15-round08-review.json",
+            "seed": "closeout-r25-gpt-upper2-44jlz1s0",
+            "score": 91.55,
+            "minimumContextScore": 91.55,
+            "errors": []
+          }
+        ],
+        "errors": []
+      },
+      "skirt3": {
+        "status": "pending",
+        "threshold": 98,
+        "selectedAiSlots": [
+          "top",
+          "bottom",
+          "headwear"
+        ],
+        "notApplicable": [],
+        "reviews": [],
+        "errors": [
+          "No current-pool review of this complete AI part set."
+        ]
+      },
+      "stride2": {
+        "status": "pending",
+        "threshold": 98,
+        "selectedAiSlots": [
+          "legs",
+          "prop"
+        ],
+        "notApplicable": [],
+        "reviews": [],
+        "errors": [
+          "No current-pool review of this complete AI part set."
+        ]
+      }
+    },
+    "reference": {
+      "status": "passed",
+      "threshold": 90,
+      "score": 94.5,
+      "minimumCurrentVersionScore": 94.5,
+      "reviews": [
+        {
+          "sourceReport": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/gpt-r15-round08-review.json",
+          "score": 94.5
+        }
+      ],
+      "sourceReport": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/gpt-r15-round08-review.json",
+      "errors": []
+    },
+    "currentVersion": {
+      "bodyHash": "db3246d678b1b8ab62adc6797a45ad13f4fadf81e2ce1ee8e3958f64edc1bf9f",
+      "completeHash": "7aede45d06b71e26dd79859fead4a04a7455cbb2eceb6237decd7b064efcfe50",
+      "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+      "bodyCorpusHash": "3451692764c29845da8f6c5b579069c3f1bec6309b7b9765bcc11843167082c7"
+    },
+    "errors": [
+      "One or more independent current-version judgements are below the required threshold.",
+      "Required current-version review evidence remains incomplete."
+    ],
+    "policy": "All nine multi-part groups, including three cross-native clothing/body interfaces, require five actual complete native/AI pairs each. Current-version failures remain visible across seeds; historical single-part scores and supplementary hidden-layer views cannot grant final acceptance."
+  },
+  "reference": {
+    "reviewer": "classic_body_judge",
+    "score": 94.5,
+    "weightedRaw": 94.5,
+    "threshold": 90,
+    "passed": true,
+    "reviewedCompleteHash": "7aede45d06b71e26dd79859fead4a04a7455cbb2eceb6237decd7b064efcfe50",
+    "reviewedCompleteArtifact": "character.png canonical runtime per-layer composite; exact actual browser fullLayers below.",
+    "reviewedFullLayerHashes": {
+      "gpt-background-0": "9a986ab555f81b4493b27405cce89085b28e5af468ccb175649a286abc651260",
+      "gpt-aura-0": "b46d7e033390db7cfdba718b483e6da1e87a5bca4d3de2b77d91189395faa3df",
+      "gpt-back-0": "b8f0d69a6d9f09abe28efe1751020964f8c02332c8c0b17b5a9bf9698302cdf7",
+      "gpt-hair-0": "ba7670c5a801c0eb99a699c5ee45a655ab1a1dfd04f1e52523fd79d87b74406f",
+      "gpt-legs-0": "137cf208a7be67a491297f3232a844fc883817e79944fe688dd4524eab401575",
+      "gpt-bottom-0": "6b1f589c5c70be9a2ca33bab44d6a10f91d04d27934c98fbf5f5a683c5e688a7",
+      "gpt-top-0": "e2cbec56f7190fbe5bb701ce4ea8f906dafbd1c913fdbac25d24744c1d0d0fdd",
+      "gpt-face-0": "2cfacec9eea4f02586efd34728752a023d5003b90ee10ed43b24086145fa59fd",
+      "gpt-hair-1": "5a34d85a7cc7b40af0945001e0d9edfd64bfeb46e21277319ce3ca9fffe1077e",
+      "gpt-prop-0": "5dd59f191cc1b54b3b9a5e45206a4812b341099fb8d6e19462dc61b154a6ec45",
+      "gpt-top-1": "c61a9207754659d2e57051d5cf85e620413494288cd6a7253e2913f26f4aef95",
+      "gpt-headwear-0": "040d753c0a191c6569303b6851df7cd799ed96d7ce5b897ba8533603f7c79afd",
+      "gpt-effect-0": "5daeadffe95416208929a42ce065fafdb14b7cb8c92e48ec61b94da21683a8b6"
+    },
+    "reviewedGeneratedInterfaceHashes": {},
+    "seed": "closeout-r25-gpt-full-d09aquab",
+    "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+    "contextSignature": "native-context-v4-c93e5c6d",
+    "dimensions": {
+      "action": {
+        "score": 100,
+        "weight": 20,
+        "reason": "近胸捏领/侧举托掌主动作在，短臂调整仍同动作类，肘腕/指位中小差扣0。"
+      },
+      "emotion": {
+        "score": 93,
+        "weight": 10,
+        "reason": "R14保留半垂紫瞳/闭口神态近normal，眉睑/鼻颊微层仍简化，不因银紫适配扣。"
+      },
+      "hair": {
+        "score": 92,
+        "weight": 20,
+        "reason": "中分长刘海/银紫长束和不等长尾保留，R14根谷/反射层较R12改善；冠部少数长浅弧/肩后束层仍规整，normal更松散宽窄层缩并。"
+      },
+      "pose": {
+        "score": 100,
+        "weight": 15,
+        "reason": "露前腿/双足站立承重主类保持，中小膝足/重心差扣0，技术数字不当pose差。"
+      },
+      "clothing": {
+        "score": 90,
+        "weight": 25,
+        "reason": "立领胸衣/长垂袖/开衩裙成立，新缎面色簇/宽窄谷峰比旧长浅轨更有布感；normal胸廓→腰收、斜衩主力向与翻边细层仍简化。"
+      },
+      "accessories": {
+        "score": 93,
+        "weight": 10,
+        "reason": "角/花结/链坠/翼尾/蓝云可辨，小饰线/纹样层次简；银紫与蓝云对应色相近。"
+      }
+    },
+    "colorFidelity": {
+      "policy": "User final clarification: corresponding-part hue proximity only. No RGB/HEX, brightness, saturation or area-ratio threshold.",
+      "reference": "ai-girls-atlas/assets/zipzippipe/gpt/normal-zipzippipe-pixiv-148186519-p03.jpg",
+      "authorizedAdaptations": [
+        "GPT银紫配色授权适配；蓝云悬浮不要求掌接/握持。"
+      ],
+      "parts": [
+        {
+          "part": "hair/gradient ends",
+          "observation": "银白浅紫对应normal/授权适配，不按明暗饱和/精确RGB扣。",
+          "dimension": "hair",
+          "deduction": 0
+        },
+        {
+          "part": "iris",
+          "observation": "双淡紫瞳色相接近，半垂目形另评emotion。",
+          "dimension": "emotion",
+          "deduction": 0
+        },
+        {
+          "part": "bodice/sleeves/skirt/shoes",
+          "observation": "白银淡紫在对应部位色相成立；缎面光影自然度归融合，不按面积比例扣还原。",
+          "dimension": "clothing",
+          "deduction": 0
+        },
+        {
+          "part": "horn/ornament/wings/tail/cloud",
+          "observation": "银紫饰翼尾、蓝云与normal/授权配色对应近。",
+          "dimension": "accessories",
+          "deduction": 0
+        }
+      ]
+    },
+    "poseAudit": {
+      "policyVersion": "classic-significant-pose-only-20261110",
+      "reviewer": "classic_body_judge",
+      "reviewedBodyHash": "db3246d678b1b8ab62adc6797a45ad13f4fadf81e2ce1ee8e3958f64edc1bf9f",
+      "reviewedCompleteHash": "7aede45d06b71e26dd79859fead4a04a7455cbb2eceb6237decd7b064efcfe50",
+      "reference": "ai-girls-atlas/assets/zipzippipe/gpt/normal-zipzippipe-pixiv-148186519-p03.jpg",
+      "pending": false,
+      "scope": "Actual current frozen body and clothed full are shown beside normal in the full browser screenshot. Image-left/right are canvas sides.",
+      "regions": [
+        {
+          "part": "torso",
+          "severity": "minor",
+          "region": [
+            55,
+            90,
+            85,
+            151
+          ],
+          "reason": "略转胸腰主类保持，小角差扣0。",
+          "poseDeduction": 0,
+          "deducted": false,
+          "deductionDimension": null,
+          "evidence": [
+            "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/full.png",
+            "ai-girls-atlas/assets/zipzippipe/gpt/normal-zipzippipe-pixiv-148186519-p03.jpg"
+          ]
+        },
+        {
+          "part": "imageLeftArm",
+          "severity": "moderate",
+          "region": [
+            48,
+            93,
+            70,
+            121
+          ],
+          "reason": "近胸屈臂捏领在，局部腕指/肘角非非常显著动作类别变化。",
+          "poseDeduction": 0,
+          "deducted": false,
+          "deductionDimension": null,
+          "evidence": [
+            "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/full.png",
+            "ai-girls-atlas/assets/zipzippipe/gpt/normal-zipzippipe-pixiv-148186519-p03.jpg"
+          ]
+        },
+        {
+          "part": "imageRightArm",
+          "severity": "moderate",
+          "region": [
+            80,
+            93,
+            120,
+            123
+          ],
+          "reason": "屈肘外展托掌主关系在，指群/掌角中小差扣0，浮云不强求接触。",
+          "poseDeduction": 0,
+          "deducted": false,
+          "deductionDimension": null,
+          "evidence": [
+            "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/full.png",
+            "ai-girls-atlas/assets/zipzippipe/gpt/normal-zipzippipe-pixiv-148186519-p03.jpg"
+          ]
+        },
+        {
+          "part": "imageLeftLeg",
+          "severity": "minor",
+          "region": [
+            49,
+            145,
+            70,
+            220
+          ],
+          "reason": "前露腿/足方向近，膝踝中小差扣0。",
+          "poseDeduction": 0,
+          "deducted": false,
+          "deductionDimension": null,
+          "evidence": [
+            "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/full.png",
+            "ai-girls-atlas/assets/zipzippipe/gpt/normal-zipzippipe-pixiv-148186519-p03.jpg"
+          ]
+        },
+        {
+          "part": "imageRightLeg",
+          "severity": "moderate",
+          "region": [
+            69,
+            145,
+            85,
+            220
+          ],
+          "reason": "另一腿向下支撑主类近，裙遮处不编骨点。",
+          "poseDeduction": 0,
+          "deducted": false,
+          "deductionDimension": null,
+          "evidence": [
+            "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/full.png",
+            "ai-girls-atlas/assets/zipzippipe/gpt/normal-zipzippipe-pixiv-148186519-p03.jpg"
+          ]
+        },
+        {
+          "part": "weight",
+          "severity": "moderate",
+          "region": [
+            49,
+            132,
+            87,
+            225
+          ],
+          "reason": "双足站立支撑保持，中等以下重心差扣0。",
+          "poseDeduction": 0,
+          "deducted": false,
+          "deductionDimension": null,
+          "evidence": [
+            "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/full.png",
+            "ai-girls-atlas/assets/zipzippipe/gpt/normal-zipzippipe-pixiv-148186519-p03.jpg"
+          ]
+        }
+      ],
+      "deductionPolicy": "Minor/moderate pose differences have zero deduction. Significant means very significant only; anatomy and garment/contact failures stay in fusion.",
+      "significantDifferences": []
+    },
+    "reasons": [
+      "本轮normal与实际冻结IAB全套重新审；hue对应接近、六区中小pose差扣0。还原过90不替代身体/多件98。"
+    ],
+    "recommendations": [
+      "R26只剩最终返工轮：保短臂/近端肉面与已认可托掌，局部整理左肩/折返臂叠压短影和腕桥袖腔短厚边，不按default点削肉。",
+      "保新白缎有效宽谷窄峰，把领胸短灰块归入胸廓→腰收主面，指布/腕圈用短压影说明厚度，避免再加碎点。",
+      "裙谷按自己的腰胯/斜衩/翻层力向重组织，保M02式有效材质，不照搬其几何/隐藏面或把U谷全删。",
+      "头部保中分/长刘海/不等长束，局部清冠部规则长弧和肩后谷峰主次，不重做已确认脸/掌。",
+      "按用户两轮收尾：R26复评后停止自动改图，即使仍不足98；未审六组/技术未知保留，不开启第三轮。"
+    ],
+    "evidence": {
+      "reactFullImage": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/full.png",
+      "reactFullImageSha256": "b968eeced8924b79d5b83f267291cfa8c7969386663012fc8c96af1b9e62c248",
+      "reactFullSnapshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/full-evidence.json",
+      "actuallyViewed": [
+        "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/full.png",
+        "ai-girls-atlas/assets/zipzippipe/gpt/normal-zipzippipe-pixiv-148186519-p03.jpg",
+        "ai-girls-atlas/characters/gpt/README.md"
+      ],
+      "captureBrowser": "Codex in-app browser",
+      "failedImages": [],
+      "reactFullImages": [
+        {
+          "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/full.png",
+          "sha256": "b968eeced8924b79d5b83f267291cfa8c7969386663012fc8c96af1b9e62c248",
+          "images": [
+            {
+              "bottom": 342.5625,
+              "height": 226,
+              "index": 0,
+              "left": 28,
+              "right": 168,
+              "top": 116.5625,
+              "width": 140
+            },
+            {
+              "bottom": 342.5625,
+              "height": 226,
+              "index": 1,
+              "left": 180,
+              "right": 320,
+              "top": 116.5625,
+              "width": 140
+            },
+            {
+              "bottom": 342.5625,
+              "height": 226,
+              "index": 2,
+              "left": 332,
+              "right": 472,
+              "top": 116.5625,
+              "width": 140
+            }
+          ]
+        }
+      ],
+      "frozenArchive": "results/archived/runtime/7ec0fc573d05e2fefed7/public"
+    },
+    "limitations": [
+      "Static image; no animation validation.",
+      "Full-reference passing does not grant body/fusion acceptance."
+    ],
+    "sourceReport": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/gpt-r15-round08-review.json",
+    "recordSignature": "[\"closeout-r25-gpt-full-d09aquab\",\"native-context-v4-c93e5c6d\",null,null,null,null,\"7aede45d06b71e26dd79859fead4a04a7455cbb2eceb6237decd7b064efcfe50\"]",
+    "expertReportedScore": 94.5,
+    "unroundedWeightedScore": 94.5,
+    "precisionPolicy": "Threshold uses the weighted value before integer display rounding; original dimension judgements are unchanged."
+  },
+  "bodyReviews": [
+    {
+      "reviewer": "classic_body_judge",
+      "score": 95,
+      "threshold": 98,
+      "passed": false,
+      "pending": false,
+      "requiresRevision": true,
+      "reviewedBodyHash": "db3246d678b1b8ab62adc6797a45ad13f4fadf81e2ce1ee8e3958f64edc1bf9f",
+      "reviewedCompleteHash": "7aede45d06b71e26dd79859fead4a04a7455cbb2eceb6237decd7b064efcfe50",
+      "seed": "closeout-r25-gpt-body-z360lb1l",
+      "poolHash": "a7895c018e1ddf46bb20d7a44daa0f981b4591b17174027757aa4d5d2dc6abf7",
+      "bodyCorpusHash": "3451692764c29845da8f6c5b579069c3f1bec6309b7b9765bcc11843167082c7",
+      "corpusSignature": "body-corpus-context-v1-e53afbfc",
+      "coverage": {
+        "default": true,
+        "samplesViewed": 20,
+        "requiredSamples": 20,
+        "selectedIds": [
+          "01",
+          "02",
+          "03",
+          "04",
+          "05",
+          "06",
+          "07",
+          "08",
+          "09",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "19",
+          "20"
+        ],
+        "browserAllTwentyVerified": true
+      },
+      "aggregation": "Minimum of newly judged current default and all20. Older scores and author diagnostics are not inherited.",
+      "defaultComparison": {
+        "score": 97,
+        "passed": false,
+        "reasons": [
+          "R15肩根/指布腕桥局部短面有改善，保留R13短臂/近端肌腹与R04式托掌轮廓/细肤面；不继承薄舟掌/缺五指旧指控。",
+          "左肩x54..60/y94..103与折返臂x49..62/y102..115前后短转面仍略方直，局部叠压短影不够统一；不因合理像素角阶本身扣。",
+          "捏领x61..68/y98..105接位成立，指布/腕圈内腔与右腕桥x103..111/y107..114袖口短厚面仍略硬；掌轮廓肉量不要求再统一加粗。",
+          "腰胯/股根连续，腿足支撑可读；未作新的同骨段/投影量测，旧不利诊断不转挂新hash当新测量，也不清历史。"
+        ],
+        "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-default-76a23a210e.png"
+      },
+      "perSampleScores": [
+        {
+          "id": "01",
+          "sample": 1,
+          "label": "抱臂天使礼服",
+          "score": 96,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "原生交叠短压面自然，GPT肉面/托掌保持，左折返臂局部短影未统一。"
+          ],
+          "regions": [
+            [
+              48,
+              93,
+              70,
+              121
+            ],
+            [
+              80,
+              93,
+              120,
+              123
+            ],
+            [
+              54,
+              130,
+              85,
+              171
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-01-c135d2a1f2.png",
+          "evidenceSha256": "c135d2a1f212180bf97f61115ef17e76cf8ddbe0224831d72509159102a715f7",
+          "source": "qq-show-classic/outfit/白色天使套装.gif",
+          "layers": [
+            "qq-show-classic/back-hair/白金蝴蝶结波浪长发.gif",
+            "qq-show-classic/outfit/白色天使套装.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/白金蝴蝶结波浪长发.gif"
+          ],
+          "nativeImageHash": "c0c31cf662e153e299a0ec392c8a518242385bccaba17a90609393f8b9e0024f",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "02",
+          "sample": 2,
+          "label": "蓝白捧花公主裙",
+          "score": 97,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "原生捧花短掌允许紧凑，GPT托掌细面可接受，腕桥袖腔短厚面稍硬。"
+          ],
+          "regions": [
+            [
+              48,
+              93,
+              70,
+              121
+            ],
+            [
+              80,
+              93,
+              120,
+              123
+            ],
+            [
+              54,
+              130,
+              85,
+              171
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-02-feb49d1b21.png",
+          "evidenceSha256": "feb49d1b21fd227d46560c9e50b866d6cc326faafb4ee44b7d0aa54e1400e887",
+          "source": "qq-show-classic/outfit/白色公主裙黄色捧花套装.gif",
+          "layers": [
+            "qq-show-classic/back-hair/金色长卷发.gif",
+            "qq-show-classic/outfit/白色公主裙黄色捧花套装.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/金色长卷发.gif"
+          ],
+          "nativeImageHash": "59429f0f599cc8711a6b88e8472f7aa99f8f76dfee38a89d31f2e6d22e66025d",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "03",
+          "sample": 3,
+          "label": "薄荷裙抬手",
+          "score": 96,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "不要求同举指，GPT掌群可接受，左肩/屈臂短转面仍略方直。"
+          ],
+          "regions": [
+            [
+              48,
+              93,
+              70,
+              121
+            ],
+            [
+              80,
+              93,
+              120,
+              123
+            ],
+            [
+              54,
+              130,
+              85,
+              171
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-03-6559d4c705.png",
+          "evidenceSha256": "6559d4c705e529bb23d8f9574e6d87b4e253298c7d8fe2e2ebb5c262a3f61c99",
+          "source": "qq-show-classic/outfit/薄荷裙套装.gif",
+          "layers": [
+            "qq-show-classic/outfit/薄荷裙套装.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/粉紫双马尾.gif"
+          ],
+          "nativeImageHash": "ae902b32ef1eec9558c5516b375ed1d20b9da2e2ef9beeadcbed0852fa8285ae",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "04",
+          "sample": 4,
+          "label": "蓝白学院裙垂袖",
+          "score": 96,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "原生袖遮不推裸宽，GPT露出腕圈/腕桥内腔短面略硬。"
+          ],
+          "regions": [
+            [
+              48,
+              93,
+              70,
+              121
+            ],
+            [
+              80,
+              93,
+              120,
+              123
+            ],
+            [
+              54,
+              130,
+              85,
+              171
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-04-49a0ddf16d.png",
+          "evidenceSha256": "49a0ddf16dbdd87e62472ed22524969ea5fe78c666307452623659fb49bb9016",
+          "source": "qq-show-classic/outfit/蓝白学院风连衣裙.gif",
+          "layers": [
+            "qq-show-classic/outfit/蓝白学院风连衣裙.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/黑色齐刘海麻花辫.gif"
+          ],
+          "nativeImageHash": "0bb87dbcc04e43d970312468cf6a70c2f3e599dcb7f9cd44afa8d6a626cc158d",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "05",
+          "sample": 5,
+          "label": "粉背心交叉腿",
+          "score": 96,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "站立/股根连续，GPT短臂肌腹改善，领布短压面仍少。"
+          ],
+          "regions": [
+            [
+              48,
+              93,
+              70,
+              121
+            ],
+            [
+              80,
+              93,
+              120,
+              123
+            ],
+            [
+              54,
+              130,
+              85,
+              171
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-05-42eac55392.png",
+          "evidenceSha256": "42eac55392070b94a673e929138ecaff7648a8f816c049ee217151fb68bed5a0",
+          "source": "qq-show-classic/outfit/粉色背心蓝裙套装.gif",
+          "layers": [
+            "qq-show-classic/outfit/粉色背心蓝裙套装.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/红棕斜扎长发.gif"
+          ],
+          "nativeImageHash": "0562e149b22af6279fdc78c20021a393d0e38eb3875cb4f5fc80aa0ecaa49db3",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "06",
+          "sample": 6,
+          "label": "黄色开衩动势裙",
+          "score": 95,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "舞姿不同扣0，GPT托掌自然，左肩/折返臂前后分工不足。"
+          ],
+          "regions": [
+            [
+              48,
+              93,
+              70,
+              121
+            ],
+            [
+              80,
+              93,
+              120,
+              123
+            ],
+            [
+              54,
+              130,
+              85,
+              171
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-06-474ff6983d.png",
+          "evidenceSha256": "474ff6983da6dbfaf76a1fecc9b8bbcfb034297718e1cf48de36557e4a6a2937",
+          "source": "qq-show-classic/outfit/灵动开衩裙套装.gif",
+          "layers": [
+            "qq-show-classic/outfit/灵动开衩裙套装.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/金棕波浪长发.gif"
+          ],
+          "nativeImageHash": "d7cd7c0c1ee129394de9247d9524425984c0af9cc4d61b828b5de466e4656f5a",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "07",
+          "sample": 7,
+          "label": "深蓝露肩低位交手",
+          "score": 96,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "原生低交手可紧凑，GPT不判薄舟掌，腕桥/袖口短厚边不足。"
+          ],
+          "regions": [
+            [
+              48,
+              93,
+              70,
+              121
+            ],
+            [
+              80,
+              93,
+              120,
+              123
+            ],
+            [
+              54,
+              130,
+              85,
+              171
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-07-0c639d3993.png",
+          "evidenceSha256": "0c639d39936f754694dcd139923bd7c783e32773fd721407c05d4545ae5b7c15",
+          "source": "qq-show-classic/outfit/深蓝一字肩连衣裙.gif",
+          "layers": [
+            "qq-show-classic/outfit/深蓝一字肩连衣裙.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/黑色侧扎长羊毛卷.gif"
+          ],
+          "nativeImageHash": "c255624cb7baa4049082f15e326dc89be47e73e679510d260c3274eb56bb8f9f",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "08",
+          "sample": 8,
+          "label": "黑红舞裙外展",
+          "score": 95,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "原生提布短影清楚，GPT接点在，指布/腕圈短压影仍硬。"
+          ],
+          "regions": [
+            [
+              48,
+              93,
+              70,
+              121
+            ],
+            [
+              80,
+              93,
+              120,
+              123
+            ],
+            [
+              54,
+              130,
+              85,
+              171
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-08-dce70206a7.png",
+          "evidenceSha256": "dce70206a7c84af4401b20483c819ce035c89dd0f95ca84c18e2bd0e5afad4f5",
+          "source": "qq-show-classic/outfit/翩翩起舞套装.gif",
+          "layers": [
+            "qq-show-classic/outfit/翩翩起舞套装.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/红棕公主卷发.gif"
+          ],
+          "nativeImageHash": "fba21eaf6b1dca9acf3517f5f49b83e36212292ef596a0e1428e5aec27e9fa15",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "09",
+          "sample": 9,
+          "label": "碎花吊带牛仔持包",
+          "score": 96,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "原生提包掌短面自然，GPT托掌可接受，腕桥衣袖交接仍略硬。"
+          ],
+          "regions": [
+            [
+              48,
+              93,
+              70,
+              121
+            ],
+            [
+              80,
+              93,
+              120,
+              123
+            ],
+            [
+              54,
+              130,
+              85,
+              171
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-09-5ffc57ee5c.png",
+          "evidenceSha256": "5ffc57ee5ccaf45a137e6cf1b7fd19447438bf97a1ecda22ac5d3386192e0c83",
+          "source": "qq-show-classic/outfit/白色碎花吊带牛仔套装.gif",
+          "layers": [
+            "qq-show-classic/outfit/白色碎花吊带牛仔套装.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/深棕梨花头.gif"
+          ],
+          "nativeImageHash": "7d9023e477d336bcbc3d40a1ebbfce00e18c818128c385f3c579edd79a252d5d",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "10",
+          "sample": 10,
+          "label": "紫色礼裙侧收持花",
+          "score": 97,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "长裙不供裸腰真值，GPT连贯，左肩/屈臂局部短面不足。"
+          ],
+          "regions": [
+            [
+              48,
+              93,
+              70,
+              121
+            ],
+            [
+              80,
+              93,
+              120,
+              123
+            ],
+            [
+              54,
+              130,
+              85,
+              171
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-10-5a9974ab2c.png",
+          "evidenceSha256": "5a9974ab2c1143f83bc65aee35253f665c0cea0d41bc6f6d6c465579540084cb",
+          "source": "qq-show-classic/outfit/紫色礼裙花束套装.gif",
+          "layers": [
+            "qq-show-classic/outfit/紫色礼裙花束套装.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/金棕雏菊发饰罗马卷.gif"
+          ],
+          "nativeImageHash": "97cc4b9f7392eef5769178ec8ec83bbe5d2866890248a2f5fdf3fb6639d26966",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "11",
+          "sample": 11,
+          "label": "薄荷绿盘腿坐姿",
+          "score": 97,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "坐姿不同扣0，GPT肌腹/托掌改善，领布/腕圈层次仍弱。"
+          ],
+          "regions": [
+            [
+              48,
+              93,
+              70,
+              121
+            ],
+            [
+              80,
+              93,
+              120,
+              123
+            ],
+            [
+              54,
+              130,
+              85,
+              171
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-11-e3180901bd.png",
+          "evidenceSha256": "e3180901bd4e2ce3eabc579e19547f530a5f7f6677d6454f564f91f551a0f88c",
+          "source": "qq-show-classic/outfit/薄荷绿套装坐姿.gif",
+          "layers": [
+            "qq-show-classic/outfit/薄荷绿套装坐姿.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/棕色卷波波头.gif"
+          ],
+          "nativeImageHash": "1c8a1a789202f9b07fccc0c6a25ed4d62a5a6f766e557ebfc27aa9e236c29b8a",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "12",
+          "sample": 12,
+          "label": "抹茶旗袍椅坐",
+          "score": 97,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "旗袍/椅子不推隐藏尺寸，GPT腕桥袖口短厚面稍硬。"
+          ],
+          "regions": [
+            [
+              48,
+              93,
+              70,
+              121
+            ],
+            [
+              80,
+              93,
+              120,
+              123
+            ],
+            [
+              54,
+              130,
+              85,
+              171
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-12-cff1b0f82b.png",
+          "evidenceSha256": "cff1b0f82b0ceb418d7c96e4df98a86ca45a1c4aef15c81c94086dfda2dae795",
+          "source": "qq-show-classic/outfit/抹茶旗袍坐姿.gif",
+          "layers": [
+            "qq-show-classic/outfit/抹茶旗袍坐姿.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/棕咖黄月季发饰盘发.gif"
+          ],
+          "nativeImageHash": "f523574a47c5517e56de2555ecfb4845bc5eddca7864ae7272ee5d093975d841",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "13",
+          "sample": 13,
+          "label": "黄色短袖爱心坐姿",
+          "score": 96,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "不要求折腿坐，GPT站姿支撑在，左肩/折返臂短影需整理。"
+          ],
+          "regions": [
+            [
+              48,
+              93,
+              70,
+              121
+            ],
+            [
+              80,
+              93,
+              120,
+              123
+            ],
+            [
+              54,
+              130,
+              85,
+              171
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-13-39e675e0ed.png",
+          "evidenceSha256": "39e675e0eda9482d79a5df1554983acde63b0f90a399ddc63fd3de1788ff115f",
+          "source": "qq-show-classic/outfit/黄色短袖短裙爱心坐姿.gif",
+          "layers": [
+            "qq-show-classic/outfit/黄色短袖短裙爱心坐姿.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/黑色双丸子头.gif"
+          ],
+          "nativeImageHash": "f7c9e5fd22cb186e7f67e2f77f0829e656eef91b74f83def14c37560e597fd17",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "14",
+          "sample": 14,
+          "label": "粉礼裙花朵坐姿",
+          "score": 96,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "原生花掌可紧凑，GPT非指少扣分，指布短承压仍弱。"
+          ],
+          "regions": [
+            [
+              48,
+              93,
+              70,
+              121
+            ],
+            [
+              80,
+              93,
+              120,
+              123
+            ],
+            [
+              54,
+              130,
+              85,
+              171
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-14-90da9e5558.png",
+          "evidenceSha256": "90da9e55588f3f34b6c201121412630bcd7c45861620a23ae83931961ca9aaf4",
+          "source": "qq-show-classic/outfit/浅粉礼裙花朵坐姿套装.gif",
+          "layers": [
+            "qq-show-classic/outfit/浅粉礼裙花朵坐姿套装.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/粉色高马尾.gif"
+          ],
+          "nativeImageHash": "7deae5777a0bc52ea716fbe8e59c05e32cf1a32d1922b6b8e1d476065e8758b9",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "15",
+          "sample": 15,
+          "label": "秋千白纱悬坐",
+          "score": 96,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "不要求抓绳，GPT腕掌肉量自然，折返臂叠压短面不足。"
+          ],
+          "regions": [
+            [
+              48,
+              93,
+              70,
+              121
+            ],
+            [
+              80,
+              93,
+              120,
+              123
+            ],
+            [
+              54,
+              130,
+              85,
+              171
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-15-336721848f.png",
+          "evidenceSha256": "336721848f31430ae303144aa3edd07dc55a791952285fd7728a7ea87019808a",
+          "source": "qq-show-classic/outfit/秋千白色薄纱裙套装.gif",
+          "layers": [
+            "qq-show-classic/back-hair/深棕蝴蝶结斜刘海长发.gif",
+            "qq-show-classic/outfit/秋千白色薄纱裙套装.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/深棕蝴蝶结斜刘海长发.gif"
+          ],
+          "nativeImageHash": "6949b442eaeffae544840a252bfca0b8656c4f1c5703d80f5bdc0fdec02a093b",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "16",
+          "sample": 16,
+          "label": "牛仔背带持麦",
+          "score": 97,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "原生直臂/角阶允许，GPT不因角阶本身扣，局部短转面未统一。"
+          ],
+          "regions": [
+            [
+              48,
+              93,
+              70,
+              121
+            ],
+            [
+              80,
+              93,
+              120,
+              123
+            ],
+            [
+              54,
+              130,
+              85,
+              171
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-16-f7de8b0cce.png",
+          "evidenceSha256": "f7de8b0cce098ccf348fa291186657ea678ca43b525e766091dbce2b636fc23b",
+          "source": "qq-show-classic/outfit/吊带牛仔裤麦克风套装.gif",
+          "layers": [
+            "qq-show-classic/outfit/吊带牛仔裤麦克风套装.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/酒红双马尾.gif"
+          ],
+          "nativeImageHash": "fb624b9fbe3e853bb9b66582cfb5993197a1905ab4ff958cbb380621d662ec5b",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "17",
+          "sample": 17,
+          "label": "朱砂旗袍持扇",
+          "score": 96,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "不要求扇动作，GPT托掌可接受，腕桥袖腔短厚边不足。"
+          ],
+          "regions": [
+            [
+              48,
+              93,
+              70,
+              121
+            ],
+            [
+              80,
+              93,
+              120,
+              123
+            ],
+            [
+              54,
+              130,
+              85,
+              171
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-17-43f0701b62.png",
+          "evidenceSha256": "43f0701b628da608c20a4a92389d1f092179cb2e34e7229746e32d1b28bf038c",
+          "source": "qq-show-classic/outfit/高开衩朱砂红旗袍.gif",
+          "layers": [
+            "qq-show-classic/outfit/高开衩朱砂红旗袍.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/玫瑰盘发.gif"
+          ],
+          "nativeImageHash": "12ad1f177551bf37e4949696fc63acece1b955f0f9227db92ce2830bf0e059f6",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "18",
+          "sample": 18,
+          "label": "紫短裙举臂长靴",
+          "score": 96,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "举臂不同扣0，GPT近端肉面保留，肩内/折返臂短影少。"
+          ],
+          "regions": [
+            [
+              48,
+              93,
+              70,
+              121
+            ],
+            [
+              80,
+              93,
+              120,
+              123
+            ],
+            [
+              54,
+              130,
+              85,
+              171
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-18-ba30ae7f97.png",
+          "evidenceSha256": "ba30ae7f9750ef0281d90e1cce492b40ba083c34e8f3d40e6c8af0a53baf7571",
+          "source": "qq-show-classic/outfit/背心紫短裙白长靴套装.gif",
+          "layers": [
+            "qq-show-classic/back-hair/动漫蓝蝴蝶结马尾.gif",
+            "qq-show-classic/outfit/背心紫短裙白长靴套装.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/动漫蓝蝴蝶结马尾.gif"
+          ],
+          "nativeImageHash": "9b525b93d6794ef7c03bc2e5e93f5c18f744752094e92ca8f5a1f8d235a410e8",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "19",
+          "sample": 19,
+          "label": "白短外套牛仔短裙",
+          "score": 97,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "站姿承重可读，未新量测腿，GPT领布/腕桥局部层次稍硬。"
+          ],
+          "regions": [
+            [
+              48,
+              93,
+              70,
+              121
+            ],
+            [
+              80,
+              93,
+              120,
+              123
+            ],
+            [
+              54,
+              130,
+              85,
+              171
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-19-f143f0f646.png",
+          "evidenceSha256": "f143f0f646739cc82ea004246816229898b46a53db6b27b0f872ccc9a31bf834",
+          "source": "qq-show-classic/outfit/白色短外套牛仔短裙套装.gif",
+          "layers": [
+            "qq-show-classic/outfit/白色短外套牛仔短裙套装.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/棕橙长编发.gif"
+          ],
+          "nativeImageHash": "e570beb4dd7330818e30f0e9a99f1131054e7621d48447b311a19fc909c2c75e",
+          "poseDifferenceDeduction": 0
+        },
+        {
+          "id": "20",
+          "sample": 20,
+          "label": "紫色蝴蝶仙子",
+          "score": 97,
+          "passed": false,
+          "nativeBaselineScore": 100,
+          "reasons": [
+            "仙裙遮处不编真值，GPT肌腹/掌面自然，屈臂短转面仍不足。"
+          ],
+          "regions": [
+            [
+              48,
+              93,
+              70,
+              121
+            ],
+            [
+              80,
+              93,
+              120,
+              123
+            ],
+            [
+              54,
+              130,
+              85,
+              171
+            ]
+          ],
+          "limitations": "同一AI身体逐例比较自然度/可见体面，不要求复制各例pose；遮挡裸腰胯不编尺寸真值。未执行新独立法向量测。",
+          "evidence": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-20-c81b29b213.png",
+          "evidenceSha256": "c81b29b213966e4f6119e5cf5f9a109d2f5f52b1616fdde5fd4479fa3d2acde1",
+          "source": "qq-show-classic/outfit/蝴蝶仙子套装.gif",
+          "layers": [
+            "qq-show-classic/outfit/蝴蝶仙子套装.gif",
+            "qq-show-classic/makeup/default.png",
+            "qq-show-classic/front-hair/炫紫闪耀双马尾卷发.gif"
+          ],
+          "nativeImageHash": "70112fde68175423d693e4d6efd1d9ea8a0ec13422c4fa4e5dab1c3ce76fa702",
+          "poseDifferenceDeduction": 0
+        }
+      ],
+      "reasons": [
+        "R15肩根/指布腕桥局部短面有改善，保留R13短臂/近端肌腹与R04式托掌轮廓/细肤面；不继承薄舟掌/缺五指旧指控。",
+        "左肩x54..60/y94..103与折返臂x49..62/y102..115前后短转面仍略方直，局部叠压短影不够统一；不因合理像素角阶本身扣。",
+        "捏领x61..68/y98..105接位成立，指布/腕圈内腔与右腕桥x103..111/y107..114袖口短厚面仍略硬；掌轮廓肉量不要求再统一加粗。",
+        "腰胯/股根连续，腿足支撑可读；未作新的同骨段/投影量测，旧不利诊断不转挂新hash当新测量，也不清历史。"
+      ],
+      "recommendations": [
+        "R26只剩最终返工轮：保短臂/近端肉面与已认可托掌，局部整理左肩/折返臂叠压短影和腕桥袖腔短厚边，不按default点削肉。",
+        "保新白缎有效宽谷窄峰，把领胸短灰块归入胸廓→腰收主面，指布/腕圈用短压影说明厚度，避免再加碎点。",
+        "裙谷按自己的腰胯/斜衩/翻层力向重组织，保M02式有效材质，不照搬其几何/隐藏面或把U谷全删。",
+        "头部保中分/长刘海/不等长束，局部清冠部规则长弧和肩后谷峰主次，不重做已确认脸/掌。",
+        "按用户两轮收尾：R26复评后停止自动改图，即使仍不足98；未审六组/技术未知保留，不开启第三轮。"
+      ],
+      "limitations": [
+        "未执行新的独立尺寸量测，不声明全身<=5%或任何区域>5%。",
+        "当前视觉已失败98；新hash/原生手参考不自动解除历史技术阻断。",
+        "原生衣装不提供被遮住裸腰胯真值。"
+      ],
+      "evidence": {
+        "reactBodyImage": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-default-76a23a210e.png",
+        "reactBodyImageSha256": "76a23a210e171f8fafaaade08dc102a30f61351bf0581ff18053fe965f086080",
+        "reactBodySnapshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-evidence.json",
+        "reactFullImage": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/full.png",
+        "reactFullImageSha256": "b968eeced8924b79d5b83f267291cfa8c7969386663012fc8c96af1b9e62c248",
+        "reactFullSnapshot": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/full-evidence.json",
+        "actuallyViewed": [
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-default-76a23a210e.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-01-c135d2a1f2.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-02-feb49d1b21.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-03-6559d4c705.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-04-49a0ddf16d.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-05-42eac55392.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-06-474ff6983d.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-07-0c639d3993.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-08-dce70206a7.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-09-5ffc57ee5c.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-10-5a9974ab2c.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-11-e3180901bd.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-12-cff1b0f82b.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-13-39e675e0ed.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-14-90da9e5558.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-15-336721848f.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-16-f7de8b0cce.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-17-43f0701b62.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-18-ba30ae7f97.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-19-f143f0f646.png",
+          "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/body-strip-20-c81b29b213.png"
+        ],
+        "diagnosticBody6x": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/gpt-round08-body-6x.png",
+        "diagnosticNearestCrops": [],
+        "captureBrowser": "Codex in-app browser",
+        "failedImages": [],
+        "reactFullImages": [
+          {
+            "path": "ai-workspace/previews/classic/remake/react-review/human-followup-20261110/round-08/gpt/full.png",
+            "sha256": "b968eeced8924b79d5b83f267291cfa8c7969386663012fc8c96af1b9e62c248",
+            "images": [
+              {
+                "bottom": 342.5625,
+                "height": 226,
+                "index": 0,
+                "left": 28,
+                "right": 168,
+                "top": 116.5625,
+                "width": 140
+              },
+              {
+                "bottom": 342.5625,
+                "height": 226,
+                "index": 1,
+                "left": 180,
+                "right": 320,
+                "top": 116.5625,
+                "width": 140
+              },
+              {
+                "bottom": 342.5625,
+                "height": 226,
+                "index": 2,
+                "left": 332,
+                "right": 472,
+                "top": 116.5625,
+                "width": 140
+              }
+            ]
+          }
+        ],
+        "actualCorpusReadingMethod": "All20 immutable one-ID screenshots cropped by recorded bounds into five nearest2x reading sheets; no re-render or artwork edit.",
+        "diagnosticIndex": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/gpt-r15-segment-diagnostic-index.json",
+        "diagnosticCorpusSheets": [
+          "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/gpt-r15-body-corpus-sheet-1-2x.png",
+          "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/gpt-r15-body-corpus-sheet-2-2x.png",
+          "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/gpt-r15-body-corpus-sheet-3-2x.png",
+          "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/gpt-r15-body-corpus-sheet-4-2x.png",
+          "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/gpt-r15-body-corpus-sheet-5-2x.png"
+        ],
+        "frozenArchive": "results/archived/runtime/7ec0fc573d05e2fefed7/public"
+      },
+      "evidenceIntegrity": {
+        "status": "all20-actually-viewed; immutable screenshot hashes verified",
+        "labelsActuallyChecked": [
+          "01 抱臂天使礼服",
+          "02 蓝白捧花公主裙",
+          "03 薄荷裙抬手",
+          "04 蓝白学院裙垂袖",
+          "05 粉背心交叉腿",
+          "06 黄色开衩动势裙",
+          "07 深蓝露肩低位交手",
+          "08 黑红舞裙外展",
+          "09 碎花吊带牛仔持包",
+          "10 紫色礼裙侧收持花",
+          "11 薄荷绿盘腿坐姿",
+          "12 抹茶旗袍椅坐",
+          "13 黄色短袖爱心坐姿",
+          "14 粉礼裙花朵坐姿",
+          "15 秋千白纱悬坐",
+          "16 牛仔背带持麦",
+          "17 朱砂旗袍持扇",
+          "18 紫短裙举臂长靴",
+          "19 白短外套牛仔短裙",
+          "20 紫色蝴蝶仙子"
+        ]
+      },
+      "sourceReport": "ai-workspace/previews/classic/remake/acceptance/human-followup-20261110/gpt-r15-round08-review.json",
+      "recordSignature": "[\"closeout-r25-gpt-body-z360lb1l\",null,\"body-corpus-context-v1-e53afbfc\",null,null,\"db3246d678b1b8ab62adc6797a45ad13f4fadf81e2ce1ee8e3958f64edc1bf9f\",\"7aede45d06b71e26dd79859fead4a04a7455cbb2eceb6237decd7b064efcfe50\"]"
+    }
+  ],
+  "captures": [
+    {
+      "mode": "body",
+      "group": "custom:hair",
+      "matchingScope": "body-identical",
+      "seed": "closeout-r25-gpt-body-z360lb1l",
+      "contextSignature": "native-context-v4-e84aac38",
+      "file": "rating/browser/round-08/body-evidence.json"
+    },
+    {
+      "mode": "component",
+      "group": "body3",
+      "matchingScope": "selected-parts-identical",
+      "seed": "closeout-r25-gpt-body3-17n4omm9",
+      "contextSignature": "native-context-v5-7018dd63",
+      "file": "rating/browser/round-08/body3-evidence.json"
+    },
+    {
+      "mode": "full",
+      "group": "custom:hair",
+      "matchingScope": "complete-identical",
+      "seed": "closeout-r25-gpt-full-d09aquab",
+      "contextSignature": "native-context-v4-c93e5c6d",
+      "file": "rating/browser/round-08/full-evidence.json"
+    },
+    {
+      "mode": "component",
+      "group": "head2",
+      "matchingScope": "selected-parts-identical",
+      "seed": "closeout-r25-gpt-head2-4mhb5uuw",
+      "contextSignature": "native-context-v4-11a78f9c",
+      "file": "rating/browser/round-08/head2-evidence.json"
+    },
+    {
+      "mode": "component",
+      "group": "upper2",
+      "matchingScope": "selected-parts-identical",
+      "seed": "closeout-r25-gpt-upper2-44jlz1s0",
+      "contextSignature": "native-context-v5-36a275de",
+      "file": "rating/browser/round-08/upper2-evidence.json"
+    }
+  ],
+  "assets": {
+    "/assets-classic/gpt/remake/aura-design.svg": {
+      "file": "src/aura-design.svg",
+      "sha256": "58a1126774f6d8e427c6f7d6f14929e84d40b405ecce697dd2e948b25a12f004"
+    },
+    "/assets-classic/gpt/remake/aura.png": {
+      "file": "src/aura.png",
+      "sha256": "b46d7e033390db7cfdba718b483e6da1e87a5bca4d3de2b77d91189395faa3df"
+    },
+    "/assets-classic/gpt/remake/aura.svg": {
+      "file": "src/aura.svg",
+      "sha256": "4718302ccf6d3c1272dac020606e6931cd781a64c20d0f315fa42317314415b1"
+    },
+    "/assets-classic/gpt/remake/back-design.svg": {
+      "file": "src/back-design.svg",
+      "sha256": "9101363464880790a3628a0019b244e19d278ce4d03178caca7470dbb08a398a"
+    },
+    "/assets-classic/gpt/remake/back.png": {
+      "file": "src/back.png",
+      "sha256": "b8f0d69a6d9f09abe28efe1751020964f8c02332c8c0b17b5a9bf9698302cdf7"
+    },
+    "/assets-classic/gpt/remake/back.svg": {
+      "file": "src/back.svg",
+      "sha256": "ac7fd1ada3f636c568413ee67e139ebd134d2c00f28b74c61b8114e26c0be260"
+    },
+    "/assets-classic/gpt/remake/body-design.svg": {
+      "file": "src/body-design.svg",
+      "sha256": "1554fb6fb58643c208396b1ed0982d7589cb389899f28e27a4305e016ef61294"
+    },
+    "/assets-classic/gpt/remake/body.png": {
+      "file": "src/body.png",
+      "sha256": "db3246d678b1b8ab62adc6797a45ad13f4fadf81e2ce1ee8e3958f64edc1bf9f"
+    },
+    "/assets-classic/gpt/remake/body.svg": {
+      "file": "src/body.svg",
+      "sha256": "a4f67841051ccc53cc2826fe727289453adee549bba58e170b1e20b501b17701"
+    },
+    "/assets-classic/gpt/remake/bottom-contact-native-lower-1-design.svg": {
+      "file": "src/bottom-contact-native-lower-1-design.svg",
+      "sha256": "58381095fc34e625080ecfe865b06262081d04c96fd7fc334cbff3fc25946fae"
+    },
+    "/assets-classic/gpt/remake/bottom-contact-native-lower-1.png": {
+      "file": "src/bottom-contact-native-lower-1.png",
+      "sha256": "1babd7fe2005674ad7273a92ac103d3f73776f242e8ffcb4fb02c704a59c3ab4"
+    },
+    "/assets-classic/gpt/remake/bottom-contact-native-lower-1.svg": {
+      "file": "src/bottom-contact-native-lower-1.svg",
+      "sha256": "80e43055d89da3d40b2ce10e16bdeb972fbad1162045f95c4a0af63dc305c1e2"
+    },
+    "/assets-classic/gpt/remake/bottom-contact-native-lower-11-design.svg": {
+      "file": "src/bottom-contact-native-lower-11-design.svg",
+      "sha256": "fc17496bac6cf8376e18bb55c69fff0efbede93c4543da24a9eed2071eed5053"
+    },
+    "/assets-classic/gpt/remake/bottom-contact-native-lower-11.png": {
+      "file": "src/bottom-contact-native-lower-11.png",
+      "sha256": "ffbae02efc6b18254565c49540024d029e3bbe16f6dc01fa7367ce8209d01a89"
+    },
+    "/assets-classic/gpt/remake/bottom-contact-native-lower-11.svg": {
+      "file": "src/bottom-contact-native-lower-11.svg",
+      "sha256": "3f1b8174453aea08d924cc2c54c385d8ff17f2505e27b08433b3db86b330de63"
+    },
+    "/assets-classic/gpt/remake/bottom-contact-native-lower-13-design.svg": {
+      "file": "src/bottom-contact-native-lower-13-design.svg",
+      "sha256": "f0f45940fefdcb9cfb5e7f2734e47f51178d9d7b56490fa545ffa07b985acd10"
+    },
+    "/assets-classic/gpt/remake/bottom-contact-native-lower-13.png": {
+      "file": "src/bottom-contact-native-lower-13.png",
+      "sha256": "04d4d3381c2b499679a4e0c2843032835938815e5d2e512169c6325b6e24053c"
+    },
+    "/assets-classic/gpt/remake/bottom-contact-native-lower-13.svg": {
+      "file": "src/bottom-contact-native-lower-13.svg",
+      "sha256": "c6b353517d0222b825f25a2b0873ed3a0e0edf883e081d5db676fbfcabe3749b"
+    },
+    "/assets-classic/gpt/remake/bottom-contact-native-lower-14-design.svg": {
+      "file": "src/bottom-contact-native-lower-14-design.svg",
+      "sha256": "ec140d57545a987db5dad35bb33f4d60899caee30101c5527715a681444fcbb8"
+    },
+    "/assets-classic/gpt/remake/bottom-contact-native-lower-14.png": {
+      "file": "src/bottom-contact-native-lower-14.png",
+      "sha256": "5beca18b4ee9fddc745ef57e4f24cf6b5363fa74efee67f95acbd6f2a4f3dc3a"
+    },
+    "/assets-classic/gpt/remake/bottom-contact-native-lower-14.svg": {
+      "file": "src/bottom-contact-native-lower-14.svg",
+      "sha256": "a7eaf7b78c7110e554144b535ce6fb437760477fe9e783a4d4e5bef3dcadcc16"
+    },
+    "/assets-classic/gpt/remake/bottom-contact-native-lower-15-design.svg": {
+      "file": "src/bottom-contact-native-lower-15-design.svg",
+      "sha256": "1cae61e28196e5a5ecc0d675f99adf35ee0619ac5221cc94191e6b3ffb5072fb"
+    },
+    "/assets-classic/gpt/remake/bottom-contact-native-lower-15.png": {
+      "file": "src/bottom-contact-native-lower-15.png",
+      "sha256": "cc107c31315c32d4079c040497dbf7de73a488cfe6ba6f314a1d41eaf6e10d4e"
+    },
+    "/assets-classic/gpt/remake/bottom-contact-native-lower-15.svg": {
+      "file": "src/bottom-contact-native-lower-15.svg",
+      "sha256": "c853633062a40a5405dbe466248c4b5c770c431138020546f356e13a40e552ee"
+    },
+    "/assets-classic/gpt/remake/bottom-contact-native-lower-3-design.svg": {
+      "file": "src/bottom-contact-native-lower-3-design.svg",
+      "sha256": "f08a26bdd8cce1638e31f0f614992e7b17813622867c45c56f971a0670f0060f"
+    },
+    "/assets-classic/gpt/remake/bottom-contact-native-lower-3.png": {
+      "file": "src/bottom-contact-native-lower-3.png",
+      "sha256": "6c75eaf4a318b6db776b6c4e9b8afb7c3d0c49518ee78e16046d77dd20a2991d"
+    },
+    "/assets-classic/gpt/remake/bottom-contact-native-lower-3.svg": {
+      "file": "src/bottom-contact-native-lower-3.svg",
+      "sha256": "1c8fa492e4cf108e8ee2cdda07e12aead7fedf1517c9453912f1112838564c27"
+    },
+    "/assets-classic/gpt/remake/bottom-contact-native-lower-7-design.svg": {
+      "file": "src/bottom-contact-native-lower-7-design.svg",
+      "sha256": "c47d8346e814334442fd499f2de30609eaabcd5a9ffa73e9a74e8c10f15dedb1"
+    },
+    "/assets-classic/gpt/remake/bottom-contact-native-lower-7.png": {
+      "file": "src/bottom-contact-native-lower-7.png",
+      "sha256": "04db50a405980129b9a09c4e56059beca993b78aad82a91ac62bde5a988c6293"
+    },
+    "/assets-classic/gpt/remake/bottom-contact-native-lower-7.svg": {
+      "file": "src/bottom-contact-native-lower-7.svg",
+      "sha256": "e5ee6eda336d7cbd9d78ccfffaae9451fbb8e80a580d89a90db6991630e3fcb4"
+    },
+    "/assets-classic/gpt/remake/bottom-contact-native-lower-8-design.svg": {
+      "file": "src/bottom-contact-native-lower-8-design.svg",
+      "sha256": "8b8e2135d467b80a62c8191e4781a4f005cbff2e4a0597d917a747834f53eaa4"
+    },
+    "/assets-classic/gpt/remake/bottom-contact-native-lower-8.png": {
+      "file": "src/bottom-contact-native-lower-8.png",
+      "sha256": "ec51a3c980e1e423629cc6f0b4b8b28fe5a0017806ae0da6a463cec360929d9b"
+    },
+    "/assets-classic/gpt/remake/bottom-contact-native-lower-8.svg": {
+      "file": "src/bottom-contact-native-lower-8.svg",
+      "sha256": "db96cdf47581ee9031caf862546ef39d36b77e8e858dea44200a74a3e764a960"
+    },
+    "/assets-classic/gpt/remake/bottom-design.svg": {
+      "file": "src/bottom-design.svg",
+      "sha256": "8858334624f42478d48f5b6ae283ed32739b467347f85c86ff464a34a17a3556"
+    },
+    "/assets-classic/gpt/remake/bottom-interface-native-lower-1-design.svg": {
+      "file": "src/bottom-interface-native-lower-1-design.svg",
+      "sha256": "24f51f4c15c5bf363a97947e45ed2cba1ef98db77b0811c796dcffda6c105827"
+    },
+    "/assets-classic/gpt/remake/bottom-interface-native-lower-1.json": {
+      "file": "src/bottom-interface-native-lower-1.json",
+      "sha256": "3de683ca0fc534b830d1967dbf25bb20cb031022b7cfe1cf80bb88a4583476fe"
+    },
+    "/assets-classic/gpt/remake/bottom-interface-native-lower-1.png": {
+      "file": "src/bottom-interface-native-lower-1.png",
+      "sha256": "fd4ae5652dbfac015b57ea0a79fe2c6c3421bff4e7806541e00536d5eda9ae03"
+    },
+    "/assets-classic/gpt/remake/bottom-interface-native-lower-1.svg": {
+      "file": "src/bottom-interface-native-lower-1.svg",
+      "sha256": "a52d0592e941865b766156b913f80f465a1a78b00065fb62a330d1c538aad63c"
+    },
+    "/assets-classic/gpt/remake/bottom-interface-native-lower-11-design.svg": {
+      "file": "src/bottom-interface-native-lower-11-design.svg",
+      "sha256": "e4a13b06c774cafd575c5ccbfca3ee41e8a56138819624056ba1e516b53d2c85"
+    },
+    "/assets-classic/gpt/remake/bottom-interface-native-lower-11.json": {
+      "file": "src/bottom-interface-native-lower-11.json",
+      "sha256": "e459f776a532f286904c2bfd357579d6c0d09e7fff3e46f36193d26498cc83b1"
+    },
+    "/assets-classic/gpt/remake/bottom-interface-native-lower-11.png": {
+      "file": "src/bottom-interface-native-lower-11.png",
+      "sha256": "da536eabe71345261aa4abbe90bd99dfd640a3c4d6a3b44fade5f13b53b3bd28"
+    },
+    "/assets-classic/gpt/remake/bottom-interface-native-lower-11.svg": {
+      "file": "src/bottom-interface-native-lower-11.svg",
+      "sha256": "54b46b9604c9b64de3d10527f568bcafc7d16facde5563bc387ffe3fc5cceaaf"
+    },
+    "/assets-classic/gpt/remake/bottom-interface-native-lower-13-design.svg": {
+      "file": "src/bottom-interface-native-lower-13-design.svg",
+      "sha256": "45ee4efce889b1afa0d5624b8c708f69510ca7a80afd33110129534e8a2e1ab9"
+    },
+    "/assets-classic/gpt/remake/bottom-interface-native-lower-13.json": {
+      "file": "src/bottom-interface-native-lower-13.json",
+      "sha256": "8ffdd9d3b4b774ad29758259c2425e5d01a78e77b66e60348ce88db5448e0066"
+    },
+    "/assets-classic/gpt/remake/bottom-interface-native-lower-13.png": {
+      "file": "src/bottom-interface-native-lower-13.png",
+      "sha256": "1df2899c065e1b9daf0d22a796eef0d37239cea6484070816406b52508b3c4d8"
+    },
+    "/assets-classic/gpt/remake/bottom-interface-native-lower-13.svg": {
+      "file": "src/bottom-interface-native-lower-13.svg",
+      "sha256": "6589c77eff205915c84b61286aa457f44a8012934517490d7e4caf313e0eab61"
+    },
+    "/assets-classic/gpt/remake/bottom-interface-native-lower-14-design.svg": {
+      "file": "src/bottom-interface-native-lower-14-design.svg",
+      "sha256": "12767bc86adcfc017227af16d8b2becd4ca89e2fab4b94a682ca79e3da25a2d3"
+    },
+    "/assets-classic/gpt/remake/bottom-interface-native-lower-14.json": {
+      "file": "src/bottom-interface-native-lower-14.json",
+      "sha256": "161ae0e101ee250f602100a3276effd0f12e0b749ecf66a32b8c13d79f1d322b"
+    },
+    "/assets-classic/gpt/remake/bottom-interface-native-lower-14.png": {
+      "file": "src/bottom-interface-native-lower-14.png",
+      "sha256": "55798e0a707ea8ff69e86a8039764760a12864317ee6537369432405a6d82766"
+    },
+    "/assets-classic/gpt/remake/bottom-interface-native-lower-14.svg": {
+      "file": "src/bottom-interface-native-lower-14.svg",
+      "sha256": "c1e59e3c16762c11e5684c623975195826e037d7fc3a2a86e3ad08e4920935f3"
+    },
+    "/assets-classic/gpt/remake/bottom-interface-native-lower-15-design.svg": {
+      "file": "src/bottom-interface-native-lower-15-design.svg",
+      "sha256": "3688f77c59a2cd450e64b9418347d1a55f9b43d777eb19f590aaec965feb4606"
+    },
+    "/assets-classic/gpt/remake/bottom-interface-native-lower-15.json": {
+      "file": "src/bottom-interface-native-lower-15.json",
+      "sha256": "01026934e48f2df7b0d8a210644d088c9209d8b736cb9e5ad8c072d304f3a51e"
+    },
+    "/assets-classic/gpt/remake/bottom-interface-native-lower-15.png": {
+      "file": "src/bottom-interface-native-lower-15.png",
+      "sha256": "9eced103be9f2e78d8bf07f22a395f52888d85e3c849d78751940e371d0ef23f"
+    },
+    "/assets-classic/gpt/remake/bottom-interface-native-lower-15.svg": {
+      "file": "src/bottom-interface-native-lower-15.svg",
+      "sha256": "9733be8288e7dbaada51cd4e20d51be740a256795fb8eb89a20462eb7c0273c2"
+    },
+    "/assets-classic/gpt/remake/bottom-interface-native-lower-3-design.svg": {
+      "file": "src/bottom-interface-native-lower-3-design.svg",
+      "sha256": "af34caf0332c55b75ca3bf2f8c6cc558d1f74f732358688f94525161851dd59c"
+    },
+    "/assets-classic/gpt/remake/bottom-interface-native-lower-3.json": {
+      "file": "src/bottom-interface-native-lower-3.json",
+      "sha256": "bd1137699618da177f776fab27eb8f6155dc3b622845d55197b45e68da561001"
+    },
+    "/assets-classic/gpt/remake/bottom-interface-native-lower-3.png": {
+      "file": "src/bottom-interface-native-lower-3.png",
+      "sha256": "c4cb83b6c57a4a9e8b61e5a7df12aa1f58336b03a3d5e4247a3c8cab5e0a8860"
+    },
+    "/assets-classic/gpt/remake/bottom-interface-native-lower-3.svg": {
+      "file": "src/bottom-interface-native-lower-3.svg",
+      "sha256": "9b68ccbd1511011dfb4825ba835f8731bc3f52b3f1e2e0c719c7bae0955f33fd"
+    },
+    "/assets-classic/gpt/remake/bottom-interface-native-lower-7-design.svg": {
+      "file": "src/bottom-interface-native-lower-7-design.svg",
+      "sha256": "bbca03f08e36d6c37e61064969e7c1091016f28cb52176aa469e95cf5bc0ee56"
+    },
+    "/assets-classic/gpt/remake/bottom-interface-native-lower-7.json": {
+      "file": "src/bottom-interface-native-lower-7.json",
+      "sha256": "6c5b41b3935af4f54c8474fd3394301aba7d50d5bec853ec90310cc55a58032f"
+    },
+    "/assets-classic/gpt/remake/bottom-interface-native-lower-7.png": {
+      "file": "src/bottom-interface-native-lower-7.png",
+      "sha256": "dd22c46c46a908011d66a6d6e597dbe0cbad26c90150f6a223382fd1e8c66f7c"
+    },
+    "/assets-classic/gpt/remake/bottom-interface-native-lower-7.svg": {
+      "file": "src/bottom-interface-native-lower-7.svg",
+      "sha256": "55f619fbe935c422dc07e9f90edfda68b275e30d305c9f9dbf1d382a30df370e"
+    },
+    "/assets-classic/gpt/remake/bottom-interface-native-lower-8-design.svg": {
+      "file": "src/bottom-interface-native-lower-8-design.svg",
+      "sha256": "1a938c8e6ee3b50471bfcfe52e5f185a92146fc3b355c0426bd4e1eff440f408"
+    },
+    "/assets-classic/gpt/remake/bottom-interface-native-lower-8.json": {
+      "file": "src/bottom-interface-native-lower-8.json",
+      "sha256": "c5bf0de69943f0373025eb12c3558d0ab7dcc6ee8b81c1852c681f01521197f5"
+    },
+    "/assets-classic/gpt/remake/bottom-interface-native-lower-8.png": {
+      "file": "src/bottom-interface-native-lower-8.png",
+      "sha256": "6e2275ae9b5c388c2b854b8b1c0d582cd0c5c98d322e80d3a2a0b6111da816e4"
+    },
+    "/assets-classic/gpt/remake/bottom-interface-native-lower-8.svg": {
+      "file": "src/bottom-interface-native-lower-8.svg",
+      "sha256": "85c813d10508022c2d45db90ee53ef2c178733ab3acd18531b1c1aee29c511ca"
+    },
+    "/assets-classic/gpt/remake/bottom.png": {
+      "file": "src/bottom.png",
+      "sha256": "6b1f589c5c70be9a2ca33bab44d6a10f91d04d27934c98fbf5f5a683c5e688a7"
+    },
+    "/assets-classic/gpt/remake/bottom.svg": {
+      "file": "src/bottom.svg",
+      "sha256": "9bea15528af74196966ee78d1f51acca4a57ee3f052e94c4260ab53c52b38efb"
+    },
+    "/assets-classic/gpt/remake/face-design.svg": {
+      "file": "src/face-design.svg",
+      "sha256": "094b971c5f9484a47de864666f656f08a7c49cb614a0c23526ac3e4467fa50a5"
+    },
+    "/assets-classic/gpt/remake/face.png": {
+      "file": "src/face.png",
+      "sha256": "2cfacec9eea4f02586efd34728752a023d5003b90ee10ed43b24086145fa59fd"
+    },
+    "/assets-classic/gpt/remake/face.svg": {
+      "file": "src/face.svg",
+      "sha256": "b12448c29dcdece65b78bf1176d6eadb8cfb18955dc2334388d41cf581ce6d84"
+    },
+    "/assets-classic/gpt/remake/hair-back-design.svg": {
+      "file": "src/hair-back-design.svg",
+      "sha256": "2a0f5832de3960f1b1c0e56d0cab7aaeab9440696fc8f20c1b552e12e11ea545"
+    },
+    "/assets-classic/gpt/remake/hair-back.png": {
+      "file": "src/hair-back.png",
+      "sha256": "ba7670c5a801c0eb99a699c5ee45a655ab1a1dfd04f1e52523fd79d87b74406f"
+    },
+    "/assets-classic/gpt/remake/hair-back.svg": {
+      "file": "src/hair-back.svg",
+      "sha256": "12ff79f89cc6b3e41105c0b6c5a5a9d44fcb831eb8dcfa301956aac967f44bff"
+    },
+    "/assets-classic/gpt/remake/hair-design.svg": {
+      "file": "src/hair-design.svg",
+      "sha256": "486c562359cda608005be96108e7a09455ca318aeedc76b13cfd2549c0ea700e"
+    },
+    "/assets-classic/gpt/remake/hair-front-design.svg": {
+      "file": "src/hair-front-design.svg",
+      "sha256": "82c0d91f6cba122e5284bd046ff9c5d43fbf1a7c910a3156215df421a595b7fd"
+    },
+    "/assets-classic/gpt/remake/hair-front.png": {
+      "file": "src/hair-front.png",
+      "sha256": "5a34d85a7cc7b40af0945001e0d9edfd64bfeb46e21277319ce3ca9fffe1077e"
+    },
+    "/assets-classic/gpt/remake/hair-front.svg": {
+      "file": "src/hair-front.svg",
+      "sha256": "f48add7b7a070a5bd55fc027b73045edc8c85c392340232e731d2f2ebe78e85a"
+    },
+    "/assets-classic/gpt/remake/hair.png": {
+      "file": "src/hair.png",
+      "sha256": "2574990d340d86d0fa0171803ab79c3a22c3c8873c20fbd99ee695860c25ae3f"
+    },
+    "/assets-classic/gpt/remake/hair.svg": {
+      "file": "src/hair.svg",
+      "sha256": "8da01f002df6973f1886bd371bed2b06e40bfe46a8e523caac72289b9287c4d5"
+    },
+    "/assets-classic/gpt/remake/headwear-design.svg": {
+      "file": "src/headwear-design.svg",
+      "sha256": "3a909c3415d656452b862bc1e58adcab3e10c5b0034a37a843f86c5552a6a86e"
+    },
+    "/assets-classic/gpt/remake/headwear.png": {
+      "file": "src/headwear.png",
+      "sha256": "040d753c0a191c6569303b6851df7cd799ed96d7ce5b897ba8533603f7c79afd"
+    },
+    "/assets-classic/gpt/remake/headwear.svg": {
+      "file": "src/headwear.svg",
+      "sha256": "9f84eaacc6e8da9b97da33cd6175e516d543a5c3d88424b0f8909ef1e4ddd0ef"
+    },
+    "/assets-classic/gpt/remake/legs-design.svg": {
+      "file": "src/legs-design.svg",
+      "sha256": "3848d9338657a875b968d2f3b3d423591e0e4be89a08544a5ebe8aa156475a89"
+    },
+    "/assets-classic/gpt/remake/legs.png": {
+      "file": "src/legs.png",
+      "sha256": "137cf208a7be67a491297f3232a844fc883817e79944fe688dd4524eab401575"
+    },
+    "/assets-classic/gpt/remake/legs.svg": {
+      "file": "src/legs.svg",
+      "sha256": "653ecfc347c29e66476c0d70cb8ff0464fe6786df5e34893be4ff9a830c2dcc6"
+    },
+    "/assets-classic/gpt/remake/prop-design.svg": {
+      "file": "src/prop-design.svg",
+      "sha256": "6755cd39744e259dae9f7abf1797dc42dafa8851370ecab32f37b6cca6385c73"
+    },
+    "/assets-classic/gpt/remake/prop.png": {
+      "file": "src/prop.png",
+      "sha256": "5dd59f191cc1b54b3b9a5e45206a4812b341099fb8d6e19462dc61b154a6ec45"
+    },
+    "/assets-classic/gpt/remake/prop.svg": {
+      "file": "src/prop.svg",
+      "sha256": "dc3c4b3af3ceda2df03edc969c5b16487dc5c06120d9ac2f47b65e9351889532"
+    },
+    "/assets-classic/gpt/remake/top-arms-design.svg": {
+      "file": "src/top-arms-design.svg",
+      "sha256": "0d064b645b65550cd78d556011da4899b4a7fe5dfcdc95fd8cd1b84854ac6d77"
+    },
+    "/assets-classic/gpt/remake/top-arms.png": {
+      "file": "src/top-arms.png",
+      "sha256": "c61a9207754659d2e57051d5cf85e620413494288cd6a7253e2913f26f4aef95"
+    },
+    "/assets-classic/gpt/remake/top-arms.svg": {
+      "file": "src/top-arms.svg",
+      "sha256": "a59fcfc614d81d563d328d6336ad406ca78d1f768f7c9eda2ac966869d200486"
+    },
+    "/assets-classic/gpt/remake/top-body-design.svg": {
+      "file": "src/top-body-design.svg",
+      "sha256": "6de01d9cbe7997987fcd1bf28e9d182a30829c0c2fbbeb361d17734752e01f07"
+    },
+    "/assets-classic/gpt/remake/top-body.png": {
+      "file": "src/top-body.png",
+      "sha256": "e2cbec56f7190fbe5bb701ce4ea8f906dafbd1c913fdbac25d24744c1d0d0fdd"
+    },
+    "/assets-classic/gpt/remake/top-body.svg": {
+      "file": "src/top-body.svg",
+      "sha256": "5d9ec3b567d7e86edc741fc2b777c2d76150e2f42797f8e467d90b9369c7fa75"
+    },
+    "/assets-classic/gpt/remake/top-contact-native-lower-14-design.svg": {
+      "file": "src/top-contact-native-lower-14-design.svg",
+      "sha256": "c2995fe6ae3fdaa5f58383b8c92f2a0a5bf4c05cc821c3d2d1ed76265a9265ec"
+    },
+    "/assets-classic/gpt/remake/top-contact-native-lower-14.json": {
+      "file": "src/top-contact-native-lower-14.json",
+      "sha256": "c822762908b3ec9cfb2bfab9c7fd83c876dc915db51a0ee29c2aa798561177d8"
+    },
+    "/assets-classic/gpt/remake/top-contact-native-lower-14.png": {
+      "file": "src/top-contact-native-lower-14.png",
+      "sha256": "4f0781be80b1938ce773fd424ec0272804a79dc439bc3c698190675d487ce5d7"
+    },
+    "/assets-classic/gpt/remake/top-contact-native-lower-14.svg": {
+      "file": "src/top-contact-native-lower-14.svg",
+      "sha256": "d8cf28cc55a402fdf92e9bb8f70c54cdc562851aa2407be17b7307a7d01be7e4"
+    },
+    "/assets-classic/gpt/remake/top-contact-native-lower-15-design.svg": {
+      "file": "src/top-contact-native-lower-15-design.svg",
+      "sha256": "2a511e054092ec8195688eb4f34904caa106e7cb5b9ab59766f8b0623d4b2041"
+    },
+    "/assets-classic/gpt/remake/top-contact-native-lower-15.json": {
+      "file": "src/top-contact-native-lower-15.json",
+      "sha256": "6cbadca8ae1ae56fd434f4d530c8eccc0858e2aeb67f162ed21abe2602122225"
+    },
+    "/assets-classic/gpt/remake/top-contact-native-lower-15.png": {
+      "file": "src/top-contact-native-lower-15.png",
+      "sha256": "822050463e5494fc293b59bfd104c13b3cc1b1f3dc725fa6be99b7e3ebd4015d"
+    },
+    "/assets-classic/gpt/remake/top-contact-native-lower-15.svg": {
+      "file": "src/top-contact-native-lower-15.svg",
+      "sha256": "269ef3b99f908ac9e0fbaa7cad332194447df9eaea26a80b270164b98476fec1"
+    },
+    "/assets-classic/gpt/remake/top-contact-native-lower-2-design.svg": {
+      "file": "src/top-contact-native-lower-2-design.svg",
+      "sha256": "1d0553d8c631d1c65b12c485183a226f8b60e192c75b1b6e8cf100681fbe66ba"
+    },
+    "/assets-classic/gpt/remake/top-contact-native-lower-2.json": {
+      "file": "src/top-contact-native-lower-2.json",
+      "sha256": "29f5bd504958c5a9d9aed4c17c65b669a05ed0a39a8809c54245c20a43ba3fda"
+    },
+    "/assets-classic/gpt/remake/top-contact-native-lower-2.png": {
+      "file": "src/top-contact-native-lower-2.png",
+      "sha256": "996da33b4a63a32d7da2969d33bb4687c9e79be8c69d347c9d2e34a5e20bbc10"
+    },
+    "/assets-classic/gpt/remake/top-contact-native-lower-2.svg": {
+      "file": "src/top-contact-native-lower-2.svg",
+      "sha256": "6e8fc9cda8b6a03aaadd79d6c14147f905f693eea8b439366488dba68742d616"
+    },
+    "/assets-classic/gpt/remake/top-contact-native-lower-5-design.svg": {
+      "file": "src/top-contact-native-lower-5-design.svg",
+      "sha256": "f5ba42545bfc550788cea4208ba6849ca3f7622683e0ef250eff46e946766670"
+    },
+    "/assets-classic/gpt/remake/top-contact-native-lower-5.json": {
+      "file": "src/top-contact-native-lower-5.json",
+      "sha256": "92be21c503e8d145f6f031659c15bb108bbf5366e3915efd4fcd80e9c5e73fcc"
+    },
+    "/assets-classic/gpt/remake/top-contact-native-lower-5.png": {
+      "file": "src/top-contact-native-lower-5.png",
+      "sha256": "3d99516237c1ccbf5e07566d583084e11ec29c4a1f3e33e00dabccd7f8419961"
+    },
+    "/assets-classic/gpt/remake/top-contact-native-lower-5.svg": {
+      "file": "src/top-contact-native-lower-5.svg",
+      "sha256": "7e4b9b1129aa9dc23e453d57d63fc2eb7922ad7da3dfa2dfdbc15fde85747707"
+    },
+    "/assets-classic/gpt/remake/top-design.svg": {
+      "file": "src/top-design.svg",
+      "sha256": "34ac5efdc3952871533275e6cafc3032acfe763790ca2e536a42156adac8cdf4"
+    },
+    "/assets-classic/gpt/remake/top.png": {
+      "file": "src/top.png",
+      "sha256": "ec7fe01be3a46917e6859aeda2c196b974ec0e351cd3bb496a98bda411044beb"
+    },
+    "/assets-classic/gpt/remake/top.svg": {
+      "file": "src/top.svg",
+      "sha256": "5ec3228773e070d3d95f99fc70be6b6fd57158db05d84826fc87bd232d035fae"
+    },
+    "character.png": {
+      "file": "src/character.png",
+      "sha256": "7aede45d06b71e26dd79859fead4a04a7455cbb2eceb6237decd7b064efcfe50"
+    },
+    "scene.png": {
+      "file": "src/scene.png",
+      "sha256": "ed475d1701ae6281a5be0b75f3ff1165da6440771db410f9e9ba5311bbf76177"
+    },
+    "body.png": {
+      "file": "src/body.png",
+      "sha256": "db3246d678b1b8ab62adc6797a45ad13f4fadf81e2ce1ee8e3958f64edc1bf9f"
+    },
+    "/assets-classic/gpt/background.png": {
+      "file": "src/background.png",
+      "sha256": "9a986ab555f81b4493b27405cce89085b28e5af468ccb175649a286abc651260"
+    },
+    "/assets-classic/gpt/background.svg": {
+      "file": "src/background.svg",
+      "sha256": "2cbc1dd61ce5614eea521d3c82dae3c92aa308b386129025e5242b94f271aa81"
+    },
+    "/assets-classic/gpt/background.gif": {
+      "file": "src/background.gif",
+      "sha256": "02ca3f2069e26ff1c69853c8f7410bb6bd6e8fb786d1b0989ff9db78772212a9"
+    },
+    "/assets-classic/gpt/effect.png": {
+      "file": "src/effect.png",
+      "sha256": "5daeadffe95416208929a42ce065fafdb14b7cb8c92e48ec61b94da21683a8b6"
+    },
+    "/assets-classic/gpt/effect.svg": {
+      "file": "src/effect.svg",
+      "sha256": "c7b9912341f6904a4e09c3da7b5dad6f6df05bff89ec12bd75daef4609c6f6e8"
+    }
+  },
+  "evidence": {
+    "gpt-deepseek-first-review.md": {
+      "file": "rating/gpt-deepseek-first-review.md",
+      "sha256": "895edaad4890752d7aef41299a2596947deccf6013ac7ca91a9779e75757be63"
+    },
+    "gpt-r10-round03-review.json": {
+      "file": "rating/gpt-r10-round03-review.json",
+      "sha256": "a005ac2fa7e1a5448d719c74381220b5a2e470a7bf455339e6c2322c85eae2b5"
+    },
+    "gpt-r11-native-contact-comparison.json": {
+      "file": "rating/gpt-r11-native-contact-comparison.json",
+      "sha256": "bd48887f6424bff34e55172c78f8c2381f94bcd8a339f78669e0648e13fd760f"
+    },
+    "gpt-r11-round05-review.json": {
+      "file": "rating/gpt-r11-round05-review.json",
+      "sha256": "9d862ccefd8fc7b8f2c2b4679818986c9e133abd09510ffca22bf4d23d959009"
+    },
+    "gpt-r12-native-hair-layer-controls.json": {
+      "file": "rating/gpt-r12-native-hair-layer-controls.json",
+      "sha256": "ef4754704adb4ad40ddc86ad9a1a4dc10433b5fcfece07f8e17cbbc12d7cecf6"
+    },
+    "gpt-r12-round06-review.json": {
+      "file": "rating/gpt-r12-round06-review.json",
+      "sha256": "2dd8b1980e9b5181e3e81bd5a950138cd196ea31a553e9cc5ee12d956825d48e"
+    },
+    "gpt-r13-native-contact-comparison.json": {
+      "file": "rating/gpt-r13-native-contact-comparison.json",
+      "sha256": "b950e7f30159bcb82d4dbd19f393ef0c573292cad0e628106cf3677f97589e02"
+    },
+    "gpt-r13-round07-review.json": {
+      "file": "rating/gpt-r13-round07-review.json",
+      "sha256": "a18e5784322c04f2b0724940cf2e599f9c685f8983f78c44d21d59c8e92f71dc"
+    },
+    "gpt-r13-segment-diagnostic-index.json": {
+      "file": "rating/gpt-r13-segment-diagnostic-index.json",
+      "sha256": "fa23a442b5ae1c0551ebf851164f28ae6b99bfc52c72930fa5abe3eefe516624"
+    },
+    "gpt-r8-body-reference.json": {
+      "file": "rating/gpt-r8-body-reference.json",
+      "sha256": "44e76d9bfbb218eb078f9de57df777a5198843ec486af1b3e4197eb7932a57a1"
+    },
+    "gpt-r8-multi-fusion.json": {
+      "file": "rating/gpt-r8-multi-fusion.json",
+      "sha256": "44af897d4c53114e03f68473cadbc6514e9e994f875da97cdb39426a83e2518b"
+    },
+    "gpt-r8-pose-audit-and-body-verified.json": {
+      "file": "rating/gpt-r8-pose-audit-and-body-verified.json",
+      "sha256": "9c500892d25f76af910f4f270afa374e754d80c79b89147c3dc73f9bb58f2661"
+    },
+    "gpt-r9-author-preflight.md": {
+      "file": "rating/gpt-r9-author-preflight.md",
+      "sha256": "baeae888d72ae5c5b907391779b29f33003a8548986f00141eccdec5a277e42c"
+    },
+    "gpt-r9-round02-review.json": {
+      "file": "rating/gpt-r9-round02-review.json",
+      "sha256": "6e544e670279d078633003bea8db829e63b40dd47ff29307b2bca0e872fd1fc5"
+    },
+    "gpt-r15-native-contact-comparison.json": {
+      "file": "rating/gpt-r15-native-contact-comparison.json",
+      "sha256": "08b6ea11c991b2627d69e7e337ae983aa2ab72b74e2f14f11ea3da875669f8e9"
+    },
+    "gpt-r15-native-material-comparison.json": {
+      "file": "rating/gpt-r15-native-material-comparison.json",
+      "sha256": "37f6001ae4d5eb267a4d6a8c9937e3d177020cd49e874a97ac0d4296fc4a1b20"
+    },
+    "gpt-r15-round08-review.json": {
+      "file": "rating/gpt-r15-round08-review.json",
+      "sha256": "cb7b9a64b06090887ef78a1dc8af77e8ee9438b5bdedb6bc675a876b62c33722"
+    },
+    "gpt-r15-segment-diagnostic-index.json": {
+      "file": "rating/gpt-r15-segment-diagnostic-index.json",
+      "sha256": "2026656a1f6e99422914219701e4e7ec7f646c83044a58cdc5b3d599157bc667"
+    },
+    "browser/round-08/body-evidence.json": {
+      "file": "rating/browser/round-08/body-evidence.json",
+      "sha256": "e64a1b365415d4d0c0ed3373e589940ed666519f02435cf6b4e1a9132a5f3ffe"
+    },
+    "browser/round-08/body-default-76a23a210e.png": {
+      "file": "rating/browser/round-08/body-default-76a23a210e.png",
+      "sha256": "76a23a210e171f8fafaaade08dc102a30f61351bf0581ff18053fe965f086080"
+    },
+    "browser/round-08/body-strip-01-c135d2a1f2.png": {
+      "file": "rating/browser/round-08/body-strip-01-c135d2a1f2.png",
+      "sha256": "c135d2a1f212180bf97f61115ef17e76cf8ddbe0224831d72509159102a715f7"
+    },
+    "browser/round-08/body-strip-02-feb49d1b21.png": {
+      "file": "rating/browser/round-08/body-strip-02-feb49d1b21.png",
+      "sha256": "feb49d1b21fd227d46560c9e50b866d6cc326faafb4ee44b7d0aa54e1400e887"
+    },
+    "browser/round-08/body-strip-03-6559d4c705.png": {
+      "file": "rating/browser/round-08/body-strip-03-6559d4c705.png",
+      "sha256": "6559d4c705e529bb23d8f9574e6d87b4e253298c7d8fe2e2ebb5c262a3f61c99"
+    },
+    "browser/round-08/body-strip-04-49a0ddf16d.png": {
+      "file": "rating/browser/round-08/body-strip-04-49a0ddf16d.png",
+      "sha256": "49a0ddf16dbdd87e62472ed22524969ea5fe78c666307452623659fb49bb9016"
+    },
+    "browser/round-08/body-strip-05-42eac55392.png": {
+      "file": "rating/browser/round-08/body-strip-05-42eac55392.png",
+      "sha256": "42eac55392070b94a673e929138ecaff7648a8f816c049ee217151fb68bed5a0"
+    },
+    "browser/round-08/body-strip-06-474ff6983d.png": {
+      "file": "rating/browser/round-08/body-strip-06-474ff6983d.png",
+      "sha256": "474ff6983da6dbfaf76a1fecc9b8bbcfb034297718e1cf48de36557e4a6a2937"
+    },
+    "browser/round-08/body-strip-07-0c639d3993.png": {
+      "file": "rating/browser/round-08/body-strip-07-0c639d3993.png",
+      "sha256": "0c639d39936f754694dcd139923bd7c783e32773fd721407c05d4545ae5b7c15"
+    },
+    "browser/round-08/body-strip-08-dce70206a7.png": {
+      "file": "rating/browser/round-08/body-strip-08-dce70206a7.png",
+      "sha256": "dce70206a7c84af4401b20483c819ce035c89dd0f95ca84c18e2bd0e5afad4f5"
+    },
+    "browser/round-08/body-strip-09-5ffc57ee5c.png": {
+      "file": "rating/browser/round-08/body-strip-09-5ffc57ee5c.png",
+      "sha256": "5ffc57ee5ccaf45a137e6cf1b7fd19447438bf97a1ecda22ac5d3386192e0c83"
+    },
+    "browser/round-08/body-strip-10-5a9974ab2c.png": {
+      "file": "rating/browser/round-08/body-strip-10-5a9974ab2c.png",
+      "sha256": "5a9974ab2c1143f83bc65aee35253f665c0cea0d41bc6f6d6c465579540084cb"
+    },
+    "browser/round-08/body-strip-11-e3180901bd.png": {
+      "file": "rating/browser/round-08/body-strip-11-e3180901bd.png",
+      "sha256": "e3180901bd4e2ce3eabc579e19547f530a5f7f6677d6454f564f91f551a0f88c"
+    },
+    "browser/round-08/body-strip-12-cff1b0f82b.png": {
+      "file": "rating/browser/round-08/body-strip-12-cff1b0f82b.png",
+      "sha256": "cff1b0f82b0ceb418d7c96e4df98a86ca45a1c4aef15c81c94086dfda2dae795"
+    },
+    "browser/round-08/body-strip-13-39e675e0ed.png": {
+      "file": "rating/browser/round-08/body-strip-13-39e675e0ed.png",
+      "sha256": "39e675e0eda9482d79a5df1554983acde63b0f90a399ddc63fd3de1788ff115f"
+    },
+    "browser/round-08/body-strip-14-90da9e5558.png": {
+      "file": "rating/browser/round-08/body-strip-14-90da9e5558.png",
+      "sha256": "90da9e55588f3f34b6c201121412630bcd7c45861620a23ae83931961ca9aaf4"
+    },
+    "browser/round-08/body-strip-15-336721848f.png": {
+      "file": "rating/browser/round-08/body-strip-15-336721848f.png",
+      "sha256": "336721848f31430ae303144aa3edd07dc55a791952285fd7728a7ea87019808a"
+    },
+    "browser/round-08/body-strip-16-f7de8b0cce.png": {
+      "file": "rating/browser/round-08/body-strip-16-f7de8b0cce.png",
+      "sha256": "f7de8b0cce098ccf348fa291186657ea678ca43b525e766091dbce2b636fc23b"
+    },
+    "browser/round-08/body-strip-17-43f0701b62.png": {
+      "file": "rating/browser/round-08/body-strip-17-43f0701b62.png",
+      "sha256": "43f0701b628da608c20a4a92389d1f092179cb2e34e7229746e32d1b28bf038c"
+    },
+    "browser/round-08/body-strip-18-ba30ae7f97.png": {
+      "file": "rating/browser/round-08/body-strip-18-ba30ae7f97.png",
+      "sha256": "ba30ae7f9750ef0281d90e1cce492b40ba083c34e8f3d40e6c8af0a53baf7571"
+    },
+    "browser/round-08/body-strip-19-f143f0f646.png": {
+      "file": "rating/browser/round-08/body-strip-19-f143f0f646.png",
+      "sha256": "f143f0f646739cc82ea004246816229898b46a53db6b27b0f872ccc9a31bf834"
+    },
+    "browser/round-08/body-strip-20-c81b29b213.png": {
+      "file": "rating/browser/round-08/body-strip-20-c81b29b213.png",
+      "sha256": "c81b29b213966e4f6119e5cf5f9a109d2f5f52b1616fdde5fd4479fa3d2acde1"
+    },
+    "browser/round-08/body3-evidence.json": {
+      "file": "rating/browser/round-08/body3-evidence.json",
+      "sha256": "d91d7466ce9fb362c206c83fbc5c2ee56b0508ed51246cffe1566dd8c3ab4afa"
+    },
+    "browser/round-08/body3.png": {
+      "file": "rating/browser/round-08/body3.png",
+      "sha256": "ff49bb2aaac7719ea8cc76d3dc088a94bb36d7c40f083968dfb5bd493065e9ae"
+    },
+    "browser/round-08/body3-segment-02-31efe2f7d3.png": {
+      "file": "rating/browser/round-08/body3-segment-02-31efe2f7d3.png",
+      "sha256": "31efe2f7d3e667e155cb530bbf87242facf9263d17577b5bbaa4d7dd2ab9140f"
+    },
+    "browser/round-08/body3-segment-03-533b520b05.png": {
+      "file": "rating/browser/round-08/body3-segment-03-533b520b05.png",
+      "sha256": "533b520b05cb828457ff2c51376059b975d84d2d5463574d34634547e20c33e3"
+    },
+    "browser/round-08/body3-segment-04-cffcc9beab.png": {
+      "file": "rating/browser/round-08/body3-segment-04-cffcc9beab.png",
+      "sha256": "cffcc9beaba2be49852c6bbcc430ca345cace7ba7f93ce6d507eb9fd1182295b"
+    },
+    "browser/round-08/body3-segment-05-51b150688f.png": {
+      "file": "rating/browser/round-08/body3-segment-05-51b150688f.png",
+      "sha256": "51b150688f4ad7959d77a3853d68b994740a770e75e119196dbc6319d22a6c74"
+    },
+    "browser/round-08/full-evidence.json": {
+      "file": "rating/browser/round-08/full-evidence.json",
+      "sha256": "b9c3d666eafa17ba3c7eebbf6d4d2b0153b2db9c619465e5e8a114f678c779e2"
+    },
+    "browser/round-08/full.png": {
+      "file": "rating/browser/round-08/full.png",
+      "sha256": "b968eeced8924b79d5b83f267291cfa8c7969386663012fc8c96af1b9e62c248"
+    },
+    "browser/round-08/head2-evidence.json": {
+      "file": "rating/browser/round-08/head2-evidence.json",
+      "sha256": "d32ce18f5e8bfdc9aadcbd8b969229fa228bb5c1d64fae940a52df4d5f2c8029"
+    },
+    "browser/round-08/head2.png": {
+      "file": "rating/browser/round-08/head2.png",
+      "sha256": "4fd18fbab542e1d9bd0797121cbc6645142b09929feff45fa98089dcea20dbdd"
+    },
+    "browser/round-08/head2-segment-02-bcde9b0623.png": {
+      "file": "rating/browser/round-08/head2-segment-02-bcde9b0623.png",
+      "sha256": "bcde9b06234d0b28aa9a3916e327ffd008d8ad78be657c990e37b6644460239e"
+    },
+    "browser/round-08/head2-segment-03-5905196244.png": {
+      "file": "rating/browser/round-08/head2-segment-03-5905196244.png",
+      "sha256": "5905196244065626bdf7a4015b1b1f052c6895573966e4d758f57936c040d605"
+    },
+    "browser/round-08/head2-segment-04-a8c807e33a.png": {
+      "file": "rating/browser/round-08/head2-segment-04-a8c807e33a.png",
+      "sha256": "a8c807e33ae5feeee8dc70c7aead2bdbfb16f1fa9850d5a9cf19916e618d58af"
+    },
+    "browser/round-08/head2-segment-05-f2ed05e6f3.png": {
+      "file": "rating/browser/round-08/head2-segment-05-f2ed05e6f3.png",
+      "sha256": "f2ed05e6f3aa7ee35933da712d9aab3f7d71e2e7a466a7f71086609bd34e634b"
+    },
+    "browser/round-08/upper2-evidence.json": {
+      "file": "rating/browser/round-08/upper2-evidence.json",
+      "sha256": "f159de4292ddf5d6c1c581374cb4768b98f4d53c320eccf353e1bf321d63dad9"
+    },
+    "browser/round-08/upper2.png": {
+      "file": "rating/browser/round-08/upper2.png",
+      "sha256": "ede2bd876b7893d55376b1dabb1eb8d248bfd8e37a624a28acefdd4d3a4459e4"
+    },
+    "browser/round-08/upper2-segment-02-9453afb206.png": {
+      "file": "rating/browser/round-08/upper2-segment-02-9453afb206.png",
+      "sha256": "9453afb206089b9f55a5ef8a3d097156f44f5e93e0fc62bf4bfa7b8997e770e0"
+    },
+    "browser/round-08/upper2-segment-03-4a855b859a.png": {
+      "file": "rating/browser/round-08/upper2-segment-03-4a855b859a.png",
+      "sha256": "4a855b859a4e64dddb191e121bcc3cd0c30a808da74e5dd85f96d21a956f4c89"
+    },
+    "browser/round-08/upper2-segment-04-8b2fec7ba6.png": {
+      "file": "rating/browser/round-08/upper2-segment-04-8b2fec7ba6.png",
+      "sha256": "8b2fec7ba6176eedca3c2ac96b820e50b29f09d123bd81ef7d0a437eac6b412a"
+    },
+    "browser/round-08/upper2-segment-05-b8aaf4a095.png": {
+      "file": "rating/browser/round-08/upper2-segment-05-b8aaf4a095.png",
+      "sha256": "b8aaf4a0950b8d97c2c2750fd711ec8ef87855db952f431b1bc7ddbe03bbb14c"
+    }
+  },
+  "note": "Independent scores only. Color fidelity evaluates corresponding hues, not exact RGB/brightness/saturation. Unreviewed scopes remain pending; native parts/combinations remain user-defined 100.",
+  "ratingsUpdatedAt": "2026-11-10T09:53:21.608Z"
+}

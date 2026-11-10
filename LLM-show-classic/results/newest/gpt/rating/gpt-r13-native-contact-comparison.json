@@ -1,0 +1,46 @@
+{
+  "schema": "classic-independent-native-comparison-v1",
+  "reviewer": "classic_body_judge",
+  "bodyHash": "2dcae6845478f3584cf44bbcdf2071225fa393a483e7ccaeb1fcde12fb2dc31d",
+  "completeHash": "f4ab154e6b33d5170be37e415044f9be7428d349cb1bd7752e22a72128fdea7c",
+  "rows": [
+    {
+      "nativeId": "R02",
+      "nativeSource": "qq-show-classic/outfit/白色天使套装.gif",
+      "sourceRawHash": "53d3241a50f9c95e118d417019d4bc23e72ce078353d7376a91bb2fdcae5e8d8",
+      "nativeCrop": "R02-crop-1x.png",
+      "nativeCropHash": "38c72347fcac05618201c0891412e3ad8045be5904b5831bba1ad1ce3b19e159",
+      "aiRect": {
+        "left": 48,
+        "top": 93,
+        "width": 25,
+        "height": 31
+      },
+      "scale": 6,
+      "limits": [
+        "不能把交叠中的隐藏手指当成完整裸手轮廓",
+        "不能把羽毛或礼裙遮住的肩/胸/腰自行补成原生100"
+      ]
+    },
+    {
+      "nativeId": "R04",
+      "nativeSource": "qq-show-classic/top/斜肩红色毛衣.gif",
+      "sourceRawHash": "7f4a1f95dc7351fedb982b8daeadd1aad101c185cef0caf4e7c4f0924c646fb1",
+      "nativeCrop": "R04-crop-1x.png",
+      "nativeCropHash": "d1feb70b53a34bf175b090854a02da605e3346b498b09e04e4f66a103de024b1",
+      "aiRect": {
+        "left": 80,
+        "top": 94,
+        "width": 40,
+        "height": 33
+      },
+      "scale": 6,
+      "limits": [
+        "没有碗底/云的真实接触证据",
+        "不能照搬袖管覆盖来掩盖自己的裸肘或腕接缝"
+      ]
+    }
+  ],
+  "evidence": "gpt-r13-native-contact-comparison-6x.png",
+  "policy": "Native unchanged100 controls; composite is diagnosis, no new native patch. R02 self overlap is not a real collar pinch. R04 empty palm not cloud contact. No hidden bare anatomy inferred."
+}
