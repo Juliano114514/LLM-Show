@@ -1,17 +1,31 @@
 # LLM Show
 
-QQ秀版本的LLM娘化形象，采用zipzippipe的娘化形象
+Classic 与 Fashion 两套 QQ 秀的前端源码、原生素材、最新冻结结果和评分规则。
 
-## 运行
+| 内容 | Classic | Fashion |
+| --- | --- | --- |
+| 最新七人预览 | [preview.png](LLM-show-classic/preview.png) | [preview.png](LLM-show-fashion/preview.png) |
+| 最新结果与逐人评分 | [newest](LLM-show-classic/results/newest/index.html) | [newest](LLM-show-fashion/results/newest/index.html) |
+| 评分规则 | [rating-rules](LLM-show-classic/rating-rules/README.md) | [rating-rules](LLM-show-fashion/rating-rules/README.md) |
+| 前端源码 | [frontend/classic](frontend/classic/README.md) | [frontend/fashion](frontend/fashion/README.md) |
+| 原生素材 | [qq-show-classic](qq-show-classic/README.md) | [qq-show-fashion](qq-show-fashion/README.md) |
 
-在 LLM-chan-asset 内执行 npm ci 和 npm run dev；npm run build 生成前端构建。
+```text
+frontend/                  共用依赖及 Classic / Fashion 前端
+qq-show-classic/            Classic 原生素材
+qq-show-fashion/            Fashion 原生 SWF、导出素材及来源清单
+LLM-show-classic/
+  preview.png              最新七人预览
+  rating-rules/            评分与验收规则
+  results/newest/          最新冻结结果、源码及评分证据
+LLM-show-fashion/
+  preview.png              最新七人预览
+  rating-rules/            评分与验收规则
+  results/newest/          最新冻结结果、源码及评分证据
+```
 
-此公开仓库是代码与文本规则版本，未包含人物图片、旧 QQ 秀素材、字体或生成的派生图像。启动前须自行取得合法授权的素材，并将符合现有清单契约的资源放入 LLM-chan-asset/public/assets-classic/manifest.json 及其引用路径。缺少素材时页面会显示加载失败与重试，不代表素材已经随开源代码授权。
+两个项目只提交 `results/newest/`、`rating-rules/` 和 `preview.png`。`new`、`previous`、归档、生成工具、`ai-workspace`、原始人设参考和根目录本地导航均保留在本地，由 `.gitignore` 排除。最新冻结结果中的源码和证据按原目录完整保留；评分及待审状态不因提交而改变。部分历史溯源链接指向本地材料，克隆后不可用。
 
-已有合法本地素材的开发者可参考 LLM-chan-asset/CLASSIC_SVG_NOTES.md 与生成工具；生成器依赖未分发的本地输入，并非开箱即用的在线图像服务。安装生成工具依赖：npm ci --prefix LLM-chan-asset/tools/.deps。
+前端在 `frontend` 执行 `npm ci`，再运行 `npm run dev:classic`（5173）或 `npm run dev:fashion`（6187）。交互页面仍依赖本地 `LLM-show-classic/ai-workspace/runtime/` 和 `LLM-show-fashion/ai-workspace/runtime/`；运行资源不在本次提交范围内，完整交互预览需要另备这两个目录。仓库内的 `preview.png` 和最新冻结结果可直接查看。
 
-## 开源与素材边界
-
-通用前端、通用像素转换与栅格化工具按 LICENSE 的 MIT 许可提供。角色造型生成脚本、第三方设计规则中的引文/参考及第三方角色权利不在该许可授权范围内；详见 COMPLIANCE.md 与原有署名文件。
-
-ai-girls-atlas、qq-show-classic、所有生成图片/SVG、截图、字体、资源压缩包、依赖目录与构建产物均不提交。转成 SVG、AI 重绘或添加署名不自动产生对原素材的再分发权利。
+根目录 [LICENSE](LICENSE) 的 MIT 授权仅覆盖原创通用前端代码，不涵盖第三方素材、字体、角色设计、商标、引文及派生美术；它们的来源和权利声明仍分别适用。
