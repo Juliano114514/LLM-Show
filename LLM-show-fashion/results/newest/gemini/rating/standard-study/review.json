@@ -1,0 +1,275 @@
+{
+  "protocol": "fashion-standard-body-98-v1",
+  "reviewer": "/root/fashion_judge",
+  "character": "gemini",
+  "round": 39,
+  "inputHash": "46c4e5efdfca296848e569a9744f9ef73cfed2abc1e386b3f99dd9711f0b2868",
+  "nativeHash": "d68eec334e39f69a89bd6c05fb8c91a56a781df2a353bcc97ceb59ac3d34fabc",
+  "renderModelHash": "bd645ead9f9041972be16a1c120cef2046c9b524ae3c311505e501af29685d28",
+  "seed": "9c5e924fd7eed5dd3b28816c32ca506197ab565f8af5586e",
+  "nativeCalibration": 100,
+  "ratingRules": [
+    {
+      "file": "SCORING.md",
+      "sha256": "90eb3fb599cf67f9710811d6ae42a7a55f268fee82e6ba8f534ff5488745a7f0"
+    },
+    {
+      "file": "PROCESS.md",
+      "sha256": "b0129fb3e254877b48fca1aad3e7ddac223f5f82cc68828426eb170acf26f885"
+    },
+    {
+      "file": "ITERATION_RULES.md",
+      "sha256": "31e3ea312cdcc29e398c50703934e2d8da257f593ffd714a7f6b523c433e727d"
+    },
+    {
+      "file": "POSE_INTERFACE.md",
+      "sha256": "c544aa7291ffd3793ced115d4afbac82576092d839032791bbd23bd97068114e"
+    },
+    {
+      "file": "STANDARD_BODY_REVIEW.md",
+      "sha256": "c5d39c478c5e1a72e1646960461ed5b051f69c0deef685afac7d2d2dd69caec1"
+    }
+  ],
+  "studyManifestSha256": "e922a0b311c0c55380a4ffa19a98c96d26cd7bdeabc0856c7c204a25989209ff",
+  "integrationScore": 98,
+  "scoreScope": "仅当前完整6x可见关节/局部对照的partial分；不称完整标准98通过",
+  "integrationBreakdown": {
+    "proportion": 20,
+    "linework": 15,
+    "material": 24,
+    "connection": 29,
+    "whole": 10
+  },
+  "poseConsistent": true,
+  "pass": false,
+  "coverage": {
+    "complete": false,
+    "fixedViews": 0,
+    "plannedFixedViews": 7,
+    "sourceReferences": 0,
+    "plannedSourceReferences": 20,
+    "detail6xComplete": true
+  },
+  "reviewedViews": [],
+  "reviewedReferenceIds": [],
+  "reviewedDetailViews": [
+    "standard-mannequin-6x.png"
+  ],
+  "observations": [
+    {
+      "part": "可见接合",
+      "judgement": "新腕根保护，完整裸体颈双肩/双肘腕/腰髋/交叠膝踝无确认新回归；原完整腿paint仍100。"
+    }
+  ],
+  "issues": [],
+  "poseAudit": {
+    "reason": "点面、外指、交叉屈膝和一脚较抬的主要轮廓神似，头倾/手距细差仅动作18/20，不代替材料融合判断。",
+    "identityMotionScore": 18,
+    "hiddenRegions": "标准JPG衣裙/长发遮住的关节未知；仅裸素体可见接合实际检查。"
+  },
+  "detailJointAudit": [
+    {
+      "region": "颈双肩",
+      "judgement": "新腕根保护，完整裸体颈双肩/双肘腕/腰髋/交叠膝踝无确认新回归；原完整腿paint仍100。",
+      "file": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gemini/round-39/standard-study/standard-mannequin-6x.png",
+      "sha256": "3f0de430faf1eb17037133aaf9b125d885a8c26d716131fb8dc5b9fb4497bc0f"
+    },
+    {
+      "region": "双肘",
+      "judgement": "新腕根保护，完整裸体颈双肩/双肘腕/腰髋/交叠膝踝无确认新回归；原完整腿paint仍100。",
+      "file": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gemini/round-39/standard-study/standard-mannequin-6x.png",
+      "sha256": "3f0de430faf1eb17037133aaf9b125d885a8c26d716131fb8dc5b9fb4497bc0f"
+    },
+    {
+      "region": "双腕/掌根",
+      "judgement": "新腕根保护，完整裸体颈双肩/双肘腕/腰髋/交叠膝踝无确认新回归；原完整腿paint仍100。",
+      "file": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gemini/round-39/standard-study/standard-mannequin-6x.png",
+      "sha256": "3f0de430faf1eb17037133aaf9b125d885a8c26d716131fb8dc5b9fb4497bc0f"
+    },
+    {
+      "region": "腰髋",
+      "judgement": "新腕根保护，完整裸体颈双肩/双肘腕/腰髋/交叠膝踝无确认新回归；原完整腿paint仍100。",
+      "file": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gemini/round-39/standard-study/standard-mannequin-6x.png",
+      "sha256": "3f0de430faf1eb17037133aaf9b125d885a8c26d716131fb8dc5b9fb4497bc0f"
+    },
+    {
+      "region": "双膝/双踝",
+      "judgement": "新腕根保护，完整裸体颈双肩/双肘腕/腰髋/交叠膝踝无确认新回归；原完整腿paint仍100。",
+      "file": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gemini/round-39/standard-study/standard-mannequin-6x.png",
+      "sha256": "3f0de430faf1eb17037133aaf9b125d885a8c26d716131fb8dc5b9fb4497bc0f"
+    }
+  ],
+  "referenceComparisons": [],
+  "evidence": [
+    {
+      "file": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gemini/round-39/standard-study/standard-mannequin-6x.png",
+      "sha256": "3f0de430faf1eb17037133aaf9b125d885a8c26d716131fb8dc5b9fb4497bc0f"
+    }
+  ],
+  "browserAudit": {
+    "ownEmbeddedBrowserUsed": false,
+    "presenter": "/root",
+    "independentScreenshotReviewer": "/root/fashion_judge",
+    "manifest": {
+      "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/r39-browser-manifest.json",
+      "sha256": "39ce2072b73df18404689b501e173e47c1e1789507aec1073d29a79e6ccdc747"
+    },
+    "independentLedger": {
+      "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/reviews/20261110/r39-browser-independent-review.json",
+      "sha256": "a949c65f71c4969ae53d7c925c696120cd5afadecac760facf1b41e068010113"
+    },
+    "actualMixedCaseCount": 5,
+    "identityBrowserEvidenceComplete": false,
+    "method": "实际root IAB冻结SVG截图由独立评委逐张看；只记录实际完整可辨认的case，失败/重复不凑覆盖。",
+    "screenshots": [
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gemini/group-57-focus-0-standard-detail-viewport.jpg",
+        "sha256": "7af3b18b3747590c2263e07a46c98c833b1bc5ef7426dd758a6fb1fef67228d6",
+        "group": 57,
+        "focus": 0,
+        "caseIds": [
+          "standard--detail-6x--strip-0"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gemini/group-57-focus-1-standard-detail-viewport.jpg",
+        "sha256": "c2fbb3c785e528fe4a50958dce67e50641c7866ed0b12c46def2210defeacb96",
+        "group": 57,
+        "focus": 1,
+        "caseIds": [
+          "standard--detail-6x--strip-1"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gemini/group-57-focus-2-standard-detail-viewport.jpg",
+        "sha256": "e15c1bb233992ceac3d765f58ee01375f569807110842aeb589814cb03633c45",
+        "group": 57,
+        "focus": 2,
+        "caseIds": [
+          "standard--detail-6x--strip-2"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gemini/group-00-focus-0-single-viewport.jpg",
+        "sha256": "913feda31eeca14de1cf141057e4a1a2879b8bc17e52609b6d00eb3e99ae8c10",
+        "group": 0,
+        "focus": 0,
+        "caseIds": [
+          "gemini--r39--back--n1"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gemini/group-00-focus-1-single-viewport.jpg",
+        "sha256": "13438d1e46cdaaab93fb8bec639b0e7bbcb2315f980cd7d5b3915365ebc6b086",
+        "group": 0,
+        "focus": 1,
+        "caseIds": [
+          "gemini--r39--back--n2"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gemini/group-00-focus-2-single-viewport.jpg",
+        "sha256": "0ff33aa02148ac4c2a3c7e997f1dd185d27efcebc0cc4e2421b2e539bd9d3386",
+        "group": 0,
+        "focus": 2,
+        "caseIds": [
+          "gemini--r39--back--n3"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gemini/group-00-focus-3-single-viewport.jpg",
+        "sha256": "c8350d1fb1d80198d000b537dccede60c1abb1b2ab5d2648505e334771e17380",
+        "group": 0,
+        "focus": 3,
+        "caseIds": [
+          "gemini--r39--back--n4"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gemini/group-00-focus-4-single-viewport.jpg",
+        "sha256": "ffd05c403e63788588e48a867941fb775a16e522ab34b8ef66690e6274cdaf55",
+        "group": 0,
+        "focus": 4,
+        "caseIds": [
+          "gemini--r39--back--n5"
+        ]
+      }
+    ]
+  },
+  "browserStandardEvidence": [
+    {
+      "group": 57,
+      "focus": 0,
+      "part": "1/3",
+      "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gemini/group-57-focus-0-standard-detail-viewport.jpg",
+      "sha256": "7af3b18b3747590c2263e07a46c98c833b1bc5ef7426dd758a6fb1fef67228d6",
+      "caseIds": [
+        "standard--detail-6x--strip-0"
+      ]
+    },
+    {
+      "group": 57,
+      "focus": 1,
+      "part": "2/3",
+      "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gemini/group-57-focus-1-standard-detail-viewport.jpg",
+      "sha256": "c2fbb3c785e528fe4a50958dce67e50641c7866ed0b12c46def2210defeacb96",
+      "caseIds": [
+        "standard--detail-6x--strip-1"
+      ]
+    },
+    {
+      "group": 57,
+      "focus": 2,
+      "part": "3/3",
+      "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gemini/group-57-focus-2-standard-detail-viewport.jpg",
+      "sha256": "e15c1bb233992ceac3d765f58ee01375f569807110842aeb589814cb03633c45",
+      "caseIds": [
+        "standard--detail-6x--strip-2"
+      ]
+    }
+  ],
+  "colorAudit": {
+    "rule": "对应部位只核相近色相，不扣hex/明暗明度/饱和度/配色面积/渐变范围；中性色不因灰阶深浅扣。",
+    "viewed": [
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/runtime/review-rounds/round-39/assets/ai/gemini/v-46c4e5efdfca2968/reference.jpg",
+        "sha256": "1353cf80c62b1841f0b59671a693aef945a297c586c9ad32f1a36efc5e3e15ab",
+        "method": "实际离线view_image完整JPG；IAB参考图失败未计覆盖"
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gemini/round-39/reference-notes.md",
+        "sha256": "4da2c90a37b6ff34691849aaa7a60eba53e1c9f87dc7fdd046f227c0aa9ce9a1",
+        "method": "当前冻结MD完整阅读，所选ZipZipPipe初始正常比例版本"
+      }
+    ],
+    "parts": [
+      {
+        "part": "顶发/眼",
+        "hueClose": true,
+        "hueDeduction": 0,
+        "judgement": "蓝紫上发与粉紫/金黄异色瞳对应接近。"
+      },
+      {
+        "part": "侧后下发/尾",
+        "hueClose": true,
+        "hueDeduction": 0,
+        "judgement": "对应紫/粉紫端与蓝紫根为近色相，不按渐变范围、面积、明暗/饱和度扣；尾97属于转面和毛向接合。"
+      },
+      {
+        "part": "耳/衣鞋/星饰",
+        "hueClose": true,
+        "hueDeduction": 0,
+        "judgement": "蓝紫耳、浅内绒、蓝靛紫白衣鞋和金边星饰对应相近。"
+      }
+    ],
+    "hueDeduction": 0,
+    "coreHueFailure": false
+  },
+  "limitations": [
+    "本轮用户明确39评完即停；不创建40/41、不继续艺术返修。",
+    "246只审5，未审241保持未审，不因已看98或截止凑整套通过。",
+    "标准覆盖：固定视图0/7、真实原SWF 0/20；6x补充不并入7/20或246。",
+    "原生组件/组合恒100；只对AI重组接面/材质按自身证据判断，隐藏区域未知。",
+    "IAB身份参考图/完整case取证失败已排除；身份90仅离线辅助，不表述浏览器身份验收通过。"
+  ]
+}

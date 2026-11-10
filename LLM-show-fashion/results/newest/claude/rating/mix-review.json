@@ -1,0 +1,755 @@
+{
+  "protocol": "fashion-react-mix-98-90-v2",
+  "reviewer": "/root/fashion_judge",
+  "character": "claude",
+  "round": 39,
+  "inputHash": "a6327a6af264f33aad11ad5bd5e787f429e11a4b57352cce35363e851a37ab6e",
+  "nativeHash": "d68eec334e39f69a89bd6c05fb8c91a56a781df2a353bcc97ceb59ac3d34fabc",
+  "renderModelHash": "bd645ead9f9041972be16a1c120cef2046c9b524ae3c311505e501af29685d28",
+  "seed": "9c5e924fd7eed5dd3b28816c32ca506197ab565f8af5586e",
+  "nativeCalibration": 100,
+  "ratingRules": [
+    {
+      "file": "SCORING.md",
+      "sha256": "90eb3fb599cf67f9710811d6ae42a7a55f268fee82e6ba8f534ff5488745a7f0"
+    },
+    {
+      "file": "PROCESS.md",
+      "sha256": "b0129fb3e254877b48fca1aad3e7ddac223f5f82cc68828426eb170acf26f885"
+    },
+    {
+      "file": "ITERATION_RULES.md",
+      "sha256": "31e3ea312cdcc29e398c50703934e2d8da257f593ffd714a7f6b523c433e727d"
+    },
+    {
+      "file": "POSE_INTERFACE.md",
+      "sha256": "c544aa7291ffd3793ced115d4afbac82576092d839032791bbd23bd97068114e"
+    },
+    {
+      "file": "STANDARD_BODY_REVIEW.md",
+      "sha256": "c5d39c478c5e1a72e1646960461ed5b051f69c0deef685afac7d2d2dd69caec1"
+    }
+  ],
+  "automaticScores": false,
+  "reviewStage": "final-partial-after-user-stop-at-39",
+  "integration": {
+    "score": 98,
+    "threshold": 98,
+    "pass": false,
+    "caseScores": [
+      {
+        "caseId": "claude--r39--all-ai",
+        "score": 98,
+        "reason": "旧R34屏右开楔、屏左自绘闭合肩帽叠436线均已解除，裸肉面连续；拇指U仍按真实掌结构，不误判环套。其他可见肘腕/腰髋/膝踝未确认新断面。 当前全套可见衣料/发/手物和其他层连接完整，98；此单例不能外推剩余矩阵。",
+        "evidence": {
+          "sheet": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/claude/group-49-focus-0-all-ai-viewport.jpg",
+          "sheetSha256": "aeb21340525143551a119a2856df04d7ea7b6273f7ea2d77a82ca4723613545e",
+          "browserSourceURL": "http://127.0.0.1:6187/browser-audit.html?round=39&character=claude&group=49&focus=0",
+          "browserGroup": 49,
+          "browserFocus": 0,
+          "nativePngSha256": "681fddb1eb0c084bc05a282117c12dbbb142f736e7da8ee3d956e2068a49eb90",
+          "aiPngSha256": "df34d1c027f75ba034e28fed0234b9d01ed6415d219af0cc2423c9f1ef7ab535",
+          "native": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/claude/round-39/cases/claude--r39--all-ai-native.png",
+          "ai": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/claude/round-39/cases/claude--r39--all-ai.png",
+          "inputHash": "a6327a6af264f33aad11ad5bd5e787f429e11a4b57352cce35363e851a37ab6e",
+          "selectedLayers": [
+            {
+              "key": "back",
+              "src": "/review-rounds/round-39/assets/ai/claude/v-a6327a6af264f33a/parts/back.svg",
+              "sha256": "77d8396c64816a31fc9e2c14301ed6b7f1b64f5500a32f37a968bafef01fa4a1",
+              "transform": null
+            },
+            {
+              "key": "back-hair",
+              "src": "/review-rounds/round-39/assets/ai/claude/v-a6327a6af264f33a/parts/back-hair.svg",
+              "sha256": "19edb8e9b7aac1a8b50e30c010661b5f57bdc7ef202e1cb3256f0f21f31eb934",
+              "transform": null
+            },
+            {
+              "key": "body",
+              "src": "/review-rounds/round-39/assets/ai/claude/v-a6327a6af264f33a/parts/body.svg",
+              "sha256": "416708651d5a5d10d3247b1597caf4fef6ea2f0c284e2990fe222d03b6be7be5",
+              "transform": null
+            },
+            {
+              "key": "shoes",
+              "src": "/review-rounds/round-39/assets/ai/claude/v-a6327a6af264f33a/parts/shoes.svg",
+              "sha256": "fa642215dd03724b1e9edd7d09c48cd753c1bff2bb9129b9740eb24355f14da9",
+              "transform": null
+            },
+            {
+              "key": "bottom",
+              "src": "/review-rounds/round-39/assets/ai/claude/v-a6327a6af264f33a/parts/bottom.svg",
+              "sha256": "873c027713ec0eab4e52d7e1f77768781fb66ad8c72403d74e86d4932fa47ffa",
+              "transform": null
+            },
+            {
+              "key": "top",
+              "src": "/review-rounds/round-39/assets/ai/claude/v-a6327a6af264f33a/parts/top.svg",
+              "sha256": "4aeafbd7373935495918adad70a777f151745b97aa3474f2435ea3a3bb822187",
+              "transform": null
+            },
+            {
+              "key": "face",
+              "src": "/review-rounds/round-39/assets/ai/claude/v-a6327a6af264f33a/parts/face.svg",
+              "sha256": "d05a9029acf1f4ac1dab40a1792976f804704876e0ce84fb8b8028d735aab3d6",
+              "transform": null
+            },
+            {
+              "key": "features",
+              "src": "/review-rounds/round-39/assets/ai/claude/v-a6327a6af264f33a/parts/features.svg",
+              "sha256": "8b9e87bab574a53e257624664dd7bb9e539d2b3b42ffb30ef127b6dde82ef8b3",
+              "transform": null
+            },
+            {
+              "key": "front-hair",
+              "src": "/review-rounds/round-39/assets/ai/claude/v-a6327a6af264f33a/parts/front-hair.svg",
+              "sha256": "612e7c8922c9e9e56014c50f35dab85644fbf87dbabc97dfe07dacb9d54fce35",
+              "transform": null
+            },
+            {
+              "key": "headwear",
+              "src": "/review-rounds/round-39/assets/ai/claude/v-a6327a6af264f33a/parts/headwear.svg",
+              "sha256": "3c1fe3bf53b1320cc613e0c71f09927dd265e08e3e0a3e2215cfa5f647d8281f",
+              "transform": null
+            },
+            {
+              "key": "hands",
+              "src": "/review-rounds/round-39/assets/ai/claude/v-a6327a6af264f33a/parts/hands.svg",
+              "sha256": "f13a65ebe4b003e593ba498806f933e71f617a5c4712ee9ee778826b0eb047a7",
+              "transform": null
+            },
+            {
+              "key": "prop",
+              "src": "/review-rounds/round-39/assets/ai/claude/v-a6327a6af264f33a/parts/prop.svg",
+              "sha256": "de0ab2450bdd8e3342eb3fbd518366c8cd588d0a5d6e0eab601606699f9d1013",
+              "transform": null
+            },
+            {
+              "key": "fingers",
+              "src": "/review-rounds/round-39/assets/ai/claude/v-a6327a6af264f33a/parts/fingers.svg",
+              "sha256": "6565d77f44e066651983aa6efd4fb2edcca83f3cd48747c76d28c993f2859633",
+              "transform": null
+            },
+            {
+              "key": "effect",
+              "src": "/review-rounds/round-39/assets/ai/claude/v-a6327a6af264f33a/parts/effect.svg",
+              "sha256": "77d8396c64816a31fc9e2c14301ed6b7f1b64f5500a32f37a968bafef01fa4a1",
+              "transform": null
+            }
+          ],
+          "use": "实际视觉主证为root IAB截图；PNG只绑定冻结输出。"
+        }
+      }
+    ],
+    "sweepCaseScores": [],
+    "sweepCoverage": {
+      "reviewedSlots": [],
+      "plannedSlots": 21,
+      "complete": false,
+      "reason": "此次是停止迭代后的定向partial审阅；未审首扫槽不填分。"
+    },
+    "coverage": {
+      "reviewed": 1,
+      "planned": 246,
+      "complete": false,
+      "unreviewed": 245,
+      "scope": "本轮只签有效实际浏览器case；未审单件/相邻/多AI保持空。"
+    },
+    "allReviewedAtLeast98": true,
+    "unreviewedCaseIds": [
+      "claude--r39--back--n1",
+      "claude--r39--back--n2",
+      "claude--r39--back--n3",
+      "claude--r39--back--n4",
+      "claude--r39--back--n5",
+      "claude--r39--back-hair--n1",
+      "claude--r39--back-hair--n2",
+      "claude--r39--back-hair--n3",
+      "claude--r39--back-hair--n4",
+      "claude--r39--back-hair--n5",
+      "claude--r39--body--n1",
+      "claude--r39--body--n2",
+      "claude--r39--body--n3",
+      "claude--r39--body--n4",
+      "claude--r39--body--n5",
+      "claude--r39--shoes--n1",
+      "claude--r39--shoes--n2",
+      "claude--r39--shoes--n3",
+      "claude--r39--shoes--n4",
+      "claude--r39--shoes--n5",
+      "claude--r39--bottom--n1",
+      "claude--r39--bottom--n2",
+      "claude--r39--bottom--n3",
+      "claude--r39--bottom--n4",
+      "claude--r39--bottom--n5",
+      "claude--r39--top--n1",
+      "claude--r39--top--n2",
+      "claude--r39--top--n3",
+      "claude--r39--top--n4",
+      "claude--r39--top--n5",
+      "claude--r39--face--n1",
+      "claude--r39--face--n2",
+      "claude--r39--face--n3",
+      "claude--r39--face--n4",
+      "claude--r39--face--n5",
+      "claude--r39--features--n1",
+      "claude--r39--features--n2",
+      "claude--r39--features--n3",
+      "claude--r39--features--n4",
+      "claude--r39--features--n5",
+      "claude--r39--front-hair--n1",
+      "claude--r39--front-hair--n2",
+      "claude--r39--front-hair--n3",
+      "claude--r39--front-hair--n4",
+      "claude--r39--front-hair--n5",
+      "claude--r39--headwear--n1",
+      "claude--r39--headwear--n2",
+      "claude--r39--headwear--n3",
+      "claude--r39--headwear--n4",
+      "claude--r39--headwear--n5",
+      "claude--r39--hands--n1",
+      "claude--r39--hands--n2",
+      "claude--r39--hands--n3",
+      "claude--r39--hands--n4",
+      "claude--r39--hands--n5",
+      "claude--r39--prop--n1",
+      "claude--r39--prop--n2",
+      "claude--r39--prop--n3",
+      "claude--r39--prop--n4",
+      "claude--r39--prop--n5",
+      "claude--r39--fingers--n1",
+      "claude--r39--fingers--n2",
+      "claude--r39--fingers--n3",
+      "claude--r39--fingers--n4",
+      "claude--r39--fingers--n5",
+      "claude--r39--effect--n1",
+      "claude--r39--effect--n2",
+      "claude--r39--effect--n3",
+      "claude--r39--effect--n4",
+      "claude--r39--effect--n5",
+      "claude--r39--body_rear-leg--n1",
+      "claude--r39--body_rear-leg--n2",
+      "claude--r39--body_rear-leg--n3",
+      "claude--r39--body_rear-leg--n4",
+      "claude--r39--body_rear-leg--n5",
+      "claude--r39--body_front-leg--n1",
+      "claude--r39--body_front-leg--n2",
+      "claude--r39--body_front-leg--n3",
+      "claude--r39--body_front-leg--n4",
+      "claude--r39--body_front-leg--n5",
+      "claude--r39--body_torso--n1",
+      "claude--r39--body_torso--n2",
+      "claude--r39--body_torso--n3",
+      "claude--r39--body_torso--n4",
+      "claude--r39--body_torso--n5",
+      "claude--r39--body_neck--n1",
+      "claude--r39--body_neck--n2",
+      "claude--r39--body_neck--n3",
+      "claude--r39--body_neck--n4",
+      "claude--r39--body_neck--n5",
+      "claude--r39--body_left-arm--n1",
+      "claude--r39--body_left-arm--n2",
+      "claude--r39--body_left-arm--n3",
+      "claude--r39--body_left-arm--n4",
+      "claude--r39--body_left-arm--n5",
+      "claude--r39--body_right-arm--n1",
+      "claude--r39--body_right-arm--n2",
+      "claude--r39--body_right-arm--n3",
+      "claude--r39--body_right-arm--n4",
+      "claude--r39--body_right-arm--n5",
+      "claude--r39--body_hands--n1",
+      "claude--r39--body_hands--n2",
+      "claude--r39--body_hands--n3",
+      "claude--r39--body_hands--n4",
+      "claude--r39--body_hands--n5",
+      "claude--r39--pair-body_top--n1",
+      "claude--r39--pair-body_top--n2",
+      "claude--r39--pair-body_top--n3",
+      "claude--r39--pair-body_top--n4",
+      "claude--r39--pair-body_top--n5",
+      "claude--r39--pair-body_bottom--n1",
+      "claude--r39--pair-body_bottom--n2",
+      "claude--r39--pair-body_bottom--n3",
+      "claude--r39--pair-body_bottom--n4",
+      "claude--r39--pair-body_bottom--n5",
+      "claude--r39--pair-body_shoes--n1",
+      "claude--r39--pair-body_shoes--n2",
+      "claude--r39--pair-body_shoes--n3",
+      "claude--r39--pair-body_shoes--n4",
+      "claude--r39--pair-body_shoes--n5",
+      "claude--r39--pair-top_hands--n1",
+      "claude--r39--pair-top_hands--n2",
+      "claude--r39--pair-top_hands--n3",
+      "claude--r39--pair-top_hands--n4",
+      "claude--r39--pair-top_hands--n5",
+      "claude--r39--pair-hands_prop--n1",
+      "claude--r39--pair-hands_prop--n2",
+      "claude--r39--pair-hands_prop--n3",
+      "claude--r39--pair-hands_prop--n4",
+      "claude--r39--pair-hands_prop--n5",
+      "claude--r39--pair-prop_fingers--n1",
+      "claude--r39--pair-prop_fingers--n2",
+      "claude--r39--pair-prop_fingers--n3",
+      "claude--r39--pair-prop_fingers--n4",
+      "claude--r39--pair-prop_fingers--n5",
+      "claude--r39--pair-face_front-hair--n1",
+      "claude--r39--pair-face_front-hair--n2",
+      "claude--r39--pair-face_front-hair--n3",
+      "claude--r39--pair-face_front-hair--n4",
+      "claude--r39--pair-face_front-hair--n5",
+      "claude--r39--pair-back-hair_front-hair--n1",
+      "claude--r39--pair-back-hair_front-hair--n2",
+      "claude--r39--pair-back-hair_front-hair--n3",
+      "claude--r39--pair-back-hair_front-hair--n4",
+      "claude--r39--pair-back-hair_front-hair--n5",
+      "claude--r39--pair-top_bottom--n1",
+      "claude--r39--pair-top_bottom--n2",
+      "claude--r39--pair-top_bottom--n3",
+      "claude--r39--pair-top_bottom--n4",
+      "claude--r39--pair-top_bottom--n5",
+      "claude--r39--pair-headwear_front-hair--n1",
+      "claude--r39--pair-headwear_front-hair--n2",
+      "claude--r39--pair-headwear_front-hair--n3",
+      "claude--r39--pair-headwear_front-hair--n4",
+      "claude--r39--pair-headwear_front-hair--n5",
+      "claude--r39--multi-2-1--n1",
+      "claude--r39--multi-2-1--n2",
+      "claude--r39--multi-2-1--n3",
+      "claude--r39--multi-2-1--n4",
+      "claude--r39--multi-2-1--n5",
+      "claude--r39--multi-2-2--n1",
+      "claude--r39--multi-2-2--n2",
+      "claude--r39--multi-2-2--n3",
+      "claude--r39--multi-2-2--n4",
+      "claude--r39--multi-2-2--n5",
+      "claude--r39--multi-3-1--n1",
+      "claude--r39--multi-3-1--n2",
+      "claude--r39--multi-3-1--n3",
+      "claude--r39--multi-3-1--n4",
+      "claude--r39--multi-3-1--n5",
+      "claude--r39--multi-3-2--n1",
+      "claude--r39--multi-3-2--n2",
+      "claude--r39--multi-3-2--n3",
+      "claude--r39--multi-3-2--n4",
+      "claude--r39--multi-3-2--n5",
+      "claude--r39--multi-4-1--n1",
+      "claude--r39--multi-4-1--n2",
+      "claude--r39--multi-4-1--n3",
+      "claude--r39--multi-4-1--n4",
+      "claude--r39--multi-4-1--n5",
+      "claude--r39--multi-4-2--n1",
+      "claude--r39--multi-4-2--n2",
+      "claude--r39--multi-4-2--n3",
+      "claude--r39--multi-4-2--n4",
+      "claude--r39--multi-4-2--n5",
+      "claude--r39--multi-6-1--n1",
+      "claude--r39--multi-6-1--n2",
+      "claude--r39--multi-6-1--n3",
+      "claude--r39--multi-6-1--n4",
+      "claude--r39--multi-6-1--n5",
+      "claude--r39--multi-6-2--n1",
+      "claude--r39--multi-6-2--n2",
+      "claude--r39--multi-6-2--n3",
+      "claude--r39--multi-6-2--n4",
+      "claude--r39--multi-6-2--n5",
+      "claude--r39--multi-8-1--n1",
+      "claude--r39--multi-8-1--n2",
+      "claude--r39--multi-8-1--n3",
+      "claude--r39--multi-8-1--n4",
+      "claude--r39--multi-8-1--n5",
+      "claude--r39--multi-8-2--n1",
+      "claude--r39--multi-8-2--n2",
+      "claude--r39--multi-8-2--n3",
+      "claude--r39--multi-8-2--n4",
+      "claude--r39--multi-8-2--n5",
+      "claude--r39--multi-10-1--n1",
+      "claude--r39--multi-10-1--n2",
+      "claude--r39--multi-10-1--n3",
+      "claude--r39--multi-10-1--n4",
+      "claude--r39--multi-10-1--n5",
+      "claude--r39--multi-10-2--n1",
+      "claude--r39--multi-10-2--n2",
+      "claude--r39--multi-10-2--n3",
+      "claude--r39--multi-10-2--n4",
+      "claude--r39--multi-10-2--n5",
+      "claude--r39--multi-12-1--n1",
+      "claude--r39--multi-12-1--n2",
+      "claude--r39--multi-12-1--n3",
+      "claude--r39--multi-12-1--n4",
+      "claude--r39--multi-12-1--n5",
+      "claude--r39--multi-12-2--n1",
+      "claude--r39--multi-12-2--n2",
+      "claude--r39--multi-12-2--n3",
+      "claude--r39--multi-12-2--n4",
+      "claude--r39--multi-12-2--n5",
+      "claude--r39--multi-13-1--n1",
+      "claude--r39--multi-13-1--n2",
+      "claude--r39--multi-13-1--n3",
+      "claude--r39--multi-13-1--n4",
+      "claude--r39--multi-13-1--n5",
+      "claude--r39--multi-13-2--n1",
+      "claude--r39--multi-13-2--n2",
+      "claude--r39--multi-13-2--n3",
+      "claude--r39--multi-13-2--n4",
+      "claude--r39--multi-13-2--n5",
+      "claude--r39--multi-anatomy-3--n1",
+      "claude--r39--multi-anatomy-3--n2",
+      "claude--r39--multi-anatomy-3--n3",
+      "claude--r39--multi-anatomy-3--n4",
+      "claude--r39--multi-anatomy-3--n5",
+      "claude--r39--multi-anatomy-5--n1",
+      "claude--r39--multi-anatomy-5--n2",
+      "claude--r39--multi-anatomy-5--n3",
+      "claude--r39--multi-anatomy-5--n4",
+      "claude--r39--multi-anatomy-5--n5"
+    ],
+    "componentScores": [],
+    "adjacentPairScores": [],
+    "multiScores": [],
+    "fullSet": {
+      "caseId": "claude--r39--all-ai",
+      "score": 98,
+      "reason": "旧R34屏右开楔、屏左自绘闭合肩帽叠436线均已解除，裸肉面连续；拇指U仍按真实掌结构，不误判环套。其他可见肘腕/腰髋/膝踝未确认新断面。 当前全套可见衣料/发/手物和其他层连接完整，98；此单例不能外推剩余矩阵。",
+      "evidence": {
+        "sheet": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/claude/group-49-focus-0-all-ai-viewport.jpg",
+        "sheetSha256": "aeb21340525143551a119a2856df04d7ea7b6273f7ea2d77a82ca4723613545e",
+        "browserSourceURL": "http://127.0.0.1:6187/browser-audit.html?round=39&character=claude&group=49&focus=0",
+        "browserGroup": 49,
+        "browserFocus": 0,
+        "nativePngSha256": "681fddb1eb0c084bc05a282117c12dbbb142f736e7da8ee3d956e2068a49eb90",
+        "aiPngSha256": "df34d1c027f75ba034e28fed0234b9d01ed6415d219af0cc2423c9f1ef7ab535",
+        "native": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/claude/round-39/cases/claude--r39--all-ai-native.png",
+        "ai": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/claude/round-39/cases/claude--r39--all-ai.png",
+        "inputHash": "a6327a6af264f33aad11ad5bd5e787f429e11a4b57352cce35363e851a37ab6e",
+        "selectedLayers": [
+          {
+            "key": "back",
+            "src": "/review-rounds/round-39/assets/ai/claude/v-a6327a6af264f33a/parts/back.svg",
+            "sha256": "77d8396c64816a31fc9e2c14301ed6b7f1b64f5500a32f37a968bafef01fa4a1",
+            "transform": null
+          },
+          {
+            "key": "back-hair",
+            "src": "/review-rounds/round-39/assets/ai/claude/v-a6327a6af264f33a/parts/back-hair.svg",
+            "sha256": "19edb8e9b7aac1a8b50e30c010661b5f57bdc7ef202e1cb3256f0f21f31eb934",
+            "transform": null
+          },
+          {
+            "key": "body",
+            "src": "/review-rounds/round-39/assets/ai/claude/v-a6327a6af264f33a/parts/body.svg",
+            "sha256": "416708651d5a5d10d3247b1597caf4fef6ea2f0c284e2990fe222d03b6be7be5",
+            "transform": null
+          },
+          {
+            "key": "shoes",
+            "src": "/review-rounds/round-39/assets/ai/claude/v-a6327a6af264f33a/parts/shoes.svg",
+            "sha256": "fa642215dd03724b1e9edd7d09c48cd753c1bff2bb9129b9740eb24355f14da9",
+            "transform": null
+          },
+          {
+            "key": "bottom",
+            "src": "/review-rounds/round-39/assets/ai/claude/v-a6327a6af264f33a/parts/bottom.svg",
+            "sha256": "873c027713ec0eab4e52d7e1f77768781fb66ad8c72403d74e86d4932fa47ffa",
+            "transform": null
+          },
+          {
+            "key": "top",
+            "src": "/review-rounds/round-39/assets/ai/claude/v-a6327a6af264f33a/parts/top.svg",
+            "sha256": "4aeafbd7373935495918adad70a777f151745b97aa3474f2435ea3a3bb822187",
+            "transform": null
+          },
+          {
+            "key": "face",
+            "src": "/review-rounds/round-39/assets/ai/claude/v-a6327a6af264f33a/parts/face.svg",
+            "sha256": "d05a9029acf1f4ac1dab40a1792976f804704876e0ce84fb8b8028d735aab3d6",
+            "transform": null
+          },
+          {
+            "key": "features",
+            "src": "/review-rounds/round-39/assets/ai/claude/v-a6327a6af264f33a/parts/features.svg",
+            "sha256": "8b9e87bab574a53e257624664dd7bb9e539d2b3b42ffb30ef127b6dde82ef8b3",
+            "transform": null
+          },
+          {
+            "key": "front-hair",
+            "src": "/review-rounds/round-39/assets/ai/claude/v-a6327a6af264f33a/parts/front-hair.svg",
+            "sha256": "612e7c8922c9e9e56014c50f35dab85644fbf87dbabc97dfe07dacb9d54fce35",
+            "transform": null
+          },
+          {
+            "key": "headwear",
+            "src": "/review-rounds/round-39/assets/ai/claude/v-a6327a6af264f33a/parts/headwear.svg",
+            "sha256": "3c1fe3bf53b1320cc613e0c71f09927dd265e08e3e0a3e2215cfa5f647d8281f",
+            "transform": null
+          },
+          {
+            "key": "hands",
+            "src": "/review-rounds/round-39/assets/ai/claude/v-a6327a6af264f33a/parts/hands.svg",
+            "sha256": "f13a65ebe4b003e593ba498806f933e71f617a5c4712ee9ee778826b0eb047a7",
+            "transform": null
+          },
+          {
+            "key": "prop",
+            "src": "/review-rounds/round-39/assets/ai/claude/v-a6327a6af264f33a/parts/prop.svg",
+            "sha256": "de0ab2450bdd8e3342eb3fbd518366c8cd588d0a5d6e0eab601606699f9d1013",
+            "transform": null
+          },
+          {
+            "key": "fingers",
+            "src": "/review-rounds/round-39/assets/ai/claude/v-a6327a6af264f33a/parts/fingers.svg",
+            "sha256": "6565d77f44e066651983aa6efd4fb2edcca83f3cd48747c76d28c993f2859633",
+            "transform": null
+          },
+          {
+            "key": "effect",
+            "src": "/review-rounds/round-39/assets/ai/claude/v-a6327a6af264f33a/parts/effect.svg",
+            "sha256": "77d8396c64816a31fc9e2c14301ed6b7f1b64f5500a32f37a968bafef01fa4a1",
+            "transform": null
+          }
+        ],
+        "use": "实际视觉主证为root IAB截图；PNG只绑定冻结输出。"
+      }
+    }
+  },
+  "identity": {
+    "score": 91,
+    "threshold": 90,
+    "pass": true,
+    "breakdown": {
+      "pose": 18,
+      "expression": 14,
+      "hair": 18,
+      "costume": 23,
+      "accessories": 18
+    },
+    "reason": "橙色长发花饰、胸前书本、米白橙黑层裙与克制平口完整；握书主动作保留。发团较卷、层裙裁片和垂掌细节较标准简化，身份91。当前双肩修复不改变这些还原差异。",
+    "poseAudit": {
+      "poseConsistent": true,
+      "motionScore": 18,
+      "reason": "胸前屈肘持书与另一垂臂神似，书手指更展开/头躯较直属细差，动作18/20；长裙遮髋膝未知。",
+      "attribution": "神似/动作与关节材料分开判断；未把微小位置差当作融合否决。"
+    },
+    "colorAudit": {
+      "rule": "对应部位只核相近色相，不扣hex/明暗明度/饱和度/配色面积/渐变范围；中性色不因灰阶深浅扣。",
+      "viewed": [
+        {
+          "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/runtime/review-rounds/round-39/assets/ai/claude/v-a6327a6af264f33a/reference.jpg",
+          "sha256": "6fb3d6568ccd23cea1437226947276ab052bcdd47d6b7d55d8b5ca148c779782",
+          "method": "实际IAB完整JPG/AI并列呈现，绑定冻结原JPG字节"
+        },
+        {
+          "file": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/claude/round-39/reference-notes.md",
+          "sha256": "f1e033f76e8d7657b431b609131b9cdb2d1264e764a3b4bc73e0f9d5ba3a7efa",
+          "method": "当前冻结MD完整阅读，所选ZipZipPipe初始正常比例版本"
+        }
+      ],
+      "parts": [
+        {
+          "part": "发/眼",
+          "hueClose": true,
+          "hueDeduction": 0,
+          "judgement": "橙发与暖中性眼对应相近。"
+        },
+        {
+          "part": "衣裙/袖领",
+          "hueClose": true,
+          "hueDeduction": 0,
+          "judgement": "米白、橙和黑色相对应，不按层数造成的面积差扣颜色。"
+        },
+        {
+          "part": "花饰/书",
+          "hueClose": true,
+          "hueDeduction": 0,
+          "judgement": "橙金花、棕金书和边饰对应同族。"
+        }
+      ],
+      "hueDeduction": 0,
+      "coreHueFailure": false
+    },
+    "mdSha256": "f1e033f76e8d7657b431b609131b9cdb2d1264e764a3b4bc73e0f9d5ba3a7efa",
+    "referenceSha256": "6fb3d6568ccd23cea1437226947276ab052bcdd47d6b7d55d8b5ca148c779782",
+    "evidence": {
+      "sheet": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/claude/round-39/identity.png",
+      "sheetSha256": "539d4b5a883474eece709469c7424f1ac8249b246dd50091a863e76d7fe84b40",
+      "nativePngSha256": "681fddb1eb0c084bc05a282117c12dbbb142f736e7da8ee3d956e2068a49eb90",
+      "aiPngSha256": "df34d1c027f75ba034e28fed0234b9d01ed6415d219af0cc2423c9f1ef7ab535",
+      "browserScreenshot": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/claude/group-49-focus-0-all-ai-viewport.jpg",
+      "browserScreenshotSha256": "aeb21340525143551a119a2856df04d7ea7b6273f7ea2d77a82ca4723613545e",
+      "method": "实际root IAB完整JPG/AI对看及当前完整冻结MD"
+    },
+    "browserComplete": true
+  },
+  "colorAudit": {
+    "rule": "对应部位只核相近色相，不扣hex/明暗明度/饱和度/配色面积/渐变范围；中性色不因灰阶深浅扣。",
+    "viewed": [
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/runtime/review-rounds/round-39/assets/ai/claude/v-a6327a6af264f33a/reference.jpg",
+        "sha256": "6fb3d6568ccd23cea1437226947276ab052bcdd47d6b7d55d8b5ca148c779782",
+        "method": "实际IAB完整JPG/AI并列呈现，绑定冻结原JPG字节"
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/claude/round-39/reference-notes.md",
+        "sha256": "f1e033f76e8d7657b431b609131b9cdb2d1264e764a3b4bc73e0f9d5ba3a7efa",
+        "method": "当前冻结MD完整阅读，所选ZipZipPipe初始正常比例版本"
+      }
+    ],
+    "parts": [
+      {
+        "part": "发/眼",
+        "hueClose": true,
+        "hueDeduction": 0,
+        "judgement": "橙发与暖中性眼对应相近。"
+      },
+      {
+        "part": "衣裙/袖领",
+        "hueClose": true,
+        "hueDeduction": 0,
+        "judgement": "米白、橙和黑色相对应，不按层数造成的面积差扣颜色。"
+      },
+      {
+        "part": "花饰/书",
+        "hueClose": true,
+        "hueDeduction": 0,
+        "judgement": "橙金花、棕金书和边饰对应同族。"
+      }
+    ],
+    "hueDeduction": 0,
+    "coreHueFailure": false
+  },
+  "browserAudit": {
+    "ownEmbeddedBrowserUsed": false,
+    "presenter": "/root",
+    "independentScreenshotReviewer": "/root/fashion_judge",
+    "manifest": {
+      "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/r39-browser-manifest.json",
+      "sha256": "39ce2072b73df18404689b501e173e47c1e1789507aec1073d29a79e6ccdc747"
+    },
+    "independentLedger": {
+      "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/reviews/20261110/r39-browser-independent-review.json",
+      "sha256": "a949c65f71c4969ae53d7c925c696120cd5afadecac760facf1b41e068010113"
+    },
+    "actualMixedCaseCount": 1,
+    "identityBrowserEvidenceComplete": true,
+    "method": "实际root IAB冻结SVG截图由独立评委逐张看；只记录实际完整可辨认的case，失败/重复不凑覆盖。",
+    "screenshots": [
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/claude/group-49-all-ai-full-page.jpg",
+        "sha256": "8ae81fff0a8d74e1bc427067640aa13ddc7ea2c09dd3efe06cf0f1bf45fed013",
+        "group": 49,
+        "focus": null,
+        "caseIds": [
+          "claude--r39--all-ai"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/claude/group-50-standard-single-full-page.jpg",
+        "sha256": "7da349a4ee7381007d8979e48439db75a5af55d946d98a414d8f9ac58aeb00be",
+        "group": 50,
+        "focus": null,
+        "caseIds": [
+          "standard--mannequin"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/claude/group-51-standard-native-full-page.jpg",
+        "sha256": "eea7908b3b0c61f6c276e47d4a5afd190d2c5270e1fa0d4d80db40b50253005f",
+        "group": 51,
+        "focus": null,
+        "caseIds": [
+          "standard--native-n1",
+          "standard--native-n2",
+          "standard--native-n3",
+          "standard--native-n4",
+          "standard--native-n5"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/claude/group-52-standard-reference-full-page.jpg",
+        "sha256": "5e76639ec8954b0724052226a0b5a64221fb849c2669b540ecb57b7853438db6",
+        "group": 52,
+        "focus": null,
+        "caseIds": [
+          "standard--reference"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/claude/group-57-focus-0-standard-detail-viewport.jpg",
+        "sha256": "5f771904699adfade1f1cff35cf090c851daad1d6113154e384ac8cf05ed995c",
+        "group": 57,
+        "focus": 0,
+        "caseIds": [
+          "standard--detail-6x--strip-0"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/claude/group-57-focus-1-standard-detail-viewport.jpg",
+        "sha256": "fda3244fe24fab17c09d7908d6279a5afa6d282d19282b3844deaf100c6f25a9",
+        "group": 57,
+        "focus": 1,
+        "caseIds": [
+          "standard--detail-6x--strip-1"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/claude/group-57-focus-2-standard-detail-viewport.jpg",
+        "sha256": "ca4e4d9e20ab84f286451440366b15887f4f5588f48730526850105a7ed70e7d",
+        "group": 57,
+        "focus": 2,
+        "caseIds": [
+          "standard--detail-6x--strip-2"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/claude/group-49-focus-0-all-ai-viewport.jpg",
+        "sha256": "aeb21340525143551a119a2856df04d7ea7b6273f7ea2d77a82ca4723613545e",
+        "group": 49,
+        "focus": 0,
+        "caseIds": [
+          "claude--r39--all-ai"
+        ]
+      }
+    ]
+  },
+  "frozenAudit": {
+    "session": "D:/LLM-show/LLM-show-fashion/ai-workspace/runtime/review-rounds/round-39/session.json",
+    "sessionSha256": "d14618c60530e75048cba1d7cf7d4d1f6a053dbca85eea2632af7f50a76c36d1",
+    "catalogSha256": "b7b2f703a31cdd9ed16b10779bad3e733b90da70c6e3bbc9827aa41f22ec379a",
+    "modelShaMatch": true,
+    "rulesShaMatch": true,
+    "inputNativeModelSeedMatch": true
+  },
+  "decision": "incomplete-paused",
+  "accepted": false,
+  "phaseStatus": "paused-by-explicit-user-request-after-round-39",
+  "feedback": [
+    "旧R34屏右开楔、屏左自绘闭合肩帽叠436线均已解除，裸肉面连续；拇指U仍按真实掌结构，不误判环套。其他可见肘腕/腰髋/膝踝未确认新断面。",
+    "当前所见标准6x：旧R34屏右开楔、屏左自绘闭合肩帽叠436线均已解除，裸肉面连续；拇指U仍按真实掌结构，不误判环套。其他可见肘腕/腰髋/膝踝未确认新断面。",
+    "未审245个矩阵case保留；标准7/20不完整，pass=false，不沿用旧98填齐。",
+    "最新用户要求第39轮评完即停，任何残留只登记归档，不触发40或41艺术任务。"
+  ],
+  "supplementalEvidence": [
+    {
+      "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/reviews/20261110/r39-priority-target-review.json",
+      "sha256": "bc763acb46bcada97e81645e9cd40f75b7882fc71a13a40babb30eee3b2c752c"
+    },
+    {
+      "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/reviews/20261110/r39-joint-source-audit.json",
+      "sha256": "f7a998c991b7e7b61e3cb046d14cb50e98609ac148861c59e3b5c71115744d1f"
+    },
+    {
+      "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/reviews/20261110/r39-browser-independent-review.json",
+      "sha256": "a949c65f71c4969ae53d7c925c696120cd5afadecac760facf1b41e068010113"
+    },
+    {
+      "file": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/claude/round-39/standard-study/standard-mannequin-6x.png",
+      "sha256": "bf83b961d5e5c70048deb642b9e86ff8fd6125042f1d1a2bbf86ab59cd1c05ca"
+    }
+  ],
+  "limitations": [
+    "本轮用户明确39评完即停；不创建40/41、不继续艺术返修。",
+    "246只审1，未审245保持未审，不因已看98或截止凑整套通过。",
+    "标准覆盖：固定视图3/7、真实原SWF 0/20；6x补充不并入7/20或246。",
+    "原生组件/组合恒100；只对AI重组接面/材质按自身证据判断，隐藏区域未知。"
+  ]
+}

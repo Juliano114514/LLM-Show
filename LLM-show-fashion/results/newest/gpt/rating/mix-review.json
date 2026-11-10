@@ -1,0 +1,1015 @@
+{
+  "protocol": "fashion-react-mix-98-90-v2",
+  "reviewer": "/root/fashion_judge",
+  "character": "gpt",
+  "round": 39,
+  "inputHash": "8e770d916ca938fc091e91b81099f3314d0edbc94877912998943cdde6c3c6c8",
+  "nativeHash": "d68eec334e39f69a89bd6c05fb8c91a56a781df2a353bcc97ceb59ac3d34fabc",
+  "renderModelHash": "bd645ead9f9041972be16a1c120cef2046c9b524ae3c311505e501af29685d28",
+  "seed": "9c5e924fd7eed5dd3b28816c32ca506197ab565f8af5586e",
+  "nativeCalibration": 100,
+  "ratingRules": [
+    {
+      "file": "SCORING.md",
+      "sha256": "90eb3fb599cf67f9710811d6ae42a7a55f268fee82e6ba8f534ff5488745a7f0"
+    },
+    {
+      "file": "PROCESS.md",
+      "sha256": "b0129fb3e254877b48fca1aad3e7ddac223f5f82cc68828426eb170acf26f885"
+    },
+    {
+      "file": "ITERATION_RULES.md",
+      "sha256": "31e3ea312cdcc29e398c50703934e2d8da257f593ffd714a7f6b523c433e727d"
+    },
+    {
+      "file": "POSE_INTERFACE.md",
+      "sha256": "c544aa7291ffd3793ced115d4afbac82576092d839032791bbd23bd97068114e"
+    },
+    {
+      "file": "STANDARD_BODY_REVIEW.md",
+      "sha256": "c5d39c478c5e1a72e1646960461ed5b051f69c0deef685afac7d2d2dd69caec1"
+    }
+  ],
+  "automaticScores": false,
+  "reviewStage": "final-partial-after-user-stop-at-39",
+  "integration": {
+    "score": 98,
+    "threshold": 98,
+    "pass": false,
+    "caseScores": [
+      {
+        "caseId": "gpt--r39--all-ai",
+        "score": 98,
+        "reason": "旧屏左436短端与牵领臂未接已解除；新近端连续接原肩端，屏右已修肩保持。其余可见肘腕/掌根、腰髋、膝踝未确认额外新跨件缺口。 当前全套可见衣料/发/手物和其他层连接完整，98；此单例不能外推剩余矩阵。",
+        "evidence": {
+          "sheet": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-49-focus-0-all-ai-viewport.jpg",
+          "sheetSha256": "b30626986f6ffc050c6ead069b85bcfab0c371587122d227f7753c7da5b21dec",
+          "browserSourceURL": "http://127.0.0.1:6187/browser-audit.html?round=39&character=gpt&group=49&focus=0",
+          "browserGroup": 49,
+          "browserFocus": 0,
+          "nativePngSha256": "681fddb1eb0c084bc05a282117c12dbbb142f736e7da8ee3d956e2068a49eb90",
+          "aiPngSha256": "e0d07d2b8fddd53735b03e43ddee6d294e12752e83502148c081b8259e07e686",
+          "native": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gpt/round-39/cases/gpt--r39--all-ai-native.png",
+          "ai": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gpt/round-39/cases/gpt--r39--all-ai.png",
+          "inputHash": "8e770d916ca938fc091e91b81099f3314d0edbc94877912998943cdde6c3c6c8",
+          "selectedLayers": [
+            {
+              "key": "back",
+              "src": "/review-rounds/round-39/assets/ai/gpt/v-8e770d916ca938fc/parts/back.svg",
+              "sha256": "9ce44fad330aa9b43adf9799fcfe8acf3d5343b932e15214995834d908dae7a8",
+              "transform": null
+            },
+            {
+              "key": "back-hair",
+              "src": "/review-rounds/round-39/assets/ai/gpt/v-8e770d916ca938fc/parts/back-hair.svg",
+              "sha256": "4087fc494f65a2d5b3e4b3a312b739d0b373319d26a32aa37b8dc01220b91a76",
+              "transform": null
+            },
+            {
+              "key": "body",
+              "src": "/review-rounds/round-39/assets/ai/gpt/v-8e770d916ca938fc/parts/body.svg",
+              "sha256": "47ec116a9132be792afe019a1ef7a9752315347f9e266361f4158fdaad724a9e",
+              "transform": null
+            },
+            {
+              "key": "shoes",
+              "src": "/review-rounds/round-39/assets/ai/gpt/v-8e770d916ca938fc/parts/shoes.svg",
+              "sha256": "6ff7fb00b343cf406751d38f4a48f1e0d5533bd77c833019f4f43582eb10b2d2",
+              "transform": null
+            },
+            {
+              "key": "bottom",
+              "src": "/review-rounds/round-39/assets/ai/gpt/v-8e770d916ca938fc/parts/bottom.svg",
+              "sha256": "670f06d814783c847abe273d7af7186d076a0057d8021644d63e40b70239ac83",
+              "transform": null
+            },
+            {
+              "key": "top",
+              "src": "/review-rounds/round-39/assets/ai/gpt/v-8e770d916ca938fc/parts/top.svg",
+              "sha256": "3ebf63fb0eb1247def2d29e6d48240ac9fecdeb407e66c86ba98335c6e0a9853",
+              "transform": null
+            },
+            {
+              "key": "face",
+              "src": "/review-rounds/round-39/assets/ai/gpt/v-8e770d916ca938fc/parts/face.svg",
+              "sha256": "20e79630ee70179e07caed962b90b637de9b7a2c369761e6cc9393641a78f4d1",
+              "transform": null
+            },
+            {
+              "key": "features",
+              "src": "/review-rounds/round-39/assets/ai/gpt/v-8e770d916ca938fc/parts/features.svg",
+              "sha256": "c9b343044cebfb6808ece97cca28abfbff650befcf184279ae0065aa2d2ed350",
+              "transform": null
+            },
+            {
+              "key": "front-hair",
+              "src": "/review-rounds/round-39/assets/ai/gpt/v-8e770d916ca938fc/parts/front-hair.svg",
+              "sha256": "ed163c8bc2a1282174c3f71f8c9b929d86a90cf934020a2de6df7fb9ebd7ab05",
+              "transform": null
+            },
+            {
+              "key": "headwear",
+              "src": "/review-rounds/round-39/assets/ai/gpt/v-8e770d916ca938fc/parts/headwear.svg",
+              "sha256": "ab74979cb8327889577b2dd5663437e6ea52eb6b0923a1d2ecdcfe2cf9bcab8a",
+              "transform": null
+            },
+            {
+              "key": "hands",
+              "src": "/review-rounds/round-39/assets/ai/gpt/v-8e770d916ca938fc/parts/hands.svg",
+              "sha256": "ae81e65e8c32d2314cf387cee68e9fe2fb4694a16ad320f75699c932a1fc1bce",
+              "transform": null
+            },
+            {
+              "key": "prop",
+              "src": "/review-rounds/round-39/assets/ai/gpt/v-8e770d916ca938fc/parts/prop.svg",
+              "sha256": "92299103c515b120ad0169cb75c36d571cc76883c931bf50553302fd52c2cac4",
+              "transform": null
+            },
+            {
+              "key": "fingers",
+              "src": "/review-rounds/round-39/assets/ai/gpt/v-8e770d916ca938fc/parts/fingers.svg",
+              "sha256": "77d8396c64816a31fc9e2c14301ed6b7f1b64f5500a32f37a968bafef01fa4a1",
+              "transform": null
+            },
+            {
+              "key": "effect",
+              "src": "/review-rounds/round-39/assets/ai/gpt/v-8e770d916ca938fc/parts/effect.svg",
+              "sha256": "dabc5909ee967c8308ad13e2b8a0a8e3df066a693f9b5f248a0adf12e1a9d5bd",
+              "transform": null
+            }
+          ],
+          "use": "实际视觉主证为root IAB截图；PNG只绑定冻结输出。"
+        }
+      },
+      {
+        "caseId": "gpt--r39--headwear--n1",
+        "score": 98,
+        "reason": "新增同骨材连续根伸入原生发缘，旧悬圆杯解除；五原生头饰单件均实看，98，不以AI前发代替native单件。",
+        "evidence": {
+          "sheet": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-09-focus-0-single-viewport.jpg",
+          "sheetSha256": "d5bc13f355f9a77a6a000349c07512f800ca249da142467bccfd7bbcb4a4f6cf",
+          "browserSourceURL": "http://127.0.0.1:6187/browser-audit.html?round=39&character=gpt&group=9&focus=0",
+          "browserGroup": 9,
+          "browserFocus": 0,
+          "nativePngSha256": "681fddb1eb0c084bc05a282117c12dbbb142f736e7da8ee3d956e2068a49eb90",
+          "aiPngSha256": "5699bdbc58ad00fe880c664bcad8722cb54b992cbedfc19240d26a712147e711",
+          "native": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gpt/round-39/cases/gpt--r39--headwear--n1-native.png",
+          "ai": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gpt/round-39/cases/gpt--r39--headwear--n1.png",
+          "inputHash": "8e770d916ca938fc091e91b81099f3314d0edbc94877912998943cdde6c3c6c8",
+          "selectedLayers": [
+            {
+              "key": "headwear",
+              "src": "/review-rounds/round-39/assets/ai/gpt/v-8e770d916ca938fc/parts/headwear.svg",
+              "sha256": "ab74979cb8327889577b2dd5663437e6ea52eb6b0923a1d2ecdcfe2cf9bcab8a",
+              "transform": null
+            }
+          ],
+          "use": "实际视觉主证为root IAB截图；PNG只绑定冻结输出。"
+        }
+      },
+      {
+        "caseId": "gpt--r39--headwear--n2",
+        "score": 98,
+        "reason": "新增同骨材连续根伸入原生发缘，旧悬圆杯解除；五原生头饰单件均实看，98，不以AI前发代替native单件。",
+        "evidence": {
+          "sheet": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-09-focus-1-single-viewport.jpg",
+          "sheetSha256": "82792d4114a66500855a42d286d037a1ec0add261d44dd292ea40021a126dc0c",
+          "browserSourceURL": "http://127.0.0.1:6187/browser-audit.html?round=39&character=gpt&group=9&focus=1",
+          "browserGroup": 9,
+          "browserFocus": 1,
+          "nativePngSha256": "687a9a79a1037c5e8369d9e7539edd58bb588659f59197dbe9ecd34a7c55527c",
+          "aiPngSha256": "fece78d30058f469ad88463e32342adef386a033bf46fef997cfeceb7075b52f",
+          "native": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gpt/round-39/cases/gpt--r39--headwear--n2-native.png",
+          "ai": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gpt/round-39/cases/gpt--r39--headwear--n2.png",
+          "inputHash": "8e770d916ca938fc091e91b81099f3314d0edbc94877912998943cdde6c3c6c8",
+          "selectedLayers": [
+            {
+              "key": "headwear",
+              "src": "/review-rounds/round-39/assets/ai/gpt/v-8e770d916ca938fc/parts/headwear.svg",
+              "sha256": "ab74979cb8327889577b2dd5663437e6ea52eb6b0923a1d2ecdcfe2cf9bcab8a",
+              "transform": null
+            }
+          ],
+          "use": "实际视觉主证为root IAB截图；PNG只绑定冻结输出。"
+        }
+      },
+      {
+        "caseId": "gpt--r39--headwear--n3",
+        "score": 98,
+        "reason": "新增同骨材连续根伸入原生发缘，旧悬圆杯解除；五原生头饰单件均实看，98，不以AI前发代替native单件。",
+        "evidence": {
+          "sheet": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-09-focus-2-single-viewport.jpg",
+          "sheetSha256": "982f571cd863b79217328cd91a05629f456fc5e57d88b5f9afc0f88145f6f7ea",
+          "browserSourceURL": "http://127.0.0.1:6187/browser-audit.html?round=39&character=gpt&group=9&focus=2",
+          "browserGroup": 9,
+          "browserFocus": 2,
+          "nativePngSha256": "23894de157bcf1f108c384128d63801f4357c81d4495bacfeb042d98167943c9",
+          "aiPngSha256": "3d99ca7305d0cde4be395c338b4633c0c4e9ea318dac54d3a7de97b2458d8753",
+          "native": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gpt/round-39/cases/gpt--r39--headwear--n3-native.png",
+          "ai": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gpt/round-39/cases/gpt--r39--headwear--n3.png",
+          "inputHash": "8e770d916ca938fc091e91b81099f3314d0edbc94877912998943cdde6c3c6c8",
+          "selectedLayers": [
+            {
+              "key": "headwear",
+              "src": "/review-rounds/round-39/assets/ai/gpt/v-8e770d916ca938fc/parts/headwear.svg",
+              "sha256": "ab74979cb8327889577b2dd5663437e6ea52eb6b0923a1d2ecdcfe2cf9bcab8a",
+              "transform": null
+            }
+          ],
+          "use": "实际视觉主证为root IAB截图；PNG只绑定冻结输出。"
+        }
+      },
+      {
+        "caseId": "gpt--r39--headwear--n4",
+        "score": 98,
+        "reason": "新增同骨材连续根伸入原生发缘，旧悬圆杯解除；五原生头饰单件均实看，98，不以AI前发代替native单件。",
+        "evidence": {
+          "sheet": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-09-focus-3-single-viewport.jpg",
+          "sheetSha256": "0b332559a771dcf31779f7e2c749188bc0de947903dc88fc5cb2c1665c6730ca",
+          "browserSourceURL": "http://127.0.0.1:6187/browser-audit.html?round=39&character=gpt&group=9&focus=3",
+          "browserGroup": 9,
+          "browserFocus": 3,
+          "nativePngSha256": "3d07b7cab7289d8db20fb76240aba4a12be5bada4ed4565a498a00ee2943023f",
+          "aiPngSha256": "98d5c23a8958e3131fcb55e711c8a7f5670cdb8d0f6d7720676074bc2451305d",
+          "native": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gpt/round-39/cases/gpt--r39--headwear--n4-native.png",
+          "ai": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gpt/round-39/cases/gpt--r39--headwear--n4.png",
+          "inputHash": "8e770d916ca938fc091e91b81099f3314d0edbc94877912998943cdde6c3c6c8",
+          "selectedLayers": [
+            {
+              "key": "headwear",
+              "src": "/review-rounds/round-39/assets/ai/gpt/v-8e770d916ca938fc/parts/headwear.svg",
+              "sha256": "ab74979cb8327889577b2dd5663437e6ea52eb6b0923a1d2ecdcfe2cf9bcab8a",
+              "transform": null
+            }
+          ],
+          "use": "实际视觉主证为root IAB截图；PNG只绑定冻结输出。"
+        }
+      },
+      {
+        "caseId": "gpt--r39--headwear--n5",
+        "score": 98,
+        "reason": "新增同骨材连续根伸入原生发缘，旧悬圆杯解除；五原生头饰单件均实看，98，不以AI前发代替native单件。",
+        "evidence": {
+          "sheet": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-09-focus-4-single-viewport.jpg",
+          "sheetSha256": "cea7940c96ec40f7f5914aed08fea362cb0fed148f207156293034078f444d62",
+          "browserSourceURL": "http://127.0.0.1:6187/browser-audit.html?round=39&character=gpt&group=9&focus=4",
+          "browserGroup": 9,
+          "browserFocus": 4,
+          "nativePngSha256": "32af4f4cb77d7998c57f0fa0d325a8dc61269a3b20bac27cbea07d03a647a094",
+          "aiPngSha256": "57f5b620fa68e3b54ce40939ca2edc7f24f201a99db75eadb027a925ca73cc69",
+          "native": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gpt/round-39/cases/gpt--r39--headwear--n5-native.png",
+          "ai": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gpt/round-39/cases/gpt--r39--headwear--n5.png",
+          "inputHash": "8e770d916ca938fc091e91b81099f3314d0edbc94877912998943cdde6c3c6c8",
+          "selectedLayers": [
+            {
+              "key": "headwear",
+              "src": "/review-rounds/round-39/assets/ai/gpt/v-8e770d916ca938fc/parts/headwear.svg",
+              "sha256": "ab74979cb8327889577b2dd5663437e6ea52eb6b0923a1d2ecdcfe2cf9bcab8a",
+              "transform": null
+            }
+          ],
+          "use": "实际视觉主证为root IAB截图；PNG只绑定冻结输出。"
+        }
+      }
+    ],
+    "sweepCaseScores": [
+      {
+        "caseId": "gpt--r39--headwear--n1",
+        "score": 98,
+        "reason": "新增同骨材连续根伸入原生发缘，旧悬圆杯解除；五原生头饰单件均实看，98，不以AI前发代替native单件。",
+        "evidence": {
+          "sheet": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-09-focus-0-single-viewport.jpg",
+          "sheetSha256": "d5bc13f355f9a77a6a000349c07512f800ca249da142467bccfd7bbcb4a4f6cf",
+          "browserSourceURL": "http://127.0.0.1:6187/browser-audit.html?round=39&character=gpt&group=9&focus=0",
+          "browserGroup": 9,
+          "browserFocus": 0,
+          "nativePngSha256": "681fddb1eb0c084bc05a282117c12dbbb142f736e7da8ee3d956e2068a49eb90",
+          "aiPngSha256": "5699bdbc58ad00fe880c664bcad8722cb54b992cbedfc19240d26a712147e711",
+          "native": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gpt/round-39/cases/gpt--r39--headwear--n1-native.png",
+          "ai": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gpt/round-39/cases/gpt--r39--headwear--n1.png",
+          "inputHash": "8e770d916ca938fc091e91b81099f3314d0edbc94877912998943cdde6c3c6c8",
+          "selectedLayers": [
+            {
+              "key": "headwear",
+              "src": "/review-rounds/round-39/assets/ai/gpt/v-8e770d916ca938fc/parts/headwear.svg",
+              "sha256": "ab74979cb8327889577b2dd5663437e6ea52eb6b0923a1d2ecdcfe2cf9bcab8a",
+              "transform": null
+            }
+          ],
+          "use": "实际视觉主证为root IAB截图；PNG只绑定冻结输出。"
+        }
+      }
+    ],
+    "sweepCoverage": {
+      "reviewedSlots": [
+        "headwear"
+      ],
+      "plannedSlots": 21,
+      "complete": false,
+      "reason": "此次是停止迭代后的定向partial审阅；未审首扫槽不填分。"
+    },
+    "coverage": {
+      "reviewed": 6,
+      "planned": 246,
+      "complete": false,
+      "unreviewed": 240,
+      "scope": "本轮只签有效实际浏览器case；未审单件/相邻/多AI保持空。"
+    },
+    "allReviewedAtLeast98": true,
+    "unreviewedCaseIds": [
+      "gpt--r39--back--n1",
+      "gpt--r39--back--n2",
+      "gpt--r39--back--n3",
+      "gpt--r39--back--n4",
+      "gpt--r39--back--n5",
+      "gpt--r39--back-hair--n1",
+      "gpt--r39--back-hair--n2",
+      "gpt--r39--back-hair--n3",
+      "gpt--r39--back-hair--n4",
+      "gpt--r39--back-hair--n5",
+      "gpt--r39--body--n1",
+      "gpt--r39--body--n2",
+      "gpt--r39--body--n3",
+      "gpt--r39--body--n4",
+      "gpt--r39--body--n5",
+      "gpt--r39--shoes--n1",
+      "gpt--r39--shoes--n2",
+      "gpt--r39--shoes--n3",
+      "gpt--r39--shoes--n4",
+      "gpt--r39--shoes--n5",
+      "gpt--r39--bottom--n1",
+      "gpt--r39--bottom--n2",
+      "gpt--r39--bottom--n3",
+      "gpt--r39--bottom--n4",
+      "gpt--r39--bottom--n5",
+      "gpt--r39--top--n1",
+      "gpt--r39--top--n2",
+      "gpt--r39--top--n3",
+      "gpt--r39--top--n4",
+      "gpt--r39--top--n5",
+      "gpt--r39--face--n1",
+      "gpt--r39--face--n2",
+      "gpt--r39--face--n3",
+      "gpt--r39--face--n4",
+      "gpt--r39--face--n5",
+      "gpt--r39--features--n1",
+      "gpt--r39--features--n2",
+      "gpt--r39--features--n3",
+      "gpt--r39--features--n4",
+      "gpt--r39--features--n5",
+      "gpt--r39--front-hair--n1",
+      "gpt--r39--front-hair--n2",
+      "gpt--r39--front-hair--n3",
+      "gpt--r39--front-hair--n4",
+      "gpt--r39--front-hair--n5",
+      "gpt--r39--hands--n1",
+      "gpt--r39--hands--n2",
+      "gpt--r39--hands--n3",
+      "gpt--r39--hands--n4",
+      "gpt--r39--hands--n5",
+      "gpt--r39--prop--n1",
+      "gpt--r39--prop--n2",
+      "gpt--r39--prop--n3",
+      "gpt--r39--prop--n4",
+      "gpt--r39--prop--n5",
+      "gpt--r39--fingers--n1",
+      "gpt--r39--fingers--n2",
+      "gpt--r39--fingers--n3",
+      "gpt--r39--fingers--n4",
+      "gpt--r39--fingers--n5",
+      "gpt--r39--effect--n1",
+      "gpt--r39--effect--n2",
+      "gpt--r39--effect--n3",
+      "gpt--r39--effect--n4",
+      "gpt--r39--effect--n5",
+      "gpt--r39--body_rear-leg--n1",
+      "gpt--r39--body_rear-leg--n2",
+      "gpt--r39--body_rear-leg--n3",
+      "gpt--r39--body_rear-leg--n4",
+      "gpt--r39--body_rear-leg--n5",
+      "gpt--r39--body_front-leg--n1",
+      "gpt--r39--body_front-leg--n2",
+      "gpt--r39--body_front-leg--n3",
+      "gpt--r39--body_front-leg--n4",
+      "gpt--r39--body_front-leg--n5",
+      "gpt--r39--body_torso--n1",
+      "gpt--r39--body_torso--n2",
+      "gpt--r39--body_torso--n3",
+      "gpt--r39--body_torso--n4",
+      "gpt--r39--body_torso--n5",
+      "gpt--r39--body_neck--n1",
+      "gpt--r39--body_neck--n2",
+      "gpt--r39--body_neck--n3",
+      "gpt--r39--body_neck--n4",
+      "gpt--r39--body_neck--n5",
+      "gpt--r39--body_left-arm--n1",
+      "gpt--r39--body_left-arm--n2",
+      "gpt--r39--body_left-arm--n3",
+      "gpt--r39--body_left-arm--n4",
+      "gpt--r39--body_left-arm--n5",
+      "gpt--r39--body_right-arm--n1",
+      "gpt--r39--body_right-arm--n2",
+      "gpt--r39--body_right-arm--n3",
+      "gpt--r39--body_right-arm--n4",
+      "gpt--r39--body_right-arm--n5",
+      "gpt--r39--body_hands--n1",
+      "gpt--r39--body_hands--n2",
+      "gpt--r39--body_hands--n3",
+      "gpt--r39--body_hands--n4",
+      "gpt--r39--body_hands--n5",
+      "gpt--r39--pair-body_top--n1",
+      "gpt--r39--pair-body_top--n2",
+      "gpt--r39--pair-body_top--n3",
+      "gpt--r39--pair-body_top--n4",
+      "gpt--r39--pair-body_top--n5",
+      "gpt--r39--pair-body_bottom--n1",
+      "gpt--r39--pair-body_bottom--n2",
+      "gpt--r39--pair-body_bottom--n3",
+      "gpt--r39--pair-body_bottom--n4",
+      "gpt--r39--pair-body_bottom--n5",
+      "gpt--r39--pair-body_shoes--n1",
+      "gpt--r39--pair-body_shoes--n2",
+      "gpt--r39--pair-body_shoes--n3",
+      "gpt--r39--pair-body_shoes--n4",
+      "gpt--r39--pair-body_shoes--n5",
+      "gpt--r39--pair-top_hands--n1",
+      "gpt--r39--pair-top_hands--n2",
+      "gpt--r39--pair-top_hands--n3",
+      "gpt--r39--pair-top_hands--n4",
+      "gpt--r39--pair-top_hands--n5",
+      "gpt--r39--pair-hands_prop--n1",
+      "gpt--r39--pair-hands_prop--n2",
+      "gpt--r39--pair-hands_prop--n3",
+      "gpt--r39--pair-hands_prop--n4",
+      "gpt--r39--pair-hands_prop--n5",
+      "gpt--r39--pair-prop_fingers--n1",
+      "gpt--r39--pair-prop_fingers--n2",
+      "gpt--r39--pair-prop_fingers--n3",
+      "gpt--r39--pair-prop_fingers--n4",
+      "gpt--r39--pair-prop_fingers--n5",
+      "gpt--r39--pair-face_front-hair--n1",
+      "gpt--r39--pair-face_front-hair--n2",
+      "gpt--r39--pair-face_front-hair--n3",
+      "gpt--r39--pair-face_front-hair--n4",
+      "gpt--r39--pair-face_front-hair--n5",
+      "gpt--r39--pair-back-hair_front-hair--n1",
+      "gpt--r39--pair-back-hair_front-hair--n2",
+      "gpt--r39--pair-back-hair_front-hair--n3",
+      "gpt--r39--pair-back-hair_front-hair--n4",
+      "gpt--r39--pair-back-hair_front-hair--n5",
+      "gpt--r39--pair-top_bottom--n1",
+      "gpt--r39--pair-top_bottom--n2",
+      "gpt--r39--pair-top_bottom--n3",
+      "gpt--r39--pair-top_bottom--n4",
+      "gpt--r39--pair-top_bottom--n5",
+      "gpt--r39--pair-headwear_front-hair--n1",
+      "gpt--r39--pair-headwear_front-hair--n2",
+      "gpt--r39--pair-headwear_front-hair--n3",
+      "gpt--r39--pair-headwear_front-hair--n4",
+      "gpt--r39--pair-headwear_front-hair--n5",
+      "gpt--r39--multi-2-1--n1",
+      "gpt--r39--multi-2-1--n2",
+      "gpt--r39--multi-2-1--n3",
+      "gpt--r39--multi-2-1--n4",
+      "gpt--r39--multi-2-1--n5",
+      "gpt--r39--multi-2-2--n1",
+      "gpt--r39--multi-2-2--n2",
+      "gpt--r39--multi-2-2--n3",
+      "gpt--r39--multi-2-2--n4",
+      "gpt--r39--multi-2-2--n5",
+      "gpt--r39--multi-3-1--n1",
+      "gpt--r39--multi-3-1--n2",
+      "gpt--r39--multi-3-1--n3",
+      "gpt--r39--multi-3-1--n4",
+      "gpt--r39--multi-3-1--n5",
+      "gpt--r39--multi-3-2--n1",
+      "gpt--r39--multi-3-2--n2",
+      "gpt--r39--multi-3-2--n3",
+      "gpt--r39--multi-3-2--n4",
+      "gpt--r39--multi-3-2--n5",
+      "gpt--r39--multi-4-1--n1",
+      "gpt--r39--multi-4-1--n2",
+      "gpt--r39--multi-4-1--n3",
+      "gpt--r39--multi-4-1--n4",
+      "gpt--r39--multi-4-1--n5",
+      "gpt--r39--multi-4-2--n1",
+      "gpt--r39--multi-4-2--n2",
+      "gpt--r39--multi-4-2--n3",
+      "gpt--r39--multi-4-2--n4",
+      "gpt--r39--multi-4-2--n5",
+      "gpt--r39--multi-6-1--n1",
+      "gpt--r39--multi-6-1--n2",
+      "gpt--r39--multi-6-1--n3",
+      "gpt--r39--multi-6-1--n4",
+      "gpt--r39--multi-6-1--n5",
+      "gpt--r39--multi-6-2--n1",
+      "gpt--r39--multi-6-2--n2",
+      "gpt--r39--multi-6-2--n3",
+      "gpt--r39--multi-6-2--n4",
+      "gpt--r39--multi-6-2--n5",
+      "gpt--r39--multi-8-1--n1",
+      "gpt--r39--multi-8-1--n2",
+      "gpt--r39--multi-8-1--n3",
+      "gpt--r39--multi-8-1--n4",
+      "gpt--r39--multi-8-1--n5",
+      "gpt--r39--multi-8-2--n1",
+      "gpt--r39--multi-8-2--n2",
+      "gpt--r39--multi-8-2--n3",
+      "gpt--r39--multi-8-2--n4",
+      "gpt--r39--multi-8-2--n5",
+      "gpt--r39--multi-10-1--n1",
+      "gpt--r39--multi-10-1--n2",
+      "gpt--r39--multi-10-1--n3",
+      "gpt--r39--multi-10-1--n4",
+      "gpt--r39--multi-10-1--n5",
+      "gpt--r39--multi-10-2--n1",
+      "gpt--r39--multi-10-2--n2",
+      "gpt--r39--multi-10-2--n3",
+      "gpt--r39--multi-10-2--n4",
+      "gpt--r39--multi-10-2--n5",
+      "gpt--r39--multi-12-1--n1",
+      "gpt--r39--multi-12-1--n2",
+      "gpt--r39--multi-12-1--n3",
+      "gpt--r39--multi-12-1--n4",
+      "gpt--r39--multi-12-1--n5",
+      "gpt--r39--multi-12-2--n1",
+      "gpt--r39--multi-12-2--n2",
+      "gpt--r39--multi-12-2--n3",
+      "gpt--r39--multi-12-2--n4",
+      "gpt--r39--multi-12-2--n5",
+      "gpt--r39--multi-13-1--n1",
+      "gpt--r39--multi-13-1--n2",
+      "gpt--r39--multi-13-1--n3",
+      "gpt--r39--multi-13-1--n4",
+      "gpt--r39--multi-13-1--n5",
+      "gpt--r39--multi-13-2--n1",
+      "gpt--r39--multi-13-2--n2",
+      "gpt--r39--multi-13-2--n3",
+      "gpt--r39--multi-13-2--n4",
+      "gpt--r39--multi-13-2--n5",
+      "gpt--r39--multi-anatomy-3--n1",
+      "gpt--r39--multi-anatomy-3--n2",
+      "gpt--r39--multi-anatomy-3--n3",
+      "gpt--r39--multi-anatomy-3--n4",
+      "gpt--r39--multi-anatomy-3--n5",
+      "gpt--r39--multi-anatomy-5--n1",
+      "gpt--r39--multi-anatomy-5--n2",
+      "gpt--r39--multi-anatomy-5--n3",
+      "gpt--r39--multi-anatomy-5--n4",
+      "gpt--r39--multi-anatomy-5--n5"
+    ],
+    "componentScores": [],
+    "adjacentPairScores": [],
+    "multiScores": [],
+    "fullSet": {
+      "caseId": "gpt--r39--all-ai",
+      "score": 98,
+      "reason": "旧屏左436短端与牵领臂未接已解除；新近端连续接原肩端，屏右已修肩保持。其余可见肘腕/掌根、腰髋、膝踝未确认额外新跨件缺口。 当前全套可见衣料/发/手物和其他层连接完整，98；此单例不能外推剩余矩阵。",
+      "evidence": {
+        "sheet": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-49-focus-0-all-ai-viewport.jpg",
+        "sheetSha256": "b30626986f6ffc050c6ead069b85bcfab0c371587122d227f7753c7da5b21dec",
+        "browserSourceURL": "http://127.0.0.1:6187/browser-audit.html?round=39&character=gpt&group=49&focus=0",
+        "browserGroup": 49,
+        "browserFocus": 0,
+        "nativePngSha256": "681fddb1eb0c084bc05a282117c12dbbb142f736e7da8ee3d956e2068a49eb90",
+        "aiPngSha256": "e0d07d2b8fddd53735b03e43ddee6d294e12752e83502148c081b8259e07e686",
+        "native": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gpt/round-39/cases/gpt--r39--all-ai-native.png",
+        "ai": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gpt/round-39/cases/gpt--r39--all-ai.png",
+        "inputHash": "8e770d916ca938fc091e91b81099f3314d0edbc94877912998943cdde6c3c6c8",
+        "selectedLayers": [
+          {
+            "key": "back",
+            "src": "/review-rounds/round-39/assets/ai/gpt/v-8e770d916ca938fc/parts/back.svg",
+            "sha256": "9ce44fad330aa9b43adf9799fcfe8acf3d5343b932e15214995834d908dae7a8",
+            "transform": null
+          },
+          {
+            "key": "back-hair",
+            "src": "/review-rounds/round-39/assets/ai/gpt/v-8e770d916ca938fc/parts/back-hair.svg",
+            "sha256": "4087fc494f65a2d5b3e4b3a312b739d0b373319d26a32aa37b8dc01220b91a76",
+            "transform": null
+          },
+          {
+            "key": "body",
+            "src": "/review-rounds/round-39/assets/ai/gpt/v-8e770d916ca938fc/parts/body.svg",
+            "sha256": "47ec116a9132be792afe019a1ef7a9752315347f9e266361f4158fdaad724a9e",
+            "transform": null
+          },
+          {
+            "key": "shoes",
+            "src": "/review-rounds/round-39/assets/ai/gpt/v-8e770d916ca938fc/parts/shoes.svg",
+            "sha256": "6ff7fb00b343cf406751d38f4a48f1e0d5533bd77c833019f4f43582eb10b2d2",
+            "transform": null
+          },
+          {
+            "key": "bottom",
+            "src": "/review-rounds/round-39/assets/ai/gpt/v-8e770d916ca938fc/parts/bottom.svg",
+            "sha256": "670f06d814783c847abe273d7af7186d076a0057d8021644d63e40b70239ac83",
+            "transform": null
+          },
+          {
+            "key": "top",
+            "src": "/review-rounds/round-39/assets/ai/gpt/v-8e770d916ca938fc/parts/top.svg",
+            "sha256": "3ebf63fb0eb1247def2d29e6d48240ac9fecdeb407e66c86ba98335c6e0a9853",
+            "transform": null
+          },
+          {
+            "key": "face",
+            "src": "/review-rounds/round-39/assets/ai/gpt/v-8e770d916ca938fc/parts/face.svg",
+            "sha256": "20e79630ee70179e07caed962b90b637de9b7a2c369761e6cc9393641a78f4d1",
+            "transform": null
+          },
+          {
+            "key": "features",
+            "src": "/review-rounds/round-39/assets/ai/gpt/v-8e770d916ca938fc/parts/features.svg",
+            "sha256": "c9b343044cebfb6808ece97cca28abfbff650befcf184279ae0065aa2d2ed350",
+            "transform": null
+          },
+          {
+            "key": "front-hair",
+            "src": "/review-rounds/round-39/assets/ai/gpt/v-8e770d916ca938fc/parts/front-hair.svg",
+            "sha256": "ed163c8bc2a1282174c3f71f8c9b929d86a90cf934020a2de6df7fb9ebd7ab05",
+            "transform": null
+          },
+          {
+            "key": "headwear",
+            "src": "/review-rounds/round-39/assets/ai/gpt/v-8e770d916ca938fc/parts/headwear.svg",
+            "sha256": "ab74979cb8327889577b2dd5663437e6ea52eb6b0923a1d2ecdcfe2cf9bcab8a",
+            "transform": null
+          },
+          {
+            "key": "hands",
+            "src": "/review-rounds/round-39/assets/ai/gpt/v-8e770d916ca938fc/parts/hands.svg",
+            "sha256": "ae81e65e8c32d2314cf387cee68e9fe2fb4694a16ad320f75699c932a1fc1bce",
+            "transform": null
+          },
+          {
+            "key": "prop",
+            "src": "/review-rounds/round-39/assets/ai/gpt/v-8e770d916ca938fc/parts/prop.svg",
+            "sha256": "92299103c515b120ad0169cb75c36d571cc76883c931bf50553302fd52c2cac4",
+            "transform": null
+          },
+          {
+            "key": "fingers",
+            "src": "/review-rounds/round-39/assets/ai/gpt/v-8e770d916ca938fc/parts/fingers.svg",
+            "sha256": "77d8396c64816a31fc9e2c14301ed6b7f1b64f5500a32f37a968bafef01fa4a1",
+            "transform": null
+          },
+          {
+            "key": "effect",
+            "src": "/review-rounds/round-39/assets/ai/gpt/v-8e770d916ca938fc/parts/effect.svg",
+            "sha256": "dabc5909ee967c8308ad13e2b8a0a8e3df066a693f9b5f248a0adf12e1a9d5bd",
+            "transform": null
+          }
+        ],
+        "use": "实际视觉主证为root IAB截图；PNG只绑定冻结输出。"
+      }
+    }
+  },
+  "identity": {
+    "score": 91,
+    "threshold": 90,
+    "pass": true,
+    "breakdown": {
+      "pose": 18,
+      "expression": 13,
+      "hair": 18,
+      "costume": 23,
+      "accessories": 19
+    },
+    "reason": "当前图的银白淡紫长发、骨角/尖耳、翼尾、浅色礼服与蓝云身份明确，胸前牵领及托云掌神似。发风向/披发轮廓、神态和衣装层次仍有Fashion简化，逐项为18/13/18/23/19，91；新接根改善融合，不自动加身份分。",
+    "poseAudit": {
+      "poseConsistent": true,
+      "motionScore": 18,
+      "reason": "胸前牵领掌、向外托云及站姿重心神似；手距/头倾细差计动作18/20，长裙遮挡髋膝不推断。",
+      "attribution": "神似/动作与关节材料分开判断；未把微小位置差当作融合否决。"
+    },
+    "colorAudit": {
+      "rule": "对应部位只核相近色相，不扣hex/明暗明度/饱和度/配色面积/渐变范围；中性色不因灰阶深浅扣。",
+      "viewed": [
+        {
+          "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/runtime/review-rounds/round-39/assets/ai/gpt/v-8e770d916ca938fc/reference.jpg",
+          "sha256": "c47948cd25efcf7ad4a5179288c8452445d57d6dfc379fb27ab6e809a6970157",
+          "method": "实际IAB完整JPG/AI并列呈现，绑定冻结原JPG字节"
+        },
+        {
+          "file": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gpt/round-39/reference-notes.md",
+          "sha256": "5cf665291c8b717546b1818e4143ee194ffd1c72efe9d87d1deef6ed38a88299",
+          "method": "当前冻结MD完整阅读，所选ZipZipPipe初始正常比例版本"
+        }
+      ],
+      "parts": [
+        {
+          "part": "发/眼",
+          "hueClose": true,
+          "hueDeduction": 0,
+          "judgement": "银白淡紫发与冷灰紫眼对应相近；中性灰阶不扣。"
+        },
+        {
+          "part": "角翼尾/衣裙鞋",
+          "hueClose": true,
+          "hueDeduction": 0,
+          "judgement": "骨白/白淡紫、浅鞋对应近色相，不按深浅、饱和度或面积扣。"
+        },
+        {
+          "part": "云/花链",
+          "hueClose": true,
+          "hueDeduction": 0,
+          "judgement": "蓝云、银白饰链对应相近。"
+        }
+      ],
+      "hueDeduction": 0,
+      "coreHueFailure": false
+    },
+    "mdSha256": "5cf665291c8b717546b1818e4143ee194ffd1c72efe9d87d1deef6ed38a88299",
+    "referenceSha256": "c47948cd25efcf7ad4a5179288c8452445d57d6dfc379fb27ab6e809a6970157",
+    "evidence": {
+      "sheet": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gpt/round-39/identity.png",
+      "sheetSha256": "1405426f5abfdf58ba598c227635f8c9f216a38cf1be59007f4e1227d3831a52",
+      "nativePngSha256": "681fddb1eb0c084bc05a282117c12dbbb142f736e7da8ee3d956e2068a49eb90",
+      "aiPngSha256": "e0d07d2b8fddd53735b03e43ddee6d294e12752e83502148c081b8259e07e686",
+      "browserScreenshot": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-49-focus-0-all-ai-viewport.jpg",
+      "browserScreenshotSha256": "b30626986f6ffc050c6ead069b85bcfab0c371587122d227f7753c7da5b21dec",
+      "method": "实际root IAB完整JPG/AI对看及当前完整冻结MD"
+    },
+    "browserComplete": true
+  },
+  "colorAudit": {
+    "rule": "对应部位只核相近色相，不扣hex/明暗明度/饱和度/配色面积/渐变范围；中性色不因灰阶深浅扣。",
+    "viewed": [
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/runtime/review-rounds/round-39/assets/ai/gpt/v-8e770d916ca938fc/reference.jpg",
+        "sha256": "c47948cd25efcf7ad4a5179288c8452445d57d6dfc379fb27ab6e809a6970157",
+        "method": "实际IAB完整JPG/AI并列呈现，绑定冻结原JPG字节"
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gpt/round-39/reference-notes.md",
+        "sha256": "5cf665291c8b717546b1818e4143ee194ffd1c72efe9d87d1deef6ed38a88299",
+        "method": "当前冻结MD完整阅读，所选ZipZipPipe初始正常比例版本"
+      }
+    ],
+    "parts": [
+      {
+        "part": "发/眼",
+        "hueClose": true,
+        "hueDeduction": 0,
+        "judgement": "银白淡紫发与冷灰紫眼对应相近；中性灰阶不扣。"
+      },
+      {
+        "part": "角翼尾/衣裙鞋",
+        "hueClose": true,
+        "hueDeduction": 0,
+        "judgement": "骨白/白淡紫、浅鞋对应近色相，不按深浅、饱和度或面积扣。"
+      },
+      {
+        "part": "云/花链",
+        "hueClose": true,
+        "hueDeduction": 0,
+        "judgement": "蓝云、银白饰链对应相近。"
+      }
+    ],
+    "hueDeduction": 0,
+    "coreHueFailure": false
+  },
+  "browserAudit": {
+    "ownEmbeddedBrowserUsed": false,
+    "presenter": "/root",
+    "independentScreenshotReviewer": "/root/fashion_judge",
+    "manifest": {
+      "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/r39-browser-manifest.json",
+      "sha256": "39ce2072b73df18404689b501e173e47c1e1789507aec1073d29a79e6ccdc747"
+    },
+    "independentLedger": {
+      "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/reviews/20261110/r39-browser-independent-review.json",
+      "sha256": "a949c65f71c4969ae53d7c925c696120cd5afadecac760facf1b41e068010113"
+    },
+    "actualMixedCaseCount": 6,
+    "identityBrowserEvidenceComplete": true,
+    "method": "实际root IAB冻结SVG截图由独立评委逐张看；只记录实际完整可辨认的case，失败/重复不凑覆盖。",
+    "screenshots": [
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-49-all-ai-full-page.jpg",
+        "sha256": "4d2d8a7da06868f40427d5bfa382f20fbcc56105f5194f33cb4d8118bfb111b8",
+        "group": 49,
+        "focus": null,
+        "caseIds": [
+          "gpt--r39--all-ai"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-50-standard-single-full-page.jpg",
+        "sha256": "0419aff350898dad8fc47b83252026f854a3788ed548c08897ea0e5e78f0758e",
+        "group": 50,
+        "focus": null,
+        "caseIds": [
+          "standard--mannequin"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-51-standard-native-full-page.jpg",
+        "sha256": "14666193a1b94687b47766c92a0f2e1342d96bc6a2599330ff6287bfbad1b5b0",
+        "group": 51,
+        "focus": null,
+        "caseIds": [
+          "standard--native-n1",
+          "standard--native-n2",
+          "standard--native-n3",
+          "standard--native-n4",
+          "standard--native-n5"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-52-standard-reference-full-page.jpg",
+        "sha256": "c2b3c77641fb8ccfb4e5e6fadb117e607898e1b4c8bfaa1eb82647c1d21f8b23",
+        "group": 52,
+        "focus": null,
+        "caseIds": [
+          "standard--reference"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-53-standard-swf-full-page.jpg",
+        "sha256": "4d875fe277d01a76a8a236cd5019f6307385125e3ee78ad96bd4b72b954a94bd",
+        "group": 53,
+        "focus": null,
+        "caseIds": [
+          "standard--source-1000018-406",
+          "standard--source-1023350-421",
+          "standard--source-1023351-421",
+          "standard--source-1023352-421",
+          "standard--source-1016674-421"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-54-standard-swf-full-page.jpg",
+        "sha256": "8fdca70f000ccb9b7c42e867143f985055418a82f0abcc6f42cd88dae2bf4f39",
+        "group": 54,
+        "focus": null,
+        "caseIds": [
+          "standard--source-1024708-421",
+          "standard--source-1026494-421",
+          "standard--source-1026682-421",
+          "standard--source-1026698-421",
+          "standard--source-1026703-421"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-55-standard-swf-full-page.jpg",
+        "sha256": "0e66cf48e015a36ba18eb900d70afc8833ae0dec7ce626bf34e58c4be009daea",
+        "group": 55,
+        "focus": null,
+        "caseIds": [
+          "standard--source-1028923-421",
+          "standard--source-1028931-421",
+          "standard--source-1028932-421",
+          "standard--source-1028933-421",
+          "standard--source-1028934-421"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-56-standard-swf-full-page.jpg",
+        "sha256": "dee074cbcebc86b825cca179a7bb85330933e27a3310c2cba4d0ae3a3bfa5d4c",
+        "group": 56,
+        "focus": null,
+        "caseIds": [
+          "standard--source-1031454-442",
+          "standard--source-1031460-421",
+          "standard--source-1032221-421",
+          "standard--source-1043298-421",
+          "standard--source-1043303-421"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-57-standard-detail-full-page.jpg",
+        "sha256": "e1740efba2899e70c1cf75473d4c9340cc4e78928796db7113cd28246ab2f5d2",
+        "group": 57,
+        "focus": null,
+        "caseIds": [
+          "standard--detail-6x"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-57-focus-0-standard-detail-viewport.jpg",
+        "sha256": "67916881064fc6fc00e7812ebab9d31b77b5083867ee13bfe28fe66d367f32b8",
+        "group": 57,
+        "focus": 0,
+        "caseIds": [
+          "standard--detail-6x--strip-0"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-57-focus-1-standard-detail-viewport.jpg",
+        "sha256": "4601c7746da6c0af2d5ad782782438cad19e44b597a290f6ad6d1525ba4e104f",
+        "group": 57,
+        "focus": 1,
+        "caseIds": [
+          "standard--detail-6x--strip-1"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-57-focus-2-standard-detail-viewport.jpg",
+        "sha256": "b114784c7f009872a4511dd4b838d95a60dae4944dc38d4630fd60544b65cc61",
+        "group": 57,
+        "focus": 2,
+        "caseIds": [
+          "standard--detail-6x--strip-2"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-09-focus-0-single-viewport.jpg",
+        "sha256": "d5bc13f355f9a77a6a000349c07512f800ca249da142467bccfd7bbcb4a4f6cf",
+        "group": 9,
+        "focus": 0,
+        "caseIds": [
+          "gpt--r39--headwear--n1"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-09-focus-1-single-viewport.jpg",
+        "sha256": "82792d4114a66500855a42d286d037a1ec0add261d44dd292ea40021a126dc0c",
+        "group": 9,
+        "focus": 1,
+        "caseIds": [
+          "gpt--r39--headwear--n2"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-09-focus-2-single-viewport.jpg",
+        "sha256": "982f571cd863b79217328cd91a05629f456fc5e57d88b5f9afc0f88145f6f7ea",
+        "group": 9,
+        "focus": 2,
+        "caseIds": [
+          "gpt--r39--headwear--n3"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-09-focus-3-single-viewport.jpg",
+        "sha256": "0b332559a771dcf31779f7e2c749188bc0de947903dc88fc5cb2c1665c6730ca",
+        "group": 9,
+        "focus": 3,
+        "caseIds": [
+          "gpt--r39--headwear--n4"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-09-focus-4-single-viewport.jpg",
+        "sha256": "cea7940c96ec40f7f5914aed08fea362cb0fed148f207156293034078f444d62",
+        "group": 9,
+        "focus": 4,
+        "caseIds": [
+          "gpt--r39--headwear--n5"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-49-focus-0-all-ai-viewport.jpg",
+        "sha256": "b30626986f6ffc050c6ead069b85bcfab0c371587122d227f7753c7da5b21dec",
+        "group": 49,
+        "focus": 0,
+        "caseIds": [
+          "gpt--r39--all-ai"
+        ]
+      }
+    ]
+  },
+  "frozenAudit": {
+    "session": "D:/LLM-show/LLM-show-fashion/ai-workspace/runtime/review-rounds/round-39/session.json",
+    "sessionSha256": "d14618c60530e75048cba1d7cf7d4d1f6a053dbca85eea2632af7f50a76c36d1",
+    "catalogSha256": "b7b2f703a31cdd9ed16b10779bad3e733b90da70c6e3bbc9827aa41f22ec379a",
+    "modelShaMatch": true,
+    "rulesShaMatch": true,
+    "inputNativeModelSeedMatch": true
+  },
+  "decision": "incomplete-paused",
+  "accepted": false,
+  "phaseStatus": "paused-by-explicit-user-request-after-round-39",
+  "feedback": [
+    "新增同骨材连续根伸入原生发缘，旧悬圆杯解除；五原生头饰单件均实看，98，不以AI前发代替native单件。",
+    "当前所见标准6x：旧屏左436短端与牵领臂未接已解除；新近端连续接原肩端，屏右已修肩保持。其余可见肘腕/掌根、腰髋、膝踝未确认额外新跨件缺口。",
+    "未审240个矩阵case保留；标准7/20+6x完整通过。",
+    "最新用户要求第39轮评完即停，任何残留只登记归档，不触发40或41艺术任务。"
+  ],
+  "supplementalEvidence": [
+    {
+      "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/reviews/20261110/r39-priority-target-review.json",
+      "sha256": "bc763acb46bcada97e81645e9cd40f75b7882fc71a13a40babb30eee3b2c752c"
+    },
+    {
+      "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/reviews/20261110/r39-joint-source-audit.json",
+      "sha256": "f7a998c991b7e7b61e3cb046d14cb50e98609ac148861c59e3b5c71115744d1f"
+    },
+    {
+      "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/reviews/20261110/r39-browser-independent-review.json",
+      "sha256": "a949c65f71c4969ae53d7c925c696120cd5afadecac760facf1b41e068010113"
+    },
+    {
+      "file": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gpt/round-39/standard-study/standard-mannequin-6x.png",
+      "sha256": "a2407a3c1bd9b1619a4c5b1de0d01eb61971bcf40e5dafa65f7baeaa6d76e0e2"
+    }
+  ],
+  "limitations": [
+    "本轮用户明确39评完即停；不创建40/41、不继续艺术返修。",
+    "246只审6，未审240保持未审，不因已看98或截止凑整套通过。",
+    "标准覆盖：固定视图7/7、真实原SWF 20/20；6x补充不并入7/20或246。",
+    "原生组件/组合恒100；只对AI重组接面/材质按自身证据判断，隐藏区域未知。"
+  ]
+}

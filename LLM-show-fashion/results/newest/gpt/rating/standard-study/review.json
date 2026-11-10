@@ -1,0 +1,802 @@
+{
+  "protocol": "fashion-standard-body-98-v1",
+  "reviewer": "/root/fashion_judge",
+  "character": "gpt",
+  "round": 39,
+  "inputHash": "8e770d916ca938fc091e91b81099f3314d0edbc94877912998943cdde6c3c6c8",
+  "nativeHash": "d68eec334e39f69a89bd6c05fb8c91a56a781df2a353bcc97ceb59ac3d34fabc",
+  "renderModelHash": "bd645ead9f9041972be16a1c120cef2046c9b524ae3c311505e501af29685d28",
+  "seed": "9c5e924fd7eed5dd3b28816c32ca506197ab565f8af5586e",
+  "nativeCalibration": 100,
+  "ratingRules": [
+    {
+      "file": "SCORING.md",
+      "sha256": "90eb3fb599cf67f9710811d6ae42a7a55f268fee82e6ba8f534ff5488745a7f0"
+    },
+    {
+      "file": "PROCESS.md",
+      "sha256": "b0129fb3e254877b48fca1aad3e7ddac223f5f82cc68828426eb170acf26f885"
+    },
+    {
+      "file": "ITERATION_RULES.md",
+      "sha256": "31e3ea312cdcc29e398c50703934e2d8da257f593ffd714a7f6b523c433e727d"
+    },
+    {
+      "file": "POSE_INTERFACE.md",
+      "sha256": "c544aa7291ffd3793ced115d4afbac82576092d839032791bbd23bd97068114e"
+    },
+    {
+      "file": "STANDARD_BODY_REVIEW.md",
+      "sha256": "c5d39c478c5e1a72e1646960461ed5b051f69c0deef685afac7d2d2dd69caec1"
+    }
+  ],
+  "studyManifestSha256": "664b23f1f0702c16a3da16bae36e298cf1ee39171bcccf888b31541edf6668af",
+  "integrationScore": 98,
+  "scoreScope": "完整当前7/20和冻结6x实际IAB审阅",
+  "integrationBreakdown": {
+    "proportion": 20,
+    "linework": 15,
+    "material": 24,
+    "connection": 29,
+    "whole": 10
+  },
+  "poseConsistent": true,
+  "pass": true,
+  "coverage": {
+    "complete": true,
+    "fixedViews": 7,
+    "plannedFixedViews": 7,
+    "sourceReferences": 20,
+    "plannedSourceReferences": 20,
+    "detail6xComplete": true
+  },
+  "reviewedViews": [
+    "standard-mannequin.png",
+    "standard-body-contexts.png",
+    "standard-vs-reference.png",
+    "standard-vs-20-1.png",
+    "standard-vs-20-2.png",
+    "standard-vs-20-3.png",
+    "standard-vs-20-4.png"
+  ],
+  "reviewedReferenceIds": [
+    "1000018-406",
+    "1023350-421",
+    "1023351-421",
+    "1023352-421",
+    "1016674-421",
+    "1024708-421",
+    "1026494-421",
+    "1026682-421",
+    "1026698-421",
+    "1026703-421",
+    "1028923-421",
+    "1028931-421",
+    "1028932-421",
+    "1028933-421",
+    "1028934-421",
+    "1031454-442",
+    "1031460-421",
+    "1032221-421",
+    "1043298-421",
+    "1043303-421"
+  ],
+  "reviewedDetailViews": [
+    "standard-mannequin-6x.png"
+  ],
+  "observations": [
+    {
+      "part": "可见接合",
+      "judgement": "旧屏左436短端与牵领臂未接已解除；新近端连续接原肩端，屏右已修肩保持。其余可见肘腕/掌根、腰髋、膝踝未确认额外新跨件缺口。"
+    }
+  ],
+  "issues": [],
+  "poseAudit": {
+    "reason": "胸前牵领掌、向外托云及站姿重心神似；手距/头倾细差计动作18/20，长裙遮挡髋膝不推断。",
+    "identityMotionScore": 18,
+    "hiddenRegions": "标准JPG衣裙/长发遮住的关节未知；仅裸素体可见接合实际检查。"
+  },
+  "detailJointAudit": [
+    {
+      "region": "颈双肩",
+      "judgement": "旧屏左436短端与牵领臂未接已解除；新近端连续接原肩端，屏右已修肩保持。其余可见肘腕/掌根、腰髋、膝踝未确认额外新跨件缺口。",
+      "file": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gpt/round-39/standard-study/standard-mannequin-6x.png",
+      "sha256": "a2407a3c1bd9b1619a4c5b1de0d01eb61971bcf40e5dafa65f7baeaa6d76e0e2"
+    },
+    {
+      "region": "双肘",
+      "judgement": "旧屏左436短端与牵领臂未接已解除；新近端连续接原肩端，屏右已修肩保持。其余可见肘腕/掌根、腰髋、膝踝未确认额外新跨件缺口。",
+      "file": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gpt/round-39/standard-study/standard-mannequin-6x.png",
+      "sha256": "a2407a3c1bd9b1619a4c5b1de0d01eb61971bcf40e5dafa65f7baeaa6d76e0e2"
+    },
+    {
+      "region": "双腕/掌根",
+      "judgement": "旧屏左436短端与牵领臂未接已解除；新近端连续接原肩端，屏右已修肩保持。其余可见肘腕/掌根、腰髋、膝踝未确认额外新跨件缺口。",
+      "file": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gpt/round-39/standard-study/standard-mannequin-6x.png",
+      "sha256": "a2407a3c1bd9b1619a4c5b1de0d01eb61971bcf40e5dafa65f7baeaa6d76e0e2"
+    },
+    {
+      "region": "腰髋",
+      "judgement": "旧屏左436短端与牵领臂未接已解除；新近端连续接原肩端，屏右已修肩保持。其余可见肘腕/掌根、腰髋、膝踝未确认额外新跨件缺口。",
+      "file": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gpt/round-39/standard-study/standard-mannequin-6x.png",
+      "sha256": "a2407a3c1bd9b1619a4c5b1de0d01eb61971bcf40e5dafa65f7baeaa6d76e0e2"
+    },
+    {
+      "region": "双膝/双踝",
+      "judgement": "旧屏左436短端与牵领臂未接已解除；新近端连续接原肩端，屏右已修肩保持。其余可见肘腕/掌根、腰髋、膝踝未确认额外新跨件缺口。",
+      "file": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gpt/round-39/standard-study/standard-mannequin-6x.png",
+      "sha256": "a2407a3c1bd9b1619a4c5b1de0d01eb61971bcf40e5dafa65f7baeaa6d76e0e2"
+    }
+  ],
+  "referenceComparisons": [
+    {
+      "id": "1000018-406",
+      "coverage": "default",
+      "sourceSha256": "bc178dda5aff9136c38ac00f8c48e066ec3d00e25d97c9c67cb6e4891cc2b0e0",
+      "svgSha256": "de522ee3d4ed0a13586e80bf3b5e64a8ef95742ce9175046bd11f6476ea9741b",
+      "judgement": "默认原腹/腿用于线宽与肉面基准，本轮保留的源腿不因其自身膝踝样式扣分；默认站姿不证明标准动作。",
+      "browserEvidence": [
+        {
+          "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-53-standard-swf-full-page.jpg",
+          "sha256": "4d875fe277d01a76a8a236cd5019f6307385125e3ee78ad96bd4b72b954a94bd"
+        }
+      ]
+    },
+    {
+      "id": "1023350-421",
+      "coverage": "complete",
+      "sourceSha256": "0c949d85799a5ac85d7d3cc3b5b0ec81e6f4c7bcbd20e48b37c52e9f41e4ebef",
+      "svgSha256": "e629b1b29a2e0a71fba023167f34d001cf1d5c0c714480ef80025768ad3d1eaf",
+      "judgement": "实际可见的颈肩、抬臂、腕掌和裙下腿可作连续曲率/窄暗边基准；衣裙遮住躯干不推断。",
+      "browserEvidence": [
+        {
+          "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-53-standard-swf-full-page.jpg",
+          "sha256": "4d875fe277d01a76a8a236cd5019f6307385125e3ee78ad96bd4b72b954a94bd"
+        }
+      ]
+    },
+    {
+      "id": "1023351-421",
+      "coverage": "complete",
+      "sourceSha256": "dcfac2cab94062dd8b4554bd85392ed42613d194f1c5ff16169ecdae3d0a52f4",
+      "svgSha256": "7faa79bb24b5187b7014b28c89b4e82a61704207dbbc1faf3dd223360f1d1ce2",
+      "judgement": "实际可见肩臂与腿靴仅作材料和粗细基准；未把衣内区域当裸体。",
+      "browserEvidence": [
+        {
+          "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-53-standard-swf-full-page.jpg",
+          "sha256": "4d875fe277d01a76a8a236cd5019f6307385125e3ee78ad96bd4b72b954a94bd"
+        }
+      ]
+    },
+    {
+      "id": "1023352-421",
+      "coverage": "visible-skin",
+      "sourceSha256": "17926f479862dbedb1293c9627321a58a06382a4988e6e0abacb9f1a95a2e2fd",
+      "svgSha256": "9dd0209bdaa4da1e69c1aea9958e370c6ef6e173477a36e4b25a19979ceb3af7",
+      "judgement": "真实可见持花手旁腕掌/肩颈及腿，腕掌连续转折是本轮掌连接的对照；花后指形未知。",
+      "browserEvidence": [
+        {
+          "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-53-standard-swf-full-page.jpg",
+          "sha256": "4d875fe277d01a76a8a236cd5019f6307385125e3ee78ad96bd4b72b954a94bd"
+        }
+      ]
+    },
+    {
+      "id": "1016674-421",
+      "coverage": "lower",
+      "sourceSha256": "f7f78836d1936a043672c5cd182f1354b4ecfa707a70c5e38c7f9789aa9a22c7",
+      "svgSha256": "3c86fe31b33a182756b13ed85e0e94bd599dd483a14a1fa623c47f5e4640d1cc",
+      "judgement": "网袜和靴下肢可见，袜面/鞋为语境；只比较真实腿段，不由透明区推断躯干。",
+      "browserEvidence": [
+        {
+          "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-53-standard-swf-full-page.jpg",
+          "sha256": "4d875fe277d01a76a8a236cd5019f6307385125e3ee78ad96bd4b72b954a94bd"
+        }
+      ]
+    },
+    {
+      "id": "1024708-421",
+      "coverage": "lower",
+      "sourceSha256": "5ab8b773b7efbc50dee46d8172eccd07793bce5c02790daf37a591c213938472",
+      "svgSha256": "c99a3dc79b00d1e6ef3c41fc7586ea277cddb084c9196d5856f0a0359b61146c",
+      "judgement": "可见大腿膝段及长靴用于粗细/转折参照，靴内踝足不臆测。",
+      "browserEvidence": [
+        {
+          "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-54-standard-swf-full-page.jpg",
+          "sha256": "8fdca70f000ccb9b7c42e867143f985055418a82f0abcc6f42cd88dae2bf4f39"
+        }
+      ]
+    },
+    {
+      "id": "1026494-421",
+      "coverage": "lower",
+      "sourceSha256": "b0cf804efcca913a4c81b47e3b42e6154978eb684faf69b0d0bc628ee0aacf95",
+      "svgSha256": "f3a839eebdc408cd9e6b32bde04a1b25e081193f3be706cb2b1028c119854176",
+      "judgement": "弯膝裸露腿段和靴实际可见；本轮没有把原生膝部角折本身当AI新增错误。",
+      "browserEvidence": [
+        {
+          "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-54-standard-swf-full-page.jpg",
+          "sha256": "8fdca70f000ccb9b7c42e867143f985055418a82f0abcc6f42cd88dae2bf4f39"
+        }
+      ]
+    },
+    {
+      "id": "1026682-421",
+      "coverage": "lower",
+      "sourceSha256": "ab0ac9849fa3e37a8dace1576e2bc32744e64fed16d4290832bf3eb574041c53",
+      "svgSha256": "956d77f7ffca58e1f275bd922ab2b776b5af51b58ebae45c7c3ba3d9d6cdc096",
+      "judgement": "袜靴包覆的屈腿轮廓作整体语境，不能据此证明裸皮肤和掌腕已达标。",
+      "browserEvidence": [
+        {
+          "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-54-standard-swf-full-page.jpg",
+          "sha256": "8fdca70f000ccb9b7c42e867143f985055418a82f0abcc6f42cd88dae2bf4f39"
+        }
+      ]
+    },
+    {
+      "id": "1026698-421",
+      "coverage": "lower",
+      "sourceSha256": "b403b7cc52f53a0be0b093292430519bf55afaaac427bbfabdb35d58066d99b6",
+      "svgSha256": "06a02d7a0cc5b07f266a3ce89a83ab43a0f5c750b47f4927514f66eb3843839a",
+      "judgement": "裙下可见腿的交叠、踝足边作粗细基准；裙上髋部未知。",
+      "browserEvidence": [
+        {
+          "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-54-standard-swf-full-page.jpg",
+          "sha256": "8fdca70f000ccb9b7c42e867143f985055418a82f0abcc6f42cd88dae2bf4f39"
+        }
+      ]
+    },
+    {
+      "id": "1026703-421",
+      "coverage": "lower",
+      "sourceSha256": "ff214c1c7c3a79f7991fba6ad9c288f1e5ce273ced976bb01a23d291444edae1",
+      "svgSha256": "feb46c381b39abaf7e2bd844303db6e2e87cf60b1fc2a404962cf701362a6435",
+      "judgement": "裙下腿与运动鞋可见，用于不同原生轮廓的范围对照；未臆造裙内髋膝。",
+      "browserEvidence": [
+        {
+          "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-54-standard-swf-full-page.jpg",
+          "sha256": "8fdca70f000ccb9b7c42e867143f985055418a82f0abcc6f42cd88dae2bf4f39"
+        }
+      ]
+    },
+    {
+      "id": "1028923-421",
+      "coverage": "lower",
+      "sourceSha256": "714ab888832afc778bac4aefb60a3e62785ac247c1e41503d90fd14c4361d3d4",
+      "svgSha256": "444269972fc82053bee90dc9812b9a8c7d9575d2af105b23b2f69cfb44c877c0",
+      "judgement": "真实裸露膝/小腿/踝及鞋边可比较；原生原形保留不因与别源不同扣分。",
+      "browserEvidence": [
+        {
+          "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-55-standard-swf-full-page.jpg",
+          "sha256": "0e66cf48e015a36ba18eb900d70afc8833ae0dec7ce626bf34e58c4be009daea"
+        }
+      ]
+    },
+    {
+      "id": "1028931-421",
+      "coverage": "lower",
+      "sourceSha256": "ea36338878ff5f4a9051e27da46d60a9ddb680d1ed7016218358ca16ccc655c8",
+      "svgSha256": "d98f3851c11c9e8a7ad405e021db646bbe583500ce21ab9ccb7110ad01c30dfe",
+      "judgement": "站姿膝/踝可见，原生有不等宽阴影和软曲率；不要求新稿采用此站姿。",
+      "browserEvidence": [
+        {
+          "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-55-standard-swf-full-page.jpg",
+          "sha256": "0e66cf48e015a36ba18eb900d70afc8833ae0dec7ce626bf34e58c4be009daea"
+        }
+      ]
+    },
+    {
+      "id": "1028932-421",
+      "coverage": "lower",
+      "sourceSha256": "36e94a59caae3f7fece37f7976ebc8343347e150b62067cae313085442bbacff",
+      "svgSha256": "1edb20edb16a196593c90789231b8f9b178bd4e9032c015df85adfc273bbd07c",
+      "judgement": "斜交长腿真实可见，腿部转向与曲率为对照；衣裙遮挡上方不推断。",
+      "browserEvidence": [
+        {
+          "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-55-standard-swf-full-page.jpg",
+          "sha256": "0e66cf48e015a36ba18eb900d70afc8833ae0dec7ce626bf34e58c4be009daea"
+        }
+      ]
+    },
+    {
+      "id": "1028933-421",
+      "coverage": "lower",
+      "sourceSha256": "492f63060bbf947fffb5aa17697669dba67eba0fe8a7998c3fc278508e8c44a3",
+      "svgSha256": "7d5e20ba4d63c3c6def9db6dfbcac5f6228589ba386e326e00f5f30bb83b277d",
+      "judgement": "坐姿弯膝及鞋可见，梯子仅为原作语境；不要求标准体跟随坐姿，也不扣原生分。",
+      "browserEvidence": [
+        {
+          "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-55-standard-swf-full-page.jpg",
+          "sha256": "0e66cf48e015a36ba18eb900d70afc8833ae0dec7ce626bf34e58c4be009daea"
+        }
+      ]
+    },
+    {
+      "id": "1028934-421",
+      "coverage": "lower",
+      "sourceSha256": "9600d469c9f3ca3efd0d3f7766c83397bcc4466a66315d4e171840427fb40709",
+      "svgSha256": "e8d9376079e150d2f8260040a1974536131e9fdc331babd7b0242ec342a8ec0b",
+      "judgement": "交叠屈膝与踝鞋可见，作真实原生线/面参考；没有由此扣新稿原样腿。",
+      "browserEvidence": [
+        {
+          "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-55-standard-swf-full-page.jpg",
+          "sha256": "0e66cf48e015a36ba18eb900d70afc8833ae0dec7ce626bf34e58c4be009daea"
+        }
+      ]
+    },
+    {
+      "id": "1031454-442",
+      "coverage": "upper",
+      "sourceSha256": "63b6fa5024027aab2dd1bfc51159d806699f4691255facf5553f9417c06ae6aa",
+      "svgSha256": "824111e1fc59140624a21e943acfa9d56caecb622490cf940477dedd8854dfde",
+      "judgement": "可见折肘、放松手和肩外缘的连续曲线可对照新绘连接；衣内胸腹未知。",
+      "browserEvidence": [
+        {
+          "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-56-standard-swf-full-page.jpg",
+          "sha256": "dee074cbcebc86b825cca179a7bb85330933e27a3310c2cba4d0ae3a3bfa5d4c"
+        }
+      ]
+    },
+    {
+      "id": "1031460-421",
+      "coverage": "lower",
+      "sourceSha256": "14a6529aecdd2bf54bf0f69e88a045025273e40d5fcef6d8a880760d26d7e769",
+      "svgSha256": "72e5e2ce06fffbc555d0de60055926c19d559da0c90b6e006623680659439722",
+      "judgement": "深色袜/鞋包覆腿仅看可见轮廓和原生细节，不把袜下当裸皮肤证据。",
+      "browserEvidence": [
+        {
+          "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-56-standard-swf-full-page.jpg",
+          "sha256": "dee074cbcebc86b825cca179a7bb85330933e27a3310c2cba4d0ae3a3bfa5d4c"
+        }
+      ]
+    },
+    {
+      "id": "1032221-421",
+      "coverage": "lower",
+      "sourceSha256": "434c31630701604cdb0167c0d6a8546b990e21a6a5952ed20e5d00c1d3894be0",
+      "svgSha256": "96a48d2c1f834efde9bd5b77b97f9a34d8da8abf7b81a8b2b80648809ce0a034",
+      "judgement": "膝下裸露小腿和长靴用于腿段对照，靴内踝未知；本轮不据源风格扣新AI腿。",
+      "browserEvidence": [
+        {
+          "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-56-standard-swf-full-page.jpg",
+          "sha256": "dee074cbcebc86b825cca179a7bb85330933e27a3310c2cba4d0ae3a3bfa5d4c"
+        }
+      ]
+    },
+    {
+      "id": "1043298-421",
+      "coverage": "upper",
+      "sourceSha256": "c48b46c4e4a0180fe21f15ffdcb464cdb008cfaa5d3fe57d87d7b45abb4a6444",
+      "svgSha256": "82bb565790a6b25577e560ebc4e3a9d1482e6a58c6975d75f4c19789c625c0aa",
+      "judgement": "夹克语境内只有真实可见颈/垂手/腕作参照，衣内肩胸未知；手腕转折可对照。",
+      "browserEvidence": [
+        {
+          "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-56-standard-swf-full-page.jpg",
+          "sha256": "dee074cbcebc86b825cca179a7bb85330933e27a3310c2cba4d0ae3a3bfa5d4c"
+        }
+      ]
+    },
+    {
+      "id": "1043303-421",
+      "coverage": "upper",
+      "sourceSha256": "3ddda0ffe00798a613101161fb306735b88239aed97aa568933f700bc43e9358",
+      "svgSha256": "3629dbe0e321d9e014d71e9675e1bb5b8c9c3da96792b0e376f5fed39cdf60b3",
+      "judgement": "披肩服饰的褶与线是整体语境，无可见完整裸四肢；不称它为完整裸体来源。",
+      "browserEvidence": [
+        {
+          "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-56-standard-swf-full-page.jpg",
+          "sha256": "dee074cbcebc86b825cca179a7bb85330933e27a3310c2cba4d0ae3a3bfa5d4c"
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "file": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gpt/round-39/standard-study/standard-mannequin.png",
+      "sha256": "6773c2c1c64e03a9855ab657169cc44a570d878e9b8d028809afb04b9ba47ed4"
+    },
+    {
+      "file": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gpt/round-39/standard-study/standard-body-contexts.png",
+      "sha256": "61051087f89388ed4a20b3453d20f2ad38f98f60401bd4e5c09449c296b4591b"
+    },
+    {
+      "file": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gpt/round-39/standard-study/standard-vs-reference.png",
+      "sha256": "2a4182a82c1dbbd416c61f78e34e90df0d170fd21c90a30a30ae094a9c407598"
+    },
+    {
+      "file": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gpt/round-39/standard-study/standard-vs-20-1.png",
+      "sha256": "237d5ce2f2b71b3b38a7a946fd6a3e6fc2cdd189716758aa2274a3959fd1f274"
+    },
+    {
+      "file": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gpt/round-39/standard-study/standard-vs-20-2.png",
+      "sha256": "36ca40cbd8448e6d8296ce859cb65ed4c8dfbf0bf748dd694f3ad01034f4ada9"
+    },
+    {
+      "file": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gpt/round-39/standard-study/standard-vs-20-3.png",
+      "sha256": "ef302d0c0a2a47fce7586f811c8362c42c459927756d9f3caa0fdc3bd9acf94e"
+    },
+    {
+      "file": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gpt/round-39/standard-study/standard-vs-20-4.png",
+      "sha256": "f36c5cd71bbc32d23668e2bf4eebe5163b47e5946e9ac9aca27478e7f96d9eb7"
+    },
+    {
+      "file": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gpt/round-39/standard-study/standard-mannequin-6x.png",
+      "sha256": "a2407a3c1bd9b1619a4c5b1de0d01eb61971bcf40e5dafa65f7baeaa6d76e0e2"
+    }
+  ],
+  "browserAudit": {
+    "ownEmbeddedBrowserUsed": false,
+    "presenter": "/root",
+    "independentScreenshotReviewer": "/root/fashion_judge",
+    "manifest": {
+      "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/r39-browser-manifest.json",
+      "sha256": "39ce2072b73df18404689b501e173e47c1e1789507aec1073d29a79e6ccdc747"
+    },
+    "independentLedger": {
+      "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/reviews/20261110/r39-browser-independent-review.json",
+      "sha256": "a949c65f71c4969ae53d7c925c696120cd5afadecac760facf1b41e068010113"
+    },
+    "actualMixedCaseCount": 6,
+    "identityBrowserEvidenceComplete": true,
+    "method": "实际root IAB冻结SVG截图由独立评委逐张看；只记录实际完整可辨认的case，失败/重复不凑覆盖。",
+    "screenshots": [
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-49-all-ai-full-page.jpg",
+        "sha256": "4d2d8a7da06868f40427d5bfa382f20fbcc56105f5194f33cb4d8118bfb111b8",
+        "group": 49,
+        "focus": null,
+        "caseIds": [
+          "gpt--r39--all-ai"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-50-standard-single-full-page.jpg",
+        "sha256": "0419aff350898dad8fc47b83252026f854a3788ed548c08897ea0e5e78f0758e",
+        "group": 50,
+        "focus": null,
+        "caseIds": [
+          "standard--mannequin"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-51-standard-native-full-page.jpg",
+        "sha256": "14666193a1b94687b47766c92a0f2e1342d96bc6a2599330ff6287bfbad1b5b0",
+        "group": 51,
+        "focus": null,
+        "caseIds": [
+          "standard--native-n1",
+          "standard--native-n2",
+          "standard--native-n3",
+          "standard--native-n4",
+          "standard--native-n5"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-52-standard-reference-full-page.jpg",
+        "sha256": "c2b3c77641fb8ccfb4e5e6fadb117e607898e1b4c8bfaa1eb82647c1d21f8b23",
+        "group": 52,
+        "focus": null,
+        "caseIds": [
+          "standard--reference"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-53-standard-swf-full-page.jpg",
+        "sha256": "4d875fe277d01a76a8a236cd5019f6307385125e3ee78ad96bd4b72b954a94bd",
+        "group": 53,
+        "focus": null,
+        "caseIds": [
+          "standard--source-1000018-406",
+          "standard--source-1023350-421",
+          "standard--source-1023351-421",
+          "standard--source-1023352-421",
+          "standard--source-1016674-421"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-54-standard-swf-full-page.jpg",
+        "sha256": "8fdca70f000ccb9b7c42e867143f985055418a82f0abcc6f42cd88dae2bf4f39",
+        "group": 54,
+        "focus": null,
+        "caseIds": [
+          "standard--source-1024708-421",
+          "standard--source-1026494-421",
+          "standard--source-1026682-421",
+          "standard--source-1026698-421",
+          "standard--source-1026703-421"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-55-standard-swf-full-page.jpg",
+        "sha256": "0e66cf48e015a36ba18eb900d70afc8833ae0dec7ce626bf34e58c4be009daea",
+        "group": 55,
+        "focus": null,
+        "caseIds": [
+          "standard--source-1028923-421",
+          "standard--source-1028931-421",
+          "standard--source-1028932-421",
+          "standard--source-1028933-421",
+          "standard--source-1028934-421"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-56-standard-swf-full-page.jpg",
+        "sha256": "dee074cbcebc86b825cca179a7bb85330933e27a3310c2cba4d0ae3a3bfa5d4c",
+        "group": 56,
+        "focus": null,
+        "caseIds": [
+          "standard--source-1031454-442",
+          "standard--source-1031460-421",
+          "standard--source-1032221-421",
+          "standard--source-1043298-421",
+          "standard--source-1043303-421"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-57-standard-detail-full-page.jpg",
+        "sha256": "e1740efba2899e70c1cf75473d4c9340cc4e78928796db7113cd28246ab2f5d2",
+        "group": 57,
+        "focus": null,
+        "caseIds": [
+          "standard--detail-6x"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-57-focus-0-standard-detail-viewport.jpg",
+        "sha256": "67916881064fc6fc00e7812ebab9d31b77b5083867ee13bfe28fe66d367f32b8",
+        "group": 57,
+        "focus": 0,
+        "caseIds": [
+          "standard--detail-6x--strip-0"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-57-focus-1-standard-detail-viewport.jpg",
+        "sha256": "4601c7746da6c0af2d5ad782782438cad19e44b597a290f6ad6d1525ba4e104f",
+        "group": 57,
+        "focus": 1,
+        "caseIds": [
+          "standard--detail-6x--strip-1"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-57-focus-2-standard-detail-viewport.jpg",
+        "sha256": "b114784c7f009872a4511dd4b838d95a60dae4944dc38d4630fd60544b65cc61",
+        "group": 57,
+        "focus": 2,
+        "caseIds": [
+          "standard--detail-6x--strip-2"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-09-focus-0-single-viewport.jpg",
+        "sha256": "d5bc13f355f9a77a6a000349c07512f800ca249da142467bccfd7bbcb4a4f6cf",
+        "group": 9,
+        "focus": 0,
+        "caseIds": [
+          "gpt--r39--headwear--n1"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-09-focus-1-single-viewport.jpg",
+        "sha256": "82792d4114a66500855a42d286d037a1ec0add261d44dd292ea40021a126dc0c",
+        "group": 9,
+        "focus": 1,
+        "caseIds": [
+          "gpt--r39--headwear--n2"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-09-focus-2-single-viewport.jpg",
+        "sha256": "982f571cd863b79217328cd91a05629f456fc5e57d88b5f9afc0f88145f6f7ea",
+        "group": 9,
+        "focus": 2,
+        "caseIds": [
+          "gpt--r39--headwear--n3"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-09-focus-3-single-viewport.jpg",
+        "sha256": "0b332559a771dcf31779f7e2c749188bc0de947903dc88fc5cb2c1665c6730ca",
+        "group": 9,
+        "focus": 3,
+        "caseIds": [
+          "gpt--r39--headwear--n4"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-09-focus-4-single-viewport.jpg",
+        "sha256": "cea7940c96ec40f7f5914aed08fea362cb0fed148f207156293034078f444d62",
+        "group": 9,
+        "focus": 4,
+        "caseIds": [
+          "gpt--r39--headwear--n5"
+        ]
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-49-focus-0-all-ai-viewport.jpg",
+        "sha256": "b30626986f6ffc050c6ead069b85bcfab0c371587122d227f7753c7da5b21dec",
+        "group": 49,
+        "focus": 0,
+        "caseIds": [
+          "gpt--r39--all-ai"
+        ]
+      }
+    ]
+  },
+  "browserStandardEvidence": [
+    {
+      "group": 50,
+      "focus": null,
+      "part": null,
+      "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-50-standard-single-full-page.jpg",
+      "sha256": "0419aff350898dad8fc47b83252026f854a3788ed548c08897ea0e5e78f0758e",
+      "caseIds": [
+        "standard--mannequin"
+      ]
+    },
+    {
+      "group": 51,
+      "focus": null,
+      "part": null,
+      "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-51-standard-native-full-page.jpg",
+      "sha256": "14666193a1b94687b47766c92a0f2e1342d96bc6a2599330ff6287bfbad1b5b0",
+      "caseIds": [
+        "standard--native-n1",
+        "standard--native-n2",
+        "standard--native-n3",
+        "standard--native-n4",
+        "standard--native-n5"
+      ]
+    },
+    {
+      "group": 52,
+      "focus": null,
+      "part": null,
+      "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-52-standard-reference-full-page.jpg",
+      "sha256": "c2b3c77641fb8ccfb4e5e6fadb117e607898e1b4c8bfaa1eb82647c1d21f8b23",
+      "caseIds": [
+        "standard--reference"
+      ]
+    },
+    {
+      "group": 53,
+      "focus": null,
+      "part": null,
+      "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-53-standard-swf-full-page.jpg",
+      "sha256": "4d875fe277d01a76a8a236cd5019f6307385125e3ee78ad96bd4b72b954a94bd",
+      "caseIds": [
+        "standard--source-1000018-406",
+        "standard--source-1023350-421",
+        "standard--source-1023351-421",
+        "standard--source-1023352-421",
+        "standard--source-1016674-421"
+      ]
+    },
+    {
+      "group": 54,
+      "focus": null,
+      "part": null,
+      "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-54-standard-swf-full-page.jpg",
+      "sha256": "8fdca70f000ccb9b7c42e867143f985055418a82f0abcc6f42cd88dae2bf4f39",
+      "caseIds": [
+        "standard--source-1024708-421",
+        "standard--source-1026494-421",
+        "standard--source-1026682-421",
+        "standard--source-1026698-421",
+        "standard--source-1026703-421"
+      ]
+    },
+    {
+      "group": 55,
+      "focus": null,
+      "part": null,
+      "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-55-standard-swf-full-page.jpg",
+      "sha256": "0e66cf48e015a36ba18eb900d70afc8833ae0dec7ce626bf34e58c4be009daea",
+      "caseIds": [
+        "standard--source-1028923-421",
+        "standard--source-1028931-421",
+        "standard--source-1028932-421",
+        "standard--source-1028933-421",
+        "standard--source-1028934-421"
+      ]
+    },
+    {
+      "group": 56,
+      "focus": null,
+      "part": null,
+      "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-56-standard-swf-full-page.jpg",
+      "sha256": "dee074cbcebc86b825cca179a7bb85330933e27a3310c2cba4d0ae3a3bfa5d4c",
+      "caseIds": [
+        "standard--source-1031454-442",
+        "standard--source-1031460-421",
+        "standard--source-1032221-421",
+        "standard--source-1043298-421",
+        "standard--source-1043303-421"
+      ]
+    },
+    {
+      "group": 57,
+      "focus": null,
+      "part": null,
+      "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-57-standard-detail-full-page.jpg",
+      "sha256": "e1740efba2899e70c1cf75473d4c9340cc4e78928796db7113cd28246ab2f5d2",
+      "caseIds": [
+        "standard--detail-6x"
+      ]
+    },
+    {
+      "group": 57,
+      "focus": 0,
+      "part": "1/3",
+      "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-57-focus-0-standard-detail-viewport.jpg",
+      "sha256": "67916881064fc6fc00e7812ebab9d31b77b5083867ee13bfe28fe66d367f32b8",
+      "caseIds": [
+        "standard--detail-6x--strip-0"
+      ]
+    },
+    {
+      "group": 57,
+      "focus": 1,
+      "part": "2/3",
+      "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-57-focus-1-standard-detail-viewport.jpg",
+      "sha256": "4601c7746da6c0af2d5ad782782438cad19e44b597a290f6ad6d1525ba4e104f",
+      "caseIds": [
+        "standard--detail-6x--strip-1"
+      ]
+    },
+    {
+      "group": 57,
+      "focus": 2,
+      "part": "3/3",
+      "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/workspace/browser-review/round-39/gpt/group-57-focus-2-standard-detail-viewport.jpg",
+      "sha256": "b114784c7f009872a4511dd4b838d95a60dae4944dc38d4630fd60544b65cc61",
+      "caseIds": [
+        "standard--detail-6x--strip-2"
+      ]
+    }
+  ],
+  "colorAudit": {
+    "rule": "对应部位只核相近色相，不扣hex/明暗明度/饱和度/配色面积/渐变范围；中性色不因灰阶深浅扣。",
+    "viewed": [
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/ai-workspace/runtime/review-rounds/round-39/assets/ai/gpt/v-8e770d916ca938fc/reference.jpg",
+        "sha256": "c47948cd25efcf7ad4a5179288c8452445d57d6dfc379fb27ab6e809a6970157",
+        "method": "实际IAB完整JPG/AI并列呈现，绑定冻结原JPG字节"
+      },
+      {
+        "file": "D:/LLM-show/LLM-show-fashion/results/archived/rounds/gpt/round-39/reference-notes.md",
+        "sha256": "5cf665291c8b717546b1818e4143ee194ffd1c72efe9d87d1deef6ed38a88299",
+        "method": "当前冻结MD完整阅读，所选ZipZipPipe初始正常比例版本"
+      }
+    ],
+    "parts": [
+      {
+        "part": "发/眼",
+        "hueClose": true,
+        "hueDeduction": 0,
+        "judgement": "银白淡紫发与冷灰紫眼对应相近；中性灰阶不扣。"
+      },
+      {
+        "part": "角翼尾/衣裙鞋",
+        "hueClose": true,
+        "hueDeduction": 0,
+        "judgement": "骨白/白淡紫、浅鞋对应近色相，不按深浅、饱和度或面积扣。"
+      },
+      {
+        "part": "云/花链",
+        "hueClose": true,
+        "hueDeduction": 0,
+        "judgement": "蓝云、银白饰链对应相近。"
+      }
+    ],
+    "hueDeduction": 0,
+    "coreHueFailure": false
+  },
+  "limitations": [
+    "本轮用户明确39评完即停；不创建40/41、不继续艺术返修。",
+    "246只审6，未审240保持未审，不因已看98或截止凑整套通过。",
+    "标准覆盖：固定视图7/7、真实原SWF 20/20；6x补充不并入7/20或246。",
+    "原生组件/组合恒100；只对AI重组接面/材质按自身证据判断，隐藏区域未知。"
+  ]
+}
