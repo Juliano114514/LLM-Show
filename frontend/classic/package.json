@@ -1,0 +1,21 @@
+{
+  "name": "llm-show-classic-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "assets:classic": "node ../../LLM-show-classic/tools/build-classic.mjs && node ../../LLM-show-classic/tools/remake-classic.mjs --apply",
+    "assets:poses": "node ../../LLM-show-classic/tools/classic-poses.mjs && node ../../LLM-show-classic/tools/remake-classic.mjs --apply",
+    "assets:refine": "node ../../LLM-show-classic/tools/refine-classic.mjs && node ../../LLM-show-classic/tools/remake-classic.mjs --apply",
+    "assets:arms": "node ../../LLM-show-classic/tools/refine-classic.mjs --arms-only && node ../../LLM-show-classic/tools/remake-classic.mjs --apply",
+    "assets:remake": "node ../../LLM-show-classic/tools/remake-classic.mjs --apply",
+    "assets:compare-bodies": "node ../../LLM-show-classic/tools/compare-classic-bodies.mjs",
+    "assets:blingee": "node ../../LLM-show-classic/tools/export-classic-blingee.mjs",
+    "assets:rasterize": "node ../../LLM-show-classic/tools/rasterize-classic.mjs",
+    "assets:export": "node ../../LLM-show-classic/tools/export-classic.mjs",
+    "assets:animate-scenes": "node ../../LLM-show-classic/tools/animate-classic-scenes.mjs",
+    "preview": "vite preview --host 127.0.0.1"
+  }
+}
