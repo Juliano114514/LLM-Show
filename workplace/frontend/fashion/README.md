@@ -1,6 +1,6 @@
 # Fashion 前端
 
-在 `D:\LLM-show\frontend` 执行 `npm ci`，然后运行 `npm run dev:fashion`。打开 `http://127.0.0.1:6187/`。
+在 `D:\LLM-show\workplace\frontend` 执行 `npm ci`，然后运行 `npm run dev:fashion`。打开 `http://127.0.0.1:6187/`。
 
 - `src/`：React 页面、样式与前端组合模型。
 - `vite.config.mjs`：本页面配置；运行资产直接读取 `../../LLM-show-fashion/ai-workspace/runtime/`。

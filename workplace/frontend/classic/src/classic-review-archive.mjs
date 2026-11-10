@@ -2,7 +2,7 @@
 const query=new URLSearchParams(location.search);
 const requested=query.get('archive')||'';
 export const reviewArchive=query.get('review')==='1'&&/^[a-f0-9]{20}$/.test(requested)?requested:null;
-export const reviewArchivePrefix=reviewArchive?`/LLM-show-classic/results/archived/runtime/${reviewArchive}/public`:'';
+export const reviewArchivePrefix=reviewArchive?`/workplace/LLM-show-classic/results/archived/runtime/${reviewArchive}/public`:'';
 export const reviewAssetUrl=url=>`${reviewArchivePrefix}${url}`;
 export function rebaseReviewAssets(value){
   if(!reviewArchive)return value;

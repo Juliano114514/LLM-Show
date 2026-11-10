@@ -2,11 +2,16 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 
-const workspace = fileURLToPath(new URL('../', import.meta.url));
-const roots = new Set(['LLM-show-classic', 'LLM-show-fashion', 'qq-show-classic', 'qq-show-fashion']);
+const workspace = fileURLToPath(new URL('../../', import.meta.url));
+const rootPaths = new Map([
+  ['workplace', 'workplace'], ['qq-show-classic', 'qq-show-classic'], ['qq-show-fashion', 'qq-show-fashion'],
+  // Frozen review documents retain their original URLs after the physical move.
+  ['LLM-show-classic', 'workplace/LLM-show-classic'], ['LLM-show-fashion', 'workplace/LLM-show-fashion'],
+  ['frontend', 'workplace/frontend'],
+]);
 const types = {'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/javascript','.mjs':'text/javascript','.json':'application/json','.md':'text/plain; charset=utf-8','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.gif':'image/gif','.svg':'image/svg+xml','.txt':'text/plain; charset=utf-8'};
 
-// Serve the real workspace paths used by review documents, without aliases.
+// Serve current workspace paths and keep frozen documents' former URLs valid.
 export function workspaceFiles({runtimeRoot, extraRuntimePaths = []} = {}) {
   const runtimePaths = new Set(['ai', 'native', 'native-contact', 'review-rounds', 'rating-rules', 'reference-20-looks', 'references', 'catalog.json', 'review-session.json', 'reviews.json', 'review-protocol.md', 'native-availability.json', ...extraRuntimePaths]);
   function middleware(req, res, next) {
@@ -15,15 +20,15 @@ export function workspaceFiles({runtimeRoot, extraRuntimePaths = []} = {}) {
     try { pathname = decodeURIComponent(new URL(req.url, 'http://localhost').pathname); }
     catch { res.statusCode = 400; return res.end(); }
     const parts = pathname.slice(1).split('/');
-    const nativePage = pathname.startsWith('/frontend/fashion/native/');
-    const portalStyle = pathname === '/frontend/portal.css';
     const runtimeFile = runtimeRoot && runtimePaths.has(parts[0]);
-    if (!roots.has(parts[0]) && !nativePage && !runtimeFile && !portalStyle) return next();
+    if (!rootPaths.has(parts[0]) && !runtimeFile) return next();
+    const workplaceRoute = parts[0] === 'workplace';
+    if (workplaceRoute && !['frontend', 'LLM-show-classic', 'LLM-show-fashion'].includes(parts[1])) return next();
     if (parts.some(part => part === '..' || part.includes('\\') || part.includes('\0'))) {
       res.statusCode = 400; return res.end();
     }
-    const allowed = runtimeFile ? path.resolve(runtimeRoot) : path.resolve(workspace, nativePage ? 'frontend/fashion/native' : portalStyle ? 'frontend' : parts[0]);
-    let file = runtimeFile ? path.resolve(allowed, '.' + pathname) : path.resolve(workspace, '.' + pathname);
+    const allowed = runtimeFile ? path.resolve(runtimeRoot) : path.resolve(workspace, rootPaths.get(parts[0]), ...(workplaceRoute ? [parts[1]] : []));
+    let file = runtimeFile ? path.resolve(allowed, '.' + pathname) : path.resolve(allowed, ...parts.slice(workplaceRoute ? 2 : 1));
     try {
       if (fs.statSync(file).isDirectory()) file = path.join(file, 'index.html');
       file = fs.realpathSync(file);

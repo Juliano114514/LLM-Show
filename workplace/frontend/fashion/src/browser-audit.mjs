@@ -306,7 +306,7 @@ async function initialize() {
   document.body.classList.toggle('focus-mode', currentFocus !== null);
   const roundBase = `/review-rounds/round-${round}`;
   const sessionURL = sameOriginURL(roundBase + '/session.json', roundBase + '/');
-  const archivedSessionURL = sameOriginURL(`/LLM-show-fashion/results/archived/rounds/sessions/round-${round}.json`, '/LLM-show-fashion/results/archived/rounds/sessions/');
+  const archivedSessionURL = sameOriginURL(`/workplace/LLM-show-fashion/results/archived/rounds/sessions/round-${round}.json`, '/workplace/LLM-show-fashion/results/archived/rounds/sessions/');
   const [sessionBytes, archivedSessionBytes] = await Promise.all([readResource(sessionURL), readResource(archivedSessionURL)]);
   const sessionHash = await digest(sessionBytes);
   check(sessionHash === await digest(archivedSessionBytes), '冻结 session 与归档 session 的 SHA 不一致');
@@ -327,7 +327,7 @@ async function initialize() {
   const character = catalog.characters.find(item => item.id === characterId);
   check(character?.ready === true && HASH.test(character.inputHash || ''), '该轮角色没有可审校的冻结输入');
   catalog.reviewSession = session;
-  const studyBase = `/LLM-show-fashion/results/archived/rounds/${characterId}/round-${round}/standard-study/`;
+  const studyBase = `/workplace/LLM-show-fashion/results/archived/rounds/${characterId}/round-${round}/standard-study/`;
   const studyBytes = await readResource(sameOriginURL(studyBase + 'study.json', studyBase));
   const study = readJSON(studyBytes, 'standard study');
   check(study.character === characterId && study.round === round && study.inputHash === character.inputHash && study.nativeHash === session.nativeHash && study.renderModelHash === session.renderModelHash && study.seed === session.seed, '标准素体 study 与本轮冻结输入不一致');

@@ -1,6 +1,6 @@
 # Classic 前端
 
-在 `D:\LLM-show\frontend` 执行 `npm ci`，然后运行 `npm run dev:classic`。打开 `http://127.0.0.1:5173/`，原生审阅使用 `?review=1`。
+在 `D:\LLM-show\workplace\frontend` 执行 `npm ci`，然后运行 `npm run dev:classic`。打开 `http://127.0.0.1:5173/`，原生审阅使用 `?review=1`。
 
 - `src/`：React 页面、样式与前端组合模型。
 - `vite.config.js`：本页面配置；运行资产直接读取 `../../LLM-show-classic/ai-workspace/runtime/`。

@@ -345,7 +345,7 @@ function App() {
   return <div className="app-shell" style={{ '--character-color': isBase ? '#8d849b' : character.color || '#aa94d0', '--character-accent': isBase ? '#eeeaf1' : character.accent || '#eee9f8' }}>
     <header className="site-header">
       <a href="#" className="brand" aria-label="AI SHOW 首页"><span className="brand-mark">✦</span><span>AI <b>SHOW</b><small>DRESS UP YOUR INTELLIGENCE</small></span></a>
-      <nav className="header-nav" aria-label="主要导航"><button className={panel === 'wardrobe' ? 'active' : ''} onClick={() => setPanel('wardrobe')}>换装工作室</button><button className={panel === 'collection' ? 'active' : ''} onClick={() => setPanel('collection')}>我的收藏 <span>{collection.length.toString().padStart(2, '0')}</span></button><a href="?review=1" className="classic-review-entry">原生审阅</a><a href="/LLM-show-classic/results/index.html">结果与评分</a></nav>
+      <nav className="header-nav" aria-label="主要导航"><button className={panel === 'wardrobe' ? 'active' : ''} onClick={() => setPanel('wardrobe')}>换装工作室</button><button className={panel === 'collection' ? 'active' : ''} onClick={() => setPanel('collection')}>我的收藏 <span>{collection.length.toString().padStart(2, '0')}</span></button><a href="?review=1" className="classic-review-entry">原生审阅</a><a href="/workplace/LLM-show-classic/results/index.html">结果与评分</a></nav>
       <div className="header-right"><span className="online-dot" /> 灵感在线 <button className="icon-button about-button" aria-label="关于项目" onClick={() => setModal('about')}><Icon name="info" /></button></div>
     </header>
 
